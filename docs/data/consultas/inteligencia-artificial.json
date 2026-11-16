@@ -1,8 +1,8 @@
 {
  "tema": "inteligencia artificial",
  "slug": "inteligencia-artificial",
- "run_id": "20261116T220452Z_inteligencia-artificial",
- "generado_utc": "2026-11-16T22:04:52Z",
+ "run_id": "20261116T220915Z_inteligencia-artificial",
+ "generado_utc": "2026-11-16T22:09:15Z",
  "pais": "Uruguay",
  "reglas_version": "2026-11-16b",
  "fuentes": [
@@ -20,15 +20,15 @@
   }
  ],
  "resumen": {
-  "sugerencias_unicas": 583,
+  "sugerencias_unicas": 584,
   "intenciones_con_datos": 10,
   "fuera_de_uruguay": 75,
-  "fuera_de_uruguay_pct": 12.9,
-  "sin_clasificar": 266,
+  "fuera_de_uruguay_pct": 12.8,
+  "sin_clasificar": 264,
   "instituciones_uy": [
    {
     "id": "ORT",
-    "sugerencias": 2
+    "sugerencias": 1
    },
    {
     "id": "UCU",
@@ -52,10 +52,10 @@
    }
   ],
   "quien_supuesto": {
-   "familia": 91,
-   "estudiante": 115,
+   "familia": 93,
+   "estudiante": 116,
    "ambos": 36,
-   "ninguno": 341
+   "ninguno": 339
   },
   "top10_validos": 0,
   "top10_rechazados": 0,
@@ -69,7 +69,7 @@
    "quien": "ninguno",
    "que_es": "La sugerencia nombra un país o una universidad de otro país. No es demanda local.",
    "total": 75,
-   "pct": 12.9,
+   "pct": 12.8,
    "sugerencias": [
     {
      "texto": "inteligencia artificial argentina",
@@ -430,6 +430,22 @@
      ],
      "grupos": [
       "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 559,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "estudiar inteligencia artificial a distancia en argentina",
+     "semillas": [
+      "inteligencia artificial a distancia"
+     ],
+     "grupos": [
+      "estudiante"
      ],
      "fuentes": [
       "google"
@@ -824,6 +840,22 @@
      "intencion": "fuera_uy"
     },
     {
+     "texto": "estudiar inteligencia artificial en la uba",
+     "semillas": [
+      "estudiar inteligencia artificial"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
      "texto": "inteligencia artificial carrera rosario",
      "semillas": [
       "inteligencia artificial carrera"
@@ -894,22 +926,6 @@
      ],
      "grupos": [
       "preguntas"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 553,
-     "apariciones": 1,
-     "instituciones": [],
-     "intencion": "fuera_uy"
-    },
-    {
-     "texto": "estudiar inteligencia artificial en la uba",
-     "semillas": [
-      "estudiar inteligencia artificial"
-     ],
-     "grupos": [
-      "estudiante"
      ],
      "fuentes": [
       "google"
@@ -1171,22 +1187,6 @@
       "google"
      ],
      "relevancia_max": 551,
-     "apariciones": 1,
-     "instituciones": [],
-     "intencion": "fuera_uy"
-    },
-    {
-     "texto": "carreras de inteligencia artificial a distancia en argentina",
-     "semillas": [
-      "inteligencia artificial a distancia"
-     ],
-     "grupos": [
-      "estudiante"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 550,
      "apariciones": 1,
      "instituciones": [],
      "intencion": "fuera_uy"
@@ -1699,22 +1699,6 @@
      "intencion": "costo"
     },
     {
-     "texto": "inteligencia artificial arquitectura gratis",
-     "semillas": [
-      "inteligencia artificial a"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 560,
-     "apariciones": 1,
-     "instituciones": [],
-     "intencion": "costo"
-    },
-    {
      "texto": "inteligencia artificial sin costo bbva",
      "semillas": [
       "inteligencia artificial costo"
@@ -1726,6 +1710,22 @@
       "google"
      ],
      "relevancia_max": 560,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "costo"
+    },
+    {
+     "texto": "inteligencia artificial aplicaciones gratis",
+     "semillas": [
+      "inteligencia artificial a"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 559,
      "apariciones": 1,
      "instituciones": [],
      "intencion": "costo"
@@ -1779,9 +1779,9 @@
      "intencion": "costo"
     },
     {
-     "texto": "inteligencia artificial para crear invitaciones gratis",
+     "texto": "inteligencia artificial arquitectura gratis",
      "semillas": [
-      "inteligencia artificial p"
+      "inteligencia artificial a"
      ],
      "grupos": [
       "alfabeto"
@@ -1795,9 +1795,9 @@
      "intencion": "costo"
     },
     {
-     "texto": "inteligencia artificial aplicaciones gratis",
+     "texto": "inteligencia artificial para crear invitaciones gratis",
      "semillas": [
-      "inteligencia artificial a"
+      "inteligencia artificial p"
      ],
      "grupos": [
       "alfabeto"
@@ -1805,7 +1805,7 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 557,
+     "relevancia_max": 558,
      "apariciones": 1,
      "instituciones": [],
      "intencion": "costo"
@@ -1923,6 +1923,22 @@
      "intencion": "costo"
     },
     {
+     "texto": "inteligencia artificial excel gratis",
+     "semillas": [
+      "inteligencia artificial e"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "costo"
+    },
+    {
      "texto": "inteligencia artificial gratis google",
      "semillas": [
       "inteligencia artificial g"
@@ -1974,22 +1990,6 @@
      "texto": "inteligencia artificial diseño gráfico gratis",
      "semillas": [
       "inteligencia artificial d"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 555,
-     "apariciones": 1,
-     "instituciones": [],
-     "intencion": "costo"
-    },
-    {
-     "texto": "inteligencia artificial excel gratis",
-     "semillas": [
-      "inteligencia artificial e"
      ],
      "grupos": [
       "alfabeto"
@@ -2259,22 +2259,6 @@
      "intencion": "costo"
     },
     {
-     "texto": "inteligencia artificial luzia gratis",
-     "semillas": [
-      "inteligencia artificial l"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 551,
-     "apariciones": 1,
-     "instituciones": [],
-     "intencion": "costo"
-    },
-    {
      "texto": "inteligencia artificial para contabilidad de costos",
      "semillas": [
       "inteligencia artificial costo"
@@ -2310,6 +2294,22 @@
      "texto": "inteligencia artificial dola gratis",
      "semillas": [
       "inteligencia artificial d"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "costo"
+    },
+    {
+     "texto": "inteligencia artificial luzia gratis",
+     "semillas": [
+      "inteligencia artificial l"
      ],
      "grupos": [
       "alfabeto"
@@ -2362,8 +2362,8 @@
    "color": "#3ccf91",
    "quien": "ambos",
    "que_es": "Para qué sirve: trabajo, sueldo, demanda.",
-   "total": 20,
-   "pct": 3.4,
+   "total": 21,
+   "pct": 3.6,
    "sugerencias": [
     {
      "texto": "inteligencia artificial trabajo",
@@ -2414,6 +2414,22 @@
      "intencion": "salida"
     },
     {
+     "texto": "qué es inteligencia artificial y para qué sirve",
+     "semillas": [
+      "qué es inteligencia artificial"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
      "texto": "cuanto gana un ingeniero inteligencia artificial",
      "semillas": [
       "cuánto gana inteligencia artificial"
@@ -2452,22 +2468,6 @@
      ],
      "grupos": [
       "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 600,
-     "apariciones": 1,
-     "instituciones": [],
-     "intencion": "salida"
-    },
-    {
-     "texto": "qué es inteligencia artificial y para qué sirve",
-     "semillas": [
-      "qué es inteligencia artificial"
-     ],
-     "grupos": [
-      "preguntas"
      ],
      "fuentes": [
       "google"
@@ -2638,6 +2638,22 @@
      "intencion": "salida"
     },
     {
+     "texto": "inteligencia artificial reemplazará trabajos",
+     "semillas": [
+      "inteligencia artificial r"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
      "texto": "cuanto gana un programador de inteligencia artificial",
      "semillas": [
       "cuánto gana inteligencia artificial"
@@ -2693,8 +2709,8 @@
    "color": "#4aa8ff",
    "quien": "estudiante",
    "que_es": "Cómo se cursa: a distancia, virtual, semipresencial, horarios.",
-   "total": 16,
-   "pct": 2.7,
+   "total": 17,
+   "pct": 2.9,
    "sugerencias": [
     {
      "texto": "inteligencia artificial online",
@@ -2715,23 +2731,6 @@
      "intencion": "modalidad"
     },
     {
-     "texto": "estudiar inteligencia artificial a distancia",
-     "semillas": [
-      "estudiar inteligencia artificial",
-      "inteligencia artificial a distancia"
-     ],
-     "grupos": [
-      "estudiante"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 600,
-     "apariciones": 2,
-     "instituciones": [],
-     "intencion": "modalidad"
-    },
-    {
      "texto": "inteligencia artificial carrera a distancia",
      "semillas": [
       "inteligencia artificial carrera",
@@ -2743,7 +2742,7 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 562,
+     "relevancia_max": 600,
      "apariciones": 2,
      "instituciones": [],
      "intencion": "modalidad"
@@ -2759,7 +2758,7 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 561,
+     "relevancia_max": 562,
      "apariciones": 1,
      "instituciones": [],
      "intencion": "modalidad"
@@ -2775,7 +2774,7 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 560,
+     "relevancia_max": 561,
      "apariciones": 1,
      "instituciones": [],
      "intencion": "modalidad"
@@ -2791,7 +2790,7 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 559,
+     "relevancia_max": 560,
      "apariciones": 1,
      "instituciones": [],
      "intencion": "modalidad"
@@ -2813,7 +2812,7 @@
      "intencion": "modalidad"
     },
     {
-     "texto": "estudiar inteligencia artificial en linea",
+     "texto": "estudiar inteligencia artificial a distancia",
      "semillas": [
       "estudiar inteligencia artificial"
      ],
@@ -2840,6 +2839,22 @@
       "google"
      ],
      "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "modalidad"
+    },
+    {
+     "texto": "inteligencia artificial en linea",
+     "semillas": [
+      "inteligencia artificial e"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
      "apariciones": 1,
      "instituciones": [],
      "intencion": "modalidad"
@@ -2877,9 +2892,9 @@
      "intencion": "modalidad"
     },
     {
-     "texto": "curso de inteligencia artificial a distancia",
+     "texto": "estudiar inteligencia artificial en linea",
      "semillas": [
-      "inteligencia artificial a distancia"
+      "estudiar inteligencia artificial"
      ],
      "grupos": [
       "estudiante"
@@ -2887,18 +2902,18 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 552,
+     "relevancia_max": 553,
      "apariciones": 1,
      "instituciones": [],
      "intencion": "modalidad"
     },
     {
-     "texto": "inteligencia artificial en linea",
+     "texto": "curso de inteligencia artificial a distancia",
      "semillas": [
-      "inteligencia artificial e"
+      "inteligencia artificial a distancia"
      ],
      "grupos": [
-      "alfabeto"
+      "estudiante"
      ],
      "fuentes": [
       "google"
@@ -2925,7 +2940,23 @@
      "intencion": "modalidad"
     },
     {
-     "texto": "especialización en inteligencia artificial a distancia",
+     "texto": "estudiar inteligencia artificial virtual",
+     "semillas": [
+      "estudiar inteligencia artificial"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "modalidad"
+    },
+    {
+     "texto": "maestria en inteligencia artificial a distancia",
      "semillas": [
       "inteligencia artificial a distancia"
      ],
@@ -2941,9 +2972,9 @@
      "intencion": "modalidad"
     },
     {
-     "texto": "estudiar inteligencia artificial virtual",
+     "texto": "doctorado en inteligencia artificial a distancia",
      "semillas": [
-      "estudiar inteligencia artificial"
+      "inteligencia artificial a distancia"
      ],
      "grupos": [
       "estudiante"
@@ -2951,7 +2982,7 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 551,
+     "relevancia_max": 550,
      "apariciones": 1,
      "instituciones": [],
      "intencion": "modalidad"
@@ -3263,8 +3294,8 @@
    "color": "#ff6fa3",
    "quien": "familia",
    "que_es": "Dudas antes de elegir: mejor opción, opiniones, si vale la pena.",
-   "total": 26,
-   "pct": 4.5,
+   "total": 28,
+   "pct": 4.8,
    "sugerencias": [
     {
      "texto": "inteligencia artificial opiniones de expertos",
@@ -3573,6 +3604,22 @@
      "intencion": "comparar"
     },
     {
+     "texto": "inteligencia artificial lista de las mejores",
+     "semillas": [
+      "inteligencia artificial l"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "comparar"
+    },
+    {
      "texto": "inteligencia artificial vs inteligencia artificial generativa",
      "semillas": [
       "inteligencia artificial v"
@@ -3595,6 +3642,22 @@
      ],
      "grupos": [
       "familia"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "comparar"
+    },
+    {
+     "texto": "inteligencia artificial ranking",
+     "semillas": [
+      "inteligencia artificial r"
+     ],
+     "grupos": [
+      "alfabeto"
      ],
      "fuentes": [
       "google"
@@ -3653,9 +3716,9 @@
      "intencion": "comparar"
     },
     {
-     "texto": "inteligencia artificial ranking",
+     "texto": "inteligencia artificial en la educación ventajas y desventajas",
      "semillas": [
-      "inteligencia artificial r"
+      "inteligencia artificial e"
      ],
      "grupos": [
       "alfabeto"
@@ -3692,8 +3755,8 @@
    "color": "#35c9d6",
    "quien": "ambos",
    "que_es": "Lugar o institución de Uruguay: universidades y ciudades.",
-   "total": 16,
-   "pct": 2.7,
+   "total": 15,
+   "pct": 2.6,
    "sugerencias": [
     {
      "texto": "inteligencia artificial uruguay",
@@ -3826,24 +3889,6 @@
      "relevancia_max": 850,
      "apariciones": 1,
      "instituciones": [],
-     "intencion": "donde"
-    },
-    {
-     "texto": "inteligencia artificial en accion ort",
-     "semillas": [
-      "inteligencia artificial e"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 700,
-     "apariciones": 1,
-     "instituciones": [
-      "ORT"
-     ],
      "intencion": "donde"
     },
     {
@@ -4059,22 +4104,6 @@
      "intencion": "formato"
     },
     {
-     "texto": "inteligencia artificial y ciencia de datos carrera",
-     "semillas": [
-      "inteligencia artificial y"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 601,
-     "apariciones": 1,
-     "instituciones": [],
-     "intencion": "formato"
-    },
-    {
      "texto": "por qué es importante estudiar inteligencia artificial",
      "semillas": [
       "por qué estudiar inteligencia artificial"
@@ -4235,6 +4264,22 @@
      "intencion": "formato"
     },
     {
+     "texto": "inteligencia artificial y ciencia de datos carrera",
+     "semillas": [
+      "inteligencia artificial y"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
      "texto": "que estudiar para inteligencia artificial",
      "semillas": [
       "estudiar inteligencia artificial"
@@ -4294,9 +4339,41 @@
      "intencion": "temas"
     },
     {
-     "texto": "inteligencia artificial aplicada a los negocios",
+     "texto": "inteligencia artificial y educación",
+     "semillas": [
+      "inteligencia artificial y"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "inteligencia artificial aplicada a la educación",
      "semillas": [
       "inteligencia artificial a"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "inteligencia artificial y derecho",
+     "semillas": [
+      "inteligencia artificial y"
      ],
      "grupos": [
       "alfabeto"
@@ -4320,13 +4397,13 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 562,
+     "relevancia_max": 561,
      "apariciones": 1,
      "instituciones": [],
      "intencion": "temas"
     },
     {
-     "texto": "inteligencia artificial aplicada a la educación",
+     "texto": "inteligencia artificial aplicada a los negocios",
      "semillas": [
       "inteligencia artificial a"
      ],
@@ -4336,13 +4413,13 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 558,
+     "relevancia_max": 560,
      "apariciones": 1,
      "instituciones": [],
      "intencion": "temas"
     },
     {
-     "texto": "inteligencia artificial y educación",
+     "texto": "inteligencia artificial y machine learning",
      "semillas": [
       "inteligencia artificial y"
      ],
@@ -4353,22 +4430,6 @@
       "google"
      ],
      "relevancia_max": 558,
-     "apariciones": 1,
-     "instituciones": [],
-     "intencion": "temas"
-    },
-    {
-     "texto": "inteligencia artificial y derecho",
-     "semillas": [
-      "inteligencia artificial y"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 557,
      "apariciones": 1,
      "instituciones": [],
      "intencion": "temas"
@@ -4384,7 +4445,7 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 556,
+     "relevancia_max": 557,
      "apariciones": 1,
      "instituciones": [],
      "intencion": "temas"
@@ -4393,22 +4454,6 @@
      "texto": "inteligencia artificial matematicas",
      "semillas": [
       "inteligencia artificial m"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 556,
-     "apariciones": 1,
-     "instituciones": [],
-     "intencion": "temas"
-    },
-    {
-     "texto": "inteligencia artificial y machine learning",
-     "semillas": [
-      "inteligencia artificial y"
      ],
      "grupos": [
       "alfabeto"
@@ -4432,23 +4477,7 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 554,
-     "apariciones": 1,
-     "instituciones": [],
-     "intencion": "temas"
-    },
-    {
-     "texto": "inteligencia artificial and educación",
-     "semillas": [
-      "inteligencia artificial a"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 553,
+     "relevancia_max": 556,
      "apariciones": 1,
      "instituciones": [],
      "intencion": "temas"
@@ -4470,9 +4499,9 @@
      "intencion": "temas"
     },
     {
-     "texto": "inteligencia artificial tipos de ia",
+     "texto": "inteligencia artificial y aprendizaje automático",
      "semillas": [
-      "inteligencia artificial t"
+      "inteligencia artificial y"
      ],
      "grupos": [
       "alfabeto"
@@ -4480,15 +4509,31 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 551,
+     "relevancia_max": 553,
      "apariciones": 1,
      "instituciones": [],
      "intencion": "temas"
     },
     {
-     "texto": "inteligencia artificial y aprendizaje automático",
+     "texto": "inteligencia artificial y robótica",
      "semillas": [
       "inteligencia artificial y"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "inteligencia artificial tipos de ia",
+     "semillas": [
+      "inteligencia artificial t"
      ],
      "grupos": [
       "alfabeto"
@@ -4518,9 +4563,9 @@
      "intencion": "temas"
     },
     {
-     "texto": "inteligencia artificial y robótica",
+     "texto": "inteligencia artificial agéntica aplicada a la transformación empresarial",
      "semillas": [
-      "inteligencia artificial y"
+      "inteligencia artificial a"
      ],
      "grupos": [
       "alfabeto"
@@ -4558,7 +4603,7 @@
    "quien": "estudiante",
    "que_es": "Contenido para aprender solo: qué es, libros, herramientas, videos.",
    "total": 47,
-   "pct": 8.1,
+   "pct": 8.0,
    "sugerencias": [
     {
      "texto": "inteligencia artificial de google",
@@ -4596,6 +4641,22 @@
      "intencion": "aprender"
     },
     {
+     "texto": "inteligencia artificial noticias",
+     "semillas": [
+      "inteligencia artificial n"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1251,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
      "texto": "inteligencia artificial libro",
      "semillas": [
       "inteligencia artificial l"
@@ -4612,7 +4673,7 @@
      "intencion": "aprender"
     },
     {
-     "texto": "inteligencia artificial noticias",
+     "texto": "inteligencia artificial noticias hoy",
      "semillas": [
       "inteligencia artificial n"
      ],
@@ -4836,22 +4897,6 @@
      "intencion": "aprender"
     },
     {
-     "texto": "qué es inteligencia artificial generativa",
-     "semillas": [
-      "qué es inteligencia artificial"
-     ],
-     "grupos": [
-      "preguntas"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 601,
-     "apariciones": 1,
-     "instituciones": [],
-     "intencion": "aprender"
-    },
-    {
      "texto": "inteligencia artificial historia",
      "semillas": [
       "inteligencia artificial h"
@@ -4868,17 +4913,17 @@
      "intencion": "aprender"
     },
     {
-     "texto": "inteligencia artificial logo",
+     "texto": "qué es inteligencia artificial generativa",
      "semillas": [
-      "inteligencia artificial l"
+      "qué es inteligencia artificial"
      ],
      "grupos": [
-      "alfabeto"
+      "preguntas"
      ],
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 561,
+     "relevancia_max": 600,
      "apariciones": 1,
      "instituciones": [],
      "intencion": "aprender"
@@ -4890,6 +4935,22 @@
      ],
      "grupos": [
       "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 562,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "inteligencia artificial logo",
+     "semillas": [
+      "inteligencia artificial l"
+     ],
+     "grupos": [
+      "alfabeto"
      ],
      "fuentes": [
       "google"
@@ -5060,22 +5121,6 @@
      "intencion": "aprender"
     },
     {
-     "texto": "inteligencia artificial noticias internacionales",
-     "semillas": [
-      "inteligencia artificial n"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 557,
-     "apariciones": 1,
-     "instituciones": [],
-     "intencion": "aprender"
-    },
-    {
      "texto": "inteligencia artificial un enfoque moderno pdf",
      "semillas": [
       "inteligencia artificial u"
@@ -5124,6 +5169,22 @@
      "intencion": "aprender"
     },
     {
+     "texto": "inteligencia artificial noticias internacionales",
+     "semillas": [
+      "inteligencia artificial n"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
      "texto": "que es inteligencia artificial para niños",
      "semillas": [
       "qué es inteligencia artificial"
@@ -5156,22 +5217,6 @@
      "intencion": "aprender"
     },
     {
-     "texto": "inteligencia artificial russell y norvig pdf",
-     "semillas": [
-      "inteligencia artificial r"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 553,
-     "apariciones": 1,
-     "instituciones": [],
-     "intencion": "aprender"
-    },
-    {
      "texto": "que es inteligencia artificial generativa y como funciona",
      "semillas": [
       "qué es inteligencia artificial"
@@ -5191,22 +5236,6 @@
      "texto": "inteligencia artificial generativa ejemplos",
      "semillas": [
       "inteligencia artificial g"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 552,
-     "apariciones": 1,
-     "instituciones": [],
-     "intencion": "aprender"
-    },
-    {
-     "texto": "inteligencia artificial logo naranja",
-     "semillas": [
-      "inteligencia artificial l"
      ],
      "grupos": [
       "alfabeto"
@@ -5255,6 +5284,22 @@
      "texto": "inteligencia artificial introducción",
      "semillas": [
       "inteligencia artificial i"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "inteligencia artificial logo naranja",
+     "semillas": [
+      "inteligencia artificial l"
      ],
      "grupos": [
       "alfabeto"
@@ -5323,8 +5368,8 @@
    "color": "#9aa4b8",
    "quien": "ninguno",
    "que_es": "No coincide con ninguna regla. Si este grupo crece, falta una regla.",
-   "total": 266,
-   "pct": 45.6,
+   "total": 264,
+   "pct": 45.2,
    "sugerencias": [
     {
      "texto": "inteligencia artificial pelicula",
@@ -6218,7 +6263,7 @@
      "intencion": "otros"
     },
     {
-     "texto": "inteligencia artificial netflix",
+     "texto": "inteligencia artificial notebook",
      "semillas": [
       "inteligencia artificial n"
      ],
@@ -6458,7 +6503,7 @@
      "intencion": "otros"
     },
     {
-     "texto": "inteligencia artificial nueva",
+     "texto": "inteligencia artificial netflix",
      "semillas": [
       "inteligencia artificial n"
      ],
@@ -6634,22 +6679,6 @@
      "intencion": "otros"
     },
     {
-     "texto": "inteligencia artificial y el consumo de agua",
-     "semillas": [
-      "inteligencia artificial y"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 600,
-     "apariciones": 1,
-     "instituciones": [],
-     "intencion": "otros"
-    },
-    {
      "texto": "inteligencia artificial xai",
      "semillas": [
       "inteligencia artificial x"
@@ -6810,22 +6839,6 @@
      "intencion": "otros"
     },
     {
-     "texto": "inteligencia artificial agéntica",
-     "semillas": [
-      "inteligencia artificial a"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 559,
-     "apariciones": 1,
-     "instituciones": [],
-     "intencion": "otros"
-    },
-    {
      "texto": "inteligencia artificial benchmark",
      "semillas": [
       "inteligencia artificial b"
@@ -6941,22 +6954,6 @@
      "texto": "inteligencia artificial medicina",
      "semillas": [
       "inteligencia artificial m"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 559,
-     "apariciones": 1,
-     "instituciones": [],
-     "intencion": "otros"
-    },
-    {
-     "texto": "inteligencia artificial naranja",
-     "semillas": [
-      "inteligencia artificial n"
      ],
      "grupos": [
       "alfabeto"
@@ -7162,7 +7159,7 @@
      "intencion": "otros"
     },
     {
-     "texto": "inteligencia artificial nova",
+     "texto": "inteligencia artificial nueva",
      "semillas": [
       "inteligencia artificial n"
      ],
@@ -7269,6 +7266,22 @@
       "google"
      ],
      "relevancia_max": 558,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "inteligencia artificial agéntica",
+     "semillas": [
+      "inteligencia artificial a"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
      "apariciones": 1,
      "instituciones": [],
      "intencion": "otros"
@@ -7386,6 +7399,22 @@
      "intencion": "otros"
     },
     {
+     "texto": "inteligencia artificial naranja",
+     "semillas": [
+      "inteligencia artificial n"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
      "texto": "inteligencia artificial pelicula completa en español latino",
      "semillas": [
       "inteligencia artificial"
@@ -7469,6 +7498,22 @@
      "texto": "inteligencia artificial x twitter",
      "semillas": [
       "inteligencia artificial x"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "inteligencia artificial y automatización",
+     "semillas": [
+      "inteligencia artificial y"
      ],
      "grupos": [
       "alfabeto"
@@ -7642,7 +7687,7 @@
      "intencion": "otros"
     },
     {
-     "texto": "inteligencia artificial nano banana",
+     "texto": "inteligencia artificial nova",
      "semillas": [
       "inteligencia artificial n"
      ],
@@ -7866,6 +7911,22 @@
      "intencion": "otros"
     },
     {
+     "texto": "inteligencia artificial en la vida cotidiana",
+     "semillas": [
+      "inteligencia artificial e"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
      "texto": "inteligencia artificial fin del mundo",
      "semillas": [
       "inteligencia artificial f"
@@ -7978,22 +8039,6 @@
      "intencion": "otros"
     },
     {
-     "texto": "inteligencia artificial nombres de aplicaciones",
-     "semillas": [
-      "inteligencia artificial n"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 555,
-     "apariciones": 1,
-     "instituciones": [],
-     "intencion": "otros"
-    },
-    {
      "texto": "inteligencia artificial que haga videos",
      "semillas": [
       "inteligencia artificial q"
@@ -8074,7 +8119,7 @@
      "intencion": "otros"
     },
     {
-     "texto": "inteligencia artificial y automatización",
+     "texto": "inteligencia artificial y el agua",
      "semillas": [
       "inteligencia artificial y"
      ],
@@ -8157,22 +8202,6 @@
      "texto": "inteligencia artificial de apple",
      "semillas": [
       "inteligencia artificial d"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 554,
-     "apariciones": 1,
-     "instituciones": [],
-     "intencion": "otros"
-    },
-    {
-     "texto": "inteligencia artificial en la vida cotidiana",
-     "semillas": [
-      "inteligencia artificial e"
      ],
      "grupos": [
       "alfabeto"
@@ -8298,7 +8327,7 @@
      "intencion": "otros"
     },
     {
-     "texto": "inteligencia artificial niños",
+     "texto": "inteligencia artificial nano banana",
      "semillas": [
       "inteligencia artificial n"
      ],
@@ -8346,7 +8375,7 @@
      "intencion": "otros"
     },
     {
-     "texto": "inteligencia artificial resuelve problemas del milenio",
+     "texto": "inteligencia artificial resuelve problema matematico",
      "semillas": [
       "inteligencia artificial r"
      ],
@@ -8442,6 +8471,22 @@
      "intencion": "otros"
     },
     {
+     "texto": "inteligencia artificial y etica",
+     "semillas": [
+      "inteligencia artificial y"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
      "texto": "inteligencia artificial z80",
      "semillas": [
       "inteligencia artificial z"
@@ -8464,6 +8509,22 @@
      ],
      "grupos": [
       "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "inteligencia artificial animado",
+     "semillas": [
+      "inteligencia artificial a"
+     ],
+     "grupos": [
+      "alfabeto"
      ],
      "fuentes": [
       "google"
@@ -8538,22 +8599,6 @@
      "intencion": "otros"
     },
     {
-     "texto": "inteligencia artificial en la escuela",
-     "semillas": [
-      "inteligencia artificial e"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 553,
-     "apariciones": 1,
-     "instituciones": [],
-     "intencion": "otros"
-    },
-    {
      "texto": "inteligencia artificial hay",
      "semillas": [
       "inteligencia artificial h"
@@ -8602,23 +8647,7 @@
      "intencion": "otros"
     },
     {
-     "texto": "inteligencia artificial lola",
-     "semillas": [
-      "inteligencia artificial l"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 553,
-     "apariciones": 1,
-     "instituciones": [],
-     "intencion": "otros"
-    },
-    {
-     "texto": "inteligencia artificial neuronal",
+     "texto": "inteligencia artificial nombres de aplicaciones",
      "semillas": [
       "inteligencia artificial n"
      ],
@@ -8669,6 +8698,22 @@
      "texto": "inteligencia artificial que no sea chatgpt",
      "semillas": [
       "inteligencia artificial q"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "inteligencia artificial rotten tomatoes",
+     "semillas": [
+      "inteligencia artificial r"
      ],
      "grupos": [
       "alfabeto"
@@ -8762,22 +8807,6 @@
      "intencion": "otros"
     },
     {
-     "texto": "inteligencia artificial y el agua",
-     "semillas": [
-      "inteligencia artificial y"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 553,
-     "apariciones": 1,
-     "instituciones": [],
-     "intencion": "otros"
-    },
-    {
      "texto": "inteligencia artificial zaira",
      "semillas": [
       "inteligencia artificial z"
@@ -8810,7 +8839,7 @@
      "intencion": "otros"
     },
     {
-     "texto": "inteligencia artificial animado",
+     "texto": "inteligencia artificial agua",
      "semillas": [
       "inteligencia artificial a"
      ],
@@ -8845,6 +8874,22 @@
      "texto": "inteligencia artificial china como se llama",
      "semillas": [
       "inteligencia artificial c"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "inteligencia artificial en las empresas",
+     "semillas": [
+      "inteligencia artificial e"
      ],
      "grupos": [
       "alfabeto"
@@ -8922,6 +8967,22 @@
      "intencion": "otros"
     },
     {
+     "texto": "inteligencia artificial lola",
+     "semillas": [
+      "inteligencia artificial l"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
      "texto": "inteligencia artificial mec",
      "semillas": [
       "inteligencia artificial mejor universidad"
@@ -8954,7 +9015,7 @@
      "intencion": "otros"
     },
     {
-     "texto": "inteligencia artificial n8n",
+     "texto": "inteligencia artificial niños",
      "semillas": [
       "inteligencia artificial n"
      ],
@@ -8973,22 +9034,6 @@
      "texto": "inteligencia artificial o inteligencia artificial",
      "semillas": [
       "inteligencia artificial o"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 552,
-     "apariciones": 1,
-     "instituciones": [],
-     "intencion": "otros"
-    },
-    {
-     "texto": "inteligencia artificial resuelve problema matematico",
-     "semillas": [
-      "inteligencia artificial r"
      ],
      "grupos": [
       "alfabeto"
@@ -9082,22 +9127,6 @@
      "intencion": "otros"
     },
     {
-     "texto": "inteligencia artificial y etica",
-     "semillas": [
-      "inteligencia artificial y"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 552,
-     "apariciones": 1,
-     "instituciones": [],
-     "intencion": "otros"
-    },
-    {
      "texto": "inteligencia artificial zuzu",
      "semillas": [
       "inteligencia artificial z"
@@ -9130,7 +9159,7 @@
      "intencion": "otros"
     },
     {
-     "texto": "inteligencia artificial agua",
+     "texto": "inteligencia artificial avanzada",
      "semillas": [
       "inteligencia artificial a"
      ],
@@ -9162,6 +9191,22 @@
      "intencion": "otros"
     },
     {
+     "texto": "inteligencia artificial ecologica",
+     "semillas": [
+      "inteligencia artificial e"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
      "texto": "inteligencia artificial hoy en dia",
      "semillas": [
       "inteligencia artificial h"
@@ -9178,7 +9223,7 @@
      "intencion": "otros"
     },
     {
-     "texto": "inteligencia artificial necesita agua",
+     "texto": "inteligencia artificial netflix pelicula",
      "semillas": [
       "inteligencia artificial n"
      ],
@@ -9258,22 +9303,6 @@
      "intencion": "otros"
     },
     {
-     "texto": "inteligencia artificial rotten tomatoes",
-     "semillas": [
-      "inteligencia artificial r"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 551,
-     "apariciones": 1,
-     "instituciones": [],
-     "intencion": "otros"
-    },
-    {
      "texto": "inteligencia artificial virus",
      "semillas": [
       "inteligencia artificial v"
@@ -9322,9 +9351,9 @@
      "intencion": "otros"
     },
     {
-     "texto": "inteligencia artificial zero",
+     "texto": "inteligencia artificial y el consumo de agua",
      "semillas": [
-      "inteligencia artificial z"
+      "inteligencia artificial y"
      ],
      "grupos": [
       "alfabeto"
@@ -9338,9 +9367,9 @@
      "intencion": "otros"
     },
     {
-     "texto": "inteligencia artificial avanzada",
+     "texto": "inteligencia artificial zero",
      "semillas": [
-      "inteligencia artificial a"
+      "inteligencia artificial z"
      ],
      "grupos": [
       "alfabeto"
@@ -9348,7 +9377,7 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 550,
+     "relevancia_max": 551,
      "apariciones": 1,
      "instituciones": [],
      "intencion": "otros"
@@ -9373,22 +9402,6 @@
      "texto": "inteligencia artificial brock",
      "semillas": [
       "inteligencia artificial b"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 550,
-     "apariciones": 1,
-     "instituciones": [],
-     "intencion": "otros"
-    },
-    {
-     "texto": "inteligencia artificial en las empresas",
-     "semillas": [
-      "inteligencia artificial e"
      ],
      "grupos": [
       "alfabeto"
@@ -9482,23 +9495,7 @@
      "intencion": "otros"
     },
     {
-     "texto": "inteligencia artificial linea del tiempo",
-     "semillas": [
-      "inteligencia artificial l"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 550,
-     "apariciones": 1,
-     "instituciones": [],
-     "intencion": "otros"
-    },
-    {
-     "texto": "inteligencia artificial news",
+     "texto": "inteligencia artificial neuronal",
      "semillas": [
       "inteligencia artificial n"
      ],
@@ -9533,6 +9530,22 @@
      "texto": "inteligencia artificial que ayuda al medio ambiente",
      "semillas": [
       "inteligencia artificial q"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "inteligencia artificial responsable",
+     "semillas": [
+      "inteligencia artificial r"
      ],
      "grupos": [
       "alfabeto"
@@ -9618,14 +9631,14 @@
    "buscador": "pendiente",
    "consulta": "inteligencia artificial",
    "estado": "pendiente",
-   "motivo": "sin fuente automática: leer la página de un buscador con un script no es confiable (probado el 2026-11-16). Falta elegir una API oficial con clave gratuita (PLAN.md, fase F4).",
+   "motivo": "sin fuente automática: leer la página de un buscador con un script no es confiable (probado el 2026-11-16). Falta elegir una API oficial con clave gratuita (PLAN.md, fase F5).",
    "resultados": []
   },
   {
    "buscador": "pendiente",
    "consulta": "inteligencia artificial carrera uruguay",
    "estado": "pendiente",
-   "motivo": "sin fuente automática: leer la página de un buscador con un script no es confiable (probado el 2026-11-16). Falta elegir una API oficial con clave gratuita (PLAN.md, fase F4).",
+   "motivo": "sin fuente automática: leer la página de un buscador con un script no es confiable (probado el 2026-11-16). Falta elegir una API oficial con clave gratuita (PLAN.md, fase F5).",
    "resultados": []
   }
  ],

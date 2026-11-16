@@ -1,8 +1,8 @@
 {
  "tema": "negocios digitales",
  "slug": "negocios-digitales",
- "run_id": "20261116T220122Z_negocios-digitales",
- "generado_utc": "2026-11-16T22:01:22Z",
+ "run_id": "20261116T220838Z_negocios-digitales",
+ "generado_utc": "2026-11-16T22:08:38Z",
  "pais": "Uruguay",
  "reglas_version": "2026-11-16b",
  "fuentes": [
@@ -20,11 +20,11 @@
   }
  ],
  "resumen": {
-  "sugerencias_unicas": 364,
+  "sugerencias_unicas": 363,
   "intenciones_con_datos": 9,
   "fuera_de_uruguay": 107,
-  "fuera_de_uruguay_pct": 29.4,
-  "sin_clasificar": 73,
+  "fuera_de_uruguay_pct": 29.5,
+  "sin_clasificar": 72,
   "instituciones_uy": [
    {
     "id": "ORT",
@@ -45,9 +45,9 @@
   ],
   "quien_supuesto": {
    "familia": 12,
-   "estudiante": 97,
+   "estudiante": 98,
    "ambos": 41,
-   "ninguno": 214
+   "ninguno": 212
   },
   "top10_validos": 0,
   "top10_rechazados": 0,
@@ -61,8 +61,26 @@
    "quien": "ninguno",
    "que_es": "La sugerencia nombra un país o una universidad de otro país. No es demanda local.",
    "total": 107,
-   "pct": 29.4,
+   "pct": 29.5,
    "sugerencias": [
+    {
+     "texto": "negocios digitales y globales kennedy",
+     "semillas": [
+      "negocios digitales g",
+      "negocios digitales k",
+      "negocios digitales y"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 3,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
     {
      "texto": "negocios digitales sergio arboleda",
      "semillas": [
@@ -153,6 +171,24 @@
      "intencion": "fuera_uy"
     },
     {
+     "texto": "negocios digitales uade",
+     "semillas": [
+      "negocios digitales",
+      "negocios digitales u"
+     ],
+     "grupos": [
+      "base",
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
      "texto": "donde estudiar negocios digitales en rosario",
      "semillas": [
       "dónde estudiar negocios digitales",
@@ -171,12 +207,13 @@
      "intencion": "fuera_uy"
     },
     {
-     "texto": "negocios digitales y globales kennedy",
+     "texto": "negocios digitales uca",
      "semillas": [
-      "negocios digitales g",
-      "negocios digitales k"
+      "negocios digitales",
+      "negocios digitales u"
      ],
      "grupos": [
+      "base",
       "alfabeto"
      ],
      "fuentes": [
@@ -223,24 +260,6 @@
      "intencion": "fuera_uy"
     },
     {
-     "texto": "negocios digitales uca",
-     "semillas": [
-      "negocios digitales",
-      "negocios digitales u"
-     ],
-     "grupos": [
-      "base",
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 559,
-     "apariciones": 2,
-     "instituciones": [],
-     "intencion": "fuera_uy"
-    },
-    {
      "texto": "negocios digitales up",
      "semillas": [
       "negocios digitales",
@@ -253,7 +272,7 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 558,
+     "relevancia_max": 559,
      "apariciones": 2,
      "instituciones": [],
      "intencion": "fuera_uy"
@@ -787,22 +806,6 @@
      "texto": "negocios digitales siglo xxi",
      "semillas": [
       "negocios digitales x"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 601,
-     "apariciones": 1,
-     "instituciones": [],
-     "intencion": "fuera_uy"
-    },
-    {
-     "texto": "negocios digitales uade",
-     "semillas": [
-      "negocios digitales u"
      ],
      "grupos": [
       "alfabeto"
@@ -1456,7 +1459,7 @@
      "intencion": "fuera_uy"
     },
     {
-     "texto": "magíster en negocios digitales y tecnologías emergentes",
+     "texto": "licenciatura en negocios digitales y globales kennedy",
      "semillas": [
       "negocios digitales y"
      ],
@@ -1520,6 +1523,22 @@
      "intencion": "fuera_uy"
     },
     {
+     "texto": "negocios digitales colombia s.a.s",
+     "semillas": [
+      "negocios digitales c"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
      "texto": "negocios digitales rentables en argentina",
      "semillas": [
       "negocios digitales r"
@@ -1568,9 +1587,9 @@
      "intencion": "fuera_uy"
     },
     {
-     "texto": "negocios digitales colombia s.a.s",
+     "texto": "magíster en negocios digitales y tecnologías emergentes",
      "semillas": [
-      "negocios digitales c"
+      "negocios digitales y"
      ],
      "grupos": [
       "alfabeto"
@@ -1806,22 +1825,6 @@
      "apariciones": 1,
      "instituciones": [],
      "intencion": "fuera_uy"
-    },
-    {
-     "texto": "negocios digitales up plan de estudios",
-     "semillas": [
-      "negocios digitales u"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 550,
-     "apariciones": 1,
-     "instituciones": [],
-     "intencion": "fuera_uy"
     }
    ]
   },
@@ -1831,8 +1834,8 @@
    "color": "#fb923c",
    "quien": "ninguno",
    "que_es": "La frase habla de un negocio propio o de ganar dinero, no de estudiar. Si este grupo pesa mucho, el tema no se entiende como carrera.",
-   "total": 34,
-   "pct": 9.3,
+   "total": 33,
+   "pct": 9.1,
    "sugerencias": [
     {
      "texto": "negocios digitales para adolescentes",
@@ -1851,6 +1854,24 @@
      ],
      "relevancia_max": 1000,
      "apariciones": 3,
+     "instituciones": [],
+     "intencion": "emprender"
+    },
+    {
+     "texto": "negocios digitales desde casa",
+     "semillas": [
+      "negocios digitales",
+      "negocios digitales d"
+     ],
+     "grupos": [
+      "base",
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1251,
+     "apariciones": 2,
      "instituciones": [],
      "intencion": "emprender"
     },
@@ -1875,24 +1896,6 @@
      "intencion": "emprender"
     },
     {
-     "texto": "negocios digitales desde casa",
-     "semillas": [
-      "negocios digitales",
-      "negocios digitales d"
-     ],
-     "grupos": [
-      "base",
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 1250,
-     "apariciones": 2,
-     "instituciones": [],
-     "intencion": "emprender"
-    },
-    {
      "texto": "negocios digitales para ganar dinero",
      "semillas": [
       "negocios digitales g",
@@ -1912,10 +1915,11 @@
     {
      "texto": "negocios digitales rentables 2026",
      "semillas": [
-      "negocios digitales r",
-      "negocios digitales"
+      "negocios digitales",
+      "negocios digitales r"
      ],
      "grupos": [
+      "base",
       "alfabeto",
       "youtube"
      ],
@@ -2371,22 +2375,6 @@
      "intencion": "emprender"
     },
     {
-     "texto": "que son los negocios digitales y como funcionan",
-     "semillas": [
-      "negocios digitales y"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 551,
-     "apariciones": 1,
-     "instituciones": [],
-     "intencion": "emprender"
-    },
-    {
      "texto": "negocios digitales que generan dinero",
      "semillas": [
       "negocios digitales g"
@@ -2500,7 +2488,7 @@
    "quien": "ambos",
    "que_es": "Para qué sirve: trabajo, sueldo, demanda.",
    "total": 22,
-   "pct": 6.0,
+   "pct": 6.1,
    "sugerencias": [
     {
      "texto": "negocios digitales salida laboral",
@@ -3164,26 +3152,6 @@
    "pct": 6.9,
    "sugerencias": [
     {
-     "texto": "negocios digitales udesa plan de estudios",
-     "semillas": [
-      "negocios digitales",
-      "negocios digitales plan de estudios",
-      "negocios digitales u"
-     ],
-     "grupos": [
-      "base",
-      "estudiante",
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 600,
-     "apariciones": 3,
-     "instituciones": [],
-     "intencion": "plan"
-    },
-    {
      "texto": "negocios digitales plan de estudio",
      "semillas": [
       "negocios digitales d",
@@ -3196,24 +3164,6 @@
       "google"
      ],
      "relevancia_max": 1201,
-     "apariciones": 2,
-     "instituciones": [],
-     "intencion": "plan"
-    },
-    {
-     "texto": "negocios digitales de que se trata",
-     "semillas": [
-      "negocios digitales",
-      "negocios digitales d"
-     ],
-     "grupos": [
-      "base",
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 1050,
      "apariciones": 2,
      "instituciones": [],
      "intencion": "plan"
@@ -3237,6 +3187,24 @@
      "intencion": "plan"
     },
     {
+     "texto": "negocios digitales udesa plan de estudios",
+     "semillas": [
+      "negocios digitales plan de estudios",
+      "negocios digitales u"
+     ],
+     "grupos": [
+      "estudiante",
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "plan"
+    },
+    {
      "texto": "negocios digitales malla curricular",
      "semillas": [
       "negocios digitales m"
@@ -3248,6 +3216,22 @@
       "google"
      ],
      "relevancia_max": 1251,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "plan"
+    },
+    {
+     "texto": "negocios digitales de que se trata",
+     "semillas": [
+      "negocios digitales d"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1250,
      "apariciones": 1,
      "instituciones": [],
      "intencion": "plan"
@@ -3686,22 +3670,6 @@
      "intencion": "comparar"
     },
     {
-     "texto": "diferencia entre negocios digitales y marketing digital",
-     "semillas": [
-      "negocios digitales y"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 553,
-     "apariciones": 1,
-     "instituciones": [],
-     "intencion": "comparar"
-    },
-    {
      "texto": "negocios digitales es lo mismo que marketing digital",
      "semillas": [
       "negocios digitales l"
@@ -3713,6 +3681,22 @@
       "google"
      ],
      "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "comparar"
+    },
+    {
+     "texto": "diferencia entre negocios digitales y marketing digital",
+     "semillas": [
+      "negocios digitales y"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
      "apariciones": 1,
      "instituciones": [],
      "intencion": "comparar"
@@ -4004,6 +3988,22 @@
      "intencion": "donde"
     },
     {
+     "texto": "negocios digitales universidades",
+     "semillas": [
+      "negocios digitales u"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "donde"
+    },
+    {
      "texto": "master en negocios digitales ort",
      "semillas": [
       "negocios digitales o"
@@ -4028,22 +4028,6 @@
      ],
      "grupos": [
       "estudiante"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 554,
-     "apariciones": 1,
-     "instituciones": [],
-     "intencion": "donde"
-    },
-    {
-     "texto": "negocios digitales universidades",
-     "semillas": [
-      "negocios digitales u"
-     ],
-     "grupos": [
-      "alfabeto"
      ],
      "fuentes": [
       "google"
@@ -4127,8 +4111,8 @@
    "color": "#7c9cff",
    "quien": "estudiante",
    "que_es": "Qué nivel buscan: carrera, licenciatura, curso, posgrado.",
-   "total": 22,
-   "pct": 6.0,
+   "total": 23,
+   "pct": 6.3,
    "sugerencias": [
     {
      "texto": "negocios digitales carrera",
@@ -4315,7 +4299,7 @@
      "intencion": "formato"
     },
     {
-     "texto": "licenciatura en negocios digitales y marketing",
+     "texto": "licenciatura en negocios digitales y globales",
      "semillas": [
       "negocios digitales y"
      ],
@@ -4358,6 +4342,22 @@
       "google"
      ],
      "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "licenciatura en negocios digitales y marketing",
+     "semillas": [
+      "negocios digitales y"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
      "apariciones": 1,
      "instituciones": [],
      "intencion": "formato"
@@ -4815,7 +4815,7 @@
    "quien": "estudiante",
    "que_es": "Contenido para aprender solo: qué es, libros, herramientas, videos.",
    "total": 14,
-   "pct": 3.8,
+   "pct": 3.9,
    "sugerencias": [
     {
      "texto": "negocios digitales ejemplos",
@@ -5051,8 +5051,8 @@
    "color": "#9aa4b8",
    "quien": "ninguno",
    "que_es": "No coincide con ninguna regla. Si este grupo crece, falta una regla.",
-   "total": 73,
-   "pct": 20.1,
+   "total": 72,
+   "pct": 19.8,
    "sugerencias": [
     {
      "texto": "negocios digitales que hacen",
@@ -5396,22 +5396,6 @@
      "intencion": "otros"
     },
     {
-     "texto": "negocios digitales y consultoria sas",
-     "semillas": [
-      "negocios digitales y"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 559,
-     "apariciones": 1,
-     "instituciones": [],
-     "intencion": "otros"
-    },
-    {
      "texto": "que negocios digitales hay",
      "semillas": [
       "negocios digitales h"
@@ -5460,7 +5444,23 @@
      "intencion": "otros"
     },
     {
-     "texto": "negocios digitales y e commerce",
+     "texto": "negocios digitales udesa",
+     "semillas": [
+      "negocios digitales u"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "negocios digitales y consultoria sas",
      "semillas": [
       "negocios digitales y"
      ],
@@ -5844,22 +5844,6 @@
      "intencion": "otros"
     },
     {
-     "texto": "negocios digitales uees",
-     "semillas": [
-      "negocios digitales u"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 555,
-     "apariciones": 1,
-     "instituciones": [],
-     "intencion": "otros"
-    },
-    {
      "texto": "jbc negocios digitales ltda",
      "semillas": [
       "negocios digitales j"
@@ -6004,7 +5988,7 @@
      "intencion": "otros"
     },
     {
-     "texto": "negocios digitales ucema",
+     "texto": "negocios digitales uees",
      "semillas": [
       "negocios digitales u"
      ],
@@ -6015,22 +5999,6 @@
       "google"
      ],
      "relevancia_max": 553,
-     "apariciones": 1,
-     "instituciones": [],
-     "intencion": "otros"
-    },
-    {
-     "texto": "licenciado en negocios digitales y globales",
-     "semillas": [
-      "negocios digitales y"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 552,
      "apariciones": 1,
      "instituciones": [],
      "intencion": "otros"
@@ -6132,22 +6100,6 @@
      "intencion": "otros"
     },
     {
-     "texto": "isdi escuela de negocios digitales y tecnología",
-     "semillas": [
-      "negocios digitales y"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 550,
-     "apariciones": 1,
-     "instituciones": [],
-     "intencion": "otros"
-    },
-    {
      "texto": "lic en negocios digitales",
      "semillas": [
       "negocios digitales carrera"
@@ -6157,6 +6109,22 @@
      ],
      "fuentes": [
       "youtube"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "licenciado en negocios digitales y globales",
+     "semillas": [
+      "negocios digitales y"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
      ],
      "relevancia_max": 550,
      "apariciones": 1,
@@ -6226,6 +6194,22 @@
      "apariciones": 1,
      "instituciones": [],
      "intencion": "otros"
+    },
+    {
+     "texto": "negocios digitales ucema",
+     "semillas": [
+      "negocios digitales u"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
     }
    ]
   }
@@ -6236,14 +6220,14 @@
    "buscador": "pendiente",
    "consulta": "negocios digitales",
    "estado": "pendiente",
-   "motivo": "sin fuente automática: leer la página de un buscador con un script no es confiable (probado el 2026-11-16). Falta elegir una API oficial con clave gratuita (PLAN.md, fase F4).",
+   "motivo": "sin fuente automática: leer la página de un buscador con un script no es confiable (probado el 2026-11-16). Falta elegir una API oficial con clave gratuita (PLAN.md, fase F5).",
    "resultados": []
   },
   {
    "buscador": "pendiente",
    "consulta": "negocios digitales carrera uruguay",
    "estado": "pendiente",
-   "motivo": "sin fuente automática: leer la página de un buscador con un script no es confiable (probado el 2026-11-16). Falta elegir una API oficial con clave gratuita (PLAN.md, fase F4).",
+   "motivo": "sin fuente automática: leer la página de un buscador con un script no es confiable (probado el 2026-11-16). Falta elegir una API oficial con clave gratuita (PLAN.md, fase F5).",
    "resultados": []
   }
  ],

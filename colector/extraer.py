@@ -9,7 +9,7 @@ Cada respuesta se guarda tal cual llega, antes de interpretarla.
 El top 10 de buscadores NO se extrae acá todavía. El 2026-11-16 se probó leer la página de
 resultados con un script: DuckDuckGo y Brave bloquean (HTTP 202 / 429) y Bing responde 200 con
 resultados sin relación con la consulta. La vía correcta es una API oficial con clave gratuita
-(fase F4 de PLAN.md, pendiente de decisión del PO). Ver extraer_top10().
+(fase F5 de PLAN.md, pendiente de decisión del PO). Ver extraer_top10().
 """
 from __future__ import annotations
 
@@ -84,10 +84,10 @@ def extraer_sugerencias(tema: str, reglas: dict, dir_raw: Path, pausa: float = 0
 def extraer_top10(tema: str) -> list[dict]:
     """Todavía sin fuente automática: devuelve las dos consultas como 'pendiente', con el motivo.
 
-    F4 reemplaza el cuerpo de esta función por la llamada a la API oficial que elija el PO.
+    F5 reemplaza el cuerpo de esta función por la llamada a la API oficial que elija el PO.
     Lo que devuelva pasa igual por validar.validar_top10().
     """
     motivo = ("sin fuente automática: leer la página de un buscador con un script no es confiable "
-              "(probado el 2026-11-16). Falta elegir una API oficial con clave gratuita (PLAN.md, fase F4).")
+              "(probado el 2026-11-16). Falta elegir una API oficial con clave gratuita (PLAN.md, fase F5).")
     return [{"buscador": "pendiente", "consulta": c, "estado": "pendiente", "motivo": motivo, "resultados": None}
             for c in (tema, f"{tema} carrera uruguay")]

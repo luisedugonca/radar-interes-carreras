@@ -6,7 +6,7 @@
 
 | Fecha | Pedido / entregable | Clase | Gate: veredicto | Resultado con el PO | Corrección posterior |
 |---|---|---|---|---|---|
-| 2026-11-16 | Plan + primera versión del radar (F0 a F3) | GRANDE | (se completa al cerrar el Gate) | Pendiente de OK | — |
+| 2026-11-16 | Plan + primera versión del radar (F0 a F3) | GRANDE | Vuelta 1 · ≈101.000 tokens · 16 llamadas · **NO LISTO**: 9 de 10 criterios pasan; falla C5 (dos rangos de `PLAN.md` desactualizados al sumar el cuarto tema). Informe: `revisiones/gate-2026-11-16.md` | Pendiente de OK del PO | Corregido el mismo día: rangos de `PLAN.md`; el modo en vivo clasifica igual que Python (`replaceAll`); «fase F4» → «F5» en el aviso del top 10; «búsquedas distintas» → «frases distintas»; la Action no falla si no hay cambios. No hubo segunda vuelta del Gate: las correcciones se comprobaron con las pruebas y a mano. |
 
 ## Fuentes probadas (2026-11-16)
 
@@ -24,10 +24,13 @@
 
 ## Reglas agregadas a partir de los datos
 
-- 2026-11-16 · La primera corrida de «ciencia de datos» dejó 215 de 508 frases en «Otros». Casi todas eran universidades y ciudades de otros países o temas vinculados (inteligencia artificial, negocios). Se amplió «Fuera de Uruguay» y se creó el grupo **«Temas con los que se combina»**. Con las reglas nuevas: 31 de 506 en «Otros». · origen: corrida de prueba, antes del primer commit.
-- 2026-11-16 · «negocios digitales» trajo frases como «negocios digitales rentables» y «para ganar dinero». Se creó el grupo **«Emprender o ganar dinero»** (34 de 364 frases en ese tema; 0 en «ciencia de datos»). Lectura (Supuesto): «negocios digitales» se entiende en parte como negocio propio y no solo como carrera.
+- 2026-11-16 · La primera corrida de «ciencia de datos» dejó 215 de 508 frases en «Otros». Casi todas eran universidades y ciudades de otros países o temas vinculados (inteligencia artificial, negocios). Se amplió «Fuera de Uruguay» y se creó el grupo **«Temas con los que se combina»**. Con las reglas nuevas, en la corrida vigente: 28 de 506 en «Otros». · origen: corrida de prueba, antes del primer commit.
+- 2026-11-16 · «negocios digitales» trajo frases como «negocios digitales rentables» y «para ganar dinero». Se creó el grupo **«Emprender o ganar dinero»** (33 de 363 frases en ese tema en la corrida vigente; 0 en «ciencia de datos»). Lectura (Supuesto): «negocios digitales» se entiende en parte como negocio propio y no solo como carrera.
 - 2026-11-16 · La regla de relevancia del top 10 (al menos 3 de 10 resultados nombran el tema) nace del caso de Bing.
 
 ## Candidatas a regla general
+
+- Al agregar un dato nuevo, releer las cifras ya escritas en la documentación: quedaron viejas en el plan (lo encontró el Gate).
+- El autocompletar no es estable entre corridas: toda cifra citada en un documento lleva fecha y corrida.
 
 - Probar cada fuente con una consulta real y mirar el contenido, no solo el código de respuesta: un HTTP 200 puede traer basura.

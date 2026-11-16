@@ -1,8 +1,8 @@
 {
- "run_id": "20261116T220452Z_inteligencia-artificial",
- "tema": "inteligencia artificial",
- "inicio_utc": "2026-11-16T22:04:52Z",
- "fin_utc": "2026-11-16T22:05:09Z",
+ "run_id": "20261116T220856Z_analista-de-datos",
+ "tema": "analista de datos",
+ "inicio_utc": "2026-11-16T22:08:56Z",
+ "fin_utc": "2026-11-16T22:09:15Z",
  "reglas_usadas": {
   "version": "2026-11-16b",
   "nota": "Fuente única de reglas. La leen el colector (Python) y el modo en vivo de la web (JavaScript). Los patrones se aplican sobre texto en minúsculas y sin tildes. Gana la primera intención que coincide. La lista crece con el uso: cuando el grupo 'Otros' sube, se agrega una regla y se anota en revisiones/REGISTRO.md.",
@@ -200,12 +200,12 @@
  },
  "conteos": {
   "pedidos_autocompletar": 46,
-  "sugerencias_validas": 616,
+  "sugerencias_validas": 534,
   "sugerencias_rechazadas": 3,
-  "sugerencias_unicas": 583,
+  "sugerencias_unicas": 453,
   "paginas_top10": 2,
   "top10_validas": 0
  },
- "crudo": "data/raw/20261116T220452Z_inteligencia-artificial",
- "salida": "docs/data/consultas/inteligencia-artificial.json"
+ "crudo": "data/raw/20261116T220856Z_analista-de-datos",
+ "salida": "docs/data/consultas/analista-de-datos.json"
 }

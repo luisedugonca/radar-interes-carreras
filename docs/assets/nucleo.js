@@ -17,7 +17,7 @@ const VACIAS = new Set(["de", "del", "la", "el", "los", "las", "en", "y", "para"
 export const tokensTema = (tema) => normalizar(tema).split(" ").filter((t) => !VACIAS.has(t) && t.length >= 3);
 
 export function limpiarTema(crudo) {
-  const tema = String(crudo).replace(/[^0-9A-Za-zÁÉÍÓÚÜÑáéíóúüñ \-]/g, " ").replace(/\s+/g, " ").trim().toLowerCase();
+  const tema = String(crudo).replace(/^\s*consulta\s*:\s*/i, "").replace(/[^0-9A-Za-zÁÉÍÓÚÜÑáéíóúüñ \-]/g, " ").replace(/\s+/g, " ").trim().toLowerCase();
   if (tema.length < 3 || tema.length > 60) throw new Error("Escribí un tema de entre 3 y 60 letras.");
   return tema;
 }
@@ -57,7 +57,8 @@ export async function consultaEnVivo(temaCrudo, reglas, alAvanzar) {
     if (!datos) continue;
     conRespuesta++;
     const tipos = datos[4]?.["google:suggesttype"] ?? [];
-    for (const [i, texto] of (datos[1] ?? []).entries()) {
+    for (const [i, crudo] of (datos[1] ?? []).entries()) {
+      const texto = String(crudo).trim();
       const norm = normalizar(texto);
       const valida = norm && (tipos[i] ?? "QUERY") === "QUERY" && texto.length <= reglas.validacion.largo_maximo && tokens.some((t) => norm.includes(t));
       if (!valida) { rechazadas++; continue; }
@@ -71,7 +72,7 @@ export async function consultaEnVivo(temaCrudo, reglas, alAvanzar) {
   const porIntencion = Object.fromEntries(reglas.intenciones.map((i) => [i.id, []]));
   const inst = {};
   for (const [norm, g] of grupos) {
-    const resto = norm.replace(temaNorm, " ");
+    const resto = norm.replaceAll(temaNorm, " ");
     g.apariciones = g.semillas.length;
     g.instituciones = reglas.instituciones_uy.filter((i) => new RegExp(i.patron).test(resto)).map((i) => i.id);
     g.instituciones.forEach((id) => { inst[id] = (inst[id] ?? 0) + 1; });
@@ -120,7 +121,7 @@ export function consultaAMapa(consulta) {
         { id: `${i.id}-cab`, titulo: i.nombre, icono: String(i.total) },
         ...i.sugerencias.slice(0, 4).map((s, k) => ({
           id: `${i.id}-s${k}`, sugerencia: s, icono: String(s.apariciones),
-          titulo: normalizar(s.texto).replace(temaNorm, "").trim() || s.texto,
+          titulo: normalizar(s.texto).replaceAll(temaNorm, " ").replace(/\s+/g, " ").trim() || s.texto,
         })),
       ],
     }));

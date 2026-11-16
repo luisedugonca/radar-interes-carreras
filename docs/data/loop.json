@@ -6,38 +6,38 @@
   "F3",
   "F4"
  ],
- "actualizado_utc": "2026-11-16T22:00:00Z",
+ "actualizado_utc": "2026-11-16T22:12:00Z",
  "fases": [
   {
    "id": "F0",
    "nombre": "Planificar",
    "hecho_cuando": "PLAN.md existe con objetivo, métrica, fases y «hecho cuando»; pasó por un revisor independiente.",
    "estado": "hecho",
-   "evidencia": "PLAN.md + fila del Gate en revisiones/REGISTRO.md",
+   "evidencia": "PLAN.md revisado por un agente independiente: revisiones/gate-2026-11-16.md (9 de 10 criterios; el fallo se corrigió). Falta el OK del PO sobre el plan.",
    "aprobacion": "N2 · un OK del PO sobre el plan"
   },
   {
    "id": "F1",
    "nombre": "Colector de autocompletar",
    "hecho_cuando": "`python3 -m unittest discover -s tests` pasa y hay 3 temas reales guardados con su crudo y su manifiesto.",
-   "estado": "pendiente",
-   "evidencia": "",
+   "estado": "hecho",
+   "evidencia": "12 pruebas pasan (python3 -m unittest discover -s tests). 4 temas guardados con crudo y manifiesto: docs/data/indice.json.",
    "aprobacion": "N1 · datos, con registro"
   },
   {
    "id": "F2",
    "nombre": "Web: mapa agéntico + radar",
    "hecho_cuando": "Las dos páginas cargan sin errores de consola leyendo solo JSON; el modo en vivo devuelve frases para un tema nuevo.",
-   "estado": "pendiente",
-   "evidencia": "",
+   "estado": "hecho",
+   "evidencia": "index.html y radar.html abiertas en Chrome sin errores de consola. Modo en vivo: «gestión agropecuaria», 17 de 17 consultas respondidas, 26 frases.",
    "aprobacion": "N2 · artefacto local"
   },
   {
    "id": "F3",
    "nombre": "Repo privado + Action de consulta",
    "hecho_cuando": "La Action corre en GitHub con un tema nuevo y deja un commit con los datos.",
-   "estado": "pendiente",
-   "evidencia": "",
+   "estado": "hecho",
+   "evidencia": "Repo privado luisedugonca/radar-interes-carreras. Action corrida 43966453554 con el tema «inteligencia artificial»: commit 2517df7.",
    "aprobacion": "N3 · crear el repo (pedido por el PO)"
   },
   {

@@ -71,8 +71,9 @@
 | La sesión de ejecución improvisa fuera del plan | El prompt de fase trae el «hecho cuando» y prohíbe tocar la fase siguiente | ejecutor |
 | Leer «apariciones» como cantidad de búsquedas | Aviso fijo en la web y en el pedido para el chat; la palabra «volumen» no se usa | orquestador |
 | Google cambia o limita el autocompletar (no es un servicio con contrato) | El crudo queda guardado; la validación rechaza respuestas con otro formato; el fallo se ve en la web | ejecutor |
-| El autocompletar mezcla frases de otros países (medido: 24 % a 40 % según el tema) | Grupo «Fuera de Uruguay» apartado y visible; la lista de reglas crece con el uso | orquestador |
-| Reglas de clasificación incompletas (medido: «Otros» entre 6 % y 29 %) | El % sin clasificar es un indicador de la web; cada regla nueva se anota en el registro | orquestador |
+| El autocompletar cambia de un día a otro (medido: el mismo tema dio 364 y 363 frases en dos corridas con minutos de diferencia) | Cada consulta lleva fecha y corrida; comparar temas solo entre corridas del mismo día | orquestador |
+| El autocompletar mezcla frases de otros países (medido el 2026-11-16 en 4 temas: de 12,8 % a 40,9 %) | Grupo «Fuera de Uruguay» apartado y visible; la lista de reglas crece con el uso | orquestador |
+| Reglas de clasificación incompletas (medido el 2026-11-16 en 4 temas: «Otros» de 5,5 % a 45,2 %; el más alto es «inteligencia artificial», un tema muy amplio) | El % sin clasificar es un indicador de la web; cada regla nueva se anota en el registro | orquestador |
 | Publicar algo sensible de UCU | El repo solo tiene datos públicos de buscadores; nada de Semrush ni de la situación de la carrera. Publicar es N3 | PO |
 | Abuso de la Action con issues de terceros | Solo corren issues de dueños y colaboradores; el tema entra por variable de entorno y se limpia | ejecutor |
 | La IA del chat inventa cantidades | El pedido copiado trae los datos, su fuente y la regla «no inventes cantidades» | orquestador |

@@ -39,7 +39,7 @@
   <div class="sec-t"><span class="n">1</span><h2 id="t-mapa">Qué quiere saber la gente</h2></div>
   <section class="noche" aria-label="Mapa de interés">
     <div class="lienzo">
-      <p class="ayuda-mapa">Cada rama es un tipo de duda. El número del primer punto es cuántas búsquedas distintas tiene; los demás puntos son las que más se repiten.</p>
+      <p class="ayuda-mapa">Cada rama es un tipo de duda. El número del primer punto es cuántas frases distintas tiene; los demás puntos son las que más se repiten.</p>
       <svg id="mapa" class="mapa" aria-label="Mapa radial de búsquedas por intención"></svg>
     </div>
     <aside class="ficha" id="ficha" aria-live="polite"></aside>
@@ -53,7 +53,7 @@
   <div class="sec-t"><span class="n">3</span><h2>Por tipo de duda</h2></div>
   <div class="dos">
     <div class="caja">
-      <h3>Búsquedas distintas por tipo de duda</h3>
+      <h3>Frases distintas por tipo de duda</h3>
       <p class="sub">Tocá una fila para ver las frases.</p>
       <div id="barras"></div>
       <p class="fuente" id="fuente-barras"></p>
@@ -147,7 +147,7 @@ function pintarFicha(rama, nodo) {
   const i = rama.intencion, s = nodo.sugerencia;
   $("ficha").innerHTML = `
     <div class="et" style="color:${rama.color}">${esc(i.nombre)}</div>
-    <h3>${s ? esc(s.texto) : `${num(i.total)} búsquedas distintas`}</h3>
+    <h3>${s ? esc(s.texto) : `${num(i.total)} frases distintas`}</h3>
     <p>${s ? `Apareció en ${num(s.apariciones)} de las consultas que hicimos sobre el tema.` : esc(i.que_es)}</p>
     <dl>
       <dt>Peso</dt><dd>${num(i.pct)} % de las frases del tema</dd>
