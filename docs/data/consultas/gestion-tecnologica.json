@@ -1,0 +1,2888 @@
+{
+ "tema": "gestion tecnologica",
+ "slug": "gestion-tecnologica",
+ "run_id": "20261116T222343Z_gestion-tecnologica",
+ "generado_utc": "2026-11-16T22:23:43Z",
+ "pais": "Uruguay",
+ "reglas_version": "2026-11-16b",
+ "fuentes": [
+  {
+   "id": "google",
+   "nombre": "Autocompletar de Google",
+   "pedidos": 43,
+   "con_respuesta": 43
+  },
+  {
+   "id": "youtube",
+   "nombre": "Autocompletar de YouTube",
+   "pedidos": 3,
+   "con_respuesta": 3
+  }
+ ],
+ "resumen": {
+  "sugerencias_unicas": 150,
+  "intenciones_con_datos": 8,
+  "fuera_de_uruguay": 15,
+  "fuera_de_uruguay_pct": 10.0,
+  "sin_clasificar": 46,
+  "instituciones_uy": [
+   {
+    "id": "UTU",
+    "sugerencias": 6
+   },
+   {
+    "id": "ORT",
+    "sugerencias": 1
+   },
+   {
+    "id": "UTEC",
+    "sugerencias": 1
+   },
+   {
+    "id": "Udelar",
+    "sugerencias": 1
+   }
+  ],
+  "quien_supuesto": {
+   "familia": 6,
+   "estudiante": 71,
+   "ambos": 12,
+   "ninguno": 61
+  },
+  "top10_validos": 0,
+  "top10_rechazados": 0,
+  "top10_pendientes": 2
+ },
+ "intenciones": [
+  {
+   "id": "fuera_uy",
+   "nombre": "Fuera de Uruguay",
+   "color": "#8b93a7",
+   "quien": "ninguno",
+   "que_es": "La sugerencia nombra un país o una universidad de otro país. No es demanda local.",
+   "total": 15,
+   "pct": 10.0,
+   "sugerencias": [
+    {
+     "texto": "gestion tecnologica de las organizaciones uncuyo",
+     "semillas": [
+      "gestion tecnologica",
+      "gestion tecnologica d",
+      "gestion tecnologica l",
+      "gestion tecnologica o"
+     ],
+     "grupos": [
+      "base",
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1250,
+     "apariciones": 4,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "gestion tecnologica y vinculacion tecnm",
+     "semillas": [
+      "gestion tecnologica",
+      "gestion tecnologica t",
+      "gestion tecnologica v",
+      "gestion tecnologica y"
+     ],
+     "grupos": [
+      "base",
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 4,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "gestion tecnologica unicen",
+     "semillas": [
+      "gestion tecnologica",
+      "gestion tecnologica u"
+     ],
+     "grupos": [
+      "base",
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1250,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "magister gestion tecnologica utalca",
+     "semillas": [
+      "gestion tecnologica m",
+      "gestion tecnologica u"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "gestión tecnológica el salvador",
+     "semillas": [
+      "gestion tecnologica e",
+      "gestion tecnologica s"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "gestion tecnologica en venezuela",
+     "semillas": [
+      "gestion tecnologica e",
+      "gestion tecnologica v"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "gestión informática y tecnológica de colombia git sas",
+     "semillas": [
+      "gestion tecnologica d",
+      "gestion tecnologica y"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "gestion tecnologica itm",
+     "semillas": [
+      "gestion tecnologica i"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "plan de estudios gestion tecnologica unicen",
+     "semillas": [
+      "gestion tecnologica plan de estudios"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "magister gestion tecnologica",
+     "semillas": [
+      "gestion tecnologica m"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "gestion tecnologica sena",
+     "semillas": [
+      "gestion tecnologica s"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 562,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "licenciatura en gestion tecnologica unicen",
+     "semillas": [
+      "gestion tecnologica u"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "mit gestion tecnologica",
+     "semillas": [
+      "gestion tecnologica m"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "gestión informática y tecnológica de colombia git",
+     "semillas": [
+      "gestion tecnologica y"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "magister en gestion tecnologica usach",
+     "semillas": [
+      "gestion tecnologica u"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    }
+   ]
+  },
+  {
+   "id": "emprender",
+   "nombre": "Emprender o ganar dinero",
+   "color": "#fb923c",
+   "quien": "ninguno",
+   "que_es": "La frase habla de un negocio propio o de ganar dinero, no de estudiar. Si este grupo pesa mucho, el tema no se entiende como carrera.",
+   "total": 0,
+   "pct": 0.0,
+   "sugerencias": []
+  },
+  {
+   "id": "becas",
+   "nombre": "Becas y ayuda",
+   "color": "#f2b03d",
+   "quien": "familia",
+   "que_es": "Cómo pagarla con ayuda: becas, descuentos, financiación.",
+   "total": 2,
+   "pct": 1.3,
+   "sugerencias": [
+    {
+     "texto": "gestión becas mec",
+     "semillas": [
+      "gestion tecnologica becas"
+     ],
+     "grupos": [
+      "familia"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "becas"
+    },
+    {
+     "texto": "becas gestion",
+     "semillas": [
+      "gestion tecnologica becas"
+     ],
+     "grupos": [
+      "familia"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "becas"
+    }
+   ]
+  },
+  {
+   "id": "costo",
+   "nombre": "Costo",
+   "color": "#f07f4f",
+   "quien": "familia",
+   "que_es": "Cuánto cuesta: precio, cuota, gratis o paga.",
+   "total": 2,
+   "pct": 1.3,
+   "sugerencias": [
+    {
+     "texto": "gestion de costos en la construccion ort",
+     "semillas": [
+      "gestion tecnologica costo"
+     ],
+     "grupos": [
+      "familia"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [
+      "ORT"
+     ],
+     "intencion": "costo"
+    },
+    {
+     "texto": "gestion privada utu",
+     "semillas": [
+      "gestion tecnologica p"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [
+      "UTU"
+     ],
+     "intencion": "costo"
+    }
+   ]
+  },
+  {
+   "id": "salida",
+   "nombre": "Salida laboral",
+   "color": "#3ccf91",
+   "quien": "ambos",
+   "que_es": "Para qué sirve: trabajo, sueldo, demanda.",
+   "total": 5,
+   "pct": 3.3,
+   "sugerencias": [
+    {
+     "texto": "gestion tecnologica sa de cv",
+     "semillas": [
+      "gestion tecnologica c",
+      "gestion tecnologica d",
+      "gestion tecnologica s"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 3,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "gestión tecnológica conceptos y prácticas",
+     "semillas": [
+      "gestion tecnologica c",
+      "gestion tecnologica p",
+      "gestion tecnologica y"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 3,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "licenciatura en gestión tecnológica salida laboral",
+     "semillas": [
+      "gestion tecnologica salida laboral",
+      "gestion tecnologica s"
+     ],
+     "grupos": [
+      "estudiante",
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "cuanto gana un tecnico en gestion humana en uruguay",
+     "semillas": [
+      "cuánto gana gestion tecnologica"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "gestion humana salida laboral",
+     "semillas": [
+      "gestion tecnologica salida laboral"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    }
+   ]
+  },
+  {
+   "id": "modalidad",
+   "nombre": "Modalidad",
+   "color": "#4aa8ff",
+   "quien": "estudiante",
+   "que_es": "Cómo se cursa: a distancia, virtual, semipresencial, horarios.",
+   "total": 0,
+   "pct": 0.0,
+   "sugerencias": []
+  },
+  {
+   "id": "plan",
+   "nombre": "Plan y requisitos",
+   "color": "#a78bfa",
+   "quien": "estudiante",
+   "que_es": "Qué se estudia y qué se pide: materias, duración, requisitos, inscripción.",
+   "total": 0,
+   "pct": 0.0,
+   "sugerencias": []
+  },
+  {
+   "id": "comparar",
+   "nombre": "Comparar y decidir",
+   "color": "#ff6fa3",
+   "quien": "familia",
+   "que_es": "Dudas antes de elegir: mejor opción, opiniones, si vale la pena.",
+   "total": 2,
+   "pct": 1.3,
+   "sugerencias": [
+    {
+     "texto": "opiniones de universidad tecnológica uruguay",
+     "semillas": [
+      "gestion tecnologica vale la pena"
+     ],
+     "grupos": [
+      "familia"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "comparar"
+    },
+    {
+     "texto": "opiniones de universidad tecnológica utec paysandú",
+     "semillas": [
+      "gestion tecnologica vale la pena"
+     ],
+     "grupos": [
+      "familia"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [
+      "UTEC"
+     ],
+     "intencion": "comparar"
+    }
+   ]
+  },
+  {
+   "id": "donde",
+   "nombre": "Dónde estudiar",
+   "color": "#35c9d6",
+   "quien": "ambos",
+   "que_es": "Lugar o institución de Uruguay: universidades y ciudades.",
+   "total": 7,
+   "pct": 4.7,
+   "sugerencias": [
+    {
+     "texto": "gestion contraseña utu",
+     "semillas": [
+      "gestion tecnologica c",
+      "gestion tecnologica k"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 2,
+     "instituciones": [
+      "UTU"
+     ],
+     "intencion": "donde"
+    },
+    {
+     "texto": "oficina de gestion tecnologica universidad del tolima",
+     "semillas": [
+      "gestion tecnologica u"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "donde"
+    },
+    {
+     "texto": "gestion de mantenimiento fing",
+     "semillas": [
+      "gestion tecnologica m"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [
+      "Udelar"
+     ],
+     "intencion": "donde"
+    },
+    {
+     "texto": "gestion previsional utu",
+     "semillas": [
+      "gestion tecnologica p"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [
+      "UTU"
+     ],
+     "intencion": "donde"
+    },
+    {
+     "texto": "gestion y administracion bt utu",
+     "semillas": [
+      "gestion tecnologica b"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [
+      "UTU"
+     ],
+     "intencion": "donde"
+    },
+    {
+     "texto": "gestion y proyectos utu",
+     "semillas": [
+      "gestion tecnologica plan de estudios"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [
+      "UTU"
+     ],
+     "intencion": "donde"
+    },
+    {
+     "texto": "gestion humana utu",
+     "semillas": [
+      "gestion tecnologica h"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [
+      "UTU"
+     ],
+     "intencion": "donde"
+    }
+   ]
+  },
+  {
+   "id": "formato",
+   "nombre": "Tipo de formación",
+   "color": "#7c9cff",
+   "quien": "estudiante",
+   "que_es": "Qué nivel buscan: carrera, licenciatura, curso, posgrado.",
+   "total": 16,
+   "pct": 10.7,
+   "sugerencias": [
+    {
+     "texto": "gestion tecnicatura humana",
+     "semillas": [
+      "gestion tecnologica carrera",
+      "gestion tecnologica a distancia",
+      "gestion tecnologica requisitos",
+      "gestion tecnologica f",
+      "gestion tecnologica j"
+     ],
+     "grupos": [
+      "estudiante",
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 5,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "gestion tecnologica carrera",
+     "semillas": [
+      "gestion tecnologica",
+      "gestion tecnologica c"
+     ],
+     "grupos": [
+      "base",
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "gestion humana tecnicatura",
+     "semillas": [
+      "gestion tecnologica h",
+      "gestion tecnologica t"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "gestion tecnologica ingenieria industrial",
+     "semillas": [
+      "gestion tecnologica i"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 562,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "licenciatura en gestion tecnologica tandil",
+     "semillas": [
+      "gestion tecnologica t"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "maestria gestion tecnologica",
+     "semillas": [
+      "gestion tecnologica m"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "master gestion tecnologica",
+     "semillas": [
+      "gestion tecnologica m"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "doctorado gestion tecnologica innovacion",
+     "semillas": [
+      "gestion tecnologica i"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "licenciatura en gestión tecnológica y analítica de datos",
+     "semillas": [
+      "gestion tecnologica y"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "maestria en gestion tecnologica upb",
+     "semillas": [
+      "gestion tecnologica u"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "especialización tecnológica gestión administrativa",
+     "semillas": [
+      "gestion tecnologica a"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "licenciatura en gestion tecnologica unlam",
+     "semillas": [
+      "gestion tecnologica u"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "licenciatura en gestión tecnológica de las organizaciones",
+     "semillas": [
+      "gestion tecnologica d"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "licenciatura gestion tecnologica",
+     "semillas": [
+      "gestion tecnologica l"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "maestria gestion innovacion tecnologica",
+     "semillas": [
+      "gestion tecnologica i"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "maestría en gestión tecnológica e inteligencia competitiva",
+     "semillas": [
+      "gestion tecnologica e"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "formato"
+    }
+   ]
+  },
+  {
+   "id": "temas",
+   "nombre": "Temas con los que se combina",
+   "color": "#e879f9",
+   "quien": "estudiante",
+   "que_es": "Con qué otros temas se busca junto: inteligencia artificial, negocios, salud. Sirve para decidir el nombre y el foco de una carrera.",
+   "total": 46,
+   "pct": 30.7,
+   "sugerencias": [
+    {
+     "texto": "tecnologa en gestion universitaria",
+     "semillas": [
+      "gestion tecnologica carrera",
+      "gestion tecnologica a distancia",
+      "gestion tecnologica requisitos",
+      "gestion tecnologica plan de estudios",
+      "gestion tecnologica vale la pena"
+     ],
+     "grupos": [
+      "estudiante",
+      "familia"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 5,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "gestion tecnologica e innovacion",
+     "semillas": [
+      "gestion tecnologica",
+      "gestion tecnologica e",
+      "gestion tecnologica i"
+     ],
+     "grupos": [
+      "base",
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1250,
+     "apariciones": 3,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "gestión tecnológica desde el punto de vista de la administración",
+     "semillas": [
+      "gestion tecnologica d",
+      "gestion tecnologica e",
+      "gestion tecnologica p"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 3,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "gestión tecnológica aplicada a las organizaciones pdf",
+     "semillas": [
+      "gestion tecnologica a",
+      "gestion tecnologica l",
+      "gestion tecnologica o"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 559,
+     "apariciones": 3,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "gestión tecnológica aplicada a las organizaciones editorial errepar 2025",
+     "semillas": [
+      "gestion tecnologica a",
+      "gestion tecnologica l",
+      "gestion tecnologica o"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 3,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "gestión tecnológica aplicada a las organizaciones editorial errepar 2025 pdf",
+     "semillas": [
+      "gestion tecnologica a",
+      "gestion tecnologica l",
+      "gestion tecnologica o"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 3,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "gestión tecnológica aplicada a las organizaciones tricoci",
+     "semillas": [
+      "gestion tecnologica a",
+      "gestion tecnologica l",
+      "gestion tecnologica o"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 3,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "gestión tecnológica aplicada a las organizaciones tricoci pdf",
+     "semillas": [
+      "gestion tecnologica a",
+      "gestion tecnologica l",
+      "gestion tecnologica o"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 3,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "gestion tecnologica del deporte",
+     "semillas": [
+      "gestion tecnologica",
+      "gestion tecnologica d"
+     ],
+     "grupos": [
+      "base",
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1251,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "gestion informatica tecnologia fotos",
+     "semillas": [
+      "gestion tecnologica f",
+      "gestion tecnologica i"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "gestion integral tecnologica gac",
+     "semillas": [
+      "gestion tecnologica g",
+      "gestion tecnologica i"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "gestion web g9",
+     "semillas": [
+      "gestion tecnologica g",
+      "gestion tecnologica w"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "tecnico gestion de la informacion",
+     "semillas": [
+      "gestion tecnologica salida laboral",
+      "gestion tecnologica requisitos"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "gestión tecnológica y analítica de datos",
+     "semillas": [
+      "gestion tecnologica a",
+      "gestion tecnologica y"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 561,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "gestion tecnologica en salud",
+     "semillas": [
+      "gestion tecnologica e",
+      "gestion tecnologica s"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 560,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "gestion informatica tecnologica sogamoso",
+     "semillas": [
+      "gestion tecnologica i",
+      "gestion tecnologica s"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 559,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "gestion integral tecnologica gac srl",
+     "semillas": [
+      "gestion tecnologica g",
+      "gestion tecnologica s"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "gestion g9",
+     "semillas": [
+      "gestion tecnologica g",
+      "gestion tecnologica z"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "gestion altech",
+     "semillas": [
+      "gestion tecnologica v",
+      "gestion tecnologica z"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "gestion global tecnologica",
+     "semillas": [
+      "gestion tecnologica g"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "gestion jm",
+     "semillas": [
+      "gestion tecnologica j"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "gestión tecnológica aplicada a las organizaciones",
+     "semillas": [
+      "gestion tecnologica a"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "que es gestion tecnologica del deporte",
+     "semillas": [
+      "qué es gestion tecnologica"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "gestion innovacion tecnologica",
+     "semillas": [
+      "gestion tecnologica i"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 559,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "gestión de obsolescencia tecnológica",
+     "semillas": [
+      "gestion tecnologica o"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "gestión de la innovación tecnológica pdf",
+     "semillas": [
+      "gestion tecnologica p"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "gestión de infraestructura tecnológica",
+     "semillas": [
+      "gestion tecnologica i"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "qué es técnico en gestión humana",
+     "semillas": [
+      "qué es gestion tecnologica"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "gestion de la innovacion y la tecnologia",
+     "semillas": [
+      "gestion tecnologica n"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "gestion humana polo tecnologico",
+     "semillas": [
+      "gestion tecnologica p"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "gestion ot",
+     "semillas": [
+      "gestion tecnologica o"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "gestion telepeaje",
+     "semillas": [
+      "gestion tecnologica v"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "gestion tiempos",
+     "semillas": [
+      "gestion tecnologica t"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "gestion de wis",
+     "semillas": [
+      "gestion tecnologica w"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "gestion fresh",
+     "semillas": [
+      "gestion tecnologica f"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "gestion mem",
+     "semillas": [
+      "gestion tecnologica m"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "gestion tca",
+     "semillas": [
+      "gestion tecnologica t"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "gestion informatica y tecnologia",
+     "semillas": [
+      "gestion tecnologica y"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "gestion jesus",
+     "semillas": [
+      "gestion tecnologica j"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "gestion mtop",
+     "semillas": [
+      "gestion tecnologica m"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "gestion no cede",
+     "semillas": [
+      "gestion tecnologica n"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "gestion ott",
+     "semillas": [
+      "gestion tecnologica o"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "gestion ultimate",
+     "semillas": [
+      "gestion tecnologica x"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "gestion y administracion bt",
+     "semillas": [
+      "gestion tecnologica b"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "gestión de la seguridad y salud ocup",
+     "semillas": [
+      "gestion tecnologica salida laboral"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "tecnicas de gestion de la informacion",
+     "semillas": [
+      "qué es gestion tecnologica"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    }
+   ]
+  },
+  {
+   "id": "aprender",
+   "nombre": "Aprender por su cuenta",
+   "color": "#c9d451",
+   "quien": "estudiante",
+   "que_es": "Contenido para aprender solo: qué es, libros, herramientas, videos.",
+   "total": 9,
+   "pct": 6.0,
+   "sugerencias": [
+    {
+     "texto": "gestión tecnológica hospitalaria un enfoque sistémico pdf",
+     "semillas": [
+      "gestion tecnologica h",
+      "gestion tecnologica s",
+      "gestion tecnologica u"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 3,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "gestion tecnologica que es",
+     "semillas": [
+      "gestion tecnologica e",
+      "gestion tecnologica q"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1250,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "gestion tecnologica en ingles",
+     "semillas": [
+      "gestion tecnologica e",
+      "gestion tecnologica i"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "gestión tecnológica ejemplos",
+     "semillas": [
+      "gestion tecnologica e"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "gestión tecnológica pdf",
+     "semillas": [
+      "gestion tecnologica p"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "que es gestion tecnologica",
+     "semillas": [
+      "qué es gestion tecnologica"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "gestion tecnologica definicion",
+     "semillas": [
+      "gestion tecnologica d"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "que es la gestión tecnológica en una empresa",
+     "semillas": [
+      "qué es gestion tecnologica"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "que es lo que se gestiona",
+     "semillas": [
+      "qué es gestion tecnologica"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    }
+   ]
+  },
+  {
+   "id": "otros",
+   "nombre": "Otros",
+   "color": "#9aa4b8",
+   "quien": "ninguno",
+   "que_es": "No coincide con ninguna regla. Si este grupo crece, falta una regla.",
+   "total": 46,
+   "pct": 30.7,
+   "sugerencias": [
+    {
+     "texto": "gestion tecnologica fq",
+     "semillas": [
+      "gestion tecnologica",
+      "gestion tecnologica carrera",
+      "gestion tecnologica salida laboral",
+      "gestion tecnologica a distancia",
+      "gestion tecnologica requisitos",
+      "gestion tecnologica plan de estudios",
+      "gestion tecnologica costo",
+      "gestion tecnologica becas",
+      "gestion tecnologica vale la pena",
+      "gestion tecnologica b",
+      "gestion tecnologica c",
+      "gestion tecnologica f",
+      "gestion tecnologica g",
+      "gestion tecnologica h",
+      "gestion tecnologica j",
+      "gestion tecnologica k",
+      "gestion tecnologica m",
+      "gestion tecnologica n",
+      "gestion tecnologica o",
+      "gestion tecnologica p",
+      "gestion tecnologica q",
+      "gestion tecnologica t",
+      "gestion tecnologica v",
+      "gestion tecnologica w",
+      "gestion tecnologica x",
+      "gestion tecnologica z"
+     ],
+     "grupos": [
+      "base",
+      "estudiante",
+      "familia",
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 26,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "gestion tecnologica profesional y ambiental sas",
+     "semillas": [
+      "gestion tecnologica a",
+      "gestion tecnologica p",
+      "gestion tecnologica s",
+      "gestion tecnologica y"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 4,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "gestion tecnologica oscar castellanos",
+     "semillas": [
+      "gestion tecnologica",
+      "gestion tecnologica c",
+      "gestion tecnologica o"
+     ],
+     "grupos": [
+      "base",
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1250,
+     "apariciones": 3,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "gestion tecnologica y vinculacion",
+     "semillas": [
+      "gestion tecnologica",
+      "gestion tecnologica v",
+      "gestion tecnologica y"
+     ],
+     "grupos": [
+      "base",
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1250,
+     "apariciones": 3,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "gestión tecnológica del equipamiento biomédico",
+     "semillas": [
+      "gestion tecnologica b",
+      "gestion tecnologica d",
+      "gestion tecnologica e"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 3,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "gestión tecnológica de las organizaciones",
+     "semillas": [
+      "gestion tecnologica d",
+      "gestion tecnologica l",
+      "gestion tecnologica o"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 3,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "gestión tecnológica y contable s.a.s",
+     "semillas": [
+      "gestion tecnologica c",
+      "gestion tecnologica s",
+      "gestion tecnologica y"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 3,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "gestion tecnologica y desarrollo empresarial sl",
+     "semillas": [
+      "gestion tecnologica d",
+      "gestion tecnologica s",
+      "gestion tecnologica y"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 560,
+     "apariciones": 3,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "gestión tecnológica de un enfoque tradicional a la inteligencia",
+     "semillas": [
+      "gestion tecnologica d",
+      "gestion tecnologica t",
+      "gestion tecnologica u"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 559,
+     "apariciones": 3,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "gestión tecnológica y desarrollo sas sigla geted s.a.s",
+     "semillas": [
+      "gestion tecnologica d",
+      "gestion tecnologica s",
+      "gestion tecnologica y"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 559,
+     "apariciones": 3,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "gestión tecnológica de la información",
+     "semillas": [
+      "gestion tecnologica d",
+      "gestion tecnologica i",
+      "gestion tecnologica l"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 3,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "gestión tecnológica hospitalaria un enfoque sistémico",
+     "semillas": [
+      "gestion tecnologica h",
+      "gestion tecnologica s",
+      "gestion tecnologica u"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 3,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "centro gestion tecnologica de servicios",
+     "semillas": [
+      "gestion tecnologica c",
+      "gestion tecnologica d",
+      "gestion tecnologica s"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 3,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "gestion tecnologica usc",
+     "semillas": [
+      "gestion tecnologica",
+      "gestion tecnologica u"
+     ],
+     "grupos": [
+      "base",
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1251,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "gestion tecnologica castellanos",
+     "semillas": [
+      "gestion tecnologica",
+      "gestion tecnologica c"
+     ],
+     "grupos": [
+      "base",
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1250,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "gestion tecnologica unad",
+     "semillas": [
+      "gestion tecnologica",
+      "gestion tecnologica u"
+     ],
+     "grupos": [
+      "base",
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 650,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "gestion tecnologica hospitalaria",
+     "semillas": [
+      "gestion tecnologica",
+      "gestion tecnologica h"
+     ],
+     "grupos": [
+      "base",
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "gestion tecnologica tsjcdmx",
+     "semillas": [
+      "gestion tecnologica",
+      "gestion tecnologica t"
+     ],
+     "grupos": [
+      "base",
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "nsi gestion tecnologica integral",
+     "semillas": [
+      "gestion tecnologica i",
+      "gestion tecnologica n"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "gestion tecnologica segun autores",
+     "semillas": [
+      "gestion tecnologica a",
+      "gestion tecnologica s"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "gestión tecnológica en las escuelas del pensamiento económico",
+     "semillas": [
+      "gestion tecnologica e",
+      "gestion tecnologica l"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 561,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "gestión tecnológica en la empresa",
+     "semillas": [
+      "gestion tecnologica e",
+      "gestion tecnologica l"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 560,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "gestión tecnológica del conocimiento",
+     "semillas": [
+      "gestion tecnologica c",
+      "gestion tecnologica d"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "ith gestion tecnologica y vinculacion",
+     "semillas": [
+      "gestion tecnologica v",
+      "gestion tecnologica y"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "gestion tecnologica almeria",
+     "semillas": [
+      "gestion tecnologica a"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "gestion tecnologica uis",
+     "semillas": [
+      "gestion tecnologica u"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "gestion tecnologica integral",
+     "semillas": [
+      "gestion tecnologica i"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "gestion tecnologica tandil",
+     "semillas": [
+      "gestion tecnologica t"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "gestion tecnologica upb",
+     "semillas": [
+      "gestion tecnologica u"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "gestión tecnológica características",
+     "semillas": [
+      "gestion tecnologica c"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 559,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "gestion tecnologica concepto",
+     "semillas": [
+      "gestion tecnologica c"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "gestion tecnologica en las organizaciones",
+     "semillas": [
+      "gestion tecnologica e"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "edificio de gestión tecnologica vinculación",
+     "semillas": [
+      "gestion tecnologica v"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "gestion tecnologica empresarial",
+     "semillas": [
+      "gestion tecnologica e"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "manual de gestión tecnológica para pymes mexicanas",
+     "semillas": [
+      "gestion tecnologica p"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "dirección ejecutiva de gestión tecnológica tsjdf",
+     "semillas": [
+      "gestion tecnologica t"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "gestión tecnológica educativa",
+     "semillas": [
+      "gestion tecnologica e"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "inversiones y gestion tecnologica vertica limitada",
+     "semillas": [
+      "gestion tecnologica v"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "departamento de gestión tecnológica y vinculación",
+     "semillas": [
+      "gestion tecnologica y"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "importancia de la gestión tecnológica para las empresas",
+     "semillas": [
+      "gestion tecnologica p"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "gestion tecnologica y contable sas",
+     "semillas": [
+      "gestion tecnologica"
+     ],
+     "grupos": [
+      "base"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "edificio de gestion tecnologica y vinculacion",
+     "semillas": [
+      "gestion tecnologica y"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "gti solutions gestion tecnologica ingenieril",
+     "semillas": [
+      "gestion tecnologica i"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "centro de gestion tecnologica una",
+     "semillas": [
+      "gestion tecnologica u"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "la gestion tecnologica",
+     "semillas": [
+      "gestion tecnologica l"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "gestionarte prevencionistas",
+     "semillas": [
+      "gestion tecnologica v"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    }
+   ]
+  }
+ ],
+ "dominios": [],
+ "top10": [
+  {
+   "buscador": "pendiente",
+   "consulta": "gestion tecnologica",
+   "estado": "pendiente",
+   "motivo": "sin fuente automática: leer la página de un buscador con un script no es confiable (probado el 2026-11-16). Falta elegir una API oficial con clave gratuita (PLAN.md, fase F5).",
+   "resultados": []
+  },
+  {
+   "buscador": "pendiente",
+   "consulta": "gestion tecnologica carrera uruguay",
+   "estado": "pendiente",
+   "motivo": "sin fuente automática: leer la página de un buscador con un script no es confiable (probado el 2026-11-16). Falta elegir una API oficial con clave gratuita (PLAN.md, fase F5).",
+   "resultados": []
+  }
+ ],
+ "rechazadas": {
+  "total": 13,
+  "por_motivo": {
+   "no nombra el tema": 13
+  },
+  "ejemplos": [
+   {
+    "semilla": "qué es gestion tecnologica",
+    "grupo": "preguntas",
+    "fuente": "google",
+    "texto": "qué es tech uruguay",
+    "relevancia": 552,
+    "motivo": "no nombra el tema"
+   },
+   {
+    "semilla": "cuánto gana gestion tecnologica",
+    "grupo": "preguntas",
+    "fuente": "google",
+    "texto": "cuanto gana un tecnologo informatico",
+    "relevancia": 600,
+    "motivo": "no nombra el tema"
+   },
+   {
+    "semilla": "cuánto gana gestion tecnologica",
+    "grupo": "preguntas",
+    "fuente": "google",
+    "texto": "cuanto gana un ingeniero tecnologico en uruguay",
+    "relevancia": 551,
+    "motivo": "no nombra el tema"
+   },
+   {
+    "semilla": "cuánto gana gestion tecnologica",
+    "grupo": "preguntas",
+    "fuente": "google",
+    "texto": "cuanto gana un tecnologo en administracion y contabilidad",
+    "relevancia": 550,
+    "motivo": "no nombra el tema"
+   },
+   {
+    "semilla": "gestion tecnologica plan de estudios",
+    "grupo": "estudiante",
+    "fuente": "google",
+    "texto": "dgetp planes y programas",
+    "relevancia": 550,
+    "motivo": "no nombra el tema"
+   },
+   {
+    "semilla": "gestion tecnologica costo",
+    "grupo": "familia",
+    "fuente": "google",
+    "texto": "gecos transformación digital",
+    "relevancia": 600,
+    "motivo": "no nombra el tema"
+   },
+   {
+    "semilla": "gestion tecnologica c",
+    "grupo": "alfabeto",
+    "fuente": "google",
+    "texto": "gecos transformación digital",
+    "relevancia": 550,
+    "motivo": "no nombra el tema"
+   },
+   {
+    "semilla": "gestion tecnologica g",
+    "grupo": "alfabeto",
+    "fuente": "google",
+    "texto": "getech informatica",
+    "relevancia": 550,
+    "motivo": "no nombra el tema"
+   },
+   {
+    "semilla": "gestion tecnologica k",
+    "grupo": "alfabeto",
+    "fuente": "google",
+    "texto": "gecos transformación digital",
+    "relevancia": 550,
+    "motivo": "no nombra el tema"
+   },
+   {
+    "semilla": "gestion tecnologica w",
+    "grupo": "alfabeto",
+    "fuente": "google",
+    "texto": "tecnologia wyt",
+    "relevancia": 550,
+    "motivo": "no nombra el tema"
+   },
+   {
+    "semilla": "gestion tecnologica x",
+    "grupo": "alfabeto",
+    "fuente": "google",
+    "texto": "gecos transformación digital",
+    "relevancia": 600,
+    "motivo": "no nombra el tema"
+   },
+   {
+    "semilla": "gestion tecnologica z",
+    "grupo": "alfabeto",
+    "fuente": "google",
+    "texto": "gecos transformación digital",
+    "relevancia": 600,
+    "motivo": "no nombra el tema"
+   },
+   {
+    "semilla": "estudiar gestion tecnologica",
+    "grupo": "youtube",
+    "fuente": "youtube",
+    "texto": "estudiar con manu",
+    "relevancia": 600,
+    "motivo": "no nombra el tema"
+   }
+  ]
+ },
+ "enlaces": {
+  "trends": "https://trends.google.com/trends/explore?geo=UY&date=today%205-y&q=gestion%20tecnologica",
+  "google": "https://www.google.com/search?gl=uy&hl=es&q=gestion%20tecnologica",
+  "bing": "https://www.bing.com/search?cc=UY&setlang=es&q=gestion%20tecnologica",
+  "duckduckgo": "https://duckduckgo.com/?kl=uy-es&q=gestion%20tecnologica",
+  "youtube": "https://www.youtube.com/results?search_query=gestion%20tecnologica"
+ }
+}

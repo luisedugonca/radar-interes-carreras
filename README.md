@@ -6,6 +6,10 @@ Una herramienta para responder, sin pagar datos, una pregunta de oferta académi
 
 Sirve para decidir cómo nombrar una carrera nueva, qué dudas tiene que responder su página y con qué temas conviene combinarla. Es un proyecto del Taller Integrador (UCU), de Luis Gonçalvez y Victoria Illa.
 
+**Verla funcionando:** https://luisedugonca.github.io/radar-interes-carreras/ — el mapa de cómo trabajamos y el radar, sin instalar nada.
+
+**Usarla desde un chat** (Claude, ChatGPT o Gemini): [`chat/README.md`](chat/README.md).
+
 ## Qué hace
 
 1. **Mide.** Para un tema (por ejemplo «analista de datos»), pregunta al autocompletar de Google y de YouTube qué frases propone, con 46 consultas distintas: el tema solo, con cada letra del abecedario, como pregunta, y con dudas típicas de estudiantes y de familias.
@@ -38,7 +42,11 @@ python3 -m http.server 8000 --directory docs
 
 **Llevarlo a un chat de IA**
 
-En el radar, sección 4, «Copiar pedido para el chat». Pegalo en Claude, ChatGPT o Gemini. Para un chat que guíe todo el levantamiento, usá `chat/INSTRUCCIONES_CHAT.md` como instrucciones del proyecto.
+En el radar, sección 4, «Copiar pedido para el chat». Pegalo en Claude, ChatGPT o Gemini. Para dejar un chat armado y compartible (un artefacto de Claude, un GPT o un Gem), seguí [`chat/README.md`](chat/README.md).
+
+**Trabajar en el repositorio con un agente de IA**
+
+Las reglas están en `CLAUDE.md` y valen para cualquier agente. `AGENTS.md` y `GEMINI.md` apuntan ahí, para Codex, ChatGPT, Cursor y Gemini.
 
 ## Cómo está hecho
 

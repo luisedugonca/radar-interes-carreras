@@ -47,12 +47,14 @@ El silencio nunca es aprobación. Ante la duda entre dos niveles, el más alto.
 | Reglas de clasificación y semillas | `docs/data/reglas.json` |
 | Cómo se corre todo | `README.md` |
 | El pedido de la próxima fase | `prompts/` |
-| Instrucciones para un chat que guíe el levantamiento | `chat/INSTRUCCIONES_CHAT.md` |
+| Usar el radar desde un chat (Claude, ChatGPT, Gemini) | `chat/README.md` |
+| Instrucciones para agentes que no son Claude | `AGENTS.md`, `GEMINI.md` |
 
 ## Comandos
 
 ```bash
 python3 -m unittest discover -s tests -v      # pruebas
 python3 colector/run.py "ciencia de datos"    # una consulta (crudo, datos y manifiesto)
+python3 colector/paquete_chat.py              # regenerar el paquete para chats
 python3 -m http.server 8000 --directory docs  # ver la web en http://localhost:8000
 ```

@@ -1,0 +1,46 @@
+openapi: 3.1.0
+info:
+  title: Radar de interés por carreras
+  description: Datos medidos del autocompletar de Google y YouTube para Uruguay. Son frases distintas, no cantidad de búsquedas.
+  version: "1.0"
+servers:
+  - url: https://luisedugonca.github.io/radar-interes-carreras
+paths:
+  /data/indice.json:
+    get:
+      operationId: listarTemas
+      summary: Lista los temas medidos, con su identificador (slug) y fecha.
+      responses:
+        "200":
+          description: Lista de temas
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  consultas:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        tema: { type: string }
+                        slug: { type: string }
+                        generado_utc: { type: string }
+                        sugerencias_unicas: { type: integer }
+  /data/consultas/{slug}.json:
+    get:
+      operationId: leerTema
+      summary: Devuelve las frases de un tema, agrupadas por tipo de duda.
+      parameters:
+        - name: slug
+          in: path
+          required: true
+          description: Identificador del tema, tal como figura en listarTemas (por ejemplo «analista-de-datos»).
+          schema: { type: string }
+      responses:
+        "200":
+          description: Consulta guardada
+          content:
+            application/json:
+              schema:
+                type: object

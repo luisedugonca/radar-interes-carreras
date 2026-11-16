@@ -1,11 +1,25 @@
 {
   "consultas": [
     {
+      "tema": "analisis de datos",
+      "slug": "analisis-de-datos",
+      "run_id": "20261116T222501Z_analisis-de-datos",
+      "generado_utc": "2026-11-16T22:25:01Z",
+      "sugerencias_unicas": 499
+    },
+    {
       "tema": "analista de datos",
       "slug": "analista-de-datos",
       "run_id": "20261116T220856Z_analista-de-datos",
       "generado_utc": "2026-11-16T22:08:56Z",
       "sugerencias_unicas": 453
+    },
+    {
+      "tema": "business analytics",
+      "slug": "business-analytics",
+      "run_id": "20261116T222442Z_business-analytics",
+      "generado_utc": "2026-11-16T22:24:42Z",
+      "sugerencias_unicas": 419
     },
     {
       "tema": "ciencia de datos",
@@ -15,6 +29,20 @@
       "sugerencias_unicas": 506
     },
     {
+      "tema": "datos y negocios",
+      "slug": "datos-y-negocios",
+      "run_id": "20261116T222422Z_datos-y-negocios",
+      "generado_utc": "2026-11-16T22:24:22Z",
+      "sugerencias_unicas": 43
+    },
+    {
+      "tema": "gestion tecnologica",
+      "slug": "gestion-tecnologica",
+      "run_id": "20261116T222343Z_gestion-tecnologica",
+      "generado_utc": "2026-11-16T22:23:43Z",
+      "sugerencias_unicas": 150
+    },
+    {
       "tema": "inteligencia artificial",
       "slug": "inteligencia-artificial",
       "run_id": "20261116T220915Z_inteligencia-artificial",
@@ -22,12 +50,26 @@
       "sugerencias_unicas": 584
     },
     {
+      "tema": "licenciatura en negocios digitales",
+      "slug": "licenciatura-en-negocios-digitales",
+      "run_id": "20261116T222324Z_licenciatura-en-negocios-digitales",
+      "generado_utc": "2026-11-16T22:23:24Z",
+      "sugerencias_unicas": 105
+    },
+    {
       "tema": "negocios digitales",
       "slug": "negocios-digitales",
       "run_id": "20261116T220838Z_negocios-digitales",
       "generado_utc": "2026-11-16T22:08:38Z",
       "sugerencias_unicas": 363
+    },
+    {
+      "tema": "transformacion digital",
+      "slug": "transformacion-digital",
+      "run_id": "20261116T222403Z_transformacion-digital",
+      "generado_utc": "2026-11-16T22:24:03Z",
+      "sugerencias_unicas": 357
     }
   ],
-  "actualizado_utc": "2026-11-16T22:09:15Z"
+  "actualizado_utc": "2026-11-16T22:25:01Z"
 }

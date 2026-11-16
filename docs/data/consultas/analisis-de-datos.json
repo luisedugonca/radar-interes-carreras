@@ -1,0 +1,8381 @@
+{
+ "tema": "analisis de datos",
+ "slug": "analisis-de-datos",
+ "run_id": "20261116T222501Z_analisis-de-datos",
+ "generado_utc": "2026-11-16T22:25:01Z",
+ "pais": "Uruguay",
+ "reglas_version": "2026-11-16b",
+ "fuentes": [
+  {
+   "id": "google",
+   "nombre": "Autocompletar de Google",
+   "pedidos": 43,
+   "con_respuesta": 43
+  },
+  {
+   "id": "youtube",
+   "nombre": "Autocompletar de YouTube",
+   "pedidos": 3,
+   "con_respuesta": 3
+  }
+ ],
+ "resumen": {
+  "sugerencias_unicas": 499,
+  "intenciones_con_datos": 10,
+  "fuera_de_uruguay": 96,
+  "fuera_de_uruguay_pct": 19.2,
+  "sin_clasificar": 156,
+  "instituciones_uy": [
+   {
+    "id": "Udelar",
+    "sugerencias": 4
+   },
+   {
+    "id": "ORT",
+    "sugerencias": 1
+   },
+   {
+    "id": "UCU",
+    "sugerencias": 1
+   },
+   {
+    "id": "UDE",
+    "sugerencias": 1
+   },
+   {
+    "id": "UM",
+    "sugerencias": 1
+   },
+   {
+    "id": "UTEC",
+    "sugerencias": 1
+   },
+   {
+    "id": "UTU",
+    "sugerencias": 1
+   }
+  ],
+  "quien_supuesto": {
+   "familia": 35,
+   "estudiante": 153,
+   "ambos": 57,
+   "ninguno": 254
+  },
+  "top10_validos": 0,
+  "top10_rechazados": 0,
+  "top10_pendientes": 2
+ },
+ "intenciones": [
+  {
+   "id": "fuera_uy",
+   "nombre": "Fuera de Uruguay",
+   "color": "#8b93a7",
+   "quien": "ninguno",
+   "que_es": "La sugerencia nombra un país o una universidad de otro país. No es demanda local.",
+   "total": 96,
+   "pct": 19.2,
+   "sugerencias": [
+    {
+     "texto": "analisis de datos sena",
+     "semillas": [
+      "analisis de datos",
+      "analisis de datos s"
+     ],
+     "grupos": [
+      "base",
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1250,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "analisis de datos uba",
+     "semillas": [
+      "analisis de datos",
+      "analisis de datos u"
+     ],
+     "grupos": [
+      "base",
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "analisis de datos uba plan de estudios",
+     "semillas": [
+      "analisis de datos plan de estudios",
+      "analisis de datos u"
+     ],
+     "grupos": [
+      "estudiante",
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "analisis de datos uba a distancia",
+     "semillas": [
+      "analisis de datos a distancia",
+      "analisis de datos u"
+     ],
+     "grupos": [
+      "estudiante",
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 560,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "analisis de datos nota de corte",
+     "semillas": [
+      "analisis de datos n"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1250,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "analisis de datos barranquilla",
+     "semillas": [
+      "analisis de datos b"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1150,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "analisis de datos rosario",
+     "semillas": [
+      "analisis de datos r"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1050,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "analisis de datos medellin",
+     "semillas": [
+      "analisis de datos m"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 750,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "analisis de datos javeriana",
+     "semillas": [
+      "analisis de datos j"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 604,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "analisis de datos bogota",
+     "semillas": [
+      "analisis de datos b"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "analisis de datos konrad lorenz",
+     "semillas": [
+      "analisis de datos k"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "analisis de datos tec",
+     "semillas": [
+      "analisis de datos t"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "analisis de datos uba opiniones",
+     "semillas": [
+      "analisis de datos opiniones"
+     ],
+     "grupos": [
+      "familia"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "analisis de datos zaragoza",
+     "semillas": [
+      "analisis de datos z"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "estudiar analisis de datos en el sena",
+     "semillas": [
+      "estudiar analisis de datos"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "tripleten analisis de datos costo",
+     "semillas": [
+      "analisis de datos costo"
+     ],
+     "grupos": [
+      "familia"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "analisis de datos itla",
+     "semillas": [
+      "analisis de datos i"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "analisis de datos libro uned",
+     "semillas": [
+      "analisis de datos l"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "analisis de datos uned",
+     "semillas": [
+      "analisis de datos u"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "análisis de datos carrera uba",
+     "semillas": [
+      "analisis de datos carrera"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "donde estudiar analisis de datos en argentina",
+     "semillas": [
+      "dónde estudiar analisis de datos"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "gestion y analisis de datos uba plan de estudios",
+     "semillas": [
+      "analisis de datos plan de estudios"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "analisis de datos carrera utn",
+     "semillas": [
+      "analisis de datos carrera"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 562,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "estudiar analisis de datos medellin",
+     "semillas": [
+      "estudiar analisis de datos"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 562,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "donde estudiar analisis de datos en medellin",
+     "semillas": [
+      "dónde estudiar analisis de datos"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 561,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "estudiar analisis de datos en la uba",
+     "semillas": [
+      "estudiar analisis de datos"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 561,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "analisis de datos utn",
+     "semillas": [
+      "analisis de datos u"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 560,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "donde estudiar analisis de datos en bogota",
+     "semillas": [
+      "dónde estudiar analisis de datos"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 560,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "estudiar analisis de datos en argentina",
+     "semillas": [
+      "estudiar analisis de datos"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 560,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "tecnicatura gestion y analisis de datos uba plan de estudios",
+     "semillas": [
+      "analisis de datos plan de estudios"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 560,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "analisis de datos henry",
+     "semillas": [
+      "analisis de datos h"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 559,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "analisis de datos valencia",
+     "semillas": [
+      "analisis de datos v"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 559,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "donde estudiar analisis de datos en peru",
+     "semillas": [
+      "dónde estudiar analisis de datos"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 559,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "especializacion analisis de datos konrad lorenz",
+     "semillas": [
+      "analisis de datos k"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 559,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "estudiar analisis de datos en colombia",
+     "semillas": [
+      "estudiar analisis de datos"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 559,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "licenciatura en análisis y gestión de datos unsl plan de estudios",
+     "semillas": [
+      "analisis de datos plan de estudios"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 559,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "analisis de datos carrera mar del plata",
+     "semillas": [
+      "analisis de datos carrera"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "analisis de datos itm",
+     "semillas": [
+      "analisis de datos i"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "analisis de datos queretaro",
+     "semillas": [
+      "analisis de datos q"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "analisis de datos tripleten",
+     "semillas": [
+      "analisis de datos t"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "analisis de datos venezuela",
+     "semillas": [
+      "analisis de datos v"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "donde estudiar analisis de datos en costa rica",
+     "semillas": [
+      "dónde estudiar analisis de datos"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "analisis de datos en la uba",
+     "semillas": [
+      "analisis de datos e"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "analisis de datos harvard",
+     "semillas": [
+      "analisis de datos h"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "analisis de datos ipn",
+     "semillas": [
+      "analisis de datos i"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "analisis de datos universidad de san luis",
+     "semillas": [
+      "analisis de datos u"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "donde estudiar analisis de datos en chile",
+     "semillas": [
+      "dónde estudiar analisis de datos"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "maestria en analisis de datos konrad lorenz",
+     "semillas": [
+      "analisis de datos k"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "analisis de datos anahuac",
+     "semillas": [
+      "analisis de datos a"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "analisis de datos la salle",
+     "semillas": [
+      "analisis de datos l"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "analisis de datos tec de monterrey",
+     "semillas": [
+      "analisis de datos t"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "analisis de datos ypf",
+     "semillas": [
+      "analisis de datos y"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "becas analisis de datos colombia",
+     "semillas": [
+      "analisis de datos becas"
+     ],
+     "grupos": [
+      "familia"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "cuanto gana un tecnico en analisis de datos en chile",
+     "semillas": [
+      "cuánto gana analisis de datos"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "donde estudiar análisis de datos en colombia",
+     "semillas": [
+      "dónde estudiar analisis de datos"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "estudiar analisis de datos en españa",
+     "semillas": [
+      "estudiar analisis de datos"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "master analisis de datos zaragoza",
+     "semillas": [
+      "analisis de datos z"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "analisis de datos carrera costa rica",
+     "semillas": [
+      "analisis de datos carrera"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "analisis de datos psicologia uned",
+     "semillas": [
+      "analisis de datos p"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "analisis de datos republica dominicana",
+     "semillas": [
+      "analisis de datos r"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "analisis de datos unsl",
+     "semillas": [
+      "analisis de datos u"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "cuanto gana un tecnico en analisis de datos en costa rica",
+     "semillas": [
+      "cuánto gana analisis de datos"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "donde estudiar análisis de datos en venezuela",
+     "semillas": [
+      "dónde estudiar analisis de datos"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "analisis de datos lima",
+     "semillas": [
+      "analisis de datos l"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "analisis de datos unlp",
+     "semillas": [
+      "analisis de datos u"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "analisis de datos.quito",
+     "semillas": [
+      "analisis de datos q"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "donde estudiar analisis de datos en barranquilla",
+     "semillas": [
+      "dónde estudiar analisis de datos"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "estudiar analisis de datos en venezuela",
+     "semillas": [
+      "estudiar analisis de datos"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "tecnicatura en analisis de datos uba opiniones",
+     "semillas": [
+      "analisis de datos opiniones"
+     ],
+     "grupos": [
+      "familia"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "analisis de datos andes",
+     "semillas": [
+      "analisis de datos a"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "analisis de datos carrera rosario",
+     "semillas": [
+      "analisis de datos carrera"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "analisis de datos honduras",
+     "semillas": [
+      "analisis de datos h"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "analisis de datos los andes",
+     "semillas": [
+      "analisis de datos l"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "analisis de datos unc",
+     "semillas": [
+      "analisis de datos u"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "estudiar analisis de datos bogota",
+     "semillas": [
+      "estudiar analisis de datos"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "maestria analisis de datos javeriana",
+     "semillas": [
+      "analisis de datos j"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "universidad de san luis analisis de datos a distancia",
+     "semillas": [
+      "analisis de datos a distancia"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "analisis de datos carrera colombia",
+     "semillas": [
+      "analisis de datos carrera"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "analisis de datos guatemala",
+     "semillas": [
+      "analisis de datos g"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "analisis de datos nicaragua",
+     "semillas": [
+      "analisis de datos n"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "analisis de datos san luis",
+     "semillas": [
+      "analisis de datos s"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "analisis de datos unam",
+     "semillas": [
+      "analisis de datos u"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "diplomado analisis de datos javeriana",
+     "semillas": [
+      "analisis de datos j"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "donde estudiar analisis de datos en mexico",
+     "semillas": [
+      "dónde estudiar analisis de datos"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "analisis de datos carrera españa",
+     "semillas": [
+      "analisis de datos carrera"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "analisis de datos politecnico grancolombiano",
+     "semillas": [
+      "analisis de datos p"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "analisis de datos tecnicatura uba",
+     "semillas": [
+      "analisis de datos t"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "analisis de datos uned psicologia",
+     "semillas": [
+      "analisis de datos u"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "especializacion analisis de datos javeriana",
+     "semillas": [
+      "analisis de datos j"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "estudiar analisis de datos en cordoba",
+     "semillas": [
+      "estudiar analisis de datos"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "analisis de datos hermosillo",
+     "semillas": [
+      "analisis de datos h"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "analisis de datos leon gto",
+     "semillas": [
+      "analisis de datos l"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "analisis de datos mar del plata",
+     "semillas": [
+      "analisis de datos m"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "analisis de datos y desarrollo de software sena",
+     "semillas": [
+      "analisis de datos y"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "donde estudiar analisis de datos en republica dominicana",
+     "semillas": [
+      "dónde estudiar analisis de datos"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "licenciatura en análisis y gestión de datos unsl a distancia",
+     "semillas": [
+      "analisis de datos a distancia"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    }
+   ]
+  },
+  {
+   "id": "emprender",
+   "nombre": "Emprender o ganar dinero",
+   "color": "#fb923c",
+   "quien": "ninguno",
+   "que_es": "La frase habla de un negocio propio o de ganar dinero, no de estudiar. Si este grupo pesa mucho, el tema no se entiende como carrera.",
+   "total": 2,
+   "pct": 0.4,
+   "sugerencias": [
+    {
+     "texto": "analisis de datos freelance",
+     "semillas": [
+      "analisis de datos f"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "emprender"
+    },
+    {
+     "texto": "analisis de datos hotmart",
+     "semillas": [
+      "analisis de datos h"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "emprender"
+    }
+   ]
+  },
+  {
+   "id": "becas",
+   "nombre": "Becas y ayuda",
+   "color": "#f2b03d",
+   "quien": "familia",
+   "que_es": "Cómo pagarla con ayuda: becas, descuentos, financiación.",
+   "total": 5,
+   "pct": 1.0,
+   "sugerencias": [
+    {
+     "texto": "maestria en analisis de datos becas",
+     "semillas": [
+      "analisis de datos becas"
+     ],
+     "grupos": [
+      "familia"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "becas"
+    },
+    {
+     "texto": "becas analisis de datos 2026",
+     "semillas": [
+      "analisis de datos becas"
+     ],
+     "grupos": [
+      "familia"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "becas"
+    },
+    {
+     "texto": "becas analisis de datos 2025",
+     "semillas": [
+      "analisis de datos becas"
+     ],
+     "grupos": [
+      "familia"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "becas"
+    },
+    {
+     "texto": "becas google analisis de datos",
+     "semillas": [
+      "analisis de datos becas"
+     ],
+     "grupos": [
+      "familia"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "becas"
+    },
+    {
+     "texto": "becas santander analisis de datos",
+     "semillas": [
+      "analisis de datos becas"
+     ],
+     "grupos": [
+      "familia"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "becas"
+    }
+   ]
+  },
+  {
+   "id": "costo",
+   "nombre": "Costo",
+   "color": "#f07f4f",
+   "quien": "familia",
+   "que_es": "Cuánto cuesta: precio, cuota, gratis o paga.",
+   "total": 19,
+   "pct": 3.8,
+   "sugerencias": [
+    {
+     "texto": "analisis de datos a distancia gratis",
+     "semillas": [
+      "analisis de datos a distancia",
+      "analisis de datos a"
+     ],
+     "grupos": [
+      "estudiante",
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1250,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "costo"
+    },
+    {
+     "texto": "analisis de datos gratis",
+     "semillas": [
+      "analisis de datos g"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1251,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "costo"
+    },
+    {
+     "texto": "analisis de datos cursos gratis",
+     "semillas": [
+      "analisis de datos c"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "costo"
+    },
+    {
+     "texto": "analisis de datos donde estudiar gratis",
+     "semillas": [
+      "analisis de datos d"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "costo"
+    },
+    {
+     "texto": "analisis de datos google curso gratis",
+     "semillas": [
+      "analisis de datos g"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "costo"
+    },
+    {
+     "texto": "curso analisis de datos costo",
+     "semillas": [
+      "analisis de datos costo"
+     ],
+     "grupos": [
+      "familia"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "costo"
+    },
+    {
+     "texto": "donde estudiar analisis de datos gratis",
+     "semillas": [
+      "dónde estudiar analisis de datos"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 562,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "costo"
+    },
+    {
+     "texto": "analisis de datos online gratis",
+     "semillas": [
+      "analisis de datos o"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 560,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "costo"
+    },
+    {
+     "texto": "analisis de datos ia gratis",
+     "semillas": [
+      "analisis de datos i"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 559,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "costo"
+    },
+    {
+     "texto": "estudiar analisis de datos a distancia gratis",
+     "semillas": [
+      "analisis de datos a distancia"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 559,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "costo"
+    },
+    {
+     "texto": "estudiar análisis de datos gratis",
+     "semillas": [
+      "estudiar analisis de datos"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "costo"
+    },
+    {
+     "texto": "análisis de datos carrera gratis",
+     "semillas": [
+      "analisis de datos carrera"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "costo"
+    },
+    {
+     "texto": "tecnicatura en analisis de datos a distancia gratis",
+     "semillas": [
+      "analisis de datos a distancia"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "costo"
+    },
+    {
+     "texto": "licenciatura en analisis de datos a distancia gratis",
+     "semillas": [
+      "analisis de datos a distancia"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "costo"
+    },
+    {
+     "texto": "maestria en analisis de datos costo",
+     "semillas": [
+      "analisis de datos costo"
+     ],
+     "grupos": [
+      "familia"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "costo"
+    },
+    {
+     "texto": "análisis de datos google gratis",
+     "semillas": [
+      "analisis de datos g"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "costo"
+    },
+    {
+     "texto": "analisis de datos para la gestion publica",
+     "semillas": [
+      "analisis de datos p"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "costo"
+    },
+    {
+     "texto": "analisis de datos virtual gratis",
+     "semillas": [
+      "analisis de datos v"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "costo"
+    },
+    {
+     "texto": "estudiar analisis de datos online gratis",
+     "semillas": [
+      "estudiar analisis de datos"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "costo"
+    }
+   ]
+  },
+  {
+   "id": "salida",
+   "nombre": "Salida laboral",
+   "color": "#3ccf91",
+   "quien": "ambos",
+   "que_es": "Para qué sirve: trabajo, sueldo, demanda.",
+   "total": 37,
+   "pct": 7.4,
+   "sugerencias": [
+    {
+     "texto": "analisis de datos trabajo",
+     "semillas": [
+      "analisis de datos",
+      "analisis de datos t"
+     ],
+     "grupos": [
+      "base",
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1250,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "analisis de datos vacantes",
+     "semillas": [
+      "analisis de datos v"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1251,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "analisis de datos junior",
+     "semillas": [
+      "analisis de datos j"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1250,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "analisis de datos linkedin",
+     "semillas": [
+      "analisis de datos l"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 950,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "analisis de datos empleo",
+     "semillas": [
+      "analisis de datos e"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 651,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "analisis de datos bolsa de trabajo",
+     "semillas": [
+      "analisis de datos b"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 650,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "analisis de datos junior empleo",
+     "semillas": [
+      "analisis de datos j"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 603,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "analisis de datos jobs",
+     "semillas": [
+      "analisis de datos j"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 602,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "analisis de datos que hace",
+     "semillas": [
+      "analisis de datos q"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "analisis de datos tiene salida laboral",
+     "semillas": [
+      "analisis de datos salida laboral"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "analisis de datos vacantes remoto",
+     "semillas": [
+      "analisis de datos v"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "cuanto gana un analista de datos",
+     "semillas": [
+      "cuánto gana analisis de datos"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "analisis de datos home office",
+     "semillas": [
+      "analisis de datos h"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "analisis de datos jr remoto",
+     "semillas": [
+      "analisis de datos j"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "analisis de datos para que sirve",
+     "semillas": [
+      "analisis de datos p"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "analisis de datos trabajo remoto",
+     "semillas": [
+      "analisis de datos t"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "cuanto gana un tecnico en analisis de datos",
+     "semillas": [
+      "cuánto gana analisis de datos"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "gestion y analisis de datos salida laboral",
+     "semillas": [
+      "analisis de datos salida laboral"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "analisis de datos oferta laboral",
+     "semillas": [
+      "analisis de datos o"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 561,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "analisis de datos sueldo",
+     "semillas": [
+      "analisis de datos s"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 561,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "análisis de datos que es y para que sirve",
+     "semillas": [
+      "analisis de datos q"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 559,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "analisis de datos sin experiencia",
+     "semillas": [
+      "analisis de datos s"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "cuanto gana un ingeniero en analisis de datos",
+     "semillas": [
+      "cuánto gana analisis de datos"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "cuanto gana un especialista en analisis de datos",
+     "semillas": [
+      "cuánto gana analisis de datos"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "analisis de datos trabajo remoto sin experiencia",
+     "semillas": [
+      "analisis de datos t"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "analisis de datos junior sin experiencia",
+     "semillas": [
+      "analisis de datos j"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "analisis de datos practicas",
+     "semillas": [
+      "analisis de datos p"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "analisis de datos salida laboral",
+     "semillas": [
+      "analisis de datos s"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "cuanto gana un licenciado en analisis de datos",
+     "semillas": [
+      "cuánto gana analisis de datos"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "licenciatura en análisis y gestión de datos salida laboral",
+     "semillas": [
+      "analisis de datos salida laboral"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "analisis de datos futuro",
+     "semillas": [
+      "analisis de datos f"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "analisis de datos ofertas de empleo",
+     "semillas": [
+      "analisis de datos o"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "cuanto gana un analista de datos uruguay",
+     "semillas": [
+      "cuánto gana analisis de datos"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "analisis de datos uruguay trabajo",
+     "semillas": [
+      "analisis de datos salida laboral"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "analisis de datos trabajo sin experiencia",
+     "semillas": [
+      "analisis de datos t"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "becario analista de datos",
+     "semillas": [
+      "analisis de datos b"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "cuanto gana un analista en base de datos",
+     "semillas": [
+      "cuánto gana analisis de datos"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    }
+   ]
+  },
+  {
+   "id": "modalidad",
+   "nombre": "Modalidad",
+   "color": "#4aa8ff",
+   "quien": "estudiante",
+   "que_es": "Cómo se cursa: a distancia, virtual, semipresencial, horarios.",
+   "total": 20,
+   "pct": 4.0,
+   "sugerencias": [
+    {
+     "texto": "estudiar analisis de datos a distancia",
+     "semillas": [
+      "estudiar analisis de datos",
+      "analisis de datos a distancia"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "modalidad"
+    },
+    {
+     "texto": "análisis de datos carrera a distancia",
+     "semillas": [
+      "analisis de datos carrera",
+      "analisis de datos a distancia"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "modalidad"
+    },
+    {
+     "texto": "analisis de datos carrera online",
+     "semillas": [
+      "analisis de datos carrera",
+      "analisis de datos o"
+     ],
+     "grupos": [
+      "estudiante",
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 561,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "modalidad"
+    },
+    {
+     "texto": "analisis de datos virtual",
+     "semillas": [
+      "analisis de datos v"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1252,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "modalidad"
+    },
+    {
+     "texto": "analisis de datos a distancia",
+     "semillas": [
+      "analisis de datos a"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1251,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "modalidad"
+    },
+    {
+     "texto": "analisis de datos remoto",
+     "semillas": [
+      "analisis de datos r"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1250,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "modalidad"
+    },
+    {
+     "texto": "analisis de datos online",
+     "semillas": [
+      "analisis de datos o"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "modalidad"
+    },
+    {
+     "texto": "tecnicatura analisis de datos a distancia",
+     "semillas": [
+      "analisis de datos a distancia"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 561,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "modalidad"
+    },
+    {
+     "texto": "analisis de datos carrera virtual",
+     "semillas": [
+      "analisis de datos carrera"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 560,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "modalidad"
+    },
+    {
+     "texto": "licenciatura en analisis de datos a distancia",
+     "semillas": [
+      "analisis de datos a distancia"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "modalidad"
+    },
+    {
+     "texto": "estudiar analisis de datos online",
+     "semillas": [
+      "estudiar analisis de datos"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "modalidad"
+    },
+    {
+     "texto": "analisis y gestion de datos a distancia",
+     "semillas": [
+      "analisis de datos a distancia"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "modalidad"
+    },
+    {
+     "texto": "máster análisis de datos online",
+     "semillas": [
+      "analisis de datos o"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "modalidad"
+    },
+    {
+     "texto": "analisis de datos curso online",
+     "semillas": [
+      "analisis de datos o"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "modalidad"
+    },
+    {
+     "texto": "tecnicatura en gestion y analisis de datos a distancia",
+     "semillas": [
+      "analisis de datos a distancia"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "modalidad"
+    },
+    {
+     "texto": "donde estudiar analisis de datos virtual",
+     "semillas": [
+      "dónde estudiar analisis de datos"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "modalidad"
+    },
+    {
+     "texto": "analisis de datos presencial",
+     "semillas": [
+      "analisis de datos p"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "modalidad"
+    },
+    {
+     "texto": "licenciatura en análisis y gestión de datos a distancia",
+     "semillas": [
+      "analisis de datos a distancia"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "modalidad"
+    },
+    {
+     "texto": "tecnicatura en gestión y análisis de datos en organizaciones a distancia",
+     "semillas": [
+      "analisis de datos a distancia"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "modalidad"
+    },
+    {
+     "texto": "maestría en análisis de datos online",
+     "semillas": [
+      "analisis de datos o"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "modalidad"
+    }
+   ]
+  },
+  {
+   "id": "plan",
+   "nombre": "Plan y requisitos",
+   "color": "#a78bfa",
+   "quien": "estudiante",
+   "que_es": "Qué se estudia y qué se pide: materias, duración, requisitos, inscripción.",
+   "total": 18,
+   "pct": 3.6,
+   "sugerencias": [
+    {
+     "texto": "analisis de datos de que trata",
+     "semillas": [
+      "analisis de datos d"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1201,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "plan"
+    },
+    {
+     "texto": "cuanto dura la carrera de analisis de datos",
+     "semillas": [
+      "cuánto dura analisis de datos"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "plan"
+    },
+    {
+     "texto": "requisitos para estudiar analisis de datos",
+     "semillas": [
+      "analisis de datos requisitos"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "plan"
+    },
+    {
+     "texto": "analisis de requisitos base de datos",
+     "semillas": [
+      "analisis de datos requisitos"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "plan"
+    },
+    {
+     "texto": "cuanto dura un curso de analisis de datos",
+     "semillas": [
+      "cuánto dura analisis de datos"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "plan"
+    },
+    {
+     "texto": "plan de estudios analisis de datos uam",
+     "semillas": [
+      "analisis de datos plan de estudios"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "plan"
+    },
+    {
+     "texto": "plan de estudios analisis de datos ufv",
+     "semillas": [
+      "analisis de datos plan de estudios"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "plan"
+    },
+    {
+     "texto": "analisis de datos habilidades",
+     "semillas": [
+      "analisis de datos h"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "plan"
+    },
+    {
+     "texto": "tecnicatura universitaria en gestión y análisis de datos en organizaciones plan de estudios",
+     "semillas": [
+      "analisis de datos plan de estudios"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "plan"
+    },
+    {
+     "texto": "analisis de datos que se necesita",
+     "semillas": [
+      "analisis de datos q"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "plan"
+    },
+    {
+     "texto": "cuanto dura el curso de analisis de datos de google",
+     "semillas": [
+      "cuánto dura analisis de datos"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "plan"
+    },
+    {
+     "texto": "plan de estudios tecnicatura analisis de datos",
+     "semillas": [
+      "analisis de datos plan de estudios"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "plan"
+    },
+    {
+     "texto": "analisis de datos cuanto dura",
+     "semillas": [
+      "cuánto dura analisis de datos"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "plan"
+    },
+    {
+     "texto": "analisis de datos que se ve",
+     "semillas": [
+      "analisis de datos q"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "plan"
+    },
+    {
+     "texto": "cuanto dura datos ilimitados antel",
+     "semillas": [
+      "cuánto dura analisis de datos"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "plan"
+    },
+    {
+     "texto": "analisis cuanto dura",
+     "semillas": [
+      "cuánto dura analisis de datos"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "plan"
+    },
+    {
+     "texto": "analisis de datos carrera cuanto dura",
+     "semillas": [
+      "analisis de datos carrera"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "plan"
+    },
+    {
+     "texto": "analisis de datos ramas",
+     "semillas": [
+      "analisis de datos r"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "plan"
+    }
+   ]
+  },
+  {
+   "id": "comparar",
+   "nombre": "Comparar y decidir",
+   "color": "#ff6fa3",
+   "quien": "familia",
+   "que_es": "Dudas antes de elegir: mejor opción, opiniones, si vale la pena.",
+   "total": 11,
+   "pct": 2.2,
+   "sugerencias": [
+    {
+     "texto": "analisis de datos vs ciencia de datos",
+     "semillas": [
+      "analisis de datos v"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1250,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "comparar"
+    },
+    {
+     "texto": "analisis de datos y ciencia de datos es lo mismo",
+     "semillas": [
+      "analisis de datos y"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1100,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "comparar"
+    },
+    {
+     "texto": "certificado profesional de análisis de datos de google vale la pena",
+     "semillas": [
+      "analisis de datos vale la pena"
+     ],
+     "grupos": [
+      "familia"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "comparar"
+    },
+    {
+     "texto": "mejor universidad para estudiar analisis de datos",
+     "semillas": [
+      "analisis de datos mejor universidad"
+     ],
+     "grupos": [
+      "familia"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "comparar"
+    },
+    {
+     "texto": "analisis de datos y big data es lo mismo",
+     "semillas": [
+      "analisis de datos y"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "comparar"
+    },
+    {
+     "texto": "unicorn academy analisis de datos opiniones",
+     "semillas": [
+      "analisis de datos opiniones"
+     ],
+     "grupos": [
+      "familia"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "comparar"
+    },
+    {
+     "texto": "vale la pena estudiar analisis de datos",
+     "semillas": [
+      "analisis de datos vale la pena"
+     ],
+     "grupos": [
+      "familia"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "comparar"
+    },
+    {
+     "texto": "analisis de datos vs data science",
+     "semillas": [
+      "analisis de datos v"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "comparar"
+    },
+    {
+     "texto": "curso analisis de datos google opiniones",
+     "semillas": [
+      "analisis de datos opiniones"
+     ],
+     "grupos": [
+      "familia"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "comparar"
+    },
+    {
+     "texto": "analisis de datos ventajas y desventajas",
+     "semillas": [
+      "analisis de datos v"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "comparar"
+    },
+    {
+     "texto": "analisis de datos vs ciberseguridad",
+     "semillas": [
+      "analisis de datos v"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "comparar"
+    }
+   ]
+  },
+  {
+   "id": "donde",
+   "nombre": "Dónde estudiar",
+   "color": "#35c9d6",
+   "quien": "ambos",
+   "que_es": "Lugar o institución de Uruguay: universidades y ciudades.",
+   "total": 20,
+   "pct": 4.0,
+   "sugerencias": [
+    {
+     "texto": "analisis de datos uruguay",
+     "semillas": [
+      "analisis de datos",
+      "por qué estudiar analisis de datos",
+      "analisis de datos salida laboral",
+      "analisis de datos requisitos",
+      "analisis de datos costo",
+      "analisis de datos becas",
+      "analisis de datos mejor universidad",
+      "analisis de datos vale la pena",
+      "analisis de datos opiniones",
+      "analisis de datos u"
+     ],
+     "grupos": [
+      "base",
+      "preguntas",
+      "estudiante",
+      "familia",
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1200,
+     "apariciones": 10,
+     "instituciones": [],
+     "intencion": "donde"
+    },
+    {
+     "texto": "analisis de datos udelar",
+     "semillas": [
+      "analisis de datos",
+      "por qué estudiar analisis de datos",
+      "analisis de datos salida laboral",
+      "analisis de datos requisitos",
+      "analisis de datos plan de estudios",
+      "analisis de datos becas",
+      "analisis de datos mejor universidad",
+      "analisis de datos vale la pena",
+      "analisis de datos u"
+     ],
+     "grupos": [
+      "base",
+      "preguntas",
+      "estudiante",
+      "familia",
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1250,
+     "apariciones": 9,
+     "instituciones": [
+      "Udelar"
+     ],
+     "intencion": "donde"
+    },
+    {
+     "texto": "analisis de datos fcea",
+     "semillas": [
+      "analisis de datos",
+      "analisis de datos plan de estudios",
+      "analisis de datos costo",
+      "analisis de datos f"
+     ],
+     "grupos": [
+      "base",
+      "estudiante",
+      "familia",
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1251,
+     "apariciones": 4,
+     "instituciones": [
+      "Udelar"
+     ],
+     "intencion": "donde"
+    },
+    {
+     "texto": "analisis de datos ort",
+     "semillas": [
+      "analisis de datos",
+      "analisis de datos opiniones",
+      "analisis de datos o"
+     ],
+     "grupos": [
+      "base",
+      "familia",
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1250,
+     "apariciones": 3,
+     "instituciones": [
+      "ORT"
+     ],
+     "intencion": "donde"
+    },
+    {
+     "texto": "analisis de datos um",
+     "semillas": [
+      "analisis de datos plan de estudios",
+      "analisis de datos costo",
+      "analisis de datos mejor universidad"
+     ],
+     "grupos": [
+      "estudiante",
+      "familia"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 3,
+     "instituciones": [
+      "UM"
+     ],
+     "intencion": "donde"
+    },
+    {
+     "texto": "analisis de datos ucu",
+     "semillas": [
+      "analisis de datos costo",
+      "analisis de datos becas",
+      "analisis de datos mejor universidad"
+     ],
+     "grupos": [
+      "familia"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 3,
+     "instituciones": [
+      "UCU"
+     ],
+     "intencion": "donde"
+    },
+    {
+     "texto": "donde estudiar analisis de datos",
+     "semillas": [
+      "dónde estudiar analisis de datos",
+      "estudiar analisis de datos"
+     ],
+     "grupos": [
+      "preguntas",
+      "youtube"
+     ],
+     "fuentes": [
+      "google",
+      "youtube"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "donde"
+    },
+    {
+     "texto": "analisis de datos fing",
+     "semillas": [
+      "analisis de datos vale la pena",
+      "analisis de datos z"
+     ],
+     "grupos": [
+      "familia",
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 2,
+     "instituciones": [
+      "Udelar"
+     ],
+     "intencion": "donde"
+    },
+    {
+     "texto": "análisis de datos utu",
+     "semillas": [
+      "por qué estudiar analisis de datos",
+      "analisis de datos plan de estudios"
+     ],
+     "grupos": [
+      "preguntas",
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 2,
+     "instituciones": [
+      "UTU"
+     ],
+     "intencion": "donde"
+    },
+    {
+     "texto": "analisis de datos donde estudiar",
+     "semillas": [
+      "analisis de datos d"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1250,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "donde"
+    },
+    {
+     "texto": "analisis de datos universidad",
+     "semillas": [
+      "analisis de datos u"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "donde"
+    },
+    {
+     "texto": "analisis de datos carrera donde estudiar",
+     "semillas": [
+      "analisis de datos carrera"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "donde"
+    },
+    {
+     "texto": "analisis de datos en administracion fcea",
+     "semillas": [
+      "analisis de datos plan de estudios"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [
+      "Udelar"
+     ],
+     "intencion": "donde"
+    },
+    {
+     "texto": "analisis de datos ude",
+     "semillas": [
+      "analisis de datos mejor universidad"
+     ],
+     "grupos": [
+      "familia"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [
+      "UDE"
+     ],
+     "intencion": "donde"
+    },
+    {
+     "texto": "cuánto cobra un analista de datos en uruguay",
+     "semillas": [
+      "cuánto gana analisis de datos"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "donde"
+    },
+    {
+     "texto": "analisis de datos en excel donde esta",
+     "semillas": [
+      "analisis de datos e"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "donde"
+    },
+    {
+     "texto": "donde estudiar analisis de datos en uruguay",
+     "semillas": [
+      "dónde estudiar analisis de datos"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "donde"
+    },
+    {
+     "texto": "analisis de datos utec",
+     "semillas": [
+      "analisis de datos becas"
+     ],
+     "grupos": [
+      "familia"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [
+      "UTEC"
+     ],
+     "intencion": "donde"
+    },
+    {
+     "texto": "curso análisis de datos uruguay",
+     "semillas": [
+      "cuánto dura analisis de datos"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "donde"
+    },
+    {
+     "texto": "estudiar analisis de datos en uruguay",
+     "semillas": [
+      "estudiar analisis de datos"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "donde"
+    }
+   ]
+  },
+  {
+   "id": "formato",
+   "nombre": "Tipo de formación",
+   "color": "#7c9cff",
+   "quien": "estudiante",
+   "que_es": "Qué nivel buscan: carrera, licenciatura, curso, posgrado.",
+   "total": 21,
+   "pct": 4.2,
+   "sugerencias": [
+    {
+     "texto": "analisis de datos curso",
+     "semillas": [
+      "analisis de datos",
+      "analisis de datos c"
+     ],
+     "grupos": [
+      "base",
+      "alfabeto",
+      "youtube"
+     ],
+     "fuentes": [
+      "google",
+      "youtube"
+     ],
+     "relevancia_max": 1251,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "analisis de datos carrera",
+     "semillas": [
+      "analisis de datos",
+      "analisis de datos c"
+     ],
+     "grupos": [
+      "base",
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1250,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "analisis de datos google curso",
+     "semillas": [
+      "analisis de datos g"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1250,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "analisis de datos diplomado",
+     "semillas": [
+      "analisis de datos d"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1202,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "analisis de datos maestria",
+     "semillas": [
+      "analisis de datos m"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1150,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "analisis de datos licenciatura",
+     "semillas": [
+      "analisis de datos l"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 901,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "analisis de datos bootcamp",
+     "semillas": [
+      "analisis de datos b"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 651,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "analisis de datos carrera universitaria",
+     "semillas": [
+      "analisis de datos carrera"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "analisis de datos especializacion",
+     "semillas": [
+      "analisis de datos e"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "analisis de datos master",
+     "semillas": [
+      "analisis de datos m"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "por porque estudiar analisis de datos",
+     "semillas": [
+      "por qué estudiar analisis de datos"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "porque estudiar analisis de datos",
+     "semillas": [
+      "estudiar analisis de datos"
+     ],
+     "grupos": [
+      "youtube"
+     ],
+     "fuentes": [
+      "youtube"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "analisis de datos que carrera es",
+     "semillas": [
+      "analisis de datos q"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 561,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "analisis de datos futbol curso",
+     "semillas": [
+      "analisis de datos f"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 560,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "analisis de datos tecnicatura",
+     "semillas": [
+      "analisis de datos t"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 560,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "analista de datos que estudiar",
+     "semillas": [
+      "analisis de datos q"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "analisis de datos carrera tecnica",
+     "semillas": [
+      "analisis de datos carrera"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "que es analisis de datos carrera",
+     "semillas": [
+      "qué es analisis de datos"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "analisis de datos estudiar",
+     "semillas": [
+      "analisis de datos e"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "estudiar analisis de datos desde cero",
+     "semillas": [
+      "estudiar analisis de datos"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "analisis de datos grado",
+     "semillas": [
+      "analisis de datos g"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "formato"
+    }
+   ]
+  },
+  {
+   "id": "temas",
+   "nombre": "Temas con los que se combina",
+   "color": "#e879f9",
+   "quien": "estudiante",
+   "que_es": "Con qué otros temas se busca junto: inteligencia artificial, negocios, salud. Sirve para decidir el nombre y el foco de una carrera.",
+   "total": 31,
+   "pct": 6.2,
+   "sugerencias": [
+    {
+     "texto": "análisis de datos en administración",
+     "semillas": [
+      "por qué estudiar analisis de datos",
+      "analisis de datos salida laboral",
+      "analisis de datos requisitos"
+     ],
+     "grupos": [
+      "preguntas",
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 3,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "analisis de datos futbol",
+     "semillas": [
+      "analisis de datos",
+      "analisis de datos f"
+     ],
+     "grupos": [
+      "base",
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1250,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "analisis de datos con ia",
+     "semillas": [
+      "analisis de datos",
+      "analisis de datos c"
+     ],
+     "grupos": [
+      "base",
+      "alfabeto",
+      "youtube"
+     ],
+     "fuentes": [
+      "google",
+      "youtube"
+     ],
+     "relevancia_max": 561,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "analisis de datos psicologia",
+     "semillas": [
+      "analisis de datos p",
+      "analisis de datos"
+     ],
+     "grupos": [
+      "alfabeto",
+      "youtube"
+     ],
+     "fuentes": [
+      "google",
+      "youtube"
+     ],
+     "relevancia_max": 560,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "analisis de datos e ia",
+     "semillas": [
+      "analisis de datos e",
+      "analisis de datos"
+     ],
+     "grupos": [
+      "alfabeto",
+      "youtube"
+     ],
+     "fuentes": [
+      "google",
+      "youtube"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "analisis de datos ia",
+     "semillas": [
+      "analisis de datos i"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1250,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "analisis de datos big data",
+     "semillas": [
+      "analisis de datos b"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 850,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "analisis de datos recursos humanos",
+     "semillas": [
+      "analisis de datos r"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 800,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "analisis de datos y estadistica",
+     "semillas": [
+      "analisis de datos y"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 750,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "analisis de datos matematicas",
+     "semillas": [
+      "analisis de datos m"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 651,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "analisis de datos y ia",
+     "semillas": [
+      "analisis de datos y"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 603,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "análisis de datos y big data",
+     "semillas": [
+      "analisis de datos y"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 602,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "analisis de datos financieros",
+     "semillas": [
+      "analisis de datos f"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "analisis de datos marketing",
+     "semillas": [
+      "analisis de datos m"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "analisis de datos en futbol",
+     "semillas": [
+      "analisis de datos"
+     ],
+     "grupos": [
+      "youtube"
+     ],
+     "fuentes": [
+      "youtube"
+     ],
+     "relevancia_max": 560,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "que es analisis de datos en matematicas",
+     "semillas": [
+      "qué es analisis de datos"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 560,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "analisis de datos finanzas",
+     "semillas": [
+      "analisis de datos f"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "que es analisis de datos en estadistica",
+     "semillas": [
+      "qué es analisis de datos"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "analisis de datos software",
+     "semillas": [
+      "analisis de datos s"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "analisis de datos y desarrollo de software",
+     "semillas": [
+      "analisis de datos y"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "analisis de datos con inteligencia artificial",
+     "semillas": [
+      "analisis de datos c"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "analisis de datos en salud",
+     "semillas": [
+      "analisis de datos e"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "analisis de datos y finanzas",
+     "semillas": [
+      "analisis de datos y"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "análisis de datos financieros de gary koop",
+     "semillas": [
+      "analisis de datos k"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "analisis de datos negocios",
+     "semillas": [
+      "analisis de datos n"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "análisis de datos geoespaciales",
+     "semillas": [
+      "analisis de datos g"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "que es analisis de datos y big data",
+     "semillas": [
+      "qué es analisis de datos"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "analisis de datos geograficos",
+     "semillas": [
+      "analisis de datos g"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "que es analisis de datos en programacion",
+     "semillas": [
+      "qué es analisis de datos"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "analisis de datos de excel con ia",
+     "semillas": [
+      "analisis de datos d"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "analisis de datos salud",
+     "semillas": [
+      "analisis de datos s"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    }
+   ]
+  },
+  {
+   "id": "aprender",
+   "nombre": "Aprender por su cuenta",
+   "color": "#c9d451",
+   "quien": "estudiante",
+   "que_es": "Contenido para aprender solo: qué es, libros, herramientas, videos.",
+   "total": 63,
+   "pct": 12.6,
+   "sugerencias": [
+    {
+     "texto": "analisis de datos en excel",
+     "semillas": [
+      "analisis de datos",
+      "analisis de datos e"
+     ],
+     "grupos": [
+      "base",
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1250,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "analisis de datos pdf",
+     "semillas": [
+      "analisis de datos",
+      "analisis de datos p"
+     ],
+     "grupos": [
+      "base",
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1250,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "analisis de datos con r",
+     "semillas": [
+      "analisis de datos",
+      "analisis de datos c"
+     ],
+     "grupos": [
+      "base",
+      "alfabeto",
+      "youtube"
+     ],
+     "fuentes": [
+      "google",
+      "youtube"
+     ],
+     "relevancia_max": 650,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "analisis de datos con python",
+     "semillas": [
+      "analisis de datos",
+      "analisis de datos c"
+     ],
+     "grupos": [
+      "base",
+      "alfabeto",
+      "youtube"
+     ],
+     "fuentes": [
+      "google",
+      "youtube"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "analisis de datos google coursera",
+     "semillas": [
+      "analisis de datos g",
+      "analisis de datos"
+     ],
+     "grupos": [
+      "alfabeto",
+      "youtube"
+     ],
+     "fuentes": [
+      "google",
+      "youtube"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "analisis de datos power bi",
+     "semillas": [
+      "analisis de datos p",
+      "analisis de datos"
+     ],
+     "grupos": [
+      "alfabeto",
+      "youtube"
+     ],
+     "fuentes": [
+      "google",
+      "youtube"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "analisis de datos google sheets",
+     "semillas": [
+      "analisis de datos g",
+      "analisis de datos"
+     ],
+     "grupos": [
+      "alfabeto",
+      "youtube"
+     ],
+     "fuentes": [
+      "google",
+      "youtube"
+     ],
+     "relevancia_max": 559,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "analisis de datos desde cero",
+     "semillas": [
+      "analisis de datos d",
+      "analisis de datos"
+     ],
+     "grupos": [
+      "alfabeto",
+      "youtube"
+     ],
+     "fuentes": [
+      "google",
+      "youtube"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "analisis de datos ejemplo",
+     "semillas": [
+      "analisis de datos e",
+      "analisis de datos"
+     ],
+     "grupos": [
+      "alfabeto",
+      "youtube"
+     ],
+     "fuentes": [
+      "google",
+      "youtube"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "analisis de datos google",
+     "semillas": [
+      "analisis de datos g"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1252,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "analisis de datos herramientas",
+     "semillas": [
+      "analisis de datos h"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1250,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "analisis de datos libro",
+     "semillas": [
+      "analisis de datos l"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1250,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "analisis de datos que es",
+     "semillas": [
+      "analisis de datos q"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1250,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "analisis de datos wikipedia",
+     "semillas": [
+      "analisis de datos w"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1250,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "analisis de datos roadmap",
+     "semillas": [
+      "analisis de datos r"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1051,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "analisis de datos libro pdf",
+     "semillas": [
+      "analisis de datos l"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 900,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "analisis de datos ambientales en python",
+     "semillas": [
+      "analisis de datos a"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 850,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "analisis de datos reddit",
+     "semillas": [
+      "analisis de datos r"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 850,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "analisis de datos y power bi",
+     "semillas": [
+      "analisis de datos y"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 751,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "analisis de datos definicion",
+     "semillas": [
+      "analisis de datos d"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 750,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "analisis de datos ibm",
+     "semillas": [
+      "analisis de datos i"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "analisis de datos logo",
+     "semillas": [
+      "analisis de datos l"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "analisis de datos sql",
+     "semillas": [
+      "analisis de datos s"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "analisis de datos youtube",
+     "semillas": [
+      "analisis de datos y"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "que es analisis de datos en el metodo cientifico",
+     "semillas": [
+      "qué es analisis de datos"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "analisis de datos en ingles",
+     "semillas": [
+      "analisis de datos e"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "analisis de datos excel",
+     "semillas": [
+      "analisis de datos"
+     ],
+     "grupos": [
+      "youtube"
+     ],
+     "fuentes": [
+      "youtube"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "analisis de datos kaggle",
+     "semillas": [
+      "analisis de datos k"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "analisis de datos resumen",
+     "semillas": [
+      "analisis de datos r"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "analisis de datos wallpaper",
+     "semillas": [
+      "analisis de datos w"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "que es análisis de datos en una investigación",
+     "semillas": [
+      "qué es analisis de datos"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "que es analisis de datos en informatica",
+     "semillas": [
+      "qué es analisis de datos"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 562,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "analisis de datos khan academy",
+     "semillas": [
+      "analisis de datos k"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 561,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "que es analisis de datos power bi",
+     "semillas": [
+      "qué es analisis de datos"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 561,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "analisis de datos histograma excel",
+     "semillas": [
+      "analisis de datos h"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 560,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "analisis de datos python",
+     "semillas": [
+      "analisis de datos p"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 559,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "que es analisis de datos en metodologia dela investigacion",
+     "semillas": [
+      "qué es analisis de datos"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 559,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "analisis de datos con knime",
+     "semillas": [
+      "analisis de datos k"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "analisis de datos historia",
+     "semillas": [
+      "analisis de datos h"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "analisis de datos noticias",
+     "semillas": [
+      "analisis de datos n"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "analisis de datos platzi",
+     "semillas": [
+      "analisis de datos p"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "analisis de datos con power bi",
+     "semillas": [
+      "analisis de datos c"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "analisis de datos opcion excel",
+     "semillas": [
+      "analisis de datos o"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "que es analisis de datos con r",
+     "semillas": [
+      "qué es analisis de datos"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "analisis de datos github",
+     "semillas": [
+      "analisis de datos g"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "analisis de datos google analytics",
+     "semillas": [
+      "analisis de datos g"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "que es analisis de datos segun autores",
+     "semillas": [
+      "qué es analisis de datos"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "analisis de datos coursera",
+     "semillas": [
+      "analisis de datos c"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "que es analisis de datos cualitativos",
+     "semillas": [
+      "qué es analisis de datos"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "analisis de datos con excel",
+     "semillas": [
+      "analisis de datos c"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "análisis de datos de google",
+     "semillas": [
+      "analisis de datos d"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "python para análisis de datos wes mckinney pdf",
+     "semillas": [
+      "analisis de datos w"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "analisis de datos que es pdf",
+     "semillas": [
+      "analisis de datos q"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "python para análisis de datos wes mckinney",
+     "semillas": [
+      "analisis de datos w"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "que es analisis de datos python",
+     "semillas": [
+      "qué es analisis de datos"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "analisis de datos con excel y power bi",
+     "semillas": [
+      "analisis de datos c"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "analisis de datos con sql",
+     "semillas": [
+      "analisis de datos"
+     ],
+     "grupos": [
+      "youtube"
+     ],
+     "fuentes": [
+      "youtube"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "análisis de datos significado",
+     "semillas": [
+      "analisis de datos s"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "python para análisis de datos o reilly pdf",
+     "semillas": [
+      "analisis de datos o"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "python para análisis de datos wes mckinney pdf español",
+     "semillas": [
+      "analisis de datos w"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "analisis de datos con java",
+     "semillas": [
+      "analisis de datos j"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "python para análisis de datos wes mckinney español",
+     "semillas": [
+      "analisis de datos w"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "que es analisis de datos ejemplos",
+     "semillas": [
+      "qué es analisis de datos"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    }
+   ]
+  },
+  {
+   "id": "otros",
+   "nombre": "Otros",
+   "color": "#9aa4b8",
+   "quien": "ninguno",
+   "que_es": "No coincide con ninguna regla. Si este grupo crece, falta una regla.",
+   "total": 156,
+   "pct": 31.3,
+   "sugerencias": [
+    {
+     "texto": "analisis de datos bios",
+     "semillas": [
+      "analisis de datos requisitos",
+      "analisis de datos z"
+     ],
+     "grupos": [
+      "estudiante",
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos cpe",
+     "semillas": [
+      "analisis de datos costo",
+      "analisis de datos opiniones"
+     ],
+     "grupos": [
+      "familia"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos en redes",
+     "semillas": [
+      "analisis de datos opiniones",
+      "analisis de datos z"
+     ],
+     "grupos": [
+      "familia",
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos ambientales",
+     "semillas": [
+      "analisis de datos a"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1250,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos biologicos",
+     "semillas": [
+      "analisis de datos b"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1250,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos kpis",
+     "semillas": [
+      "analisis de datos k"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1250,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos de una investigacion cualitativa",
+     "semillas": [
+      "analisis de datos d"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1200,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos asistido por computadora",
+     "semillas": [
+      "analisis de datos a"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1100,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos imagenes",
+     "semillas": [
+      "analisis de datos i"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1100,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos microsoft",
+     "semillas": [
+      "analisis de datos m"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1050,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos hidrologicos",
+     "semillas": [
+      "analisis de datos h"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 900,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "análisis de datos dibujo",
+     "semillas": [
+      "analisis de datos d"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 900,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos logisticos",
+     "semillas": [
+      "analisis de datos l"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 750,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos aplicaciones",
+     "semillas": [
+      "analisis de datos a"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 700,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos bi",
+     "semillas": [
+      "analisis de datos b"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 700,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "análisis de datos método científico",
+     "semillas": [
+      "analisis de datos m"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 652,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos en una investigacion",
+     "semillas": [
+      "analisis de datos e"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 650,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos multivariantes daniel peña",
+     "semillas": [
+      "analisis de datos m"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 650,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos deportivos",
+     "semillas": [
+      "analisis de datos d"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 602,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos avanzados",
+     "semillas": [
+      "analisis de datos a"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos del método científico",
+     "semillas": [
+      "analisis de datos d"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos jamovi",
+     "semillas": [
+      "analisis de datos j"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos numericos",
+     "semillas": [
+      "analisis de datos n"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos redes sociales",
+     "semillas": [
+      "analisis de datos r"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos web",
+     "semillas": [
+      "analisis de datos w"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "análisis de datos históricos",
+     "semillas": [
+      "analisis de datos h"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos agrupados",
+     "semillas": [
+      "analisis de datos a"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos basico",
+     "semillas": [
+      "analisis de datos b"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos esime zacatenco",
+     "semillas": [
+      "analisis de datos z"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos no estructurados",
+     "semillas": [
+      "analisis de datos n"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos omicos",
+     "semillas": [
+      "analisis de datos o"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos que se estudia",
+     "semillas": [
+      "analisis de datos q"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos sinonimo",
+     "semillas": [
+      "analisis de datos s"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos vector",
+     "semillas": [
+      "analisis de datos v"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos no agrupados",
+     "semillas": [
+      "analisis de datos n"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 561,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos para la empresa uc3m",
+     "semillas": [
+      "analisis de datos p"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 561,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos wordwall",
+     "semillas": [
+      "analisis de datos w"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 561,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos imagen",
+     "semillas": [
+      "analisis de datos i"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 560,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos kodree",
+     "semillas": [
+      "analisis de datos k"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 560,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos no parametricos",
+     "semillas": [
+      "analisis de datos n"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 560,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos que se hace",
+     "semillas": [
+      "analisis de datos q"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 560,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos santander",
+     "semillas": [
+      "analisis de datos s"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 560,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos we",
+     "semillas": [
+      "analisis de datos w"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 560,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos estadisticos",
+     "semillas": [
+      "analisis de datos e"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 559,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos freecodecamp",
+     "semillas": [
+      "analisis de datos f"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 559,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos ngs",
+     "semillas": [
+      "analisis de datos n"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 559,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos omicos us",
+     "semillas": [
+      "analisis de datos o"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 559,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos spss",
+     "semillas": [
+      "analisis de datos s"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 559,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos tablas y graficas",
+     "semillas": [
+      "analisis de datos t"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 559,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos whatsapp",
+     "semillas": [
+      "analisis de datos w"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 559,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos cualitativos",
+     "semillas": [
+      "analisis de datos c"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos en el metodo cientifico",
+     "semillas": [
+      "analisis de datos e"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos gobierno de la ciudad",
+     "semillas": [
+      "analisis de datos g"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos jasp",
+     "semillas": [
+      "analisis de datos j"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos orange",
+     "semillas": [
+      "analisis de datos o"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos workana",
+     "semillas": [
+      "analisis de datos w"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos fotos",
+     "semillas": [
+      "analisis de datos f"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos graficos",
+     "semillas": [
+      "analisis de datos g"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos juegos",
+     "semillas": [
+      "analisis de datos j"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos longitudinales",
+     "semillas": [
+      "analisis de datos l"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos netflix",
+     "semillas": [
+      "analisis de datos n"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos para toma de decisiones",
+     "semillas": [
+      "analisis de datos p"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos recopilados",
+     "semillas": [
+      "analisis de datos r"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos tecnico",
+     "semillas": [
+      "analisis de datos t"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos visuales",
+     "semillas": [
+      "analisis de datos v"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos we education",
+     "semillas": [
+      "analisis de datos w"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos biomedicos",
+     "semillas": [
+      "analisis de datos b"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos cuantitativos",
+     "semillas": [
+      "analisis de datos c"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos en wps",
+     "semillas": [
+      "analisis de datos w"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos fp",
+     "semillas": [
+      "analisis de datos f"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos informatica",
+     "semillas": [
+      "analisis de datos i"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos julius",
+     "semillas": [
+      "analisis de datos j"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos microsoft learn",
+     "semillas": [
+      "analisis de datos m"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos programas",
+     "semillas": [
+      "analisis de datos p"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos quimica",
+     "semillas": [
+      "analisis de datos q"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos rys",
+     "semillas": [
+      "analisis de datos r"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos segun autores",
+     "semillas": [
+      "analisis de datos s"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "kappa analisis de datos",
+     "semillas": [
+      "analisis de datos k"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "nielsen analisis de datos",
+     "semillas": [
+      "analisis de datos n"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos agropecuarios",
+     "semillas": [
+      "analisis de datos a"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos bivariados",
+     "semillas": [
+      "analisis de datos b"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos descriptivos",
+     "semillas": [
+      "analisis de datos d"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos en wps office",
+     "semillas": [
+      "analisis de datos w"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos fisica",
+     "semillas": [
+      "analisis de datos f"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos hospitalarios",
+     "semillas": [
+      "analisis de datos h"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos icono",
+     "semillas": [
+      "analisis de datos i"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos juridicos",
+     "semillas": [
+      "analisis de datos j"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos laborales",
+     "semillas": [
+      "analisis de datos salida laboral"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos laboratorio",
+     "semillas": [
+      "analisis de datos l"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos materia",
+     "semillas": [
+      "analisis de datos m"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos nivel basico",
+     "semillas": [
+      "analisis de datos n"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos video",
+     "semillas": [
+      "analisis de datos v"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos y graficos",
+     "semillas": [
+      "analisis de datos y"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "análisis de datos secundarios",
+     "semillas": [
+      "analisis de datos s"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "kafka analisis de datos",
+     "semillas": [
+      "analisis de datos k"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "zegel analisis de datos",
+     "semillas": [
+      "analisis de datos z"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos agricolas",
+     "semillas": [
+      "analisis de datos a"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos beisbol",
+     "semillas": [
+      "analisis de datos b"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos en word",
+     "semillas": [
+      "analisis de datos w"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos formacion",
+     "semillas": [
+      "analisis de datos f"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos icfes",
+     "semillas": [
+      "analisis de datos i"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos metodologia de la investigacion",
+     "semillas": [
+      "analisis de datos m"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos netzun",
+     "semillas": [
+      "analisis de datos n"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos retail",
+     "semillas": [
+      "analisis de datos r"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos tesis",
+     "semillas": [
+      "analisis de datos t"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos banner",
+     "semillas": [
+      "analisis de datos b"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos desde 0",
+     "semillas": [
+      "analisis de datos"
+     ],
+     "grupos": [
+      "youtube"
+     ],
+     "fuentes": [
+      "youtube"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos en una investigacion cualitativa",
+     "semillas": [
+      "analisis de datos e"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos fq",
+     "semillas": [
+      "analisis de datos z"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos infotep",
+     "semillas": [
+      "analisis de datos i"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos masivos",
+     "semillas": [
+      "analisis de datos m"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos regresion",
+     "semillas": [
+      "analisis de datos r"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos sociales",
+     "semillas": [
+      "analisis de datos s"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos tecnologia",
+     "semillas": [
+      "analisis de datos t"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos ventas",
+     "semillas": [
+      "analisis de datos v"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos y ciencia de datos",
+     "semillas": [
+      "analisis de datos y"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "kahoot analisis de datos",
+     "semillas": [
+      "analisis de datos k"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos articulos cientificos",
+     "semillas": [
+      "analisis de datos a"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos bbva",
+     "semillas": [
+      "analisis de datos b"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos cuantitativos en una investigacion",
+     "semillas": [
+      "analisis de datos c"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos de encuestas",
+     "semillas": [
+      "analisis de datos d"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos experimentales",
+     "semillas": [
+      "analisis de datos e"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos fondo",
+     "semillas": [
+      "analisis de datos f"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos histograma",
+     "semillas": [
+      "analisis de datos h"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos i ua",
+     "semillas": [
+      "analisis de datos i"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos loyola",
+     "semillas": [
+      "analisis de datos l"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos mintic",
+     "semillas": [
+      "analisis de datos m"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos regresion lineal",
+     "semillas": [
+      "analisis de datos r"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos santander open academy",
+     "semillas": [
+      "analisis de datos o"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos talento tech",
+     "semillas": [
+      "analisis de datos t"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos y perfilamiento",
+     "semillas": [
+      "analisis de datos y"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "kruger analisis de datos",
+     "semillas": [
+      "analisis de datos k"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos antropometricos",
+     "semillas": [
+      "analisis de datos a"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos biologicos fidelitas",
+     "semillas": [
+      "analisis de datos b"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos de investigacion",
+     "semillas": [
+      "analisis de datos d"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos en redes complejas",
+     "semillas": [
+      "analisis de datos z"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos funcionales",
+     "semillas": [
+      "analisis de datos f"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos hubspot",
+     "semillas": [
+      "analisis de datos h"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos inacap",
+     "semillas": [
+      "analisis de datos i"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos libreoffice calc",
+     "semillas": [
+      "analisis de datos l"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos medicos",
+     "semillas": [
+      "analisis de datos m"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos narrativos",
+     "semillas": [
+      "analisis de datos n"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos que debo saber",
+     "semillas": [
+      "analisis de datos q"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos regresion lineal multiple",
+     "semillas": [
+      "analisis de datos r"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos varianza",
+     "semillas": [
+      "analisis de datos v"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "análisis de datos y toma de decisiones",
+     "semillas": [
+      "analisis de datos y"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "kitral analisis de datos",
+     "semillas": [
+      "analisis de datos k"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos autonoma",
+     "semillas": [
+      "analisis de datos a"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos cualitativos en una investigacion",
+     "semillas": [
+      "analisis de datos c"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos fidelitas",
+     "semillas": [
+      "analisis de datos f"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos inferencial",
+     "semillas": [
+      "analisis de datos i"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos para principiantes",
+     "semillas": [
+      "analisis de datos p"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos que implica",
+     "semillas": [
+      "analisis de datos q"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos unad",
+     "semillas": [
+      "analisis de datos u"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "análisis de datos números redondos",
+     "semillas": [
+      "analisis de datos n"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "kuepa analisis de datos",
+     "semillas": [
+      "analisis de datos k"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    }
+   ]
+  }
+ ],
+ "dominios": [],
+ "top10": [
+  {
+   "buscador": "pendiente",
+   "consulta": "analisis de datos",
+   "estado": "pendiente",
+   "motivo": "sin fuente automática: leer la página de un buscador con un script no es confiable (probado el 2026-11-16). Falta elegir una API oficial con clave gratuita (PLAN.md, fase F5).",
+   "resultados": []
+  },
+  {
+   "buscador": "pendiente",
+   "consulta": "analisis de datos carrera uruguay",
+   "estado": "pendiente",
+   "motivo": "sin fuente automática: leer la página de un buscador con un script no es confiable (probado el 2026-11-16). Falta elegir una API oficial con clave gratuita (PLAN.md, fase F5).",
+   "resultados": []
+  }
+ ],
+ "rechazadas": {
+  "total": 2,
+  "por_motivo": {
+   "no nombra el tema": 2
+  },
+  "ejemplos": [
+   {
+    "semilla": "cuánto dura analisis de datos",
+    "grupo": "preguntas",
+    "fuente": "google",
+    "texto": "cuánto dura un contrato de antel",
+    "relevancia": 553,
+    "motivo": "no nombra el tema"
+   },
+   {
+    "semilla": "cuánto gana analisis de datos",
+    "grupo": "preguntas",
+    "fuente": "google",
+    "texto": "cuanto gana un data analyst en uruguay",
+    "relevancia": 551,
+    "motivo": "no nombra el tema"
+   }
+  ]
+ },
+ "enlaces": {
+  "trends": "https://trends.google.com/trends/explore?geo=UY&date=today%205-y&q=analisis%20de%20datos",
+  "google": "https://www.google.com/search?gl=uy&hl=es&q=analisis%20de%20datos",
+  "bing": "https://www.bing.com/search?cc=UY&setlang=es&q=analisis%20de%20datos",
+  "duckduckgo": "https://duckduckgo.com/?kl=uy-es&q=analisis%20de%20datos",
+  "youtube": "https://www.youtube.com/results?search_query=analisis%20de%20datos"
+ }
+}

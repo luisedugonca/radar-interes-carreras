@@ -1,0 +1,6045 @@
+{
+ "tema": "transformacion digital",
+ "slug": "transformacion-digital",
+ "run_id": "20261116T222403Z_transformacion-digital",
+ "generado_utc": "2026-11-16T22:24:03Z",
+ "pais": "Uruguay",
+ "reglas_version": "2026-11-16b",
+ "fuentes": [
+  {
+   "id": "google",
+   "nombre": "Autocompletar de Google",
+   "pedidos": 43,
+   "con_respuesta": 43
+  },
+  {
+   "id": "youtube",
+   "nombre": "Autocompletar de YouTube",
+   "pedidos": 3,
+   "con_respuesta": 3
+  }
+ ],
+ "resumen": {
+  "sugerencias_unicas": 357,
+  "intenciones_con_datos": 10,
+  "fuera_de_uruguay": 49,
+  "fuera_de_uruguay_pct": 13.7,
+  "sin_clasificar": 188,
+  "instituciones_uy": [],
+  "quien_supuesto": {
+   "familia": 13,
+   "estudiante": 92,
+   "ambos": 15,
+   "ninguno": 237
+  },
+  "top10_validos": 0,
+  "top10_rechazados": 0,
+  "top10_pendientes": 2
+ },
+ "intenciones": [
+  {
+   "id": "fuera_uy",
+   "nombre": "Fuera de Uruguay",
+   "color": "#8b93a7",
+   "quien": "ninguno",
+   "que_es": "La sugerencia nombra un país o una universidad de otro país. No es demanda local.",
+   "total": 49,
+   "pct": 13.7,
+   "sugerencias": [
+    {
+     "texto": "transformacion digital en el peru",
+     "semillas": [
+      "transformacion digital",
+      "transformacion digital e"
+     ],
+     "grupos": [
+      "base",
+      "alfabeto",
+      "youtube"
+     ],
+     "fuentes": [
+      "google",
+      "youtube"
+     ],
+     "relevancia_max": 1250,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "transformacion digital mexico",
+     "semillas": [
+      "transformacion digital",
+      "transformacion digital m"
+     ],
+     "grupos": [
+      "base",
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1250,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "transformacion digital del estado de chile",
+     "semillas": [
+      "transformacion digital",
+      "transformacion digital d"
+     ],
+     "grupos": [
+      "base",
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1150,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "transformacion digital corte suprema de justicia el salvador",
+     "semillas": [
+      "transformacion digital",
+      "transformacion digital c"
+     ],
+     "grupos": [
+      "base",
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 900,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "transformación digital chile",
+     "semillas": [
+      "transformacion digital",
+      "transformacion digital c"
+     ],
+     "grupos": [
+      "base",
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "transformación digital fi unam",
+     "semillas": [
+      "transformacion digital f"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1251,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "transformación digital gobierno de méxico",
+     "semillas": [
+      "transformacion digital g"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1250,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "transformacion digital pucp",
+     "semillas": [
+      "transformacion digital p"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1150,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "transformacion digital uc",
+     "semillas": [
+      "transformacion digital u"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 802,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "transformación digital uncuyo",
+     "semillas": [
+      "transformacion digital u"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 800,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "transformación digital perú",
+     "semillas": [
+      "transformacion digital p"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 651,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "transformacion digital para los negocios la salle",
+     "semillas": [
+      "transformacion digital p"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 650,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "transformacion digital salud mendoza",
+     "semillas": [
+      "transformacion digital s"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "transformacion digital siglo xxi",
+     "semillas": [
+      "transformacion digital x"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "transformacion digital harvard",
+     "semillas": [
+      "transformacion digital h"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 562,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "transformacion digital navarra",
+     "semillas": [
+      "transformacion digital n"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 561,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "transformación digital honduras",
+     "semillas": [
+      "transformacion digital h"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 561,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "transformación digital tec de monterrey",
+     "semillas": [
+      "transformacion digital t"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 561,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "transformacion digital correos de mexico",
+     "semillas": [
+      "transformacion digital c"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 560,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "transformacion digital javeriana",
+     "semillas": [
+      "transformacion digital j"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 559,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "transformacion digital rosario",
+     "semillas": [
+      "transformacion digital r"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "transformacion digital bancolombia",
+     "semillas": [
+      "transformacion digital b"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "transformacion digital en venezuela",
+     "semillas": [
+      "transformacion digital v"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "transformacion digital la salle",
+     "semillas": [
+      "transformacion digital l"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "transformacion digital uninorte",
+     "semillas": [
+      "transformacion digital u"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "transformación digital gobierno de méxico convocatoria",
+     "semillas": [
+      "transformacion digital g"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "transformacion digital en mexico",
+     "semillas": [
+      "transformacion digital e"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "transformacion digital guatemala",
+     "semillas": [
+      "transformacion digital g"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "transformacion digital mit",
+     "semillas": [
+      "transformacion digital m"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "transformación digital colombia",
+     "semillas": [
+      "transformacion digital c"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "estrategia de transformación digital hacia la costa rica del bicentenario 4.0",
+     "semillas": [
+      "transformacion digital h"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "transformacion digital barcelona",
+     "semillas": [
+      "transformacion digital b"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "transformación digital cdmx",
+     "semillas": [
+      "transformacion digital c"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "transformación digital perú valida interoperabilidad de historias clínicas electrónicas",
+     "semillas": [
+      "transformacion digital v"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "congreso transformacion digital valencia",
+     "semillas": [
+      "transformacion digital v"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "transformacion digital de negocios tec",
+     "semillas": [
+      "transformacion digital n"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "transformación digital uniandes",
+     "semillas": [
+      "transformacion digital u"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "transformación digital gobierno de chile",
+     "semillas": [
+      "transformacion digital g"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "transformación digital upc",
+     "semillas": [
+      "transformacion digital u"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "diplomado en transformación digital javeriana",
+     "semillas": [
+      "transformacion digital j"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "transformacion digital mendoza",
+     "semillas": [
+      "transformacion digital m"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "transformacion digital madrid",
+     "semillas": [
+      "transformacion digital m"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "transformación digital en colombia",
+     "semillas": [
+      "transformacion digital e"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "transformación digital unir",
+     "semillas": [
+      "transformacion digital u"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "oposiciones transformación digital",
+     "semillas": [
+      "transformacion digital o"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "transformacion digital en chile",
+     "semillas": [
+      "transformacion digital e"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "transformacion digital en republica dominicana",
+     "semillas": [
+      "transformacion digital r"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "transformación digital como factor de cambio de la matriz productiva de ecuador",
+     "semillas": [
+      "transformacion digital f"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "transformación digital unab",
+     "semillas": [
+      "transformacion digital u"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    }
+   ]
+  },
+  {
+   "id": "emprender",
+   "nombre": "Emprender o ganar dinero",
+   "color": "#fb923c",
+   "quien": "ninguno",
+   "que_es": "La frase habla de un negocio propio o de ganar dinero, no de estudiar. Si este grupo pesa mucho, el tema no se entiende como carrera.",
+   "total": 0,
+   "pct": 0.0,
+   "sugerencias": []
+  },
+  {
+   "id": "becas",
+   "nombre": "Becas y ayuda",
+   "color": "#f2b03d",
+   "quien": "familia",
+   "que_es": "Cómo pagarla con ayuda: becas, descuentos, financiación.",
+   "total": 2,
+   "pct": 0.6,
+   "sugerencias": [
+    {
+     "texto": "becas transformacion digital",
+     "semillas": [
+      "transformacion digital becas"
+     ],
+     "grupos": [
+      "familia"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "becas"
+    },
+    {
+     "texto": "transformacion digital beca",
+     "semillas": [
+      "transformacion digital b"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "becas"
+    }
+   ]
+  },
+  {
+   "id": "costo",
+   "nombre": "Costo",
+   "color": "#f07f4f",
+   "quien": "familia",
+   "que_es": "Cuánto cuesta: precio, cuota, gratis o paga.",
+   "total": 9,
+   "pct": 2.5,
+   "sugerencias": [
+    {
+     "texto": "transformacion digital y funcion publica",
+     "semillas": [
+      "transformacion digital",
+      "transformacion digital y"
+     ],
+     "grupos": [
+      "base",
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1250,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "costo"
+    },
+    {
+     "texto": "transformacion digital y funcion publica autofirma",
+     "semillas": [
+      "transformacion digital y"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 602,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "costo"
+    },
+    {
+     "texto": "transformación digital administración pública",
+     "semillas": [
+      "transformacion digital a"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "costo"
+    },
+    {
+     "texto": "transformación digital libro pdf gratis",
+     "semillas": [
+      "transformacion digital l"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "costo"
+    },
+    {
+     "texto": "transformacion digital funcion publica",
+     "semillas": [
+      "transformacion digital f"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 559,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "costo"
+    },
+    {
+     "texto": "curso transformación digital online gratis",
+     "semillas": [
+      "transformacion digital o"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "costo"
+    },
+    {
+     "texto": "ministerio transformacion digital funcion publica",
+     "semillas": [
+      "transformacion digital f"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "costo"
+    },
+    {
+     "texto": "transformación digital curso gratis",
+     "semillas": [
+      "transformacion digital c"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "costo"
+    },
+    {
+     "texto": "transformación digital en la administración pública ejes y factores esenciales",
+     "semillas": [
+      "transformacion digital a"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "costo"
+    }
+   ]
+  },
+  {
+   "id": "salida",
+   "nombre": "Salida laboral",
+   "color": "#3ccf91",
+   "quien": "ambos",
+   "que_es": "Para qué sirve: trabajo, sueldo, demanda.",
+   "total": 12,
+   "pct": 3.4,
+   "sugerencias": [
+    {
+     "texto": "cuanto gana un especialista en transformación digital",
+     "semillas": [
+      "cuánto gana transformacion digital"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "transformacion digital que es y para que sirve",
+     "semillas": [
+      "transformacion digital q"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "transformación digital gob mx bolsa de trabajo",
+     "semillas": [
+      "transformacion digital g"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "transformación digital vacantes",
+     "semillas": [
+      "transformacion digital v"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "cuanto gana un gerente de. transformación digital",
+     "semillas": [
+      "cuánto gana transformacion digital"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "transformacion digital jobs",
+     "semillas": [
+      "transformacion digital j"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "transformación digital trabajo",
+     "semillas": [
+      "transformacion digital t"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "transformacion digital bolsa de trabajo",
+     "semillas": [
+      "transformacion digital b"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 560,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "transformación digital empleo",
+     "semillas": [
+      "transformacion digital e"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "transformación digital linkedin",
+     "semillas": [
+      "transformacion digital l"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "transformacion digital para el empleo google",
+     "semillas": [
+      "transformacion digital p"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "agencia de transformación digital vacantes",
+     "semillas": [
+      "transformacion digital v"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    }
+   ]
+  },
+  {
+   "id": "modalidad",
+   "nombre": "Modalidad",
+   "color": "#4aa8ff",
+   "quien": "estudiante",
+   "que_es": "Cómo se cursa: a distancia, virtual, semipresencial, horarios.",
+   "total": 2,
+   "pct": 0.6,
+   "sugerencias": [
+    {
+     "texto": "especialización en transformación digital virtual",
+     "semillas": [
+      "transformacion digital v"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "modalidad"
+    },
+    {
+     "texto": "maestria en transformacion digital virtual",
+     "semillas": [
+      "transformacion digital v"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "modalidad"
+    }
+   ]
+  },
+  {
+   "id": "plan",
+   "nombre": "Plan y requisitos",
+   "color": "#a78bfa",
+   "quien": "estudiante",
+   "que_es": "Qué se estudia y qué se pide: materias, duración, requisitos, inscripción.",
+   "total": 3,
+   "pct": 0.8,
+   "sugerencias": [
+    {
+     "texto": "ingenieria en transformacion digital de negocios plan de estudios",
+     "semillas": [
+      "transformacion digital plan de estudios"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "plan"
+    },
+    {
+     "texto": "plan de transformación digital que es",
+     "semillas": [
+      "transformacion digital q"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "plan"
+    },
+    {
+     "texto": "transformacion educativa programa",
+     "semillas": [
+      "transformacion digital plan de estudios"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "plan"
+    }
+   ]
+  },
+  {
+   "id": "comparar",
+   "nombre": "Comparar y decidir",
+   "color": "#ff6fa3",
+   "quien": "familia",
+   "que_es": "Dudas antes de elegir: mejor opción, opiniones, si vale la pena.",
+   "total": 2,
+   "pct": 0.6,
+   "sugerencias": [
+    {
+     "texto": "transformación digital ventajas y desventajas",
+     "semillas": [
+      "transformacion digital v"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 562,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "comparar"
+    },
+    {
+     "texto": "transformación digital ventajas",
+     "semillas": [
+      "transformacion digital v"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "comparar"
+    }
+   ]
+  },
+  {
+   "id": "donde",
+   "nombre": "Dónde estudiar",
+   "color": "#35c9d6",
+   "quien": "ambos",
+   "que_es": "Lugar o institución de Uruguay: universidades y ciudades.",
+   "total": 3,
+   "pct": 0.8,
+   "sugerencias": [
+    {
+     "texto": "transformacion digital uruguay",
+     "semillas": [
+      "dónde estudiar transformacion digital",
+      "cuánto gana transformacion digital",
+      "transformacion digital carrera",
+      "transformacion digital a distancia",
+      "transformacion digital requisitos",
+      "transformacion digital costo",
+      "transformacion digital becas",
+      "transformacion digital vale la pena",
+      "transformacion digital opiniones",
+      "transformacion digital k",
+      "transformacion digital u",
+      "transformacion digital w",
+      "transformacion digital x",
+      "transformacion digital z"
+     ],
+     "grupos": [
+      "preguntas",
+      "estudiante",
+      "familia",
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 14,
+     "instituciones": [],
+     "intencion": "donde"
+    },
+    {
+     "texto": "donde estudiar transformacion digital",
+     "semillas": [
+      "dónde estudiar transformacion digital",
+      "estudiar transformacion digital"
+     ],
+     "grupos": [
+      "preguntas",
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "donde"
+    },
+    {
+     "texto": "transformación digital de las universidades",
+     "semillas": [
+      "transformacion digital d"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "donde"
+    }
+   ]
+  },
+  {
+   "id": "formato",
+   "nombre": "Tipo de formación",
+   "color": "#7c9cff",
+   "quien": "estudiante",
+   "que_es": "Qué nivel buscan: carrera, licenciatura, curso, posgrado.",
+   "total": 14,
+   "pct": 3.9,
+   "sugerencias": [
+    {
+     "texto": "transformacion cursos",
+     "semillas": [
+      "estudiar transformacion digital",
+      "transformacion digital carrera",
+      "transformacion digital a distancia",
+      "transformacion digital becas"
+     ],
+     "grupos": [
+      "estudiante",
+      "familia"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 4,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "transformacion digital especializacion",
+     "semillas": [
+      "transformacion digital",
+      "transformacion digital e"
+     ],
+     "grupos": [
+      "base",
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 604,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "transformación digital carrera",
+     "semillas": [
+      "transformacion digital carrera",
+      "transformacion digital c"
+     ],
+     "grupos": [
+      "estudiante",
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "transformación digital curso",
+     "semillas": [
+      "transformacion digital",
+      "transformacion digital c"
+     ],
+     "grupos": [
+      "base",
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "transformación digital diplomado",
+     "semillas": [
+      "transformacion digital d"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 700,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "transformacion digital maestria",
+     "semillas": [
+      "transformacion digital m"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 602,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "cursos de transformacion",
+     "semillas": [
+      "dónde estudiar transformacion digital"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "especialista en transformación digital carrera",
+     "semillas": [
+      "transformacion digital carrera"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "curso transformación digital que es",
+     "semillas": [
+      "transformacion digital q"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 560,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "transformación digital gob mx cursos",
+     "semillas": [
+      "transformacion digital g"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "transformacion digital master",
+     "semillas": [
+      "transformacion digital m"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "transformacion digital posgrado",
+     "semillas": [
+      "transformacion digital p"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "especialización en transformación digital que es",
+     "semillas": [
+      "transformacion digital q"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "master en transformacion digital que es",
+     "semillas": [
+      "transformacion digital q"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "formato"
+    }
+   ]
+  },
+  {
+   "id": "temas",
+   "nombre": "Temas con los que se combina",
+   "color": "#e879f9",
+   "quien": "estudiante",
+   "que_es": "Con qué otros temas se busca junto: inteligencia artificial, negocios, salud. Sirve para decidir el nombre y el foco de una carrera.",
+   "total": 40,
+   "pct": 11.2,
+   "sugerencias": [
+    {
+     "texto": "transformación digital e inteligencia artificial",
+     "semillas": [
+      "transformacion digital a",
+      "transformacion digital i",
+      "transformacion digital"
+     ],
+     "grupos": [
+      "alfabeto",
+      "youtube"
+     ],
+     "fuentes": [
+      "google",
+      "youtube"
+     ],
+     "relevancia_max": 559,
+     "apariciones": 3,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "transformacion digital y gestion de datos",
+     "semillas": [
+      "transformacion digital",
+      "transformacion digital y"
+     ],
+     "grupos": [
+      "base",
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 900,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "transformación digital en salud",
+     "semillas": [
+      "transformacion digital",
+      "transformacion digital e"
+     ],
+     "grupos": [
+      "base",
+      "alfabeto",
+      "youtube"
+     ],
+     "fuentes": [
+      "google",
+      "youtube"
+     ],
+     "relevancia_max": 603,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "transformación digital en la educación",
+     "semillas": [
+      "transformacion digital e",
+      "transformacion digital l"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 602,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "transformacion digital en salud ops",
+     "semillas": [
+      "transformacion digital e",
+      "transformacion digital o"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "transformación social digital",
+     "semillas": [
+      "transformacion digital a distancia",
+      "transformacion digital requisitos"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "transformación digital en el turismo",
+     "semillas": [
+      "transformacion digital t",
+      "transformacion digital"
+     ],
+     "grupos": [
+      "alfabeto",
+      "youtube"
+     ],
+     "fuentes": [
+      "google",
+      "youtube"
+     ],
+     "relevancia_max": 560,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "transformación digital de negocios",
+     "semillas": [
+      "transformacion digital d",
+      "transformacion digital n"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "transformación digital y negocios inteligentes la era de la inteligencia artificial",
+     "semillas": [
+      "transformacion digital n",
+      "transformacion digital y"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "transformación digital y big data",
+     "semillas": [
+      "transformacion digital b",
+      "transformacion digital y"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "transformación digital con ia y automatización",
+     "semillas": [
+      "transformacion digital c",
+      "transformacion digital i"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "transformación digital ia",
+     "semillas": [
+      "transformacion digital i"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 750,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "transformación digital financiera",
+     "semillas": [
+      "transformacion digital f"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "transformación digital ia y big data",
+     "semillas": [
+      "transformacion digital i"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "transformacion digital y derecho",
+     "semillas": [
+      "transformacion digital requisitos"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "transformación digital ia y big data femxa",
+     "semillas": [
+      "transformacion digital i"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "transformación digital liderazgo y gestión del cambio",
+     "semillas": [
+      "transformacion digital l"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "transformación digital administración",
+     "semillas": [
+      "transformacion digital a"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 560,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "transformación digital recursos humanos",
+     "semillas": [
+      "transformacion digital h"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 560,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "transformacion digital marketing",
+     "semillas": [
+      "transformacion digital m"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 559,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "marketing y transformación digital que es",
+     "semillas": [
+      "transformacion digital q"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "transformacion digital de la educacion",
+     "semillas": [
+      "transformacion digital d"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "innovación y transformación digital que es",
+     "semillas": [
+      "transformacion digital q"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "que es transformación digital en salud",
+     "semillas": [
+      "qué es transformacion digital"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "transformacion digital en recursos humanos",
+     "semillas": [
+      "transformacion digital"
+     ],
+     "grupos": [
+      "youtube"
+     ],
+     "fuentes": [
+      "youtube"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "transformación digital en recursos humanos pdf",
+     "semillas": [
+      "transformacion digital h"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "transformación digital salud",
+     "semillas": [
+      "transformacion digital s"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "transformacion digital logistica",
+     "semillas": [
+      "transformacion digital l"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "transformacion digital para el personal de salud",
+     "semillas": [
+      "transformacion digital p"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "transformación digital con ia",
+     "semillas": [
+      "transformacion digital c"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "ministerio transformación digital kit digital",
+     "semillas": [
+      "transformacion digital k"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "que es la transformación digital en la educación",
+     "semillas": [
+      "qué es transformacion digital"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "transformación digital y ciberseguridad",
+     "semillas": [
+      "transformacion digital y"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "transformación digital y nuevos modelos de negocio",
+     "semillas": [
+      "transformacion digital n"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "aportaciones desde la transformación digital hacia la investigación y la innovación educativas",
+     "semillas": [
+      "transformacion digital h"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "transformación digital e innovación",
+     "semillas": [
+      "transformacion digital i"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "transformación digital y negocios inteligentes",
+     "semillas": [
+      "transformacion digital n"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "dirección general transformación digital administración justicia",
+     "semillas": [
+      "transformacion digital a"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "transformación digital en salud conceptos y herramientas esenciales para el personal de salud",
+     "semillas": [
+      "transformacion digital"
+     ],
+     "grupos": [
+      "youtube"
+     ],
+     "fuentes": [
+      "youtube"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "transformación digital y nuevas formas de hacer negocios",
+     "semillas": [
+      "transformacion digital n"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    }
+   ]
+  },
+  {
+   "id": "aprender",
+   "nombre": "Aprender por su cuenta",
+   "color": "#c9d451",
+   "quien": "estudiante",
+   "que_es": "Contenido para aprender solo: qué es, libros, herramientas, videos.",
+   "total": 33,
+   "pct": 9.2,
+   "sugerencias": [
+    {
+     "texto": "transformación digital pdf",
+     "semillas": [
+      "transformacion digital",
+      "transformacion digital p"
+     ],
+     "grupos": [
+      "base",
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1250,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "transformación digital definición",
+     "semillas": [
+      "transformacion digital",
+      "transformacion digital d"
+     ],
+     "grupos": [
+      "base",
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 701,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "transformación digital logo",
+     "semillas": [
+      "transformacion digital l"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1251,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "transformacion digital libro",
+     "semillas": [
+      "transformacion digital l"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1250,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "transformación digital que es",
+     "semillas": [
+      "transformacion digital q"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1250,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "que es transformación digital",
+     "semillas": [
+      "qué es transformacion digital"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "transformacion digital en ingles",
+     "semillas": [
+      "transformacion digital e"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "transformación digital historia",
+     "semillas": [
+      "transformacion digital h"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "transformación digital noticias",
+     "semillas": [
+      "transformacion digital n"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "transformación digital wikipedia",
+     "semillas": [
+      "transformacion digital w"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "que es transformacion digital en una empresa",
+     "semillas": [
+      "qué es transformacion digital"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "transformacion digital filetype pdf",
+     "semillas": [
+      "transformacion digital f"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "transformación digital herramientas",
+     "semillas": [
+      "transformacion digital h"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "transformación digital qué es y por qué es importante en las organizaciones",
+     "semillas": [
+      "transformacion digital q"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "transformación digital resumen",
+     "semillas": [
+      "transformacion digital r"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 562,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "transformación digital tesis pdf",
+     "semillas": [
+      "transformacion digital t"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 560,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "transformacion digital libro pdf",
+     "semillas": [
+      "transformacion digital l"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 559,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "agencia de transformación digital que es",
+     "semillas": [
+      "transformacion digital q"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "que es transformación digital ejemplos",
+     "semillas": [
+      "qué es transformacion digital"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "transformación digital significado",
+     "semillas": [
+      "transformacion digital s"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "que es transformación digital pdf",
+     "semillas": [
+      "qué es transformacion digital"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "especialista en transformación digital que es",
+     "semillas": [
+      "transformacion digital q"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "que es la transformación digital según autores",
+     "semillas": [
+      "qué es transformacion digital"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "transformación digital en las organizaciones pdf",
+     "semillas": [
+      "transformacion digital o"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "que es la transformación digital en las organizaciones",
+     "semillas": [
+      "qué es transformacion digital"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "transformacion digital wallpaper",
+     "semillas": [
+      "transformacion digital w"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "transformación digital ejemplos",
+     "semillas": [
+      "transformacion digital e"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "ministerio de transformación digital que es",
+     "semillas": [
+      "transformacion digital q"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "transformación digital en las organizaciones libro",
+     "semillas": [
+      "transformacion digital o"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "que es digitalización transformación digital",
+     "semillas": [
+      "qué es transformacion digital"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "webinar transformacion digital",
+     "semillas": [
+      "transformacion digital w"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "que es la transformación digital del estado",
+     "semillas": [
+      "qué es transformacion digital"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "qué es la transformación digital en el sector público",
+     "semillas": [
+      "qué es transformacion digital"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    }
+   ]
+  },
+  {
+   "id": "otros",
+   "nombre": "Otros",
+   "color": "#9aa4b8",
+   "quien": "ninguno",
+   "que_es": "No coincide con ninguna regla. Si este grupo crece, falta una regla.",
+   "total": 188,
+   "pct": 52.7,
+   "sugerencias": [
+    {
+     "texto": "transformacion digital el pais",
+     "semillas": [
+      "transformacion digital costo",
+      "transformacion digital vale la pena",
+      "transformacion digital opiniones",
+      "transformacion digital k",
+      "transformacion digital w",
+      "transformacion digital x",
+      "transformacion digital z"
+     ],
+     "grupos": [
+      "familia",
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 7,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital en las organizaciones",
+     "semillas": [
+      "transformacion digital e",
+      "transformacion digital l",
+      "transformacion digital o",
+      "transformacion digital"
+     ],
+     "grupos": [
+      "alfabeto",
+      "youtube"
+     ],
+     "fuentes": [
+      "google",
+      "youtube"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 4,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformacion digital csj",
+     "semillas": [
+      "transformacion digital",
+      "transformacion digital c"
+     ],
+     "grupos": [
+      "base",
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1250,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformacion digital de una empresa",
+     "semillas": [
+      "transformacion digital",
+      "transformacion digital d"
+     ],
+     "grupos": [
+      "base",
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1250,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformacion digital segun autores",
+     "semillas": [
+      "transformacion digital a",
+      "transformacion digital s"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1250,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformacion digital policia nacional",
+     "semillas": [
+      "transformacion digital n",
+      "transformacion digital p"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1000,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital en las empresas",
+     "semillas": [
+      "transformacion digital e",
+      "transformacion digital l"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1000,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformacion digital uni",
+     "semillas": [
+      "transformacion digital u",
+      "transformacion digital"
+     ],
+     "grupos": [
+      "alfabeto",
+      "youtube"
+     ],
+     "fuentes": [
+      "google",
+      "youtube"
+     ],
+     "relevancia_max": 602,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital bbva",
+     "semillas": [
+      "transformacion digital b",
+      "transformacion digital"
+     ],
+     "grupos": [
+      "alfabeto",
+      "youtube"
+     ],
+     "fuentes": [
+      "google",
+      "youtube"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital rama judicial",
+     "semillas": [
+      "transformacion digital j",
+      "transformacion digital r"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital y telecomunicaciones",
+     "semillas": [
+      "transformacion digital t",
+      "transformacion digital y"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformacion digital empresas",
+     "semillas": [
+      "transformacion digital",
+      "transformacion digital carrera"
+     ],
+     "grupos": [
+      "youtube"
+     ],
+     "fuentes": [
+      "youtube"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital y automatización",
+     "semillas": [
+      "transformacion digital a",
+      "transformacion digital y"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformacion digital bcp",
+     "semillas": [
+      "transformacion digital b",
+      "transformacion digital"
+     ],
+     "grupos": [
+      "alfabeto",
+      "youtube"
+     ],
+     "fuentes": [
+      "google",
+      "youtube"
+     ],
+     "relevancia_max": 561,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital corte suprema de justicia",
+     "semillas": [
+      "transformacion digital c",
+      "transformacion digital j"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital y evolución tecnológica",
+     "semillas": [
+      "transformacion digital t",
+      "transformacion digital y"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital y tecnológica",
+     "semillas": [
+      "transformacion digital t",
+      "transformacion digital y"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital y evolución tecnológica respuestas",
+     "semillas": [
+      "transformacion digital t",
+      "transformacion digital y"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital gobierno",
+     "semillas": [
+      "transformacion digital g"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1252,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformacion digital agencia de transformacion digital y telecomunicaciones",
+     "semillas": [
+      "transformacion digital a"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1251,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformacion digital sac",
+     "semillas": [
+      "transformacion digital s"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1251,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital gob",
+     "semillas": [
+      "transformacion digital g"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1251,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital infotec",
+     "semillas": [
+      "transformacion digital i"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1251,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformacion digital articulo cientifico",
+     "semillas": [
+      "transformacion digital a"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1250,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformacion digital bid",
+     "semillas": [
+      "transformacion digital b"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1250,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformacion digital imagenes",
+     "semillas": [
+      "transformacion digital i"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1250,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital fi",
+     "semillas": [
+      "transformacion digital f"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1250,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital tesis",
+     "semillas": [
+      "transformacion digital t"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1250,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital gob mx",
+     "semillas": [
+      "transformacion digital g"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1200,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformacion digital pcm",
+     "semillas": [
+      "transformacion digital p"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 850,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformacion digital umich",
+     "semillas": [
+      "transformacion digital u"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 801,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformacion digital y corporativa sas",
+     "semillas": [
+      "transformacion digital y"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 800,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital del estado",
+     "semillas": [
+      "transformacion digital d"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 800,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformacion digital morelos",
+     "semillas": [
+      "transformacion digital m"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 750,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformacion digital sostenible",
+     "semillas": [
+      "transformacion digital s"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 701,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital supertransporte",
+     "semillas": [
+      "transformacion digital s"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 700,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformacion digital utnianos",
+     "semillas": [
+      "transformacion digital u"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 650,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformacion digital junta de andalucia",
+     "semillas": [
+      "transformacion digital j"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformacion digital minsal",
+     "semillas": [
+      "transformacion digital m"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformacion digital para empresas",
+     "semillas": [
+      "transformacion digital p"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformacion digital ulima",
+     "semillas": [
+      "transformacion digital u"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital de las organizaciones",
+     "semillas": [
+      "transformacion digital d"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital kpmg",
+     "semillas": [
+      "transformacion digital k"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital organizacional",
+     "semillas": [
+      "transformacion digital o"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital tdf",
+     "semillas": [
+      "transformacion digital t"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "zara transformación digital",
+     "semillas": [
+      "transformacion digital z"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "agencia de transformación digital x",
+     "semillas": [
+      "transformacion digital x"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "kuno transformacion digital",
+     "semillas": [
+      "transformacion digital k"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformacion digital agentes del cambio",
+     "semillas": [
+      "transformacion digital a"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformacion digital de netflix",
+     "semillas": [
+      "transformacion digital d"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformacion digital gedesa",
+     "semillas": [
+      "transformacion digital g"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformacion digital municipal",
+     "semillas": [
+      "transformacion digital m"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformacion digital netflix",
+     "semillas": [
+      "transformacion digital n"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformacion digital ocde",
+     "semillas": [
+      "transformacion digital o"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformacion digital png",
+     "semillas": [
+      "transformacion digital p"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformacion digital rrhh",
+     "semillas": [
+      "transformacion digital r"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformacion digital ujed",
+     "semillas": [
+      "transformacion digital u"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformacion digital video",
+     "semillas": [
+      "transformacion digital v"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformacion digital walmart",
+     "semillas": [
+      "transformacion digital w"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformacion educativa planes y programas",
+     "semillas": [
+      "transformacion digital plan de estudios"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital beneficios",
+     "semillas": [
+      "transformacion digital b"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital en zonas rurales",
+     "semillas": [
+      "transformacion digital z"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital sinonimo",
+     "semillas": [
+      "transformacion digital s"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformacion digital jccm",
+     "semillas": [
+      "transformacion digital j"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 562,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformacion digital next generation",
+     "semillas": [
+      "transformacion digital n"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 562,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "digitalización y transformación digital",
+     "semillas": [
+      "transformacion digital v"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 561,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformacion digital pymes",
+     "semillas": [
+      "transformacion digital"
+     ],
+     "grupos": [
+      "youtube"
+     ],
+     "fuentes": [
+      "youtube"
+     ],
+     "relevancia_max": 561,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital junta de extremadura",
+     "semillas": [
+      "transformacion digital j"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 561,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital que implica",
+     "semillas": [
+      "transformacion digital q"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 561,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital rural",
+     "semillas": [
+      "transformacion digital r"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 561,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformacion digital formacion",
+     "semillas": [
+      "transformacion digital f"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 560,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformacion digital justicia",
+     "semillas": [
+      "transformacion digital j"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 560,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformacion digital nike",
+     "semillas": [
+      "transformacion digital n"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 560,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformacion digital repsol",
+     "semillas": [
+      "transformacion digital r"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 560,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital ley",
+     "semillas": [
+      "transformacion digital l"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 560,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital verde",
+     "semillas": [
+      "transformacion digital v"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 560,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "agencia de transformación digital quintana roo",
+     "semillas": [
+      "transformacion digital q"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 559,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformacion digital agencia",
+     "semillas": [
+      "transformacion digital a"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 559,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformacion digital bancaria",
+     "semillas": [
+      "transformacion digital b"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 559,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformacion digital cun",
+     "semillas": [
+      "transformacion digital c"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 559,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformacion digital nestle",
+     "semillas": [
+      "transformacion digital n"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 559,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformacion digital organigrama",
+     "semillas": [
+      "transformacion digital o"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 559,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital en hospitales",
+     "semillas": [
+      "transformacion digital h"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 559,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital integral",
+     "semillas": [
+      "transformacion digital i"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 559,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital revista",
+     "semillas": [
+      "transformacion digital r"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 559,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital vector",
+     "semillas": [
+      "transformacion digital v"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 559,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "consorcio transformación digital tránsito tunja",
+     "semillas": [
+      "transformacion digital t"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformacion digital mintic",
+     "semillas": [
+      "transformacion digital m"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital adgd33",
+     "semillas": [
+      "transformacion digital a"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital bim",
+     "semillas": [
+      "transformacion digital b"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital educativa junta de andalucía",
+     "semillas": [
+      "transformacion digital j"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital frases",
+     "semillas": [
+      "transformacion digital f"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital imagen",
+     "semillas": [
+      "transformacion digital i"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital llave mx",
+     "semillas": [
+      "transformacion digital l"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital talento humano",
+     "semillas": [
+      "transformacion digital h"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "ministerio transformación digital organigrama",
+     "semillas": [
+      "transformacion digital o"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformacion digital en hoteles",
+     "semillas": [
+      "transformacion digital h"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital concepto",
+     "semillas": [
+      "transformacion digital c"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital empresarial",
+     "semillas": [
+      "transformacion digital e"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital fondo",
+     "semillas": [
+      "transformacion digital f"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital icono",
+     "semillas": [
+      "transformacion digital i"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital ministerio",
+     "semillas": [
+      "transformacion digital m"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital rd",
+     "semillas": [
+      "transformacion digital r"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital segura para una pyme local",
+     "semillas": [
+      "transformacion digital s"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital y desarrollo sostenible",
+     "semillas": [
+      "transformacion digital y"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "agencia transformacion digital jccm",
+     "semillas": [
+      "transformacion digital j"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformacion digital b2b",
+     "semillas": [
+      "transformacion digital b"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformacion digital falabella",
+     "semillas": [
+      "transformacion digital f"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformacion digital para la mejora continua",
+     "semillas": [
+      "transformacion digital p"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital industria 4.0",
+     "semillas": [
+      "transformacion digital i"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital liderazgo y estrategias",
+     "semillas": [
+      "transformacion digital l"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital retos y oportunidades",
+     "semillas": [
+      "transformacion digital r"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital siglo veintiuno sl",
+     "semillas": [
+      "transformacion digital v"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital umsnh",
+     "semillas": [
+      "transformacion digital u"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital y gobierno electrónico",
+     "semillas": [
+      "transformacion digital y"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital y tecnología",
+     "semillas": [
+      "transformacion digital t"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "consejeria transformacion digital junta de andalucia",
+     "semillas": [
+      "transformacion digital j"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformacion digital fidelitas",
+     "semillas": [
+      "transformacion digital f"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformacion digital indirectos",
+     "semillas": [
+      "transformacion digital"
+     ],
+     "grupos": [
+      "youtube"
+     ],
+     "fuentes": [
+      "youtube"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformacion digital restaurantes",
+     "semillas": [
+      "transformacion digital r"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformacion digital uniminuto",
+     "semillas": [
+      "transformacion digital u"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital de pymes",
+     "semillas": [
+      "transformacion digital d"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital en américa latina",
+     "semillas": [
+      "transformacion digital a"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital gerencial",
+     "semillas": [
+      "transformacion digital g"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital ica",
+     "semillas": [
+      "transformacion digital i"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital scielo",
+     "semillas": [
+      "transformacion digital s"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital y nuevas tecnologías",
+     "semillas": [
+      "transformacion digital n"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "kit transformacion digital",
+     "semillas": [
+      "transformacion digital k"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "portal transformacion digital junta de andalucia",
+     "semillas": [
+      "transformacion digital j"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformacion digital 2026",
+     "semillas": [
+      "transformacion digital"
+     ],
+     "grupos": [
+      "youtube"
+     ],
+     "fuentes": [
+      "youtube"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformacion digital banco santander",
+     "semillas": [
+      "transformacion digital b"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformacion digital gobierno de canarias",
+     "semillas": [
+      "transformacion digital g"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformacion digital ingles",
+     "semillas": [
+      "transformacion digital i"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformacion digital ministro",
+     "semillas": [
+      "transformacion digital m"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformacion digital rpt",
+     "semillas": [
+      "transformacion digital r"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital de la corte suprema de justicia",
+     "semillas": [
+      "transformacion digital d"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital en rrhh",
+     "semillas": [
+      "transformacion digital h"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital foto",
+     "semillas": [
+      "transformacion digital f"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital sunat",
+     "semillas": [
+      "transformacion digital s"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital y digitalización",
+     "semillas": [
+      "transformacion digital y"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "tu transformacion digital adecco",
+     "semillas": [
+      "transformacion digital a"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "conpes transformación digital justicia",
+     "semillas": [
+      "transformacion digital j"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "https transformación digital supertransporte gov co",
+     "semillas": [
+      "transformacion digital h"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformacion digital lego",
+     "semillas": [
+      "transformacion digital l"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformacion digital redalyc",
+     "semillas": [
+      "transformacion digital r"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital crt",
+     "semillas": [
+      "transformacion digital c"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital de las mipymes elementos para el diseño de políticas",
+     "semillas": [
+      "transformacion digital d"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital en américa latina y el caribe",
+     "semillas": [
+      "transformacion digital a"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital en ventas",
+     "semillas": [
+      "transformacion digital v"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital mspas",
+     "semillas": [
+      "transformacion digital m"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital sevilla",
+     "semillas": [
+      "transformacion digital s"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "www transformación digital",
+     "semillas": [
+      "transformacion digital w"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "agencia de transformación digital titular",
+     "semillas": [
+      "transformacion digital t"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "kpi transformacion digital",
+     "semillas": [
+      "transformacion digital k"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "minor transformacion digital fen",
+     "semillas": [
+      "transformacion digital f"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "soluciones para la transformacion digital xxi sl",
+     "semillas": [
+      "transformacion digital x"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformacion digital banco de la nacion",
+     "semillas": [
+      "transformacion digital b"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformacion digital empresarial srl",
+     "semillas": [
+      "transformacion digital e"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformacion digital ppt",
+     "semillas": [
+      "transformacion digital p"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformacion digital ruc",
+     "semillas": [
+      "transformacion digital r"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformacion educativa documentos",
+     "semillas": [
+      "transformacion digital plan de estudios"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital dibujo",
+     "semillas": [
+      "transformacion digital d"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital global",
+     "semillas": [
+      "transformacion digital g"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital sence",
+     "semillas": [
+      "transformacion digital s"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital y cultura organizacional",
+     "semillas": [
+      "transformacion digital o"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "agencia de transformacion digital jalisco",
+     "semillas": [
+      "transformacion digital j"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "agencia de transformación digital tabasco",
+     "semillas": [
+      "transformacion digital t"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "la transformación digital implica",
+     "semillas": [
+      "transformacion digital i"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "ministro de transformación digital oscar lopez",
+     "semillas": [
+      "transformacion digital o"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "sothis transformación digital fotos",
+     "semillas": [
+      "transformacion digital f"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformacion digital 2023",
+     "semillas": [
+      "cuánto gana transformacion digital"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformacion digital a nivel mundial",
+     "semillas": [
+      "transformacion digital n"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformacion digital banner",
+     "semillas": [
+      "transformacion digital b"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformacion digital en el sector publico",
+     "semillas": [
+      "transformacion digital"
+     ],
+     "grupos": [
+      "youtube"
+     ],
+     "fuentes": [
+      "youtube"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformacion digital rae",
+     "semillas": [
+      "transformacion digital r"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformacion digital sector publico",
+     "semillas": [
+      "transformacion digital s"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital en la industria hotelera",
+     "semillas": [
+      "transformacion digital h"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital gubernamental",
+     "semillas": [
+      "transformacion digital g"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital pamplona",
+     "semillas": [
+      "transformacion digital p"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "agencia transformación digital y telecomunicaciones",
+     "semillas": [
+      "transformacion digital t"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "explica cómo la transformación digital ha cambiado las tendencias laborales",
+     "semillas": [
+      "transformacion digital h"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "qs transformación digital",
+     "semillas": [
+      "transformacion digital q"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformacion digital gendarmeria cl",
+     "semillas": [
+      "transformacion digital g"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformacion digital mineria",
+     "semillas": [
+      "transformacion digital m"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformacion educativa planificacion",
+     "semillas": [
+      "transformacion digital plan de estudios"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital de procesos",
+     "semillas": [
+      "transformacion digital d"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital para pymes",
+     "semillas": [
+      "transformacion digital p"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "transformación digital sat",
+     "semillas": [
+      "transformacion digital s"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    }
+   ]
+  }
+ ],
+ "dominios": [],
+ "top10": [
+  {
+   "buscador": "pendiente",
+   "consulta": "transformacion digital",
+   "estado": "pendiente",
+   "motivo": "sin fuente automática: leer la página de un buscador con un script no es confiable (probado el 2026-11-16). Falta elegir una API oficial con clave gratuita (PLAN.md, fase F5).",
+   "resultados": []
+  },
+  {
+   "buscador": "pendiente",
+   "consulta": "transformacion digital carrera uruguay",
+   "estado": "pendiente",
+   "motivo": "sin fuente automática: leer la página de un buscador con un script no es confiable (probado el 2026-11-16). Falta elegir una API oficial con clave gratuita (PLAN.md, fase F5).",
+   "resultados": []
+  }
+ ],
+ "rechazadas": {
+  "total": 2,
+  "por_motivo": {
+   "no nombra el tema": 2
+  },
+  "ejemplos": [
+   {
+    "semilla": "cuánto gana transformacion digital",
+    "grupo": "preguntas",
+    "fuente": "google",
+    "texto": "cuánto gana un youtuber en uruguay",
+    "relevancia": 550,
+    "motivo": "no nombra el tema"
+   },
+   {
+    "semilla": "estudiar transformacion digital",
+    "grupo": "youtube",
+    "fuente": "youtube",
+    "texto": "estudiar online",
+    "relevancia": 600,
+    "motivo": "no nombra el tema"
+   }
+  ]
+ },
+ "enlaces": {
+  "trends": "https://trends.google.com/trends/explore?geo=UY&date=today%205-y&q=transformacion%20digital",
+  "google": "https://www.google.com/search?gl=uy&hl=es&q=transformacion%20digital",
+  "bing": "https://www.bing.com/search?cc=UY&setlang=es&q=transformacion%20digital",
+  "duckduckgo": "https://duckduckgo.com/?kl=uy-es&q=transformacion%20digital",
+  "youtube": "https://www.youtube.com/results?search_query=transformacion%20digital"
+ }
+}

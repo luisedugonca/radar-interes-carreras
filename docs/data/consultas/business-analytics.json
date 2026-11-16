@@ -1,0 +1,7117 @@
+{
+ "tema": "business analytics",
+ "slug": "business-analytics",
+ "run_id": "20261116T222442Z_business-analytics",
+ "generado_utc": "2026-11-16T22:24:42Z",
+ "pais": "Uruguay",
+ "reglas_version": "2026-11-16b",
+ "fuentes": [
+  {
+   "id": "google",
+   "nombre": "Autocompletar de Google",
+   "pedidos": 43,
+   "con_respuesta": 43
+  },
+  {
+   "id": "youtube",
+   "nombre": "Autocompletar de YouTube",
+   "pedidos": 3,
+   "con_respuesta": 3
+  }
+ ],
+ "resumen": {
+  "sugerencias_unicas": 419,
+  "intenciones_con_datos": 8,
+  "fuera_de_uruguay": 24,
+  "fuera_de_uruguay_pct": 5.7,
+  "sin_clasificar": 267,
+  "instituciones_uy": [
+   {
+    "id": "UM",
+    "sugerencias": 2
+   },
+   {
+    "id": "ORT",
+    "sugerencias": 1
+   },
+   {
+    "id": "UCU",
+    "sugerencias": 1
+   },
+   {
+    "id": "UTEC",
+    "sugerencias": 1
+   }
+  ],
+  "quien_supuesto": {
+   "familia": 16,
+   "estudiante": 72,
+   "ambos": 40,
+   "ninguno": 291
+  },
+  "top10_validos": 0,
+  "top10_rechazados": 0,
+  "top10_pendientes": 2
+ },
+ "intenciones": [
+  {
+   "id": "fuera_uy",
+   "nombre": "Fuera de Uruguay",
+   "color": "#8b93a7",
+   "quien": "ninguno",
+   "que_es": "La sugerencia nombra un país o una universidad de otro país. No es demanda local.",
+   "total": 24,
+   "pct": 5.7,
+   "sugerencias": [
+    {
+     "texto": "business analytics nota de corte",
+     "semillas": [
+      "business analytics",
+      "business analytics n"
+     ],
+     "grupos": [
+      "base",
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1250,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "donde estudiar business analytics en madrid",
+     "semillas": [
+      "dónde estudiar business analytics",
+      "estudiar business analytics"
+     ],
+     "grupos": [
+      "preguntas",
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "business analytics upc",
+     "semillas": [
+      "business analytics",
+      "business analytics u"
+     ],
+     "grupos": [
+      "base",
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 561,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "business analytics pucp",
+     "semillas": [
+      "business analytics p"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1252,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "business analytics big data upc",
+     "semillas": [
+      "business analytics b"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1251,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "business analytics siglo 21",
+     "semillas": [
+      "business analytics s"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1250,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "business analytics tec de monterrey",
+     "semillas": [
+      "business analytics t"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1250,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "business analytics itba",
+     "semillas": [
+      "business analytics i"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1200,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "business analytics harvard business school online",
+     "semillas": [
+      "business analytics h"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 900,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "business analytics costa rica",
+     "semillas": [
+      "business analytics c"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 701,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "business analytics master madrid",
+     "semillas": [
+      "business analytics m"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 650,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "business analytics espol",
+     "semillas": [
+      "business analytics e"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 602,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "business analytics carrera madrid",
+     "semillas": [
+      "business analytics carrera"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "business analytics harvard",
+     "semillas": [
+      "business analytics h"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "business analytics valencia",
+     "semillas": [
+      "business analytics v"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "estudiar business analytics en españa",
+     "semillas": [
+      "estudiar business analytics"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "business analytics la salle",
+     "semillas": [
+      "business analytics l"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "business analytics uai",
+     "semillas": [
+      "business analytics u"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "business analytics uv",
+     "semillas": [
+      "business analytics u"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "business analytics up",
+     "semillas": [
+      "business analytics u"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "business analytics unir",
+     "semillas": [
+      "business analytics u"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "business analytics harvard business school",
+     "semillas": [
+      "business analytics h"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "business analytics uam nota de corte",
+     "semillas": [
+      "business analytics u"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "business analytics uned",
+     "semillas": [
+      "business analytics u"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    }
+   ]
+  },
+  {
+   "id": "emprender",
+   "nombre": "Emprender o ganar dinero",
+   "color": "#fb923c",
+   "quien": "ninguno",
+   "que_es": "La frase habla de un negocio propio o de ganar dinero, no de estudiar. Si este grupo pesa mucho, el tema no se entiende como carrera.",
+   "total": 0,
+   "pct": 0.0,
+   "sugerencias": []
+  },
+  {
+   "id": "becas",
+   "nombre": "Becas y ayuda",
+   "color": "#f2b03d",
+   "quien": "familia",
+   "que_es": "Cómo pagarla con ayuda: becas, descuentos, financiación.",
+   "total": 0,
+   "pct": 0.0,
+   "sugerencias": []
+  },
+  {
+   "id": "costo",
+   "nombre": "Costo",
+   "color": "#f07f4f",
+   "quien": "familia",
+   "que_es": "Cuánto cuesta: precio, cuota, gratis o paga.",
+   "total": 0,
+   "pct": 0.0,
+   "sugerencias": []
+  },
+  {
+   "id": "salida",
+   "nombre": "Salida laboral",
+   "color": "#3ccf91",
+   "quien": "ambos",
+   "que_es": "Para qué sirve: trabajo, sueldo, demanda.",
+   "total": 28,
+   "pct": 6.7,
+   "sugerencias": [
+    {
+     "texto": "business analyst salario uruguay",
+     "semillas": [
+      "cuánto gana business analytics",
+      "business analytics salida laboral",
+      "business analytics requisitos",
+      "business analytics costo",
+      "business analytics vale la pena"
+     ],
+     "grupos": [
+      "preguntas",
+      "estudiante",
+      "familia"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 5,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "cuanto gana un business analyst en uruguay",
+     "semillas": [
+      "cuánto gana business analytics",
+      "business analytics requisitos",
+      "business analytics vale la pena"
+     ],
+     "grupos": [
+      "preguntas",
+      "estudiante",
+      "familia"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 3,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "business analytics que es y para que sirve",
+     "semillas": [
+      "business analytics",
+      "business analytics q"
+     ],
+     "grupos": [
+      "base",
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1251,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "business analytics trabajo",
+     "semillas": [
+      "business analytics",
+      "business analytics t"
+     ],
+     "grupos": [
+      "base",
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1251,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "business analytics que hace",
+     "semillas": [
+      "business analytics",
+      "business analytics q"
+     ],
+     "grupos": [
+      "base",
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1250,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "business analytics remote jobs",
+     "semillas": [
+      "business analytics j",
+      "business analytics r"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "business analytics empleo",
+     "semillas": [
+      "business analytics e"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1251,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "business analytics jobs",
+     "semillas": [
+      "business analytics j"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1250,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "business analytics graduate jobs",
+     "semillas": [
+      "business analytics g"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 900,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "business analytics sueldo",
+     "semillas": [
+      "business analytics s"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 850,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "business analytics jobs for freshers",
+     "semillas": [
+      "business analytics j"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "cuanto gana un business analytics",
+     "semillas": [
+      "cuánto gana business analytics"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "business analytics fresher jobs",
+     "semillas": [
+      "business analytics f"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "business analytics jobs near me",
+     "semillas": [
+      "business analytics j"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "business analytics jobs entry level",
+     "semillas": [
+      "business analytics j"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 561,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "business analytics linkedin",
+     "semillas": [
+      "business analytics l"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 559,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "business analytics nus curriculum",
+     "semillas": [
+      "business analytics n"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 559,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "analista business analytics jr xp salario",
+     "semillas": [
+      "business analytics x"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "business analytics jobs in uk",
+     "semillas": [
+      "business analytics j"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "business analytics jobs in dubai",
+     "semillas": [
+      "business analytics j"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "business analytics degree jobs",
+     "semillas": [
+      "business analytics d"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "business analytics entry level jobs",
+     "semillas": [
+      "business analytics e"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "business analytics government jobs",
+     "semillas": [
+      "business analytics g"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "que es business analytics para que sirve y tipos",
+     "semillas": [
+      "qué es business analytics"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "business analytics jobs in zimbabwe",
+     "semillas": [
+      "business analytics z"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "business analyst que hace",
+     "semillas": [
+      "business analytics carrera"
+     ],
+     "grupos": [
+      "youtube"
+     ],
+     "fuentes": [
+      "youtube"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "business analytics jobs in germany",
+     "semillas": [
+      "business analytics j"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "qué es business analytics y para qué sirve",
+     "semillas": [
+      "qué es business analytics"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    }
+   ]
+  },
+  {
+   "id": "modalidad",
+   "nombre": "Modalidad",
+   "color": "#4aa8ff",
+   "quien": "estudiante",
+   "que_es": "Cómo se cursa: a distancia, virtual, semipresencial, horarios.",
+   "total": 10,
+   "pct": 2.4,
+   "sugerencias": [
+    {
+     "texto": "business analysis course online",
+     "semillas": [
+      "business analytics c",
+      "business analytics o"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 561,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "modalidad"
+    },
+    {
+     "texto": "business analytics free online course with certificate",
+     "semillas": [
+      "business analytics f"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 800,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "modalidad"
+    },
+    {
+     "texto": "business analytics master online",
+     "semillas": [
+      "business analytics m"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "modalidad"
+    },
+    {
+     "texto": "business analytics online",
+     "semillas": [
+      "business analytics o"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "modalidad"
+    },
+    {
+     "texto": "business analytics online master",
+     "semillas": [
+      "business analytics o"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "modalidad"
+    },
+    {
+     "texto": "business analytics online course with certificate",
+     "semillas": [
+      "business analytics o"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "modalidad"
+    },
+    {
+     "texto": "business analytics online degree",
+     "semillas": [
+      "business analytics o"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "modalidad"
+    },
+    {
+     "texto": "mba business analytics online",
+     "semillas": [
+      "business analytics o"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "modalidad"
+    },
+    {
+     "texto": "business analytics online msc",
+     "semillas": [
+      "business analytics o"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "modalidad"
+    },
+    {
+     "texto": "business analytics hbs online",
+     "semillas": [
+      "business analytics h"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "modalidad"
+    }
+   ]
+  },
+  {
+   "id": "plan",
+   "nombre": "Plan y requisitos",
+   "color": "#a78bfa",
+   "quien": "estudiante",
+   "que_es": "Qué se estudia y qué se pide: materias, duración, requisitos, inscripción.",
+   "total": 6,
+   "pct": 1.4,
+   "sugerencias": [
+    {
+     "texto": "business analytics uam plan de estudios",
+     "semillas": [
+      "business analytics plan de estudios"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "plan"
+    },
+    {
+     "texto": "business analytics roles and responsibilities",
+     "semillas": [
+      "business analytics r"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "plan"
+    },
+    {
+     "texto": "plan de estudios business analytics ufv",
+     "semillas": [
+      "business analytics plan de estudios"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "plan"
+    },
+    {
+     "texto": "plan de estudios business analytics y ade ufv",
+     "semillas": [
+      "business analytics plan de estudios"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "plan"
+    },
+    {
+     "texto": "plan de estudios business analytics uax",
+     "semillas": [
+      "business analytics plan de estudios"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "plan"
+    },
+    {
+     "texto": "plan de estudios ade y business analytics",
+     "semillas": [
+      "business analytics plan de estudios"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "plan"
+    }
+   ]
+  },
+  {
+   "id": "comparar",
+   "nombre": "Comparar y decidir",
+   "color": "#ff6fa3",
+   "quien": "familia",
+   "que_es": "Dudas antes de elegir: mejor opción, opiniones, si vale la pena.",
+   "total": 16,
+   "pct": 3.8,
+   "sugerencias": [
+    {
+     "texto": "business analytics vs business intelligence",
+     "semillas": [
+      "business analytics v",
+      "business analytics"
+     ],
+     "grupos": [
+      "alfabeto",
+      "youtube"
+     ],
+     "fuentes": [
+      "google",
+      "youtube"
+     ],
+     "relevancia_max": 1250,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "comparar"
+    },
+    {
+     "texto": "business analytics vs data science",
+     "semillas": [
+      "business analytics v",
+      "business analytics"
+     ],
+     "grupos": [
+      "alfabeto",
+      "youtube"
+     ],
+     "fuentes": [
+      "google",
+      "youtube"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "comparar"
+    },
+    {
+     "texto": "business analytics vs data analytics",
+     "semillas": [
+      "business analytics v"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1200,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "comparar"
+    },
+    {
+     "texto": "business analytics ranking",
+     "semillas": [
+      "business analytics r"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 750,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "comparar"
+    },
+    {
+     "texto": "strategic business analytics eae opiniones",
+     "semillas": [
+      "business analytics opiniones"
+     ],
+     "grupos": [
+      "familia"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "comparar"
+    },
+    {
+     "texto": "business analytics qs ranking",
+     "semillas": [
+      "business analytics q"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "comparar"
+    },
+    {
+     "texto": "business analytics vs finance",
+     "semillas": [
+      "business analytics v"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 559,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "comparar"
+    },
+    {
+     "texto": "business analytics vs accounting",
+     "semillas": [
+      "business analytics v"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "comparar"
+    },
+    {
+     "texto": "business analytics vs finance salary",
+     "semillas": [
+      "business analytics v"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "comparar"
+    },
+    {
+     "texto": "business analytics vs analysis",
+     "semillas": [
+      "business analytics v"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "comparar"
+    },
+    {
+     "texto": "business analytics vs economics",
+     "semillas": [
+      "business analytics v"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "comparar"
+    },
+    {
+     "texto": "business analytics qs ranking 2026",
+     "semillas": [
+      "business analytics q"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "comparar"
+    },
+    {
+     "texto": "business analytics vs mba",
+     "semillas": [
+      "business analytics v"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "comparar"
+    },
+    {
+     "texto": "business analytics vs supply chain management",
+     "semillas": [
+      "business analytics v"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "comparar"
+    },
+    {
+     "texto": "business analytics vs supply chain management salary",
+     "semillas": [
+      "business analytics v"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "comparar"
+    },
+    {
+     "texto": "business analytics vs mis",
+     "semillas": [
+      "business analytics v"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "comparar"
+    }
+   ]
+  },
+  {
+   "id": "donde",
+   "nombre": "Dónde estudiar",
+   "color": "#35c9d6",
+   "quien": "ambos",
+   "que_es": "Lugar o institución de Uruguay: universidades y ciudades.",
+   "total": 12,
+   "pct": 2.9,
+   "sugerencias": [
+    {
+     "texto": "business analytics uruguay",
+     "semillas": [
+      "dónde estudiar business analytics",
+      "cuánto gana business analytics",
+      "estudiar business analytics",
+      "business analytics carrera",
+      "business analytics salida laboral",
+      "business analytics a distancia",
+      "business analytics requisitos",
+      "business analytics plan de estudios",
+      "business analytics costo",
+      "business analytics becas",
+      "business analytics vale la pena",
+      "business analytics opiniones",
+      "business analytics y"
+     ],
+     "grupos": [
+      "preguntas",
+      "estudiante",
+      "familia",
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 13,
+     "instituciones": [],
+     "intencion": "donde"
+    },
+    {
+     "texto": "business analytics ort",
+     "semillas": [
+      "business analytics",
+      "dónde estudiar business analytics",
+      "business analytics a distancia",
+      "business analytics plan de estudios",
+      "business analytics costo",
+      "business analytics becas",
+      "business analytics vale la pena",
+      "business analytics opiniones",
+      "business analytics o",
+      "business analytics y"
+     ],
+     "grupos": [
+      "base",
+      "preguntas",
+      "estudiante",
+      "familia",
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1250,
+     "apariciones": 10,
+     "instituciones": [
+      "ORT"
+     ],
+     "intencion": "donde"
+    },
+    {
+     "texto": "business analyst uruguay",
+     "semillas": [
+      "cuánto gana business analytics",
+      "business analytics carrera",
+      "business analytics salida laboral",
+      "business analytics a distancia",
+      "business analytics requisitos",
+      "business analytics costo",
+      "business analytics vale la pena",
+      "business analytics opiniones",
+      "business analytics y"
+     ],
+     "grupos": [
+      "preguntas",
+      "estudiante",
+      "familia",
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 9,
+     "instituciones": [],
+     "intencion": "donde"
+    },
+    {
+     "texto": "business analytics ucu",
+     "semillas": [
+      "business analytics",
+      "business analytics carrera",
+      "business analytics a distancia",
+      "business analytics plan de estudios",
+      "business analytics becas",
+      "business analytics opiniones",
+      "business analytics u",
+      "business analytics y"
+     ],
+     "grupos": [
+      "base",
+      "estudiante",
+      "familia",
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1250,
+     "apariciones": 8,
+     "instituciones": [
+      "UCU"
+     ],
+     "intencion": "donde"
+    },
+    {
+     "texto": "business analytics um",
+     "semillas": [
+      "estudiar business analytics",
+      "business analytics carrera",
+      "business analytics a distancia",
+      "business analytics requisitos",
+      "business analytics plan de estudios",
+      "business analytics costo",
+      "business analytics becas",
+      "business analytics y"
+     ],
+     "grupos": [
+      "estudiante",
+      "familia",
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 8,
+     "instituciones": [
+      "UM"
+     ],
+     "intencion": "donde"
+    },
+    {
+     "texto": "business analyst um",
+     "semillas": [
+      "business analytics carrera",
+      "business analytics salida laboral",
+      "business analytics plan de estudios",
+      "business analytics becas"
+     ],
+     "grupos": [
+      "estudiante",
+      "familia"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 4,
+     "instituciones": [
+      "UM"
+     ],
+     "intencion": "donde"
+    },
+    {
+     "texto": "donde estudiar business analytics",
+     "semillas": [
+      "dónde estudiar business analytics",
+      "estudiar business analytics"
+     ],
+     "grupos": [
+      "preguntas",
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "donde"
+    },
+    {
+     "texto": "business analytics utec",
+     "semillas": [
+      "business analytics",
+      "business analytics u"
+     ],
+     "grupos": [
+      "base",
+      "alfabeto",
+      "youtube"
+     ],
+     "fuentes": [
+      "google",
+      "youtube"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 2,
+     "instituciones": [
+      "UTEC"
+     ],
+     "intencion": "donde"
+    },
+    {
+     "texto": "carrera business analytics uruguay",
+     "semillas": [
+      "business analytics carrera"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "donde"
+    },
+    {
+     "texto": "donde estudiar ade y business analytics",
+     "semillas": [
+      "dónde estudiar business analytics"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "donde"
+    },
+    {
+     "texto": "donde puedo estudiar business analytics",
+     "semillas": [
+      "estudiar business analytics"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "donde"
+    },
+    {
+     "texto": "business intelligence uruguay",
+     "semillas": [
+      "business analytics opiniones"
+     ],
+     "grupos": [
+      "familia"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "donde"
+    }
+   ]
+  },
+  {
+   "id": "formato",
+   "nombre": "Tipo de formación",
+   "color": "#7c9cff",
+   "quien": "estudiante",
+   "que_es": "Qué nivel buscan: carrera, licenciatura, curso, posgrado.",
+   "total": 18,
+   "pct": 4.3,
+   "sugerencias": [
+    {
+     "texto": "business analytics curso",
+     "semillas": [
+      "business analytics",
+      "business analytics c",
+      "business analytics carrera"
+     ],
+     "grupos": [
+      "base",
+      "alfabeto",
+      "youtube"
+     ],
+     "fuentes": [
+      "google",
+      "youtube"
+     ],
+     "relevancia_max": 1250,
+     "apariciones": 3,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "business analytics master",
+     "semillas": [
+      "business analytics",
+      "business analytics m"
+     ],
+     "grupos": [
+      "base",
+      "alfabeto",
+      "youtube"
+     ],
+     "fuentes": [
+      "google",
+      "youtube"
+     ],
+     "relevancia_max": 1251,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "business analytics carrera",
+     "semillas": [
+      "business analytics c",
+      "business analytics"
+     ],
+     "grupos": [
+      "alfabeto",
+      "youtube"
+     ],
+     "fuentes": [
+      "google",
+      "youtube"
+     ],
+     "relevancia_max": 850,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "business analytics carrera que es",
+     "semillas": [
+      "qué es business analytics",
+      "business analytics q"
+     ],
+     "grupos": [
+      "preguntas",
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "licenciatura en business analytics",
+     "semillas": [
+      "dónde estudiar business analytics",
+      "estudiar business analytics"
+     ],
+     "grupos": [
+      "preguntas",
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "business analytics diplomado",
+     "semillas": [
+      "business analytics d"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1251,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "business analytics maestria",
+     "semillas": [
+      "business analytics m"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1250,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "business analytics especializacion",
+     "semillas": [
+      "business analytics e"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 604,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "business analytics data science master",
+     "semillas": [
+      "business analytics d"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "business analytics licenciatura",
+     "semillas": [
+      "business analytics l"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "estudiar data analytics",
+     "semillas": [
+      "estudiar business analytics"
+     ],
+     "grupos": [
+      "youtube"
+     ],
+     "fuentes": [
+      "youtube"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "master business analytics y big data",
+     "semillas": [
+      "business analytics y"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "master business analytics new zealand",
+     "semillas": [
+      "business analytics z"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 559,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "master of business analytics yoobee college",
+     "semillas": [
+      "business analytics y"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "master of business analytics yoobee",
+     "semillas": [
+      "business analytics y"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "business analytics bootcamp",
+     "semillas": [
+      "business analytics b"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "porque estudiar business analytics",
+     "semillas": [
+      "estudiar business analytics"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "que es un master en business analytics",
+     "semillas": [
+      "qué es business analytics"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "formato"
+    }
+   ]
+  },
+  {
+   "id": "temas",
+   "nombre": "Temas con los que se combina",
+   "color": "#e879f9",
+   "quien": "estudiante",
+   "que_es": "Con qué otros temas se busca junto: inteligencia artificial, negocios, salud. Sirve para decidir el nombre y el foco de una carrera.",
+   "total": 4,
+   "pct": 1.0,
+   "sugerencias": [
+    {
+     "texto": "business analytics big data",
+     "semillas": [
+      "business analytics b"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1252,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "business analytics y big data",
+     "semillas": [
+      "business analytics y"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1251,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "business analytics software",
+     "semillas": [
+      "business analytics s"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "que es big data business analytics",
+     "semillas": [
+      "qué es business analytics"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    }
+   ]
+  },
+  {
+   "id": "aprender",
+   "nombre": "Aprender por su cuenta",
+   "color": "#c9d451",
+   "quien": "estudiante",
+   "que_es": "Contenido para aprender solo: qué es, libros, herramientas, videos.",
+   "total": 34,
+   "pct": 8.1,
+   "sugerencias": [
+    {
+     "texto": "business analytics que es",
+     "semillas": [
+      "business analytics q",
+      "business analytics carrera"
+     ],
+     "grupos": [
+      "alfabeto",
+      "youtube"
+     ],
+     "fuentes": [
+      "google",
+      "youtube"
+     ],
+     "relevancia_max": 1252,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "business analytics coursera",
+     "semillas": [
+      "business analytics c",
+      "business analytics"
+     ],
+     "grupos": [
+      "alfabeto",
+      "youtube"
+     ],
+     "fuentes": [
+      "google",
+      "youtube"
+     ],
+     "relevancia_max": 851,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "business analytics coursera answers",
+     "semillas": [
+      "business analytics c",
+      "business analytics"
+     ],
+     "grupos": [
+      "alfabeto",
+      "youtube"
+     ],
+     "fuentes": [
+      "google",
+      "youtube"
+     ],
+     "relevancia_max": 700,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "business analytics libro",
+     "semillas": [
+      "business analytics l"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1250,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "business analytics pdf",
+     "semillas": [
+      "business analytics p"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1250,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "business analytics with excel",
+     "semillas": [
+      "business analytics w"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1250,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "business analytics data analysis & decision making pdf",
+     "semillas": [
+      "business analytics d"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1050,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "business analytics book pdf",
+     "semillas": [
+      "business analytics b"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1000,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "business analytics roadmap",
+     "semillas": [
+      "business analytics r"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1000,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "business analytics google",
+     "semillas": [
+      "business analytics g"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 901,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "business analytics reddit",
+     "semillas": [
+      "business analytics r"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 751,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "business analytics with r and python pdf",
+     "semillas": [
+      "business analytics w"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "que es business analytics en español",
+     "semillas": [
+      "qué es business analytics"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "business analytics notes pdf",
+     "semillas": [
+      "business analytics n"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "business analytics with excel by johns hopkins university",
+     "semillas": [
+      "business analytics w"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "que es business data analytics",
+     "semillas": [
+      "qué es business analytics"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "business analytics with excel simplilearn",
+     "semillas": [
+      "business analytics w"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "logo business analytics",
+     "semillas": [
+      "business analytics l"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "business analytics with excel elementary to advanced",
+     "semillas": [
+      "business analytics w"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "que es business intelligence & analytics",
+     "semillas": [
+      "qué es business analytics"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "business analytics coderhouse",
+     "semillas": [
+      "business analytics c"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "business analytics google course",
+     "semillas": [
+      "business analytics g"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "que es strategic business analytics",
+     "semillas": [
+      "qué es business analytics"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "que es miu data & business analytics",
+     "semillas": [
+      "qué es business analytics"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "business analytics excel",
+     "semillas": [
+      "business analytics"
+     ],
+     "grupos": [
+      "youtube"
+     ],
+     "fuentes": [
+      "youtube"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "business analytics textbook pdf",
+     "semillas": [
+      "business analytics t"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "business analytics with excel coursera",
+     "semillas": [
+      "business analytics w"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "business analytics book pdf for mba",
+     "semillas": [
+      "business analytics b"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "business analytics james evans pdf",
+     "semillas": [
+      "business analytics j"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "business analytics with python",
+     "semillas": [
+      "business analytics w"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "business analytics pdf notes",
+     "semillas": [
+      "business analytics p"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "business analytics specialization coursera",
+     "semillas": [
+      "business analytics s"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "business analytics the science of data driven decision making pdf",
+     "semillas": [
+      "business analytics t"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "business analytics with sql and python",
+     "semillas": [
+      "business analytics w"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    }
+   ]
+  },
+  {
+   "id": "otros",
+   "nombre": "Otros",
+   "color": "#9aa4b8",
+   "quien": "ninguno",
+   "que_es": "No coincide con ninguna regla. Si este grupo crece, falta una regla.",
+   "total": 267,
+   "pct": 63.7,
+   "sugerencias": [
+    {
+     "texto": "business analytics en español",
+     "semillas": [
+      "business analytics",
+      "business analytics e"
+     ],
+     "grupos": [
+      "base",
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1252,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics and data science",
+     "semillas": [
+      "business analytics a",
+      "business analytics"
+     ],
+     "grupos": [
+      "alfabeto",
+      "youtube"
+     ],
+     "fuentes": [
+      "google",
+      "youtube"
+     ],
+     "relevancia_max": 1251,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics icade",
+     "semillas": [
+      "business analytics",
+      "business analytics i"
+     ],
+     "grupos": [
+      "base",
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1250,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics course",
+     "semillas": [
+      "business analytics c",
+      "business analytics"
+     ],
+     "grupos": [
+      "alfabeto",
+      "youtube"
+     ],
+     "fuentes": [
+      "google",
+      "youtube"
+     ],
+     "relevancia_max": 702,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics uam",
+     "semillas": [
+      "business analytics",
+      "business analytics u"
+     ],
+     "grupos": [
+      "base",
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics uc3m",
+     "semillas": [
+      "business analytics",
+      "business analytics u"
+     ],
+     "grupos": [
+      "base",
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 560,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics previous year question paper",
+     "semillas": [
+      "business analytics p",
+      "business analytics y"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 559,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics ulima",
+     "semillas": [
+      "business analytics",
+      "business analytics u"
+     ],
+     "grupos": [
+      "base",
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 559,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analyst interview questions",
+     "semillas": [
+      "business analytics i",
+      "business analytics q"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 2,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics pacifico",
+     "semillas": [
+      "business analytics p"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1251,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics sac",
+     "semillas": [
+      "business analytics s"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1251,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics and ai fiu",
+     "semillas": [
+      "business analytics a"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1250,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics bbva",
+     "semillas": [
+      "business analytics b"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1250,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics de los datos al conocimiento",
+     "semillas": [
+      "business analytics d"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1250,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics esan",
+     "semillas": [
+      "business analytics e"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1250,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics kya hota hai",
+     "semillas": [
+      "business analytics k"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1250,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics role",
+     "semillas": [
+      "business analytics r"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1250,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics y business intelligence",
+     "semillas": [
+      "business analytics y"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1250,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics graduate certificate",
+     "semillas": [
+      "business analytics g"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1151,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics gmu",
+     "semillas": [
+      "business analytics g"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1150,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics salary",
+     "semillas": [
+      "business analytics s"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1100,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics data analysis & decision making",
+     "semillas": [
+      "business analytics d"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1051,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics traduccion",
+     "semillas": [
+      "business analytics t"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1050,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics free course",
+     "semillas": [
+      "business analytics f"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1001,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics fast",
+     "semillas": [
+      "business analytics f"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1000,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics hku",
+     "semillas": [
+      "business analytics h"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 901,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics kent",
+     "semillas": [
+      "business analytics k"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 800,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics deusto",
+     "semillas": [
+      "business analytics d"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 751,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics day 2026",
+     "semillas": [
+      "business analytics d"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 750,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics handbook",
+     "semillas": [
+      "business analytics h"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 700,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics free course with certificate",
+     "semillas": [
+      "business analytics f"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 650,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics graduate programs",
+     "semillas": [
+      "business analytics g"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 650,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics resume",
+     "semillas": [
+      "business analytics r"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 650,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics toma de decisiones basada en data",
+     "semillas": [
+      "business analytics t"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 650,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics essentials",
+     "semillas": [
+      "business analytics e"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 605,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics europea",
+     "semillas": [
+      "business analytics e"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 603,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics global edition",
+     "semillas": [
+      "business analytics g"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 602,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics requirements",
+     "semillas": [
+      "business analytics r"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 602,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics and ai",
+     "semillas": [
+      "business analytics a"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics book",
+     "semillas": [
+      "business analytics b"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics comillas",
+     "semillas": [
+      "business analytics c"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics esade",
+     "semillas": [
+      "business analytics e"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics fiu",
+     "semillas": [
+      "business analytics f"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics germany",
+     "semillas": [
+      "business analytics g"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics ie",
+     "semillas": [
+      "business analytics i"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics ku",
+     "semillas": [
+      "business analytics k"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics nus",
+     "semillas": [
+      "business analytics n"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics syllabus",
+     "semillas": [
+      "business analytics s"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics translator",
+     "semillas": [
+      "business analytics t"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics xamk",
+     "semillas": [
+      "business analytics x"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics y ade",
+     "semillas": [
+      "business analytics y"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics zertifikat",
+     "semillas": [
+      "business analytics z"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business process analytics",
+     "semillas": [
+      "business analytics p"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics and information systems",
+     "semillas": [
+      "business analytics a"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics binus",
+     "semillas": [
+      "business analytics b"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics consulting group",
+     "semillas": [
+      "business analytics c"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics degree",
+     "semillas": [
+      "business analytics d"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics eae",
+     "semillas": [
+      "business analytics e"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics georgia tech",
+     "semillas": [
+      "business analytics g"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics honours",
+     "semillas": [
+      "business analytics h"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics internship",
+     "semillas": [
+      "business analytics i"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics kaplan",
+     "semillas": [
+      "business analytics k"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics mba",
+     "semillas": [
+      "business analytics m"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics program",
+     "semillas": [
+      "business analytics p"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics subjects",
+     "semillas": [
+      "business analytics s"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics tools",
+     "semillas": [
+      "business analytics t"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics xavier",
+     "semillas": [
+      "business analytics x"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics zoho",
+     "semillas": [
+      "business analytics z"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics xlri",
+     "semillas": [
+      "business analytics x"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 562,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics zarobki",
+     "semillas": [
+      "business analytics z"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 562,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics eth zurich",
+     "semillas": [
+      "business analytics z"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 561,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics life cycle",
+     "semillas": [
+      "business analytics l"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 561,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics ntu",
+     "semillas": [
+      "business analytics n"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 561,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics with ai",
+     "semillas": [
+      "business analytics w"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 561,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics xavier university",
+     "semillas": [
+      "business analytics x"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 561,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics and ai course",
+     "semillas": [
+      "business analytics a"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 560,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics intern",
+     "semillas": [
+      "business analytics i"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 560,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics job description",
+     "semillas": [
+      "business analytics j"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 560,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics kpmg",
+     "semillas": [
+      "business analytics k"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 560,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics lab manual",
+     "semillas": [
+      "business analytics l"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 560,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics nova sbe",
+     "semillas": [
+      "business analytics n"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 560,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics o que é",
+     "semillas": [
+      "business analytics o"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 560,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics vu",
+     "semillas": [
+      "business analytics v"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 560,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics with ai course",
+     "semillas": [
+      "business analytics w"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 560,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics xjtlu",
+     "semillas": [
+      "business analytics x"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 560,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "msc business analytics new zealand",
+     "semillas": [
+      "business analytics z"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 560,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analysis projects",
+     "semillas": [
+      "business analytics p"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 559,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics analyst citi salary",
+     "semillas": [
+      "business analytics a"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 559,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics español",
+     "semillas": [
+      "business analytics"
+     ],
+     "grupos": [
+      "youtube"
+     ],
+     "fuentes": [
+      "youtube"
+     ],
+     "relevancia_max": 559,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics highest salary",
+     "semillas": [
+      "business analytics h"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 559,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics internships summer 2026",
+     "semillas": [
+      "business analytics i"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 559,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics job opportunities",
+     "semillas": [
+      "business analytics j"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 559,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics kfupm",
+     "semillas": [
+      "business analytics k"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 559,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics meaning",
+     "semillas": [
+      "business analytics m"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 559,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics osu",
+     "semillas": [
+      "business analytics o"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 559,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics qub",
+     "semillas": [
+      "business analytics q"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 559,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics what is it",
+     "semillas": [
+      "business analytics w"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 559,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business.analytics alfonso x el.sabio",
+     "semillas": [
+      "business analytics x"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 559,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics and intelligence",
+     "semillas": [
+      "business analytics a"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics bachelor",
+     "semillas": [
+      "business analytics b"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics for managers",
+     "semillas": [
+      "business analytics f"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics honors program ncsu",
+     "semillas": [
+      "business analytics h"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics in mba",
+     "semillas": [
+      "business analytics i"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics ktu notes",
+     "semillas": [
+      "business analytics k"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics major",
+     "semillas": [
+      "business analytics m"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics new zealand",
+     "semillas": [
+      "business analytics z"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics news",
+     "semillas": [
+      "business analytics n"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics ppt",
+     "semillas": [
+      "business analytics p"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics skills",
+     "semillas": [
+      "business analytics s"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics training",
+     "semillas": [
+      "business analytics t"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "information systems and business analytics",
+     "semillas": [
+      "business analytics v"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "quizlet business analytics",
+     "semillas": [
+      "business analytics q"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "x business analytics",
+     "semillas": [
+      "business analytics x"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics amazon",
+     "semillas": [
+      "business analytics a"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics australia",
+     "semillas": [
+      "business analytics i"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics bachelor's degree",
+     "semillas": [
+      "business analytics b"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics for decision making",
+     "semillas": [
+      "business analytics f"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics hiring",
+     "semillas": [
+      "business analytics h"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics in zimbabwe",
+     "semillas": [
+      "business analytics z"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics james evans",
+     "semillas": [
+      "business analytics j"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics ksbl",
+     "semillas": [
+      "business analytics k"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics lead",
+     "semillas": [
+      "business analytics l"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics minor",
+     "semillas": [
+      "business analytics m"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics northeastern",
+     "semillas": [
+      "business analytics n"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics phd",
+     "semillas": [
+      "business analytics p"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics qs",
+     "semillas": [
+      "business analytics q"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics specialization",
+     "semillas": [
+      "business analytics s"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics types",
+     "semillas": [
+      "business analytics t"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics and management",
+     "semillas": [
+      "business analytics a"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics certificate",
+     "semillas": [
+      "business analytics c"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics course xlri",
+     "semillas": [
+      "business analytics x"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics definition",
+     "semillas": [
+      "business analytics d"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics degree zimbabwe",
+     "semillas": [
+      "business analytics z"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics framework",
+     "semillas": [
+      "business analytics f"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics geeksforgeeks",
+     "semillas": [
+      "business analytics g"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics humber college",
+     "semillas": [
+      "business analytics h"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics kelley",
+     "semillas": [
+      "business analytics k"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics life cycle diagram",
+     "semillas": [
+      "business analytics l"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics msc",
+     "semillas": [
+      "business analytics m"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics nanodegree",
+     "semillas": [
+      "business analytics n"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics overview",
+     "semillas": [
+      "business analytics o"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics pronunciation",
+     "semillas": [
+      "business analytics p"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics qmul",
+     "semillas": [
+      "business analytics q"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics rmit",
+     "semillas": [
+      "business analytics r"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics the science of data driven decision making",
+     "semillas": [
+      "business analytics t"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics ufv",
+     "semillas": [
+      "business analytics u"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics uk",
+     "semillas": [
+      "business analytics i"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics wharton",
+     "semillas": [
+      "business analytics w"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics what do you learn",
+     "semillas": [
+      "business analytics y"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "bba in business analytics",
+     "semillas": [
+      "business analytics b"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics and artificial intelligence utd",
+     "semillas": [
+      "business analytics a"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics associate zs",
+     "semillas": [
+      "business analytics z"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics day espae",
+     "semillas": [
+      "business analytics"
+     ],
+     "grupos": [
+      "youtube"
+     ],
+     "fuentes": [
+      "youtube"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics degree salary",
+     "semillas": [
+      "business analytics d"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics egade",
+     "semillas": [
+      "business analytics e"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics fast university",
+     "semillas": [
+      "business analytics f"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics hindi",
+     "semillas": [
+      "business analytics h"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics in spanish",
+     "semillas": [
+      "business analytics i"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics ki salary",
+     "semillas": [
+      "business analytics k"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics loughborough",
+     "semillas": [
+      "business analytics l"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics masters programs",
+     "semillas": [
+      "business analytics m"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics nova",
+     "semillas": [
+      "business analytics n"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics or finance",
+     "semillas": [
+      "business analytics o"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics queen mary",
+     "semillas": [
+      "business analytics q"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics review",
+     "semillas": [
+      "business analytics r"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics seneca",
+     "semillas": [
+      "business analytics s"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics topics",
+     "semillas": [
+      "business analytics t"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics uni",
+     "semillas": [
+      "business analytics u"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics warwick",
+     "semillas": [
+      "business analytics w"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics what do you do",
+     "semillas": [
+      "business analytics y"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "msc business analytics xjtlu",
+     "semillas": [
+      "business analytics x"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics and business intelligence",
+     "semillas": [
+      "business analytics x"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics and information management purdue",
+     "semillas": [
+      "business analytics a"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics bsc",
+     "semillas": [
+      "business analytics b"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics certification",
+     "semillas": [
+      "business analytics c"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics dtu",
+     "semillas": [
+      "business analytics d"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics esic",
+     "semillas": [
+      "business analytics e"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics full course",
+     "semillas": [
+      "business analytics"
+     ],
+     "grupos": [
+      "youtube"
+     ],
+     "fuentes": [
+      "youtube"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics fundamentals",
+     "semillas": [
+      "business analytics f"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics greenwich",
+     "semillas": [
+      "business analytics g"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics heriot watt",
+     "semillas": [
+      "business analytics h"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics in germany",
+     "semillas": [
+      "business analytics i"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics journal",
+     "semillas": [
+      "business analytics j"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics keywords",
+     "semillas": [
+      "business analytics k"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics lsu",
+     "semillas": [
+      "business analytics l"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics manager zepto salary",
+     "semillas": [
+      "business analytics z"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics mba syllabus",
+     "semillas": [
+      "business analytics m"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics nubank",
+     "semillas": [
+      "business analytics n"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics or data science",
+     "semillas": [
+      "business analytics o"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics purdue",
+     "semillas": [
+      "business analytics p"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics research paper",
+     "semillas": [
+      "business analytics r"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics scope",
+     "semillas": [
+      "business analytics s"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics textbook",
+     "semillas": [
+      "business analytics t"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics work",
+     "semillas": [
+      "business analytics w"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics and management rsm",
+     "semillas": [
+      "business analytics a"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics bi",
+     "semillas": [
+      "business analytics b"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics dashboard",
+     "semillas": [
+      "business analytics d"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics examples",
+     "semillas": [
+      "business analytics e"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics fresher salary",
+     "semillas": [
+      "business analytics f"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics george brown",
+     "semillas": [
+      "business analytics g"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics hct",
+     "semillas": [
+      "business analytics h"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics in zambia",
+     "semillas": [
+      "business analytics z"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics job market",
+     "semillas": [
+      "business analytics j"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics kerja apa",
+     "semillas": [
+      "business analytics k"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics lse",
+     "semillas": [
+      "business analytics l"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics means",
+     "semillas": [
+      "business analytics m"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics notre dame",
+     "semillas": [
+      "business analytics n"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics postgraduate",
+     "semillas": [
+      "business analytics p"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics research topics",
+     "semillas": [
+      "business analytics r"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics subjects in mba",
+     "semillas": [
+      "business analytics s"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "mba in business analytics xlri",
+     "semillas": [
+      "business analytics x"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics and information systems usf",
+     "semillas": [
+      "business analytics a"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics course free",
+     "semillas": [
+      "business analytics c"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics courses in zimbabwe",
+     "semillas": [
+      "business analytics z"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics for dummies",
+     "semillas": [
+      "business analytics f"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics hertfordshire",
+     "semillas": [
+      "business analytics h"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics ireland",
+     "semillas": [
+      "business analytics i"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics ka kya kam hota hai",
+     "semillas": [
+      "business analytics k"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics leeds",
+     "semillas": [
+      "business analytics l"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics manager",
+     "semillas": [
+      "business analytics m"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics ncsu",
+     "semillas": [
+      "business analytics n"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics professional certificate",
+     "semillas": [
+      "business analytics p"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics quinnipiac",
+     "semillas": [
+      "business analytics q"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics report",
+     "semillas": [
+      "business analytics r"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics syllabus for mba",
+     "semillas": [
+      "business analytics s"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics tud",
+     "semillas": [
+      "business analytics t"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics uam asignaturas",
+     "semillas": [
+      "business analytics u"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "xime business analytics",
+     "semillas": [
+      "business analytics x"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics and information technology",
+     "semillas": [
+      "business analytics a"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics basics",
+     "semillas": [
+      "business analytics b"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics careers",
+     "semillas": [
+      "business analytics c"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics data science",
+     "semillas": [
+      "business analytics d"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics exeter",
+     "semillas": [
+      "business analytics e"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics fast course outline",
+     "semillas": [
+      "business analytics f"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics graphs",
+     "semillas": [
+      "business analytics g"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics imperial",
+     "semillas": [
+      "business analytics i"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics james r evans 3rd edition",
+     "semillas": [
+      "business analytics j"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics kya hai in hindi",
+     "semillas": [
+      "business analytics k"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics lut",
+     "semillas": [
+      "business analytics l"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics mba salary",
+     "semillas": [
+      "business analytics m"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics nyu",
+     "semillas": [
+      "business analytics n"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics or information systems",
+     "semillas": [
+      "business analytics o"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics que",
+     "semillas": [
+      "business analytics q"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics rsm",
+     "semillas": [
+      "business analytics r"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics what do they do",
+     "semillas": [
+      "business analytics w"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "postgraduate certificate in business analytics xlri",
+     "semillas": [
+      "business analytics x"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics and finance",
+     "semillas": [
+      "business analytics a"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics bocconi",
+     "semillas": [
+      "business analytics b"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics co major iu",
+     "semillas": [
+      "business analytics c"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics deakin",
+     "semillas": [
+      "business analytics d"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics engineer",
+     "semillas": [
+      "business analytics e"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics fabiz",
+     "semillas": [
+      "business analytics f"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics galway",
+     "semillas": [
+      "business analytics g"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics images",
+     "semillas": [
+      "business analytics i"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics ktu syllabus",
+     "semillas": [
+      "business analytics k"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics lancaster",
+     "semillas": [
+      "business analytics l"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics masters new zealand",
+     "semillas": [
+      "business analytics z"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics minor osu",
+     "semillas": [
+      "business analytics m"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics nottingham",
+     "semillas": [
+      "business analytics n"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics project",
+     "semillas": [
+      "business analytics"
+     ],
+     "grupos": [
+      "youtube"
+     ],
+     "fuentes": [
+      "youtube"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics queen mary university of london",
+     "semillas": [
+      "business analytics q"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics roehampton university",
+     "semillas": [
+      "business analytics r"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics smu",
+     "semillas": [
+      "business analytics s"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics tools and techniques",
+     "semillas": [
+      "business analytics t"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business operations analytics",
+     "semillas": [
+      "business analytics o"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "portfolio business analytics",
+     "semillas": [
+      "business analytics p"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "xlri business analytics fees",
+     "semillas": [
+      "business analytics x"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    }
+   ]
+  }
+ ],
+ "dominios": [],
+ "top10": [
+  {
+   "buscador": "pendiente",
+   "consulta": "business analytics",
+   "estado": "pendiente",
+   "motivo": "sin fuente automática: leer la página de un buscador con un script no es confiable (probado el 2026-11-16). Falta elegir una API oficial con clave gratuita (PLAN.md, fase F5).",
+   "resultados": []
+  },
+  {
+   "buscador": "pendiente",
+   "consulta": "business analytics carrera uruguay",
+   "estado": "pendiente",
+   "motivo": "sin fuente automática: leer la página de un buscador con un script no es confiable (probado el 2026-11-16). Falta elegir una API oficial con clave gratuita (PLAN.md, fase F5).",
+   "resultados": []
+  }
+ ],
+ "rechazadas": {
+  "total": 4,
+  "por_motivo": {
+   "no nombra el tema": 4
+  },
+  "ejemplos": [
+   {
+    "semilla": "dónde estudiar business analytics",
+    "grupo": "preguntas",
+    "fuente": "google",
+    "texto": "donde estudiar analisis de datos en uruguay",
+    "relevancia": 553,
+    "motivo": "no nombra el tema"
+   },
+   {
+    "semilla": "dónde estudiar business analytics",
+    "grupo": "preguntas",
+    "fuente": "google",
+    "texto": "donde estudiar analista de datos en uruguay",
+    "relevancia": 550,
+    "motivo": "no nombra el tema"
+   },
+   {
+    "semilla": "estudiar business analytics",
+    "grupo": "estudiante",
+    "fuente": "google",
+    "texto": "estudiar analista de datos uruguay",
+    "relevancia": 552,
+    "motivo": "no nombra el tema"
+   },
+   {
+    "semilla": "estudiar business analytics",
+    "grupo": "youtube",
+    "fuente": "youtube",
+    "texto": "estudiar data science",
+    "relevancia": 600,
+    "motivo": "no nombra el tema"
+   }
+  ]
+ },
+ "enlaces": {
+  "trends": "https://trends.google.com/trends/explore?geo=UY&date=today%205-y&q=business%20analytics",
+  "google": "https://www.google.com/search?gl=uy&hl=es&q=business%20analytics",
+  "bing": "https://www.bing.com/search?cc=UY&setlang=es&q=business%20analytics",
+  "duckduckgo": "https://duckduckgo.com/?kl=uy-es&q=business%20analytics",
+  "youtube": "https://www.youtube.com/results?search_query=business%20analytics"
+ }
+}

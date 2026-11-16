@@ -44,6 +44,9 @@ jobs:
           TEMA: ${{ github.event.inputs.tema || github.event.issue.title }}
         run: python colector/run.py
 
+      - name: Regenerar el paquete para chats
+        run: python colector/paquete_chat.py
+
       - name: Guardar los datos nuevos
         run: |
           git config user.name "github-actions[bot]"
