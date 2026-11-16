@@ -221,11 +221,11 @@
      "id": "pages",
      "titulo": "Publicar la web",
      "icono": "🌐",
-     "que": "GitHub Pages sirve la carpeta docs/ como sitio. Publicar es exponer: necesita el OK del PO.",
+     "que": "GitHub Pages sirve la carpeta docs/ como sitio público. Publicar es exponer: se hizo con el OK del PO.",
      "quien": "PO",
-     "donde": "PLAN.md",
+     "donde": "docs/",
      "nivel": "N3 · OK por acción",
-     "estado": "Pendiente"
+     "estado": "Publicada el 2026-11-16, con OK del PO"
     }
    ]
   },

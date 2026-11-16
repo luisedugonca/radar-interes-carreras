@@ -6,7 +6,7 @@
   "F3",
   "F4"
  ],
- "actualizado_utc": "2026-11-16T22:12:00Z",
+ "actualizado_utc": "2026-11-16T22:50:00Z",
  "fases": [
   {
    "id": "F0",
@@ -21,7 +21,7 @@
    "nombre": "Colector de autocompletar",
    "hecho_cuando": "`python3 -m unittest discover -s tests` pasa y hay 3 temas reales guardados con su crudo y su manifiesto.",
    "estado": "hecho",
-   "evidencia": "12 pruebas pasan (python3 -m unittest discover -s tests). 4 temas guardados con crudo y manifiesto: docs/data/indice.json.",
+   "evidencia": "12 pruebas pasan (python3 -m unittest discover -s tests). 10 temas guardados con crudo y manifiesto: docs/data/indice.json.",
    "aprobacion": "N1 · datos, con registro"
   },
   {
@@ -44,9 +44,9 @@
    "id": "F4",
    "nombre": "Publicar la web (GitHub Pages)",
    "hecho_cuando": "La dirección pública responde 200 y el modo en vivo funciona desde ahí.",
-   "estado": "espera-po",
-   "evidencia": "",
-   "aprobacion": "N3 · OK del PO: hace público el repo"
+   "estado": "hecho",
+   "evidencia": "Repo público. https://luisedugonca.github.io/radar-interes-carreras/ responde 200 (inicio, radar y datos). Modo en vivo desde esa dirección: «ingeniería en software», 17 de 17 consultas respondidas, 122 frases.",
+   "aprobacion": "N3 · OK del PO dado el 2026-11-16"
   },
   {
    "id": "F5",
@@ -69,7 +69,7 @@
    "nombre": "Lote UCU + comparar temas",
    "hecho_cuando": "Están guardados los temas del entregable y la web compara 2 a 4 temas lado a lado.",
    "estado": "pendiente",
-   "evidencia": "",
+   "evidencia": "Avance: 10 temas medidos, entre ellos los de Negocios Digitales y Datos y Negocios. Falta la vista para comparar temas lado a lado.",
    "aprobacion": "N1 · datos · la lista de temas la da el PO"
   },
   {

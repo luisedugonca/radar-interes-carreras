@@ -8,6 +8,8 @@
 |---|---|---|---|---|---|
 | 2026-11-16 | Plan + primera versión del radar (F0 a F3) | GRANDE | Vuelta 1 · ≈101.000 tokens · 16 llamadas · **NO LISTO**: 9 de 10 criterios pasan; falla C5 (dos rangos de `PLAN.md` desactualizados al sumar el cuarto tema). Informe: `revisiones/gate-2026-11-16.md` | Pendiente de OK del PO | Corregido el mismo día: rangos de `PLAN.md`; el modo en vivo clasifica igual que Python (`replaceAll`); «fase F4» → «F5» en el aviso del top 10; «búsquedas distintas» → «frases distintas»; la Action no falla si no hay cambios. No hubo segunda vuelta del Gate: las correcciones se comprobaron con las pruebas y a mano. |
 
+| 2026-11-16 | Publicar el repo y la web (F4) + estructura para Claude, ChatGPT y Gemini | GRANDE | Sin Gate: **excepción** (pedido textual del PO; el control previo a publicar fue el criterio C8 del Gate y un `git grep` repetido antes del cambio) | Hecho con OK del PO | — |
+
 ## Fuentes probadas (2026-11-16)
 
 | Fuente | Cómo se probó | Resultado | Decisión |

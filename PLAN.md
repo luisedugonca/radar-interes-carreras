@@ -29,7 +29,9 @@
    - **La herramienta es una web dentro de GitHub** (GitHub Pages): link estable, gratis, se actualiza sola con cada consulta y muestra el método. El tablero es una sección de esa misma web, no un producto aparte.
    - **El chat es el modo de uso, no otro sistema:** la web arma el pedido con los datos medidos y la persona lo pega en el chat de IA que ya usa. Para un chat que guíe todo el levantamiento: `chat/INSTRUCCIONES_CHAT.md`.
    - **El artefacto de Claude queda para lo privado** (el tablero de UCU Salto, que tiene datos de Semrush y de la situación de la carrera). No reemplaza a la web: no corre el colector ni guarda historial.
-6. 2026-11-16 · El repo nace **privado**. Publicarlo es N3 (fase F4).
+6. 2026-11-16 · El repo nació privado. El mismo día el PO dio el OK: *"haz que radar de interés de carreras sea un repositorio público… para Claude, pero también para ChatGPT, para Gemini"*. Publicado, con GitHub Pages activo.
+7. 2026-11-16 · PO: el análisis de carreras concretas de UCU puede usar los datos de Semrush ya extraídos. **Esos datos no entran a este repositorio público**: viven en el artefacto privado «Radar de carreras UCU». Acá solo hay fuentes gratuitas.
+8. 2026-11-16 · PO: quien usa la herramienta es del área comercial; no instala ni programa. Escribe el nombre de la carrera y un contexto breve en un chat. Guías por herramienta en `chat/`.
 
 ## 2. Contratos que el ejecutor no puede inventar
 
@@ -80,7 +82,8 @@
 
 ## 5. Lo que solo el PO decide
 
-- ¿Se hace público el repo y se activa GitHub Pages? · bloquea: F4
+- ~~¿Se hace público el repo y se activa GitHub Pages?~~ · resuelto el 2026-11-16: sí
+- ¿Quién crea y prueba el GPT y el Gem? (necesita cuentas de ChatGPT y de Gemini) · no bloquea
 - ¿Qué fuente oficial para el top 10? (requiere crear una clave gratuita a nombre del PO) · bloquea: F5
 - ¿Qué temas o carreras entran en el lote de UCU? · bloquea: F7
 - ¿Qué países vecinos se comparan? (Propuesta: Argentina y Paraguay, por cercanía con Salto) · bloquea: F6
@@ -88,7 +91,7 @@
 
 ## 6. Traspaso
 
-Prompt de la próxima fase: `prompts/fase-F4.md`. Cada sesión que cierra una fase escribe el de la siguiente con lo que realmente pasó.
+Prompt de la próxima fase: `prompts/fase-F5.md` (F4 ya se ejecutó; su prompt queda como registro). Cada sesión que cierra una fase escribe el de la siguiente con lo que realmente pasó.
 
 ## 7. Estado del loop
 
