@@ -1,0 +1,14 @@
+name: Pedir una consulta
+description: Guarda en el radar qué se busca sobre un tema o carrera.
+title: "Consulta: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Escribí el tema en el **título**, después de `Consulta:`. Ejemplo: `Consulta: gestión agropecuaria`.
+        En unos minutos queda guardada y aparece en el radar. No hace falta completar nada más.
+  - type: textarea
+    id: para-que
+    attributes:
+      label: ¿Para qué decisión es? (opcional)
+      description: Ejemplo: evaluar una carrera nueva, actualizar el nombre de una existente.

@@ -1,0 +1,60 @@
+name: Consulta de interés
+
+# Dos formas de pedir una consulta guardada:
+#   1. Actions → "Consulta de interés" → Run workflow → escribir el tema.
+#   2. Abrir un issue con el título "Consulta: <tema>" (solo dueños y colaboradores del repo).
+on:
+  workflow_dispatch:
+    inputs:
+      tema:
+        description: "Tema o carrera (ej.: ciencia de datos)"
+        required: true
+        type: string
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: consulta
+  cancel-in-progress: false
+
+jobs:
+  consulta:
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      (startsWith(github.event.issue.title, 'Consulta:') &&
+       contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.issue.author_association))
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Pruebas (si fallan, no se toca ningún dato)
+        run: python -m unittest discover -s tests -v
+
+      - name: Correr el colector
+        # El tema lo escribe una persona: entra por variable de entorno, nunca pegado en el comando.
+        env:
+          TEMA: ${{ github.event.inputs.tema || github.event.issue.title }}
+        run: python colector/run.py
+
+      - name: Guardar los datos nuevos
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/data data/raw manifests
+          git commit -m "Datos: consulta nueva (corrida ${GITHUB_RUN_ID})"
+          git push
+
+      - name: Avisar en el issue
+        if: github.event_name == 'issues'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          NUMERO: ${{ github.event.issue.number }}
+        run: gh issue close "$NUMERO" --repo "$GITHUB_REPOSITORY" --comment "Consulta guardada. Ya aparece en la lista de consultas guardadas del radar."

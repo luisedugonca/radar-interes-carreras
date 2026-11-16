@@ -1,0 +1,358 @@
+{
+ "centro": {
+  "titulo": "PO + agente",
+  "sub": "orquestador"
+ },
+ "nota": "Contenido del mapa agéntico. La web lo lee de acá; nada está escrito en el HTML. 'donde' es una ruta de este repositorio.",
+ "ramas": [
+  {
+   "id": "pedido",
+   "titulo": "1 · El pedido",
+   "color": "#f2b03d",
+   "nodos": [
+    {
+     "id": "pedido",
+     "titulo": "El PO pregunta",
+     "icono": "💬",
+     "que": "Todo empieza con una pregunta corta de negocio: «¿hay interés en esta carrera?». El PO es la persona dueña del producto, quien decide.",
+     "quien": "PO"
+    },
+    {
+     "id": "clasificar",
+     "titulo": "Clasificar",
+     "icono": "🔀",
+     "que": "Antes de hacer nada, el pedido se clasifica: consulta, entregable chico o entregable grande. La clase decide cuánta revisión recibe.",
+     "quien": "Agente orquestador",
+     "donde": "CLAUDE.md",
+     "nivel": "N0 · libre"
+    },
+    {
+     "id": "contrato",
+     "titulo": "Contrato de tarea",
+     "icono": "📝",
+     "que": "Se escribe qué se pide exactamente, con qué fuente y cómo se sabrá que está bien. Sin eso no se despacha trabajo.",
+     "quien": "Agente orquestador",
+     "donde": "PLAN.md",
+     "nivel": "N0 · libre"
+    },
+    {
+     "id": "no-entra",
+     "titulo": "Qué no entra",
+     "icono": "🚧",
+     "que": "Lo que se deja afuera a propósito: datos pagos, datos internos de UCU y leads. Es lo que frena que el trabajo se desvíe.",
+     "quien": "PO",
+     "donde": "PLAN.md"
+    }
+   ]
+  },
+  {
+   "id": "plan",
+   "titulo": "2 · El plan",
+   "color": "#a78bfa",
+   "nodos": [
+    {
+     "id": "plan",
+     "titulo": "Plan por fases",
+     "icono": "🗺️",
+     "que": "Pensar y hacer van separados. Una sesión arma el plan; después cada fase es una sesión que hace solo esa fase.",
+     "quien": "Agente orquestador + PO",
+     "donde": "PLAN.md",
+     "nivel": "N2 · un OK por lote"
+    },
+    {
+     "id": "hecho-cuando",
+     "titulo": "Hecho cuando",
+     "icono": "✅",
+     "que": "Cada fase tiene una condición que se demuestra con un comando y su salida. «Se ve bien» no cuenta.",
+     "quien": "Quien ejecuta la fase",
+     "donde": "PLAN.md"
+    },
+    {
+     "id": "estado",
+     "titulo": "Estado del loop",
+     "icono": "🔁",
+     "que": "Un archivo dice en qué fase estamos y qué evidencia dejó cada una. No se confía en la memoria del chat.",
+     "quien": "Quien cierra la fase",
+     "donde": "docs/data/loop.json",
+     "nivel": "N1 · hago y registro"
+    },
+    {
+     "id": "traspaso",
+     "titulo": "Prompt de fase",
+     "icono": "📨",
+     "que": "Al cerrar una fase se escribe el pedido de la siguiente, con lo que realmente pasó. Se pega en una sesión nueva.",
+     "quien": "Quien cierra la fase",
+     "donde": "prompts/"
+    }
+   ]
+  },
+  {
+   "id": "fuentes",
+   "titulo": "3 · Fuentes sin costo",
+   "color": "#35c9d6",
+   "nodos": [
+    {
+     "id": "fuentes",
+     "titulo": "Fuentes gratis",
+     "icono": "🆓",
+     "que": "Solo fuentes públicas y sin pago. Cada una se prueba de verdad antes de usarla; las que fallan quedan anotadas con el motivo.",
+     "quien": "Agente orquestador",
+     "donde": "revisiones/REGISTRO.md"
+    },
+    {
+     "id": "google",
+     "titulo": "Autocompletar de Google",
+     "icono": "🔎",
+     "que": "Las frases que Google propone al escribir un tema. Muestra cómo formula la gente su búsqueda. No da cantidad de búsquedas.",
+     "quien": "Colector",
+     "donde": "colector/extraer.py",
+     "estado": "Funciona"
+    },
+    {
+     "id": "youtube",
+     "titulo": "Autocompletar de YouTube",
+     "icono": "▶️",
+     "que": "Lo mismo, en YouTube: qué se busca en video sobre el tema.",
+     "quien": "Colector",
+     "donde": "colector/extraer.py",
+     "estado": "Funciona"
+    },
+    {
+     "id": "top10",
+     "titulo": "Top 10 de buscadores",
+     "icono": "🏆",
+     "que": "Quién aparece primero. Leer la página de un buscador con un script no es confiable (probado: Bing devolvió resultados sin relación). Falta elegir una API oficial gratuita.",
+     "quien": "PO decide la fuente",
+     "donde": "PLAN.md",
+     "nivel": "N3 · OK por acción",
+     "estado": "Pendiente"
+    },
+    {
+     "id": "trends",
+     "titulo": "Tendencia en el tiempo",
+     "icono": "📈",
+     "que": "Google Trends muestra si el interés sube o baja. Hoy la web abre Trends con el tema cargado; traer la serie al tablero es una fase posterior.",
+     "quien": "Persona, desde la web",
+     "donde": "PLAN.md",
+     "estado": "Enlace · serie pendiente"
+    }
+   ]
+  },
+  {
+   "id": "colector",
+   "titulo": "4 · El colector",
+   "color": "#3ccf91",
+   "nodos": [
+    {
+     "id": "colector",
+     "titulo": "Colector",
+     "icono": "⚙️",
+     "que": "Un programa en Python que hace el recorrido completo: extrae, guarda el crudo, valida, clasifica, guarda el resultado y deja un manifiesto.",
+     "quien": "Programa (sin IA)",
+     "donde": "colector/run.py"
+    },
+    {
+     "id": "crudo",
+     "titulo": "Guardar el crudo",
+     "icono": "📥",
+     "que": "Cada respuesta se guarda tal cual llega, antes de interpretarla. Así cualquier número se puede rastrear hasta su origen.",
+     "quien": "Programa",
+     "donde": "data/raw/",
+     "nivel": "N1 · hago y registro"
+    },
+    {
+     "id": "validar",
+     "titulo": "Validar",
+     "icono": "🧪",
+     "que": "Separa lo válido de lo rechazado, siempre con el motivo. Ejemplo: una sugerencia que no nombra el tema se rechaza.",
+     "quien": "Programa",
+     "donde": "colector/validar.py"
+    },
+    {
+     "id": "clasificar-int",
+     "titulo": "Clasificar por intención",
+     "icono": "🏷️",
+     "que": "Agrupa cada búsqueda por lo que la persona quiere saber: costo, becas, salida laboral, modalidad, dónde estudiar. Las reglas están en un archivo, no en el código.",
+     "quien": "Programa",
+     "donde": "docs/data/reglas.json",
+     "nivel": "N2 · un OK por lote"
+    },
+    {
+     "id": "manifiesto",
+     "titulo": "Manifiesto",
+     "icono": "🧾",
+     "que": "Un archivo por corrida: cuándo corrió, con qué reglas, cuántas entraron, cuántas se rechazaron y dónde quedó todo.",
+     "quien": "Programa",
+     "donde": "manifests/"
+    }
+   ]
+  },
+  {
+   "id": "github",
+   "titulo": "5 · GitHub",
+   "color": "#4aa8ff",
+   "nodos": [
+    {
+     "id": "github",
+     "titulo": "GitHub como plataforma",
+     "icono": "🐙",
+     "que": "El repositorio guarda el código, los datos, el plan y la web. No hay servidor ni base de datos aparte.",
+     "quien": "PO (dueño del repo)",
+     "donde": "README.md"
+    },
+    {
+     "id": "issue",
+     "titulo": "Pedir una consulta",
+     "icono": "✉️",
+     "que": "Para guardar un tema nuevo se abre un pedido con el título «Consulta: tema». Solo cuentan los pedidos de colaboradores del repo.",
+     "quien": "Persona con acceso",
+     "donde": ".github/ISSUE_TEMPLATE/consulta.yml"
+    },
+    {
+     "id": "action",
+     "titulo": "La Action corre sola",
+     "icono": "🤖",
+     "que": "GitHub ejecuta el colector, corre las pruebas y guarda los datos nuevos con un commit. Nadie instala nada.",
+     "quien": "GitHub Actions",
+     "donde": ".github/workflows/consulta.yml",
+     "nivel": "N1 · hago y registro"
+    },
+    {
+     "id": "pages",
+     "titulo": "Publicar la web",
+     "icono": "🌐",
+     "que": "GitHub Pages sirve la carpeta docs/ como sitio. Publicar es exponer: necesita el OK del PO.",
+     "quien": "PO",
+     "donde": "PLAN.md",
+     "nivel": "N3 · OK por acción",
+     "estado": "Pendiente"
+    }
+   ]
+  },
+  {
+   "id": "verificar",
+   "titulo": "6 · Verificar",
+   "color": "#ff6fa3",
+   "nodos": [
+    {
+     "id": "verificar",
+     "titulo": "Verificar",
+     "icono": "🛡️",
+     "que": "Nada se da por bueno sin evidencia. Hay tres redes: pruebas automáticas, un revisor independiente y el OK del PO.",
+     "quien": "Todos"
+    },
+    {
+     "id": "pruebas",
+     "titulo": "Pruebas automáticas",
+     "icono": "🧫",
+     "que": "Comprueban las reglas clave con casos reales guardados. Corren en cada consulta, antes de tocar los datos.",
+     "quien": "Programa",
+     "donde": "tests/test_colector.py"
+    },
+    {
+     "id": "gate",
+     "titulo": "Revisor independiente",
+     "icono": "👁️",
+     "que": "Un entregable grande lo revisa otro agente, con criterios escritos, antes de que llegue al PO. Solo dice pasa o no pasa, con evidencia.",
+     "quien": "Agente verificador",
+     "donde": "revisiones/REGISTRO.md"
+    },
+    {
+     "id": "niveles",
+     "titulo": "Niveles de aprobación",
+     "icono": "🚦",
+     "que": "N0 leer y analizar · N1 datos, con registro · N2 reglas, con un OK · N3 publicar o escribir fuera del repo, OK por cada acción.",
+     "quien": "PO",
+     "donde": "CLAUDE.md"
+    },
+    {
+     "id": "ok",
+     "titulo": "OK del PO",
+     "icono": "🤝",
+     "que": "El silencio nunca es aprobación. Publicar el repositorio o elegir una fuente nueva lo decide una persona.",
+     "quien": "PO"
+    }
+   ]
+  },
+  {
+   "id": "consumo",
+   "titulo": "7 · Ver y decidir",
+   "color": "#7c9cff",
+   "nodos": [
+    {
+     "id": "radar",
+     "titulo": "Radar de interés",
+     "icono": "📡",
+     "que": "La web lee los datos guardados y los muestra. También puede consultar un tema nuevo en vivo, desde el navegador de quien mira.",
+     "quien": "Web",
+     "donde": "docs/radar.html"
+    },
+    {
+     "id": "mapa-int",
+     "titulo": "Mapa de interés",
+     "icono": "🕸️",
+     "que": "El mismo mapa radial, con el tema al centro y una rama por cada cosa que la gente quiere saber.",
+     "quien": "Web",
+     "donde": "docs/assets/mapa.js"
+    },
+    {
+     "id": "tablero",
+     "titulo": "Tablero",
+     "icono": "📊",
+     "que": "Indicadores y gráficos con su fuente y su fecha. Ningún número está escrito a mano en la página.",
+     "quien": "Web",
+     "donde": "docs/radar.html"
+    },
+    {
+     "id": "decision",
+     "titulo": "Decisión de carrera",
+     "icono": "🎓",
+     "que": "Lo que UCU puede decidir con esto: cómo nombrar una carrera, qué dudas responder en su página y con qué temas combinarla.",
+     "quien": "Decanato y equipo"
+    }
+   ]
+  },
+  {
+   "id": "aprender",
+   "titulo": "8 · Aprender",
+   "color": "#c9d451",
+   "nodos": [
+    {
+     "id": "aprender",
+     "titulo": "Aprender",
+     "icono": "🌱",
+     "que": "Cada corrección se vuelve una regla escrita, con fecha y origen. Así el sistema mejora con el uso.",
+     "quien": "PO + agente",
+     "donde": "revisiones/REGISTRO.md"
+    },
+    {
+     "id": "registro",
+     "titulo": "Registro",
+     "icono": "📒",
+     "que": "Una línea por revisión o corrección: qué se pidió, qué se encontró, qué cambió.",
+     "quien": "Agente",
+     "donde": "revisiones/REGISTRO.md",
+     "nivel": "N0 · libre"
+    },
+    {
+     "id": "regla",
+     "titulo": "De corrección a regla",
+     "icono": "➕",
+     "que": "Si el grupo «Otros» crece, falta una regla de clasificación. Se agrega al archivo de reglas y se anota.",
+     "quien": "Agente, con OK",
+     "donde": "docs/data/reglas.json",
+     "nivel": "N2 · un OK por lote"
+    },
+    {
+     "id": "hilo",
+     "titulo": "Hilo de sesión",
+     "icono": "🧵",
+     "que": "Lo que tiene que sobrevivir entre conversaciones se escribe en un archivo: qué quedó hecho, qué falta y el próximo paso.",
+     "quien": "Agente",
+     "donde": "sesiones/hilo-radar.md",
+     "nivel": "N0 · libre"
+    }
+   ]
+  }
+ ]
+}

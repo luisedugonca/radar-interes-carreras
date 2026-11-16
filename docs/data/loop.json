@@ -1,0 +1,84 @@
+{
+ "objetivo": "Que una persona de UCU, sin instalar nada y sin datos pagos, pueda levantar qué se busca sobre un tema y con qué palabras, para decidir cómo nombrar, enfocar o actualizar una carrera.",
+ "corte_minimo": [
+  "F1",
+  "F2",
+  "F3",
+  "F4"
+ ],
+ "actualizado_utc": "2026-11-16T22:00:00Z",
+ "fases": [
+  {
+   "id": "F0",
+   "nombre": "Planificar",
+   "hecho_cuando": "PLAN.md existe con objetivo, métrica, fases y «hecho cuando»; pasó por un revisor independiente.",
+   "estado": "hecho",
+   "evidencia": "PLAN.md + fila del Gate en revisiones/REGISTRO.md",
+   "aprobacion": "N2 · un OK del PO sobre el plan"
+  },
+  {
+   "id": "F1",
+   "nombre": "Colector de autocompletar",
+   "hecho_cuando": "`python3 -m unittest discover -s tests` pasa y hay 3 temas reales guardados con su crudo y su manifiesto.",
+   "estado": "pendiente",
+   "evidencia": "",
+   "aprobacion": "N1 · datos, con registro"
+  },
+  {
+   "id": "F2",
+   "nombre": "Web: mapa agéntico + radar",
+   "hecho_cuando": "Las dos páginas cargan sin errores de consola leyendo solo JSON; el modo en vivo devuelve frases para un tema nuevo.",
+   "estado": "pendiente",
+   "evidencia": "",
+   "aprobacion": "N2 · artefacto local"
+  },
+  {
+   "id": "F3",
+   "nombre": "Repo privado + Action de consulta",
+   "hecho_cuando": "La Action corre en GitHub con un tema nuevo y deja un commit con los datos.",
+   "estado": "pendiente",
+   "evidencia": "",
+   "aprobacion": "N3 · crear el repo (pedido por el PO)"
+  },
+  {
+   "id": "F4",
+   "nombre": "Publicar la web (GitHub Pages)",
+   "hecho_cuando": "La dirección pública responde 200 y el modo en vivo funciona desde ahí.",
+   "estado": "espera-po",
+   "evidencia": "",
+   "aprobacion": "N3 · OK del PO: hace público el repo"
+  },
+  {
+   "id": "F5",
+   "nombre": "Top 10 por API oficial",
+   "hecho_cuando": "Una consulta guardada trae top 10 con estado «ok» y 10 resultados; la prueba del caso Bing sigue pasando.",
+   "estado": "espera-po",
+   "evidencia": "",
+   "aprobacion": "N3 · el PO elige la fuente y crea la clave"
+  },
+  {
+   "id": "F6",
+   "nombre": "Tendencia y región",
+   "hecho_cuando": "Cada consulta guardada trae la serie mensual de Google Trends y la misma medición para 2 países vecinos.",
+   "estado": "pendiente",
+   "evidencia": "",
+   "aprobacion": "N1 · datos, con registro"
+  },
+  {
+   "id": "F7",
+   "nombre": "Lote UCU + comparar temas",
+   "hecho_cuando": "Están guardados los temas del entregable y la web compara 2 a 4 temas lado a lado.",
+   "estado": "pendiente",
+   "evidencia": "",
+   "aprobacion": "N1 · datos · la lista de temas la da el PO"
+  },
+  {
+   "id": "F8",
+   "nombre": "Cierre y presentación",
+   "hecho_cuando": "Se mide contra la métrica de éxito y queda la presentación con capturas de la web.",
+   "estado": "pendiente",
+   "evidencia": "",
+   "aprobacion": "N2 · un OK por lote"
+  }
+ ]
+}
