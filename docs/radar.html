@@ -7,15 +7,15 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/estilo.css?v=20261118">
+<link rel="stylesheet" href="assets/estilo.css?v=20261118e">
 <script src="assets/tema.js?v=20261118"></script>
 </head>
-<body>
+<body aria-busy="true">
 <header class="cab">
   <div class="cab-in">
     <div>
-      <h1 id="sitio-titulo">Radar de interés</h1>
-      <p id="sitio-equipo"></p>
+      <h1 id="sitio-titulo">Radar de interés por carreras</h1>
+      <p id="sitio-equipo">Luis Gonçalvez y Victoria Illa · Taller Integrador, UCU</p>
     </div>
     <nav class="pest" aria-label="Secciones">
       <a href="ia.html">En las IA</a>
@@ -34,16 +34,16 @@
       <span class="punto" aria-hidden="true"></span>
       <span class="campo">
         <input id="tema" list="lista-temas" maxlength="60" aria-label="Tema o carrera">
-        <small id="tema-sub">Escribí un tema y Enter para medirlo en vivo</small>
+        <small id="tema-sub">Tema guardado en la base · escribí otro y Enter para medirlo en vivo</small>
       </span>
     </label>
-    <div class="comparar" id="comparar"></div>
+    <div class="comparar" id="comparar"><input class="mas" maxlength="60" placeholder="+ Comparar: escribí un tema o elegí uno guardado" aria-label="Agregar un tema para comparar" style="flex:1;min-width:200px;border:0;background:transparent" disabled></div>
   </div>
   <datalist id="lista-temas"></datalist>
   <div class="filtros">
     <span class="pill fija" title="Las consultas se hacen para Google Uruguay">Uruguay</span>
-    <span class="pill fija" id="f-fecha"></span>
-    <label class="pill"><select id="f-duda" aria-label="Tipo de duda"></select></label>
+    <span class="pill fija" id="f-fecha" style="min-width:12.5em"><span class="esq">Medido el 00 nov. 2026</span></span>
+    <label class="pill"><select id="f-duda" aria-label="Tipo de duda"><option>Todos los tipos de duda</option></select></label>
     <label class="pill"><select id="f-fuente" aria-label="Fuente">
       <option value="todas">Google y YouTube</option>
       <option value="google">Solo Google</option>
@@ -57,33 +57,33 @@
 
 <div class="radar">
   <section class="escena" aria-label="Mapa de interés">
-    <div class="carga" id="carga" hidden role="status" aria-live="polite">
-      <div class="carga-caja"><span class="giro" aria-hidden="true"></span><b id="carga-t">Cargando…</b><small id="carga-s"></small>
+    <div class="carga" id="carga" role="status" aria-live="polite">
+      <div class="carga-caja"><span class="giro" aria-hidden="true"></span><b id="carga-t">Cargando la base del radar…</b><small id="carga-s">Un momento</small>
         <div class="carga-barra"><i id="carga-i"></i></div></div>
     </div>
-    <h2 id="t-mapa"></h2>
-    <svg id="mapa" class="mapa" aria-label="Mapa radial de frases por tipo de duda"></svg>
+    <h2 id="t-mapa"><span class="esq">«cargando el tema»</span></h2>
+    <svg id="mapa" class="mapa" viewBox="-575 -575 1150 1150" aria-label="Mapa radial de frases por tipo de duda"></svg>
     <p class="leyenda"><span><b>Número</b> = apariciones</span><span><b>Tamaño</b> = más apariciones</span><span><b>Aro</b> = 3 términos con más datos</span><span>Ramas de mayor a menor</span></p>
   </section>
 
   <div class="columna">
     <section class="bloque">
       <h3>Indicadores del tema</h3>
-      <div class="kp4" id="kpis"></div>
-      <p class="pie-b" id="f-kpis"></p>
+      <div class="kp4" id="kpis"><div><span class="et esq">Cargando dato</span><b class="esq">00,0</b><small class="esq">cargando el detalle</small></div><div><span class="et esq">Cargando dato</span><b class="esq">00,0</b><small class="esq">cargando el detalle</small></div><div><span class="et esq">Cargando dato</span><b class="esq">00,0</b><small class="esq">cargando el detalle</small></div><div><span class="et esq">Cargando dato</span><b class="esq">00,0</b><small class="esq">cargando el detalle</small></div></div>
+      <p class="pie-b" id="f-kpis"><span class="esq">Cargando la fecha y la fuente de la medición del tema</span></p>
     </section>
 
     <section class="bloque">
       <h3>Análisis <span class="sello sup" title="Hallazgos armados por reglas fijas, sin IA, con la estructura del rol Analista de Datos Senior">por reglas · sin IA</span></h3>
-      <div class="calidad" id="calidad"></div>
-      <div class="hallazgos" id="hallazgos"></div>
+      <div class="calidad" id="calidad"><div class="apilada esq"></div><ul class="ley"><li class="esq">Útiles para el análisis 00 %</li><li class="esq">De otros países 00 %</li><li class="esq">Sin clasificar 00 %</li></ul></div>
+      <div class="hallazgos" id="hallazgos"><article class="hall esq-hall"><div class="hall-cab"><span class="hall-n esq">1</span><h4 class="esq">Cargando el hallazgo del análisis</h4><div class="hall-cifra"><b class="esq">00 %</b></div></div><div class="hall-sellos"><span class="sello esq">Impacto alto</span><span class="sello esq">Esfuerzo bajo</span><span class="sello esq">Confianza alta</span></div><dl><dt class="esq">Qué encontramos</dt><dd class="esq">cargando la evidencia medida del radar</dd><dt class="esq">Qué recomendamos</dt><dd class="esq">cargando la recomendación</dd></dl></article><article class="hall esq-hall"><div class="hall-cab"><span class="hall-n esq">1</span><h4 class="esq">Cargando el hallazgo del análisis</h4><div class="hall-cifra"><b class="esq">00 %</b></div></div><div class="hall-sellos"><span class="sello esq">Impacto alto</span><span class="sello esq">Esfuerzo bajo</span><span class="sello esq">Confianza alta</span></div><dl><dt class="esq">Qué encontramos</dt><dd class="esq">cargando la evidencia medida del radar</dd><dt class="esq">Qué recomendamos</dt><dd class="esq">cargando la recomendación</dd></dl></article><article class="hall esq-hall"><div class="hall-cab"><span class="hall-n esq">1</span><h4 class="esq">Cargando el hallazgo del análisis</h4><div class="hall-cifra"><b class="esq">00 %</b></div></div><div class="hall-sellos"><span class="sello esq">Impacto alto</span><span class="sello esq">Esfuerzo bajo</span><span class="sello esq">Confianza alta</span></div><dl><dt class="esq">Qué encontramos</dt><dd class="esq">cargando la evidencia medida del radar</dd><dt class="esq">Qué recomendamos</dt><dd class="esq">cargando la recomendación</dd></dl></article></div>
     </section>
 
-    <section class="bloque" id="rama"></section>
+    <section class="bloque" id="rama"><div class="rama-cab"><span class="bola esq"></span><h4 class="esq">Cargando</h4></div><div class="kp4"><div><span class="et esq">Cargando dato</span><b class="esq">00,0</b><small class="esq">cargando el detalle</small></div><div><span class="et esq">Cargando dato</span><b class="esq">00,0</b><small class="esq">cargando el detalle</small></div><div><span class="et esq">Cargando dato</span><b class="esq">00,0</b><small class="esq">cargando el detalle</small></div><div><span class="et esq">Cargando dato</span><b class="esq">00,0</b><small class="esq">cargando el detalle</small></div></div><div class="carr-cab"><h4 class="esq">Cargando términos</h4></div><div class="carr"><article class="tarj esq-tarj"><div class="fila-t"><span class="rk esq">#1</span></div><h5 class="esq">cargando el término</h5><div class="big esq">00</div><div class="riel esq"></div><dl><dt class="esq">cargando</dt><dd class="esq">0</dd><dt class="esq">cargando</dt><dd class="esq">0</dd><dt class="esq">cargando</dt><dd class="esq">0</dd><dt class="esq">cargando</dt><dd class="esq">0</dd></dl></article><article class="tarj esq-tarj"><div class="fila-t"><span class="rk esq">#1</span></div><h5 class="esq">cargando el término</h5><div class="big esq">00</div><div class="riel esq"></div><dl><dt class="esq">cargando</dt><dd class="esq">0</dd><dt class="esq">cargando</dt><dd class="esq">0</dd><dt class="esq">cargando</dt><dd class="esq">0</dd><dt class="esq">cargando</dt><dd class="esq">0</dd></dl></article></div></section>
 
     <section class="bloque">
       <h3>Apariciones por tipo de duda</h3>
-      <div id="barras"></div>
+      <div id="barras"><div class="fila-b"><span class="nom esq">Cargando</span><span class="riel esq"></span><span class="val esq">00 · 0 %</span></div><div class="fila-b"><span class="nom esq">Cargando</span><span class="riel esq"></span><span class="val esq">00 · 0 %</span></div><div class="fila-b"><span class="nom esq">Cargando</span><span class="riel esq"></span><span class="val esq">00 · 0 %</span></div><div class="fila-b"><span class="nom esq">Cargando</span><span class="riel esq"></span><span class="val esq">00 · 0 %</span></div><div class="fila-b"><span class="nom esq">Cargando</span><span class="riel esq"></span><span class="val esq">00 · 0 %</span></div><div class="fila-b"><span class="nom esq">Cargando</span><span class="riel esq"></span><span class="val esq">00 · 0 %</span></div><div class="fila-b"><span class="nom esq">Cargando</span><span class="riel esq"></span><span class="val esq">00 · 0 %</span></div><div class="fila-b"><span class="nom esq">Cargando</span><span class="riel esq"></span><span class="val esq">00 · 0 %</span></div><div class="fila-b"><span class="nom esq">Cargando</span><span class="riel esq"></span><span class="val esq">00 · 0 %</span></div></div>
     </section>
 
     <section class="bloque" id="b-comparar" hidden>
@@ -94,30 +94,30 @@
 
     <section class="bloque">
       <h3 id="t-lista">Frases</h3>
-      <div class="tabla-w alta"><table><thead><tr><th>Frase</th><th class="n">Apariciones</th><th class="n">Posición</th><th>Ver</th></tr></thead><tbody id="lista"></tbody></table></div>
+      <div class="tabla-w alta"><table><thead><tr><th>Frase</th><th class="n">Apariciones</th><th class="n">Posición</th><th>Ver</th></tr></thead><tbody id="lista"><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr></tbody></table></div>
     </section>
 
     <section class="bloque">
       <h3>Instituciones nombradas</h3>
-      <ul class="chips" id="inst"></ul>
+      <ul class="chips" id="inst"><li class="esq">UCU · 0</li><li class="esq">UCU · 0</li><li class="esq">UCU · 0</li><li class="esq">UCU · 0</li><li class="esq">UCU · 0</li></ul>
     </section>
 
     <section class="bloque">
       <h3>¿Estudiante o familia? <span class="sello sup">Supuesto</span></h3>
-      <div class="apilada" id="quien-barra" role="img"></div>
-      <ul class="ley" id="quien-ley"></ul>
+      <div class="apilada esq" id="quien-barra" role="img"></div>
+      <ul class="ley" id="quien-ley"><li class="esq">Estudiante 00 %</li><li class="esq">Familia 00 %</li><li class="esq">Los dos 00 %</li></ul>
     </section>
 
     <section class="bloque">
       <h3>Guardar</h3>
-      <div class="enl" id="guardar"></div>
-      <p class="pie-b" id="guardar-nota"></p>
+      <div class="enl" id="guardar"><span class="btn esq">Cargando enlace</span><span class="btn esq">Cargando enlace</span></div>
+      <p class="pie-b" id="guardar-nota"><span class="esq">Cargando cómo guardar este tema en la base o descargarlo</span></p>
     </section>
 
     <section class="bloque">
       <h3>Seguir en otras herramientas</h3>
-      <div class="enl" id="enlaces"></div>
-      <p class="pie-b" id="top-pend"></p>
+      <div class="enl" id="enlaces"><span class="btn esq">Cargando enlace</span><span class="btn esq">Cargando enlace</span><span class="btn esq">Cargando enlace</span><span class="btn esq">Cargando enlace</span></div>
+      <p class="pie-b" id="top-pend"><span class="esq">Cargando</span></p>
       <details style="margin-top:10px">
         <summary>Pedido listo para un chat de IA</summary>
         <div class="enl" style="margin-top:8px"><button class="btn" type="button" id="btn-chat">Copiar pedido</button><span class="pie-b" id="estado-chat" role="status"></span></div>
@@ -127,9 +127,9 @@
 
     <section class="bloque" id="glosario">
       <h3>Glosario</h3>
-      <dl class="glosario" id="glos"></dl>
-      <h3 style="margin-top:16px" id="t-temp"></h3>
-      <div class="tabla-w"><table id="temp"></table></div>
+      <dl class="glosario" id="glos"><dt class="esq">Cargando</dt><dd class="esq">cargando la definición del término del glosario</dd><dt class="esq">Cargando</dt><dd class="esq">cargando la definición del término del glosario</dd><dt class="esq">Cargando</dt><dd class="esq">cargando la definición del término del glosario</dd><dt class="esq">Cargando</dt><dd class="esq">cargando la definición del término del glosario</dd><dt class="esq">Cargando</dt><dd class="esq">cargando la definición del término del glosario</dd><dt class="esq">Cargando</dt><dd class="esq">cargando la definición del término del glosario</dd><dt class="esq">Cargando</dt><dd class="esq">cargando la definición del término del glosario</dd><dt class="esq">Cargando</dt><dd class="esq">cargando la definición del término del glosario</dd></dl>
+      <h3 style="margin-top:16px" id="t-temp"><span class="esq">Cuánto tiempo cubre cada fuente</span></h3>
+      <div class="tabla-w"><table id="temp"><tbody><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr></tbody></table></div>
     </section>
 
     <section class="bloque">
@@ -322,6 +322,7 @@ function pintar() {
   const q = { estudiante: 0, familia: 0, ambos: 0 };
   utiles(c).forEach((i) => { if (q[i.quien] != null) q[i.quien] += i.apariciones_total; });
   const tq = q.estudiante + q.familia + q.ambos;
+  $("quien-barra").classList.remove("esq");
   $("quien-barra").innerHTML = Object.keys(q).map((k) => `<i style="width:${tq ? (100 * q[k]) / tq : 0}%;background:${QUIEN[k][1]}"></i>`).join("");
   $("quien-barra").setAttribute("aria-label", Object.keys(q).map((k) => `${QUIEN[k][0]} ${q[k]}`).join(", "));
   $("quien-ley").innerHTML = Object.keys(q).map((k) => `<li><b style="background:${QUIEN[k][1]}"></b>${QUIEN[k][0]} ${tq ? p1((100 * q[k]) / tq) : 0} %</li>`).join("");

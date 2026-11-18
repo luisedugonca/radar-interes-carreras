@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/estilo.css?v=20261118">
+<link rel="stylesheet" href="assets/estilo.css?v=20261118e">
 <script src="assets/tema.js?v=20261118"></script>
 <style>
   :root{ --s-chatgpt:#0f9b82; --s-gemini:#5b6cf0; }
@@ -32,12 +32,12 @@
   .cuando{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:8px 14px;min-width:0;display:flex;flex-direction:column;justify-content:center}
 </style>
 </head>
-<body>
+<body aria-busy="true">
 <header class="cab">
   <div class="cab-in">
     <div>
-      <h1 id="sitio-titulo">Radar de interés</h1>
-      <p id="sitio-equipo"></p>
+      <h1 id="sitio-titulo">Radar de interés por carreras</h1>
+      <p id="sitio-equipo">Luis Gonçalvez y Victoria Illa · Taller Integrador, UCU</p>
     </div>
     <nav class="pest" aria-label="Secciones">
       <a href="ia.html" aria-current="page">En las IA</a>
@@ -55,9 +55,9 @@
     <div class="term" style="--c:#4f8dff">
       <span class="punto" aria-hidden="true"></span>
       <span class="campo"><span style="font-size:1.25rem">ChatGPT y Gemini</span>
-        <small id="sub-preg"></small></span>
+        <small id="sub-preg"><span class="esq">Cargando las preguntas medidas</span></small></span>
     </div>
-    <div class="cuando" aria-label="Cuándo se midió"><svg id="linea" class="tl" role="img"></svg></div>
+    <div class="cuando" aria-label="Cuándo se midió"><svg id="linea" class="tl" role="img" viewBox="0 0 600 58" aria-label="Cargando la línea de tiempo"><rect x="10" y="4" width="200" height="12" rx="6" fill="var(--esq)"/><rect x="390" y="4" width="200" height="12" rx="6" fill="var(--esq)"/><rect x="10" y="26" width="580" height="8" rx="4" fill="var(--esq)"/><rect x="200" y="44" width="200" height="10" rx="5" fill="var(--esq)"/></svg></div>
   </div>
   <div class="filtros">
     <span class="pill fija">Uruguay</span>
@@ -66,7 +66,7 @@
       <option value="inst">Instituciones</option><option value="term">Términos</option></select></label>
     <label class="pill"><select id="f-ia" aria-label="Qué IA">
       <option value="ambas">ChatGPT y Gemini</option><option value="ChatGPT">Solo ChatGPT</option><option value="Gemini">Solo Gemini</option></select></label>
-    <label class="pill"><select id="f-dia" aria-label="Qué día"></select></label>
+    <label class="pill"><select id="f-dia" aria-label="Qué día"><option>13-oct-2026 y 14-oct-2026</option></select></label>
     <label class="pill"><select id="f-preg" aria-label="Qué preguntas">
       <option value="todas">Todas las preguntas</option><option value="sin_ucu">Solo las que no nombran a UCU</option></select></label>
     <a class="pill" href="data/geo/respuestas.csv" download="radar-ia-respuestas.csv" style="text-decoration:none;color:inherit">⬇ CSV</a>
@@ -75,55 +75,59 @@
 
 <div class="radar">
   <section class="escena" aria-label="Mapa de menciones">
-    <h2 id="t-mapa"></h2>
-    <svg id="mapa" class="mapa" aria-label="Mapa radial: cada rama es una institución o un término; cada punto, una pregunta"></svg>
+<div class="carga" id="carga" role="status" aria-live="polite">
+      <div class="carga-caja"><span class="giro" aria-hidden="true"></span><b id="carga-t">Cargando las respuestas de ChatGPT y Gemini…</b><small id="carga-s">Un momento</small>
+        <div class="carga-barra"><i id="carga-i" style="width:35%"></i></div></div>
+    </div>
+    <h2 id="t-mapa"><span class="esq">Instituciones en ChatGPT y Gemini</span></h2>
+    <svg id="mapa" class="mapa" viewBox="-575 -575 1150 1150" aria-label="Mapa radial: cada rama es una institución o un término; cada punto, una pregunta"></svg>
     <p class="leyenda"><span><b>Rama</b> = institución o término</span><span><b>Número</b> = respuestas que lo nombran</span><span><b>Puntos</b> = preguntas donde más aparece</span><span><b>Aro</b> = las 3 con más respuestas</span><span>De mayor a menor</span></p>
   </section>
 
   <div class="columna">
     <section class="bloque">
       <h3>Indicadores</h3>
-      <div class="kp4" id="kpis"></div>
+      <div class="kp4" id="kpis"><div><span class="et esq">Cargando dato</span><b class="esq">00,0</b><small class="esq">cargando el detalle</small></div><div><span class="et esq">Cargando dato</span><b class="esq">00,0</b><small class="esq">cargando el detalle</small></div><div><span class="et esq">Cargando dato</span><b class="esq">00,0</b><small class="esq">cargando el detalle</small></div><div><span class="et esq">Cargando dato</span><b class="esq">00,0</b><small class="esq">cargando el detalle</small></div></div>
       <p class="temporal" data-temporal></p>
     </section>
 
-    <section class="bloque" id="rama"></section>
+    <section class="bloque" id="rama"><div class="rama-cab"><span class="bola esq"></span><h4 class="esq">Cargando</h4></div><div class="kp4"><div><span class="et esq">Cargando dato</span><b class="esq">00,0</b><small class="esq">cargando el detalle</small></div><div><span class="et esq">Cargando dato</span><b class="esq">00,0</b><small class="esq">cargando el detalle</small></div><div><span class="et esq">Cargando dato</span><b class="esq">00,0</b><small class="esq">cargando el detalle</small></div><div><span class="et esq">Cargando dato</span><b class="esq">00,0</b><small class="esq">cargando el detalle</small></div></div><div class="carr-cab"><h4 class="esq">Cargando términos</h4></div><div class="carr"><article class="tarj esq-tarj"><div class="fila-t"><span class="rk esq">#1</span></div><h5 class="esq">cargando el término</h5><div class="big esq">00</div><div class="riel esq"></div><dl><dt class="esq">cargando</dt><dd class="esq">0</dd><dt class="esq">cargando</dt><dd class="esq">0</dd><dt class="esq">cargando</dt><dd class="esq">0</dd><dt class="esq">cargando</dt><dd class="esq">0</dd></dl></article><article class="tarj esq-tarj"><div class="fila-t"><span class="rk esq">#1</span></div><h5 class="esq">cargando el término</h5><div class="big esq">00</div><div class="riel esq"></div><dl><dt class="esq">cargando</dt><dd class="esq">0</dd><dt class="esq">cargando</dt><dd class="esq">0</dd><dt class="esq">cargando</dt><dd class="esq">0</dd><dt class="esq">cargando</dt><dd class="esq">0</dd></dl></article></div></section>
 
     <section class="bloque">
-      <h3 id="t-graf"></h3>
+      <h3 id="t-graf"><span class="esq">% de respuestas que nombran cada institución</span></h3>
       <ul class="ley2"><li><b style="background:var(--s-chatgpt)"></b>ChatGPT</li><li><b style="background:var(--s-gemini)"></b>Gemini</li></ul>
-      <div class="g2" id="graf"></div>
+      <div class="g2" id="graf"><span class="nom esq">Cargando</span><div class="barras"><div class="b"><span class="riel esq"></span><span class="esq">00 % · 0 de 00</span></div><div class="b"><span class="riel esq"></span><span class="esq">00 % · 0 de 00</span></div></div><span class="nom esq">Cargando</span><div class="barras"><div class="b"><span class="riel esq"></span><span class="esq">00 % · 0 de 00</span></div><div class="b"><span class="riel esq"></span><span class="esq">00 % · 0 de 00</span></div></div><span class="nom esq">Cargando</span><div class="barras"><div class="b"><span class="riel esq"></span><span class="esq">00 % · 0 de 00</span></div><div class="b"><span class="riel esq"></span><span class="esq">00 % · 0 de 00</span></div></div><span class="nom esq">Cargando</span><div class="barras"><div class="b"><span class="riel esq"></span><span class="esq">00 % · 0 de 00</span></div><div class="b"><span class="riel esq"></span><span class="esq">00 % · 0 de 00</span></div></div><span class="nom esq">Cargando</span><div class="barras"><div class="b"><span class="riel esq"></span><span class="esq">00 % · 0 de 00</span></div><div class="b"><span class="riel esq"></span><span class="esq">00 % · 0 de 00</span></div></div><span class="nom esq">Cargando</span><div class="barras"><div class="b"><span class="riel esq"></span><span class="esq">00 % · 0 de 00</span></div><div class="b"><span class="riel esq"></span><span class="esq">00 % · 0 de 00</span></div></div><span class="nom esq">Cargando</span><div class="barras"><div class="b"><span class="riel esq"></span><span class="esq">00 % · 0 de 00</span></div><div class="b"><span class="riel esq"></span><span class="esq">00 % · 0 de 00</span></div></div></div>
       <p class="temporal" data-temporal></p>
     </section>
 
     <section class="bloque">
-      <h3 id="t-tabla"></h3>
-      <div class="tabla-w"><table id="tabla"></table></div>
+      <h3 id="t-tabla"><span class="esq">Cifras completas · instituciones</span></h3>
+      <div class="tabla-w"><table id="tabla"><tbody><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr></tbody></table></div>
       <p class="temporal" data-temporal></p>
     </section>
 
     <section class="bloque">
       <h3>Puesto de UCU entre las instituciones nombradas</h3>
-      <div class="tabla-w"><table id="t-puesto"></table></div>
+      <div class="tabla-w"><table id="t-puesto"><tbody><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr></tbody></table></div>
     </section>
 
     <section class="bloque">
       <h3>Páginas citadas</h3>
-      <div class="tabla-w alta"><table id="t-dom"></table></div>
-      <p class="pie-b" id="dom-nota"></p>
+      <div class="tabla-w alta"><table id="t-dom"><tbody><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr></tbody></table></div>
+      <p class="pie-b" id="dom-nota"><span class="esq">Cargando la nota sobre las páginas citadas por cada IA</span></p>
     </section>
 
     <section class="bloque">
       <h3>Las preguntas</h3>
-      <div class="tabla-w"><table id="t-preg"></table></div>
+      <div class="tabla-w"><table id="t-preg"><tbody><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr></tbody></table></div>
     </section>
 
     <section class="bloque" id="glosario">
       <h3>Glosario</h3>
-      <dl class="glosario" id="glos"></dl>
-      <h3 style="margin-top:16px" id="t-temp"></h3>
-      <div class="tabla-w"><table id="temp"></table></div>
-      <p class="pie-b" id="fuente"></p>
+      <dl class="glosario" id="glos"><dt class="esq">Cargando</dt><dd class="esq">cargando la definición del término del glosario</dd><dt class="esq">Cargando</dt><dd class="esq">cargando la definición del término del glosario</dd><dt class="esq">Cargando</dt><dd class="esq">cargando la definición del término del glosario</dd><dt class="esq">Cargando</dt><dd class="esq">cargando la definición del término del glosario</dd><dt class="esq">Cargando</dt><dd class="esq">cargando la definición del término del glosario</dd><dt class="esq">Cargando</dt><dd class="esq">cargando la definición del término del glosario</dd><dt class="esq">Cargando</dt><dd class="esq">cargando la definición del término del glosario</dd><dt class="esq">Cargando</dt><dd class="esq">cargando la definición del término del glosario</dd></dl>
+      <h3 style="margin-top:16px" id="t-temp"><span class="esq">Cuánto tiempo cubre cada fuente</span></h3>
+      <div class="tabla-w"><table id="temp"><tbody><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr></tbody></table></div>
+      <p class="pie-b" id="fuente"><span class="esq">Cargando la fuente</span></p>
     </section>
   </div>
 </div>
@@ -279,6 +283,8 @@ $("fuente").textContent = `Fuente: ${D.fuente} ${T.condiciones.join(" ")} Reglas
 for (const [id, k] of [["f-ver", "ver"], ["f-ia", "ia"], ["f-dia", "dia"], ["f-preg", "preg"]]) $(id).addEventListener("change", (e) => { filtro[k] = e.target.value; if (k === "ver") ramaSel = null; pintar(); });
 $("form").addEventListener("submit", (e) => e.preventDefault());
 pintar();
+$("carga").hidden = true;
+document.body.removeAttribute("aria-busy");
 </script>
 </body>
 </html>

@@ -7,15 +7,15 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/estilo.css?v=20261118">
+<link rel="stylesheet" href="assets/estilo.css?v=20261118e">
 <script src="assets/tema.js?v=20261118"></script>
 </head>
-<body>
+<body aria-busy="true">
 <header class="cab">
   <div class="cab-in">
     <div>
-      <h1 id="sitio-titulo">Radar de interés</h1>
-      <p id="sitio-equipo"></p>
+      <h1 id="sitio-titulo">Radar de interés por carreras</h1>
+      <p id="sitio-equipo">Luis Gonçalvez y Victoria Illa · Taller Integrador, UCU</p>
     </div>
     <nav class="pest" aria-label="Secciones">
       <a href="ia.html">En las IA</a>
@@ -31,20 +31,24 @@
 <main class="agentico">
   <div class="sec-t"><span class="n">1</span><h2>Cómo trabajamos: una persona decide, los agentes ejecutan</h2></div>
   <section class="noche" aria-label="Mapa agéntico">
+    <div class="carga" id="carga" role="status" aria-live="polite">
+      <div class="carga-caja"><span class="giro" aria-hidden="true"></span><b id="carga-t">Cargando el mapa…</b><small id="carga-s">Un momento</small>
+        <div class="carga-barra"><i id="carga-i" style="width:35%"></i></div></div>
+    </div>
     <div class="lienzo">
       <p class="ayuda-mapa">Tocá un punto para ver qué pasa ahí, quién lo hace y en qué archivo queda.</p>
-      <svg id="mapa" class="mapa" aria-label="Mapa radial del método de trabajo"></svg>
+      <svg id="mapa" class="mapa" viewBox="-575 -575 1150 1150" aria-label="Mapa radial del método de trabajo"></svg>
     </div>
-    <aside class="ficha" id="ficha" aria-live="polite"></aside>
+    <aside class="ficha" id="ficha" aria-live="polite"><div class="et esq">Cargando</div><h3 class="esq">Cargando el paso</h3><p class="esq">cargando la descripción del paso del método de trabajo</p><ul class="pasos"><li><span class="esq" style="display:block;height:38px;border-radius:10px"></span></li><li><span class="esq" style="display:block;height:38px;border-radius:10px"></span></li><li><span class="esq" style="display:block;height:38px;border-radius:10px"></span></li><li><span class="esq" style="display:block;height:38px;border-radius:10px"></span></li></ul></aside>
   </section>
-  <p class="fuente" id="fuente-mapa"></p>
+  <p class="fuente" id="fuente-mapa"><span class="esq">Cargando la fuente del mapa</span></p>
 
   <div class="sec-t"><span class="n">2</span><h2>El loop: en qué fase estamos</h2></div>
-  <div class="kpis" id="loop-kpis"></div>
-  <div class="fases" id="fases" style="margin-top:12px"></div>
-  <p class="fuente" id="fuente-loop"></p>
+  <div class="kpis" id="loop-kpis"><div class="kpi"><div class="v esq">0 de 0</div><div class="t esq">cargando</div><div class="d esq">cargando el detalle</div></div><div class="kpi"><div class="v esq">0 de 0</div><div class="t esq">cargando</div><div class="d esq">cargando el detalle</div></div><div class="kpi"><div class="v esq">0 de 0</div><div class="t esq">cargando</div><div class="d esq">cargando el detalle</div></div></div>
+  <div class="fases" id="fases" style="margin-top:12px"><article class="fase"><span class="id esq">F0</span><h3 class="esq">Cargando la fase</h3><p class="esq">cargando el «hecho cuando» de la fase</p><p class="esq">cargando la aprobación</p></article><article class="fase"><span class="id esq">F0</span><h3 class="esq">Cargando la fase</h3><p class="esq">cargando el «hecho cuando» de la fase</p><p class="esq">cargando la aprobación</p></article><article class="fase"><span class="id esq">F0</span><h3 class="esq">Cargando la fase</h3><p class="esq">cargando el «hecho cuando» de la fase</p><p class="esq">cargando la aprobación</p></article><article class="fase"><span class="id esq">F0</span><h3 class="esq">Cargando la fase</h3><p class="esq">cargando el «hecho cuando» de la fase</p><p class="esq">cargando la aprobación</p></article><article class="fase"><span class="id esq">F0</span><h3 class="esq">Cargando la fase</h3><p class="esq">cargando el «hecho cuando» de la fase</p><p class="esq">cargando la aprobación</p></article><article class="fase"><span class="id esq">F0</span><h3 class="esq">Cargando la fase</h3><p class="esq">cargando el «hecho cuando» de la fase</p><p class="esq">cargando la aprobación</p></article><article class="fase"><span class="id esq">F0</span><h3 class="esq">Cargando la fase</h3><p class="esq">cargando el «hecho cuando» de la fase</p><p class="esq">cargando la aprobación</p></article><article class="fase"><span class="id esq">F0</span><h3 class="esq">Cargando la fase</h3><p class="esq">cargando el «hecho cuando» de la fase</p><p class="esq">cargando la aprobación</p></article><article class="fase"><span class="id esq">F0</span><h3 class="esq">Cargando la fase</h3><p class="esq">cargando el «hecho cuando» de la fase</p><p class="esq">cargando la aprobación</p></article><article class="fase"><span class="id esq">F0</span><h3 class="esq">Cargando la fase</h3><p class="esq">cargando el «hecho cuando» de la fase</p><p class="esq">cargando la aprobación</p></article><article class="fase"><span class="id esq">F0</span><h3 class="esq">Cargando la fase</h3><p class="esq">cargando el «hecho cuando» de la fase</p><p class="esq">cargando la aprobación</p></article><article class="fase"><span class="id esq">F0</span><h3 class="esq">Cargando la fase</h3><p class="esq">cargando el «hecho cuando» de la fase</p><p class="esq">cargando la aprobación</p></article></div>
+  <p class="fuente" id="fuente-loop"><span class="esq">Cargando la fuente del estado del plan</span></p>
 </main>
-<footer class="pie" id="pie"></footer>
+<footer class="pie" id="pie"><span class="esq">Cargando el objetivo del plan</span></footer>
 
 <script type="module">
 import { renderMapa } from "./assets/mapa.js";
@@ -103,6 +107,8 @@ document.getElementById("fases").innerHTML = loop.fases.map((f) => {
 document.getElementById("fuente-loop").innerHTML =
   `Fuente: <a href="${enRepo("docs/data/loop.json")}">docs/data/loop.json</a> · actualizado ${esc(fecha(loop.actualizado_utc))} · plan completo en <a href="${enRepo("PLAN.md")}">PLAN.md</a>.`;
 document.getElementById("pie").textContent = `Objetivo: ${loop.objetivo}`;
+document.getElementById("carga").hidden = true;
+document.body.removeAttribute("aria-busy");
 </script>
 </body>
 </html>

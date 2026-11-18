@@ -22,6 +22,8 @@
 | 2026-11-18 | Página «En las IA» (GEO, foto de oct-2026) + temporalidad de cada fuente en el glosario y en cada gráfico | CHICO (pedido textual del PO) | Autochequeo: el script da las mismas cifras que la tabla corregida a mano (34 respuestas: ChatGPT 18, Gemini 16); probado en Chrome sin errores | Pendiente de que el PO lo mire | — |
 | 2026-11-18 | Corrección propia: la primera tabla de menciones leyó como vacías las 2 respuestas piloto de ChatGPT (otro formato de archivo) | — | — | Se avisó al PO y se rehízo con `colector/geo_indicadores.py` | Regla: contar siempre con el script versionado, no con conteos sueltos |
 
+| 2026-11-18 | Esqueletos de carga en las tres páginas para bajar el CLS | CHICO (pedido textual del PO) | Medido en Chrome, red 4G rápida, antes → después. Escritorio: En las IA 0,968 → 0,014 · Radar 0,706 → 0,012 · Mapa agéntico 0,420 → 0. Celular (400 px): 0 · 0,002 · 0. Ningún esqueleto queda en pantalla al terminar | Pendiente de que el PO lo mire | — |
+
 ## Fuentes probadas (2026-11-16)
 
 | Fuente | Cómo se probó | Resultado | Decisión |
