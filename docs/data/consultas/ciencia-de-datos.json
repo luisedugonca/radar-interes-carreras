@@ -1,8 +1,8 @@
 {
  "tema": "ciencia de datos",
  "slug": "ciencia-de-datos",
- "run_id": "20261116T220819Z_ciencia-de-datos",
- "generado_utc": "2026-11-16T22:08:19Z",
+ "run_id": "20261118T160444Z_ciencia-de-datos",
+ "generado_utc": "2026-11-18T16:04:44Z",
  "pais": "Uruguay",
  "reglas_version": "2026-11-16b",
  "fuentes": [
@@ -22,9 +22,9 @@
  "resumen": {
   "sugerencias_unicas": 506,
   "intenciones_con_datos": 10,
-  "fuera_de_uruguay": 207,
-  "fuera_de_uruguay_pct": 40.9,
-  "sin_clasificar": 28,
+  "fuera_de_uruguay": 202,
+  "fuera_de_uruguay_pct": 39.9,
+  "sin_clasificar": 32,
   "instituciones_uy": [
    {
     "id": "Udelar",
@@ -32,6 +32,10 @@
    },
    {
     "id": "UM",
+    "sugerencias": 2
+   },
+   {
+    "id": "UTEC",
     "sugerencias": 2
    },
    {
@@ -47,23 +51,19 @@
     "sugerencias": 1
    },
    {
-    "id": "UTEC",
-    "sugerencias": 1
-   },
-   {
     "id": "UTU",
     "sugerencias": 1
    }
   ],
   "quien_supuesto": {
-   "familia": 41,
-   "estudiante": 168,
-   "ambos": 62,
-   "ninguno": 235
+   "familia": 42,
+   "estudiante": 167,
+   "ambos": 63,
+   "ninguno": 234
   },
   "top10_validos": 0,
-  "top10_rechazados": 2,
-  "top10_pendientes": 0
+  "top10_rechazados": 0,
+  "top10_pendientes": 2
  },
  "intenciones": [
   {
@@ -72,9 +72,9 @@
    "color": "#8b93a7",
    "quien": "ninguno",
    "que_es": "La sugerencia nombra un país o una universidad de otro país. No es demanda local.",
-   "total": 207,
-   "pct": 40.9,
-   "apariciones_total": 216,
+   "total": 202,
+   "pct": 39.9,
+   "apariciones_total": 209,
    "veces_top3_total": 41,
    "sugerencias": [
     {
@@ -90,34 +90,12 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 1253,
+     "relevancia_max": 1250,
      "apariciones": 2,
-     "pos_promedio": 2.5,
+     "pos_promedio": 3.5,
      "pos_mejor": 1,
      "veces_top3": 1,
      "veces_top10": 2,
-     "instituciones": [],
-     "intencion": "fuera_uy"
-    },
-    {
-     "texto": "ciencia de datos carrera en colombia",
-     "semillas": [
-      "ciencia de datos carrera",
-      "ciencia de datos c"
-     ],
-     "grupos": [
-      "estudiante",
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 600,
-     "apariciones": 2,
-     "pos_promedio": 7.5,
-     "pos_mejor": 2,
-     "veces_top3": 1,
-     "veces_top10": 1,
      "instituciones": [],
      "intencion": "fuera_uy"
     },
@@ -136,7 +114,7 @@
      ],
      "relevancia_max": 1250,
      "apariciones": 2,
-     "pos_promedio": 7.5,
+     "pos_promedio": 6.5,
      "pos_mejor": 1,
      "veces_top3": 1,
      "veces_top10": 1,
@@ -144,10 +122,10 @@
      "intencion": "fuera_uy"
     },
     {
-     "texto": "ciencia de datos a distancia argentina gratis",
+     "texto": "ciencia de datos carrera uba",
      "semillas": [
-      "ciencia de datos a distancia",
-      "ciencia de datos a"
+      "ciencia de datos carrera",
+      "ciencia de datos c"
      ],
      "grupos": [
       "estudiante",
@@ -156,12 +134,12 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 1250,
+     "relevancia_max": 562,
      "apariciones": 2,
-     "pos_promedio": 6.5,
-     "pos_mejor": 4,
-     "veces_top3": 0,
-     "veces_top10": 2,
+     "pos_promedio": 8.0,
+     "pos_mejor": 3,
+     "veces_top3": 1,
+     "veces_top10": 1,
      "instituciones": [],
      "intencion": "fuera_uy"
     },
@@ -182,10 +160,10 @@
      ],
      "relevancia_max": 601,
      "apariciones": 2,
-     "pos_promedio": 7.5,
+     "pos_promedio": 7.0,
      "pos_mejor": 4,
      "veces_top3": 0,
-     "veces_top10": 1,
+     "veces_top10": 2,
      "instituciones": [],
      "intencion": "fuera_uy"
     },
@@ -206,7 +184,7 @@
      ],
      "relevancia_max": 600,
      "apariciones": 2,
-     "pos_promedio": 9.0,
+     "pos_promedio": 8.0,
      "pos_mejor": 5,
      "veces_top3": 0,
      "veces_top10": 1,
@@ -228,7 +206,7 @@
      ],
      "relevancia_max": 559,
      "apariciones": 2,
-     "pos_promedio": 10.5,
+     "pos_promedio": 9.5,
      "pos_mejor": 6,
      "veces_top3": 0,
      "veces_top10": 1,
@@ -236,31 +214,10 @@
      "intencion": "fuera_uy"
     },
     {
-     "texto": "ciencia de datos en organizaciones unlp",
-     "semillas": [
-      "ciencia de datos e",
-      "ciencia de datos o"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 554,
-     "apariciones": 2,
-     "pos_promedio": 11.5,
-     "pos_mejor": 11,
-     "veces_top3": 0,
-     "veces_top10": 0,
-     "instituciones": [],
-     "intencion": "fuera_uy"
-    },
-    {
-     "texto": "ciencia de datos e inteligencia artificial conalep",
+     "texto": "ciencia de datos uniandes",
      "semillas": [
       "ciencia de datos",
-      "ciencia de datos e"
+      "ciencia de datos u"
      ],
      "grupos": [
       "base",
@@ -269,12 +226,12 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 553,
+     "relevancia_max": 558,
      "apariciones": 2,
-     "pos_promedio": 12.0,
-     "pos_mejor": 12,
+     "pos_promedio": 10.5,
+     "pos_mejor": 7,
      "veces_top3": 0,
-     "veces_top10": 0,
+     "veces_top10": 1,
      "instituciones": [],
      "intencion": "fuera_uy"
     },
@@ -513,6 +470,26 @@
      "apariciones": 1,
      "pos_promedio": 1.0,
      "pos_mejor": 1,
+     "veces_top3": 1,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "ciencia de datos carrera en colombia",
+     "semillas": [
+      "ciencia de datos carrera"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "pos_promedio": 2.0,
+     "pos_mejor": 2,
      "veces_top3": 1,
      "veces_top10": 1,
      "instituciones": [],
@@ -819,27 +796,7 @@
      "intencion": "fuera_uy"
     },
     {
-     "texto": "ciencia de datos carrera uba",
-     "semillas": [
-      "ciencia de datos carrera"
-     ],
-     "grupos": [
-      "estudiante"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 562,
-     "apariciones": 1,
-     "pos_promedio": 3.0,
-     "pos_mejor": 3,
-     "veces_top3": 1,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "fuera_uy"
-    },
-    {
-     "texto": "ciencia de datos externado",
+     "texto": "ciencia de datos e inteligencia artificial conalep",
      "semillas": [
       "ciencia de datos e"
      ],
@@ -1059,6 +1016,46 @@
      "intencion": "fuera_uy"
     },
     {
+     "texto": "ciencia de datos a distancia argentina gratis",
+     "semillas": [
+      "ciencia de datos a distancia"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "pos_promedio": 4.0,
+     "pos_mejor": 4,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "ciencia de datos andes",
+     "semillas": [
+      "ciencia de datos a"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 750,
+     "apariciones": 1,
+     "pos_promedio": 4.0,
+     "pos_mejor": 4,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
      "texto": "ciencia de datos bogota",
      "semillas": [
       "ciencia de datos b"
@@ -1070,26 +1067,6 @@
       "google"
      ],
      "relevancia_max": 850,
-     "apariciones": 1,
-     "pos_promedio": 4.0,
-     "pos_mejor": 4,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "fuera_uy"
-    },
-    {
-     "texto": "ciencia de datos e inteligencia artificial uce",
-     "semillas": [
-      "ciencia de datos e"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 561,
      "apariciones": 1,
      "pos_promedio": 4.0,
      "pos_mejor": 4,
@@ -1219,26 +1196,6 @@
      "intencion": "fuera_uy"
     },
     {
-     "texto": "ciencia de datos politecnico grancolombiano",
-     "semillas": [
-      "ciencia de datos p"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 561,
-     "apariciones": 1,
-     "pos_promedio": 4.0,
-     "pos_mejor": 4,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "fuera_uy"
-    },
-    {
      "texto": "ciencia de datos rodriguez fiuba",
      "semillas": [
       "ciencia de datos r"
@@ -1349,7 +1306,27 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 601,
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "pos_promedio": 5.0,
+     "pos_mejor": 5,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "ciencia de datos anahuac",
+     "semillas": [
+      "ciencia de datos a"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 700,
      "apariciones": 1,
      "pos_promedio": 5.0,
      "pos_mejor": 5,
@@ -1370,26 +1347,6 @@
       "google"
      ],
      "relevancia_max": 560,
-     "apariciones": 1,
-     "pos_promedio": 5.0,
-     "pos_mejor": 5,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "fuera_uy"
-    },
-    {
-     "texto": "ciencia de datos intec",
-     "semillas": [
-      "ciencia de datos i"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 701,
      "apariciones": 1,
      "pos_promedio": 5.0,
      "pos_mejor": 5,
@@ -1445,6 +1402,26 @@
      ],
      "grupos": [
       "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 560,
+     "apariciones": 1,
+     "pos_promedio": 5.0,
+     "pos_mejor": 5,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "ciencia de datos politecnico grancolombiano",
+     "semillas": [
+      "ciencia de datos p"
+     ],
+     "grupos": [
+      "alfabeto"
      ],
      "fuentes": [
       "google"
@@ -1579,26 +1556,6 @@
      "intencion": "fuera_uy"
     },
     {
-     "texto": "ciencia de datos andes",
-     "semillas": [
-      "ciencia de datos a"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 751,
-     "apariciones": 1,
-     "pos_promedio": 6.0,
-     "pos_mejor": 6,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "fuera_uy"
-    },
-    {
      "texto": "ciencia de datos bucaramanga",
      "semillas": [
       "ciencia de datos b"
@@ -1619,6 +1576,46 @@
      "intencion": "fuera_uy"
     },
     {
+     "texto": "ciencia de datos costa rica",
+     "semillas": [
+      "ciencia de datos c"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 559,
+     "apariciones": 1,
+     "pos_promedio": 6.0,
+     "pos_mejor": 6,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "ciencia de datos e inteligencia artificial uce",
+     "semillas": [
+      "ciencia de datos e"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 559,
+     "apariciones": 1,
+     "pos_promedio": 6.0,
+     "pos_mejor": 6,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
      "texto": "ciencia de datos fcfm",
      "semillas": [
       "ciencia de datos f"
@@ -1630,6 +1627,26 @@
       "google"
      ],
      "relevancia_max": 600,
+     "apariciones": 1,
+     "pos_promedio": 6.0,
+     "pos_mejor": 6,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "ciencia de datos intec",
+     "semillas": [
+      "ciencia de datos i"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 603,
      "apariciones": 1,
      "pos_promedio": 6.0,
      "pos_mejor": 6,
@@ -1839,26 +1856,6 @@
      "intencion": "fuera_uy"
     },
     {
-     "texto": "ciencia de datos e inteligencia artificial espol",
-     "semillas": [
-      "ciencia de datos e"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 558,
-     "apariciones": 1,
-     "pos_promedio": 7.0,
-     "pos_mejor": 7,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "fuera_uy"
-    },
-    {
      "texto": "ciencia de datos fes acatlan diplomado",
      "semillas": [
       "ciencia de datos f"
@@ -1899,9 +1896,9 @@
      "intencion": "fuera_uy"
     },
     {
-     "texto": "ciencia de datos isil",
+     "texto": "ciencia de datos queretaro",
      "semillas": [
-      "ciencia de datos i"
+      "ciencia de datos q"
      ],
      "grupos": [
       "alfabeto"
@@ -1909,7 +1906,7 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 601,
+     "relevancia_max": 558,
      "apariciones": 1,
      "pos_promedio": 7.0,
      "pos_mejor": 7,
@@ -1959,9 +1956,9 @@
      "intencion": "fuera_uy"
     },
     {
-     "texto": "ciencia de datos uniandes",
+     "texto": "ciencia de datos venezuela",
      "semillas": [
-      "ciencia de datos u"
+      "ciencia de datos v"
      ],
      "grupos": [
       "alfabeto"
@@ -1979,9 +1976,9 @@
      "intencion": "fuera_uy"
     },
     {
-     "texto": "ciencia de datos venezuela",
+     "texto": "ciencia de datos y ade upna",
      "semillas": [
-      "ciencia de datos v"
+      "ciencia de datos y"
      ],
      "grupos": [
       "alfabeto"
@@ -2059,7 +2056,7 @@
      "intencion": "fuera_uy"
     },
     {
-     "texto": "ciencia de datos anahuac",
+     "texto": "ciencia de datos austral",
      "semillas": [
       "ciencia de datos a"
      ],
@@ -2069,7 +2066,7 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 700,
+     "relevancia_max": 600,
      "apariciones": 1,
      "pos_promedio": 8.0,
      "pos_mejor": 8,
@@ -2110,26 +2107,6 @@
       "google"
      ],
      "relevancia_max": 557,
-     "apariciones": 1,
-     "pos_promedio": 8.0,
-     "pos_mejor": 8,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "fuera_uy"
-    },
-    {
-     "texto": "ciencia de datos donde estudiar en argentina",
-     "semillas": [
-      "ciencia de datos d"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 700,
      "apariciones": 1,
      "pos_promedio": 8.0,
      "pos_mejor": 8,
@@ -2199,6 +2176,26 @@
      "intencion": "fuera_uy"
     },
     {
+     "texto": "ciencia de datos isil",
+     "semillas": [
+      "ciencia de datos i"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "pos_promedio": 8.0,
+     "pos_mejor": 8,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
      "texto": "ciencia de datos javeriana precio",
      "semillas": [
       "ciencia de datos j"
@@ -2242,26 +2239,6 @@
      "texto": "ciencia de datos nicaragua",
      "semillas": [
       "ciencia de datos n"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 557,
-     "apariciones": 1,
-     "pos_promedio": 8.0,
-     "pos_mejor": 8,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "fuera_uy"
-    },
-    {
-     "texto": "ciencia de datos puce",
-     "semillas": [
-      "ciencia de datos p"
      ],
      "grupos": [
       "alfabeto"
@@ -2379,6 +2356,26 @@
      "intencion": "fuera_uy"
     },
     {
+     "texto": "ciencia de datos argentina",
+     "semillas": [
+      "ciencia de datos a"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "pos_promedio": 9.0,
+     "pos_mejor": 9,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
      "texto": "ciencia de datos bolivia",
      "semillas": [
       "ciencia de datos b"
@@ -2419,29 +2416,9 @@
      "intencion": "fuera_uy"
     },
     {
-     "texto": "ciencia de datos costa rica",
+     "texto": "ciencia de datos duoc",
      "semillas": [
-      "ciencia de datos c"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 556,
-     "apariciones": 1,
-     "pos_promedio": 9.0,
-     "pos_mejor": 9,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "fuera_uy"
-    },
-    {
-     "texto": "ciencia de datos ecuador",
-     "semillas": [
-      "ciencia de datos e"
+      "ciencia de datos d"
      ],
      "grupos": [
       "alfabeto"
@@ -2479,7 +2456,7 @@
      "intencion": "fuera_uy"
     },
     {
-     "texto": "ciencia de datos la salle pensum",
+     "texto": "ciencia de datos la sabana",
      "semillas": [
       "ciencia de datos l"
      ],
@@ -2502,26 +2479,6 @@
      "texto": "ciencia de datos malla espol",
      "semillas": [
       "ciencia de datos m"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 556,
-     "apariciones": 1,
-     "pos_promedio": 9.0,
-     "pos_mejor": 9,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "fuera_uy"
-    },
-    {
-     "texto": "ciencia de datos queretaro",
-     "semillas": [
-      "ciencia de datos q"
      ],
      "grupos": [
       "alfabeto"
@@ -2602,26 +2559,6 @@
      "texto": "ciencia de datos viu",
      "semillas": [
       "ciencia de datos v"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 556,
-     "apariciones": 1,
-     "pos_promedio": 9.0,
-     "pos_mejor": 9,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "fuera_uy"
-    },
-    {
-     "texto": "ciencia de datos y organizacion industrial upv",
-     "semillas": [
-      "ciencia de datos y"
      ],
      "grupos": [
       "alfabeto"
@@ -2739,7 +2676,27 @@
      "intencion": "fuera_uy"
     },
     {
-     "texto": "ciencia de datos e inteligencia artificial ugr",
+     "texto": "ciencia de datos cibertec",
+     "semillas": [
+      "ciencia de datos c"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "pos_promedio": 10.0,
+     "pos_mejor": 10,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "ciencia de datos externado",
      "semillas": [
       "ciencia de datos e"
      ],
@@ -2799,9 +2756,9 @@
      "intencion": "fuera_uy"
     },
     {
-     "texto": "ciencia de datos la sabana",
+     "texto": "ciencia de datos mendoza",
      "semillas": [
-      "ciencia de datos l"
+      "ciencia de datos m"
      ],
      "grupos": [
       "alfabeto"
@@ -2819,9 +2776,9 @@
      "intencion": "fuera_uy"
     },
     {
-     "texto": "ciencia de datos mendoza",
+     "texto": "ciencia de datos puce",
      "semillas": [
-      "ciencia de datos m"
+      "ciencia de datos p"
      ],
      "grupos": [
       "alfabeto"
@@ -2879,7 +2836,7 @@
      "intencion": "fuera_uy"
     },
     {
-     "texto": "ciencia de datos y ade upna",
+     "texto": "ciencia de datos yachay",
      "semillas": [
       "ciencia de datos y"
      ],
@@ -2959,7 +2916,7 @@
      "intencion": "fuera_uy"
     },
     {
-     "texto": "ciencia de datos austral",
+     "texto": "ciencia de datos andes precio",
      "semillas": [
       "ciencia de datos a"
      ],
@@ -2969,7 +2926,27 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 600,
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "pos_promedio": 11.0,
+     "pos_mejor": 11,
+     "veces_top3": 0,
+     "veces_top10": 0,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "ciencia de datos colombia",
+     "semillas": [
+      "ciencia de datos c"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
      "apariciones": 1,
      "pos_promedio": 11.0,
      "pos_mejor": 11,
@@ -3239,6 +3216,26 @@
      "intencion": "fuera_uy"
     },
     {
+     "texto": "ciencia de datos aplicada uoc",
+     "semillas": [
+      "ciencia de datos a"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "pos_promedio": 12.0,
+     "pos_mejor": 12,
+     "veces_top3": 0,
+     "veces_top10": 0,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
      "texto": "ciencia de datos blas pascal",
      "semillas": [
       "ciencia de datos b"
@@ -3259,9 +3256,9 @@
      "intencion": "fuera_uy"
     },
     {
-     "texto": "ciencia de datos cibertec",
+     "texto": "ciencia de datos e inteligencia artificial espol",
      "semillas": [
-      "ciencia de datos c"
+      "ciencia de datos e"
      ],
      "grupos": [
       "alfabeto"
@@ -3279,9 +3276,9 @@
      "intencion": "fuera_uy"
     },
     {
-     "texto": "ciencia de datos duoc",
+     "texto": "ciencia de datos en organizaciones unlp",
      "semillas": [
-      "ciencia de datos d"
+      "ciencia de datos o"
      ],
      "grupos": [
       "alfabeto"
@@ -3499,29 +3496,9 @@
      "intencion": "fuera_uy"
     },
     {
-     "texto": "ciencia de datos argentina",
+     "texto": "ciencia de datos duoc uc",
      "semillas": [
-      "ciencia de datos a"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 552,
-     "apariciones": 1,
-     "pos_promedio": 13.0,
-     "pos_mejor": 13,
-     "veces_top3": 0,
-     "veces_top10": 0,
-     "instituciones": [],
-     "intencion": "fuera_uy"
-    },
-    {
-     "texto": "ciencia de datos e inteligencia artificial upm",
-     "semillas": [
-      "ciencia de datos e"
+      "ciencia de datos d"
      ],
      "grupos": [
       "alfabeto"
@@ -3619,49 +3596,9 @@
      "intencion": "fuera_uy"
     },
     {
-     "texto": "ciencia de datos puj",
-     "semillas": [
-      "ciencia de datos p"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 552,
-     "apariciones": 1,
-     "pos_promedio": 13.0,
-     "pos_mejor": 13,
-     "veces_top3": 0,
-     "veces_top10": 0,
-     "instituciones": [],
-     "intencion": "fuera_uy"
-    },
-    {
      "texto": "ciencia de datos uninorte",
      "semillas": [
       "ciencia de datos u"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 552,
-     "apariciones": 1,
-     "pos_promedio": 13.0,
-     "pos_mejor": 13,
-     "veces_top3": 0,
-     "veces_top10": 0,
-     "instituciones": [],
-     "intencion": "fuera_uy"
-    },
-    {
-     "texto": "ciencia de datos yachay",
-     "semillas": [
-      "ciencia de datos y"
      ],
      "grupos": [
       "alfabeto"
@@ -3713,26 +3650,6 @@
      "apariciones": 1,
      "pos_promedio": 13.0,
      "pos_mejor": 13,
-     "veces_top3": 0,
-     "veces_top10": 0,
-     "instituciones": [],
-     "intencion": "fuera_uy"
-    },
-    {
-     "texto": "ciencia de datos andes precio",
-     "semillas": [
-      "ciencia de datos a"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 551,
-     "apariciones": 1,
-     "pos_promedio": 14.0,
-     "pos_mejor": 14,
      "veces_top3": 0,
      "veces_top10": 0,
      "instituciones": [],
@@ -3819,9 +3736,9 @@
      "intencion": "fuera_uy"
     },
     {
-     "texto": "ciencia de datos itla pensum",
+     "texto": "ciencia de datos lima",
      "semillas": [
-      "ciencia de datos i"
+      "ciencia de datos l"
      ],
      "grupos": [
       "alfabeto"
@@ -3842,26 +3759,6 @@
      "texto": "ciencia de datos maestria unam",
      "semillas": [
       "ciencia de datos m"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 551,
-     "apariciones": 1,
-     "pos_promedio": 14.0,
-     "pos_mejor": 14,
-     "veces_top3": 0,
-     "veces_top10": 0,
-     "instituciones": [],
-     "intencion": "fuera_uy"
-    },
-    {
-     "texto": "ciencia de datos panama",
-     "semillas": [
-      "ciencia de datos p"
      ],
      "grupos": [
       "alfabeto"
@@ -3939,6 +3836,26 @@
      "intencion": "fuera_uy"
     },
     {
+     "texto": "ciencia de datos ypf",
+     "semillas": [
+      "ciencia de datos y"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "pos_promedio": 14.0,
+     "pos_mejor": 14,
+     "veces_top3": 0,
+     "veces_top10": 0,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
      "texto": "cuanto gana un ingeniero en ciencia de datos en mexico",
      "semillas": [
       "cuánto gana ciencia de datos"
@@ -3979,7 +3896,7 @@
      "intencion": "fuera_uy"
     },
     {
-     "texto": "ciencia de datos aplicada uoc",
+     "texto": "ciencia de datos acatlan",
      "semillas": [
       "ciencia de datos a"
      ],
@@ -4019,7 +3936,7 @@
      "intencion": "fuera_uy"
     },
     {
-     "texto": "ciencia de datos colombia",
+     "texto": "ciencia de datos compensar",
      "semillas": [
       "ciencia de datos c"
      ],
@@ -4039,7 +3956,7 @@
      "intencion": "fuera_uy"
     },
     {
-     "texto": "ciencia de datos externado precio",
+     "texto": "ciencia de datos ecuador",
      "semillas": [
       "ciencia de datos e"
      ],
@@ -4059,7 +3976,7 @@
      "intencion": "fuera_uy"
     },
     {
-     "texto": "ciencia de datos iteso",
+     "texto": "ciencia de datos itla pensum",
      "semillas": [
       "ciencia de datos i"
      ],
@@ -4079,27 +3996,7 @@
      "intencion": "fuera_uy"
     },
     {
-     "texto": "ciencia de datos lima",
-     "semillas": [
-      "ciencia de datos l"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 550,
-     "apariciones": 1,
-     "pos_promedio": 15.0,
-     "pos_mejor": 15,
-     "veces_top3": 0,
-     "veces_top10": 0,
-     "instituciones": [],
-     "intencion": "fuera_uy"
-    },
-    {
-     "texto": "ciencia de datos politecnico",
+     "texto": "ciencia de datos puj",
      "semillas": [
       "ciencia de datos p"
      ],
@@ -4431,9 +4328,9 @@
    "color": "#f07f4f",
    "quien": "familia",
    "que_es": "Cuánto cuesta: precio, cuota, gratis o paga.",
-   "total": 15,
-   "pct": 3.0,
-   "apariciones_total": 17,
+   "total": 16,
+   "pct": 3.2,
+   "apariciones_total": 18,
    "veces_top3_total": 6,
    "sugerencias": [
     {
@@ -4449,9 +4346,9 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 1252,
+     "relevancia_max": 800,
      "apariciones": 2,
-     "pos_promedio": 3.5,
+     "pos_promedio": 6.0,
      "pos_mejor": 2,
      "veces_top3": 1,
      "veces_top10": 2,
@@ -4471,12 +4368,12 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 1251,
+     "relevancia_max": 602,
      "apariciones": 2,
-     "pos_promedio": 5.0,
+     "pos_promedio": 8.5,
      "pos_mejor": 3,
      "veces_top3": 1,
-     "veces_top10": 2,
+     "veces_top10": 1,
      "instituciones": [],
      "intencion": "costo"
     },
@@ -4653,10 +4550,10 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 558,
+     "relevancia_max": 559,
      "apariciones": 1,
-     "pos_promedio": 7.0,
-     "pos_mejor": 7,
+     "pos_promedio": 6.0,
+     "pos_mejor": 6,
      "veces_top3": 0,
      "veces_top10": 1,
      "instituciones": [],
@@ -4679,6 +4576,26 @@
      "pos_mejor": 10,
      "veces_top3": 0,
      "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "costo"
+    },
+    {
+     "texto": "ciencia de datos curso gratis",
+     "semillas": [
+      "ciencia de datos c"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "pos_promedio": 12.0,
+     "pos_mejor": 12,
+     "veces_top3": 0,
+     "veces_top10": 0,
      "instituciones": [],
      "intencion": "costo"
     },
@@ -4750,8 +4667,8 @@
    "color": "#3ccf91",
    "quien": "ambos",
    "que_es": "Para qué sirve: trabajo, sueldo, demanda.",
-   "total": 41,
-   "pct": 8.1,
+   "total": 39,
+   "pct": 7.7,
    "apariciones_total": 43,
    "veces_top3_total": 11,
    "sugerencias": [
@@ -4767,10 +4684,54 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 600,
+     "relevancia_max": 601,
+     "apariciones": 2,
+     "pos_promedio": 7.5,
+     "pos_mejor": 2,
+     "veces_top3": 1,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "ciencia de datos en organizaciones salida laboral",
+     "semillas": [
+      "ciencia de datos salida laboral",
+      "ciencia de datos e"
+     ],
+     "grupos": [
+      "estudiante",
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 559,
      "apariciones": 2,
      "pos_promedio": 8.0,
      "pos_mejor": 3,
+     "veces_top3": 1,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "ciencia de datos trabajo",
+     "semillas": [
+      "ciencia de datos",
+      "ciencia de datos t"
+     ],
+     "grupos": [
+      "base",
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1250,
+     "apariciones": 2,
+     "pos_promedio": 8.0,
+     "pos_mejor": 1,
      "veces_top3": 1,
      "veces_top10": 1,
      "instituciones": [],
@@ -4810,26 +4771,6 @@
       "google"
      ],
      "relevancia_max": 601,
-     "apariciones": 1,
-     "pos_promedio": 1.0,
-     "pos_mejor": 1,
-     "veces_top3": 1,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "salida"
-    },
-    {
-     "texto": "ciencia de datos trabajo",
-     "semillas": [
-      "ciencia de datos t"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 1250,
      "apariciones": 1,
      "pos_promedio": 1.0,
      "pos_mejor": 1,
@@ -4939,26 +4880,6 @@
      "intencion": "salida"
     },
     {
-     "texto": "ciencia de datos en organizaciones salida laboral",
-     "semillas": [
-      "ciencia de datos salida laboral"
-     ],
-     "grupos": [
-      "estudiante"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 559,
-     "apariciones": 1,
-     "pos_promedio": 3.0,
-     "pos_mejor": 3,
-     "veces_top3": 1,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "salida"
-    },
-    {
      "texto": "ciencia de datos vacantes",
      "semillas": [
       "ciencia de datos v"
@@ -4979,9 +4900,49 @@
      "intencion": "salida"
     },
     {
+     "texto": "ciencia de datos e inteligencia artificial sueldo",
+     "semillas": [
+      "ciencia de datos e"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 561,
+     "apariciones": 1,
+     "pos_promedio": 4.0,
+     "pos_mejor": 4,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
      "texto": "ciencia de datos oferta laboral",
      "semillas": [
       "ciencia de datos o"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 561,
+     "apariciones": 1,
+     "pos_promedio": 4.0,
+     "pos_mejor": 4,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "ciencia de datos para que sirve",
+     "semillas": [
+      "ciencia de datos p"
      ],
      "grupos": [
       "alfabeto"
@@ -5079,26 +5040,6 @@
      "intencion": "salida"
     },
     {
-     "texto": "ciencia de datos que es y para que sirve",
-     "semillas": [
-      "ciencia de datos q"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 560,
-     "apariciones": 1,
-     "pos_promedio": 5.0,
-     "pos_mejor": 5,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "salida"
-    },
-    {
      "texto": "tecnicatura en ciencia de datos salida laboral",
      "semillas": [
       "ciencia de datos salida laboral"
@@ -5130,26 +5071,6 @@
       "google"
      ],
      "relevancia_max": 556,
-     "apariciones": 1,
-     "pos_promedio": 6.0,
-     "pos_mejor": 6,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "salida"
-    },
-    {
-     "texto": "ciencia de datos empleo",
-     "semillas": [
-      "ciencia de datos e"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 559,
      "apariciones": 1,
      "pos_promedio": 6.0,
      "pos_mejor": 6,
@@ -5239,6 +5160,26 @@
      "intencion": "salida"
     },
     {
+     "texto": "ciencia de datos cuanto gana",
+     "semillas": [
+      "ciencia de datos c"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 1,
+     "pos_promedio": 7.0,
+     "pos_mejor": 7,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
      "texto": "ciencia de datos linkedin",
      "semillas": [
       "ciencia de datos l"
@@ -5299,26 +5240,6 @@
      "intencion": "salida"
     },
     {
-     "texto": "ciencia de datos ciudadanos - nivel junior",
-     "semillas": [
-      "ciencia de datos c"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 557,
-     "apariciones": 1,
-     "pos_promedio": 8.0,
-     "pos_mejor": 8,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "salida"
-    },
-    {
      "texto": "cuanto gana un tecnico en ciencia de datos",
      "semillas": [
       "cuánto gana ciencia de datos"
@@ -5359,26 +5280,6 @@
      "intencion": "salida"
     },
     {
-     "texto": "ciencia de datos cuanto gana",
-     "semillas": [
-      "ciencia de datos c"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 555,
-     "apariciones": 1,
-     "pos_promedio": 10.0,
-     "pos_mejor": 10,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "salida"
-    },
-    {
      "texto": "ciencia de datos becario",
      "semillas": [
       "ciencia de datos b"
@@ -5399,9 +5300,9 @@
      "intencion": "salida"
     },
     {
-     "texto": "ciencia de datos para que sirve",
+     "texto": "ciencia de datos empleo",
      "semillas": [
-      "ciencia de datos p"
+      "ciencia de datos e"
      ],
      "grupos": [
       "alfabeto"
@@ -5422,6 +5323,46 @@
      "texto": "ciencia de datos futuro",
      "semillas": [
       "ciencia de datos f"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "pos_promedio": 12.0,
+     "pos_mejor": 12,
+     "veces_top3": 0,
+     "veces_top10": 0,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "ciencia de datos la carrera del futuro",
+     "semillas": [
+      "ciencia de datos l"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "pos_promedio": 12.0,
+     "pos_mejor": 12,
+     "veces_top3": 0,
+     "veces_top10": 0,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "ciencia de datos que salida laboral tiene",
+     "semillas": [
+      "ciencia de datos q"
      ],
      "grupos": [
       "alfabeto"
@@ -5479,26 +5420,6 @@
      "intencion": "salida"
     },
     {
-     "texto": "ciencia de datos la carrera del futuro",
-     "semillas": [
-      "ciencia de datos l"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 552,
-     "apariciones": 1,
-     "pos_promedio": 13.0,
-     "pos_mejor": 13,
-     "veces_top3": 0,
-     "veces_top10": 0,
-     "instituciones": [],
-     "intencion": "salida"
-    },
-    {
      "texto": "ciencia de datos recien egresado",
      "semillas": [
       "ciencia de datos r"
@@ -5513,46 +5434,6 @@
      "apariciones": 1,
      "pos_promedio": 13.0,
      "pos_mejor": 13,
-     "veces_top3": 0,
-     "veces_top10": 0,
-     "instituciones": [],
-     "intencion": "salida"
-    },
-    {
-     "texto": "ciencia de datos e inteligencia artificial sueldo",
-     "semillas": [
-      "ciencia de datos e"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 551,
-     "apariciones": 1,
-     "pos_promedio": 14.0,
-     "pos_mejor": 14,
-     "veces_top3": 0,
-     "veces_top10": 0,
-     "instituciones": [],
-     "intencion": "salida"
-    },
-    {
-     "texto": "ciencia de datos que salida laboral tiene",
-     "semillas": [
-      "ciencia de datos q"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 551,
-     "apariciones": 1,
-     "pos_promedio": 14.0,
-     "pos_mejor": 14,
      "veces_top3": 0,
      "veces_top10": 0,
      "instituciones": [],
@@ -5685,10 +5566,10 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 600,
+     "relevancia_max": 601,
      "apariciones": 1,
-     "pos_promedio": 3.0,
-     "pos_mejor": 3,
+     "pos_promedio": 2.0,
+     "pos_mejor": 2,
      "veces_top3": 1,
      "veces_top10": 1,
      "instituciones": [],
@@ -5835,6 +5716,26 @@
      "intencion": "modalidad"
     },
     {
+     "texto": "ciencia de datos licenciatura online",
+     "semillas": [
+      "ciencia de datos l"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "pos_promedio": 10.0,
+     "pos_mejor": 10,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "modalidad"
+    },
+    {
      "texto": "ciencia de datos online carrera",
      "semillas": [
       "ciencia de datos o"
@@ -5891,26 +5792,6 @@
      "pos_mejor": 10,
      "veces_top3": 0,
      "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "modalidad"
-    },
-    {
-     "texto": "ciencia de datos licenciatura online",
-     "semillas": [
-      "ciencia de datos l"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 554,
-     "apariciones": 1,
-     "pos_promedio": 11.0,
-     "pos_mejor": 11,
-     "veces_top3": 0,
-     "veces_top10": 0,
      "instituciones": [],
      "intencion": "modalidad"
     },
@@ -6062,9 +5943,9 @@
    "color": "#a78bfa",
    "quien": "estudiante",
    "que_es": "Qué se estudia y qué se pide: materias, duración, requisitos, inscripción.",
-   "total": 34,
-   "pct": 6.7,
-   "apariciones_total": 35,
+   "total": 32,
+   "pct": 6.3,
+   "apariciones_total": 34,
    "veces_top3_total": 9,
    "sugerencias": [
     {
@@ -6082,10 +5963,31 @@
      ],
      "relevancia_max": 601,
      "apariciones": 2,
-     "pos_promedio": 3.0,
+     "pos_promedio": 7.5,
      "pos_mejor": 1,
      "veces_top3": 1,
-     "veces_top10": 2,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "plan"
+    },
+    {
+     "texto": "ciencia de datos de que trata la carrera",
+     "semillas": [
+      "ciencia de datos d",
+      "ciencia de datos q"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 2,
+     "pos_promedio": 14.5,
+     "pos_mejor": 14,
+     "veces_top3": 0,
+     "veces_top10": 0,
      "instituciones": [],
      "intencion": "plan"
     },
@@ -6124,26 +6026,6 @@
      "apariciones": 1,
      "pos_promedio": 1.0,
      "pos_mejor": 1,
-     "veces_top3": 1,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "plan"
-    },
-    {
-     "texto": "ciencia de datos de que trata",
-     "semillas": [
-      "ciencia de datos d"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 1252,
-     "apariciones": 1,
-     "pos_promedio": 2.0,
-     "pos_mejor": 2,
      "veces_top3": 1,
      "veces_top10": 1,
      "instituciones": [],
@@ -6213,6 +6095,26 @@
      "texto": "ciencia de datos plan de estudios",
      "semillas": [
       "ciencia de datos p"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "pos_promedio": 3.0,
+     "pos_mejor": 3,
+     "veces_top3": 1,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "plan"
+    },
+    {
+     "texto": "ciencia de datos que estudia",
+     "semillas": [
+      "ciencia de datos q"
      ],
      "grupos": [
       "alfabeto"
@@ -6350,9 +6252,9 @@
      "intencion": "plan"
     },
     {
-     "texto": "ciencia de datos cuanto dura la carrera",
+     "texto": "ciencia de datos que abarca",
      "semillas": [
-      "ciencia de datos c"
+      "ciencia de datos q"
      ],
      "grupos": [
       "alfabeto"
@@ -6361,26 +6263,6 @@
       "google"
      ],
      "relevancia_max": 559,
-     "apariciones": 1,
-     "pos_promedio": 6.0,
-     "pos_mejor": 6,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "plan"
-    },
-    {
-     "texto": "ciencia de datos de que trata la carrera",
-     "semillas": [
-      "ciencia de datos d"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 750,
      "apariciones": 1,
      "pos_promedio": 6.0,
      "pos_mejor": 6,
@@ -6410,9 +6292,9 @@
      "intencion": "plan"
     },
     {
-     "texto": "ciencia de datos que estudia",
+     "texto": "ciencia de datos de que trata",
      "semillas": [
-      "ciencia de datos q"
+      "ciencia de datos d"
      ],
      "grupos": [
       "alfabeto"
@@ -6430,7 +6312,7 @@
      "intencion": "plan"
     },
     {
-     "texto": "ciencia de datos que abarca",
+     "texto": "ciencia de datos que se necesita",
      "semillas": [
       "ciencia de datos q"
      ],
@@ -6440,10 +6322,10 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 557,
+     "relevancia_max": 556,
      "apariciones": 1,
-     "pos_promedio": 8.0,
-     "pos_mejor": 8,
+     "pos_promedio": 9.0,
+     "pos_mejor": 9,
      "veces_top3": 0,
      "veces_top10": 1,
      "instituciones": [],
@@ -6470,6 +6352,26 @@
      "intencion": "plan"
     },
     {
+     "texto": "ciencia de datos que se ve",
+     "semillas": [
+      "ciencia de datos q"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "pos_promedio": 10.0,
+     "pos_mejor": 10,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "plan"
+    },
+    {
      "texto": "ciencia de datos ramas",
      "semillas": [
       "ciencia de datos r"
@@ -6490,52 +6392,12 @@
      "intencion": "plan"
     },
     {
-     "texto": "ciencia de datos de que se trata",
-     "semillas": [
-      "ciencia de datos d"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 554,
-     "apariciones": 1,
-     "pos_promedio": 11.0,
-     "pos_mejor": 11,
-     "veces_top3": 0,
-     "veces_top10": 0,
-     "instituciones": [],
-     "intencion": "plan"
-    },
-    {
      "texto": "ciencia de datos deusto plan de estudios",
      "semillas": [
       "ciencia de datos plan de estudios"
      ],
      "grupos": [
       "estudiante"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 554,
-     "apariciones": 1,
-     "pos_promedio": 11.0,
-     "pos_mejor": 11,
-     "veces_top3": 0,
-     "veces_top10": 0,
-     "instituciones": [],
-     "intencion": "plan"
-    },
-    {
-     "texto": "ciencia de datos que se necesita",
-     "semillas": [
-      "ciencia de datos q"
-     ],
-     "grupos": [
-      "alfabeto"
      ],
      "fuentes": [
       "google"
@@ -6590,26 +6452,6 @@
      "intencion": "plan"
     },
     {
-     "texto": "ciencia de datos que se ve",
-     "semillas": [
-      "ciencia de datos q"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 553,
-     "apariciones": 1,
-     "pos_promedio": 12.0,
-     "pos_mejor": 12,
-     "veces_top3": 0,
-     "veces_top10": 0,
-     "instituciones": [],
-     "intencion": "plan"
-    },
-    {
      "texto": "ciencia de datos temario",
      "semillas": [
       "ciencia de datos t"
@@ -6644,6 +6486,26 @@
      "apariciones": 1,
      "pos_promedio": 13.0,
      "pos_mejor": 13,
+     "veces_top3": 0,
+     "veces_top10": 0,
+     "instituciones": [],
+     "intencion": "plan"
+    },
+    {
+     "texto": "ciencia de datos de que se trata",
+     "semillas": [
+      "ciencia de datos q"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "pos_promedio": 14.0,
+     "pos_mejor": 14,
      "veces_top3": 0,
      "veces_top10": 0,
      "instituciones": [],
@@ -6710,26 +6572,6 @@
      "intencion": "plan"
     },
     {
-     "texto": "ciencia de datos que trata",
-     "semillas": [
-      "ciencia de datos q"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 550,
-     "apariciones": 1,
-     "pos_promedio": 15.0,
-     "pos_mejor": 15,
-     "veces_top3": 0,
-     "veces_top10": 0,
-     "instituciones": [],
-     "intencion": "plan"
-    },
-    {
      "texto": "ciencia de datos roles",
      "semillas": [
       "ciencia de datos r"
@@ -6760,7 +6602,7 @@
    "total": 18,
    "pct": 3.6,
    "apariciones_total": 18,
-   "veces_top3_total": 5,
+   "veces_top3_total": 4,
    "sugerencias": [
     {
      "texto": "mejor universidad en ciencia de datos",
@@ -6803,26 +6645,6 @@
      "intencion": "comparar"
     },
     {
-     "texto": "ciencia de datos o analisis de datos",
-     "semillas": [
-      "ciencia de datos o"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 601,
-     "apariciones": 1,
-     "pos_promedio": 2.0,
-     "pos_mejor": 2,
-     "veces_top3": 1,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "comparar"
-    },
-    {
      "texto": "ciencia de datos vs analisis de datos",
      "semillas": [
       "ciencia de datos v"
@@ -6843,9 +6665,9 @@
      "intencion": "comparar"
     },
     {
-     "texto": "ciencia de datos y analisis de datos es lo mismo",
+     "texto": "ciencia de datos o analisis de datos",
      "semillas": [
-      "ciencia de datos y"
+      "ciencia de datos o"
      ],
      "grupos": [
       "alfabeto"
@@ -6853,10 +6675,10 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 601,
+     "relevancia_max": 600,
      "apariciones": 1,
-     "pos_promedio": 2.0,
-     "pos_mejor": 2,
+     "pos_promedio": 3.0,
+     "pos_mejor": 3,
      "veces_top3": 1,
      "veces_top10": 1,
      "instituciones": [],
@@ -6883,6 +6705,26 @@
      "intencion": "comparar"
     },
     {
+     "texto": "ciencia de datos es lo mismo que analisis de datos",
+     "semillas": [
+      "ciencia de datos e"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 560,
+     "apariciones": 1,
+     "pos_promedio": 5.0,
+     "pos_mejor": 5,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "comparar"
+    },
+    {
      "texto": "ciencia de datos o ciberseguridad",
      "semillas": [
       "ciencia de datos o"
@@ -6903,9 +6745,9 @@
      "intencion": "comparar"
     },
     {
-     "texto": "ciencia de datos y analista de datos es lo mismo",
+     "texto": "ciencia de datos vs ciencias de la computacion",
      "semillas": [
-      "ciencia de datos y"
+      "ciencia de datos v"
      ],
      "grupos": [
       "alfabeto"
@@ -6913,10 +6755,10 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 560,
+     "relevancia_max": 600,
      "apariciones": 1,
-     "pos_promedio": 5.0,
-     "pos_mejor": 5,
+     "pos_promedio": 6.0,
+     "pos_mejor": 6,
      "veces_top3": 0,
      "veces_top10": 1,
      "instituciones": [],
@@ -6933,30 +6775,10 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 559,
+     "relevancia_max": 558,
      "apariciones": 1,
-     "pos_promedio": 6.0,
-     "pos_mejor": 6,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "comparar"
-    },
-    {
-     "texto": "ciencia de datos vs ciencias de la computacion",
-     "semillas": [
-      "ciencia de datos v"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 600,
-     "apariciones": 1,
-     "pos_promedio": 6.0,
-     "pos_mejor": 6,
+     "pos_promedio": 7.0,
+     "pos_mejor": 7,
      "veces_top3": 0,
      "veces_top10": 1,
      "instituciones": [],
@@ -7003,6 +6825,26 @@
      "intencion": "comparar"
     },
     {
+     "texto": "ciencia de datos y analisis de datos es lo mismo",
+     "semillas": [
+      "ciencia de datos y"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "pos_promedio": 9.0,
+     "pos_mejor": 9,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "comparar"
+    },
+    {
      "texto": "ciencia de datos vs. minería de datos",
      "semillas": [
       "ciencia de datos v"
@@ -7019,6 +6861,26 @@
      "pos_mejor": 10,
      "veces_top3": 0,
      "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "comparar"
+    },
+    {
+     "texto": "ciencia de datos que tan dificil es",
+     "semillas": [
+      "ciencia de datos q"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "pos_promedio": 11.0,
+     "pos_mejor": 11,
+     "veces_top3": 0,
+     "veces_top10": 0,
      "instituciones": [],
      "intencion": "comparar"
     },
@@ -7057,26 +6919,6 @@
      "apariciones": 1,
      "pos_promedio": 12.0,
      "pos_mejor": 12,
-     "veces_top3": 0,
-     "veces_top10": 0,
-     "instituciones": [],
-     "intencion": "comparar"
-    },
-    {
-     "texto": "ciencia de datos que tan dificil es",
-     "semillas": [
-      "ciencia de datos q"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 552,
-     "apariciones": 1,
-     "pos_promedio": 13.0,
-     "pos_mejor": 13,
      "veces_top3": 0,
      "veces_top10": 0,
      "instituciones": [],
@@ -7130,9 +6972,9 @@
    "color": "#35c9d6",
    "quien": "ambos",
    "que_es": "Lugar o institución de Uruguay: universidades y ciudades.",
-   "total": 21,
-   "pct": 4.2,
-   "apariciones_total": 67,
+   "total": 24,
+   "pct": 4.7,
+   "apariciones_total": 70,
    "veces_top3_total": 16,
    "sugerencias": [
     {
@@ -7452,7 +7294,7 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 1251,
+     "relevancia_max": 900,
      "apariciones": 1,
      "pos_promedio": 3.0,
      "pos_mejor": 3,
@@ -7544,9 +7386,9 @@
      "intencion": "donde"
     },
     {
-     "texto": "ciencia de datos donde se estudia",
+     "texto": "ciencia de datos e inteligencia artificial donde estudiar",
      "semillas": [
-      "ciencia de datos d"
+      "ciencia de datos e"
      ],
      "grupos": [
       "alfabeto"
@@ -7554,10 +7396,52 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 601,
+     "relevancia_max": 558,
      "apariciones": 1,
-     "pos_promedio": 9.0,
-     "pos_mejor": 9,
+     "pos_promedio": 7.0,
+     "pos_mejor": 7,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "donde"
+    },
+    {
+     "texto": "ciencia de datos utec",
+     "semillas": [
+      "ciencia de datos"
+     ],
+     "grupos": [
+      "youtube"
+     ],
+     "fuentes": [
+      "youtube"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 1,
+     "pos_promedio": 7.0,
+     "pos_mejor": 7,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [
+      "UTEC"
+     ],
+     "intencion": "donde"
+    },
+    {
+     "texto": "ciencia de datos e inteligencia artificial universidad",
+     "semillas": [
+      "ciencia de datos e"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "pos_promedio": 8.0,
+     "pos_mejor": 8,
      "veces_top3": 0,
      "veces_top10": 1,
      "instituciones": [],
@@ -7644,6 +7528,26 @@
      "veces_top10": 0,
      "instituciones": [],
      "intencion": "donde"
+    },
+    {
+     "texto": "ciencia de datos donde se estudia",
+     "semillas": [
+      "ciencia de datos d"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "pos_promedio": 15.0,
+     "pos_mejor": 15,
+     "veces_top3": 0,
+     "veces_top10": 0,
+     "instituciones": [],
+     "intencion": "donde"
     }
    ]
   },
@@ -7653,20 +7557,19 @@
    "color": "#7c9cff",
    "quien": "estudiante",
    "que_es": "Qué nivel buscan: carrera, licenciatura, curso, posgrado.",
-   "total": 23,
-   "pct": 4.5,
-   "apariciones_total": 27,
-   "veces_top3_total": 11,
+   "total": 24,
+   "pct": 4.7,
+   "apariciones_total": 28,
+   "veces_top3_total": 12,
    "sugerencias": [
     {
      "texto": "ciencia de datos e inteligencia artificial carrera",
      "semillas": [
-      "ciencia de datos",
       "ciencia de datos e",
+      "ciencia de datos",
       "ciencia de datos carrera"
      ],
      "grupos": [
-      "base",
       "alfabeto",
       "youtube"
      ],
@@ -7676,10 +7579,10 @@
      ],
      "relevancia_max": 601,
      "apariciones": 3,
-     "pos_promedio": 4.7,
+     "pos_promedio": 5.7,
      "pos_mejor": 2,
      "veces_top3": 2,
-     "veces_top10": 3,
+     "veces_top10": 2,
      "instituciones": [],
      "intencion": "formato"
     },
@@ -7699,9 +7602,9 @@
      ],
      "relevancia_max": 700,
      "apariciones": 2,
-     "pos_promedio": 2.5,
+     "pos_promedio": 2.0,
      "pos_mejor": 1,
-     "veces_top3": 1,
+     "veces_top3": 2,
      "veces_top10": 2,
      "instituciones": [],
      "intencion": "formato"
@@ -7871,6 +7774,26 @@
      "intencion": "formato"
     },
     {
+     "texto": "ciencia de datos diplomado",
+     "semillas": [
+      "ciencia de datos d"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 700,
+     "apariciones": 1,
+     "pos_promedio": 4.0,
+     "pos_mejor": 4,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
      "texto": "ciencia de datos que carrera es",
      "semillas": [
       "ciencia de datos q"
@@ -7973,26 +7896,6 @@
      "intencion": "formato"
     },
     {
-     "texto": "ciencia de datos diplomado",
-     "semillas": [
-      "ciencia de datos d"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 701,
-     "apariciones": 1,
-     "pos_promedio": 7.0,
-     "pos_mejor": 7,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "formato"
-    },
-    {
      "texto": "que carrera es ciencia de datos e inteligencia artificial",
      "semillas": [
       "qué es ciencia de datos"
@@ -8027,26 +7930,6 @@
      "apariciones": 1,
      "pos_promedio": 8.0,
      "pos_mejor": 8,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "formato"
-    },
-    {
-     "texto": "ciencia de datos posgrado",
-     "semillas": [
-      "ciencia de datos p"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 556,
-     "apariciones": 1,
-     "pos_promedio": 9.0,
-     "pos_mejor": 9,
      "veces_top3": 0,
      "veces_top10": 1,
      "instituciones": [],
@@ -8105,10 +7988,50 @@
       "google",
       "youtube"
      ],
-     "relevancia_max": 601,
+     "relevancia_max": 950,
      "apariciones": 1,
      "pos_promedio": 11.0,
      "pos_mejor": 11,
+     "veces_top3": 0,
+     "veces_top10": 0,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "ciencia de datos posgrado",
+     "semillas": [
+      "ciencia de datos p"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "pos_promedio": 12.0,
+     "pos_mejor": 12,
+     "veces_top3": 0,
+     "veces_top10": 0,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "ciencia de datos inteligencia artificial carrera",
+     "semillas": [
+      "ciencia de datos i"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "pos_promedio": 14.0,
+     "pos_mejor": 14,
      "veces_top3": 0,
      "veces_top10": 0,
      "instituciones": [],
@@ -8142,10 +8065,10 @@
    "color": "#e879f9",
    "quien": "estudiante",
    "que_es": "Con qué otros temas se busca junto: inteligencia artificial, negocios, salud. Sirve para decidir el nombre y el foco de una carrera.",
-   "total": 35,
-   "pct": 6.9,
+   "total": 36,
+   "pct": 7.1,
    "apariciones_total": 42,
-   "veces_top3_total": 7,
+   "veces_top3_total": 8,
    "sugerencias": [
     {
      "texto": "ciencia de datos para negocios",
@@ -8255,33 +8178,10 @@
       "google",
       "youtube"
      ],
-     "relevancia_max": 560,
-     "apariciones": 2,
-     "pos_promedio": 7.0,
-     "pos_mejor": 5,
-     "veces_top3": 0,
-     "veces_top10": 2,
-     "instituciones": [],
-     "intencion": "temas"
-    },
-    {
-     "texto": "ciencia de datos y machine learning",
-     "semillas": [
-      "ciencia de datos y",
-      "ciencia de datos"
-     ],
-     "grupos": [
-      "alfabeto",
-      "youtube"
-     ],
-     "fuentes": [
-      "google",
-      "youtube"
-     ],
-     "relevancia_max": 558,
+     "relevancia_max": 557,
      "apariciones": 2,
      "pos_promedio": 8.5,
-     "pos_mejor": 7,
+     "pos_mejor": 8,
      "veces_top3": 0,
      "veces_top10": 2,
      "instituciones": [],
@@ -8319,6 +8219,26 @@
       "google"
      ],
      "relevancia_max": 1251,
+     "apariciones": 1,
+     "pos_promedio": 2.0,
+     "pos_mejor": 2,
+     "veces_top3": 1,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "ciencia de datos y machine learning",
+     "semillas": [
+      "ciencia de datos y"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
      "apariciones": 1,
      "pos_promedio": 2.0,
      "pos_mejor": 2,
@@ -8388,26 +8308,6 @@
      "intencion": "temas"
     },
     {
-     "texto": "ciencia de datos de inteligencia artificial",
-     "semillas": [
-      "ciencia de datos d"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 950,
-     "apariciones": 1,
-     "pos_promedio": 5.0,
-     "pos_mejor": 5,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "temas"
-    },
-    {
      "texto": "ciencia de datos finanzas",
      "semillas": [
       "ciencia de datos f"
@@ -8448,9 +8348,29 @@
      "intencion": "temas"
     },
     {
-     "texto": "ciencia de datos para economía y negocios",
+     "texto": "ciencia de datos inteligencia artificial",
      "semillas": [
-      "ciencia de datos p"
+      "ciencia de datos i"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 604,
+     "apariciones": 1,
+     "pos_promedio": 5.0,
+     "pos_mejor": 5,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "ciencia de datos y analitica",
+     "semillas": [
+      "ciencia de datos y"
      ],
      "grupos": [
       "alfabeto"
@@ -8468,7 +8388,7 @@
      "intencion": "temas"
     },
     {
-     "texto": "ciencia de datos y analisis de datos",
+     "texto": "ciencia de datos y machine learning con python",
      "semillas": [
       "ciencia de datos y"
      ],
@@ -8488,9 +8408,9 @@
      "intencion": "temas"
     },
     {
-     "texto": "ciencia de datos inteligencia artificial",
+     "texto": "ciencia de datos aplicada a las ciencias sociales",
      "semillas": [
-      "ciencia de datos i"
+      "ciencia de datos a"
      ],
      "grupos": [
       "alfabeto"
@@ -8498,7 +8418,47 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 600,
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "pos_promedio": 7.0,
+     "pos_mejor": 7,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "ciencia de datos para economía y negocios",
+     "semillas": [
+      "ciencia de datos p"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 1,
+     "pos_promedio": 7.0,
+     "pos_mejor": 7,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "ciencia de datos de inteligencia artificial",
+     "semillas": [
+      "ciencia de datos d"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
      "apariciones": 1,
      "pos_promedio": 8.0,
      "pos_mejor": 8,
@@ -8528,7 +8488,7 @@
      "intencion": "temas"
     },
     {
-     "texto": "ciencia de datos y analitica",
+     "texto": "ciencia de datos y ciberseguridad",
      "semillas": [
       "ciencia de datos y"
      ],
@@ -8588,26 +8548,6 @@
      "intencion": "temas"
     },
     {
-     "texto": "ciencia de datos aplicada a las ciencias sociales",
-     "semillas": [
-      "ciencia de datos a"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 601,
-     "apariciones": 1,
-     "pos_promedio": 10.0,
-     "pos_mejor": 10,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "temas"
-    },
-    {
      "texto": "ciencia de datos ia",
      "semillas": [
       "ciencia de datos i"
@@ -8628,7 +8568,7 @@
      "intencion": "temas"
     },
     {
-     "texto": "ciencia de datos y ciberseguridad",
+     "texto": "ciencia de datos y analisis de datos",
      "semillas": [
       "ciencia de datos y"
      ],
@@ -8642,26 +8582,6 @@
      "apariciones": 1,
      "pos_promedio": 11.0,
      "pos_mejor": 11,
-     "veces_top3": 0,
-     "veces_top10": 0,
-     "instituciones": [],
-     "intencion": "temas"
-    },
-    {
-     "texto": "ciencia de datos aplicada al marketing",
-     "semillas": [
-      "ciencia de datos a"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 553,
-     "apariciones": 1,
-     "pos_promedio": 12.0,
-     "pos_mejor": 12,
      "veces_top3": 0,
      "veces_top10": 0,
      "instituciones": [],
@@ -8688,9 +8608,9 @@
      "intencion": "temas"
     },
     {
-     "texto": "ciencia de datos para ciencias sociales",
+     "texto": "ciencia de datos y machine learning con python pdf",
      "semillas": [
-      "ciencia de datos p"
+      "ciencia de datos y"
      ],
      "grupos": [
       "alfabeto"
@@ -8708,9 +8628,9 @@
      "intencion": "temas"
     },
     {
-     "texto": "ciencia de datos y machine learning con python",
+     "texto": "ciencia de datos aplicada al mantenimiento predictivo",
      "semillas": [
-      "ciencia de datos y"
+      "ciencia de datos a"
      ],
      "grupos": [
       "alfabeto"
@@ -8718,10 +8638,10 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 553,
+     "relevancia_max": 552,
      "apariciones": 1,
-     "pos_promedio": 12.0,
-     "pos_mejor": 12,
+     "pos_promedio": 13.0,
+     "pos_mejor": 13,
      "veces_top3": 0,
      "veces_top10": 0,
      "instituciones": [],
@@ -8748,9 +8668,29 @@
      "intencion": "temas"
     },
     {
-     "texto": "ciencia de datos y machine learning con python pdf",
+     "texto": "ciencia de datos y matematicas",
      "semillas": [
       "ciencia de datos y"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "pos_promedio": 13.0,
+     "pos_mejor": 13,
+     "veces_top3": 0,
+     "veces_top10": 0,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "ciencia de datos para ciencias sociales",
+     "semillas": [
+      "ciencia de datos p"
      ],
      "grupos": [
       "alfabeto"
@@ -8848,7 +8788,7 @@
      "intencion": "temas"
     },
     {
-     "texto": "ciencia de datos y matematicas",
+     "texto": "ciencia de datos y ia",
      "semillas": [
       "ciencia de datos y"
      ],
@@ -8875,9 +8815,9 @@
    "color": "#c9d451",
    "quien": "estudiante",
    "que_es": "Contenido para aprender solo: qué es, libros, herramientas, videos.",
-   "total": 53,
-   "pct": 10.5,
-   "apariciones_total": 56,
+   "total": 52,
+   "pct": 10.3,
+   "apariciones_total": 55,
    "veces_top3_total": 14,
    "sugerencias": [
     {
@@ -8894,11 +8834,11 @@
       "google",
       "youtube"
      ],
-     "relevancia_max": 601,
+     "relevancia_max": 600,
      "apariciones": 2,
-     "pos_promedio": 4.0,
-     "pos_mejor": 3,
-     "veces_top3": 1,
+     "pos_promedio": 6.5,
+     "pos_mejor": 4,
+     "veces_top3": 0,
      "veces_top10": 2,
      "instituciones": [],
      "intencion": "aprender"
@@ -8956,7 +8896,7 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 1253,
+     "relevancia_max": 1251,
      "apariciones": 1,
      "pos_promedio": 1.0,
      "pos_mejor": 1,
@@ -9020,6 +8960,26 @@
      "apariciones": 1,
      "pos_promedio": 1.0,
      "pos_mejor": 1,
+     "veces_top3": 1,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "ciencia de datos desde cero pdf",
+     "semillas": [
+      "ciencia de datos d"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1250,
+     "apariciones": 1,
+     "pos_promedio": 2.0,
+     "pos_mejor": 2,
      "veces_top3": 1,
      "veces_top10": 1,
      "instituciones": [],
@@ -9206,26 +9166,6 @@
      "intencion": "aprender"
     },
     {
-     "texto": "ciencia de datos desde cero pdf",
-     "semillas": [
-      "ciencia de datos d"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 1250,
-     "apariciones": 1,
-     "pos_promedio": 4.0,
-     "pos_mejor": 4,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "aprender"
-    },
-    {
      "texto": "ciencia de datos herramientas",
      "semillas": [
       "ciencia de datos h"
@@ -9266,6 +9206,46 @@
      "intencion": "aprender"
     },
     {
+     "texto": "ciencia de datos con python pdf",
+     "semillas": [
+      "ciencia de datos c"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 560,
+     "apariciones": 1,
+     "pos_promedio": 5.0,
+     "pos_mejor": 5,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "ciencia de datos desde cero principios básicos con python",
+     "semillas": [
+      "ciencia de datos d"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "pos_promedio": 5.0,
+     "pos_mejor": 5,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
      "texto": "ciencia de datos roadmap",
      "semillas": [
       "ciencia de datos r"
@@ -9280,6 +9260,46 @@
      "apariciones": 1,
      "pos_promedio": 5.0,
      "pos_mejor": 5,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "ciencia de datos definicion",
+     "semillas": [
+      "ciencia de datos d"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "pos_promedio": 6.0,
+     "pos_mejor": 6,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "ciencia de datos podcast",
+     "semillas": [
+      "ciencia de datos"
+     ],
+     "grupos": [
+      "youtube"
+     ],
+     "fuentes": [
+      "youtube"
+     ],
+     "relevancia_max": 559,
+     "apariciones": 1,
+     "pos_promedio": 6.0,
+     "pos_mejor": 6,
      "veces_top3": 0,
      "veces_top10": 1,
      "instituciones": [],
@@ -9326,26 +9346,6 @@
      "intencion": "aprender"
     },
     {
-     "texto": "ciencia de datos con python pdf",
-     "semillas": [
-      "ciencia de datos c"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 558,
-     "apariciones": 1,
-     "pos_promedio": 7.0,
-     "pos_mejor": 7,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "aprender"
-    },
-    {
      "texto": "ciencia de datos con weka",
      "semillas": [
       "ciencia de datos w"
@@ -9386,29 +9386,9 @@
      "intencion": "aprender"
     },
     {
-     "texto": "ciencia de datos podcast",
+     "texto": "ciencia de datos coursera",
      "semillas": [
-      "ciencia de datos"
-     ],
-     "grupos": [
-      "youtube"
-     ],
-     "fuentes": [
-      "youtube"
-     ],
-     "relevancia_max": 558,
-     "apariciones": 1,
-     "pos_promedio": 7.0,
-     "pos_mejor": 7,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "aprender"
-    },
-    {
-     "texto": "ciencia de datos en ingles",
-     "semillas": [
-      "ciencia de datos e"
+      "ciencia de datos c"
      ],
      "grupos": [
       "alfabeto"
@@ -9446,15 +9426,15 @@
      "intencion": "aprender"
     },
     {
-     "texto": "ciencia de datos proyecto",
+     "texto": "ciencia de datos que significa",
      "semillas": [
-      "ciencia de datos"
+      "ciencia de datos q"
      ],
      "grupos": [
-      "youtube"
+      "alfabeto"
      ],
      "fuentes": [
-      "youtube"
+      "google"
      ],
      "relevancia_max": 557,
      "apariciones": 1,
@@ -9480,6 +9460,26 @@
      "apariciones": 1,
      "pos_promedio": 8.0,
      "pos_mejor": 8,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "ciencia de datos con r",
+     "semillas": [
+      "ciencia de datos c"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "pos_promedio": 9.0,
+     "pos_mejor": 9,
      "veces_top3": 0,
      "veces_top10": 1,
      "instituciones": [],
@@ -9516,7 +9516,7 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 556,
+     "relevancia_max": 600,
      "apariciones": 1,
      "pos_promedio": 9.0,
      "pos_mejor": 9,
@@ -9526,7 +9526,7 @@
      "intencion": "aprender"
     },
     {
-     "texto": "ciencia de datos definicion",
+     "texto": "ciencia de datos desde cero principios básicos con python pdf",
      "semillas": [
       "ciencia de datos d"
      ],
@@ -9536,7 +9536,7 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 600,
+     "relevancia_max": 555,
      "apariciones": 1,
      "pos_promedio": 10.0,
      "pos_mejor": 10,
@@ -9586,35 +9586,15 @@
      "intencion": "aprender"
     },
     {
-     "texto": "ciencia de datos python",
+     "texto": "ciencia de datos proyecto",
      "semillas": [
-      "ciencia de datos p"
+      "ciencia de datos"
      ],
      "grupos": [
-      "alfabeto"
+      "youtube"
      ],
      "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 555,
-     "apariciones": 1,
-     "pos_promedio": 10.0,
-     "pos_mejor": 10,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "aprender"
-    },
-    {
-     "texto": "ciencia de datos que significa",
-     "semillas": [
-      "ciencia de datos q"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
+      "youtube"
      ],
      "relevancia_max": 555,
      "apariciones": 1,
@@ -9666,9 +9646,9 @@
      "intencion": "aprender"
     },
     {
-     "texto": "ciencia de datos coursera",
+     "texto": "ciencia de datos desde cero libro",
      "semillas": [
-      "ciencia de datos c"
+      "ciencia de datos d"
      ],
      "grupos": [
       "alfabeto"
@@ -9696,10 +9676,10 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 553,
+     "relevancia_max": 554,
      "apariciones": 1,
-     "pos_promedio": 12.0,
-     "pos_mejor": 12,
+     "pos_promedio": 11.0,
+     "pos_mejor": 11,
      "veces_top3": 0,
      "veces_top10": 0,
      "instituciones": [],
@@ -9726,9 +9706,9 @@
      "intencion": "aprender"
     },
     {
-     "texto": "ciencia de datos desde cero principios básicos con python",
+     "texto": "ciencia de datos luis joyanes pdf",
      "semillas": [
-      "ciencia de datos d"
+      "ciencia de datos l"
      ],
      "grupos": [
       "alfabeto"
@@ -9746,29 +9726,9 @@
      "intencion": "aprender"
     },
     {
-     "texto": "ciencia de datos con python desde cero",
+     "texto": "ciencia de datos python",
      "semillas": [
-      "ciencia de datos"
-     ],
-     "grupos": [
-      "youtube"
-     ],
-     "fuentes": [
-      "youtube"
-     ],
-     "relevancia_max": 551,
-     "apariciones": 1,
-     "pos_promedio": 14.0,
-     "pos_mejor": 14,
-     "veces_top3": 0,
-     "veces_top10": 0,
-     "instituciones": [],
-     "intencion": "aprender"
-    },
-    {
-     "texto": "ciencia de datos con r",
-     "semillas": [
-      "ciencia de datos c"
+      "ciencia de datos p"
      ],
      "grupos": [
       "alfabeto"
@@ -9776,39 +9736,19 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 551,
+     "relevancia_max": 552,
      "apariciones": 1,
-     "pos_promedio": 14.0,
-     "pos_mejor": 14,
+     "pos_promedio": 13.0,
+     "pos_mejor": 13,
      "veces_top3": 0,
      "veces_top10": 0,
      "instituciones": [],
      "intencion": "aprender"
     },
     {
-     "texto": "ciencia de datos desde cero principios básicos con python pdf",
+     "texto": "ciencia de datos en ingles",
      "semillas": [
-      "ciencia de datos d"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 551,
-     "apariciones": 1,
-     "pos_promedio": 14.0,
-     "pos_mejor": 14,
-     "veces_top3": 0,
-     "veces_top10": 0,
-     "instituciones": [],
-     "intencion": "aprender"
-    },
-    {
-     "texto": "ciencia de datos luis joyanes pdf",
-     "semillas": [
-      "ciencia de datos l"
+      "ciencia de datos e"
      ],
      "grupos": [
       "alfabeto"
@@ -9886,26 +9826,6 @@
      "intencion": "aprender"
     },
     {
-     "texto": "ciencia de datos desde cero. segunda edición principios básicos con python",
-     "semillas": [
-      "ciencia de datos d"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 550,
-     "apariciones": 1,
-     "pos_promedio": 15.0,
-     "pos_mejor": 15,
-     "veces_top3": 0,
-     "veces_top10": 0,
-     "instituciones": [],
-     "intencion": "aprender"
-    },
-    {
      "texto": "ciencia de datos meme",
      "semillas": [
       "ciencia de datos m"
@@ -9953,11 +9873,34 @@
    "color": "#9aa4b8",
    "quien": "ninguno",
    "que_es": "No coincide con ninguna regla. Si este grupo crece, falta una regla.",
-   "total": 28,
-   "pct": 5.5,
-   "apariciones_total": 28,
-   "veces_top3_total": 4,
+   "total": 32,
+   "pct": 6.3,
+   "apariciones_total": 33,
+   "veces_top3_total": 3,
    "sugerencias": [
+    {
+     "texto": "ciencia de datos en organizaciones",
+     "semillas": [
+      "ciencia de datos o",
+      "ciencia de datos"
+     ],
+     "grupos": [
+      "alfabeto",
+      "youtube"
+     ],
+     "fuentes": [
+      "google",
+      "youtube"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 2,
+     "pos_promedio": 14.0,
+     "pos_mejor": 13,
+     "veces_top3": 0,
+     "veces_top10": 0,
+     "instituciones": [],
+     "intencion": "otros"
+    },
     {
      "texto": "ciencia de datos kelleher",
      "semillas": [
@@ -9990,26 +9933,6 @@
       "google"
      ],
      "relevancia_max": 1250,
-     "apariciones": 1,
-     "pos_promedio": 2.0,
-     "pos_mejor": 2,
-     "veces_top3": 1,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "otros"
-    },
-    {
-     "texto": "ciencia de datos que se estudia",
-     "semillas": [
-      "ciencia de datos q"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 601,
      "apariciones": 1,
      "pos_promedio": 2.0,
      "pos_mejor": 2,
@@ -10099,9 +10022,9 @@
      "intencion": "otros"
     },
     {
-     "texto": "ciencia de datos itu",
+     "texto": "ciencia de datos que se hace",
      "semillas": [
-      "ciencia de datos i"
+      "ciencia de datos q"
      ],
      "grupos": [
       "alfabeto"
@@ -10109,10 +10032,10 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 700,
+     "relevancia_max": 560,
      "apariciones": 1,
-     "pos_promedio": 6.0,
-     "pos_mejor": 6,
+     "pos_promedio": 5.0,
+     "pos_mejor": 5,
      "veces_top3": 0,
      "veces_top10": 1,
      "instituciones": [],
@@ -10139,26 +10062,6 @@
      "intencion": "otros"
     },
     {
-     "texto": "ciencia de datos que se hace",
-     "semillas": [
-      "ciencia de datos q"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 559,
-     "apariciones": 1,
-     "pos_promedio": 6.0,
-     "pos_mejor": 6,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "otros"
-    },
-    {
      "texto": "ciencia de datos gobierno de la ciudad",
      "semillas": [
       "ciencia de datos g"
@@ -10170,6 +10073,26 @@
       "google"
      ],
      "relevancia_max": 700,
+     "apariciones": 1,
+     "pos_promedio": 7.0,
+     "pos_mejor": 7,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "ciencia de datos itu",
+     "semillas": [
+      "ciencia de datos i"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 602,
      "apariciones": 1,
      "pos_promedio": 7.0,
      "pos_mejor": 7,
@@ -10229,10 +10152,10 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 558,
+     "relevancia_max": 557,
      "apariciones": 1,
-     "pos_promedio": 7.0,
-     "pos_mejor": 7,
+     "pos_promedio": 8.0,
+     "pos_mejor": 8,
      "veces_top3": 0,
      "veces_top10": 1,
      "instituciones": [],
@@ -10262,6 +10185,26 @@
      "texto": "ciencia de datos o'reilly",
      "semillas": [
       "ciencia de datos o"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "pos_promedio": 9.0,
+     "pos_mejor": 9,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "ciencia de datos para la toma de decisiones",
+     "semillas": [
+      "ciencia de datos p"
      ],
      "grupos": [
       "alfabeto"
@@ -10339,6 +10282,26 @@
      "intencion": "otros"
     },
     {
+     "texto": "ciencia de datos para gente sociable",
+     "semillas": [
+      "ciencia de datos p"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "pos_promedio": 11.0,
+     "pos_mejor": 11,
+     "veces_top3": 0,
+     "veces_top10": 0,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
      "texto": "ciencia de datos rodriguez",
      "semillas": [
       "ciencia de datos r"
@@ -10373,6 +10336,26 @@
      "apariciones": 1,
      "pos_promedio": 11.0,
      "pos_mejor": 11,
+     "veces_top3": 0,
+     "veces_top10": 0,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "ciencia de datos diplomatura",
+     "semillas": [
+      "ciencia de datos d"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "pos_promedio": 12.0,
+     "pos_mejor": 12,
      "veces_top3": 0,
      "veces_top10": 0,
      "instituciones": [],
@@ -10419,9 +10402,9 @@
      "intencion": "otros"
     },
     {
-     "texto": "ciencia de datos en organizaciones",
+     "texto": "ciencia de datos en que consiste",
      "semillas": [
-      "ciencia de datos o"
+      "ciencia de datos q"
      ],
      "grupos": [
       "alfabeto"
@@ -10499,6 +10482,26 @@
      "intencion": "otros"
     },
     {
+     "texto": "ciencia de datos luis joyanes",
+     "semillas": [
+      "ciencia de datos l"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "pos_promedio": 15.0,
+     "pos_mejor": 15,
+     "veces_top3": 0,
+     "veces_top10": 0,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
      "texto": "r para ciencia de datos - hadley wickham y garrett grolemund",
      "semillas": [
       "ciencia de datos w"
@@ -10526,15 +10529,15 @@
   {
    "buscador": "pendiente",
    "consulta": "ciencia de datos",
-   "estado": "rechazado",
-   "motivo": "el buscador no devolvió resultados",
+   "estado": "pendiente",
+   "motivo": "sin fuente automática: leer la página de un buscador con un script no es confiable (probado el 2026-11-16). Falta elegir una API oficial con clave gratuita (PLAN.md, fase F5).",
    "resultados": []
   },
   {
    "buscador": "pendiente",
    "consulta": "ciencia de datos carrera uruguay",
-   "estado": "rechazado",
-   "motivo": "el buscador no devolvió resultados",
+   "estado": "pendiente",
+   "motivo": "sin fuente automática: leer la página de un buscador con un script no es confiable (probado el 2026-11-16). Falta elegir una API oficial con clave gratuita (PLAN.md, fase F5).",
    "resultados": []
   }
  ],
@@ -10562,6 +10565,5 @@
   "bing": "https://www.bing.com/search?cc=UY&setlang=es&q=ciencia%20de%20datos",
   "duckduckgo": "https://duckduckgo.com/?kl=uy-es&q=ciencia%20de%20datos",
   "youtube": "https://www.youtube.com/results?search_query=ciencia%20de%20datos"
- },
- "reprocesado_utc": "2026-11-18T12:41:23Z"
+ }
 }

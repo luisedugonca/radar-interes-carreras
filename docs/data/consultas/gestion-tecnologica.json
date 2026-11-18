@@ -1,8 +1,8 @@
 {
  "tema": "gestion tecnologica",
  "slug": "gestion-tecnologica",
- "run_id": "20261116T222343Z_gestion-tecnologica",
- "generado_utc": "2026-11-16T22:23:43Z",
+ "run_id": "20261118T160537Z_gestion-tecnologica",
+ "generado_utc": "2026-11-18T16:05:37Z",
  "pais": "Uruguay",
  "reglas_version": "2026-11-16b",
  "fuentes": [
@@ -20,10 +20,10 @@
   }
  ],
  "resumen": {
-  "sugerencias_unicas": 150,
+  "sugerencias_unicas": 151,
   "intenciones_con_datos": 8,
   "fuera_de_uruguay": 15,
-  "fuera_de_uruguay_pct": 10.0,
+  "fuera_de_uruguay_pct": 9.9,
   "sin_clasificar": 46,
   "instituciones_uy": [
    {
@@ -45,13 +45,13 @@
   ],
   "quien_supuesto": {
    "familia": 6,
-   "estudiante": 71,
+   "estudiante": 72,
    "ambos": 12,
    "ninguno": 61
   },
   "top10_validos": 0,
-  "top10_rechazados": 2,
-  "top10_pendientes": 0
+  "top10_rechazados": 0,
+  "top10_pendientes": 2
  },
  "intenciones": [
   {
@@ -61,7 +61,7 @@
    "quien": "ninguno",
    "que_es": "La sugerencia nombra un país o una universidad de otro país. No es demanda local.",
    "total": 15,
-   "pct": 10.0,
+   "pct": 9.9,
    "apariciones_total": 26,
    "veces_top3_total": 15,
    "sugerencias": [
@@ -708,7 +708,7 @@
    "quien": "ambos",
    "que_es": "Lugar o institución de Uruguay: universidades y ciudades.",
    "total": 7,
-   "pct": 4.7,
+   "pct": 4.6,
    "apariciones_total": 8,
    "veces_top3_total": 2,
    "sugerencias": [
@@ -874,7 +874,7 @@
    "quien": "estudiante",
    "que_es": "Qué nivel buscan: carrera, licenciatura, curso, posgrado.",
    "total": 16,
-   "pct": 10.7,
+   "pct": 10.6,
    "apariciones_total": 22,
    "veces_top3_total": 6,
    "sugerencias": [
@@ -1214,10 +1214,10 @@
    "color": "#e879f9",
    "quien": "estudiante",
    "que_es": "Con qué otros temas se busca junto: inteligencia artificial, negocios, salud. Sirve para decidir el nombre y el foco de una carrera.",
-   "total": 46,
-   "pct": 30.7,
-   "apariciones_total": 75,
-   "veces_top3_total": 26,
+   "total": 47,
+   "pct": 31.1,
+   "apariciones_total": 77,
+   "veces_top3_total": 28,
    "sugerencias": [
     {
      "texto": "tecnologa en gestion universitaria",
@@ -1464,6 +1464,27 @@
      "intencion": "temas"
     },
     {
+     "texto": "gestión tecnológica aplicada a las organizaciones",
+     "semillas": [
+      "gestion tecnologica a",
+      "gestion tecnologica o"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 2,
+     "pos_promedio": 3.0,
+     "pos_mejor": 2,
+     "veces_top3": 1,
+     "veces_top10": 2,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
      "texto": "gestion informatica tecnologia fotos",
      "semillas": [
       "gestion tecnologica f",
@@ -1632,6 +1653,26 @@
      "intencion": "temas"
     },
     {
+     "texto": "gestion clinica",
+     "semillas": [
+      "gestion tecnologica"
+     ],
+     "grupos": [
+      "youtube"
+     ],
+     "fuentes": [
+      "youtube"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "pos_promedio": 1.0,
+     "pos_mejor": 1,
+     "veces_top3": 1,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
      "texto": "gestion global tecnologica",
      "semillas": [
       "gestion tecnologica g"
@@ -1655,26 +1696,6 @@
      "texto": "gestion jm",
      "semillas": [
       "gestion tecnologica j"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 600,
-     "apariciones": 1,
-     "pos_promedio": 2.0,
-     "pos_mejor": 2,
-     "veces_top3": 1,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "temas"
-    },
-    {
-     "texto": "gestión tecnológica aplicada a las organizaciones",
-     "semillas": [
-      "gestion tecnologica a"
      ],
      "grupos": [
       "alfabeto"
@@ -1792,6 +1813,26 @@
      "intencion": "temas"
     },
     {
+     "texto": "gestión de obsolescencia tecnológica",
+     "semillas": [
+      "gestion tecnologica o"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "pos_promedio": 3.0,
+     "pos_mejor": 3,
+     "veces_top3": 1,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
      "texto": "gestion jesus",
      "semillas": [
       "gestion tecnologica j"
@@ -1823,26 +1864,6 @@
       "google"
      ],
      "relevancia_max": 550,
-     "apariciones": 1,
-     "pos_promedio": 4.0,
-     "pos_mejor": 4,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "temas"
-    },
-    {
-     "texto": "gestión de obsolescencia tecnológica",
-     "semillas": [
-      "gestion tecnologica o"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 558,
      "apariciones": 1,
      "pos_promedio": 4.0,
      "pos_mejor": 4,
@@ -2377,9 +2398,9 @@
    "quien": "ninguno",
    "que_es": "No coincide con ninguna regla. Si este grupo crece, falta una regla.",
    "total": 46,
-   "pct": 30.7,
-   "apariciones_total": 107,
-   "veces_top3_total": 37,
+   "pct": 30.5,
+   "apariciones_total": 106,
+   "veces_top3_total": 36,
    "sugerencias": [
     {
      "texto": "gestion tecnologica fq",
@@ -2470,28 +2491,6 @@
      "apariciones": 3,
      "pos_promedio": 2.3,
      "pos_mejor": 1,
-     "veces_top3": 2,
-     "veces_top10": 3,
-     "instituciones": [],
-     "intencion": "otros"
-    },
-    {
-     "texto": "gestión tecnológica de las organizaciones",
-     "semillas": [
-      "gestion tecnologica d",
-      "gestion tecnologica l",
-      "gestion tecnologica o"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 600,
-     "apariciones": 3,
-     "pos_promedio": 3.0,
-     "pos_mejor": 2,
      "veces_top3": 2,
      "veces_top10": 3,
      "instituciones": [],
@@ -2714,6 +2713,27 @@
      "pos_promedio": 1.5,
      "pos_mejor": 1,
      "veces_top3": 2,
+     "veces_top10": 2,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "gestión tecnológica de las organizaciones",
+     "semillas": [
+      "gestion tecnologica d",
+      "gestion tecnologica l"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 2,
+     "pos_promedio": 3.0,
+     "pos_mejor": 2,
+     "veces_top3": 1,
      "veces_top10": 2,
      "instituciones": [],
      "intencion": "otros"
@@ -3380,15 +3400,15 @@
   {
    "buscador": "pendiente",
    "consulta": "gestion tecnologica",
-   "estado": "rechazado",
-   "motivo": "el buscador no devolvió resultados",
+   "estado": "pendiente",
+   "motivo": "sin fuente automática: leer la página de un buscador con un script no es confiable (probado el 2026-11-16). Falta elegir una API oficial con clave gratuita (PLAN.md, fase F5).",
    "resultados": []
   },
   {
    "buscador": "pendiente",
    "consulta": "gestion tecnologica carrera uruguay",
-   "estado": "rechazado",
-   "motivo": "el buscador no devolvió resultados",
+   "estado": "pendiente",
+   "motivo": "sin fuente automática: leer la página de un buscador con un script no es confiable (probado el 2026-11-16). Falta elegir una API oficial con clave gratuita (PLAN.md, fase F5).",
    "resultados": []
   }
  ],
@@ -3536,6 +3556,5 @@
   "bing": "https://www.bing.com/search?cc=UY&setlang=es&q=gestion%20tecnologica",
   "duckduckgo": "https://duckduckgo.com/?kl=uy-es&q=gestion%20tecnologica",
   "youtube": "https://www.youtube.com/results?search_query=gestion%20tecnologica"
- },
- "reprocesado_utc": "2026-11-18T12:41:23Z"
+ }
 }

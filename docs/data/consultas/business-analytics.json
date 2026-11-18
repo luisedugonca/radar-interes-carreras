@@ -1,8 +1,8 @@
 {
  "tema": "business analytics",
  "slug": "business-analytics",
- "run_id": "20261116T222442Z_business-analytics",
- "generado_utc": "2026-11-16T22:24:42Z",
+ "run_id": "20261118T160417Z_business-analytics",
+ "generado_utc": "2026-11-18T16:04:17Z",
  "pais": "Uruguay",
  "reglas_version": "2026-11-16b",
  "fuentes": [
@@ -20,7 +20,7 @@
   }
  ],
  "resumen": {
-  "sugerencias_unicas": 419,
+  "sugerencias_unicas": 418,
   "intenciones_con_datos": 8,
   "fuera_de_uruguay": 24,
   "fuera_de_uruguay_pct": 5.7,
@@ -46,12 +46,12 @@
   "quien_supuesto": {
    "familia": 16,
    "estudiante": 72,
-   "ambos": 40,
+   "ambos": 39,
    "ninguno": 291
   },
   "top10_validos": 0,
-  "top10_rechazados": 2,
-  "top10_pendientes": 0
+  "top10_rechazados": 0,
+  "top10_pendientes": 2
  },
  "intenciones": [
   {
@@ -102,7 +102,7 @@
      ],
      "relevancia_max": 1250,
      "apariciones": 2,
-     "pos_promedio": 4.5,
+     "pos_promedio": 4.0,
      "pos_mejor": 1,
      "veces_top3": 1,
      "veces_top10": 2,
@@ -124,7 +124,7 @@
      ],
      "relevancia_max": 561,
      "apariciones": 2,
-     "pos_promedio": 8.5,
+     "pos_promedio": 8.0,
      "pos_mejor": 4,
      "veces_top3": 0,
      "veces_top10": 1,
@@ -597,8 +597,8 @@
    "que_es": "Para qué sirve: trabajo, sueldo, demanda.",
    "total": 28,
    "pct": 6.7,
-   "apariciones_total": 38,
-   "veces_top3_total": 16,
+   "apariciones_total": 37,
+   "veces_top3_total": 15,
    "sugerencias": [
     {
      "texto": "business analyst salario uruguay",
@@ -651,28 +651,6 @@
      "intencion": "salida"
     },
     {
-     "texto": "business analytics que es y para que sirve",
-     "semillas": [
-      "business analytics",
-      "business analytics q"
-     ],
-     "grupos": [
-      "base",
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 1251,
-     "apariciones": 2,
-     "pos_promedio": 2.5,
-     "pos_mejor": 2,
-     "veces_top3": 2,
-     "veces_top10": 2,
-     "instituciones": [],
-     "intencion": "salida"
-    },
-    {
      "texto": "business analytics trabajo",
      "semillas": [
       "business analytics",
@@ -687,7 +665,7 @@
      ],
      "relevancia_max": 1251,
      "apariciones": 2,
-     "pos_promedio": 5.5,
+     "pos_promedio": 5.0,
      "pos_mejor": 1,
      "veces_top3": 1,
      "veces_top10": 2,
@@ -709,10 +687,10 @@
      ],
      "relevancia_max": 1250,
      "apariciones": 2,
-     "pos_promedio": 7.0,
-     "pos_mejor": 3,
+     "pos_promedio": 6.0,
+     "pos_mejor": 2,
      "veces_top3": 1,
-     "veces_top10": 1,
+     "veces_top10": 2,
      "instituciones": [],
      "intencion": "salida"
     },
@@ -849,6 +827,26 @@
       "google"
      ],
      "relevancia_max": 600,
+     "apariciones": 1,
+     "pos_promedio": 3.0,
+     "pos_mejor": 3,
+     "veces_top3": 1,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "business analytics que es y para que sirve",
+     "semillas": [
+      "business analytics q"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 750,
      "apariciones": 1,
      "pos_promedio": 3.0,
      "pos_mejor": 3,
@@ -1553,8 +1551,8 @@
      ],
      "relevancia_max": 600,
      "apariciones": 2,
-     "pos_promedio": 3.5,
-     "pos_mejor": 3,
+     "pos_promedio": 3.0,
+     "pos_mejor": 2,
      "veces_top3": 1,
      "veces_top10": 2,
      "instituciones": [],
@@ -1576,7 +1574,7 @@
      ],
      "relevancia_max": 1250,
      "apariciones": 2,
-     "pos_promedio": 7.0,
+     "pos_promedio": 6.5,
      "pos_mejor": 1,
      "veces_top3": 1,
      "veces_top10": 1,
@@ -1871,9 +1869,9 @@
    "color": "#35c9d6",
    "quien": "ambos",
    "que_es": "Lugar o institución de Uruguay: universidades y ciudades.",
-   "total": 12,
-   "pct": 2.9,
-   "apariciones_total": 60,
+   "total": 11,
+   "pct": 2.6,
+   "apariciones_total": 59,
    "veces_top3_total": 26,
    "sugerencias": [
     {
@@ -1904,7 +1902,7 @@
      ],
      "relevancia_max": 601,
      "apariciones": 13,
-     "pos_promedio": 3.3,
+     "pos_promedio": 3.2,
      "pos_mejor": 1,
      "veces_top3": 8,
      "veces_top10": 13,
@@ -2031,7 +2029,7 @@
      ],
      "relevancia_max": 554,
      "apariciones": 8,
-     "pos_promedio": 5.9,
+     "pos_promedio": 5.8,
      "pos_mejor": 3,
      "veces_top3": 2,
      "veces_top10": 7,
@@ -2105,7 +2103,7 @@
      ],
      "relevancia_max": 600,
      "apariciones": 2,
-     "pos_promedio": 5.0,
+     "pos_promedio": 4.5,
      "pos_mejor": 3,
      "veces_top3": 1,
      "veces_top10": 2,
@@ -2173,26 +2171,6 @@
      "veces_top10": 1,
      "instituciones": [],
      "intencion": "donde"
-    },
-    {
-     "texto": "donde puedo estudiar business analytics",
-     "semillas": [
-      "estudiar business analytics"
-     ],
-     "grupos": [
-      "estudiante"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 554,
-     "apariciones": 1,
-     "pos_promedio": 5.0,
-     "pos_mejor": 5,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "donde"
     }
    ]
   },
@@ -2204,8 +2182,8 @@
    "que_es": "Qué nivel buscan: carrera, licenciatura, curso, posgrado.",
    "total": 18,
    "pct": 4.3,
-   "apariciones_total": 24,
-   "veces_top3_total": 10,
+   "apariciones_total": 25,
+   "veces_top3_total": 11,
    "sugerencias": [
     {
      "texto": "business analytics curso",
@@ -2225,9 +2203,9 @@
      ],
      "relevancia_max": 1250,
      "apariciones": 3,
-     "pos_promedio": 2.0,
+     "pos_promedio": 1.7,
      "pos_mejor": 1,
-     "veces_top3": 2,
+     "veces_top3": 3,
      "veces_top10": 3,
      "instituciones": [],
      "intencion": "formato"
@@ -2248,9 +2226,33 @@
      ],
      "relevancia_max": 850,
      "apariciones": 2,
-     "pos_promedio": 2.5,
-     "pos_mejor": 2,
+     "pos_promedio": 2.0,
+     "pos_mejor": 1,
      "veces_top3": 2,
+     "veces_top10": 2,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "business analytics master",
+     "semillas": [
+      "business analytics",
+      "business analytics m"
+     ],
+     "grupos": [
+      "base",
+      "alfabeto",
+      "youtube"
+     ],
+     "fuentes": [
+      "google",
+      "youtube"
+     ],
+     "relevancia_max": 1251,
+     "apariciones": 2,
+     "pos_promedio": 3.0,
+     "pos_mejor": 1,
+     "veces_top3": 1,
      "veces_top10": 2,
      "instituciones": [],
      "intencion": "formato"
@@ -2278,26 +2280,24 @@
      "intencion": "formato"
     },
     {
-     "texto": "business analytics master",
+     "texto": "business analytics maestria",
      "semillas": [
       "business analytics",
       "business analytics m"
      ],
      "grupos": [
       "base",
-      "alfabeto",
-      "youtube"
+      "alfabeto"
      ],
      "fuentes": [
-      "google",
-      "youtube"
+      "google"
      ],
-     "relevancia_max": 1251,
+     "relevancia_max": 1250,
      "apariciones": 2,
-     "pos_promedio": 3.5,
-     "pos_mejor": 1,
+     "pos_promedio": 8.5,
+     "pos_mejor": 2,
      "veces_top3": 1,
-     "veces_top10": 2,
+     "veces_top10": 1,
      "instituciones": [],
      "intencion": "formato"
     },
@@ -2316,7 +2316,7 @@
      ],
      "relevancia_max": 551,
      "apariciones": 2,
-     "pos_promedio": 7.5,
+     "pos_promedio": 7.0,
      "pos_mejor": 7,
      "veces_top3": 0,
      "veces_top10": 2,
@@ -2384,26 +2384,6 @@
      "intencion": "formato"
     },
     {
-     "texto": "business analytics maestria",
-     "semillas": [
-      "business analytics m"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 1250,
-     "apariciones": 1,
-     "pos_promedio": 2.0,
-     "pos_mejor": 2,
-     "veces_top3": 1,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "formato"
-    },
-    {
      "texto": "master business analytics y big data",
      "semillas": [
       "business analytics y"
@@ -2434,7 +2414,7 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 555,
+     "relevancia_max": 554,
      "apariciones": 1,
      "pos_promedio": 4.0,
      "pos_mejor": 4,
@@ -2687,7 +2667,7 @@
    "total": 34,
    "pct": 8.1,
    "apariciones_total": 37,
-   "veces_top3_total": 14,
+   "veces_top3_total": 15,
    "sugerencias": [
     {
      "texto": "business analytics que es",
@@ -2703,7 +2683,7 @@
       "google",
       "youtube"
      ],
-     "relevancia_max": 1252,
+     "relevancia_max": 1251,
      "apariciones": 2,
      "pos_promedio": 1.5,
      "pos_mejor": 1,
@@ -2728,9 +2708,9 @@
      ],
      "relevancia_max": 851,
      "apariciones": 2,
-     "pos_promedio": 3.0,
+     "pos_promedio": 2.5,
      "pos_mejor": 2,
-     "veces_top3": 1,
+     "veces_top3": 2,
      "veces_top10": 2,
      "instituciones": [],
      "intencion": "aprender"
@@ -2751,8 +2731,8 @@
      ],
      "relevancia_max": 700,
      "apariciones": 2,
-     "pos_promedio": 5.5,
-     "pos_mejor": 5,
+     "pos_promedio": 6.0,
+     "pos_mejor": 6,
      "veces_top3": 0,
      "veces_top10": 2,
      "instituciones": [],
@@ -3179,26 +3159,6 @@
      "intencion": "aprender"
     },
     {
-     "texto": "business analytics excel",
-     "semillas": [
-      "business analytics"
-     ],
-     "grupos": [
-      "youtube"
-     ],
-     "fuentes": [
-      "youtube"
-     ],
-     "relevancia_max": 553,
-     "apariciones": 1,
-     "pos_promedio": 12.0,
-     "pos_mejor": 12,
-     "veces_top3": 0,
-     "veces_top10": 0,
-     "instituciones": [],
-     "intencion": "aprender"
-    },
-    {
      "texto": "business analytics textbook pdf",
      "semillas": [
       "business analytics t"
@@ -3299,6 +3259,26 @@
      "intencion": "aprender"
     },
     {
+     "texto": "business analytics excel",
+     "semillas": [
+      "business analytics"
+     ],
+     "grupos": [
+      "youtube"
+     ],
+     "fuentes": [
+      "youtube"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "pos_promedio": 14.0,
+     "pos_mejor": 14,
+     "veces_top3": 0,
+     "veces_top10": 0,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
      "texto": "business analytics pdf notes",
      "semillas": [
       "business analytics p"
@@ -3387,7 +3367,7 @@
    "quien": "ninguno",
    "que_es": "No coincide con ninguna regla. Si este grupo crece, falta una regla.",
    "total": 267,
-   "pct": 63.7,
+   "pct": 63.9,
    "apariciones_total": 276,
    "veces_top3_total": 34,
    "sugerencias": [
@@ -3406,7 +3386,7 @@
      ],
      "relevancia_max": 601,
      "apariciones": 2,
-     "pos_promedio": 3.5,
+     "pos_promedio": 3.0,
      "pos_mejor": 2,
      "veces_top3": 1,
      "veces_top10": 2,
@@ -3428,32 +3408,10 @@
      ],
      "relevancia_max": 1252,
      "apariciones": 2,
-     "pos_promedio": 5.0,
+     "pos_promedio": 4.5,
      "pos_mejor": 1,
      "veces_top3": 1,
      "veces_top10": 2,
-     "instituciones": [],
-     "intencion": "otros"
-    },
-    {
-     "texto": "business analytics icade",
-     "semillas": [
-      "business analytics",
-      "business analytics i"
-     ],
-     "grupos": [
-      "base",
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 1250,
-     "apariciones": 2,
-     "pos_promedio": 6.5,
-     "pos_mejor": 1,
-     "veces_top3": 1,
-     "veces_top10": 1,
      "instituciones": [],
      "intencion": "otros"
     },
@@ -3473,7 +3431,29 @@
      ],
      "relevancia_max": 1251,
      "apariciones": 2,
-     "pos_promedio": 7.5,
+     "pos_promedio": 6.0,
+     "pos_mejor": 1,
+     "veces_top3": 1,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics icade",
+     "semillas": [
+      "business analytics",
+      "business analytics i"
+     ],
+     "grupos": [
+      "base",
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1250,
+     "apariciones": 2,
+     "pos_promedio": 6.0,
      "pos_mejor": 1,
      "veces_top3": 1,
      "veces_top10": 1,
@@ -3496,7 +3476,7 @@
      ],
      "relevancia_max": 702,
      "apariciones": 2,
-     "pos_promedio": 6.0,
+     "pos_promedio": 5.5,
      "pos_mejor": 4,
      "veces_top3": 0,
      "veces_top10": 2,
@@ -3539,7 +3519,7 @@
      ],
      "relevancia_max": 560,
      "apariciones": 2,
-     "pos_promedio": 9.5,
+     "pos_promedio": 9.0,
      "pos_mejor": 5,
      "veces_top3": 0,
      "veces_top10": 1,
@@ -3561,7 +3541,7 @@
      ],
      "relevancia_max": 559,
      "apariciones": 2,
-     "pos_promedio": 10.5,
+     "pos_promedio": 10.0,
      "pos_mejor": 6,
      "veces_top3": 0,
      "veces_top10": 1,
@@ -4490,6 +4470,26 @@
      "intencion": "otros"
     },
     {
+     "texto": "business analytics español",
+     "semillas": [
+      "business analytics"
+     ],
+     "grupos": [
+      "youtube"
+     ],
+     "fuentes": [
+      "youtube"
+     ],
+     "relevancia_max": 560,
+     "apariciones": 1,
+     "pos_promedio": 5.0,
+     "pos_mejor": 5,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
      "texto": "business analytics fiu",
      "semillas": [
       "business analytics f"
@@ -4921,26 +4921,6 @@
       "google"
      ],
      "relevancia_max": 750,
-     "apariciones": 1,
-     "pos_promedio": 6.0,
-     "pos_mejor": 6,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "otros"
-    },
-    {
-     "texto": "business analytics español",
-     "semillas": [
-      "business analytics"
-     ],
-     "grupos": [
-      "youtube"
-     ],
-     "fuentes": [
-      "youtube"
-     ],
-     "relevancia_max": 559,
      "apariciones": 1,
      "pos_promedio": 6.0,
      "pos_mejor": 6,
@@ -6950,26 +6930,6 @@
      "intencion": "otros"
     },
     {
-     "texto": "business analytics full course",
-     "semillas": [
-      "business analytics"
-     ],
-     "grupos": [
-      "youtube"
-     ],
-     "fuentes": [
-      "youtube"
-     ],
-     "relevancia_max": 554,
-     "apariciones": 1,
-     "pos_promedio": 11.0,
-     "pos_mejor": 11,
-     "veces_top3": 0,
-     "veces_top10": 0,
-     "instituciones": [],
-     "intencion": "otros"
-    },
-    {
      "texto": "business analytics fundamentals",
      "semillas": [
       "business analytics f"
@@ -7699,6 +7659,26 @@
      ],
      "fuentes": [
       "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "pos_promedio": 13.0,
+     "pos_mejor": 13,
+     "veces_top3": 0,
+     "veces_top10": 0,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "business analytics full course",
+     "semillas": [
+      "business analytics"
+     ],
+     "grupos": [
+      "youtube"
+     ],
+     "fuentes": [
+      "youtube"
      ],
      "relevancia_max": 552,
      "apariciones": 1,
@@ -8450,6 +8430,26 @@
      "intencion": "otros"
     },
     {
+     "texto": "business analytics for beginners",
+     "semillas": [
+      "business analytics"
+     ],
+     "grupos": [
+      "youtube"
+     ],
+     "fuentes": [
+      "youtube"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "pos_promedio": 15.0,
+     "pos_mejor": 15,
+     "veces_top3": 0,
+     "veces_top10": 0,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
      "texto": "business analytics galway",
      "semillas": [
       "business analytics g"
@@ -8579,26 +8579,6 @@
      ],
      "fuentes": [
       "google"
-     ],
-     "relevancia_max": 550,
-     "apariciones": 1,
-     "pos_promedio": 15.0,
-     "pos_mejor": 15,
-     "veces_top3": 0,
-     "veces_top10": 0,
-     "instituciones": [],
-     "intencion": "otros"
-    },
-    {
-     "texto": "business analytics project",
-     "semillas": [
-      "business analytics"
-     ],
-     "grupos": [
-      "youtube"
-     ],
-     "fuentes": [
-      "youtube"
      ],
      "relevancia_max": 550,
      "apariciones": 1,
@@ -8757,15 +8737,15 @@
   {
    "buscador": "pendiente",
    "consulta": "business analytics",
-   "estado": "rechazado",
-   "motivo": "el buscador no devolvió resultados",
+   "estado": "pendiente",
+   "motivo": "sin fuente automática: leer la página de un buscador con un script no es confiable (probado el 2026-11-16). Falta elegir una API oficial con clave gratuita (PLAN.md, fase F5).",
    "resultados": []
   },
   {
    "buscador": "pendiente",
    "consulta": "business analytics carrera uruguay",
-   "estado": "rechazado",
-   "motivo": "el buscador no devolvió resultados",
+   "estado": "pendiente",
+   "motivo": "sin fuente automática: leer la página de un buscador con un script no es confiable (probado el 2026-11-16). Falta elegir una API oficial con clave gratuita (PLAN.md, fase F5).",
    "resultados": []
   }
  ],
@@ -8800,8 +8780,8 @@
     "grupo": "estudiante",
     "fuente": "google",
     "texto": "estudiar analista de datos uruguay",
-    "pos": 7,
-    "de": 9,
+    "pos": 6,
+    "de": 8,
     "relevancia": 552,
     "motivo": "no nombra el tema"
    },
@@ -8823,6 +8803,5 @@
   "bing": "https://www.bing.com/search?cc=UY&setlang=es&q=business%20analytics",
   "duckduckgo": "https://duckduckgo.com/?kl=uy-es&q=business%20analytics",
   "youtube": "https://www.youtube.com/results?search_query=business%20analytics"
- },
- "reprocesado_utc": "2026-11-18T12:41:22Z"
+ }
 }

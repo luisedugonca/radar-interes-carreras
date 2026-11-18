@@ -1,8 +1,8 @@
 {
  "tema": "analista de datos",
  "slug": "analista-de-datos",
- "run_id": "20261116T220856Z_analista-de-datos",
- "generado_utc": "2026-11-16T22:08:56Z",
+ "run_id": "20261118T160350Z_analista-de-datos",
+ "generado_utc": "2026-11-18T16:03:50Z",
  "pais": "Uruguay",
  "reglas_version": "2026-11-16b",
  "fuentes": [
@@ -20,11 +20,11 @@
   }
  ],
  "resumen": {
-  "sugerencias_unicas": 453,
+  "sugerencias_unicas": 454,
   "intenciones_con_datos": 9,
-  "fuera_de_uruguay": 107,
-  "fuera_de_uruguay_pct": 23.6,
-  "sin_clasificar": 127,
+  "fuera_de_uruguay": 109,
+  "fuera_de_uruguay_pct": 24.0,
+  "sin_clasificar": 129,
   "instituciones_uy": [
    {
     "id": "ORT",
@@ -53,13 +53,13 @@
   ],
   "quien_supuesto": {
    "familia": 23,
-   "estudiante": 92,
-   "ambos": 101,
-   "ninguno": 237
+   "estudiante": 88,
+   "ambos": 102,
+   "ninguno": 241
   },
   "top10_validos": 0,
-  "top10_rechazados": 2,
-  "top10_pendientes": 0
+  "top10_rechazados": 0,
+  "top10_pendientes": 2
  },
  "intenciones": [
   {
@@ -68,10 +68,10 @@
    "color": "#8b93a7",
    "quien": "ninguno",
    "que_es": "La sugerencia nombra un país o una universidad de otro país. No es demanda local.",
-   "total": 107,
-   "pct": 23.6,
-   "apariciones_total": 114,
-   "veces_top3_total": 19,
+   "total": 109,
+   "pct": 24.0,
+   "apariciones_total": 116,
+   "veces_top3_total": 20,
    "sugerencias": [
     {
      "texto": "donde estudiar analista de datos en argentina",
@@ -89,6 +89,28 @@
      "relevancia_max": 601,
      "apariciones": 2,
      "pos_promedio": 5.0,
+     "pos_mejor": 2,
+     "veces_top3": 1,
+     "veces_top10": 2,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "analista de datos carrera colombia",
+     "semillas": [
+      "analista de datos carrera",
+      "analista de datos c"
+     ],
+     "grupos": [
+      "estudiante",
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 2,
+     "pos_promedio": 6.0,
      "pos_mejor": 2,
      "veces_top3": 1,
      "veces_top10": 2,
@@ -134,28 +156,6 @@
      "apariciones": 2,
      "pos_promedio": 6.0,
      "pos_mejor": 1,
-     "veces_top3": 1,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "fuera_uy"
-    },
-    {
-     "texto": "analista de datos carrera colombia",
-     "semillas": [
-      "analista de datos carrera",
-      "analista de datos c"
-     ],
-     "grupos": [
-      "estudiante",
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 600,
-     "apariciones": 2,
-     "pos_promedio": 7.0,
-     "pos_mejor": 2,
      "veces_top3": 1,
      "veces_top10": 1,
      "instituciones": [],
@@ -268,6 +268,26 @@
      "intencion": "fuera_uy"
     },
     {
+     "texto": "analista de datos puebla",
+     "semillas": [
+      "analista de datos p"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1201,
+     "apariciones": 1,
+     "pos_promedio": 1.0,
+     "pos_mejor": 1,
+     "veces_top3": 1,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
      "texto": "analista de datos tripleten costo",
      "semillas": [
       "analista de datos costo"
@@ -299,6 +319,26 @@
       "google"
      ],
      "relevancia_max": 1250,
+     "apariciones": 1,
+     "pos_promedio": 1.0,
+     "pos_mejor": 1,
+     "veces_top3": 1,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "analista de datos ypf",
+     "semillas": [
+      "analista de datos y"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1251,
      "apariciones": 1,
      "pos_promedio": 1.0,
      "pos_mejor": 1,
@@ -351,46 +391,6 @@
      "texto": "analista de datos leon gto",
      "semillas": [
       "analista de datos l"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 1250,
-     "apariciones": 1,
-     "pos_promedio": 2.0,
-     "pos_mejor": 2,
-     "veces_top3": 1,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "fuera_uy"
-    },
-    {
-     "texto": "analista de datos puebla",
-     "semillas": [
-      "analista de datos p"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 1201,
-     "apariciones": 1,
-     "pos_promedio": 2.0,
-     "pos_mejor": 2,
-     "veces_top3": 1,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "fuera_uy"
-    },
-    {
-     "texto": "analista de datos ypf",
-     "semillas": [
-      "analista de datos y"
      ],
      "grupos": [
       "alfabeto"
@@ -508,6 +508,26 @@
      "intencion": "fuera_uy"
     },
     {
+     "texto": "costo curso analista de datos tripleten",
+     "semillas": [
+      "analista de datos costo"
+     ],
+     "grupos": [
+      "familia"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "pos_promedio": 3.0,
+     "pos_mejor": 3,
+     "veces_top3": 1,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
      "texto": "cuanto gana un analista de datos en colombia",
      "semillas": [
       "cuánto gana analista de datos"
@@ -523,6 +543,26 @@
      "pos_promedio": 3.0,
      "pos_mejor": 3,
      "veces_top3": 1,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "analista de datos queretaro",
+     "semillas": [
+      "analista de datos q"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 560,
+     "apariciones": 1,
+     "pos_promedio": 4.0,
+     "pos_mejor": 4,
+     "veces_top3": 0,
      "veces_top10": 1,
      "instituciones": [],
      "intencion": "fuera_uy"
@@ -768,26 +808,6 @@
      "intencion": "fuera_uy"
     },
     {
-     "texto": "analista de datos en el sena",
-     "semillas": [
-      "analista de datos e"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 559,
-     "apariciones": 1,
-     "pos_promedio": 6.0,
-     "pos_mejor": 6,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "fuera_uy"
-    },
-    {
      "texto": "analista de datos itla",
      "semillas": [
       "analista de datos i"
@@ -839,26 +859,6 @@
       "google"
      ],
      "relevancia_max": 600,
-     "apariciones": 1,
-     "pos_promedio": 6.0,
-     "pos_mejor": 6,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "fuera_uy"
-    },
-    {
-     "texto": "analista de datos paraguay",
-     "semillas": [
-      "analista de datos p"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 601,
      "apariciones": 1,
      "pos_promedio": 6.0,
      "pos_mejor": 6,
@@ -988,6 +988,26 @@
      "intencion": "fuera_uy"
     },
     {
+     "texto": "analista de datos costa rica",
+     "semillas": [
+      "analista de datos c"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 1,
+     "pos_promedio": 7.0,
+     "pos_mejor": 7,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
      "texto": "analista de datos grupo salinas",
      "semillas": [
       "analista de datos g"
@@ -1068,7 +1088,27 @@
      "intencion": "fuera_uy"
     },
     {
-     "texto": "analista de datos queretaro",
+     "texto": "analista de datos paraguay",
+     "semillas": [
+      "analista de datos p"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "pos_promedio": 7.0,
+     "pos_mejor": 7,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "analista de datos quito",
      "semillas": [
       "analista de datos q"
      ],
@@ -1188,6 +1228,26 @@
      "intencion": "fuera_uy"
     },
     {
+     "texto": "analista de datos duoc",
+     "semillas": [
+      "analista de datos d"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "pos_promedio": 8.0,
+     "pos_mejor": 8,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
      "texto": "analista de datos guayaquil",
      "semillas": [
       "analista de datos g"
@@ -1268,7 +1328,7 @@
      "intencion": "fuera_uy"
     },
     {
-     "texto": "analista de datos unsl",
+     "texto": "analista de datos unam",
      "semillas": [
       "analista de datos u"
      ],
@@ -1368,46 +1428,6 @@
      "intencion": "fuera_uy"
     },
     {
-     "texto": "analista de datos costa rica",
-     "semillas": [
-      "analista de datos c"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 556,
-     "apariciones": 1,
-     "pos_promedio": 9.0,
-     "pos_mejor": 9,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "fuera_uy"
-    },
-    {
-     "texto": "analista de datos duoc",
-     "semillas": [
-      "analista de datos d"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 556,
-     "apariciones": 1,
-     "pos_promedio": 9.0,
-     "pos_mejor": 9,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "fuera_uy"
-    },
-    {
      "texto": "analista de datos merida",
      "semillas": [
       "analista de datos m"
@@ -1428,7 +1448,7 @@
      "intencion": "fuera_uy"
     },
     {
-     "texto": "analista de datos unam",
+     "texto": "analista de datos unr",
      "semillas": [
       "analista de datos u"
      ],
@@ -1548,7 +1568,7 @@
      "intencion": "fuera_uy"
     },
     {
-     "texto": "analista de datos unr",
+     "texto": "analista de datos unsl",
      "semillas": [
       "analista de datos u"
      ],
@@ -1608,9 +1628,9 @@
      "intencion": "fuera_uy"
     },
     {
-     "texto": "analista de datos home office cdmx",
+     "texto": "analista de datos españa",
      "semillas": [
-      "analista de datos h"
+      "analista de datos e"
      ],
      "grupos": [
       "alfabeto"
@@ -1628,9 +1648,9 @@
      "intencion": "fuera_uy"
     },
     {
-     "texto": "analista de datos quito",
+     "texto": "analista de datos home office cdmx",
      "semillas": [
-      "analista de datos q"
+      "analista de datos h"
      ],
      "grupos": [
       "alfabeto"
@@ -1638,7 +1658,7 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 553,
+     "relevancia_max": 554,
      "apariciones": 1,
      "pos_promedio": 11.0,
      "pos_mejor": 11,
@@ -1668,7 +1688,7 @@
      "intencion": "fuera_uy"
     },
     {
-     "texto": "analista de datos uba economicas",
+     "texto": "analista de datos unlp",
      "semillas": [
       "analista de datos u"
      ],
@@ -1768,7 +1788,7 @@
      "intencion": "fuera_uy"
     },
     {
-     "texto": "analista de datos unlp",
+     "texto": "analista de datos universidad de san luis",
      "semillas": [
       "analista de datos u"
      ],
@@ -1854,6 +1874,46 @@
      ],
      "grupos": [
       "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "pos_promedio": 13.0,
+     "pos_mejor": 13,
+     "veces_top3": 0,
+     "veces_top10": 0,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "analista de datos cdmx",
+     "semillas": [
+      "analista de datos c"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "pos_promedio": 13.0,
+     "pos_mejor": 13,
+     "veces_top3": 0,
+     "veces_top10": 0,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "analista de datos ecuador",
+     "semillas": [
+      "analista de datos e"
+     ],
+     "grupos": [
+      "alfabeto"
      ],
      "fuentes": [
       "google"
@@ -2048,6 +2108,26 @@
      "intencion": "fuera_uy"
     },
     {
+     "texto": "analista de datos peru",
+     "semillas": [
+      "analista de datos p"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "pos_promedio": 14.0,
+     "pos_mejor": 14,
+     "veces_top3": 0,
+     "veces_top10": 0,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
      "texto": "analista de datos bolivia",
      "semillas": [
       "analista de datos b"
@@ -2088,27 +2168,7 @@
      "intencion": "fuera_uy"
     },
     {
-     "texto": "analista de datos cdmx",
-     "semillas": [
-      "analista de datos c"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 550,
-     "apariciones": 1,
-     "pos_promedio": 15.0,
-     "pos_mejor": 15,
-     "veces_top3": 0,
-     "veces_top10": 0,
-     "instituciones": [],
-     "intencion": "fuera_uy"
-    },
-    {
-     "texto": "analista de datos españa",
+     "texto": "analista de datos en el sena",
      "semillas": [
       "analista de datos e"
      ],
@@ -2131,26 +2191,6 @@
      "texto": "analista de datos granada",
      "semillas": [
       "analista de datos g"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 550,
-     "apariciones": 1,
-     "pos_promedio": 15.0,
-     "pos_mejor": 15,
-     "veces_top3": 0,
-     "veces_top10": 0,
-     "instituciones": [],
-     "intencion": "fuera_uy"
-    },
-    {
-     "texto": "analista de datos peru",
-     "semillas": [
-      "analista de datos p"
      ],
      "grupos": [
       "alfabeto"
@@ -2256,7 +2296,7 @@
      ],
      "relevancia_max": 1250,
      "apariciones": 2,
-     "pos_promedio": 4.5,
+     "pos_promedio": 5.5,
      "pos_mejor": 2,
      "veces_top3": 1,
      "veces_top10": 2,
@@ -2326,7 +2366,7 @@
    "total": 11,
    "pct": 2.4,
    "apariciones_total": 14,
-   "veces_top3_total": 6,
+   "veces_top3_total": 5,
    "sugerencias": [
     {
      "texto": "analista de datos carrera gratis",
@@ -2343,7 +2383,7 @@
      ],
      "relevancia_max": 562,
      "apariciones": 2,
-     "pos_promedio": 8.0,
+     "pos_promedio": 7.0,
      "pos_mejor": 3,
      "veces_top3": 1,
      "veces_top10": 1,
@@ -2475,26 +2515,6 @@
      "intencion": "costo"
     },
     {
-     "texto": "costo curso analista de datos google",
-     "semillas": [
-      "analista de datos costo"
-     ],
-     "grupos": [
-      "familia"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 554,
-     "apariciones": 1,
-     "pos_promedio": 3.0,
-     "pos_mejor": 3,
-     "veces_top3": 1,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "costo"
-    },
-    {
      "texto": "analista de datos gratis",
      "semillas": [
       "analista de datos g"
@@ -2515,20 +2535,20 @@
      "intencion": "costo"
     },
     {
-     "texto": "analista de datos donde estudiar gratis",
+     "texto": "costo curso analista de datos google",
      "semillas": [
-      "analista de datos d"
+      "analista de datos costo"
      ],
      "grupos": [
-      "alfabeto"
+      "familia"
      ],
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 555,
+     "relevancia_max": 554,
      "apariciones": 1,
-     "pos_promedio": 10.0,
-     "pos_mejor": 10,
+     "pos_promedio": 4.0,
+     "pos_mejor": 4,
      "veces_top3": 0,
      "veces_top10": 1,
      "instituciones": [],
@@ -2545,12 +2565,32 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 554,
+     "relevancia_max": 556,
      "apariciones": 1,
-     "pos_promedio": 11.0,
-     "pos_mejor": 11,
+     "pos_promedio": 9.0,
+     "pos_mejor": 9,
      "veces_top3": 0,
-     "veces_top10": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "costo"
+    },
+    {
+     "texto": "analista de datos donde estudiar gratis",
+     "semillas": [
+      "analista de datos d"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "pos_promedio": 9.0,
+     "pos_mejor": 9,
+     "veces_top3": 0,
+     "veces_top10": 1,
      "instituciones": [],
      "intencion": "costo"
     }
@@ -2563,7 +2603,7 @@
    "quien": "ambos",
    "que_es": "Para qué sirve: trabajo, sueldo, demanda.",
    "total": 80,
-   "pct": 17.7,
+   "pct": 17.6,
    "apariciones_total": 95,
    "veces_top3_total": 26,
    "sugerencias": [
@@ -2583,7 +2623,7 @@
      ],
      "relevancia_max": 600,
      "apariciones": 3,
-     "pos_promedio": 3.0,
+     "pos_promedio": 3.3,
      "pos_mejor": 2,
      "veces_top3": 2,
      "veces_top10": 3,
@@ -2654,7 +2694,7 @@
      ],
      "relevancia_max": 552,
      "apariciones": 3,
-     "pos_promedio": 5.3,
+     "pos_promedio": 5.7,
      "pos_mejor": 4,
      "veces_top3": 0,
      "veces_top10": 3,
@@ -2729,28 +2769,6 @@
      "intencion": "salida"
     },
     {
-     "texto": "analista de datos sueldo",
-     "semillas": [
-      "analista de datos",
-      "analista de datos s"
-     ],
-     "grupos": [
-      "base",
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 600,
-     "apariciones": 2,
-     "pos_promedio": 7.5,
-     "pos_mejor": 2,
-     "veces_top3": 1,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "salida"
-    },
-    {
      "texto": "analista de datos que hace",
      "semillas": [
       "analista de datos",
@@ -2766,6 +2784,28 @@
       "youtube"
      ],
      "relevancia_max": 601,
+     "apariciones": 2,
+     "pos_promedio": 7.5,
+     "pos_mejor": 2,
+     "veces_top3": 1,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "analista de datos sueldo",
+     "semillas": [
+      "analista de datos",
+      "analista de datos s"
+     ],
+     "grupos": [
+      "base",
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
      "apariciones": 2,
      "pos_promedio": 8.0,
      "pos_mejor": 2,
@@ -3119,6 +3159,26 @@
      "intencion": "salida"
     },
     {
+     "texto": "analista de datos deportivos empleo",
+     "semillas": [
+      "analista de datos d"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 750,
+     "apariciones": 1,
+     "pos_promedio": 4.0,
+     "pos_mejor": 4,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
      "texto": "analista de datos funciones",
      "semillas": [
       "analista de datos f"
@@ -3219,9 +3279,9 @@
      "intencion": "salida"
     },
     {
-     "texto": "analista de datos deportivos empleo",
+     "texto": "analista de datos computrabajo",
      "semillas": [
-      "analista de datos d"
+      "analista de datos c"
      ],
      "grupos": [
       "alfabeto"
@@ -3229,7 +3289,27 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 750,
+     "relevancia_max": 560,
+     "apariciones": 1,
+     "pos_promedio": 5.0,
+     "pos_mejor": 5,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "analista de datos empleo sin experiencia",
+     "semillas": [
+      "analista de datos e"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 560,
      "apariciones": 1,
      "pos_promedio": 5.0,
      "pos_mejor": 5,
@@ -3379,26 +3459,6 @@
      "intencion": "salida"
     },
     {
-     "texto": "analista de datos computrabajo",
-     "semillas": [
-      "analista de datos c"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 559,
-     "apariciones": 1,
-     "pos_promedio": 6.0,
-     "pos_mejor": 6,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "salida"
-    },
-    {
      "texto": "analista de datos jr que hace",
      "semillas": [
       "analista de datos j"
@@ -3539,7 +3599,7 @@
      "intencion": "salida"
     },
     {
-     "texto": "analista de datos empleo cuanto gana",
+     "texto": "analista de datos empleo en los últimos 3 días",
      "semillas": [
       "analista de datos e"
      ],
@@ -3659,26 +3719,6 @@
      "intencion": "salida"
     },
     {
-     "texto": "analista de datos empleo sin experiencia",
-     "semillas": [
-      "analista de datos e"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 555,
-     "apariciones": 1,
-     "pos_promedio": 10.0,
-     "pos_mejor": 10,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "salida"
-    },
-    {
      "texto": "analista de datos financieros trabajo",
      "semillas": [
       "analista de datos f"
@@ -3722,6 +3762,26 @@
      "texto": "analista de datos online trabajo",
      "semillas": [
       "analista de datos o"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "pos_promedio": 10.0,
+     "pos_mejor": 10,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "analista de datos pasantia",
+     "semillas": [
+      "analista de datos p"
      ],
      "grupos": [
       "alfabeto"
@@ -3819,15 +3879,15 @@
      "intencion": "salida"
     },
     {
-     "texto": "analista de datos junior empleo remoto",
+     "texto": "analista de datos entrevista",
      "semillas": [
-      "analista de datos j"
+      "analista de datos"
      ],
      "grupos": [
-      "alfabeto"
+      "youtube"
      ],
      "fuentes": [
-      "google"
+      "youtube"
      ],
      "relevancia_max": 554,
      "apariciones": 1,
@@ -3839,9 +3899,9 @@
      "intencion": "salida"
     },
     {
-     "texto": "analista de datos pasantia",
+     "texto": "analista de datos junior empleo remoto",
      "semillas": [
-      "analista de datos p"
+      "analista de datos j"
      ],
      "grupos": [
       "alfabeto"
@@ -3893,6 +3953,26 @@
      "apariciones": 1,
      "pos_promedio": 11.0,
      "pos_mejor": 11,
+     "veces_top3": 0,
+     "veces_top10": 0,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "analista de datos power bi empleo",
+     "semillas": [
+      "analista de datos p"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "pos_promedio": 12.0,
+     "pos_mejor": 12,
      "veces_top3": 0,
      "veces_top10": 0,
      "instituciones": [],
@@ -3959,47 +4039,7 @@
      "intencion": "salida"
     },
     {
-     "texto": "analista de datos empleo en los últimos 3 días",
-     "semillas": [
-      "analista de datos e"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 552,
-     "apariciones": 1,
-     "pos_promedio": 13.0,
-     "pos_mejor": 13,
-     "veces_top3": 0,
-     "veces_top10": 0,
-     "instituciones": [],
-     "intencion": "salida"
-    },
-    {
-     "texto": "analista de datos entrevista",
-     "semillas": [
-      "analista de datos"
-     ],
-     "grupos": [
-      "youtube"
-     ],
-     "fuentes": [
-      "youtube"
-     ],
-     "relevancia_max": 552,
-     "apariciones": 1,
-     "pos_promedio": 13.0,
-     "pos_mejor": 13,
-     "veces_top3": 0,
-     "veces_top10": 0,
-     "instituciones": [],
-     "intencion": "salida"
-    },
-    {
-     "texto": "analista de datos power bi empleo",
+     "texto": "analista de datos python empleo",
      "semillas": [
       "analista de datos p"
      ],
@@ -4042,26 +4082,6 @@
      "texto": "analista de datos jr home office",
      "semillas": [
       "analista de datos j"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 551,
-     "apariciones": 1,
-     "pos_promedio": 14.0,
-     "pos_mejor": 14,
-     "veces_top3": 0,
-     "veces_top10": 0,
-     "instituciones": [],
-     "intencion": "salida"
-    },
-    {
-     "texto": "analista de datos python empleo",
-     "semillas": [
-      "analista de datos p"
      ],
      "grupos": [
       "alfabeto"
@@ -4128,6 +4148,26 @@
      ],
      "fuentes": [
       "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "pos_promedio": 15.0,
+     "pos_mejor": 15,
+     "veces_top3": 0,
+     "veces_top10": 0,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "analista de datos futuro",
+     "semillas": [
+      "analista de datos"
+     ],
+     "grupos": [
+      "youtube"
+     ],
+     "fuentes": [
+      "youtube"
      ],
      "relevancia_max": 550,
      "apariciones": 1,
@@ -4227,7 +4267,7 @@
      ],
      "relevancia_max": 601,
      "apariciones": 3,
-     "pos_promedio": 6.7,
+     "pos_promedio": 6.3,
      "pos_mejor": 1,
      "veces_top3": 1,
      "veces_top10": 2,
@@ -4468,10 +4508,10 @@
    "color": "#a78bfa",
    "quien": "estudiante",
    "que_es": "Qué se estudia y qué se pide: materias, duración, requisitos, inscripción.",
-   "total": 13,
-   "pct": 2.9,
-   "apariciones_total": 13,
-   "veces_top3_total": 5,
+   "total": 11,
+   "pct": 2.4,
+   "apariciones_total": 11,
+   "veces_top3_total": 4,
    "sugerencias": [
     {
      "texto": "cuanto dura estudiar analista de datos",
@@ -4528,26 +4568,6 @@
      "apariciones": 1,
      "pos_promedio": 2.0,
      "pos_mejor": 2,
-     "veces_top3": 1,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "plan"
-    },
-    {
-     "texto": "analista de datos de que trata",
-     "semillas": [
-      "analista de datos d"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 1000,
-     "apariciones": 1,
-     "pos_promedio": 3.0,
-     "pos_mejor": 3,
      "veces_top3": 1,
      "veces_top10": 1,
      "instituciones": [],
@@ -4654,26 +4674,6 @@
      "intencion": "plan"
     },
     {
-     "texto": "analista de datos cuanto dura la carrera",
-     "semillas": [
-      "analista de datos c"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 557,
-     "apariciones": 1,
-     "pos_promedio": 8.0,
-     "pos_mejor": 8,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "plan"
-    },
-    {
      "texto": "analista de datos que se necesita",
      "semillas": [
       "analista de datos q"
@@ -4684,19 +4684,19 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 556,
+     "relevancia_max": 555,
      "apariciones": 1,
-     "pos_promedio": 8.0,
-     "pos_mejor": 8,
+     "pos_promedio": 9.0,
+     "pos_mejor": 9,
      "veces_top3": 0,
      "veces_top10": 1,
      "instituciones": [],
      "intencion": "plan"
     },
     {
-     "texto": "analista de datos perfil de puesto",
+     "texto": "analista de datos de que trata",
      "semillas": [
-      "analista de datos p"
+      "analista de datos d"
      ],
      "grupos": [
       "alfabeto"
@@ -4704,10 +4704,10 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 556,
+     "relevancia_max": 555,
      "apariciones": 1,
-     "pos_promedio": 9.0,
-     "pos_mejor": 9,
+     "pos_promedio": 10.0,
+     "pos_mejor": 10,
      "veces_top3": 0,
      "veces_top10": 1,
      "instituciones": [],
@@ -4746,26 +4746,6 @@
    "apariciones_total": 12,
    "veces_top3_total": 5,
    "sugerencias": [
-    {
-     "texto": "analista de datos y ciencia de datos es lo mismo",
-     "semillas": [
-      "analista de datos y"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 1251,
-     "apariciones": 1,
-     "pos_promedio": 1.0,
-     "pos_mejor": 1,
-     "veces_top3": 1,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "comparar"
-    },
     {
      "texto": "unicorn academy analista de datos opiniones",
      "semillas": [
@@ -4818,6 +4798,26 @@
       "google"
      ],
      "relevancia_max": 900,
+     "apariciones": 1,
+     "pos_promedio": 2.0,
+     "pos_mejor": 2,
+     "veces_top3": 1,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "comparar"
+    },
+    {
+     "texto": "analista de datos y ciencia de datos es lo mismo",
+     "semillas": [
+      "analista de datos y"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1250,
      "apariciones": 1,
      "pos_promedio": 2.0,
      "pos_mejor": 2,
@@ -4994,9 +4994,9 @@
    "color": "#35c9d6",
    "quien": "ambos",
    "que_es": "Lugar o institución de Uruguay: universidades y ciudades.",
-   "total": 21,
-   "pct": 4.6,
-   "apariciones_total": 44,
+   "total": 22,
+   "pct": 4.8,
+   "apariciones_total": 45,
    "veces_top3_total": 13,
    "sugerencias": [
     {
@@ -5024,7 +5024,7 @@
      ],
      "relevancia_max": 1251,
      "apariciones": 8,
-     "pos_promedio": 2.8,
+     "pos_promedio": 2.9,
      "pos_mejor": 1,
      "veces_top3": 5,
      "veces_top10": 8,
@@ -5052,7 +5052,7 @@
      ],
      "relevancia_max": 553,
      "apariciones": 7,
-     "pos_promedio": 6.6,
+     "pos_promedio": 6.7,
      "pos_mejor": 3,
      "veces_top3": 1,
      "veces_top10": 6,
@@ -5469,6 +5469,26 @@
      "veces_top10": 0,
      "instituciones": [],
      "intencion": "donde"
+    },
+    {
+     "texto": "analista de datos donde se estudia",
+     "semillas": [
+      "analista de datos d"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "pos_promedio": 15.0,
+     "pos_mejor": 15,
+     "veces_top3": 0,
+     "veces_top10": 0,
+     "instituciones": [],
+     "intencion": "donde"
     }
    ]
   },
@@ -5478,10 +5498,10 @@
    "color": "#7c9cff",
    "quien": "estudiante",
    "que_es": "Qué nivel buscan: carrera, licenciatura, curso, posgrado.",
-   "total": 23,
-   "pct": 5.1,
-   "apariciones_total": 25,
-   "veces_top3_total": 10,
+   "total": 21,
+   "pct": 4.6,
+   "apariciones_total": 23,
+   "veces_top3_total": 11,
    "sugerencias": [
     {
      "texto": "analista de datos curso",
@@ -5491,12 +5511,10 @@
      ],
      "grupos": [
       "base",
-      "alfabeto",
-      "youtube"
+      "alfabeto"
      ],
      "fuentes": [
-      "google",
-      "youtube"
+      "google"
      ],
      "relevancia_max": 1251,
      "apariciones": 2,
@@ -5572,7 +5590,7 @@
      "intencion": "formato"
     },
     {
-     "texto": "como estudiar analista de datos",
+     "texto": "que estudiar para ser analista de datos",
      "semillas": [
       "estudiar analista de datos"
      ],
@@ -5586,6 +5604,26 @@
      "apariciones": 1,
      "pos_promedio": 2.0,
      "pos_mejor": 2,
+     "veces_top3": 1,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "analista de datos diplomado",
+     "semillas": [
+      "analista de datos d"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 800,
+     "apariciones": 1,
+     "pos_promedio": 3.0,
+     "pos_mejor": 3,
      "veces_top3": 1,
      "veces_top10": 1,
      "instituciones": [],
@@ -5632,7 +5670,7 @@
      "intencion": "formato"
     },
     {
-     "texto": "analista de datos que carrera estudiar",
+     "texto": "analista de datos que estudiar",
      "semillas": [
       "analista de datos q"
      ],
@@ -5652,7 +5690,7 @@
      "intencion": "formato"
     },
     {
-     "texto": "que estudiar para ser analista de datos",
+     "texto": "estudiar analisis de datos",
      "semillas": [
       "estudiar analista de datos"
      ],
@@ -5662,31 +5700,11 @@
      "fuentes": [
       "youtube"
      ],
-     "relevancia_max": 553,
+     "relevancia_max": 552,
      "apariciones": 1,
      "pos_promedio": 3.0,
      "pos_mejor": 3,
      "veces_top3": 1,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "formato"
-    },
-    {
-     "texto": "analista de datos diplomado",
-     "semillas": [
-      "analista de datos d"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 800,
-     "apariciones": 1,
-     "pos_promedio": 4.0,
-     "pos_mejor": 4,
-     "veces_top3": 0,
      "veces_top10": 1,
      "instituciones": [],
      "intencion": "formato"
@@ -5712,7 +5730,7 @@
      "intencion": "formato"
     },
     {
-     "texto": "analista de datos que estudiar",
+     "texto": "analista de datos que carrera estudiar",
      "semillas": [
       "analista de datos q"
      ],
@@ -5722,37 +5740,17 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 560,
+     "relevancia_max": 559,
      "apariciones": 1,
-     "pos_promedio": 4.0,
-     "pos_mejor": 4,
+     "pos_promedio": 5.0,
+     "pos_mejor": 5,
      "veces_top3": 0,
      "veces_top10": 1,
      "instituciones": [],
      "intencion": "formato"
     },
     {
-     "texto": "estudiar analisis de datos",
-     "semillas": [
-      "estudiar analista de datos"
-     ],
-     "grupos": [
-      "youtube"
-     ],
-     "fuentes": [
-      "youtube"
-     ],
-     "relevancia_max": 552,
-     "apariciones": 1,
-     "pos_promedio": 4.0,
-     "pos_mejor": 4,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "formato"
-    },
-    {
-     "texto": "analista de datos es una carrera",
+     "texto": "analista de datos especializacion",
      "semillas": [
       "analista de datos e"
      ],
@@ -5762,10 +5760,10 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 560,
+     "relevancia_max": 558,
      "apariciones": 1,
-     "pos_promedio": 5.0,
-     "pos_mejor": 5,
+     "pos_promedio": 7.0,
+     "pos_mejor": 7,
      "veces_top3": 0,
      "veces_top10": 1,
      "instituciones": [],
@@ -5782,10 +5780,10 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 559,
+     "relevancia_max": 556,
      "apariciones": 1,
-     "pos_promedio": 5.0,
-     "pos_mejor": 5,
+     "pos_promedio": 8.0,
+     "pos_mejor": 8,
      "veces_top3": 0,
      "veces_top10": 1,
      "instituciones": [],
@@ -5812,29 +5810,9 @@
      "intencion": "formato"
     },
     {
-     "texto": "analista de datos es buena carrera",
+     "texto": "analista de datos bootcamp",
      "semillas": [
-      "analista de datos e"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 556,
-     "apariciones": 1,
-     "pos_promedio": 9.0,
-     "pos_mejor": 9,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "formato"
-    },
-    {
-     "texto": "analista de datos que carrera es",
-     "semillas": [
-      "analista de datos q"
+      "analista de datos b"
      ],
      "grupos": [
       "alfabeto"
@@ -5844,17 +5822,17 @@
      ],
      "relevancia_max": 555,
      "apariciones": 1,
-     "pos_promedio": 9.0,
-     "pos_mejor": 9,
+     "pos_promedio": 10.0,
+     "pos_mejor": 10,
      "veces_top3": 0,
      "veces_top10": 1,
      "instituciones": [],
      "intencion": "formato"
     },
     {
-     "texto": "analista de datos bootcamp",
+     "texto": "analista de datos es una carrera",
      "semillas": [
-      "analista de datos b"
+      "analista de datos e"
      ],
      "grupos": [
       "alfabeto"
@@ -5892,9 +5870,9 @@
      "intencion": "formato"
     },
     {
-     "texto": "analista de datos especializacion",
+     "texto": "analista de datos que carrera es",
      "semillas": [
-      "analista de datos e"
+      "analista de datos q"
      ],
      "grupos": [
       "alfabeto"
@@ -5902,12 +5880,12 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 553,
+     "relevancia_max": 554,
      "apariciones": 1,
-     "pos_promedio": 12.0,
-     "pos_mejor": 12,
+     "pos_promedio": 10.0,
+     "pos_mejor": 10,
      "veces_top3": 0,
-     "veces_top10": 0,
+     "veces_top10": 1,
      "instituciones": [],
      "intencion": "formato"
     },
@@ -5959,9 +5937,9 @@
    "color": "#e879f9",
    "quien": "estudiante",
    "que_es": "Con qué otros temas se busca junto: inteligencia artificial, negocios, salud. Sirve para decidir el nombre y el foco de una carrera.",
-   "total": 17,
-   "pct": 3.8,
-   "apariciones_total": 22,
+   "total": 18,
+   "pct": 4.0,
+   "apariciones_total": 23,
    "veces_top3_total": 7,
    "sugerencias": [
     {
@@ -6002,10 +5980,10 @@
      ],
      "relevancia_max": 1251,
      "apariciones": 2,
-     "pos_promedio": 6.5,
+     "pos_promedio": 5.5,
      "pos_mejor": 1,
      "veces_top3": 1,
-     "veces_top10": 1,
+     "veces_top10": 2,
      "instituciones": [],
      "intencion": "temas"
     },
@@ -6025,10 +6003,10 @@
      ],
      "relevancia_max": 1150,
      "apariciones": 2,
-     "pos_promedio": 7.0,
+     "pos_promedio": 5.5,
      "pos_mejor": 3,
      "veces_top3": 1,
-     "veces_top10": 1,
+     "veces_top10": 2,
      "instituciones": [],
      "intencion": "temas"
     },
@@ -6048,7 +6026,7 @@
      ],
      "relevancia_max": 601,
      "apariciones": 2,
-     "pos_promedio": 8.5,
+     "pos_promedio": 7.5,
      "pos_mejor": 3,
      "veces_top3": 1,
      "veces_top10": 1,
@@ -6071,7 +6049,7 @@
      ],
      "relevancia_max": 602,
      "apariciones": 2,
-     "pos_promedio": 10.0,
+     "pos_promedio": 9.0,
      "pos_mejor": 6,
      "veces_top3": 0,
      "veces_top10": 1,
@@ -6219,6 +6197,26 @@
      "intencion": "temas"
     },
     {
+     "texto": "analista de datos en salud",
+     "semillas": [
+      "analista de datos e"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "pos_promedio": 9.0,
+     "pos_mejor": 9,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
      "texto": "analista de datos de marketing",
      "semillas": [
       "analista de datos d"
@@ -6279,7 +6277,7 @@
      "intencion": "temas"
     },
     {
-     "texto": "analista de datos en salud",
+     "texto": "analista de datos e inteligencia artificial",
      "semillas": [
       "analista de datos e"
      ],
@@ -6326,9 +6324,9 @@
    "color": "#c9d451",
    "quien": "estudiante",
    "que_es": "Contenido para aprender solo: qué es, libros, herramientas, videos.",
-   "total": 27,
-   "pct": 6.0,
-   "apariciones_total": 30,
+   "total": 26,
+   "pct": 5.7,
+   "apariciones_total": 29,
    "veces_top3_total": 7,
    "sugerencias": [
     {
@@ -6345,9 +6343,9 @@
       "google",
       "youtube"
      ],
-     "relevancia_max": 950,
+     "relevancia_max": 1050,
      "apariciones": 2,
-     "pos_promedio": 3.5,
+     "pos_promedio": 3.0,
      "pos_mejor": 1,
      "veces_top3": 1,
      "veces_top10": 2,
@@ -6391,12 +6389,12 @@
       "google",
       "youtube"
      ],
-     "relevancia_max": 557,
+     "relevancia_max": 551,
      "apariciones": 2,
-     "pos_promedio": 11.0,
-     "pos_mejor": 8,
+     "pos_promedio": 14.0,
+     "pos_mejor": 14,
      "veces_top3": 0,
-     "veces_top10": 1,
+     "veces_top10": 0,
      "instituciones": [],
      "intencion": "aprender"
     },
@@ -6412,26 +6410,6 @@
       "google"
      ],
      "relevancia_max": 1251,
-     "apariciones": 1,
-     "pos_promedio": 1.0,
-     "pos_mejor": 1,
-     "veces_top3": 1,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "aprender"
-    },
-    {
-     "texto": "analista de datos power bi",
-     "semillas": [
-      "analista de datos p"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 1250,
      "apariciones": 1,
      "pos_promedio": 1.0,
      "pos_mejor": 1,
@@ -6501,6 +6479,26 @@
      "intencion": "aprender"
     },
     {
+     "texto": "analista de datos power bi",
+     "semillas": [
+      "analista de datos p"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 950,
+     "apariciones": 1,
+     "pos_promedio": 3.0,
+     "pos_mejor": 3,
+     "veces_top3": 1,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
      "texto": "analista de datos wikipedia",
      "semillas": [
       "analista de datos w"
@@ -6541,26 +6539,6 @@
      "intencion": "aprender"
     },
     {
-     "texto": "analista de datos con power bi",
-     "semillas": [
-      "analista de datos c"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 560,
-     "apariciones": 1,
-     "pos_promedio": 5.0,
-     "pos_mejor": 5,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "aprender"
-    },
-    {
      "texto": "analista de datos libros",
      "semillas": [
       "analista de datos l"
@@ -6592,6 +6570,26 @@
       "google"
      ],
      "relevancia_max": 559,
+     "apariciones": 1,
+     "pos_promedio": 6.0,
+     "pos_mejor": 6,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "analista de datos python",
+     "semillas": [
+      "analista de datos p"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
      "apariciones": 1,
      "pos_promedio": 6.0,
      "pos_mejor": 6,
@@ -6661,9 +6659,9 @@
      "intencion": "aprender"
     },
     {
-     "texto": "analista de datos python",
+     "texto": "analista de datos coursera",
      "semillas": [
-      "analista de datos p"
+      "analista de datos c"
      ],
      "grupos": [
       "alfabeto"
@@ -6701,9 +6699,9 @@
      "intencion": "aprender"
     },
     {
-     "texto": "analista de datos roadmap",
+     "texto": "analista de datos pdf",
      "semillas": [
-      "analista de datos r"
+      "analista de datos p"
      ],
      "grupos": [
       "alfabeto"
@@ -6721,9 +6719,9 @@
      "intencion": "aprender"
     },
     {
-     "texto": "analista de datos coursera",
+     "texto": "analista de datos roadmap",
      "semillas": [
-      "analista de datos c"
+      "analista de datos r"
      ],
      "grupos": [
       "alfabeto"
@@ -6731,30 +6729,10 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 555,
+     "relevancia_max": 556,
      "apariciones": 1,
-     "pos_promedio": 10.0,
-     "pos_mejor": 10,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "aprender"
-    },
-    {
-     "texto": "analista de datos pdf",
-     "semillas": [
-      "analista de datos p"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 555,
-     "apariciones": 1,
-     "pos_promedio": 10.0,
-     "pos_mejor": 10,
+     "pos_promedio": 9.0,
+     "pos_mejor": 9,
      "veces_top3": 0,
      "veces_top10": 1,
      "instituciones": [],
@@ -6861,9 +6839,9 @@
      "intencion": "aprender"
     },
     {
-     "texto": "analista de datos de power bi",
+     "texto": "analista de datos con power bi",
      "semillas": [
-      "analista de datos d"
+      "analista de datos c"
      ],
      "grupos": [
       "alfabeto"
@@ -6888,9 +6866,9 @@
    "color": "#9aa4b8",
    "quien": "ninguno",
    "que_es": "No coincide con ninguna regla. Si este grupo crece, falta una regla.",
-   "total": 127,
-   "pct": 28.0,
-   "apariciones_total": 137,
+   "total": 129,
+   "pct": 28.4,
+   "apariciones_total": 139,
    "veces_top3_total": 26,
    "sugerencias": [
     {
@@ -7060,7 +7038,7 @@
      "fuentes": [
       "youtube"
      ],
-     "relevancia_max": 602,
+     "relevancia_max": 650,
      "apariciones": 1,
      "pos_promedio": 2.0,
      "pos_mejor": 2,
@@ -7181,6 +7159,26 @@
       "google"
      ],
      "relevancia_max": 1000,
+     "apariciones": 1,
+     "pos_promedio": 2.0,
+     "pos_mejor": 2,
+     "veces_top3": 1,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analista de datos practicante",
+     "semillas": [
+      "analista de datos p"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1200,
      "apariciones": 1,
      "pos_promedio": 2.0,
      "pos_mejor": 2,
@@ -7321,26 +7319,6 @@
       "google"
      ],
      "relevancia_max": 1150,
-     "apariciones": 1,
-     "pos_promedio": 3.0,
-     "pos_mejor": 3,
-     "veces_top3": 1,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "otros"
-    },
-    {
-     "texto": "analista de datos practicante",
-     "semillas": [
-      "analista de datos p"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 1200,
      "apariciones": 1,
      "pos_promedio": 3.0,
      "pos_mejor": 3,
@@ -7810,6 +7788,26 @@
      "intencion": "otros"
     },
     {
+     "texto": "analista de datos en los últimos 3 días",
+     "semillas": [
+      "analista de datos e"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 559,
+     "apariciones": 1,
+     "pos_promedio": 6.0,
+     "pos_mejor": 6,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
      "texto": "analista de datos keken",
      "semillas": [
       "analista de datos k"
@@ -7930,9 +7928,9 @@
      "intencion": "otros"
     },
     {
-     "texto": "analista de datos en que consiste",
+     "texto": "analista de datos desde ayer",
      "semillas": [
-      "analista de datos e"
+      "analista de datos d"
      ],
      "grupos": [
       "alfabeto"
@@ -7981,26 +7979,6 @@
       "google"
      ],
      "relevancia_max": 558,
-     "apariciones": 1,
-     "pos_promedio": 7.0,
-     "pos_mejor": 7,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "otros"
-    },
-    {
-     "texto": "analista de datos pepsico",
-     "semillas": [
-      "analista de datos p"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 600,
      "apariciones": 1,
      "pos_promedio": 7.0,
      "pos_mejor": 7,
@@ -8061,26 +8039,6 @@
       "google"
      ],
      "relevancia_max": 600,
-     "apariciones": 1,
-     "pos_promedio": 8.0,
-     "pos_mejor": 8,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "otros"
-    },
-    {
-     "texto": "analista de datos desde ayer",
-     "semillas": [
-      "analista de datos d"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 557,
      "apariciones": 1,
      "pos_promedio": 8.0,
      "pos_mejor": 8,
@@ -8193,6 +8151,26 @@
      "texto": "analista de datos o cientifico de datos",
      "semillas": [
       "analista de datos o"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "pos_promedio": 8.0,
+     "pos_mejor": 8,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analista de datos pepsico",
+     "semillas": [
+      "analista de datos p"
      ],
      "grupos": [
       "alfabeto"
@@ -8530,26 +8508,6 @@
      "intencion": "otros"
     },
     {
-     "texto": "analista de datos que debe saber",
-     "semillas": [
-      "analista de datos q"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 554,
-     "apariciones": 1,
-     "pos_promedio": 10.0,
-     "pos_mejor": 10,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "otros"
-    },
-    {
      "texto": "analista de datos valparaiso",
      "semillas": [
       "analista de datos v"
@@ -8593,26 +8551,6 @@
      "texto": "analista de datos agropecuarios",
      "semillas": [
       "analista de datos a"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 554,
-     "apariciones": 1,
-     "pos_promedio": 11.0,
-     "pos_mejor": 11,
-     "veces_top3": 0,
-     "veces_top10": 0,
-     "instituciones": [],
-     "intencion": "otros"
-    },
-    {
-     "texto": "analista de datos en los últimos 3 días",
-     "semillas": [
-      "analista de datos e"
      ],
      "grupos": [
       "alfabeto"
@@ -8750,6 +8688,46 @@
      "intencion": "otros"
     },
     {
+     "texto": "analista de datos puerto montt",
+     "semillas": [
+      "analista de datos p"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "pos_promedio": 11.0,
+     "pos_mejor": 11,
+     "veces_top3": 0,
+     "veces_top10": 0,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analista de datos que debe saber",
+     "semillas": [
+      "analista de datos q"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "pos_promedio": 11.0,
+     "pos_mejor": 11,
+     "veces_top3": 0,
+     "veces_top10": 0,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
      "texto": "analista de datos tecnico",
      "semillas": [
       "analista de datos t"
@@ -8813,6 +8791,26 @@
      "texto": "analista de datos bcp",
      "semillas": [
       "analista de datos b"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "pos_promedio": 12.0,
+     "pos_mejor": 12,
+     "veces_top3": 0,
+     "veces_top10": 0,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analista de datos en la última semana",
+     "semillas": [
+      "analista de datos e"
      ],
      "grupos": [
       "alfabeto"
@@ -8933,26 +8931,6 @@
      "texto": "analista de datos nivel 1 leccion 1 respuestas",
      "semillas": [
       "analista de datos n"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 553,
-     "apariciones": 1,
-     "pos_promedio": 12.0,
-     "pos_mejor": 12,
-     "veces_top3": 0,
-     "veces_top10": 0,
-     "instituciones": [],
-     "intencion": "otros"
-    },
-    {
-     "texto": "analista de datos puerto montt",
-     "semillas": [
-      "analista de datos p"
      ],
      "grupos": [
       "alfabeto"
@@ -9153,6 +9131,26 @@
      "texto": "analista de datos administrativo",
      "semillas": [
       "analista de datos a"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "pos_promedio": 14.0,
+     "pos_mejor": 14,
+     "veces_top3": 0,
+     "veces_top10": 0,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analista de datos comerciales",
+     "semillas": [
+      "analista de datos c"
      ],
      "grupos": [
       "alfabeto"
@@ -9430,6 +9428,26 @@
      "intencion": "otros"
     },
     {
+     "texto": "analista de datos pregrado",
+     "semillas": [
+      "analista de datos p"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "pos_promedio": 15.0,
+     "pos_mejor": 15,
+     "veces_top3": 0,
+     "veces_top10": 0,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
      "texto": "que profesion es analista de datos",
      "semillas": [
       "qué es analista de datos"
@@ -9457,15 +9475,15 @@
   {
    "buscador": "pendiente",
    "consulta": "analista de datos",
-   "estado": "rechazado",
-   "motivo": "el buscador no devolvió resultados",
+   "estado": "pendiente",
+   "motivo": "sin fuente automática: leer la página de un buscador con un script no es confiable (probado el 2026-11-16). Falta elegir una API oficial con clave gratuita (PLAN.md, fase F5).",
    "resultados": []
   },
   {
    "buscador": "pendiente",
    "consulta": "analista de datos carrera uruguay",
-   "estado": "rechazado",
-   "motivo": "el buscador no devolvió resultados",
+   "estado": "pendiente",
+   "motivo": "sin fuente automática: leer la página de un buscador con un script no es confiable (probado el 2026-11-16). Falta elegir una API oficial con clave gratuita (PLAN.md, fase F5).",
    "resultados": []
   }
  ],
@@ -9490,8 +9508,8 @@
     "grupo": "youtube",
     "fuente": "youtube",
     "texto": "estudiar data analytics",
-    "pos": 5,
-    "de": 6,
+    "pos": 4,
+    "de": 5,
     "relevancia": 551,
     "motivo": "no nombra el tema"
    },
@@ -9500,8 +9518,8 @@
     "grupo": "youtube",
     "fuente": "youtube",
     "texto": "estudiar data science",
-    "pos": 6,
-    "de": 6,
+    "pos": 5,
+    "de": 5,
     "relevancia": 550,
     "motivo": "no nombra el tema"
    }
@@ -9513,6 +9531,5 @@
   "bing": "https://www.bing.com/search?cc=UY&setlang=es&q=analista%20de%20datos",
   "duckduckgo": "https://duckduckgo.com/?kl=uy-es&q=analista%20de%20datos",
   "youtube": "https://www.youtube.com/results?search_query=analista%20de%20datos"
- },
- "reprocesado_utc": "2026-11-18T12:41:22Z"
+ }
 }

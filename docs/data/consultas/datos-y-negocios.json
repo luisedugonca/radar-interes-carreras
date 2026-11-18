@@ -1,8 +1,8 @@
 {
  "tema": "datos y negocios",
  "slug": "datos-y-negocios",
- "run_id": "20261116T222422Z_datos-y-negocios",
- "generado_utc": "2026-11-16T22:24:22Z",
+ "run_id": "20261118T160510Z_datos-y-negocios",
+ "generado_utc": "2026-11-18T16:05:10Z",
  "pais": "Uruguay",
  "reglas_version": "2026-11-16b",
  "fuentes": [
@@ -20,11 +20,11 @@
   }
  ],
  "resumen": {
-  "sugerencias_unicas": 43,
+  "sugerencias_unicas": 44,
   "intenciones_con_datos": 5,
   "fuera_de_uruguay": 2,
-  "fuera_de_uruguay_pct": 4.7,
-  "sin_clasificar": 9,
+  "fuera_de_uruguay_pct": 4.5,
+  "sin_clasificar": 10,
   "instituciones_uy": [
    {
     "id": "UCU",
@@ -39,11 +39,11 @@
    "familia": 1,
    "estudiante": 26,
    "ambos": 5,
-   "ninguno": 11
+   "ninguno": 12
   },
   "top10_validos": 0,
-  "top10_rechazados": 2,
-  "top10_pendientes": 0
+  "top10_rechazados": 0,
+  "top10_pendientes": 2
  },
  "intenciones": [
   {
@@ -53,7 +53,7 @@
    "quien": "ninguno",
    "que_es": "La sugerencia nombra un país o una universidad de otro país. No es demanda local.",
    "total": 2,
-   "pct": 4.7,
+   "pct": 4.5,
    "apariciones_total": 2,
    "veces_top3_total": 0,
    "sugerencias": [
@@ -232,7 +232,7 @@
    "quien": "ambos",
    "que_es": "Lugar o institución de Uruguay: universidades y ciudades.",
    "total": 5,
-   "pct": 11.6,
+   "pct": 11.4,
    "apariciones_total": 40,
    "veces_top3_total": 21,
    "sugerencias": [
@@ -392,9 +392,9 @@
    "quien": "estudiante",
    "que_es": "Qué nivel buscan: carrera, licenciatura, curso, posgrado.",
    "total": 5,
-   "pct": 11.6,
+   "pct": 11.4,
    "apariciones_total": 7,
-   "veces_top3_total": 5,
+   "veces_top3_total": 4,
    "sugerencias": [
     {
      "texto": "licenciatura en datos y negocios",
@@ -450,11 +450,11 @@
      "fuentes": [
       "youtube"
      ],
-     "relevancia_max": 551,
+     "relevancia_max": 550,
      "apariciones": 1,
-     "pos_promedio": 3.0,
-     "pos_mejor": 3,
-     "veces_top3": 1,
+     "pos_promedio": 4.0,
+     "pos_mejor": 4,
+     "veces_top3": 0,
      "veces_top10": 1,
      "instituciones": [],
      "intencion": "formato"
@@ -508,7 +508,7 @@
    "quien": "estudiante",
    "que_es": "Con qué otros temas se busca junto: inteligencia artificial, negocios, salud. Sirve para decidir el nombre y el foco de una carrera.",
    "total": 20,
-   "pct": 46.5,
+   "pct": 45.5,
    "apariciones_total": 31,
    "veces_top3_total": 14,
    "sugerencias": [
@@ -946,10 +946,10 @@
    "color": "#9aa4b8",
    "quien": "ninguno",
    "que_es": "No coincide con ninguna regla. Si este grupo crece, falta una regla.",
-   "total": 9,
-   "pct": 20.9,
-   "apariciones_total": 38,
-   "veces_top3_total": 14,
+   "total": 10,
+   "pct": 22.7,
+   "apariciones_total": 39,
+   "veces_top3_total": 15,
    "sugerencias": [
     {
      "texto": "datos en la empresa",
@@ -1129,6 +1129,26 @@
      "intencion": "otros"
     },
     {
+     "texto": "datos curiososç",
+     "semillas": [
+      "datos y negocios carrera"
+     ],
+     "grupos": [
+      "youtube"
+     ],
+     "fuentes": [
+      "youtube"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "pos_promedio": 3.0,
+     "pos_mejor": 3,
+     "veces_top3": 1,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
      "texto": "datos necesarios para enviar por dac",
      "semillas": [
       "datos y negocios requisitos"
@@ -1176,15 +1196,15 @@
   {
    "buscador": "pendiente",
    "consulta": "datos y negocios",
-   "estado": "rechazado",
-   "motivo": "el buscador no devolvió resultados",
+   "estado": "pendiente",
+   "motivo": "sin fuente automática: leer la página de un buscador con un script no es confiable (probado el 2026-11-16). Falta elegir una API oficial con clave gratuita (PLAN.md, fase F5).",
    "resultados": []
   },
   {
    "buscador": "pendiente",
    "consulta": "datos y negocios carrera uruguay",
-   "estado": "rechazado",
-   "motivo": "el buscador no devolvió resultados",
+   "estado": "pendiente",
+   "motivo": "sin fuente automática: leer la página de un buscador con un script no es confiable (probado el 2026-11-16). Falta elegir una API oficial con clave gratuita (PLAN.md, fase F5).",
    "resultados": []
   }
  ],
@@ -1249,9 +1269,9 @@
     "grupo": "youtube",
     "fuente": "youtube",
     "texto": "estudiar estadistica",
-    "pos": 4,
+    "pos": 3,
     "de": 4,
-    "relevancia": 550,
+    "relevancia": 551,
     "motivo": "no nombra el tema"
    }
   ]
@@ -1262,6 +1282,5 @@
   "bing": "https://www.bing.com/search?cc=UY&setlang=es&q=datos%20y%20negocios",
   "duckduckgo": "https://duckduckgo.com/?kl=uy-es&q=datos%20y%20negocios",
   "youtube": "https://www.youtube.com/results?search_query=datos%20y%20negocios"
- },
- "reprocesado_utc": "2026-11-18T12:41:23Z"
+ }
 }

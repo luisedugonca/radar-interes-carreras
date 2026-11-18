@@ -1,8 +1,8 @@
 {
  "tema": "marketing digital",
  "slug": "marketing-digital",
- "run_id": "20261118T132531Z_marketing-digital",
- "generado_utc": "2026-11-18T13:25:31Z",
+ "run_id": "20261118T160658Z_marketing-digital",
+ "generado_utc": "2026-11-18T16:06:58Z",
  "pais": "Uruguay",
  "reglas_version": "2026-11-16b",
  "fuentes": [
@@ -20,11 +20,11 @@
   }
  ],
  "resumen": {
-  "sugerencias_unicas": 579,
+  "sugerencias_unicas": 578,
   "intenciones_con_datos": 10,
   "fuera_de_uruguay": 136,
   "fuera_de_uruguay_pct": 23.5,
-  "sin_clasificar": 160,
+  "sin_clasificar": 164,
   "instituciones_uy": [
    {
     "id": "Udelar",
@@ -48,10 +48,10 @@
    }
   ],
   "quien_supuesto": {
-   "familia": 69,
+   "familia": 65,
    "estudiante": 145,
    "ambos": 62,
-   "ninguno": 303
+   "ninguno": 306
   },
   "top10_validos": 0,
   "top10_rechazados": 0,
@@ -147,6 +147,26 @@
       "google"
      ],
      "relevancia_max": 601,
+     "apariciones": 1,
+     "pos_promedio": 1.0,
+     "pos_mejor": 1,
+     "veces_top3": 1,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "dónde estudiar marketing digital en venezuela",
+     "semillas": [
+      "dónde estudiar marketing digital"
+     ],
+     "grupos": [
+      "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1250,
      "apariciones": 1,
      "pos_promedio": 1.0,
      "pos_mejor": 1,
@@ -396,26 +416,6 @@
      "intencion": "fuera_uy"
     },
     {
-     "texto": "dónde estudiar marketing digital en venezuela",
-     "semillas": [
-      "dónde estudiar marketing digital"
-     ],
-     "grupos": [
-      "preguntas"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 601,
-     "apariciones": 1,
-     "pos_promedio": 2.0,
-     "pos_mejor": 2,
-     "veces_top3": 1,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "fuera_uy"
-    },
-    {
      "texto": "estudiar marketing digital en chile",
      "semillas": [
       "estudiar marketing digital"
@@ -586,7 +586,7 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 600,
+     "relevancia_max": 601,
      "apariciones": 1,
      "pos_promedio": 3.0,
      "pos_mejor": 3,
@@ -786,7 +786,7 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 561,
+     "relevancia_max": 600,
      "apariciones": 1,
      "pos_promedio": 4.0,
      "pos_mejor": 4,
@@ -982,26 +982,6 @@
      ],
      "grupos": [
       "estudiante"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 560,
-     "apariciones": 1,
-     "pos_promedio": 5.0,
-     "pos_mejor": 5,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "fuera_uy"
-    },
-    {
-     "texto": "marketing digital para el sistema moda sena",
-     "semillas": [
-      "marketing digital p"
-     ],
-     "grupos": [
-      "alfabeto"
      ],
      "fuentes": [
       "google"
@@ -1576,6 +1556,26 @@
      "intencion": "fuera_uy"
     },
     {
+     "texto": "marketing digital sena 2026",
+     "semillas": [
+      "marketing digital s"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "pos_promedio": 8.0,
+     "pos_mejor": 8,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
      "texto": "marketing digital universidades bogotá",
      "semillas": [
       "marketing digital u"
@@ -1739,26 +1739,6 @@
      "texto": "marketing digital madrid",
      "semillas": [
       "marketing digital m"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 556,
-     "apariciones": 1,
-     "pos_promedio": 9.0,
-     "pos_mejor": 9,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "fuera_uy"
-    },
-    {
-     "texto": "marketing digital sena 2026",
-     "semillas": [
-      "marketing digital s"
      ],
      "grupos": [
       "alfabeto"
@@ -2076,6 +2056,26 @@
      "intencion": "fuera_uy"
     },
     {
+     "texto": "marketing digital santo tomas",
+     "semillas": [
+      "marketing digital s"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "pos_promedio": 11.0,
+     "pos_mejor": 11,
+     "veces_top3": 0,
+     "veces_top10": 0,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
      "texto": "marketing digital uba",
      "semillas": [
       "marketing digital u"
@@ -2276,6 +2276,26 @@
      "intencion": "fuera_uy"
     },
     {
+     "texto": "marketing digital paraguay",
+     "semillas": [
+      "marketing digital p"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "pos_promedio": 12.0,
+     "pos_mejor": 12,
+     "veces_top3": 0,
+     "veces_top10": 0,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
      "texto": "marketing digital resistencia chaco",
      "semillas": [
       "marketing digital r"
@@ -2359,46 +2379,6 @@
      "texto": "marketing digital en el sena",
      "semillas": [
       "marketing digital e"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 552,
-     "apariciones": 1,
-     "pos_promedio": 13.0,
-     "pos_mejor": 13,
-     "veces_top3": 0,
-     "veces_top10": 0,
-     "instituciones": [],
-     "intencion": "fuera_uy"
-    },
-    {
-     "texto": "marketing digital paraguay",
-     "semillas": [
-      "marketing digital p"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 552,
-     "apariciones": 1,
-     "pos_promedio": 13.0,
-     "pos_mejor": 13,
-     "veces_top3": 0,
-     "veces_top10": 0,
-     "instituciones": [],
-     "intencion": "fuera_uy"
-    },
-    {
-     "texto": "marketing digital santo tomas",
-     "semillas": [
-      "marketing digital s"
      ],
      "grupos": [
       "alfabeto"
@@ -2579,6 +2559,26 @@
      "texto": "marketing digital uncuyo",
      "semillas": [
       "marketing digital u"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "pos_promedio": 14.0,
+     "pos_mejor": 14,
+     "veces_top3": 0,
+     "veces_top10": 0,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "marketing digital virtual colombia",
+     "semillas": [
+      "marketing digital v"
      ],
      "grupos": [
       "alfabeto"
@@ -2803,9 +2803,9 @@
    "color": "#fb923c",
    "quien": "ninguno",
    "que_es": "La frase habla de un negocio propio o de ganar dinero, no de estudiar. Si este grupo pesa mucho, el tema no se entiende como carrera.",
-   "total": 7,
-   "pct": 1.2,
-   "apariciones_total": 7,
+   "total": 6,
+   "pct": 1.0,
+   "apariciones_total": 6,
    "veces_top3_total": 1,
    "sugerencias": [
     {
@@ -2883,26 +2883,6 @@
      "apariciones": 1,
      "pos_promedio": 5.0,
      "pos_mejor": 5,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "emprender"
-    },
-    {
-     "texto": "marketing digital se puede trabajar desde casa",
-     "semillas": [
-      "marketing digital s"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 555,
-     "apariciones": 1,
-     "pos_promedio": 10.0,
-     "pos_mejor": 10,
      "veces_top3": 0,
      "veces_top10": 1,
      "instituciones": [],
@@ -3141,29 +3121,6 @@
      "intencion": "costo"
     },
     {
-     "texto": "dónde estudiar marketing digital gratis",
-     "semillas": [
-      "dónde estudiar marketing digital",
-      "estudiar marketing digital"
-     ],
-     "grupos": [
-      "preguntas",
-      "youtube"
-     ],
-     "fuentes": [
-      "google",
-      "youtube"
-     ],
-     "relevancia_max": 850,
-     "apariciones": 2,
-     "pos_promedio": 6.5,
-     "pos_mejor": 1,
-     "veces_top3": 1,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "costo"
-    },
-    {
      "texto": "marketing digital gratis",
      "semillas": [
       "marketing digital",
@@ -3180,6 +3137,29 @@
      "apariciones": 2,
      "pos_promedio": 6.5,
      "pos_mejor": 1,
+     "veces_top3": 1,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "costo"
+    },
+    {
+     "texto": "dónde estudiar marketing digital gratis",
+     "semillas": [
+      "dónde estudiar marketing digital",
+      "estudiar marketing digital"
+     ],
+     "grupos": [
+      "preguntas",
+      "youtube"
+     ],
+     "fuentes": [
+      "google",
+      "youtube"
+     ],
+     "relevancia_max": 850,
+     "apariciones": 2,
+     "pos_promedio": 7.0,
+     "pos_mejor": 2,
      "veces_top3": 1,
      "veces_top10": 1,
      "instituciones": [],
@@ -3294,6 +3274,26 @@
      ],
      "grupos": [
       "familia"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 560,
+     "apariciones": 1,
+     "pos_promedio": 5.0,
+     "pos_mejor": 5,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "costo"
+    },
+    {
+     "texto": "marketing digital y redes sociales curso gratis",
+     "semillas": [
+      "marketing digital y"
+     ],
+     "grupos": [
+      "alfabeto"
      ],
      "fuentes": [
       "google"
@@ -3628,26 +3628,6 @@
      "intencion": "costo"
     },
     {
-     "texto": "marketing digital y redes sociales curso gratis",
-     "semillas": [
-      "marketing digital y"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 555,
-     "apariciones": 1,
-     "pos_promedio": 10.0,
-     "pos_mejor": 10,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "costo"
-    },
-    {
      "texto": "costo marketing digital redes sociales",
      "semillas": [
       "marketing digital costo"
@@ -3748,6 +3728,26 @@
      "intencion": "costo"
     },
     {
+     "texto": "marketing digital precios",
+     "semillas": [
+      "marketing digital p"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "pos_promedio": 14.0,
+     "pos_mejor": 14,
+     "veces_top3": 0,
+     "veces_top10": 0,
+     "instituciones": [],
+     "intencion": "costo"
+    },
+    {
      "texto": "corso digital marketing costo",
      "semillas": [
       "marketing digital costo"
@@ -3806,26 +3806,6 @@
      "veces_top10": 0,
      "instituciones": [],
      "intencion": "costo"
-    },
-    {
-     "texto": "marketing digital precios",
-     "semillas": [
-      "marketing digital p"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 550,
-     "apariciones": 1,
-     "pos_promedio": 15.0,
-     "pos_mejor": 15,
-     "veces_top3": 0,
-     "veces_top10": 0,
-     "instituciones": [],
-     "intencion": "costo"
     }
    ]
   },
@@ -3835,9 +3815,9 @@
    "color": "#3ccf91",
    "quien": "ambos",
    "que_es": "Para qué sirve: trabajo, sueldo, demanda.",
-   "total": 39,
-   "pct": 6.7,
-   "apariciones_total": 45,
+   "total": 40,
+   "pct": 6.9,
+   "apariciones_total": 46,
    "veces_top3_total": 10,
    "sugerencias": [
     {
@@ -4409,9 +4389,9 @@
      "intencion": "salida"
     },
     {
-     "texto": "marketing digital remoto trabajo",
+     "texto": "marketing digital para que sirve",
      "semillas": [
-      "marketing digital r"
+      "marketing digital p"
      ],
      "grupos": [
       "alfabeto"
@@ -4429,9 +4409,9 @@
      "intencion": "salida"
     },
     {
-     "texto": "marketing digital para que sirve",
+     "texto": "marketing digital remoto trabajo",
      "semillas": [
-      "marketing digital p"
+      "marketing digital r"
      ],
      "grupos": [
       "alfabeto"
@@ -4439,10 +4419,10 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 556,
+     "relevancia_max": 557,
      "apariciones": 1,
-     "pos_promedio": 9.0,
-     "pos_mejor": 9,
+     "pos_promedio": 8.0,
+     "pos_mejor": 8,
      "veces_top3": 0,
      "veces_top10": 1,
      "instituciones": [],
@@ -4589,6 +4569,26 @@
      "intencion": "salida"
     },
     {
+     "texto": "marketing digital salario",
+     "semillas": [
+      "marketing digital s"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "pos_promedio": 12.0,
+     "pos_mejor": 12,
+     "veces_top3": 0,
+     "veces_top10": 0,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
      "texto": "estudiar marketing digital para que sirve",
      "semillas": [
       "estudiar marketing digital"
@@ -4609,7 +4609,7 @@
      "intencion": "salida"
     },
     {
-     "texto": "marketing digital salario",
+     "texto": "marketing digital salida laboral",
      "semillas": [
       "marketing digital s"
      ],
@@ -4805,6 +4805,26 @@
      "intencion": "modalidad"
     },
     {
+     "texto": "marketing digital presencial",
+     "semillas": [
+      "marketing digital p"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 559,
+     "apariciones": 1,
+     "pos_promedio": 6.0,
+     "pos_mejor": 6,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "modalidad"
+    },
+    {
      "texto": "tecnicatura marketing digital a distancia",
      "semillas": [
       "marketing digital a distancia"
@@ -4831,26 +4851,6 @@
      ],
      "grupos": [
       "estudiante"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 557,
-     "apariciones": 1,
-     "pos_promedio": 8.0,
-     "pos_mejor": 8,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "modalidad"
-    },
-    {
-     "texto": "marketing digital presencial",
-     "semillas": [
-      "marketing digital p"
-     ],
-     "grupos": [
-      "alfabeto"
      ],
      "fuentes": [
       "google"
@@ -5686,9 +5686,9 @@
    "color": "#ff6fa3",
    "quien": "familia",
    "que_es": "Dudas antes de elegir: mejor opción, opiniones, si vale la pena.",
-   "total": 27,
-   "pct": 4.7,
-   "apariciones_total": 27,
+   "total": 23,
+   "pct": 4.0,
+   "apariciones_total": 23,
    "veces_top3_total": 7,
    "sugerencias": [
     {
@@ -5832,26 +5832,6 @@
      "intencion": "comparar"
     },
     {
-     "texto": "marketing digital y community manager es lo mismo",
-     "semillas": [
-      "marketing digital y"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 561,
-     "apariciones": 1,
-     "pos_promedio": 4.0,
-     "pos_mejor": 4,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "comparar"
-    },
-    {
      "texto": "marketing digital ventajas y desventajas",
      "semillas": [
       "marketing digital v"
@@ -5863,26 +5843,6 @@
       "google"
      ],
      "relevancia_max": 600,
-     "apariciones": 1,
-     "pos_promedio": 5.0,
-     "pos_mejor": 5,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "comparar"
-    },
-    {
-     "texto": "marketing digital y mercadotecnia es lo mismo",
-     "semillas": [
-      "marketing digital y"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 560,
      "apariciones": 1,
      "pos_promedio": 5.0,
      "pos_mejor": 5,
@@ -5952,46 +5912,6 @@
      "intencion": "comparar"
     },
     {
-     "texto": "marketing digital y publicidad es lo mismo",
-     "semillas": [
-      "marketing digital y"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 558,
-     "apariciones": 1,
-     "pos_promedio": 7.0,
-     "pos_mejor": 7,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "comparar"
-    },
-    {
-     "texto": "marketing digital y diseño gráfico es lo mismo",
-     "semillas": [
-      "marketing digital y"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 557,
-     "apariciones": 1,
-     "pos_promedio": 8.0,
-     "pos_mejor": 8,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "comparar"
-    },
-    {
      "texto": "osyris marketing digital opiniones",
      "semillas": [
       "marketing digital opiniones"
@@ -6052,26 +5972,6 @@
      "intencion": "comparar"
     },
     {
-     "texto": "marketing digital y mercadeo es lo mismo",
-     "semillas": [
-      "marketing digital y"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 556,
-     "apariciones": 1,
-     "pos_promedio": 9.0,
-     "pos_mejor": 9,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "comparar"
-    },
-    {
      "texto": "vamos bien marketing digital opiniones",
      "semillas": [
       "marketing digital opiniones"
@@ -6112,7 +6012,7 @@
      "intencion": "comparar"
     },
     {
-     "texto": "marketing digital y publicidad y mercadeo es lo mismo",
+     "texto": "marketing digital y community manager es lo mismo",
      "semillas": [
       "marketing digital y"
      ],
@@ -6155,6 +6055,26 @@
      "texto": "marketing digital ventajas",
      "semillas": [
       "marketing digital v"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "pos_promedio": 13.0,
+     "pos_mejor": 13,
+     "veces_top3": 0,
+     "veces_top10": 0,
+     "instituciones": [],
+     "intencion": "comparar"
+    },
+    {
+     "texto": "marketing digital y mercadotecnia es lo mismo",
+     "semillas": [
+      "marketing digital y"
      ],
      "grupos": [
       "alfabeto"
@@ -6239,9 +6159,9 @@
    "color": "#35c9d6",
    "quien": "ambos",
    "que_es": "Lugar o institución de Uruguay: universidades y ciudades.",
-   "total": 23,
-   "pct": 4.0,
-   "apariciones_total": 34,
+   "total": 22,
+   "pct": 3.8,
+   "apariciones_total": 33,
    "veces_top3_total": 10,
    "sugerencias": [
     {
@@ -6628,26 +6548,6 @@
       "google"
      ],
      "relevancia_max": 551,
-     "apariciones": 1,
-     "pos_promedio": 8.0,
-     "pos_mejor": 8,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "donde"
-    },
-    {
-     "texto": "marketing digital se estudia en la universidad",
-     "semillas": [
-      "marketing digital s"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 557,
      "apariciones": 1,
      "pos_promedio": 8.0,
      "pos_mejor": 8,
@@ -7060,26 +6960,6 @@
      "intencion": "formato"
     },
     {
-     "texto": "marketing digital y comercio electrónico carrera",
-     "semillas": [
-      "marketing digital y"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 559,
-     "apariciones": 1,
-     "pos_promedio": 6.0,
-     "pos_mejor": 6,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "formato"
-    },
-    {
      "texto": "que es marketing digital carrera",
      "semillas": [
       "qué es marketing digital"
@@ -7173,6 +7053,26 @@
       "youtube"
      ],
      "relevancia_max": 601,
+     "apariciones": 1,
+     "pos_promedio": 10.0,
+     "pos_mejor": 10,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "marketing digital y comercio electrónico carrera",
+     "semillas": [
+      "marketing digital y"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
      "apariciones": 1,
      "pos_promedio": 10.0,
      "pos_mejor": 10,
@@ -7360,7 +7260,7 @@
      "intencion": "temas"
     },
     {
-     "texto": "qué es marketing digital con ia",
+     "texto": "que es marketing digital y comercio electrónico",
      "semillas": [
       "qué es marketing digital"
      ],
@@ -7400,7 +7300,7 @@
      "intencion": "temas"
     },
     {
-     "texto": "que es marketing digital y comercio electrónico",
+     "texto": "qué es marketing digital con ia",
      "semillas": [
       "qué es marketing digital"
      ],
@@ -7500,6 +7400,26 @@
      "intencion": "temas"
     },
     {
+     "texto": "marketing digital y negocios digitales",
+     "semillas": [
+      "marketing digital y"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 1,
+     "pos_promedio": 7.0,
+     "pos_mejor": 7,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
      "texto": "marketing digital e inteligencia artificial",
      "semillas": [
       "marketing digital e"
@@ -7543,26 +7463,6 @@
      "texto": "digital.marketing job description",
      "semillas": [
       "marketing digital j"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 552,
-     "apariciones": 1,
-     "pos_promedio": 13.0,
-     "pos_mejor": 13,
-     "veces_top3": 0,
-     "veces_top10": 0,
-     "instituciones": [],
-     "intencion": "temas"
-    },
-    {
-     "texto": "marketing digital y negocios digitales",
-     "semillas": [
-      "marketing digital y"
      ],
      "grupos": [
       "alfabeto"
@@ -7668,9 +7568,9 @@
    "quien": "estudiante",
    "que_es": "Contenido para aprender solo: qué es, libros, herramientas, videos.",
    "total": 50,
-   "pct": 8.6,
+   "pct": 8.7,
    "apariciones_total": 57,
-   "veces_top3_total": 15,
+   "veces_top3_total": 16,
    "sugerencias": [
     {
      "texto": "marketing digital que es y como funciona",
@@ -7947,7 +7847,27 @@
      "intencion": "aprender"
     },
     {
-     "texto": "qué es marketing digital y cómo funciona",
+     "texto": "marketing digital pdf",
+     "semillas": [
+      "marketing digital p"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "pos_promedio": 3.0,
+     "pos_mejor": 3,
+     "veces_top3": 1,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "qué es marketing digital para el sistema moda",
      "semillas": [
       "qué es marketing digital"
      ],
@@ -7962,26 +7882,6 @@
      "pos_promedio": 3.0,
      "pos_mejor": 3,
      "veces_top3": 1,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "aprender"
-    },
-    {
-     "texto": "marketing digital pdf",
-     "semillas": [
-      "marketing digital p"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 600,
-     "apariciones": 1,
-     "pos_promedio": 4.0,
-     "pos_mejor": 4,
-     "veces_top3": 0,
      "veces_top10": 1,
      "instituciones": [],
      "intencion": "aprender"
@@ -8007,7 +7907,7 @@
      "intencion": "aprender"
     },
     {
-     "texto": "qué es marketing digital para el sistema moda",
+     "texto": "qué es marketing digital y cómo funciona",
      "semillas": [
       "qué es marketing digital"
      ],
@@ -8327,6 +8227,26 @@
      "intencion": "aprender"
     },
     {
+     "texto": "marketing digital según philip kotler pdf",
+     "semillas": [
+      "marketing digital s"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "pos_promedio": 10.0,
+     "pos_mejor": 10,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
      "texto": "marketing digital wallpaper 4k",
      "semillas": [
       "marketing digital w"
@@ -8367,6 +8287,26 @@
      "intencion": "aprender"
     },
     {
+     "texto": "marketing digital para principiantes pdf",
+     "semillas": [
+      "marketing digital p"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "pos_promedio": 11.0,
+     "pos_mejor": 11,
+     "veces_top3": 0,
+     "veces_top10": 0,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
      "texto": "marketing digital en ingles",
      "semillas": [
       "marketing digital e"
@@ -8390,46 +8330,6 @@
      "texto": "marketing digital google activate",
      "semillas": [
       "marketing digital g"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 553,
-     "apariciones": 1,
-     "pos_promedio": 12.0,
-     "pos_mejor": 12,
-     "veces_top3": 0,
-     "veces_top10": 0,
-     "instituciones": [],
-     "intencion": "aprender"
-    },
-    {
-     "texto": "marketing digital para principiantes pdf",
-     "semillas": [
-      "marketing digital p"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 553,
-     "apariciones": 1,
-     "pos_promedio": 12.0,
-     "pos_mejor": 12,
-     "veces_top3": 0,
-     "veces_top10": 0,
-     "instituciones": [],
-     "intencion": "aprender"
-    },
-    {
-     "texto": "marketing digital según philip kotler pdf",
-     "semillas": [
-      "marketing digital s"
      ],
      "grupos": [
       "alfabeto"
@@ -8694,10 +8594,10 @@
    "color": "#9aa4b8",
    "quien": "ninguno",
    "que_es": "No coincide con ninguna regla. Si este grupo crece, falta una regla.",
-   "total": 160,
-   "pct": 27.6,
-   "apariciones_total": 168,
-   "veces_top3_total": 25,
+   "total": 164,
+   "pct": 28.4,
+   "apariciones_total": 173,
+   "veces_top3_total": 24,
    "sugerencias": [
     {
      "texto": "marketing digital y redes sociales",
@@ -8781,10 +8681,10 @@
       "google",
       "youtube"
      ],
-     "relevancia_max": 559,
+     "relevancia_max": 600,
      "apariciones": 2,
-     "pos_promedio": 6.5,
-     "pos_mejor": 6,
+     "pos_promedio": 5.5,
+     "pos_mejor": 4,
      "veces_top3": 0,
      "veces_top10": 2,
      "instituciones": [],
@@ -8827,12 +8727,35 @@
       "google",
       "youtube"
      ],
-     "relevancia_max": 558,
+     "relevancia_max": 560,
      "apariciones": 2,
-     "pos_promedio": 8.5,
-     "pos_mejor": 7,
+     "pos_promedio": 7.5,
+     "pos_mejor": 5,
      "veces_top3": 0,
      "veces_top10": 2,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "marketing digital y community manager",
+     "semillas": [
+      "marketing digital y",
+      "marketing digital"
+     ],
+     "grupos": [
+      "alfabeto",
+      "youtube"
+     ],
+     "fuentes": [
+      "google",
+      "youtube"
+     ],
+     "relevancia_max": 561,
+     "apariciones": 2,
+     "pos_promedio": 9.5,
+     "pos_mejor": 4,
+     "veces_top3": 0,
+     "veces_top10": 1,
      "instituciones": [],
      "intencion": "otros"
     },
@@ -9190,26 +9113,6 @@
       "google"
      ],
      "relevancia_max": 562,
-     "apariciones": 1,
-     "pos_promedio": 3.0,
-     "pos_mejor": 3,
-     "veces_top3": 1,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "otros"
-    },
-    {
-     "texto": "marketing digital para el sistema de moda",
-     "semillas": [
-      "marketing digital p"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 601,
      "apariciones": 1,
      "pos_promedio": 3.0,
      "pos_mejor": 3,
@@ -9779,6 +9682,26 @@
      "intencion": "otros"
     },
     {
+     "texto": "marketing digital y ecommerce",
+     "semillas": [
+      "marketing digital y"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 559,
+     "apariciones": 1,
+     "pos_promedio": 6.0,
+     "pos_mejor": 6,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
      "texto": "marketing digital zara",
      "semillas": [
       "marketing digital z"
@@ -9862,6 +9785,26 @@
      "texto": "marketing digital joinville",
      "semillas": [
       "marketing digital j"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 1,
+     "pos_promedio": 7.0,
+     "pos_mejor": 7,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "marketing digital para el sistema de moda",
+     "semillas": [
+      "marketing digital p"
      ],
      "grupos": [
       "alfabeto"
@@ -10179,6 +10122,26 @@
      "intencion": "otros"
     },
     {
+     "texto": "marketing digital y ventas",
+     "semillas": [
+      "marketing digital y"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "pos_promedio": 8.0,
+     "pos_mejor": 8,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
      "texto": "marketing digital zamora",
      "semillas": [
       "marketing digital z"
@@ -10359,6 +10322,46 @@
      "intencion": "otros"
     },
     {
+     "texto": "marketing digital para dummies",
+     "semillas": [
+      "marketing digital p"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "pos_promedio": 9.0,
+     "pos_mejor": 9,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "marketing digital santander open academy",
+     "semillas": [
+      "marketing digital s"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "pos_promedio": 9.0,
+     "pos_mejor": 9,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
      "texto": "marketing digital videos",
      "semillas": [
       "marketing digital v"
@@ -10402,6 +10405,26 @@
      "texto": "marketing digital x social media",
      "semillas": [
       "marketing digital x"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "pos_promedio": 9.0,
+     "pos_mejor": 9,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "marketing digital y tradicional",
+     "semillas": [
+      "marketing digital y"
      ],
      "grupos": [
       "alfabeto"
@@ -10579,7 +10602,7 @@
      "intencion": "otros"
     },
     {
-     "texto": "marketing digital para dummies",
+     "texto": "marketing digital pereira",
      "semillas": [
       "marketing digital p"
      ],
@@ -10859,46 +10882,6 @@
      "intencion": "otros"
     },
     {
-     "texto": "marketing digital pereira",
-     "semillas": [
-      "marketing digital p"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 554,
-     "apariciones": 1,
-     "pos_promedio": 11.0,
-     "pos_mejor": 11,
-     "veces_top3": 0,
-     "veces_top10": 0,
-     "instituciones": [],
-     "intencion": "otros"
-    },
-    {
-     "texto": "marketing digital santander open academy",
-     "semillas": [
-      "marketing digital s"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 554,
-     "apariciones": 1,
-     "pos_promedio": 11.0,
-     "pos_mejor": 11,
-     "veces_top3": 0,
-     "veces_top10": 0,
-     "instituciones": [],
-     "intencion": "otros"
-    },
-    {
      "texto": "marketing digital tecnologia",
      "semillas": [
       "marketing digital t"
@@ -11139,7 +11122,7 @@
      "intencion": "otros"
     },
     {
-     "texto": "marketing digital y ecommerce",
+     "texto": "marketing digital y diseño grafico",
      "semillas": [
       "marketing digital y"
      ],
@@ -11359,9 +11342,49 @@
      "intencion": "otros"
     },
     {
+     "texto": "marketing digital pregrado",
+     "semillas": [
+      "marketing digital p"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "pos_promedio": 13.0,
+     "pos_mejor": 13,
+     "veces_top3": 0,
+     "veces_top10": 0,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
      "texto": "marketing digital ropa",
      "semillas": [
       "marketing digital r"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "pos_promedio": 13.0,
+     "pos_mejor": 13,
+     "veces_top3": 0,
+     "veces_top10": 0,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "marketing digital seo",
+     "semillas": [
+      "marketing digital s"
      ],
      "grupos": [
       "alfabeto"
@@ -11579,26 +11602,6 @@
      "intencion": "otros"
     },
     {
-     "texto": "marketing digital pregrado",
-     "semillas": [
-      "marketing digital p"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 551,
-     "apariciones": 1,
-     "pos_promedio": 14.0,
-     "pos_mejor": 14,
-     "veces_top3": 0,
-     "veces_top10": 0,
-     "instituciones": [],
-     "intencion": "otros"
-    },
-    {
      "texto": "marketing digital regala viajes",
      "semillas": [
       "marketing digital r"
@@ -11619,27 +11622,7 @@
      "intencion": "otros"
     },
     {
-     "texto": "marketing digital valor",
-     "semillas": [
-      "marketing digital v"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 551,
-     "apariciones": 1,
-     "pos_promedio": 14.0,
-     "pos_mejor": 14,
-     "veces_top3": 0,
-     "veces_top10": 0,
-     "instituciones": [],
-     "intencion": "otros"
-    },
-    {
-     "texto": "marketing digital y creación de contenido",
+     "texto": "marketing digital y comunicación",
      "semillas": [
       "marketing digital y"
      ],
@@ -11779,7 +11762,27 @@
      "intencion": "otros"
     },
     {
-     "texto": "marketing digital seo",
+     "texto": "marketing digital para pymes",
+     "semillas": [
+      "marketing digital p"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "pos_promedio": 15.0,
+     "pos_mejor": 15,
+     "veces_top3": 0,
+     "veces_top10": 0,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "marketing digital segun autores",
      "semillas": [
       "marketing digital s"
      ],
@@ -11839,7 +11842,7 @@
      "intencion": "otros"
     },
     {
-     "texto": "marketing digital valledupar",
+     "texto": "marketing digital valor",
      "semillas": [
       "marketing digital v"
      ],
@@ -11859,27 +11862,7 @@
      "intencion": "otros"
     },
     {
-     "texto": "marketing digital y community manager",
-     "semillas": [
-      "marketing digital"
-     ],
-     "grupos": [
-      "youtube"
-     ],
-     "fuentes": [
-      "youtube"
-     ],
-     "relevancia_max": 550,
-     "apariciones": 1,
-     "pos_promedio": 15.0,
-     "pos_mejor": 15,
-     "veces_top3": 0,
-     "veces_top10": 0,
-     "instituciones": [],
-     "intencion": "otros"
-    },
-    {
-     "texto": "marketing digital y ventas",
+     "texto": "marketing digital y growth hacking",
      "semillas": [
       "marketing digital y"
      ],

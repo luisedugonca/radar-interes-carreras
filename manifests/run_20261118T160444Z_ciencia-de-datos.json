@@ -1,0 +1,211 @@
+{
+ "run_id": "20261118T160444Z_ciencia-de-datos",
+ "tema": "ciencia de datos",
+ "inicio_utc": "2026-11-18T16:04:44Z",
+ "fin_utc": "2026-11-18T16:05:00Z",
+ "reglas_usadas": {
+  "version": "2026-11-16b",
+  "nota": "Fuente única de reglas. La leen el colector (Python) y el modo en vivo de la web (JavaScript). Los patrones se aplican sobre texto en minúsculas y sin tildes. Gana la primera intención que coincide. La lista crece con el uso: cuando el grupo 'Otros' sube, se agrega una regla y se anota en revisiones/REGISTRO.md.",
+  "pais": {
+   "hl": "es",
+   "gl": "uy",
+   "nombre": "Uruguay"
+  },
+  "semillas": {
+   "base": [
+    "{tema}"
+   ],
+   "alfabeto": "abcdefghijklmnopqrstuvwxyz",
+   "preguntas": [
+    "qué es {tema}",
+    "dónde estudiar {tema}",
+    "cuánto dura {tema}",
+    "cuánto gana {tema}",
+    "por qué estudiar {tema}"
+   ],
+   "estudiante": [
+    "estudiar {tema}",
+    "{tema} carrera",
+    "{tema} salida laboral",
+    "{tema} a distancia",
+    "{tema} requisitos",
+    "{tema} plan de estudios"
+   ],
+   "familia": [
+    "{tema} costo",
+    "{tema} becas",
+    "{tema} mejor universidad",
+    "{tema} vale la pena",
+    "{tema} opiniones"
+   ],
+   "youtube": [
+    "{tema}",
+    "{tema} carrera",
+    "estudiar {tema}"
+   ]
+  },
+  "en_vivo": [
+   "base",
+   "preguntas",
+   "estudiante",
+   "familia"
+  ],
+  "intenciones": [
+   {
+    "id": "fuera_uy",
+    "nombre": "Fuera de Uruguay",
+    "color": "#8b93a7",
+    "quien": "ninguno",
+    "que_es": "La sugerencia nombra un país o una universidad de otro país. No es demanda local.",
+    "patron": "\\b(uba|unam|utn|unlp|unsl|unl|unsam|unab|javeriana|uniandes|cibertec|compensar|argentina|mexico|colombia|chile|peru|espana|costa rica|ecuador|bolivia|paraguay|venezuela|san luis|buenos aires|bogota|madrid|lima|unir|uoc|tec de monterrey|itam|uade|siglo 21|palerm|la salle|rosario|acatlan|sena|ucm|buap|fiuba|ipn|tec|barranquilla|guatemala|itla|mar del plata|itm|andes|bucaramanga|neuquen|anahuac|intec|barcelona|granada|harvard|isil|navarra|sabana|valencia|xalapa|zaragoza|austral|externado|fcfm|konrad lorenz|la plata|santo tomas|siglo xxi|tecsup|uce|politecnico|espol|hermosillo|sergio arboleda|upna|fundatec|medellin|nicaragua|puce|senati|tecnm|unr|honduras|queretaro|republica dominicana|viu|conalep|ugr|mendoza|upv|yachay|duoc|galileo|nebrija|oposiciones|san marcos|blas pascal|ibero|julio garavito|upm|guadalajara|jujuy|mit|puj|uninorte|kennedy|bosque|panama|salesiana|ypf|simon bolivar|uc|uv|wuolah|forocoches|grupo salinas|fce|fiq|fahce|humai|tripleten|henry|talento digital|magister|nota de corte|pensum|cordoba|santiago|monterrey|cdmx|quito|caracas|asuncion|la paz|uned|udg|unal|udea|eafit|icesi|pucp|upc|utp|uai|usach|udp|unc|uncuyo|untref|itba|unicen|uch|pu|uca|udla|san andres|santa fe|di tella|fasta|guayaquil|iteso|cuba|el salvador|istea|bancolombia|sercotec|up|usa|estados unidos|eeuu|europa|canada|alemania|brasil|puebla|cali|tijuana|chihuahua|toluca|leon|merida|cancun|veracruz|tucuman|salta|corrientes|misiones|chaco|bahia blanca)\\b"
+   },
+   {
+    "id": "emprender",
+    "nombre": "Emprender o ganar dinero",
+    "color": "#fb923c",
+    "quien": "ninguno",
+    "que_es": "La frase habla de un negocio propio o de ganar dinero, no de estudiar. Si este grupo pesa mucho, el tema no se entiende como carrera.",
+    "patron": "\\b(rentable|rentables|ganar dinero|dinero|emprender|emprendimiento|ideas|sin inversion|desde casa|dropshipping|hotmart|trading|en venta|a la venta|faciles|automatizados|que funcionan|funcionan|como empezar|para adolescentes|menores de edad|freelance|independiente)\\b"
+   },
+   {
+    "id": "becas",
+    "nombre": "Becas y ayuda",
+    "color": "#f2b03d",
+    "quien": "familia",
+    "que_es": "Cómo pagarla con ayuda: becas, descuentos, financiación.",
+    "patron": "\\b(beca|becas|becado|financiacion|financiamiento|descuento|descuentos|prestamo)\\b"
+   },
+   {
+    "id": "costo",
+    "nombre": "Costo",
+    "color": "#f07f4f",
+    "quien": "familia",
+    "que_es": "Cuánto cuesta: precio, cuota, gratis o paga.",
+    "patron": "\\b(costo|costos|precio|precios|cuota|cuotas|cuanto sale|cuanto cuesta|arancel|aranceles|paga|gratis|gratuita|gratuito|publica|privada)\\b"
+   },
+   {
+    "id": "salida",
+    "nombre": "Salida laboral",
+    "color": "#3ccf91",
+    "quien": "ambos",
+    "que_es": "Para qué sirve: trabajo, sueldo, demanda.",
+    "patron": "\\b(salida laboral|salidas laborales|sueldo|sueldos|salario|salarios|cuanto gana|cuanto ganan|gana|trabajo|trabajos|empleo|empleos|campo laboral|que hace|para que sirve|demanda|futuro|vacantes|oferta|oferta laboral|ofertas laborales|jobs|home office|recien egresado|becario|linkedin|practicas|pasantia|pasantia|junior|jr|senior|sr|trainee|remoto sin experiencia|sin experiencia|bolsa de trabajo|computrabajo|indeed|buscojobs|gallito|cv|curriculum|entrevista|funciones|tareas|responsabilidades|perfil laboral)\\b"
+   },
+   {
+    "id": "modalidad",
+    "nombre": "Modalidad",
+    "color": "#4aa8ff",
+    "quien": "estudiante",
+    "que_es": "Cómo se cursa: a distancia, virtual, semipresencial, horarios.",
+    "patron": "\\b(a distancia|distancia|online|on line|en linea|virtual|semipresencial|presencial|nocturno|nocturna|sabados|remoto|remota)\\b"
+   },
+   {
+    "id": "plan",
+    "nombre": "Plan y requisitos",
+    "color": "#a78bfa",
+    "quien": "estudiante",
+    "que_es": "Qué se estudia y qué se pide: materias, duración, requisitos, inscripción.",
+    "patron": "\\b(plan de estudios|plan|materias|duracion|cuanto dura|dura|anos|requisitos|ingreso|inscripcion|inscripciones|titulo|perfil|programa|malla|de que trata|que se estudi|temario|que estudia|que se ve|que abarca|de que se trata|que trata|que se necesita|horario|horarios|habilidades|ramas|roles|cuantos anos)\\b"
+   },
+   {
+    "id": "comparar",
+    "nombre": "Comparar y decidir",
+    "color": "#ff6fa3",
+    "quien": "familia",
+    "que_es": "Dudas antes de elegir: mejor opción, opiniones, si vale la pena.",
+    "patron": "\\b(vs|versus|diferencia|diferencias|mejor|mejores|ranking|opiniones|opinion|vale la pena|dificil|conviene|por que estudia|es lo mismo|ventajas y desventajas|ventajas|desventajas|o analisis|o ciberseguridad|o inteligencia|o ingenieria|o estadistica|o programacion)\\b"
+   },
+   {
+    "id": "donde",
+    "nombre": "Dónde estudiar",
+    "color": "#35c9d6",
+    "quien": "ambos",
+    "que_es": "Lugar o institución de Uruguay: universidades y ciudades.",
+    "patron": "\\b(donde|universidad|universidades|facultad|uruguay|montevideo|salto|paysandu|maldonado|punta del este|rivera|colonia|udelar|ort|ucu|utec|um|claeh|ude|catolica|fing|fcea|utu|ane|fcs|fic|las piedras|canelones|tacuarembo|durazno|fray bentos|melo|artigas|interior)\\b"
+   },
+   {
+    "id": "formato",
+    "nombre": "Tipo de formación",
+    "color": "#7c9cff",
+    "quien": "estudiante",
+    "que_es": "Qué nivel buscan: carrera, licenciatura, curso, posgrado.",
+    "patron": "\\b(licenciatura|carrera|carreras|tecnicatura|tecnologo|maestria|master|posgrado|postgrado|diplomado|diploma|curso|cursos|bootcamp|especializacion|doctorado|grado|ingenieria|estudiar)\\b"
+   },
+   {
+    "id": "temas",
+    "nombre": "Temas con los que se combina",
+    "color": "#e879f9",
+    "quien": "estudiante",
+    "que_es": "Con qué otros temas se busca junto: inteligencia artificial, negocios, salud. Sirve para decidir el nombre y el foco de una carrera.",
+    "patron": "\\b(inteligencia artificial|ia|machine learning|aprendizaje automatico|big data|negocios|negocio|finanzas|financieros|financiera|salud|economia|analitica|analisis de datos|ciberseguridad|matematicas|ciencias sociales|geoespaciales|geograficos|biologia|futbol|deporte|deportes|redes neuronales|aplicada|estadistica|programacion|marketing|agro|agronomia|logistica|educacion|derecho|psicologia|turismo|sustentabilidad|energia|robotica|software|computacion|sistemas|innovacion|emprendimiento|digital|digitales|gestion|administracion|contabilidad|recursos humanos|comercio)\\b"
+   },
+   {
+    "id": "aprender",
+    "nombre": "Aprender por su cuenta",
+    "color": "#c9d451",
+    "quien": "estudiante",
+    "que_es": "Contenido para aprender solo: qué es, libros, herramientas, videos.",
+    "patron": "\\b(que es|python|pdf|libro|libros|ejemplos|ejemplo|proyectos|proyecto|podcast|tutorial|coursera|youtube|introduccion|desde cero|definicion|significado|con |wikipedia|reddit|github|kaggle|roadmap|herramientas|resumen|webinar|khan academy|que significa|noticias|historia|en ingles|weka|logo|meme|wallpaper|google|ibm|netfli|excel|sql|power bi|tableau|certificacion|certificado|google|platzi|udemy|coderhouse|domestika|que es y que hace)\\b"
+   },
+   {
+    "id": "otros",
+    "nombre": "Otros",
+    "color": "#9aa4b8",
+    "quien": "ninguno",
+    "que_es": "No coincide con ninguna regla. Si este grupo crece, falta una regla.",
+    "patron": ""
+   }
+  ],
+  "instituciones_uy": [
+   {
+    "id": "Udelar",
+    "patron": "\\b(udelar|universidad de la republica|fing|fcea|fcs|fic)\\b"
+   },
+   {
+    "id": "ORT",
+    "patron": "\\b(ort)\\b"
+   },
+   {
+    "id": "UCU",
+    "patron": "\\b(ucu|catolica)\\b"
+   },
+   {
+    "id": "UM",
+    "patron": "\\b(um|universidad de montevideo)\\b"
+   },
+   {
+    "id": "UTEC",
+    "patron": "\\b(utec)\\b"
+   },
+   {
+    "id": "CLAEH",
+    "patron": "\\b(claeh)\\b"
+   },
+   {
+    "id": "UDE",
+    "patron": "\\b(ude|universidad de la empresa)\\b"
+   },
+   {
+    "id": "UTU",
+    "patron": "\\b(utu)\\b"
+   }
+  ],
+  "validacion": {
+   "largo_maximo": 120,
+   "tipos_aceptados": [
+    "QUERY"
+   ],
+   "top10_min_relacionados": 3
+  }
+ },
+ "conteos": {
+  "pedidos_autocompletar": 46,
+  "sugerencias_validas": 590,
+  "sugerencias_rechazadas": 1,
+  "sugerencias_unicas": 506,
+  "paginas_top10": 2,
+  "top10_validas": 0
+ },
+ "crudo": "data/raw/20261118T160444Z_ciencia-de-datos",
+ "salida": "docs/data/consultas/ciencia-de-datos.json"
+}

@@ -1,8 +1,8 @@
 {
  "tema": "analisis de datos",
  "slug": "analisis-de-datos",
- "run_id": "20261116T222501Z_analisis-de-datos",
- "generado_utc": "2026-11-16T22:25:01Z",
+ "run_id": "20261118T160323Z_analisis-de-datos",
+ "generado_utc": "2026-11-18T16:03:23Z",
  "pais": "Uruguay",
  "reglas_version": "2026-11-16b",
  "fuentes": [
@@ -20,11 +20,11 @@
   }
  ],
  "resumen": {
-  "sugerencias_unicas": 499,
+  "sugerencias_unicas": 502,
   "intenciones_con_datos": 10,
   "fuera_de_uruguay": 96,
-  "fuera_de_uruguay_pct": 19.2,
-  "sin_clasificar": 156,
+  "fuera_de_uruguay_pct": 19.1,
+  "sin_clasificar": 157,
   "instituciones_uy": [
    {
     "id": "Udelar",
@@ -57,13 +57,13 @@
   ],
   "quien_supuesto": {
    "familia": 35,
-   "estudiante": 153,
+   "estudiante": 155,
    "ambos": 57,
-   "ninguno": 254
+   "ninguno": 255
   },
   "top10_validos": 0,
-  "top10_rechazados": 2,
-  "top10_pendientes": 0
+  "top10_rechazados": 0,
+  "top10_pendientes": 2
  },
  "intenciones": [
   {
@@ -73,9 +73,9 @@
    "quien": "ninguno",
    "que_es": "La sugerencia nombra un país o una universidad de otro país. No es demanda local.",
    "total": 96,
-   "pct": 19.2,
+   "pct": 19.1,
    "apariciones_total": 100,
-   "veces_top3_total": 21,
+   "veces_top3_total": 22,
    "sugerencias": [
     {
      "texto": "analisis de datos uba plan de estudios",
@@ -277,6 +277,26 @@
       "google"
      ],
      "relevancia_max": 1150,
+     "apariciones": 1,
+     "pos_promedio": 2.0,
+     "pos_mejor": 2,
+     "veces_top3": 1,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "analisis de datos en la uba",
+     "semillas": [
+      "analisis de datos e"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1000,
      "apariciones": 1,
      "pos_promedio": 2.0,
      "pos_mejor": 2,
@@ -576,7 +596,7 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 556,
+     "relevancia_max": 557,
      "apariciones": 1,
      "pos_promedio": 4.0,
      "pos_mejor": 4,
@@ -660,6 +680,26 @@
      "apariciones": 1,
      "pos_promedio": 4.0,
      "pos_mejor": 4,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "analisis de datos tripleten",
+     "semillas": [
+      "analisis de datos t"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 559,
+     "apariciones": 1,
+     "pos_promedio": 5.0,
+     "pos_mejor": 5,
      "veces_top3": 0,
      "veces_top10": 1,
      "instituciones": [],
@@ -757,26 +797,6 @@
       "google"
      ],
      "relevancia_max": 559,
-     "apariciones": 1,
-     "pos_promedio": 6.0,
-     "pos_mejor": 6,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "fuera_uy"
-    },
-    {
-     "texto": "analisis de datos tripleten",
-     "semillas": [
-      "analisis de datos t"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 558,
      "apariciones": 1,
      "pos_promedio": 6.0,
      "pos_mejor": 6,
@@ -986,6 +1006,26 @@
      "intencion": "fuera_uy"
     },
     {
+     "texto": "analisis de datos tec de monterrey",
+     "semillas": [
+      "analisis de datos t"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "pos_promedio": 7.0,
+     "pos_mejor": 7,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
      "texto": "analisis de datos venezuela",
      "semillas": [
       "analisis de datos v"
@@ -1026,9 +1066,9 @@
      "intencion": "fuera_uy"
     },
     {
-     "texto": "analisis de datos en la uba",
+     "texto": "analisis de datos anahuac",
      "semillas": [
-      "analisis de datos e"
+      "analisis de datos a"
      ],
      "grupos": [
       "alfabeto"
@@ -1077,26 +1117,6 @@
       "google"
      ],
      "relevancia_max": 557,
-     "apariciones": 1,
-     "pos_promedio": 8.0,
-     "pos_mejor": 8,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "fuera_uy"
-    },
-    {
-     "texto": "analisis de datos tec de monterrey",
-     "semillas": [
-      "analisis de datos t"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 556,
      "apariciones": 1,
      "pos_promedio": 8.0,
      "pos_mejor": 8,
@@ -1166,9 +1186,9 @@
      "intencion": "fuera_uy"
     },
     {
-     "texto": "analisis de datos anahuac",
+     "texto": "analisis de datos la salle",
      "semillas": [
-      "analisis de datos a"
+      "analisis de datos l"
      ],
      "grupos": [
       "alfabeto"
@@ -1186,9 +1206,9 @@
      "intencion": "fuera_uy"
     },
     {
-     "texto": "analisis de datos la salle",
+     "texto": "analisis de datos psicologia uned",
      "semillas": [
-      "analisis de datos l"
+      "analisis de datos p"
      ],
      "grupos": [
       "alfabeto"
@@ -1286,9 +1306,9 @@
      "intencion": "fuera_uy"
     },
     {
-     "texto": "analisis de datos psicologia uned",
+     "texto": "analisis de datos en el sena",
      "semillas": [
-      "analisis de datos p"
+      "analisis de datos e"
      ],
      "grupos": [
       "alfabeto"
@@ -1362,6 +1382,26 @@
      "pos_mejor": 10,
      "veces_top3": 0,
      "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "analisis de datos andes",
+     "semillas": [
+      "analisis de datos a"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "pos_promedio": 11.0,
+     "pos_mejor": 11,
+     "veces_top3": 0,
+     "veces_top10": 0,
      "instituciones": [],
      "intencion": "fuera_uy"
     },
@@ -1466,26 +1506,6 @@
      "intencion": "fuera_uy"
     },
     {
-     "texto": "analisis de datos andes",
-     "semillas": [
-      "analisis de datos a"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 553,
-     "apariciones": 1,
-     "pos_promedio": 12.0,
-     "pos_mejor": 12,
-     "veces_top3": 0,
-     "veces_top10": 0,
-     "instituciones": [],
-     "intencion": "fuera_uy"
-    },
-    {
      "texto": "analisis de datos carrera rosario",
      "semillas": [
       "analisis de datos carrera"
@@ -1537,6 +1557,26 @@
       "google"
      ],
      "relevancia_max": 553,
+     "apariciones": 1,
+     "pos_promedio": 12.0,
+     "pos_mejor": 12,
+     "veces_top3": 0,
+     "veces_top10": 0,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "analisis de datos tecnicatura uba",
+     "semillas": [
+      "analisis de datos t"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
      "apariciones": 1,
      "pos_promedio": 12.0,
      "pos_mejor": 12,
@@ -1697,26 +1737,6 @@
       "google"
      ],
      "relevancia_max": 552,
-     "apariciones": 1,
-     "pos_promedio": 13.0,
-     "pos_mejor": 13,
-     "veces_top3": 0,
-     "veces_top10": 0,
-     "instituciones": [],
-     "intencion": "fuera_uy"
-    },
-    {
-     "texto": "analisis de datos tecnicatura uba",
-     "semillas": [
-      "analisis de datos t"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 551,
      "apariciones": 1,
      "pos_promedio": 13.0,
      "pos_mejor": 13,
@@ -1926,26 +1946,6 @@
      "intencion": "fuera_uy"
     },
     {
-     "texto": "analisis de datos mar del plata",
-     "semillas": [
-      "analisis de datos m"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 550,
-     "apariciones": 1,
-     "pos_promedio": 15.0,
-     "pos_mejor": 15,
-     "veces_top3": 0,
-     "veces_top10": 0,
-     "instituciones": [],
-     "intencion": "fuera_uy"
-    },
-    {
      "texto": "analisis de datos y desarrollo de software sena",
      "semillas": [
       "analisis de datos y"
@@ -2066,9 +2066,9 @@
    "color": "#f2b03d",
    "quien": "familia",
    "que_es": "Cómo pagarla con ayuda: becas, descuentos, financiación.",
-   "total": 5,
-   "pct": 1.0,
-   "apariciones_total": 5,
+   "total": 6,
+   "pct": 1.2,
+   "apariciones_total": 6,
    "veces_top3_total": 3,
    "sugerencias": [
     {
@@ -2122,11 +2122,31 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 557,
+     "relevancia_max": 558,
      "apariciones": 1,
      "pos_promedio": 3.0,
      "pos_mejor": 3,
      "veces_top3": 1,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "becas"
+    },
+    {
+     "texto": "becas para analisis de datos",
+     "semillas": [
+      "analisis de datos becas"
+     ],
+     "grupos": [
+      "familia"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "pos_promedio": 5.0,
+     "pos_mejor": 5,
+     "veces_top3": 0,
      "veces_top10": 1,
      "instituciones": [],
      "intencion": "becas"
@@ -2144,8 +2164,8 @@
      ],
      "relevancia_max": 555,
      "apariciones": 1,
-     "pos_promedio": 5.0,
-     "pos_mejor": 5,
+     "pos_promedio": 6.0,
+     "pos_mejor": 6,
      "veces_top3": 0,
      "veces_top10": 1,
      "instituciones": [],
@@ -2164,8 +2184,8 @@
      ],
      "relevancia_max": 554,
      "apariciones": 1,
-     "pos_promedio": 6.0,
-     "pos_mejor": 6,
+     "pos_promedio": 7.0,
+     "pos_mejor": 7,
      "veces_top3": 0,
      "veces_top10": 1,
      "instituciones": [],
@@ -2179,9 +2199,9 @@
    "color": "#f07f4f",
    "quien": "familia",
    "que_es": "Cuánto cuesta: precio, cuota, gratis o paga.",
-   "total": 19,
-   "pct": 3.8,
-   "apariciones_total": 20,
+   "total": 18,
+   "pct": 3.6,
+   "apariciones_total": 19,
    "veces_top3_total": 6,
    "sugerencias": [
     {
@@ -2447,26 +2467,6 @@
      "intencion": "costo"
     },
     {
-     "texto": "analisis de datos donde estudiar gratis",
-     "semillas": [
-      "analisis de datos d"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 600,
-     "apariciones": 1,
-     "pos_promedio": 9.0,
-     "pos_mejor": 9,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "costo"
-    },
-    {
      "texto": "licenciatura en analisis de datos a distancia gratis",
      "semillas": [
       "analisis de datos a distancia"
@@ -2577,7 +2577,7 @@
    "total": 37,
    "pct": 7.4,
    "apariciones_total": 38,
-   "veces_top3_total": 14,
+   "veces_top3_total": 11,
    "sugerencias": [
     {
      "texto": "analisis de datos trabajo",
@@ -2662,26 +2662,6 @@
      "intencion": "salida"
     },
     {
-     "texto": "analisis de datos empleo",
-     "semillas": [
-      "analisis de datos e"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 651,
-     "apariciones": 1,
-     "pos_promedio": 2.0,
-     "pos_mejor": 2,
-     "veces_top3": 1,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "salida"
-    },
-    {
      "texto": "analisis de datos linkedin",
      "semillas": [
       "analisis de datos l"
@@ -2693,26 +2673,6 @@
       "google"
      ],
      "relevancia_max": 950,
-     "apariciones": 1,
-     "pos_promedio": 2.0,
-     "pos_mejor": 2,
-     "veces_top3": 1,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "salida"
-    },
-    {
-     "texto": "analisis de datos que hace",
-     "semillas": [
-      "analisis de datos q"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 601,
      "apariciones": 1,
      "pos_promedio": 2.0,
      "pos_mejor": 2,
@@ -2802,26 +2762,6 @@
      "intencion": "salida"
     },
     {
-     "texto": "analisis de datos para que sirve",
-     "semillas": [
-      "analisis de datos p"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 600,
-     "apariciones": 1,
-     "pos_promedio": 3.0,
-     "pos_mejor": 3,
-     "veces_top3": 1,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "salida"
-    },
-    {
      "texto": "analisis de datos trabajo remoto",
      "semillas": [
       "analisis de datos t"
@@ -2857,6 +2797,26 @@
      "pos_promedio": 3.0,
      "pos_mejor": 3,
      "veces_top3": 1,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
+     "texto": "analisis de datos empleo",
+     "semillas": [
+      "analisis de datos e"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 651,
+     "apariciones": 1,
+     "pos_promedio": 4.0,
+     "pos_mejor": 4,
+     "veces_top3": 0,
      "veces_top10": 1,
      "instituciones": [],
      "intencion": "salida"
@@ -3002,6 +2962,26 @@
      "intencion": "salida"
     },
     {
+     "texto": "analisis de datos que hace",
+     "semillas": [
+      "analisis de datos q"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "pos_promedio": 5.0,
+     "pos_mejor": 5,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
      "texto": "analisis de datos bolsa de trabajo",
      "semillas": [
       "analisis de datos b"
@@ -3122,6 +3102,26 @@
      "intencion": "salida"
     },
     {
+     "texto": "analisis de datos trabajo remoto sin experiencia",
+     "semillas": [
+      "analisis de datos t"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "pos_promedio": 8.0,
+     "pos_mejor": 8,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "salida"
+    },
+    {
      "texto": "cuanto gana un analista de datos uruguay",
      "semillas": [
       "cuánto gana analisis de datos"
@@ -3142,9 +3142,9 @@
      "intencion": "salida"
     },
     {
-     "texto": "analisis de datos trabajo remoto sin experiencia",
+     "texto": "analisis de datos para que sirve",
      "semillas": [
-      "analisis de datos t"
+      "analisis de datos p"
      ],
      "grupos": [
       "alfabeto"
@@ -3154,8 +3154,8 @@
      ],
      "relevancia_max": 555,
      "apariciones": 1,
-     "pos_promedio": 9.0,
-     "pos_mejor": 9,
+     "pos_promedio": 10.0,
+     "pos_mejor": 10,
      "veces_top3": 0,
      "veces_top10": 1,
      "instituciones": [],
@@ -3749,7 +3749,7 @@
    "total": 18,
    "pct": 3.6,
    "apariciones_total": 18,
-   "veces_top3_total": 6,
+   "veces_top3_total": 5,
    "sugerencias": [
     {
      "texto": "cuanto dura la carrera de analisis de datos",
@@ -3826,26 +3826,6 @@
      "apariciones": 1,
      "pos_promedio": 2.0,
      "pos_mejor": 2,
-     "veces_top3": 1,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "plan"
-    },
-    {
-     "texto": "analisis de datos de que trata",
-     "semillas": [
-      "analisis de datos d"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 1201,
-     "apariciones": 1,
-     "pos_promedio": 3.0,
-     "pos_mejor": 3,
      "veces_top3": 1,
      "veces_top10": 1,
      "instituciones": [],
@@ -4048,6 +4028,26 @@
      "pos_mejor": 10,
      "veces_top3": 0,
      "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "plan"
+    },
+    {
+     "texto": "analisis de datos de que trata",
+     "semillas": [
+      "analisis de datos d"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "pos_promedio": 11.0,
+     "pos_mejor": 11,
+     "veces_top3": 0,
+     "veces_top10": 0,
      "instituciones": [],
      "intencion": "plan"
     },
@@ -4355,7 +4355,7 @@
    "total": 20,
    "pct": 4.0,
    "apariciones_total": 49,
-   "veces_top3_total": 13,
+   "veces_top3_total": 14,
    "sugerencias": [
     {
      "texto": "analisis de datos uruguay",
@@ -4383,7 +4383,7 @@
      ],
      "relevancia_max": 1200,
      "apariciones": 10,
-     "pos_promedio": 4.6,
+     "pos_promedio": 4.7,
      "pos_mejor": 2,
      "veces_top3": 3,
      "veces_top10": 10,
@@ -4415,7 +4415,7 @@
      ],
      "relevancia_max": 1250,
      "apariciones": 9,
-     "pos_promedio": 4.7,
+     "pos_promedio": 4.8,
      "pos_mejor": 1,
      "veces_top3": 3,
      "veces_top10": 9,
@@ -4518,7 +4518,7 @@
      ],
      "relevancia_max": 551,
      "apariciones": 3,
-     "pos_promedio": 7.3,
+     "pos_promedio": 7.7,
      "pos_mejor": 6,
      "veces_top3": 0,
      "veces_top10": 3,
@@ -4609,10 +4609,30 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 1250,
+     "relevancia_max": 1150,
      "apariciones": 1,
-     "pos_promedio": 1.0,
-     "pos_mejor": 1,
+     "pos_promedio": 2.0,
+     "pos_mejor": 2,
+     "veces_top3": 1,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "donde"
+    },
+    {
+     "texto": "analisis de datos en excel donde esta",
+     "semillas": [
+      "analisis de datos e"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 750,
+     "apariciones": 1,
+     "pos_promedio": 3.0,
+     "pos_mejor": 3,
      "veces_top3": 1,
      "veces_top10": 1,
      "instituciones": [],
@@ -4723,28 +4743,6 @@
      "intencion": "donde"
     },
     {
-     "texto": "analisis de datos utec",
-     "semillas": [
-      "analisis de datos becas"
-     ],
-     "grupos": [
-      "familia"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 550,
-     "apariciones": 1,
-     "pos_promedio": 10.0,
-     "pos_mejor": 10,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [
-      "UTEC"
-     ],
-     "intencion": "donde"
-    },
-    {
      "texto": "analisis de datos carrera donde estudiar",
      "semillas": [
       "analisis de datos carrera"
@@ -4765,23 +4763,25 @@
      "intencion": "donde"
     },
     {
-     "texto": "analisis de datos en excel donde esta",
+     "texto": "analisis de datos utec",
      "semillas": [
-      "analisis de datos e"
+      "analisis de datos becas"
      ],
      "grupos": [
-      "alfabeto"
+      "familia"
      ],
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 551,
+     "relevancia_max": 550,
      "apariciones": 1,
-     "pos_promedio": 14.0,
-     "pos_mejor": 14,
+     "pos_promedio": 11.0,
+     "pos_mejor": 11,
      "veces_top3": 0,
      "veces_top10": 0,
-     "instituciones": [],
+     "instituciones": [
+      "UTEC"
+     ],
      "intencion": "donde"
     },
     {
@@ -4832,10 +4832,10 @@
    "color": "#7c9cff",
    "quien": "estudiante",
    "que_es": "Qué nivel buscan: carrera, licenciatura, curso, posgrado.",
-   "total": 21,
-   "pct": 4.2,
-   "apariciones_total": 23,
-   "veces_top3_total": 11,
+   "total": 20,
+   "pct": 4.0,
+   "apariciones_total": 22,
+   "veces_top3_total": 12,
    "sugerencias": [
     {
      "texto": "analisis de datos curso",
@@ -4904,6 +4904,26 @@
      "intencion": "formato"
     },
     {
+     "texto": "analisis de datos diplomado",
+     "semillas": [
+      "analisis de datos d"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1200,
+     "apariciones": 1,
+     "pos_promedio": 1.0,
+     "pos_mejor": 1,
+     "veces_top3": 1,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
      "texto": "analisis de datos maestria",
      "semillas": [
       "analisis de datos m"
@@ -4938,26 +4958,6 @@
      "apariciones": 1,
      "pos_promedio": 1.0,
      "pos_mejor": 1,
-     "veces_top3": 1,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "formato"
-    },
-    {
-     "texto": "analisis de datos diplomado",
-     "semillas": [
-      "analisis de datos d"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 1202,
-     "apariciones": 1,
-     "pos_promedio": 2.0,
-     "pos_mejor": 2,
      "veces_top3": 1,
      "veces_top10": 1,
      "instituciones": [],
@@ -5024,26 +5024,6 @@
      "intencion": "formato"
     },
     {
-     "texto": "analisis de datos especializacion",
-     "semillas": [
-      "analisis de datos e"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 601,
-     "apariciones": 1,
-     "pos_promedio": 4.0,
-     "pos_mejor": 4,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "formato"
-    },
-    {
      "texto": "analisis de datos que carrera es",
      "semillas": [
       "analisis de datos q"
@@ -5054,11 +5034,11 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 561,
+     "relevancia_max": 800,
      "apariciones": 1,
-     "pos_promedio": 4.0,
-     "pos_mejor": 4,
-     "veces_top3": 0,
+     "pos_promedio": 3.0,
+     "pos_mejor": 3,
+     "veces_top3": 1,
      "veces_top10": 1,
      "instituciones": [],
      "intencion": "formato"
@@ -5124,6 +5104,26 @@
      "intencion": "formato"
     },
     {
+     "texto": "analisis de datos especializacion",
+     "semillas": [
+      "analisis de datos e"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "pos_promedio": 6.0,
+     "pos_mejor": 6,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
      "texto": "analisis de datos master",
      "semillas": [
       "analisis de datos m"
@@ -5136,8 +5136,8 @@
      ],
      "relevancia_max": 601,
      "apariciones": 1,
-     "pos_promedio": 7.0,
-     "pos_mejor": 7,
+     "pos_promedio": 8.0,
+     "pos_mejor": 8,
      "veces_top3": 0,
      "veces_top10": 1,
      "instituciones": [],
@@ -5204,26 +5204,6 @@
      "intencion": "formato"
     },
     {
-     "texto": "analisis de datos estudiar",
-     "semillas": [
-      "analisis de datos e"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 555,
-     "apariciones": 1,
-     "pos_promedio": 10.0,
-     "pos_mejor": 10,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "formato"
-    },
-    {
      "texto": "estudiar analisis de datos desde cero",
      "semillas": [
       "estudiar analisis de datos"
@@ -5271,8 +5251,8 @@
    "color": "#e879f9",
    "quien": "estudiante",
    "que_es": "Con qué otros temas se busca junto: inteligencia artificial, negocios, salud. Sirve para decidir el nombre y el foco de una carrera.",
-   "total": 31,
-   "pct": 6.2,
+   "total": 32,
+   "pct": 6.4,
    "apariciones_total": 37,
    "veces_top3_total": 6,
    "sugerencias": [
@@ -5335,10 +5315,10 @@
       "google",
       "youtube"
      ],
-     "relevancia_max": 560,
+     "relevancia_max": 561,
      "apariciones": 2,
-     "pos_promedio": 6.0,
-     "pos_mejor": 5,
+     "pos_promedio": 5.0,
+     "pos_mejor": 4,
      "veces_top3": 0,
      "veces_top10": 2,
      "instituciones": [],
@@ -5363,29 +5343,6 @@
      "apariciones": 2,
      "pos_promedio": 10.5,
      "pos_mejor": 6,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "temas"
-    },
-    {
-     "texto": "analisis de datos e ia",
-     "semillas": [
-      "analisis de datos e",
-      "analisis de datos"
-     ],
-     "grupos": [
-      "alfabeto",
-      "youtube"
-     ],
-     "fuentes": [
-      "google",
-      "youtube"
-     ],
-     "relevancia_max": 556,
-     "apariciones": 2,
-     "pos_promedio": 12.0,
-     "pos_mejor": 9,
      "veces_top3": 0,
      "veces_top10": 1,
      "instituciones": [],
@@ -5492,7 +5449,7 @@
      "intencion": "temas"
     },
     {
-     "texto": "analisis de datos en futbol",
+     "texto": "analisis de datos en el futbol",
      "semillas": [
       "analisis de datos"
      ],
@@ -5503,26 +5460,6 @@
       "youtube"
      ],
      "relevancia_max": 560,
-     "apariciones": 1,
-     "pos_promedio": 5.0,
-     "pos_mejor": 5,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "temas"
-    },
-    {
-     "texto": "analisis de datos matematicas",
-     "semillas": [
-      "analisis de datos m"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 651,
      "apariciones": 1,
      "pos_promedio": 5.0,
      "pos_mejor": 5,
@@ -5592,6 +5529,26 @@
      "intencion": "temas"
     },
     {
+     "texto": "analisis de datos matematicas",
+     "semillas": [
+      "analisis de datos m"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 651,
+     "apariciones": 1,
+     "pos_promedio": 6.0,
+     "pos_mejor": 6,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
      "texto": "analisis de datos finanzas",
      "semillas": [
       "analisis de datos f"
@@ -5626,26 +5583,6 @@
      "apariciones": 1,
      "pos_promedio": 7.0,
      "pos_mejor": 7,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "temas"
-    },
-    {
-     "texto": "analisis de datos marketing",
-     "semillas": [
-      "analisis de datos m"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 600,
-     "apariciones": 1,
-     "pos_promedio": 8.0,
-     "pos_mejor": 8,
      "veces_top3": 0,
      "veces_top10": 1,
      "instituciones": [],
@@ -5692,6 +5629,66 @@
      "intencion": "temas"
     },
     {
+     "texto": "analisis de datos e ia",
+     "semillas": [
+      "analisis de datos"
+     ],
+     "grupos": [
+      "youtube"
+     ],
+     "fuentes": [
+      "youtube"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "pos_promedio": 9.0,
+     "pos_mejor": 9,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "analisis de datos e inteligencia de negocios",
+     "semillas": [
+      "analisis de datos e"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "pos_promedio": 9.0,
+     "pos_mejor": 9,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "analisis de datos marketing",
+     "semillas": [
+      "analisis de datos m"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "pos_promedio": 9.0,
+     "pos_mejor": 9,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
      "texto": "analisis de datos con inteligencia artificial",
      "semillas": [
       "analisis de datos c"
@@ -5708,26 +5705,6 @@
      "pos_mejor": 10,
      "veces_top3": 0,
      "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "temas"
-    },
-    {
-     "texto": "analisis de datos en salud",
-     "semillas": [
-      "analisis de datos e"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 554,
-     "apariciones": 1,
-     "pos_promedio": 11.0,
-     "pos_mejor": 11,
-     "veces_top3": 0,
-     "veces_top10": 0,
      "instituciones": [],
      "intencion": "temas"
     },
@@ -5781,6 +5758,26 @@
      ],
      "fuentes": [
       "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "pos_promedio": 12.0,
+     "pos_mejor": 12,
+     "veces_top3": 0,
+     "veces_top10": 0,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "analisis de datos para finanzas",
+     "semillas": [
+      "analisis de datos"
+     ],
+     "grupos": [
+      "youtube"
+     ],
+     "fuentes": [
+      "youtube"
      ],
      "relevancia_max": 553,
      "apariciones": 1,
@@ -5919,11 +5916,34 @@
    "color": "#c9d451",
    "quien": "estudiante",
    "que_es": "Contenido para aprender solo: qué es, libros, herramientas, videos.",
-   "total": 63,
-   "pct": 12.6,
-   "apariciones_total": 72,
+   "total": 65,
+   "pct": 12.9,
+   "apariciones_total": 73,
    "veces_top3_total": 19,
    "sugerencias": [
+    {
+     "texto": "analisis de datos power bi",
+     "semillas": [
+      "analisis de datos p",
+      "analisis de datos"
+     ],
+     "grupos": [
+      "alfabeto",
+      "youtube"
+     ],
+     "fuentes": [
+      "google",
+      "youtube"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 2,
+     "pos_promedio": 4.5,
+     "pos_mejor": 2,
+     "veces_top3": 1,
+     "veces_top10": 2,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
     {
      "texto": "analisis de datos pdf",
      "semillas": [
@@ -5969,29 +5989,6 @@
      "intencion": "aprender"
     },
     {
-     "texto": "analisis de datos power bi",
-     "semillas": [
-      "analisis de datos p",
-      "analisis de datos"
-     ],
-     "grupos": [
-      "alfabeto",
-      "youtube"
-     ],
-     "fuentes": [
-      "google",
-      "youtube"
-     ],
-     "relevancia_max": 601,
-     "apariciones": 2,
-     "pos_promedio": 6.0,
-     "pos_mejor": 2,
-     "veces_top3": 1,
-     "veces_top10": 2,
-     "instituciones": [],
-     "intencion": "aprender"
-    },
-    {
      "texto": "analisis de datos con r",
      "semillas": [
       "analisis de datos",
@@ -6031,7 +6028,7 @@
      ],
      "relevancia_max": 601,
      "apariciones": 2,
-     "pos_promedio": 8.5,
+     "pos_promedio": 7.5,
      "pos_mejor": 4,
      "veces_top3": 0,
      "veces_top10": 1,
@@ -6054,10 +6051,10 @@
      ],
      "relevancia_max": 559,
      "apariciones": 2,
-     "pos_promedio": 8.5,
+     "pos_promedio": 8.0,
      "pos_mejor": 6,
      "veces_top3": 0,
-     "veces_top10": 1,
+     "veces_top10": 2,
      "instituciones": [],
      "intencion": "aprender"
     },
@@ -6101,31 +6098,8 @@
      ],
      "relevancia_max": 557,
      "apariciones": 2,
-     "pos_promedio": 9.5,
+     "pos_promedio": 11.0,
      "pos_mejor": 8,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "aprender"
-    },
-    {
-     "texto": "analisis de datos ejemplo",
-     "semillas": [
-      "analisis de datos e",
-      "analisis de datos"
-     ],
-     "grupos": [
-      "alfabeto",
-      "youtube"
-     ],
-     "fuentes": [
-      "google",
-      "youtube"
-     ],
-     "relevancia_max": 556,
-     "apariciones": 2,
-     "pos_promedio": 12.0,
-     "pos_mejor": 9,
      "veces_top3": 0,
      "veces_top10": 1,
      "instituciones": [],
@@ -6252,6 +6226,26 @@
      "intencion": "aprender"
     },
     {
+     "texto": "analisis de datos excel",
+     "semillas": [
+      "analisis de datos"
+     ],
+     "grupos": [
+      "youtube"
+     ],
+     "fuentes": [
+      "youtube"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "pos_promedio": 2.0,
+     "pos_mejor": 2,
+     "veces_top3": 1,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
      "texto": "analisis de datos roadmap",
      "semillas": [
       "analisis de datos r"
@@ -6326,26 +6320,6 @@
      "apariciones": 1,
      "pos_promedio": 2.0,
      "pos_mejor": 2,
-     "veces_top3": 1,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "aprender"
-    },
-    {
-     "texto": "analisis de datos excel",
-     "semillas": [
-      "analisis de datos"
-     ],
-     "grupos": [
-      "youtube"
-     ],
-     "fuentes": [
-      "youtube"
-     ],
-     "relevancia_max": 600,
-     "apariciones": 1,
-     "pos_promedio": 3.0,
-     "pos_mejor": 3,
      "veces_top3": 1,
      "veces_top10": 1,
      "instituciones": [],
@@ -6432,6 +6406,46 @@
      "intencion": "aprender"
     },
     {
+     "texto": "analisis de datos ambientales en python",
+     "semillas": [
+      "analisis de datos a"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 850,
+     "apariciones": 1,
+     "pos_promedio": 4.0,
+     "pos_mejor": 4,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "analisis de datos definicion",
+     "semillas": [
+      "analisis de datos d"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 750,
+     "apariciones": 1,
+     "pos_promedio": 4.0,
+     "pos_mejor": 4,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
      "texto": "analisis de datos khan academy",
      "semillas": [
       "analisis de datos k"
@@ -6512,46 +6526,6 @@
      "intencion": "aprender"
     },
     {
-     "texto": "analisis de datos ambientales en python",
-     "semillas": [
-      "analisis de datos a"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 850,
-     "apariciones": 1,
-     "pos_promedio": 5.0,
-     "pos_mejor": 5,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "aprender"
-    },
-    {
-     "texto": "analisis de datos en ingles",
-     "semillas": [
-      "analisis de datos e"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 600,
-     "apariciones": 1,
-     "pos_promedio": 5.0,
-     "pos_mejor": 5,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "aprender"
-    },
-    {
      "texto": "analisis de datos histograma excel",
      "semillas": [
       "analisis de datos h"
@@ -6572,9 +6546,9 @@
      "intencion": "aprender"
     },
     {
-     "texto": "analisis de datos definicion",
+     "texto": "analisis de datos python",
      "semillas": [
-      "analisis de datos d"
+      "analisis de datos p"
      ],
      "grupos": [
       "alfabeto"
@@ -6582,10 +6556,10 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 750,
+     "relevancia_max": 560,
      "apariciones": 1,
-     "pos_promedio": 6.0,
-     "pos_mejor": 6,
+     "pos_promedio": 5.0,
+     "pos_mejor": 5,
      "veces_top3": 0,
      "veces_top10": 1,
      "instituciones": [],
@@ -6612,7 +6586,7 @@
      "intencion": "aprender"
     },
     {
-     "texto": "analisis de datos python",
+     "texto": "analisis de datos platzi",
      "semillas": [
       "analisis de datos p"
      ],
@@ -6692,6 +6666,26 @@
      "intencion": "aprender"
     },
     {
+     "texto": "analisis de datos en ingles",
+     "semillas": [
+      "analisis de datos e"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "pos_promedio": 7.0,
+     "pos_mejor": 7,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
      "texto": "analisis de datos historia",
      "semillas": [
       "analisis de datos h"
@@ -6732,26 +6726,6 @@
      "intencion": "aprender"
     },
     {
-     "texto": "analisis de datos platzi",
-     "semillas": [
-      "analisis de datos p"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 558,
-     "apariciones": 1,
-     "pos_promedio": 7.0,
-     "pos_mejor": 7,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "aprender"
-    },
-    {
      "texto": "analisis de datos resumen",
      "semillas": [
       "analisis de datos r"
@@ -6775,6 +6749,26 @@
      "texto": "analisis de datos con power bi",
      "semillas": [
       "analisis de datos c"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "pos_promedio": 8.0,
+     "pos_mejor": 8,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "analisis de datos en excel activar",
+     "semillas": [
+      "analisis de datos e"
      ],
      "grupos": [
       "alfabeto"
@@ -6846,6 +6840,46 @@
      "apariciones": 1,
      "pos_promedio": 9.0,
      "pos_mejor": 9,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "análisis de datos de google",
+     "semillas": [
+      "analisis de datos d"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "pos_promedio": 9.0,
+     "pos_mejor": 9,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "analisis de datos de excel",
+     "semillas": [
+      "analisis de datos d"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "pos_promedio": 10.0,
+     "pos_mejor": 10,
      "veces_top3": 0,
      "veces_top10": 1,
      "instituciones": [],
@@ -6952,9 +6986,9 @@
      "intencion": "aprender"
     },
     {
-     "texto": "análisis de datos de google",
+     "texto": "python para análisis de datos wes mckinney pdf",
      "semillas": [
-      "analisis de datos d"
+      "analisis de datos w"
      ],
      "grupos": [
       "alfabeto"
@@ -6972,9 +7006,29 @@
      "intencion": "aprender"
     },
     {
-     "texto": "python para análisis de datos wes mckinney pdf",
+     "texto": "analisis de datos con sql",
      "semillas": [
-      "analisis de datos w"
+      "analisis de datos"
+     ],
+     "grupos": [
+      "youtube"
+     ],
+     "fuentes": [
+      "youtube"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "pos_promedio": 13.0,
+     "pos_mejor": 13,
+     "veces_top3": 0,
+     "veces_top10": 0,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
+     "texto": "analisis de datos en google sheets",
+     "semillas": [
+      "analisis de datos e"
      ],
      "grupos": [
       "alfabeto"
@@ -6982,10 +7036,10 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 553,
+     "relevancia_max": 552,
      "apariciones": 1,
-     "pos_promedio": 12.0,
-     "pos_mejor": 12,
+     "pos_promedio": 13.0,
+     "pos_mejor": 13,
      "veces_top3": 0,
      "veces_top10": 0,
      "instituciones": [],
@@ -7061,26 +7115,6 @@
      ],
      "fuentes": [
       "google"
-     ],
-     "relevancia_max": 551,
-     "apariciones": 1,
-     "pos_promedio": 14.0,
-     "pos_mejor": 14,
-     "veces_top3": 0,
-     "veces_top10": 0,
-     "instituciones": [],
-     "intencion": "aprender"
-    },
-    {
-     "texto": "analisis de datos con sql",
-     "semillas": [
-      "analisis de datos"
-     ],
-     "grupos": [
-      "youtube"
-     ],
-     "fuentes": [
-      "youtube"
      ],
      "relevancia_max": 551,
      "apariciones": 1,
@@ -7219,10 +7253,10 @@
    "color": "#9aa4b8",
    "quien": "ninguno",
    "que_es": "No coincide con ninguna regla. Si este grupo crece, falta una regla.",
-   "total": 156,
+   "total": 157,
    "pct": 31.3,
-   "apariciones_total": 159,
-   "veces_top3_total": 16,
+   "apariciones_total": 160,
+   "veces_top3_total": 17,
    "sugerencias": [
     {
      "texto": "analisis de datos bios",
@@ -7450,6 +7484,26 @@
      "intencion": "otros"
     },
     {
+     "texto": "analisis de datos que se estudia",
+     "semillas": [
+      "analisis de datos q"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 801,
+     "apariciones": 1,
+     "pos_promedio": 2.0,
+     "pos_mejor": 2,
+     "veces_top3": 1,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
      "texto": "analisis de datos web",
      "semillas": [
       "analisis de datos w"
@@ -7464,26 +7518,6 @@
      "apariciones": 1,
      "pos_promedio": 2.0,
      "pos_mejor": 2,
-     "veces_top3": 1,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "otros"
-    },
-    {
-     "texto": "analisis de datos en una investigacion",
-     "semillas": [
-      "analisis de datos e"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 650,
-     "apariciones": 1,
-     "pos_promedio": 3.0,
-     "pos_mejor": 3,
      "veces_top3": 1,
      "veces_top10": 1,
      "instituciones": [],
@@ -7550,9 +7584,9 @@
      "intencion": "otros"
     },
     {
-     "texto": "analisis de datos que se estudia",
+     "texto": "analisis de datos para la empresa uc3m",
      "semillas": [
-      "analisis de datos q"
+      "analisis de datos p"
      ],
      "grupos": [
       "alfabeto"
@@ -7590,6 +7624,26 @@
      "intencion": "otros"
     },
     {
+     "texto": "análisis de datos dibujo",
+     "semillas": [
+      "analisis de datos d"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 900,
+     "apariciones": 1,
+     "pos_promedio": 3.0,
+     "pos_mejor": 3,
+     "veces_top3": 1,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
      "texto": "análisis de datos históricos",
      "semillas": [
       "analisis de datos h"
@@ -7610,26 +7664,6 @@
      "intencion": "otros"
     },
     {
-     "texto": "analisis de datos asistido por computadora",
-     "semillas": [
-      "analisis de datos a"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 1100,
-     "apariciones": 1,
-     "pos_promedio": 4.0,
-     "pos_mejor": 4,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "otros"
-    },
-    {
      "texto": "analisis de datos bi",
      "semillas": [
       "analisis de datos b"
@@ -7641,26 +7675,6 @@
       "google"
      ],
      "relevancia_max": 700,
-     "apariciones": 1,
-     "pos_promedio": 4.0,
-     "pos_mejor": 4,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "otros"
-    },
-    {
-     "texto": "analisis de datos de una investigacion cualitativa",
-     "semillas": [
-      "analisis de datos d"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 1200,
      "apariciones": 1,
      "pos_promedio": 4.0,
      "pos_mejor": 4,
@@ -7690,9 +7704,9 @@
      "intencion": "otros"
     },
     {
-     "texto": "analisis de datos para la empresa uc3m",
+     "texto": "analisis de datos que se hace",
      "semillas": [
-      "analisis de datos p"
+      "analisis de datos q"
      ],
      "grupos": [
       "alfabeto"
@@ -7700,7 +7714,7 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 561,
+     "relevancia_max": 601,
      "apariciones": 1,
      "pos_promedio": 4.0,
      "pos_mejor": 4,
@@ -7740,7 +7754,7 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 652,
+     "relevancia_max": 653,
      "apariciones": 1,
      "pos_promedio": 4.0,
      "pos_mejor": 4,
@@ -7764,6 +7778,66 @@
      "apariciones": 1,
      "pos_promedio": 4.0,
      "pos_mejor": 4,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos aplicaciones",
+     "semillas": [
+      "analisis de datos a"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 700,
+     "apariciones": 1,
+     "pos_promedio": 5.0,
+     "pos_mejor": 5,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos deportivos",
+     "semillas": [
+      "analisis de datos d"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 602,
+     "apariciones": 1,
+     "pos_promedio": 5.0,
+     "pos_mejor": 5,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos en una investigacion",
+     "semillas": [
+      "analisis de datos e"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 650,
+     "apariciones": 1,
+     "pos_promedio": 5.0,
+     "pos_mejor": 5,
      "veces_top3": 0,
      "veces_top10": 1,
      "instituciones": [],
@@ -7850,9 +7924,9 @@
      "intencion": "otros"
     },
     {
-     "texto": "analisis de datos no parametricos",
+     "texto": "analisis de datos media mediana moda",
      "semillas": [
-      "analisis de datos n"
+      "analisis de datos m"
      ],
      "grupos": [
       "alfabeto"
@@ -7860,7 +7934,7 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 560,
+     "relevancia_max": 652,
      "apariciones": 1,
      "pos_promedio": 5.0,
      "pos_mejor": 5,
@@ -7870,9 +7944,9 @@
      "intencion": "otros"
     },
     {
-     "texto": "analisis de datos que se hace",
+     "texto": "analisis de datos no parametricos",
      "semillas": [
-      "analisis de datos q"
+      "analisis de datos n"
      ],
      "grupos": [
       "alfabeto"
@@ -7901,26 +7975,6 @@
       "google"
      ],
      "relevancia_max": 560,
-     "apariciones": 1,
-     "pos_promedio": 5.0,
-     "pos_mejor": 5,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "otros"
-    },
-    {
-     "texto": "analisis de datos tablas y graficas",
-     "semillas": [
-      "analisis de datos t"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 559,
      "apariciones": 1,
      "pos_promedio": 5.0,
      "pos_mejor": 5,
@@ -7970,27 +8024,7 @@
      "intencion": "otros"
     },
     {
-     "texto": "análisis de datos dibujo",
-     "semillas": [
-      "analisis de datos d"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 900,
-     "apariciones": 1,
-     "pos_promedio": 5.0,
-     "pos_mejor": 5,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "otros"
-    },
-    {
-     "texto": "analisis de datos aplicaciones",
+     "texto": "analisis de datos avanzados",
      "semillas": [
       "analisis de datos a"
      ],
@@ -8000,7 +8034,7 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 700,
+     "relevancia_max": 601,
      "apariciones": 1,
      "pos_promedio": 6.0,
      "pos_mejor": 6,
@@ -8010,9 +8044,9 @@
      "intencion": "otros"
     },
     {
-     "texto": "analisis de datos estadisticos",
+     "texto": "analisis de datos del método científico",
      "semillas": [
-      "analisis de datos e"
+      "analisis de datos d"
      ],
      "grupos": [
       "alfabeto"
@@ -8020,7 +8054,7 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 559,
+     "relevancia_max": 601,
      "apariciones": 1,
      "pos_promedio": 6.0,
      "pos_mejor": 6,
@@ -8061,26 +8095,6 @@
       "google"
      ],
      "relevancia_max": 559,
-     "apariciones": 1,
-     "pos_promedio": 6.0,
-     "pos_mejor": 6,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "otros"
-    },
-    {
-     "texto": "analisis de datos multivariantes daniel peña",
-     "semillas": [
-      "analisis de datos m"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 650,
      "apariciones": 1,
      "pos_promedio": 6.0,
      "pos_mejor": 6,
@@ -8170,6 +8184,26 @@
      "intencion": "otros"
     },
     {
+     "texto": "analisis de datos tecnico",
+     "semillas": [
+      "analisis de datos t"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 1,
+     "pos_promedio": 6.0,
+     "pos_mejor": 6,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
      "texto": "analisis de datos whatsapp",
      "semillas": [
       "analisis de datos w"
@@ -8190,7 +8224,7 @@
      "intencion": "otros"
     },
     {
-     "texto": "analisis de datos avanzados",
+     "texto": "analisis de datos agrupados",
      "semillas": [
       "analisis de datos a"
      ],
@@ -8200,7 +8234,7 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 601,
+     "relevancia_max": 600,
      "apariciones": 1,
      "pos_promedio": 7.0,
      "pos_mejor": 7,
@@ -8230,7 +8264,7 @@
      "intencion": "otros"
     },
     {
-     "texto": "analisis de datos deportivos",
+     "texto": "analisis de datos descriptivos",
      "semillas": [
       "analisis de datos d"
      ],
@@ -8240,27 +8274,7 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 602,
-     "apariciones": 1,
-     "pos_promedio": 7.0,
-     "pos_mejor": 7,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "otros"
-    },
-    {
-     "texto": "analisis de datos en el metodo cientifico",
-     "semillas": [
-      "analisis de datos e"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 558,
+     "relevancia_max": 600,
      "apariciones": 1,
      "pos_promedio": 7.0,
      "pos_mejor": 7,
@@ -8310,6 +8324,26 @@
      "intencion": "otros"
     },
     {
+     "texto": "analisis de datos multivariantes daniel peña",
+     "semillas": [
+      "analisis de datos m"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 650,
+     "apariciones": 1,
+     "pos_promedio": 7.0,
+     "pos_mejor": 7,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
      "texto": "analisis de datos orange",
      "semillas": [
       "analisis de datos o"
@@ -8330,9 +8364,9 @@
      "intencion": "otros"
     },
     {
-     "texto": "analisis de datos tecnico",
+     "texto": "analisis de datos para toma de decisiones",
      "semillas": [
-      "analisis de datos t"
+      "analisis de datos p"
      ],
      "grupos": [
       "alfabeto"
@@ -8340,7 +8374,7 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 557,
+     "relevancia_max": 558,
      "apariciones": 1,
      "pos_promedio": 7.0,
      "pos_mejor": 7,
@@ -8370,26 +8404,6 @@
      "intencion": "otros"
     },
     {
-     "texto": "analisis de datos agrupados",
-     "semillas": [
-      "analisis de datos a"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 600,
-     "apariciones": 1,
-     "pos_promedio": 8.0,
-     "pos_mejor": 8,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "otros"
-    },
-    {
      "texto": "analisis de datos basico",
      "semillas": [
       "analisis de datos b"
@@ -8401,26 +8415,6 @@
       "google"
      ],
      "relevancia_max": 600,
-     "apariciones": 1,
-     "pos_promedio": 8.0,
-     "pos_mejor": 8,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "otros"
-    },
-    {
-     "texto": "analisis de datos del método científico",
-     "semillas": [
-      "analisis de datos d"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 601,
      "apariciones": 1,
      "pos_promedio": 8.0,
      "pos_mejor": 8,
@@ -8550,7 +8544,7 @@
      "intencion": "otros"
     },
     {
-     "texto": "analisis de datos para toma de decisiones",
+     "texto": "analisis de datos programas",
      "semillas": [
       "analisis de datos p"
      ],
@@ -8624,6 +8618,26 @@
      "apariciones": 1,
      "pos_promedio": 8.0,
      "pos_mejor": 8,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos agropecuarios",
+     "semillas": [
+      "analisis de datos a"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "pos_promedio": 9.0,
+     "pos_mejor": 9,
      "veces_top3": 0,
      "veces_top10": 1,
      "instituciones": [],
@@ -8750,46 +8764,6 @@
      "intencion": "otros"
     },
     {
-     "texto": "analisis de datos microsoft learn",
-     "semillas": [
-      "analisis de datos m"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 556,
-     "apariciones": 1,
-     "pos_promedio": 9.0,
-     "pos_mejor": 9,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "otros"
-    },
-    {
-     "texto": "analisis de datos programas",
-     "semillas": [
-      "analisis de datos p"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 556,
-     "apariciones": 1,
-     "pos_promedio": 9.0,
-     "pos_mejor": 9,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "otros"
-    },
-    {
      "texto": "analisis de datos quimica",
      "semillas": [
       "analisis de datos q"
@@ -8850,6 +8824,26 @@
      "intencion": "otros"
     },
     {
+     "texto": "analisis de datos tesis",
+     "semillas": [
+      "analisis de datos t"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "pos_promedio": 9.0,
+     "pos_mejor": 9,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
      "texto": "kappa analisis de datos",
      "semillas": [
       "analisis de datos k"
@@ -8890,7 +8884,7 @@
      "intencion": "otros"
     },
     {
-     "texto": "analisis de datos agropecuarios",
+     "texto": "analisis de datos agricolas",
      "semillas": [
       "analisis de datos a"
      ],
@@ -8913,26 +8907,6 @@
      "texto": "analisis de datos bivariados",
      "semillas": [
       "analisis de datos b"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 555,
-     "apariciones": 1,
-     "pos_promedio": 10.0,
-     "pos_mejor": 10,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "otros"
-    },
-    {
-     "texto": "analisis de datos descriptivos",
-     "semillas": [
-      "analisis de datos d"
      ],
      "grupos": [
       "alfabeto"
@@ -9070,7 +9044,7 @@
      "intencion": "otros"
     },
     {
-     "texto": "analisis de datos materia",
+     "texto": "analisis de datos microsoft learn",
      "semillas": [
       "analisis de datos m"
      ],
@@ -9110,7 +9084,7 @@
      "intencion": "otros"
     },
     {
-     "texto": "analisis de datos tesis",
+     "texto": "analisis de datos tecnologia",
      "semillas": [
       "analisis de datos t"
      ],
@@ -9210,26 +9184,6 @@
      "intencion": "otros"
     },
     {
-     "texto": "analisis de datos agricolas",
-     "semillas": [
-      "analisis de datos a"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 554,
-     "apariciones": 1,
-     "pos_promedio": 11.0,
-     "pos_mejor": 11,
-     "veces_top3": 0,
-     "veces_top10": 0,
-     "instituciones": [],
-     "intencion": "otros"
-    },
-    {
      "texto": "analisis de datos beisbol",
      "semillas": [
       "analisis de datos b"
@@ -9253,6 +9207,26 @@
      "texto": "analisis de datos en word",
      "semillas": [
       "analisis de datos w"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "pos_promedio": 11.0,
+     "pos_mejor": 11,
+     "veces_top3": 0,
+     "veces_top10": 0,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos estadisticos",
+     "semillas": [
+      "analisis de datos e"
      ],
      "grupos": [
       "alfabeto"
@@ -9310,7 +9284,7 @@
      "intencion": "otros"
     },
     {
-     "texto": "analisis de datos metodologia de la investigacion",
+     "texto": "analisis de datos materia",
      "semillas": [
       "analisis de datos m"
      ],
@@ -9370,7 +9344,7 @@
      "intencion": "otros"
     },
     {
-     "texto": "analisis de datos tecnologia",
+     "texto": "analisis de datos talento tech",
      "semillas": [
       "analisis de datos t"
      ],
@@ -9384,6 +9358,26 @@
      "apariciones": 1,
      "pos_promedio": 11.0,
      "pos_mejor": 11,
+     "veces_top3": 0,
+     "veces_top10": 0,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos articulos cientificos",
+     "semillas": [
+      "analisis de datos a"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "pos_promedio": 12.0,
+     "pos_mejor": 12,
      "veces_top3": 0,
      "veces_top10": 0,
      "instituciones": [],
@@ -9410,15 +9404,15 @@
      "intencion": "otros"
     },
     {
-     "texto": "analisis de datos desde 0",
+     "texto": "analisis de datos de encuestas",
      "semillas": [
-      "analisis de datos"
+      "analisis de datos d"
      ],
      "grupos": [
-      "youtube"
+      "alfabeto"
      ],
      "fuentes": [
-      "youtube"
+      "google"
      ],
      "relevancia_max": 553,
      "apariciones": 1,
@@ -9430,7 +9424,7 @@
      "intencion": "otros"
     },
     {
-     "texto": "analisis de datos en una investigacion cualitativa",
+     "texto": "analisis de datos en que consiste",
      "semillas": [
       "analisis de datos e"
      ],
@@ -9470,7 +9464,7 @@
      "intencion": "otros"
     },
     {
-     "texto": "analisis de datos masivos",
+     "texto": "analisis de datos metodologia de la investigacion",
      "semillas": [
       "analisis de datos m"
      ],
@@ -9521,26 +9515,6 @@
       "google"
      ],
      "relevancia_max": 553,
-     "apariciones": 1,
-     "pos_promedio": 12.0,
-     "pos_mejor": 12,
-     "veces_top3": 0,
-     "veces_top10": 0,
-     "instituciones": [],
-     "intencion": "otros"
-    },
-    {
-     "texto": "analisis de datos talento tech",
-     "semillas": [
-      "analisis de datos t"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 552,
      "apariciones": 1,
      "pos_promedio": 12.0,
      "pos_mejor": 12,
@@ -9610,7 +9584,7 @@
      "intencion": "otros"
     },
     {
-     "texto": "analisis de datos articulos cientificos",
+     "texto": "analisis de datos asistido por computadora",
      "semillas": [
       "analisis de datos a"
      ],
@@ -9670,29 +9644,9 @@
      "intencion": "otros"
     },
     {
-     "texto": "analisis de datos de encuestas",
+     "texto": "analisis de datos de investigacion",
      "semillas": [
       "analisis de datos d"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 552,
-     "apariciones": 1,
-     "pos_promedio": 13.0,
-     "pos_mejor": 13,
-     "veces_top3": 0,
-     "veces_top10": 0,
-     "instituciones": [],
-     "intencion": "otros"
-    },
-    {
-     "texto": "analisis de datos experimentales",
-     "semillas": [
-      "analisis de datos e"
      ],
      "grupos": [
       "alfabeto"
@@ -9790,7 +9744,7 @@
      "intencion": "otros"
     },
     {
-     "texto": "analisis de datos mintic",
+     "texto": "analisis de datos masivos",
      "semillas": [
       "analisis de datos m"
      ],
@@ -9841,6 +9795,26 @@
       "google"
      ],
      "relevancia_max": 552,
+     "apariciones": 1,
+     "pos_promedio": 13.0,
+     "pos_mejor": 13,
+     "veces_top3": 0,
+     "veces_top10": 0,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos tablas y graficas",
+     "semillas": [
+      "analisis de datos t"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
      "apariciones": 1,
      "pos_promedio": 13.0,
      "pos_mejor": 13,
@@ -9930,9 +9904,29 @@
      "intencion": "otros"
     },
     {
-     "texto": "analisis de datos de investigacion",
+     "texto": "analisis de datos de una investigacion cualitativa",
      "semillas": [
       "analisis de datos d"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "pos_promedio": 14.0,
+     "pos_mejor": 14,
+     "veces_top3": 0,
+     "veces_top10": 0,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos en el metodo cientifico",
+     "semillas": [
+      "analisis de datos e"
      ],
      "grupos": [
       "alfabeto"
@@ -10030,7 +10024,7 @@
      "intencion": "otros"
     },
     {
-     "texto": "analisis de datos medicos",
+     "texto": "analisis de datos mintic",
      "semillas": [
       "analisis de datos m"
      ],
@@ -10210,6 +10204,46 @@
      "intencion": "otros"
     },
     {
+     "texto": "analisis de datos desde 0",
+     "semillas": [
+      "analisis de datos"
+     ],
+     "grupos": [
+      "youtube"
+     ],
+     "fuentes": [
+      "youtube"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "pos_promedio": 15.0,
+     "pos_mejor": 15,
+     "veces_top3": 0,
+     "veces_top10": 0,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos en una investigacion cualitativa",
+     "semillas": [
+      "analisis de datos e"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "pos_promedio": 15.0,
+     "pos_mejor": 15,
+     "veces_top3": 0,
+     "veces_top10": 0,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
      "texto": "analisis de datos fidelitas",
      "semillas": [
       "analisis de datos f"
@@ -10233,6 +10267,26 @@
      "texto": "analisis de datos inferencial",
      "semillas": [
       "analisis de datos i"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 550,
+     "apariciones": 1,
+     "pos_promedio": 15.0,
+     "pos_mejor": 15,
+     "veces_top3": 0,
+     "veces_top10": 0,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "analisis de datos medicos",
+     "semillas": [
+      "analisis de datos m"
      ],
      "grupos": [
       "alfabeto"
@@ -10357,15 +10411,15 @@
   {
    "buscador": "pendiente",
    "consulta": "analisis de datos",
-   "estado": "rechazado",
-   "motivo": "el buscador no devolvió resultados",
+   "estado": "pendiente",
+   "motivo": "sin fuente automática: leer la página de un buscador con un script no es confiable (probado el 2026-11-16). Falta elegir una API oficial con clave gratuita (PLAN.md, fase F5).",
    "resultados": []
   },
   {
    "buscador": "pendiente",
    "consulta": "analisis de datos carrera uruguay",
-   "estado": "rechazado",
-   "motivo": "el buscador no devolvió resultados",
+   "estado": "pendiente",
+   "motivo": "sin fuente automática: leer la página de un buscador con un script no es confiable (probado el 2026-11-16). Falta elegir una API oficial con clave gratuita (PLAN.md, fase F5).",
    "resultados": []
   }
  ],
@@ -10403,6 +10457,5 @@
   "bing": "https://www.bing.com/search?cc=UY&setlang=es&q=analisis%20de%20datos",
   "duckduckgo": "https://duckduckgo.com/?kl=uy-es&q=analisis%20de%20datos",
   "youtube": "https://www.youtube.com/results?search_query=analisis%20de%20datos"
- },
- "reprocesado_utc": "2026-11-18T12:41:22Z"
+ }
 }

@@ -116,6 +116,121 @@
     }
    ],
    "instituciones": {}
+  },
+  {
+   "run_id": "20261118T160755Z_transformacion-digital",
+   "fecha_utc": "2026-11-18T16:07:55Z",
+   "consultas": 46,
+   "frases": 356,
+   "apariciones_utiles": 154,
+   "ramas": {
+    "fuera_uy": 53,
+    "emprender": 0,
+    "becas": 2,
+    "costo": 10,
+    "salida": 12,
+    "modalidad": 2,
+    "plan": 3,
+    "comparar": 2,
+    "donde": 17,
+    "formato": 20,
+    "temas": 51,
+    "aprender": 35,
+    "otros": 215
+   },
+   "top": [
+    {
+     "texto": "transformacion digital uruguay",
+     "rama": "donde",
+     "apariciones": 14,
+     "pos_promedio": 3.4
+    },
+    {
+     "texto": "transformacion cursos",
+     "rama": "formato",
+     "apariciones": 4,
+     "pos_promedio": 3.0
+    },
+    {
+     "texto": "transformación digital e inteligencia artificial",
+     "rama": "temas",
+     "apariciones": 3,
+     "pos_promedio": 10.3
+    },
+    {
+     "texto": "donde estudiar transformacion digital",
+     "rama": "donde",
+     "apariciones": 2,
+     "pos_promedio": 1.0
+    },
+    {
+     "texto": "transformación social digital",
+     "rama": "temas",
+     "apariciones": 2,
+     "pos_promedio": 2.5
+    },
+    {
+     "texto": "transformación digital recursos humanos",
+     "rama": "temas",
+     "apariciones": 2,
+     "pos_promedio": 4.0
+    },
+    {
+     "texto": "transformacion digital y funcion publica",
+     "rama": "costo",
+     "apariciones": 2,
+     "pos_promedio": 4.5
+    },
+    {
+     "texto": "transformacion digital y gestion de datos",
+     "rama": "temas",
+     "apariciones": 2,
+     "pos_promedio": 4.5
+    },
+    {
+     "texto": "transformación digital curso",
+     "rama": "formato",
+     "apariciones": 2,
+     "pos_promedio": 6.0
+    },
+    {
+     "texto": "transformacion digital especializacion",
+     "rama": "formato",
+     "apariciones": 2,
+     "pos_promedio": 6.5
+    },
+    {
+     "texto": "transformación digital carrera",
+     "rama": "formato",
+     "apariciones": 2,
+     "pos_promedio": 7.0
+    },
+    {
+     "texto": "transformación digital pdf",
+     "rama": "aprender",
+     "apariciones": 2,
+     "pos_promedio": 7.5
+    },
+    {
+     "texto": "transformacion digital en salud ops",
+     "rama": "temas",
+     "apariciones": 2,
+     "pos_promedio": 7.5
+    },
+    {
+     "texto": "transformación digital en salud",
+     "rama": "temas",
+     "apariciones": 2,
+     "pos_promedio": 7.5
+    },
+    {
+     "texto": "transformación digital de negocios",
+     "rama": "temas",
+     "apariciones": 2,
+     "pos_promedio": 8.0
+    }
+   ],
+   "instituciones": {}
   }
  ]
 }
