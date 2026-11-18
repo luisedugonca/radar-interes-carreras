@@ -1,7 +1,7 @@
 // Análisis por reglas, con la estructura del rol «Analista de Datos Senior» (docs/data/rol-analista.md, punto 5).
 // Sin IA: cada hallazgo aparece solo si los datos lo sostienen. Las explicaciones son hipótesis y se marcan así.
 // Umbrales a la vista para poder discutirlos y cambiarlos.
-import { normalizar } from "./nucleo.js?v=20261118h";
+import { normalizar } from "./nucleo.js?v=20261118j";
 
 const APARTE = ["otros", "fuera_uy", "emprender"];
 const COMO_CARRERA = ["formato", "plan", "donde", "costo", "becas", "modalidad", "salida", "comparar"];

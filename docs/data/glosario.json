@@ -103,7 +103,7 @@
     },
     {
       "termino": "Interés (Google Trends)",
-      "que_es": "Índice de 0 a 100 de cuánto se busca un tema a lo largo del tiempo, en relación con su mejor mes. No es cantidad. El radar abre Trends con el tema cargado."
+      "que_es": "Índice de 0 a 100 de cuánto se busca un tema a lo largo del tiempo, en relación con el mejor momento del período elegido. No es cantidad. El radar lo muestra para el rango Desde–Hasta."
     },
     {
       "termino": "Top 10 de Google",
@@ -131,8 +131,8 @@
       {
         "fuente": "Google Trends",
         "mide": "Interés relativo, de 0 a 100",
-        "hacia_atras": "Desde 2004, mes a mes; semana a semana hasta 5 años.",
-        "en_el_radar": "Enlace por tema. La serie en el radar está pendiente.",
+        "hacia_atras": "Desde 2004. Por día si el rango es menor a 9 meses, por semana hasta 5 años, por mes en rangos más largos.",
+        "en_el_radar": "Gráfico oficial en el bloque «Interés en Google», con el tema y sus comparados, para el período elegido en el filtro Desde–Hasta.",
         "tipo": "historial"
       },
       {

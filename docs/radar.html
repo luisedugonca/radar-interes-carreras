@@ -7,8 +7,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/estilo.css?v=20261118h">
-<script src="assets/tema.js?v=20261118h"></script>
+<link rel="stylesheet" href="assets/estilo.css?v=20261118j">
+<script src="assets/tema.js?v=20261118j"></script>
 </head>
 <body aria-busy="true">
 <header class="cab">
@@ -46,6 +46,9 @@
     <label class="pill" title="Elegí una medición guardada de este tema"><select id="f-medicion" aria-label="Medición"><option>Medido el 00-nov-2026</option></select></label>
     <label class="pill" title="Cómo agrupar las mediciones en el gráfico de evolución"><select id="f-gran" aria-label="Agrupar la evolución">
       <option value="semana">Semana a semana</option><option value="mes">Mes a mes</option><option value="todas">Cada medición</option></select></label>
+    <label class="pill" title="Período de los gráficos de historial (Evolución y Google Trends)"><select id="f-periodo" aria-label="Período">
+      <option value="3m">Últimos 3 meses</option><option value="12m">Último año</option><option value="5y" selected>Últimos 5 años</option><option value="todo">Desde 2004</option><option value="medida">A medida</option></select></label>
+    <span class="pill rango" title="Desde y hasta: elegí cualquier día, mes o año"><input type="date" id="f-desde" min="2004-01-01" aria-label="Desde">–<input type="date" id="f-hasta" min="2004-01-01" aria-label="Hasta"></span>
     <label class="pill"><select id="f-duda" aria-label="Tipo de duda"><option>Todos los tipos de duda</option></select></label>
     <label class="pill"><select id="f-fuente" aria-label="Fuente">
       <option value="todas">Google y YouTube</option>
@@ -80,6 +83,12 @@
       <h3 id="t-evol" data-sello="hist"><span class="esq">Evolución · semana a semana</span></h3>
       <div id="evol"><span class="esq" style="display:block;height:150px"></span></div>
       <p class="pie-b" id="evol-nota"><span class="esq">Cargando la historia de mediciones del tema</span></p>
+    </section>
+
+    <section class="bloque" id="b-trends">
+      <h3 id="t-trends" data-sello="hist" data-sello-texto="Historial · Google Trends">Interés en Google · Uruguay</h3>
+      <div class="trends-marco"><iframe id="trends" title="Interés a lo largo del tiempo en Google Trends, Uruguay" loading="lazy"></iframe></div>
+      <p class="pie-b" id="trends-nota"></p>
     </section>
 
     <section class="bloque">
@@ -151,9 +160,9 @@
 </div>
 
 <script type="module">
-import { renderMapa } from "./assets/mapa.js?v=20261118h";
-import { hallazgos, calidad } from "./assets/analisis.js?v=20261118h";
-import { sellar, leerJSON, consultaEnVivo, consultaAMapa, ordenFrase, normalizar, esc, num, fecha, consultaAFilas, filasACSV, csvAConsultas } from "./assets/nucleo.js?v=20261118h";
+import { renderMapa } from "./assets/mapa.js?v=20261118j";
+import { hallazgos, calidad } from "./assets/analisis.js?v=20261118j";
+import { sellar, leerJSON, consultaEnVivo, consultaAMapa, ordenFrase, normalizar, esc, num, fecha, consultaAFilas, filasACSV, csvAConsultas } from "./assets/nucleo.js?v=20261118j";
 
 const $ = (id) => document.getElementById(id);
 /* ---------- Carga visible ---------- */
@@ -323,6 +332,7 @@ function pintar() {
 
   pintarAnalisis(c);
   pintarEvolucion();
+  pintarTrends();
   const inst = r.instituciones, ucu = inst.find((x) => x.id === "UCU");
   $("kpis").innerHTML = `
     <div class="dest"><span class="et">Duda principal</span><b>${esc(r.duda?.nombre ?? "—")}</b><small>${r.duda ? `${num(r.duda.apariciones_total)} apariciones · ${p1(r.duda.peso)} % del tema` : ""}</small></div>
@@ -412,7 +422,14 @@ function pintarEvolucion() {
     if (gran === "mes") return `${d.getUTCFullYear()}-${String(d.getUTCMonth() + 1).padStart(2, "0")}`;
     if (gran === "semana") { const l = new Date(Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate() - ((d.getUTCDay() + 6) % 7))); return l.toISOString().slice(0, 10); }
     return iso; };
-  const grupos = new Map(); serie.mediciones.forEach((m) => grupos.set(clave(m.fecha_utc), m));
+  const { desde, hasta } = periodo();
+  const enRango = serie.mediciones.filter((m) => { const d = m.fecha_utc.slice(0, 10); return d >= desde && d <= hasta; });
+  if (!enRango.length) {
+    $("evol").innerHTML = "";
+    $("evol-nota").textContent = `No hay mediciones de este tema entre ${dia(desde + "T12:00:00Z")} y ${dia(hasta + "T12:00:00Z")}. Medimos desde ${dia(serie.mediciones[0].fecha_utc)}, una vez por semana. Para años anteriores mirá Google Trends, abajo.`;
+    return;
+  }
+  const grupos = new Map(); enRango.forEach((m) => grupos.set(clave(m.fecha_utc), m));
   const puntos = [...grupos.entries()].map(([k, m]) => ({ k, m }));
   const etiqueta = (p) => gran === "mes" ? dia(p.k + "-01T12:00:00Z").replace(/^1-/, "") : gran === "semana" ? `sem. ${dia(p.k + "T12:00:00Z")}` : dia(p.m.fecha_utc);
   const color = Object.fromEntries(reglas.intenciones.map((i) => [i.id, i.color])), nombre = Object.fromEntries(reglas.intenciones.map((i) => [i.id, i.nombre]));
@@ -422,7 +439,7 @@ function pintarEvolucion() {
   if (puntos.length < 2) {
     $("evol").innerHTML = `<div class="apilada" role="img" aria-label="Peso de cada tipo de duda en la medición del ${dia(ult.fecha_utc)}">${top.map((id) => `<i title="${esc(nombre[id])} ${p1(peso(ult, id))} %" style="width:${peso(ult, id)}%;background:${color[id]}"></i>`).join("")}</div>
       <ul class="ley">${top.map((id) => `<li><b style="background:${color[id]}"></b>${esc(nombre[id])} ${p1(peso(ult, id))} %</li>`).join("")}</ul>`;
-    $("evol-nota").textContent = `Hay ${serie.mediciones.length === 1 ? "una sola medición" : `${serie.mediciones.length} mediciones en el mismo período`} (${dia(ult.fecha_utc)}). Cada vez que se vuelve a medir el tema se suma un punto y aparece la línea de evolución.`;
+    $("evol-nota").textContent = `Hay ${enRango.length === 1 ? "una sola medición en el período" : `${enRango.length} mediciones en ${gran === "mes" ? "el mismo mes" : "la misma semana"}`} (${dia(ult.fecha_utc)}). Cada vez que se vuelve a medir el tema se suma un punto y aparece la línea de evolución.`;
     return;
   }
   const W = 640, H = 220, m = { l: 40, r: 12, t: 12, b: 34 };
@@ -435,7 +452,45 @@ function pintarEvolucion() {
   top.forEach((id) => { s += `<path fill="none" stroke="${color[id]}" stroke-width="2.4" d="${puntos.map((p, i) => `${i ? "L" : "M"}${x(i).toFixed(1)},${y(peso(p.m, id)).toFixed(1)}`).join("")}"/>`
     + puntos.map((p, i) => `<circle cx="${x(i)}" cy="${y(peso(p.m, id))}" r="3.5" fill="${color[id]}"><title>${esc(nombre[id])} · ${esc(etiqueta(p))}: ${p1(peso(p.m, id))} %</title></circle>`).join(""); });
   $("evol").innerHTML = s + `</svg><ul class="ley">${top.map((id) => `<li><b style="background:${color[id]}"></b>${esc(nombre[id])}</li>`).join("")}</ul>`;
-  $("evol-nota").textContent = `Peso de cada tipo de duda (% de las apariciones útiles). ${puntos.length} puntos, de ${dia(serie.mediciones[0].fecha_utc)} a ${dia(ult.fecha_utc)}${gran !== "todas" ? `: de cada ${gran === "mes" ? "mes" : "semana"}, la última medición` : ""}. La línea punteada es la medición que estás mirando.`;
+  $("evol-nota").textContent = `Peso de cada tipo de duda (% de las apariciones útiles). ${puntos.length} puntos, de ${dia(puntos[0].m.fecha_utc)} a ${dia(ult.fecha_utc)}${gran !== "todas" ? `: de cada ${gran === "mes" ? "mes" : "semana"}, la última medición` : ""}. La línea punteada es la medición que estás mirando.`;
+}
+
+/* ---------- Período (desde–hasta) para los gráficos de historial ---------- */
+const hoyISO = () => new Date().toISOString().slice(0, 10);
+function aplicarPreset(v) {
+  const h = new Date(), d = new Date(h);
+  if (v === "3m") d.setUTCMonth(d.getUTCMonth() - 3);
+  else if (v === "12m") d.setUTCFullYear(d.getUTCFullYear() - 1);
+  else if (v === "5y") d.setUTCFullYear(d.getUTCFullYear() - 5);
+  else if (v === "todo") d.setTime(Date.UTC(2004, 0, 1));
+  else return;
+  $("f-desde").value = d.toISOString().slice(0, 10); $("f-hasta").value = h.toISOString().slice(0, 10);
+}
+function periodo() {
+  const max = hoyISO();
+  let desde = $("f-desde").value || "2004-01-01", hasta = $("f-hasta").value || max;
+  if (desde < "2004-01-01") desde = "2004-01-01";
+  if (hasta > max) hasta = max;
+  if (desde > hasta) [desde, hasta] = [hasta, desde];
+  return { desde, hasta };
+}
+function pintarTrends() {
+  const { desde, hasta } = periodo(), tiempo = `${desde} ${hasta}`;
+  const temas = [base, ...comparados].map((c) => c.tema).slice(0, 5);
+  const req = { comparisonItem: temas.map((keyword) => ({ keyword, geo: "UY", time: tiempo })), category: 0, property: "" };
+  const explore = `date=${encodeURIComponent(tiempo)}&geo=UY&q=${encodeURIComponent(temas.join(","))}`;
+  const url = `https://trends.google.com/trends/embed/explore/TIMESERIES?req=${encodeURIComponent(JSON.stringify(req))}&tz=180&eq=${encodeURIComponent(explore)}`;
+  if ($("trends").src !== url) $("trends").src = url;
+  const dias = (Date.parse(hasta) - Date.parse(desde)) / 864e5;
+  const paso = dias < 270 ? "por día" : dias <= 5 * 366 ? "por semana" : "por mes";
+  $("t-trends").dataset.selloTexto = `Historial · Google Trends · ${dia(desde + "T12:00:00Z")} a ${dia(hasta + "T12:00:00Z")}`;
+  $("trends-nota").innerHTML = `Escala 0 a 100: 100 es el momento de más interés entre ${temas.length > 1 ? "los temas elegidos" : "las búsquedas del tema"} en el período; no es cantidad de búsquedas. Google agrupa ${paso} con este rango. Si el gráfico no aparece o dice «sin datos suficientes», <a href="https://trends.google.com/trends/explore?${explore}" target="_blank" rel="noopener">abrilo en Google Trends</a>.`;
+}
+function cambioPeriodo() {
+  const { desde, hasta } = periodo();
+  $("f-desde").value = desde; $("f-hasta").value = hasta;
+  $("f-desde").max = $("f-hasta").max = hoyISO();
+  pintarEvolucion(); pintarTrends(); sellos(); actualizarURL();
 }
 
 function sellos() {
@@ -447,6 +502,7 @@ function sellos() {
 }
 
 function pintarComparar() {
+  if (base) pintarTrends();
   $("b-comparar").hidden = !comparados.length;
   if (!comparados.length) { pintarAnalisis(filtrar(base)); return; }
   pintarAnalisis(filtrar(base));
@@ -510,6 +566,7 @@ function actualizarURL() {
   if (base?.historica) p.set("medicion", base.run_id);
   const enBase = comparados.filter((c) => !c.en_vivo && !c.origen);
   if (enBase.length) p.set("comparar", enBase.map((c) => c.slug).join(","));
+  if ($("f-periodo").value !== "5y") { p.set("desde", $("f-desde").value); p.set("hasta", $("f-hasta").value); }
   history.replaceState(null, "", `?${p}`);
 }
 async function abrir(slug, runId = null) {
@@ -580,12 +637,18 @@ $("f-duda").addEventListener("change", (e) => { filtro.duda = e.target.value; if
 $("f-fuente").addEventListener("change", (e) => { filtro.fuente = e.target.value; pintar(); });
 $("f-medicion").addEventListener("change", (e) => { if (base && !base.en_vivo && !base.origen) abrir(base.slug, e.target.value); });
 $("f-gran").addEventListener("change", pintarEvolucion);
+$("f-periodo").addEventListener("change", (e) => { aplicarPreset(e.target.value); cambioPeriodo(); });
+for (const id of ["f-desde", "f-hasta"]) $(id).addEventListener("change", () => { $("f-periodo").value = "medida"; cambioPeriodo(); });
 $("btn-chat").addEventListener("click", async () => {
   try { await navigator.clipboard.writeText($("pedido-chat").value); $("estado-chat").textContent = "Copiado."; }
   catch { $("pedido-chat").select(); $("estado-chat").textContent = "Seleccionado: copialo con Ctrl+C o Cmd+C."; }
 });
 
 const params = new URLSearchParams(location.search);
+$("f-desde").max = $("f-hasta").max = hoyISO();
+if (/^\d{4}-\d{2}-\d{2}$/.test(params.get("desde") ?? "") && /^\d{4}-\d{2}-\d{2}$/.test(params.get("hasta") ?? "")) {
+  $("f-periodo").value = "medida"; $("f-desde").value = params.get("desde"); $("f-hasta").value = params.get("hasta");
+} else aplicarPreset("5y");
 for (const s of (params.get("comparar") ?? "").split(",").filter(Boolean).slice(0, 3)) {
   if (indice.consultas.some((c) => c.slug === s)) comparados.push(await cargar(s));
 }
