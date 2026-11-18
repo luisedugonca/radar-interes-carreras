@@ -36,6 +36,8 @@ export function resumirPuestos(p) {
 export const ordenFrase = (a, b) => b.apariciones - a.apariciones || (b.veces_top3 ?? 0) - (a.veces_top3 ?? 0)
   || (a.pos_promedio ?? 99) - (b.pos_promedio ?? 99) || (a.texto < b.texto ? -1 : a.texto > b.texto ? 1 : 0);
 
+const PAUSA_MS = 150;
+
 // Autocompletar de Google por JSONP (el servicio no permite fetch desde otra web).
 function jsonp(consulta, pais) {
   return new Promise((resolver) => {
@@ -62,6 +64,7 @@ export async function consultaEnVivo(temaCrudo, reglas, alAvanzar) {
   let conRespuesta = 0, rechazadas = 0;
   for (const [n, semilla] of semillas.entries()) {
     alAvanzar?.(n + 1, semillas.length);
+    if (n) await new Promise((r) => setTimeout(r, PAUSA_MS));   // pausa entre pedidos: no saturar a Google
     const datos = await jsonp(semilla.consulta, reglas.pais);
     if (!datos) continue;
     conRespuesta++;

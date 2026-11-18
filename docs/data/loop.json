@@ -6,7 +6,7 @@
   "F3",
   "F4"
  ],
- "actualizado_utc": "2026-11-16T22:50:00Z",
+ "actualizado_utc": "2026-11-18T23:00:00Z",
  "fases": [
   {
    "id": "F0",
@@ -71,6 +71,30 @@
    "estado": "pendiente",
    "evidencia": "Avance: 10 temas medidos, entre ellos los de Negocios Digitales y Datos y Negocios. Falta la vista para comparar temas lado a lado.",
    "aprobacion": "N1 · datos · la lista de temas la da el PO"
+  },
+  {
+   "id": "F9",
+   "nombre": "GEO · base por reglas",
+   "hecho_cuando": "Las respuestas ya guardadas de ChatGPT y Gemini quedan en geo.csv, una fila por respuesta; una prueba compara 5 filas contra lectura humana.",
+   "estado": "pendiente",
+   "evidencia": "",
+   "aprobacion": "N1 · datos, con registro"
+  },
+  {
+   "id": "F10",
+   "nombre": "GEO · ejecutor automático",
+   "hecho_cuando": "Una corrida programada guarda las respuestas con crudo, manifiesto y reintentos registrados, sin superar el tope de pedidos.",
+   "estado": "espera-po",
+   "evidencia": "",
+   "aprobacion": "N3 · el PO elige la vía y crea las claves"
+  },
+  {
+   "id": "F11",
+   "nombre": "GEO · vista en la web",
+   "hecho_cuando": "La web muestra los indicadores GEO leyendo solo geo.csv, con carga visible y fecha de la corrida.",
+   "estado": "pendiente",
+   "evidencia": "",
+   "aprobacion": "N2 · un OK por lote"
   },
   {
    "id": "F8",

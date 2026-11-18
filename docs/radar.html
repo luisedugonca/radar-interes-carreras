@@ -56,6 +56,10 @@
 
 <div class="radar">
   <section class="escena" aria-label="Mapa de interés">
+    <div class="carga" id="carga" hidden role="status" aria-live="polite">
+      <div class="carga-caja"><span class="giro" aria-hidden="true"></span><b id="carga-t">Cargando…</b><small id="carga-s"></small>
+        <div class="carga-barra"><i id="carga-i"></i></div></div>
+    </div>
     <h2 id="t-mapa"></h2>
     <svg id="mapa" class="mapa" aria-label="Mapa radial de frases por tipo de duda"></svg>
     <p class="leyenda"><span><b>Número</b> = apariciones</span><span><b>Tamaño</b> = más apariciones</span><span><b>Aro</b> = 3 términos con más datos</span><span>Ramas de mayor a menor</span></p>
@@ -66,6 +70,12 @@
       <h3>Indicadores del tema</h3>
       <div class="kp4" id="kpis"></div>
       <p class="pie-b" id="f-kpis"></p>
+    </section>
+
+    <section class="bloque">
+      <h3>Análisis <span class="sello sup" title="Hallazgos armados por reglas fijas, sin IA, con la estructura del rol Analista de Datos Senior">por reglas · sin IA</span></h3>
+      <div class="calidad" id="calidad"></div>
+      <div class="hallazgos" id="hallazgos"></div>
     </section>
 
     <section class="bloque" id="rama"></section>
@@ -130,10 +140,27 @@
 
 <script type="module">
 import { renderMapa } from "./assets/mapa.js";
+import { hallazgos, calidad } from "./assets/analisis.js";
 import { leerJSON, consultaEnVivo, consultaAMapa, ordenFrase, normalizar, esc, num, fecha, consultaAFilas, filasACSV, csvAConsultas } from "./assets/nucleo.js";
 
 const $ = (id) => document.getElementById(id);
-const [reglas, indice, sitio, glosario] = await Promise.all(["data/reglas.json", "data/indice.json", "data/sitio.json", "data/glosario.json"].map(leerJSON));
+/* ---------- Carga visible ---------- */
+let cargaInicio = 0;
+function carga(titulo, n, total) {
+  const c = $("carga");
+  if (!titulo) { c.hidden = true; document.body.removeAttribute("aria-busy"); return; }
+  if (c.hidden) cargaInicio = performance.now();
+  c.hidden = false; document.body.setAttribute("aria-busy", "true");
+  $("carga-t").textContent = titulo;
+  if (n && total) {
+    const pasado = (performance.now() - cargaInicio) / 1000, resta = Math.max(0, Math.round((pasado / n) * (total - n)));
+    $("carga-s").textContent = `${n} de ${total} consultas · faltan unos ${resta} s`;
+    $("carga-i").style.width = `${(100 * n) / total}%`;
+  } else { $("carga-s").textContent = "Un momento"; $("carga-i").style.width = "35%"; }
+}
+carga("Cargando la base del radar…");
+const [reglas, indice, sitio, glosario, rol] = await Promise.all([...["data/reglas.json", "data/indice.json", "data/sitio.json", "data/glosario.json"].map(leerJSON),
+  fetch("data/rol-analista.md").then((r) => (r.ok ? r.text() : ""))]);
 const repo = `https://github.com/${sitio.repo}`;
 $("sitio-titulo").textContent = sitio.titulo;
 $("sitio-equipo").textContent = sitio.equipo;
@@ -263,6 +290,7 @@ function pintar() {
     control.seleccionar(elegida.id, elegida.nodos[0].id, true);
   } else { $("mapa").replaceChildren(); $("rama").innerHTML = "<p>Sin frases con este filtro.</p>"; $("lista").innerHTML = ""; }
 
+  pintarAnalisis(c);
   const inst = r.instituciones, ucu = inst.find((x) => x.id === "UCU");
   $("kpis").innerHTML = `
     <div class="dest"><span class="et">Duda principal</span><b>${esc(r.duda?.nombre ?? "—")}</b><small>${r.duda ? `${num(r.duda.apariciones_total)} apariciones · ${p1(r.duda.peso)} % del tema` : ""}</small></div>
@@ -317,9 +345,28 @@ function pintar() {
   pintarComparar();
 }
 
+function pintarAnalisis(c) {
+  const q = calidad(c);
+  $("calidad").innerHTML = `<div class="apilada" role="img" aria-label="${q.partes.map((p) => `${p.nombre} ${p.pct} %`).join(", ")}">${q.partes.map((p) => `<i style="width:${p.pct}%;background:${p.color}" title="${esc(p.nombre)} ${p.pct} %"></i>`).join("")}</div>
+    <ul class="ley">${q.partes.map((p) => `<li><b style="background:${p.color}"></b>${esc(p.nombre)} ${num(p.pct)} %</li>`).join("")}<li>${num(q.consultas)} consultas · ${num(q.rechazadas)} frases rechazadas</li></ul>`;
+  const h = hallazgos(c, comparados.map((x) => filtrar(x)));
+  // Verde = favorable: impacto y confianza altos son buenos; en esfuerzo, lo bueno es bajo.
+  const tono = (v, invertido) => { const bueno = invertido ? v === "bajo" : v === "alto" || v === "alta", malo = invertido ? v === "alto" : v === "bajo" || v === "baja"; return bueno ? "ok" : malo ? "mal" : "pend"; };
+  const sello = (t, v, invertido = false) => `<span class="sello ${tono(v, invertido)}">${t} ${v}</span>`;
+  $("hallazgos").innerHTML = h.map((x, k) => `<article class="hall">
+    <div class="hall-cab"><span class="hall-n">${k + 1}</span><h4>${esc(x.titulo)}</h4><div class="hall-cifra"><b>${esc(x.cifra)}</b><small>${esc(x.cifra_t)}</small></div></div>
+    <div class="hall-sellos">${sello("Impacto", x.impacto)}${sello("Esfuerzo", x.esfuerzo, true)}${sello("Confianza", x.confianza)}</div>
+    <dl><dt>Qué encontramos</dt><dd>${esc(x.encontramos)}</dd><dt>Qué recomendamos</dt><dd><b>${esc(x.recomendamos)}</b></dd></dl>
+    <details><summary>Por qué, qué significa y cómo validarlo</summary><dl>
+      <dt>Por qué <span class="sello sup">Hipótesis</span></dt><dd>${esc(x.porque)}</dd>
+      <dt>Qué significa</dt><dd>${esc(x.significa)}</dd><dt>Oportunidad</dt><dd>${esc(x.oportunidad)}</dd><dt>Cómo validarlo</dt><dd>${esc(x.validamos)}</dd></dl></details>
+  </article>`).join("") || "<p>Sin hallazgos con este filtro.</p>";
+}
+
 function pintarComparar() {
   $("b-comparar").hidden = !comparados.length;
-  if (!comparados.length) return;
+  if (!comparados.length) { pintarAnalisis(filtrar(base)); return; }
+  pintarAnalisis(filtrar(base));
   const temas = [base, ...comparados].map((x) => filtrar(x));
   const ramas = reglas.intenciones.filter((i) => !APARTE.includes(i.id));
   $("t-comparar").innerHTML = `<thead><tr><th>Tema</th><th>Peso por tipo de duda</th><th>Duda principal</th><th>Término más propuesto</th><th class="n">Posición</th><th>Institución</th></tr></thead><tbody>${temas.map((c, k) => {
@@ -333,15 +380,19 @@ function pintarComparar() {
 
 function pedidoChat(c, r) {
   const u = utiles(c).sort((a, b) => b.apariciones_total - a.apariciones_total);
+  const h = hallazgos(c, comparados.map((x) => filtrar(x)));
   return [
-    `Sos analista de oferta académica. Ayudame a decidir cómo nombrar y describir una carrera vinculada a «${c.tema}» en ${c.pais}.`, "",
+    rol.trim(), "", "---", "",
+    `Con ese rol, ayudame a decidir cómo nombrar y describir una carrera vinculada a «${c.tema}» en ${c.pais}.`, "",
     "DATOS MEDIDOS (no agregues otros como si fueran medidos):",
     `- Fuente: autocompletar de Google${c.fuentes.length > 1 ? " y YouTube" : ""}, ${c.pais}, ${fecha(c.generado_utc)}. Se hicieron ${r.consultas} consultas sobre el tema.`,
     "- «Apariciones» = en cuántas consultas el buscador propuso la frase. «Posición» = lugar promedio en la lista de sugerencias (1 = primera). NO son cantidad de búsquedas ni puesto en los resultados.",
     `- Instituciones de Uruguay nombradas: ${r.instituciones.map((i) => `${i.id} (${i.n})`).join(", ") || "ninguna"}.`,
     "- Tipos de duda, de mayor a menor (apariciones, peso), con sus frases (apariciones; posición):",
     ...u.map((i) => `  · ${i.nombre} — ${i.apariciones_total} apariciones, ${p1(i.peso)} %: ${i.sugerencias.slice(0, 8).map((x) => `${x.texto} (${x.apariciones}; ${x.pos_promedio ?? "—"})`).join("; ")}`),
-    "", "PEDIDO:",
+    "", "HALLAZGOS QUE EL RADAR ARMÓ POR REGLAS (revisalos; no los des por buenos sin evaluarlos):",
+    ...h.map((x, k) => `  ${k + 1}. ${x.titulo}. Evidencia: ${x.encontramos} Recomendación del radar: ${x.recomendamos} (impacto ${x.impacto}, esfuerzo ${x.esfuerzo}, confianza ${x.confianza})`),
+    "", "PEDIDO (respondé con la estructura del rol, punto 5):",
     "1. Proponé 5 nombres posibles para la carrera, con palabras de las frases de arriba, citando las frases que los respaldan.",
     "2. Listá las 10 dudas que la página de la carrera tiene que responder, en el orden de los tipos de duda.",
     "3. Decí con qué temas conviene combinarla y por qué.",
@@ -363,26 +414,30 @@ function actualizarURL() {
   history.replaceState(null, "", `?${p}`);
 }
 async function abrir(slug) {
-  base = await cargar(slug); ramaSel = null;
+  carga(`Abriendo «${indice.consultas.find((c) => c.slug === slug)?.tema ?? slug}»…`);
+  base = await cargar(slug); ramaSel = null; carga();
   comparados = comparados.filter((c) => c.slug !== slug);
   actualizarURL(); pintarBuscador(); pintar(); $("estado").textContent = "";
 }
 async function medirEnVivo(texto) {
+  $("tema-sub").textContent = "Midiendo en vivo…";
   try {
-    const c = await consultaEnVivo(texto, reglas, (n, t) => { $("estado").textContent = `Midiendo en vivo… ${n} de ${t}`; });
+    const c = await consultaEnVivo(texto, reglas, (n, t) => { carga(`Midiendo «${texto}» en Google…`, n, t); $("estado").textContent = `Midiendo en vivo… ${n} de ${t}`; });
+    carga();
     const f = c.fuentes[0];
     if (!f.con_respuesta) { $("estado").textContent = "Google no respondió desde este navegador. Las consultas guardadas siguen disponibles."; return; }
     base = c; ramaSel = null; actualizarURL(); pintarBuscador(); pintar();
     $("estado").textContent = `En vivo: ${f.con_respuesta} de ${f.pedidos} consultas respondidas.`;
-  } catch (e) { $("estado").textContent = e.message; }
+  } catch (e) { carga(); $("estado").textContent = e.message; }
 }
 const buscarGuardado = (v) => indice.consultas.find((c) => normalizar(c.tema) === normalizar(v));
 const buscarLocal = (v) => locales.find((c) => normalizar(c.tema) === normalizar(v));
 async function agregarComparado(v) {
   let c = buscarLocal(v) ?? (buscarGuardado(v) ? await cargar(buscarGuardado(v).slug) : null);
   if (!c) {
-    try { c = await consultaEnVivo(v, reglas, (n, t) => { $("estado").textContent = `Midiendo «${v}» para comparar… ${n} de ${t}`; }); }
-    catch (e) { $("estado").textContent = e.message; pintarBuscador(); return; }
+    try { c = await consultaEnVivo(v, reglas, (n, t) => { carga(`Midiendo «${v}» para comparar…`, n, t); $("estado").textContent = `Midiendo «${v}» para comparar… ${n} de ${t}`; }); }
+    catch (e) { carga(); $("estado").textContent = e.message; pintarBuscador(); return; }
+    carga();
     if (!c.fuentes[0].con_respuesta) { $("estado").textContent = "Google no respondió desde este navegador."; pintarBuscador(); return; }
     $("estado").textContent = `«${c.tema}» medido en vivo para comparar.`;
   }
@@ -427,6 +482,7 @@ const params = new URLSearchParams(location.search);
 for (const s of (params.get("comparar") ?? "").split(",").filter(Boolean).slice(0, 3)) {
   if (indice.consultas.some((c) => c.slug === s)) comparados.push(await cargar(s));
 }
+carga();
 const inicial = indice.consultas.find((c) => c.slug === params.get("tema")) ?? indice.consultas.find((c) => c.slug === "negocios-digitales") ?? indice.consultas[0];
 if (inicial) await abrir(inicial.slug);
 </script>

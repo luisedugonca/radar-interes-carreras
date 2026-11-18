@@ -17,6 +17,8 @@
 
 | 2026-11-18 | Base CSV (`docs/data/base.csv`), descargar y abrir CSV en la web, comparar con un tema escrito | CHICO (pedido textual del PO) | Autochequeo: 14 pruebas OK; ida y vuelta CSV en la web = mismas 363 frases y 484 apariciones que el JSON guardado; probado en Chrome (comparar guardado, comparar en vivo, abrir CSV) | Pendiente de que el PO lo mire | — |
 
+| 2026-11-18 | Rol Analista de Datos Senior: análisis por reglas en la web (sin IA), calidad de datos, rol en el pedido para chats; carga visible; plan GEO (F9–F11) | CHICO para la web (pedido textual del PO); el plan GEO cambia alcance: queda como Propuesta hasta el OK del PO | Autochequeo: 14 pruebas OK; probado en Chrome con 3 temas comparados y una medición en vivo (carga visible con avance y tiempo restante) | Pendiente de que el PO lo mire | — |
+
 ## Fuentes probadas (2026-11-16)
 
 | Fuente | Cómo se probó | Resultado | Decisión |
