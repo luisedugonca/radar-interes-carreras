@@ -43,6 +43,7 @@ button,input,select,textarea{font:inherit;color:inherit}
 .pest{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
 .pest a,.pest button{color:var(--hd-ink);background:transparent;text-decoration:none;padding:6px 14px;border-radius:999px;border:1px solid rgba(255,255,255,.28);font-family:var(--f-display);font-weight:600;font-size:.8rem;cursor:pointer}
 .pest a[aria-current="page"]{background:#fff;color:#0a2453;border-color:#fff}
+#btn-tema{width:34px;height:34px;padding:0;font-size:1.05rem;line-height:1;display:inline-grid;place-items:center}
 .pest a:hover,.pest button:hover{background:rgba(255,255,255,.14)}
 .pest a[aria-current="page"]:hover{background:#fff}
 

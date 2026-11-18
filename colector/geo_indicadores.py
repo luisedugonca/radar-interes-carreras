@@ -132,6 +132,13 @@ def main(carpeta: Path, ruta_preguntas: Path) -> None:
         "dominios": sorted(dom.values(), key=lambda d: (-d["total"], d["dominio"]))[:12],
         "dominios_nota": [f"En las respuestas guardadas de {ia} no quedó ningún enlace: no se sabe si no citó páginas o si la captura no las tomó."
                           for ia in IAS if not any(f["links"] for f in filas if f["ia"] == ia)],
+        # Conteos de cada respuesta, sin el texto: la web filtra por IA, día y pregunta con esto
+        "respuestas": [{"ia": f["ia"], "dia": f["dia"], "pregunta": f["id"], "pregunta_nombra_ucu": f["pregunta_nombra_ucu"],
+                        "inst": f["inst"], "term": f["term"], "orden": f["orden"], "dominios": f["dominios"],
+                        "errores": [k for k, v in f["err"].items() if v]} for f in filas],
+        "colores": {"instituciones": {"UCU": "#4f8dff", "Udelar": "#3ccf91", "UTEC": "#f2b03d", "ORT": "#f07f4f", "UM": "#a78bfa",
+                                      "UTU": "#35c9d6", "UDE": "#ff6fa3", "CLAEH": "#c9d451"}},
+        "terminos_def": [{"id": t["id"], "nombre": t["nombre"]} for t in reglas["terminos"]],
         "preguntas": [{"id": i, "texto": next(f["pregunta"] for f in filas if f["id"] == i), "piloto": i.startswith("p0"),
                        "nombra_ucu": next(f["pregunta_nombra_ucu"] for f in filas if f["id"] == i),
                        "perfil": preguntas.get(i, {}).get("perfil", "piloto")} for i in ids_preg],

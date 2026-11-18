@@ -7,30 +7,29 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/estilo.css">
-<script src="assets/tema.js"></script>
+<link rel="stylesheet" href="assets/estilo.css?v=20261118">
+<script src="assets/tema.js?v=20261118"></script>
 <style>
   :root{ --s-chatgpt:#0f9b82; --s-gemini:#5b6cf0; }
   .tl{width:100%;height:auto;display:block}
-  .tl text{font-family:var(--f-body);font-size:12px;fill:var(--muted)}
-  .tl .eje{stroke:var(--line);stroke-width:2}
+  .tl text{font-family:var(--f-body);font-size:13px;fill:var(--muted)}
+  .tl .eje{stroke:var(--line);stroke-width:3}
   .tl .pend{stroke:var(--warn);stroke-width:2;stroke-dasharray:5 6}
-  .tl .hoy{fill:var(--ink)}
-  .tl .punto{fill:var(--accent)}
-  .tl .fuerte{fill:var(--ink);font-weight:700}
-  .temporal{display:flex;flex-wrap:wrap;gap:6px 12px;align-items:center;font-size:.8rem;color:var(--muted);margin:10px 0 0;padding-top:8px;border-top:1px dashed var(--line)}
+  .tl .punto{fill:var(--accent)} .tl .hoy{fill:var(--ink)} .tl .fuerte{fill:var(--ink);font-weight:700}
+  .temporal{display:flex;flex-wrap:wrap;gap:4px 10px;align-items:center;font-size:.76rem;color:var(--muted);margin:10px 0 0;padding-top:8px;border-top:1px dashed var(--line)}
   .temporal b{color:var(--ink)}
-  .g2{display:grid;grid-template-columns:minmax(110px,190px) 1fr;gap:4px 12px;align-items:center}
-  .g2 .nom{font-weight:600;font-size:.88rem}
+  .g2{display:grid;grid-template-columns:minmax(90px,150px) 1fr;gap:4px 10px;align-items:center}
+  .g2 button.nom{all:unset;font-weight:600;font-size:.86rem;cursor:pointer;border-radius:6px;padding:2px 4px}
+  .g2 button.nom:focus-visible{outline:2px solid var(--accent)}
+  .g2 button.nom[aria-pressed="true"]{background:var(--accent-soft);color:var(--accent-ink)}
   .g2 .barras{display:flex;flex-direction:column;gap:3px}
-  .g2 .b{display:grid;grid-template-columns:1fr 104px;gap:8px;align-items:center;font-size:.78rem;font-variant-numeric:tabular-nums}
+  .g2 .b{display:grid;grid-template-columns:1fr 104px;gap:8px;align-items:center;font-size:.76rem;font-variant-numeric:tabular-nums}
   .g2 .riel{height:10px;background:var(--soft);border-radius:999px;overflow:hidden;border:1px solid var(--line)}
   .g2 .riel i{display:block;height:100%;border-radius:999px}
-  .g2 .sepg{grid-column:1/-1;border-top:1px solid var(--line);margin:4px 0}
+  .g2 .sepg{grid-column:1/-1;border-top:1px solid var(--line);margin:3px 0}
   .ley2{display:flex;gap:14px;font-size:.8rem;margin:0 0 10px;padding:0;list-style:none}
   .ley2 b{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:6px;vertical-align:-2px}
-  .rejilla{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:8px}
-  @media (max-width:900px){.rejilla{grid-template-columns:minmax(0,1fr)}}
+  .cuando{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:8px 14px;min-width:0;display:flex;flex-direction:column;justify-content:center}
 </style>
 </head>
 <body>
@@ -41,154 +40,245 @@
       <p id="sitio-equipo"></p>
     </div>
     <nav class="pest" aria-label="Secciones">
-      <a href="index.html">Mapa agéntico</a>
       <a href="ia.html" aria-current="page">En las IA</a>
-      <a href="radar.html">Radar de interés</a>
+      <a href="radar.html">Radar</a>
       <a href="#glosario">Glosario</a>
       <a id="enl-repo" href="#">Repositorio</a>
-      <button type="button" id="btn-tema">☾ Oscuro</button>
+      <a href="index.html">Mapa agéntico</a>
+      <button type="button" id="btn-tema" aria-label="Cambiar tema">☾</button>
     </nav>
   </div>
 </header>
 
-<main class="agentico">
-  <section class="bloque" aria-labelledby="t-cuando">
-    <h3 id="t-cuando">Cuándo se midió <span class="sello pend">Foto · no es tendencia</span></h3>
-    <svg id="linea" class="tl" role="img"></svg>
-    <ul class="ley" id="condiciones"></ul>
-  </section>
-
-  <div class="sec-t"><span class="n">1</span><h2>¿Nombran a UCU cuando se pregunta por carreras?</h2></div>
-  <div class="kp4" id="kpis" style="grid-template-columns:repeat(auto-fit,minmax(200px,1fr))"></div>
-
-  <div class="rejilla" style="margin-top:8px">
-    <section class="bloque">
-      <h3>Instituciones: % de respuestas que las nombran</h3>
-      <ul class="ley2"><li><b style="background:var(--s-chatgpt)"></b>ChatGPT</li><li><b style="background:var(--s-gemini)"></b>Gemini</li></ul>
-      <div class="g2" id="g-inst"></div>
-      <p class="temporal" data-temporal></p>
-    </section>
-    <section class="bloque">
-      <h3>Términos: % de respuestas que los usan</h3>
-      <ul class="ley2"><li><b style="background:var(--s-chatgpt)"></b>ChatGPT</li><li><b style="background:var(--s-gemini)"></b>Gemini</li></ul>
-      <div class="g2" id="g-term"></div>
-      <p class="temporal" data-temporal></p>
-    </section>
+<form class="busc" id="form" autocomplete="off">
+  <div class="temas-fila">
+    <div class="term" style="--c:#4f8dff">
+      <span class="punto" aria-hidden="true"></span>
+      <span class="campo"><span style="font-size:1.25rem">ChatGPT y Gemini</span>
+        <small id="sub-preg"></small></span>
+    </div>
+    <div class="cuando" aria-label="Cuándo se midió"><svg id="linea" class="tl" role="img"></svg></div>
   </div>
+  <div class="filtros">
+    <span class="pill fija">Uruguay</span>
+    <span class="pill fija"><span class="sello pend">Foto</span>&nbsp;no es tendencia</span>
+    <label class="pill"><select id="f-ver" aria-label="Qué mirar">
+      <option value="inst">Instituciones</option><option value="term">Términos</option></select></label>
+    <label class="pill"><select id="f-ia" aria-label="Qué IA">
+      <option value="ambas">ChatGPT y Gemini</option><option value="ChatGPT">Solo ChatGPT</option><option value="Gemini">Solo Gemini</option></select></label>
+    <label class="pill"><select id="f-dia" aria-label="Qué día"></select></label>
+    <label class="pill"><select id="f-preg" aria-label="Qué preguntas">
+      <option value="todas">Todas las preguntas</option><option value="sin_ucu">Solo las que no nombran a UCU</option></select></label>
+    <a class="pill" href="data/geo/respuestas.csv" download="radar-ia-respuestas.csv" style="text-decoration:none;color:inherit">⬇ CSV</a>
+  </div>
+</form>
 
-  <div class="sec-t"><span class="n">2</span><h2>Las cifras completas</h2></div>
-  <section class="bloque">
-    <h3>Instituciones</h3>
-    <div class="tabla-w"><table id="t-inst"></table></div>
-    <p class="temporal" data-temporal></p>
+<div class="radar">
+  <section class="escena" aria-label="Mapa de menciones">
+    <h2 id="t-mapa"></h2>
+    <svg id="mapa" class="mapa" aria-label="Mapa radial: cada rama es una institución o un término; cada punto, una pregunta"></svg>
+    <p class="leyenda"><span><b>Rama</b> = institución o término</span><span><b>Número</b> = respuestas que lo nombran</span><span><b>Puntos</b> = preguntas donde más aparece</span><span><b>Aro</b> = las 3 con más respuestas</span><span>De mayor a menor</span></p>
   </section>
-  <section class="bloque" style="margin-top:8px">
-    <h3>Términos</h3>
-    <div class="tabla-w"><table id="t-term"></table></div>
-    <p class="temporal" data-temporal></p>
-  </section>
-  <div class="rejilla" style="margin-top:8px">
+
+  <div class="columna">
+    <section class="bloque">
+      <h3>Indicadores</h3>
+      <div class="kp4" id="kpis"></div>
+      <p class="temporal" data-temporal></p>
+    </section>
+
+    <section class="bloque" id="rama"></section>
+
+    <section class="bloque">
+      <h3 id="t-graf"></h3>
+      <ul class="ley2"><li><b style="background:var(--s-chatgpt)"></b>ChatGPT</li><li><b style="background:var(--s-gemini)"></b>Gemini</li></ul>
+      <div class="g2" id="graf"></div>
+      <p class="temporal" data-temporal></p>
+    </section>
+
+    <section class="bloque">
+      <h3 id="t-tabla"></h3>
+      <div class="tabla-w"><table id="tabla"></table></div>
+      <p class="temporal" data-temporal></p>
+    </section>
+
     <section class="bloque">
       <h3>Puesto de UCU entre las instituciones nombradas</h3>
       <div class="tabla-w"><table id="t-puesto"></table></div>
-      <p class="temporal" data-temporal></p>
     </section>
+
     <section class="bloque">
       <h3>Páginas citadas</h3>
-      <div class="tabla-w"><table id="t-dom"></table></div>
+      <div class="tabla-w alta"><table id="t-dom"></table></div>
       <p class="pie-b" id="dom-nota"></p>
-      <p class="temporal" data-temporal></p>
+    </section>
+
+    <section class="bloque">
+      <h3>Las preguntas</h3>
+      <div class="tabla-w"><table id="t-preg"></table></div>
+    </section>
+
+    <section class="bloque" id="glosario">
+      <h3>Glosario</h3>
+      <dl class="glosario" id="glos"></dl>
+      <h3 style="margin-top:16px" id="t-temp"></h3>
+      <div class="tabla-w"><table id="temp"></table></div>
+      <p class="pie-b" id="fuente"></p>
     </section>
   </div>
-
-  <div class="sec-t"><span class="n">3</span><h2>Las preguntas</h2></div>
-  <section class="bloque">
-    <div class="tabla-w"><table id="t-preg"></table></div>
-    <div class="enl" style="margin-top:10px"><a class="btn sec" href="data/geo/respuestas.csv" download="radar-ia-respuestas.csv">⬇ Una fila por respuesta (CSV)</a></div>
-  </section>
-
-  <section class="bloque" id="glosario" style="margin-top:8px">
-    <h3>Glosario</h3>
-    <dl class="glosario" id="glos"></dl>
-    <h3 style="margin-top:16px" id="t-temp"></h3>
-    <div class="tabla-w"><table id="temp"></table></div>
-  </section>
-  <p class="fuente" id="fuente"></p>
-</main>
+</div>
 
 <script type="module">
+import { renderMapa } from "./assets/mapa.js";
 import { leerJSON, esc, num } from "./assets/nucleo.js";
 const $ = (id) => document.getElementById(id);
-const [d, glosario, sitio] = await Promise.all(["data/geo/indicadores.json", "data/glosario.json", "data/sitio.json"].map(leerJSON));
+const [D, glosario, sitio] = await Promise.all(["data/geo/indicadores.json", "data/glosario.json", "data/sitio.json"].map(leerJSON));
 $("sitio-titulo").textContent = sitio.titulo;
 $("sitio-equipo").textContent = sitio.equipo;
 $("enl-repo").href = `https://github.com/${sitio.repo}`;
 
 const MES = ["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"];
-const dia = (iso) => { const [a, m, dd] = iso.split("-"); return `${+dd}-${MES[+m - 1]}-${a}`; };
-const T = d.temporalidad, tot = d.totales, p1 = (v) => num(Math.round(v * 10) / 10);
+const dia = (iso) => { const [a, m, d] = iso.split("-"); return `${+d}-${MES[+m - 1]}-${a}`; };
+const p1 = (v) => (v == null ? "—" : num(Math.round(v * 10) / 10));
 const IAS = [["ChatGPT", "var(--s-chatgpt)"], ["Gemini", "var(--s-gemini)"]];
+const COL_TERM = ["#4f8dff", "#f07f4f", "#3ccf91", "#a78bfa", "#f2b03d", "#35c9d6", "#ff6fa3"];
+const T = D.temporalidad, PREG = Object.fromEntries(D.preguntas.map((q) => [q.id, q]));
+const filtro = { ver: "inst", ia: "ambas", dia: "todos", preg: "todas" };
+let control, ramaSel = null;
 
-/* Temporalidad: una línea del primer día medido hasta hoy */
-const textoTemporal = `<span class="sello pend">Foto</span><span><b>${T.dias.map((x) => dia(x.fecha)).join(" y ")}</b> · ${num(tot.total)} respuestas (ChatGPT ${num(tot.ChatGPT)}, Gemini ${num(tot.Gemini)}) · sin sesión</span><span>No muestra si sube o baja: hace falta medir cada semana.</span>`;
-document.querySelectorAll("[data-temporal]").forEach((p) => { p.innerHTML = textoTemporal; });
-(function linea() {
-  const svg = $("linea"), W = 1000, H = 80, m = { l: 14, r: 14 }, y = 38;
+$("f-dia").innerHTML = `<option value="todos">${T.dias.map((x) => dia(x.fecha)).join(" y ")}</option>` + T.dias.map((x) => `<option value="${x.fecha}">Solo ${dia(x.fecha)}</option>`).join("");
+$("sub-preg").textContent = `${D.preguntas.filter((q) => !q.piloto).length} preguntas de estudiantes y familias sobre carreras de datos en Uruguay y Salto`;
+
+/* Línea de tiempo */
+(function () {
+  const svg = $("linea"), W = 600, H = 58, m = 10, y = 30;
   const t0 = new Date(T.desde + "T12:00:00"), ult = new Date(T.hasta + "T12:00:00"), hoy = new Date();
-  const t1 = new Date(Math.max(hoy.getTime(), ult.getTime() + 864e5));
-  const x = (t) => m.l + ((t - t0) / (t1 - t0)) * (W - m.l - m.r);
-  const medido = T.dias.map((dd) => `${dia(dd.fecha)} (${dd.respuestas.ChatGPT + dd.respuestas.Gemini} respuestas, ${dd.desde_uy} a ${dd.hasta_uy})`).join(" y ");
-  const hoyIso = `${hoy.getFullYear()}-${String(hoy.getMonth() + 1).padStart(2, "0")}-${String(hoy.getDate()).padStart(2, "0")}`;
+  const t1 = new Date(Math.max(hoy, ult.getTime() + 864e5)), x = (t) => m + ((t - t0) / (t1 - t0)) * (W - 2 * m);
+  const iso = `${hoy.getFullYear()}-${String(hoy.getMonth() + 1).padStart(2, "0")}-${String(hoy.getDate()).padStart(2, "0")}`;
   svg.setAttribute("viewBox", `0 0 ${W} ${H}`);
-  svg.setAttribute("aria-label", `Medido el ${medido}. Desde el ${dia(T.hasta)} hasta hoy, sin medición.`);
-  svg.innerHTML = `<line class="eje" x1="${x(t0)}" x2="${x(ult)}" y1="${y}" y2="${y}"/>
-    <line class="pend" x1="${x(ult)}" x2="${W - m.r}" y1="${y}" y2="${y}"/>
-    ${T.dias.map((dd) => `<circle class="punto" cx="${x(new Date(dd.fecha + "T12:00:00"))}" cy="${y}" r="7"/>`).join("")}
-    <circle class="hoy" cx="${W - m.r}" cy="${y}" r="5"/>
-    <text x="${m.l}" y="16" class="fuerte">Medido: ${esc(medido)} · hora de Uruguay</text>
-    <text x="${W - m.r}" y="16" text-anchor="end" class="fuerte">Hoy · ${dia(hoyIso)}</text>
-    <text x="${(x(ult) + W - m.r) / 2}" y="${y + 26}" text-anchor="middle">Sin medición desde el ${dia(T.hasta)}: la medición semanal está pendiente</text>`;
-  $("condiciones").innerHTML = [T.frecuencia, T.hacia_atras, ...T.condiciones].map((c) => `<li>${esc(c)}</li>`).join("");
+  svg.setAttribute("aria-label", `Medido el ${T.dias.map((d) => dia(d.fecha)).join(" y ")}. Desde el ${dia(T.hasta)} hasta hoy, sin medición.`);
+  svg.innerHTML = `<line class="eje" x1="${x(t0)}" x2="${x(ult)}" y1="${y}" y2="${y}"/><line class="pend" x1="${x(ult)}" x2="${W - m}" y1="${y}" y2="${y}"/>
+    ${T.dias.map((d) => `<circle class="punto" cx="${x(new Date(d.fecha + "T12:00:00"))}" cy="${y}" r="6"/>`).join("")}<circle class="hoy" cx="${W - m}" cy="${y}" r="4"/>
+    <text x="${m}" y="13" class="fuerte">Medido: ${T.dias.map((d) => dia(d.fecha)).join(" y ")}</text>
+    <text x="${W - m}" y="13" text-anchor="end" class="fuerte">Hoy · ${dia(iso)}</text>
+    <text x="${(x(ult) + W - m) / 2}" y="${y + 22}" text-anchor="middle">sin medición · semanal pendiente</text>`;
 })();
 
-/* Indicadores */
-const ucu = d.instituciones.find((i) => i.id === "UCU").por_ia, dyn = d.terminos.find((t) => t.id === "datos_y_negocios").por_ia, sinU = d.ucu_sin_nombrarla_en_la_pregunta;
-$("kpis").innerHTML = `
-  <div class="dest"><span class="et">Respuestas que nombran a UCU</span><b>${p1(ucu.total.pct)} %</b><small>ChatGPT ${p1(ucu.ChatGPT.pct)} % · Gemini ${p1(ucu.Gemini.pct)} %</small></div>
-  <div><span class="et">Si la pregunta no nombra a UCU</span><b>${num(sinU.nombran_ucu)} de ${num(sinU.respuestas)}</b><small>respuestas igual la nombran</small></div>
-  <div><span class="et">Puesto de UCU</span><b>${p1(d.ucu_puesto.total.promedio)}</b><small>primera en ${num(d.ucu_puesto.total.primera)} de ${num(d.ucu_puesto.total.aparece)} respuestas</small></div>
-  <div><span class="et">Nombran «datos y negocios»</span><b>${num(dyn.total.respuestas)} de ${num(dyn.total.de)}</b><small>la carrera casi no aparece</small></div>`;
-
-/* Gráficos agrupados ChatGPT / Gemini */
-function grupos(el, filas, nombre) {
-  el.innerHTML = filas.map((f, k) => `${k ? '<div class="sepg"></div>' : ""}<span class="nom">${esc(nombre(f))}</span><div class="barras">${IAS.map(([ia, c]) => {
-    const v = f.por_ia[ia]; return `<div class="b"><span class="riel" title="${ia}"><i style="width:${v.pct}%;background:${c}"></i></span><span>${p1(v.pct)} % · ${num(v.respuestas)} de ${num(v.de)}</span></div>`; }).join("")}</div>`).join("");
+/* ---------- Cálculos sobre las respuestas filtradas ---------- */
+const filas = () => D.respuestas.filter((r) => (filtro.ia === "ambas" || r.ia === filtro.ia) && (filtro.dia === "todos" || r.dia === filtro.dia)
+  && (filtro.preg === "todas" || !r.pregunta_nombra_ucu));
+const ids = () => (filtro.ver === "inst" ? Object.keys(D.colores.instituciones) : D.terminos_def.map((t) => t.id));
+const nombre = (id) => (filtro.ver === "inst" ? id : D.terminos_def.find((t) => t.id === id).nombre);
+const color = (id, k) => (filtro.ver === "inst" ? D.colores.instituciones[id] : COL_TERM[k % COL_TERM.length]);
+function medir(R) {
+  const campo = filtro.ver === "inst" ? "inst" : "term";
+  return ids().map((id, k) => {
+    const por = (ia) => { const sub = R.filter((r) => !ia || r.ia === ia), n = sub.filter((r) => r[campo][id] > 0).length;
+      return { n, de: sub.length, pct: sub.length ? (100 * n) / sub.length : 0, veces: sub.reduce((t, r) => t + r[campo][id], 0) }; };
+    const preg = {};
+    R.filter((r) => r[campo][id] > 0).forEach((r) => { preg[r.pregunta] ??= { id: r.pregunta, ChatGPT: 0, Gemini: 0, n: 0, veces: 0 }; preg[r.pregunta][r.ia]++; preg[r.pregunta].n++; preg[r.pregunta].veces += r[campo][id]; });
+    const puestos = R.filter((r) => r.orden.includes(id)).map((r) => r.orden.indexOf(id) + 1);
+    return { id, nombre: nombre(id), color: color(id, k), total: por(), ChatGPT: por("ChatGPT"), Gemini: por("Gemini"),
+      preguntas: Object.values(preg).sort((a, b) => b.n - a.n || b.veces - a.veces || a.id.localeCompare(b.id)),
+      puesto: puestos.length ? puestos.reduce((a, b) => a + b, 0) / puestos.length : null, primera: puestos.filter((p) => p === 1).length };
+  }).sort((a, b) => b.total.n - a.total.n || b.total.veces - a.total.veces);
 }
-grupos($("g-inst"), d.instituciones.filter((i) => i.por_ia.total.respuestas), (f) => f.id);
-grupos($("g-term"), d.terminos, (f) => f.nombre);
+const corto = (t) => t.replace(/^¿|\?$/g, "").replace(/^(que|qué|donde|dónde|cuánto)\s+/i, "");
 
-/* Tablas */
-const tabla = (filas, nombre) => `<thead><tr><th>${nombre}</th><th class="n">ChatGPT (de ${tot.ChatGPT})</th><th class="n">Gemini (de ${tot.Gemini})</th><th class="n">Total (de ${tot.total})</th><th class="n">Veces ChatGPT</th><th class="n">Veces Gemini</th><th class="n">Veces total</th></tr></thead><tbody>${filas.map((f) => {
-  const r = (ia) => `${num(f.por_ia[ia].respuestas)} (${p1(f.por_ia[ia].pct)} %)`;
-  return `<tr><td><b>${esc(f.nombre ?? f.id)}</b></td><td class="n">${r("ChatGPT")}</td><td class="n">${r("Gemini")}</td><td class="n"><b>${r("total")}</b></td><td class="n">${num(f.por_ia.ChatGPT.veces)}</td><td class="n">${num(f.por_ia.Gemini.veces)}</td><td class="n">${num(f.por_ia.total.veces)}</td></tr>`; }).join("")}</tbody>`;
-$("t-inst").innerHTML = tabla(d.instituciones.filter((i) => i.por_ia.total.respuestas), "Institución");
-$("t-term").innerHTML = tabla(d.terminos, "Término");
-const P = d.ucu_puesto;
-$("t-puesto").innerHTML = `<thead><tr><th></th><th class="n">ChatGPT</th><th class="n">Gemini</th><th class="n">Total</th></tr></thead><tbody>
-  <tr><td>UCU aparece primera</td>${["ChatGPT", "Gemini", "total"].map((k) => `<td class="n">${num(P[k].primera)} de ${num(P[k].aparece)}</td>`).join("")}</tr>
-  <tr><td>Puesto promedio</td>${["ChatGPT", "Gemini", "total"].map((k) => `<td class="n">${p1(P[k].promedio)}</td>`).join("")}</tr></tbody>`;
-$("t-dom").innerHTML = `<thead><tr><th>Sitio</th><th class="n">ChatGPT</th><th class="n">Gemini</th></tr></thead><tbody>${d.dominios.map((x) =>
-  `<tr><td>${esc(x.dominio)}</td><td class="n">${num(x.ChatGPT)}</td><td class="n">${num(x.Gemini)}</td></tr>`).join("")}</tbody>`;
-$("dom-nota").textContent = ["Cuenta en cuántas respuestas se cita cada sitio.", ...d.dominios_nota].join(" ");
-$("t-preg").innerHTML = `<thead><tr><th>Id</th><th>Pregunta</th><th>Perfil</th><th>¿Nombra a UCU?</th></tr></thead><tbody>${d.preguntas.map((q) =>
+/* ---------- Pintar ---------- */
+function pintarRama(rama, nodo) {
+  ramaSel = rama.id;
+  const x = rama.dato, k = nodo?.pregunta ? Math.max(0, x.preguntas.findIndex((p) => p.id === nodo.pregunta)) : 0;
+  const el = $("rama"); el.style.setProperty("--c", rama.color);
+  el.innerHTML = `<div class="rama-cab"><span class="bola"></span><h4>${esc(x.nombre)}</h4><small>${ramas.indexOf(rama) + 1} de ${ramas.length}</small></div>
+    <div class="kp4">
+      <div><span class="et">Respuestas que lo nombran</span><b>${num(x.total.n)} de ${num(x.total.de)}</b><small>${p1(x.total.pct)} %</small></div>
+      <div><span class="et">ChatGPT · Gemini</span><b>${p1(x.ChatGPT.pct)} % · ${p1(x.Gemini.pct)} %</b><small>${num(x.ChatGPT.n)} de ${num(x.ChatGPT.de)} · ${num(x.Gemini.n)} de ${num(x.Gemini.de)}</small></div>
+      <div><span class="et">${filtro.ver === "inst" ? "Puesto entre instituciones" : "Veces nombrado"}</span><b>${filtro.ver === "inst" ? p1(x.puesto) : num(x.total.veces)}</b><small>${filtro.ver === "inst" ? `primera en ${num(x.primera)} respuestas` : "suma de todas las menciones"}</small></div>
+      <div><span class="et">Preguntas donde aparece</span><b>${num(x.preguntas.length)}</b><small>de ${num(new Set(filas().map((r) => r.pregunta)).size)}</small></div>
+    </div>
+    <div class="carr-cab"><h4>Preguntas donde más aparece</h4><div class="carr-nav"><button type="button" id="c-ant" aria-label="Anterior">‹</button><span id="c-pos"></span><button type="button" id="c-sig" aria-label="Siguiente">›</button></div></div>
+    <div class="carr" id="carr" tabindex="0">${x.preguntas.map((p, i) => { const q = PREG[p.id]; return `<article class="tarj${i === k ? " sel" : ""}" data-k="${i}">
+      <div class="fila-t"><span class="rk">#${i + 1} · ${esc(p.id)}</span>${q.nombra_ucu ? '<span class="sello pend">la pregunta nombra a UCU</span>' : i === 0 ? '<span class="dst">Más datos</span>' : ""}</div>
+      <h5>${esc(q.texto)}</h5>
+      <div class="big">${num(p.n)}<small>respuestas lo nombran</small></div>
+      <dl><dt>ChatGPT</dt><dd>${num(p.ChatGPT)}</dd><dt>Gemini</dt><dd>${num(p.Gemini)}</dd><dt>Veces en total</dt><dd>${num(p.veces)}</dd><dt>Perfil</dt><dd>${esc(q.piloto ? "prueba piloto" : q.perfil)}</dd></dl>
+    </article>`; }).join("") || "<p>No aparece con estos filtros.</p>"}</div>`;
+  const carr = $("carr"), tj = [...carr.querySelectorAll(".tarj")];
+  if (!tj.length) { $("c-ant").disabled = $("c-sig").disabled = true; return; }
+  const paso = () => Math.max(1, (tj[1]?.offsetLeft ?? carr.clientWidth) - tj[0].offsetLeft), act = () => Math.round(carr.scrollLeft / paso());
+  const marcar = () => { const i = Math.min(tj.length - 1, Math.max(0, act())); $("c-pos").textContent = `${i + 1} de ${tj.length}`; $("c-ant").disabled = i === 0; $("c-sig").disabled = i >= tj.length - 1; };
+  const ir = (i) => carr.scrollTo({ left: tj[Math.min(tj.length - 1, Math.max(0, i))].offsetLeft - tj[0].offsetLeft });
+  $("c-ant").onclick = () => ir(act() - 1); $("c-sig").onclick = () => ir(act() + 1);
+  carr.addEventListener("scroll", () => requestAnimationFrame(marcar), { passive: true });
+  tj.forEach((t) => t.addEventListener("click", () => { const i = +t.dataset.k; if (i < 4) control.seleccionar(rama.id, `${rama.id}-p${i}`, true); else { tj.forEach((z) => z.classList.toggle("sel", z === t)); ir(i); } }));
+  if (k) carr.scrollLeft = tj[k].offsetLeft - tj[0].offsetLeft;
+  marcar();
+  document.querySelectorAll("#graf button.nom").forEach((b) => b.setAttribute("aria-pressed", b.dataset.id === rama.id));
+}
+
+let ramas = [];
+function pintar() {
+  const R = filas(), M = medir(R).filter((x) => x.total.n > 0);
+  const nIA = new Set(R.map((r) => r.ia)).size, dias = new Set(R.map((r) => r.dia));
+  const temporal = `<span class="sello pend">Foto</span><span><b>${[...dias].sort().map(dia).join(" y ")}</b> · ${num(R.length)} respuestas${filtro.ia === "ambas" ? ` (ChatGPT ${num(R.filter((r) => r.ia === "ChatGPT").length)}, Gemini ${num(R.filter((r) => r.ia === "Gemini").length)})` : ` de ${filtro.ia}`} · sin sesión</span><span>No muestra si sube o baja.</span>`;
+  document.querySelectorAll("[data-temporal]").forEach((p) => { p.innerHTML = temporal; });
+  $("t-mapa").textContent = `${filtro.ver === "inst" ? "Instituciones" : "Términos"} en ${filtro.ia === "ambas" ? "ChatGPT y Gemini" : filtro.ia}`;
+
+  const enMapa = M.flatMap((x) => x.preguntas.slice(0, 4).map((p) => `${x.id}|${p.id}|${p.n}`));
+  const maxP = Math.max(1, ...enMapa.map((k) => +k.split("|")[2]));
+  const aros = new Set([...enMapa].sort((a, b) => +b.split("|")[2] - +a.split("|")[2]).slice(0, 3).map((k) => k.split("|").slice(0, 2).join("|")));
+  ramas = M.map((x) => ({ id: x.id, titulo: x.nombre, color: x.color, dato: x,
+    nodos: [{ id: `${x.id}-cab`, titulo: x.nombre, icono: String(x.total.n) },
+      ...x.preguntas.slice(0, 4).map((p, i) => ({ id: `${x.id}-p${i}`, pregunta: p.id, icono: String(p.n), titulo: corto(PREG[p.id].texto), peso: p.n / maxP, destacado: aros.has(`${x.id}|${p.id}`) }))] }));
+  if (ramas.length) {
+    control = renderMapa($("mapa"), { centro: { titulo: filtro.ia === "ambas" ? "ChatGPT y Gemini" : filtro.ia, sub: "Uruguay" }, ramas }, pintarRama);
+    const e = ramas.find((r) => r.id === ramaSel) ?? ramas[0]; control.seleccionar(e.id, e.nodos[0].id, true);
+  } else { $("mapa").replaceChildren(); $("rama").innerHTML = "<p>Sin datos con estos filtros.</p>"; }
+
+  const inst = filtro.ver === "inst" ? M : (() => { const v = filtro.ver; filtro.ver = "inst"; const m2 = medir(R); filtro.ver = v; return m2; })();
+  const ucu = inst.find((x) => x.id === "UCU"), sinU = R.filter((r) => !r.pregunta_nombra_ucu), dyn = R.filter((r) => r.term.datos_y_negocios > 0).length;
+  $("kpis").innerHTML = `
+    <div class="dest"><span class="et">Respuestas que nombran a UCU</span><b>${p1(ucu?.total.pct ?? 0)} %</b><small>${nIA > 1 ? `ChatGPT ${p1(ucu?.ChatGPT.pct ?? 0)} % · Gemini ${p1(ucu?.Gemini.pct ?? 0)} %` : `${num(ucu?.total.n ?? 0)} de ${num(R.length)}`}</small></div>
+    <div><span class="et">Si la pregunta no nombra a UCU</span><b>${num(sinU.filter((r) => r.inst.UCU > 0).length)} de ${num(sinU.length)}</b><small>respuestas igual la nombran</small></div>
+    <div><span class="et">Puesto de UCU</span><b>${p1(ucu?.puesto)}</b><small>primera en ${num(ucu?.primera ?? 0)} de ${num(ucu?.total.n ?? 0)}</small></div>
+    <div><span class="et">Nombran «datos y negocios»</span><b>${num(dyn)} de ${num(R.length)}</b><small>la carrera casi no aparece</small></div>`;
+
+  $("t-graf").textContent = `% de respuestas que nombran cada ${filtro.ver === "inst" ? "institución" : "término"}`;
+  $("graf").innerHTML = M.map((x, i) => `${i ? '<div class="sepg"></div>' : ""}<button type="button" class="nom" data-id="${x.id}" aria-pressed="${x.id === ramaSel}">${esc(x.nombre)}</button><div class="barras">${IAS.filter(([ia]) => filtro.ia === "ambas" || filtro.ia === ia).map(([ia, c]) =>
+    `<div class="b"><span class="riel" title="${ia}"><i style="width:${x[ia].pct}%;background:${c}"></i></span><span>${p1(x[ia].pct)} % · ${num(x[ia].n)} de ${num(x[ia].de)}</span></div>`).join("")}</div>`).join("");
+  $("graf").querySelectorAll("button.nom").forEach((b) => b.addEventListener("click", () => control.seleccionar(b.dataset.id, `${b.dataset.id}-cab`, true)));
+
+  $("t-tabla").textContent = `Cifras completas · ${filtro.ver === "inst" ? "instituciones" : "términos"}`;
+  const r = (v) => `${num(v.n)} (${p1(v.pct)} %)`;
+  $("tabla").innerHTML = `<thead><tr><th></th><th class="n">ChatGPT</th><th class="n">Gemini</th><th class="n">Total</th><th class="n">Veces ChatGPT</th><th class="n">Veces Gemini</th><th class="n">Veces total</th></tr></thead><tbody>${M.map((x) =>
+    `<tr><td><b>${esc(x.nombre)}</b></td><td class="n">${r(x.ChatGPT)}</td><td class="n">${r(x.Gemini)}</td><td class="n"><b>${r(x.total)}</b></td><td class="n">${num(x.ChatGPT.veces)}</td><td class="n">${num(x.Gemini.veces)}</td><td class="n">${num(x.total.veces)}</td></tr>`).join("")}</tbody>`;
+
+  const pu = (ia) => { const sub = R.filter((z) => (!ia || z.ia === ia) && z.orden.includes("UCU")).map((z) => z.orden.indexOf("UCU") + 1);
+    return { n: sub.length, primera: sub.filter((p) => p === 1).length, prom: sub.length ? sub.reduce((a, b) => a + b, 0) / sub.length : null }; };
+  const P = { ChatGPT: pu("ChatGPT"), Gemini: pu("Gemini"), Total: pu() };
+  $("t-puesto").innerHTML = `<thead><tr><th></th>${Object.keys(P).map((k) => `<th class="n">${k}</th>`).join("")}</tr></thead><tbody>
+    <tr><td>UCU aparece primera</td>${Object.values(P).map((v) => `<td class="n">${num(v.primera)} de ${num(v.n)}</td>`).join("")}</tr>
+    <tr><td>Puesto promedio</td>${Object.values(P).map((v) => `<td class="n">${p1(v.prom)}</td>`).join("")}</tr></tbody>`;
+
+  const dom = {};
+  R.forEach((z) => z.dominios.forEach((d) => { dom[d] ??= { d, ChatGPT: 0, Gemini: 0 }; dom[d][z.ia]++; }));
+  $("t-dom").innerHTML = `<thead><tr><th>Sitio</th><th class="n">ChatGPT</th><th class="n">Gemini</th></tr></thead><tbody>${Object.values(dom).sort((a, b) => b.ChatGPT + b.Gemini - a.ChatGPT - a.Gemini || a.d.localeCompare(b.d)).slice(0, 15)
+    .map((x) => `<tr><td>${esc(x.d)}</td><td class="n">${num(x.ChatGPT)}</td><td class="n">${num(x.Gemini)}</td></tr>`).join("") || '<tr><td colspan="3">Sin enlaces.</td></tr>'}</tbody>`;
+}
+
+$("dom-nota").textContent = ["En cuántas respuestas se cita cada sitio.", ...D.dominios_nota].join(" ");
+$("t-preg").innerHTML = `<thead><tr><th>Id</th><th>Pregunta</th><th>Perfil</th><th>¿Nombra a UCU?</th></tr></thead><tbody>${D.preguntas.map((q) =>
   `<tr><td>${esc(q.id)}</td><td>${esc(q.texto)}</td><td>${esc(q.piloto ? "prueba piloto" : q.perfil)}</td><td>${q.nombra_ucu ? '<span class="sello pend">Sí: infla el resultado</span>' : "No"}</td></tr>`).join("")}</tbody>`;
-
-/* Glosario y temporalidad de todas las fuentes */
 $("glos").innerHTML = glosario.terminos.map((t) => `<dt>${esc(t.termino)}</dt><dd>${esc(t.que_es)}</dd>`).join("");
 $("t-temp").textContent = glosario.temporalidad.titulo;
 $("temp").innerHTML = `<thead><tr><th>Fuente</th><th>Qué mide</th><th>Hacia atrás</th><th>Hoy</th></tr></thead><tbody>${glosario.temporalidad.fuentes.map((f) =>
   `<tr><td><b>${esc(f.fuente)}</b> <span class="sello ${f.tipo === "foto" ? "pend" : "ok"}">${f.tipo === "foto" ? "Foto" : "Tendencia"}</span></td><td>${esc(f.mide)}</td><td>${esc(f.hacia_atras)}</td><td>${esc(f.en_el_radar)}</td></tr>`).join("")}</tbody>`;
-$("fuente").textContent = `Fuente: ${d.fuente} Reglas versión ${d.reglas_version} (docs/data/geo/reglas_geo.json) · script colector/geo_indicadores.py.`;
+$("fuente").textContent = `Fuente: ${D.fuente} ${T.condiciones.join(" ")} Reglas versión ${D.reglas_version} · colector/geo_indicadores.py.`;
+
+for (const [id, k] of [["f-ver", "ver"], ["f-ia", "ia"], ["f-dia", "dia"], ["f-preg", "preg"]]) $(id).addEventListener("change", (e) => { filtro[k] = e.target.value; if (k === "ver") ramaSel = null; pintar(); });
+$("form").addEventListener("submit", (e) => e.preventDefault());
+pintar();
 </script>
 </body>
 </html>

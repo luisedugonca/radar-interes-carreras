@@ -1,5 +1,5 @@
 {
- "generado_utc": "2026-11-18T14:54:51Z",
+ "generado_utc": "2026-11-18T15:02:45Z",
  "reglas_version": "2026-11-18",
  "fuente": "Respuestas de ChatGPT y Gemini guardadas a mano (texto completo y enlaces) en el proyecto UCU Salto. Conteo por reglas, sin IA.",
  "temporalidad": {
@@ -502,6 +502,1214 @@
  ],
  "dominios_nota": [
   "En las respuestas guardadas de Gemini no quedó ningún enlace: no se sabe si no citó páginas o si la captura no las tomó."
+ ],
+ "respuestas": [
+  {
+   "ia": "ChatGPT",
+   "dia": "2026-10-13",
+   "pregunta": "F1",
+   "pregunta_nombra_ucu": false,
+   "inst": {
+    "UCU": 0,
+    "Udelar": 7,
+    "UTEC": 0,
+    "ORT": 3,
+    "UM": 0,
+    "UTU": 1,
+    "UDE": 0,
+    "CLAEH": 0
+   },
+   "term": {
+    "datos_y_negocios": 0,
+    "inteligencia_artificial": 6,
+    "ciencia_de_datos": 4,
+    "analisis_de_datos": 1,
+    "business_analytics": 0,
+    "negocios_digitales": 0,
+    "semipresencial": 0
+   },
+   "orden": [
+    "Udelar",
+    "ORT",
+    "UTU"
+   ],
+   "dominios": [
+    "fi.ort.edu.uy",
+    "litoralnorte.udelar.edu.uy"
+   ],
+   "errores": []
+  },
+  {
+   "ia": "ChatGPT",
+   "dia": "2026-10-13",
+   "pregunta": "F2",
+   "pregunta_nombra_ucu": true,
+   "inst": {
+    "UCU": 8,
+    "Udelar": 8,
+    "UTEC": 0,
+    "ORT": 0,
+    "UM": 0,
+    "UTU": 0,
+    "UDE": 0,
+    "CLAEH": 0
+   },
+   "term": {
+    "datos_y_negocios": 0,
+    "inteligencia_artificial": 1,
+    "ciencia_de_datos": 0,
+    "analisis_de_datos": 0,
+    "business_analytics": 0,
+    "negocios_digitales": 0,
+    "semipresencial": 1
+   },
+   "orden": [
+    "UCU",
+    "Udelar"
+   ],
+   "dominios": [
+    "carreras.ucu.edu.uy",
+    "udelar.edu.uy"
+   ],
+   "errores": []
+  },
+  {
+   "ia": "ChatGPT",
+   "dia": "2026-10-13",
+   "pregunta": "F3",
+   "pregunta_nombra_ucu": true,
+   "inst": {
+    "UCU": 13,
+    "Udelar": 0,
+    "UTEC": 0,
+    "ORT": 0,
+    "UM": 0,
+    "UTU": 0,
+    "UDE": 0,
+    "CLAEH": 0
+   },
+   "term": {
+    "datos_y_negocios": 0,
+    "inteligencia_artificial": 1,
+    "ciencia_de_datos": 0,
+    "analisis_de_datos": 0,
+    "business_analytics": 0,
+    "negocios_digitales": 0,
+    "semipresencial": 0
+   },
+   "orden": [
+    "UCU"
+   ],
+   "dominios": [
+    "carreras.ucu.edu.uy"
+   ],
+   "errores": []
+  },
+  {
+   "ia": "ChatGPT",
+   "dia": "2026-10-13",
+   "pregunta": "F4",
+   "pregunta_nombra_ucu": true,
+   "inst": {
+    "UCU": 17,
+    "Udelar": 9,
+    "UTEC": 7,
+    "ORT": 0,
+    "UM": 0,
+    "UTU": 0,
+    "UDE": 0,
+    "CLAEH": 0
+   },
+   "term": {
+    "datos_y_negocios": 0,
+    "inteligencia_artificial": 1,
+    "ciencia_de_datos": 0,
+    "analisis_de_datos": 0,
+    "business_analytics": 0,
+    "negocios_digitales": 0,
+    "semipresencial": 0
+   },
+   "orden": [
+    "UCU",
+    "Udelar",
+    "UTEC"
+   ],
+   "dominios": [
+    "aacsb.edu",
+    "carreras.ucu.edu.uy",
+    "ucu.edu.uy",
+    "udelar.edu.uy",
+    "utec.edu.uy"
+   ],
+   "errores": []
+  },
+  {
+   "ia": "ChatGPT",
+   "dia": "2026-10-13",
+   "pregunta": "J1",
+   "pregunta_nombra_ucu": false,
+   "inst": {
+    "UCU": 3,
+    "Udelar": 4,
+    "UTEC": 0,
+    "ORT": 2,
+    "UM": 3,
+    "UTU": 0,
+    "UDE": 0,
+    "CLAEH": 0
+   },
+   "term": {
+    "datos_y_negocios": 3,
+    "inteligencia_artificial": 1,
+    "ciencia_de_datos": 7,
+    "analisis_de_datos": 3,
+    "business_analytics": 1,
+    "negocios_digitales": 0,
+    "semipresencial": 1
+   },
+   "orden": [
+    "Udelar",
+    "ORT",
+    "UM",
+    "UCU"
+   ],
+   "dominios": [
+    "carreras.ucu.edu.uy",
+    "facs.ort.edu.uy",
+    "fcea.udelar.edu.uy",
+    "um.edu.uy"
+   ],
+   "errores": []
+  },
+  {
+   "ia": "ChatGPT",
+   "dia": "2026-10-13",
+   "pregunta": "J2",
+   "pregunta_nombra_ucu": false,
+   "inst": {
+    "UCU": 13,
+    "Udelar": 1,
+    "UTEC": 6,
+    "ORT": 0,
+    "UM": 0,
+    "UTU": 1,
+    "UDE": 0,
+    "CLAEH": 0
+   },
+   "term": {
+    "datos_y_negocios": 0,
+    "inteligencia_artificial": 1,
+    "ciencia_de_datos": 0,
+    "analisis_de_datos": 0,
+    "business_analytics": 0,
+    "negocios_digitales": 0,
+    "semipresencial": 13
+   },
+   "orden": [
+    "UCU",
+    "UTEC",
+    "Udelar",
+    "UTU"
+   ],
+   "dominios": [
+    "carreras.ucu.edu.uy",
+    "ucu.edu.uy",
+    "udelar.edu.uy",
+    "utec.edu.uy"
+   ],
+   "errores": []
+  },
+  {
+   "ia": "ChatGPT",
+   "dia": "2026-10-13",
+   "pregunta": "J3",
+   "pregunta_nombra_ucu": false,
+   "inst": {
+    "UCU": 0,
+    "Udelar": 0,
+    "UTEC": 6,
+    "ORT": 5,
+    "UM": 0,
+    "UTU": 0,
+    "UDE": 0,
+    "CLAEH": 0
+   },
+   "term": {
+    "datos_y_negocios": 0,
+    "inteligencia_artificial": 4,
+    "ciencia_de_datos": 2,
+    "analisis_de_datos": 4,
+    "business_analytics": 0,
+    "negocios_digitales": 0,
+    "semipresencial": 5
+   },
+   "orden": [
+    "UTEC",
+    "ORT"
+   ],
+   "dominios": [
+    "facs.ort.edu.uy",
+    "fi.ort.edu.uy",
+    "utec.edu.uy"
+   ],
+   "errores": []
+  },
+  {
+   "ia": "ChatGPT",
+   "dia": "2026-10-13",
+   "pregunta": "J4",
+   "pregunta_nombra_ucu": false,
+   "inst": {
+    "UCU": 1,
+    "Udelar": 8,
+    "UTEC": 0,
+    "ORT": 0,
+    "UM": 0,
+    "UTU": 1,
+    "UDE": 0,
+    "CLAEH": 0
+   },
+   "term": {
+    "datos_y_negocios": 0,
+    "inteligencia_artificial": 1,
+    "ciencia_de_datos": 0,
+    "analisis_de_datos": 0,
+    "business_analytics": 0,
+    "negocios_digitales": 0,
+    "semipresencial": 4
+   },
+   "orden": [
+    "Udelar",
+    "UCU",
+    "UTU"
+   ],
+   "dominios": [
+    "udelar.edu.uy"
+   ],
+   "errores": []
+  },
+  {
+   "ia": "ChatGPT",
+   "dia": "2026-10-13",
+   "pregunta": "p01_joven_salto_trabajo",
+   "pregunta_nombra_ucu": false,
+   "inst": {
+    "UCU": 8,
+    "Udelar": 4,
+    "UTEC": 0,
+    "ORT": 0,
+    "UM": 4,
+    "UTU": 1,
+    "UDE": 0,
+    "CLAEH": 0
+   },
+   "term": {
+    "datos_y_negocios": 5,
+    "inteligencia_artificial": 1,
+    "ciencia_de_datos": 3,
+    "analisis_de_datos": 2,
+    "business_analytics": 0,
+    "negocios_digitales": 0,
+    "semipresencial": 8
+   },
+   "orden": [
+    "UCU",
+    "Udelar",
+    "UM",
+    "UTU"
+   ],
+   "dominios": [
+    "carreras.ucu.edu.uy",
+    "litoralnorte.udelar.edu.uy",
+    "um.edu.uy"
+   ],
+   "errores": [
+    "ultimo_inicio"
+   ]
+  },
+  {
+   "ia": "ChatGPT",
+   "dia": "2026-10-13",
+   "pregunta": "p02_generico_datos_uruguay",
+   "pregunta_nombra_ucu": false,
+   "inst": {
+    "UCU": 5,
+    "Udelar": 4,
+    "UTEC": 8,
+    "ORT": 8,
+    "UM": 6,
+    "UTU": 0,
+    "UDE": 0,
+    "CLAEH": 0
+   },
+   "term": {
+    "datos_y_negocios": 0,
+    "inteligencia_artificial": 19,
+    "ciencia_de_datos": 14,
+    "analisis_de_datos": 5,
+    "business_analytics": 0,
+    "negocios_digitales": 1,
+    "semipresencial": 2
+   },
+   "orden": [
+    "UTEC",
+    "UCU",
+    "UM",
+    "ORT",
+    "Udelar"
+   ],
+   "dominios": [
+    "carreras.ucu.edu.uy",
+    "facs.ort.edu.uy",
+    "fi.ort.edu.uy",
+    "um.edu.uy",
+    "utec.edu.uy"
+   ],
+   "errores": []
+  },
+  {
+   "ia": "Gemini",
+   "dia": "2026-10-13",
+   "pregunta": "F1",
+   "pregunta_nombra_ucu": false,
+   "inst": {
+    "UCU": 6,
+    "Udelar": 8,
+    "UTEC": 5,
+    "ORT": 0,
+    "UM": 0,
+    "UTU": 1,
+    "UDE": 0,
+    "CLAEH": 0
+   },
+   "term": {
+    "datos_y_negocios": 0,
+    "inteligencia_artificial": 3,
+    "ciencia_de_datos": 1,
+    "analisis_de_datos": 0,
+    "business_analytics": 0,
+    "negocios_digitales": 0,
+    "semipresencial": 1
+   },
+   "orden": [
+    "Udelar",
+    "UTU",
+    "UCU",
+    "UTEC"
+   ],
+   "dominios": [],
+   "errores": []
+  },
+  {
+   "ia": "Gemini",
+   "dia": "2026-10-13",
+   "pregunta": "F2",
+   "pregunta_nombra_ucu": true,
+   "inst": {
+    "UCU": 7,
+    "Udelar": 7,
+    "UTEC": 0,
+    "ORT": 0,
+    "UM": 0,
+    "UTU": 0,
+    "UDE": 0,
+    "CLAEH": 0
+   },
+   "term": {
+    "datos_y_negocios": 0,
+    "inteligencia_artificial": 0,
+    "ciencia_de_datos": 0,
+    "analisis_de_datos": 0,
+    "business_analytics": 0,
+    "negocios_digitales": 0,
+    "semipresencial": 0
+   },
+   "orden": [
+    "UCU",
+    "Udelar"
+   ],
+   "dominios": [],
+   "errores": []
+  },
+  {
+   "ia": "Gemini",
+   "dia": "2026-10-13",
+   "pregunta": "F3",
+   "pregunta_nombra_ucu": true,
+   "inst": {
+    "UCU": 6,
+    "Udelar": 0,
+    "UTEC": 0,
+    "ORT": 0,
+    "UM": 0,
+    "UTU": 0,
+    "UDE": 0,
+    "CLAEH": 0
+   },
+   "term": {
+    "datos_y_negocios": 0,
+    "inteligencia_artificial": 0,
+    "ciencia_de_datos": 0,
+    "analisis_de_datos": 0,
+    "business_analytics": 0,
+    "negocios_digitales": 0,
+    "semipresencial": 0
+   },
+   "orden": [
+    "UCU"
+   ],
+   "dominios": [],
+   "errores": []
+  },
+  {
+   "ia": "Gemini",
+   "dia": "2026-10-13",
+   "pregunta": "F4",
+   "pregunta_nombra_ucu": true,
+   "inst": {
+    "UCU": 12,
+    "Udelar": 8,
+    "UTEC": 6,
+    "ORT": 0,
+    "UM": 0,
+    "UTU": 0,
+    "UDE": 0,
+    "CLAEH": 0
+   },
+   "term": {
+    "datos_y_negocios": 0,
+    "inteligencia_artificial": 0,
+    "ciencia_de_datos": 0,
+    "analisis_de_datos": 0,
+    "business_analytics": 0,
+    "negocios_digitales": 0,
+    "semipresencial": 0
+   },
+   "orden": [
+    "UCU",
+    "Udelar",
+    "UTEC"
+   ],
+   "dominios": [],
+   "errores": []
+  },
+  {
+   "ia": "Gemini",
+   "dia": "2026-10-13",
+   "pregunta": "J1",
+   "pregunta_nombra_ucu": false,
+   "inst": {
+    "UCU": 16,
+    "Udelar": 0,
+    "UTEC": 0,
+    "ORT": 18,
+    "UM": 4,
+    "UTU": 0,
+    "UDE": 0,
+    "CLAEH": 0
+   },
+   "term": {
+    "datos_y_negocios": 4,
+    "inteligencia_artificial": 0,
+    "ciencia_de_datos": 0,
+    "analisis_de_datos": 0,
+    "business_analytics": 8,
+    "negocios_digitales": 4,
+    "semipresencial": 0
+   },
+   "orden": [
+    "UCU",
+    "ORT",
+    "UM"
+   ],
+   "dominios": [],
+   "errores": []
+  },
+  {
+   "ia": "Gemini",
+   "dia": "2026-10-13",
+   "pregunta": "J2",
+   "pregunta_nombra_ucu": false,
+   "inst": {
+    "UCU": 1,
+    "Udelar": 3,
+    "UTEC": 0,
+    "ORT": 1,
+    "UM": 1,
+    "UTU": 1,
+    "UDE": 3,
+    "CLAEH": 0
+   },
+   "term": {
+    "datos_y_negocios": 0,
+    "inteligencia_artificial": 0,
+    "ciencia_de_datos": 0,
+    "analisis_de_datos": 0,
+    "business_analytics": 0,
+    "negocios_digitales": 0,
+    "semipresencial": 17
+   },
+   "orden": [
+    "Udelar",
+    "UDE",
+    "ORT",
+    "UCU",
+    "UM",
+    "UTU"
+   ],
+   "dominios": [],
+   "errores": []
+  },
+  {
+   "ia": "Gemini",
+   "dia": "2026-10-13",
+   "pregunta": "J3",
+   "pregunta_nombra_ucu": false,
+   "inst": {
+    "UCU": 5,
+    "Udelar": 2,
+    "UTEC": 4,
+    "ORT": 2,
+    "UM": 2,
+    "UTU": 0,
+    "UDE": 0,
+    "CLAEH": 0
+   },
+   "term": {
+    "datos_y_negocios": 0,
+    "inteligencia_artificial": 2,
+    "ciencia_de_datos": 2,
+    "analisis_de_datos": 3,
+    "business_analytics": 3,
+    "negocios_digitales": 0,
+    "semipresencial": 3
+   },
+   "orden": [
+    "UCU",
+    "ORT",
+    "UM",
+    "UTEC",
+    "Udelar"
+   ],
+   "dominios": [],
+   "errores": []
+  },
+  {
+   "ia": "Gemini",
+   "dia": "2026-10-13",
+   "pregunta": "J4",
+   "pregunta_nombra_ucu": false,
+   "inst": {
+    "UCU": 0,
+    "Udelar": 6,
+    "UTEC": 0,
+    "ORT": 0,
+    "UM": 0,
+    "UTU": 0,
+    "UDE": 0,
+    "CLAEH": 0
+   },
+   "term": {
+    "datos_y_negocios": 0,
+    "inteligencia_artificial": 0,
+    "ciencia_de_datos": 0,
+    "analisis_de_datos": 0,
+    "business_analytics": 0,
+    "negocios_digitales": 0,
+    "semipresencial": 0
+   },
+   "orden": [
+    "Udelar"
+   ],
+   "dominios": [],
+   "errores": []
+  },
+  {
+   "ia": "ChatGPT",
+   "dia": "2026-10-14",
+   "pregunta": "F1",
+   "pregunta_nombra_ucu": false,
+   "inst": {
+    "UCU": 0,
+    "Udelar": 11,
+    "UTEC": 5,
+    "ORT": 0,
+    "UM": 0,
+    "UTU": 1,
+    "UDE": 0,
+    "CLAEH": 0
+   },
+   "term": {
+    "datos_y_negocios": 0,
+    "inteligencia_artificial": 8,
+    "ciencia_de_datos": 0,
+    "analisis_de_datos": 1,
+    "business_analytics": 0,
+    "negocios_digitales": 0,
+    "semipresencial": 0
+   },
+   "orden": [
+    "Udelar",
+    "UTEC",
+    "UTU"
+   ],
+   "dominios": [
+    "fing.edu.uy",
+    "udelar.edu.uy",
+    "utec.edu.uy"
+   ],
+   "errores": []
+  },
+  {
+   "ia": "ChatGPT",
+   "dia": "2026-10-14",
+   "pregunta": "F2",
+   "pregunta_nombra_ucu": true,
+   "inst": {
+    "UCU": 7,
+    "Udelar": 8,
+    "UTEC": 0,
+    "ORT": 0,
+    "UM": 0,
+    "UTU": 0,
+    "UDE": 0,
+    "CLAEH": 0
+   },
+   "term": {
+    "datos_y_negocios": 0,
+    "inteligencia_artificial": 1,
+    "ciencia_de_datos": 0,
+    "analisis_de_datos": 0,
+    "business_analytics": 0,
+    "negocios_digitales": 0,
+    "semipresencial": 0
+   },
+   "orden": [
+    "UCU",
+    "Udelar"
+   ],
+   "dominios": [
+    "ucu.edu.uy",
+    "udelar.edu.uy"
+   ],
+   "errores": []
+  },
+  {
+   "ia": "ChatGPT",
+   "dia": "2026-10-14",
+   "pregunta": "F3",
+   "pregunta_nombra_ucu": true,
+   "inst": {
+    "UCU": 12,
+    "Udelar": 0,
+    "UTEC": 0,
+    "ORT": 0,
+    "UM": 0,
+    "UTU": 0,
+    "UDE": 0,
+    "CLAEH": 0
+   },
+   "term": {
+    "datos_y_negocios": 0,
+    "inteligencia_artificial": 1,
+    "ciencia_de_datos": 0,
+    "analisis_de_datos": 0,
+    "business_analytics": 0,
+    "negocios_digitales": 0,
+    "semipresencial": 0
+   },
+   "orden": [
+    "UCU"
+   ],
+   "dominios": [
+    "carreras.ucu.edu.uy"
+   ],
+   "errores": []
+  },
+  {
+   "ia": "ChatGPT",
+   "dia": "2026-10-14",
+   "pregunta": "F4",
+   "pregunta_nombra_ucu": true,
+   "inst": {
+    "UCU": 21,
+    "Udelar": 5,
+    "UTEC": 5,
+    "ORT": 0,
+    "UM": 0,
+    "UTU": 0,
+    "UDE": 0,
+    "CLAEH": 0
+   },
+   "term": {
+    "datos_y_negocios": 0,
+    "inteligencia_artificial": 1,
+    "ciencia_de_datos": 0,
+    "analisis_de_datos": 0,
+    "business_analytics": 0,
+    "negocios_digitales": 0,
+    "semipresencial": 0
+   },
+   "orden": [
+    "UCU",
+    "Udelar",
+    "UTEC"
+   ],
+   "dominios": [
+    "carreras.ucu.edu.uy",
+    "ucu.edu.uy",
+    "udelar.edu.uy",
+    "utec.edu.uy"
+   ],
+   "errores": []
+  },
+  {
+   "ia": "ChatGPT",
+   "dia": "2026-10-14",
+   "pregunta": "J1",
+   "pregunta_nombra_ucu": false,
+   "inst": {
+    "UCU": 0,
+    "Udelar": 5,
+    "UTEC": 0,
+    "ORT": 4,
+    "UM": 0,
+    "UTU": 0,
+    "UDE": 0,
+    "CLAEH": 0
+   },
+   "term": {
+    "datos_y_negocios": 0,
+    "inteligencia_artificial": 1,
+    "ciencia_de_datos": 3,
+    "analisis_de_datos": 1,
+    "business_analytics": 1,
+    "negocios_digitales": 0,
+    "semipresencial": 0
+   },
+   "orden": [
+    "Udelar",
+    "ORT"
+   ],
+   "dominios": [
+    "facs.ort.edu.uy",
+    "fcea.udelar.edu.uy",
+    "udelar.edu.uy"
+   ],
+   "errores": []
+  },
+  {
+   "ia": "ChatGPT",
+   "dia": "2026-10-14",
+   "pregunta": "J2",
+   "pregunta_nombra_ucu": false,
+   "inst": {
+    "UCU": 5,
+    "Udelar": 6,
+    "UTEC": 0,
+    "ORT": 0,
+    "UM": 0,
+    "UTU": 1,
+    "UDE": 0,
+    "CLAEH": 0
+   },
+   "term": {
+    "datos_y_negocios": 0,
+    "inteligencia_artificial": 1,
+    "ciencia_de_datos": 0,
+    "analisis_de_datos": 0,
+    "business_analytics": 0,
+    "negocios_digitales": 1,
+    "semipresencial": 11
+   },
+   "orden": [
+    "UCU",
+    "Udelar",
+    "UTU"
+   ],
+   "dominios": [
+    "apps.mapbox.com",
+    "carreras.ucu.edu.uy",
+    "mapbox.com",
+    "openstreetmap.org",
+    "udelar.edu.uy"
+   ],
+   "errores": []
+  },
+  {
+   "ia": "ChatGPT",
+   "dia": "2026-10-14",
+   "pregunta": "J3",
+   "pregunta_nombra_ucu": false,
+   "inst": {
+    "UCU": 0,
+    "Udelar": 4,
+    "UTEC": 2,
+    "ORT": 4,
+    "UM": 0,
+    "UTU": 0,
+    "UDE": 0,
+    "CLAEH": 0
+   },
+   "term": {
+    "datos_y_negocios": 0,
+    "inteligencia_artificial": 5,
+    "ciencia_de_datos": 1,
+    "analisis_de_datos": 6,
+    "business_analytics": 0,
+    "negocios_digitales": 0,
+    "semipresencial": 8
+   },
+   "orden": [
+    "ORT",
+    "Udelar",
+    "UTEC"
+   ],
+   "dominios": [
+    "aldey.com.uy",
+    "coderhouse.com",
+    "fcea.udelar.edu.uy",
+    "institutocpe.edu.uy",
+    "ort.edu.uy",
+    "utec.edu.uy"
+   ],
+   "errores": []
+  },
+  {
+   "ia": "ChatGPT",
+   "dia": "2026-10-14",
+   "pregunta": "J4",
+   "pregunta_nombra_ucu": false,
+   "inst": {
+    "UCU": 1,
+    "Udelar": 5,
+    "UTEC": 0,
+    "ORT": 0,
+    "UM": 0,
+    "UTU": 1,
+    "UDE": 0,
+    "CLAEH": 0
+   },
+   "term": {
+    "datos_y_negocios": 0,
+    "inteligencia_artificial": 1,
+    "ciencia_de_datos": 0,
+    "analisis_de_datos": 0,
+    "business_analytics": 0,
+    "negocios_digitales": 0,
+    "semipresencial": 0
+   },
+   "orden": [
+    "Udelar",
+    "UCU",
+    "UTU"
+   ],
+   "dominios": [
+    "ucu.edu.uy",
+    "udelar.edu.uy"
+   ],
+   "errores": []
+  },
+  {
+   "ia": "Gemini",
+   "dia": "2026-10-14",
+   "pregunta": "F1",
+   "pregunta_nombra_ucu": false,
+   "inst": {
+    "UCU": 7,
+    "Udelar": 11,
+    "UTEC": 0,
+    "ORT": 0,
+    "UM": 0,
+    "UTU": 0,
+    "UDE": 0,
+    "CLAEH": 0
+   },
+   "term": {
+    "datos_y_negocios": 0,
+    "inteligencia_artificial": 0,
+    "ciencia_de_datos": 1,
+    "analisis_de_datos": 0,
+    "business_analytics": 0,
+    "negocios_digitales": 0,
+    "semipresencial": 2
+   },
+   "orden": [
+    "Udelar",
+    "UCU"
+   ],
+   "dominios": [],
+   "errores": []
+  },
+  {
+   "ia": "Gemini",
+   "dia": "2026-10-14",
+   "pregunta": "F2",
+   "pregunta_nombra_ucu": true,
+   "inst": {
+    "UCU": 8,
+    "Udelar": 10,
+    "UTEC": 0,
+    "ORT": 0,
+    "UM": 0,
+    "UTU": 0,
+    "UDE": 0,
+    "CLAEH": 0
+   },
+   "term": {
+    "datos_y_negocios": 0,
+    "inteligencia_artificial": 0,
+    "ciencia_de_datos": 0,
+    "analisis_de_datos": 0,
+    "business_analytics": 0,
+    "negocios_digitales": 0,
+    "semipresencial": 0
+   },
+   "orden": [
+    "UCU",
+    "Udelar"
+   ],
+   "dominios": [],
+   "errores": []
+  },
+  {
+   "ia": "Gemini",
+   "dia": "2026-10-14",
+   "pregunta": "F3",
+   "pregunta_nombra_ucu": true,
+   "inst": {
+    "UCU": 13,
+    "Udelar": 0,
+    "UTEC": 0,
+    "ORT": 0,
+    "UM": 0,
+    "UTU": 0,
+    "UDE": 0,
+    "CLAEH": 0
+   },
+   "term": {
+    "datos_y_negocios": 0,
+    "inteligencia_artificial": 0,
+    "ciencia_de_datos": 0,
+    "analisis_de_datos": 0,
+    "business_analytics": 0,
+    "negocios_digitales": 0,
+    "semipresencial": 1
+   },
+   "orden": [
+    "UCU"
+   ],
+   "dominios": [],
+   "errores": []
+  },
+  {
+   "ia": "Gemini",
+   "dia": "2026-10-14",
+   "pregunta": "F4",
+   "pregunta_nombra_ucu": true,
+   "inst": {
+    "UCU": 9,
+    "Udelar": 9,
+    "UTEC": 8,
+    "ORT": 0,
+    "UM": 0,
+    "UTU": 0,
+    "UDE": 0,
+    "CLAEH": 0
+   },
+   "term": {
+    "datos_y_negocios": 0,
+    "inteligencia_artificial": 0,
+    "ciencia_de_datos": 0,
+    "analisis_de_datos": 0,
+    "business_analytics": 0,
+    "negocios_digitales": 0,
+    "semipresencial": 1
+   },
+   "orden": [
+    "UCU",
+    "Udelar",
+    "UTEC"
+   ],
+   "dominios": [],
+   "errores": []
+  },
+  {
+   "ia": "Gemini",
+   "dia": "2026-10-14",
+   "pregunta": "J1",
+   "pregunta_nombra_ucu": false,
+   "inst": {
+    "UCU": 7,
+    "Udelar": 7,
+    "UTEC": 0,
+    "ORT": 4,
+    "UM": 8,
+    "UTU": 0,
+    "UDE": 0,
+    "CLAEH": 0
+   },
+   "term": {
+    "datos_y_negocios": 0,
+    "inteligencia_artificial": 0,
+    "ciencia_de_datos": 3,
+    "analisis_de_datos": 0,
+    "business_analytics": 2,
+    "negocios_digitales": 0,
+    "semipresencial": 0
+   },
+   "orden": [
+    "UCU",
+    "UM",
+    "ORT",
+    "Udelar"
+   ],
+   "dominios": [],
+   "errores": []
+  },
+  {
+   "ia": "Gemini",
+   "dia": "2026-10-14",
+   "pregunta": "J2",
+   "pregunta_nombra_ucu": false,
+   "inst": {
+    "UCU": 4,
+    "Udelar": 18,
+    "UTEC": 7,
+    "ORT": 1,
+    "UM": 0,
+    "UTU": 1,
+    "UDE": 2,
+    "CLAEH": 0
+   },
+   "term": {
+    "datos_y_negocios": 0,
+    "inteligencia_artificial": 0,
+    "ciencia_de_datos": 0,
+    "analisis_de_datos": 1,
+    "business_analytics": 0,
+    "negocios_digitales": 0,
+    "semipresencial": 16
+   },
+   "orden": [
+    "Udelar",
+    "UCU",
+    "UDE",
+    "ORT",
+    "UTEC",
+    "UTU"
+   ],
+   "dominios": [],
+   "errores": []
+  },
+  {
+   "ia": "Gemini",
+   "dia": "2026-10-14",
+   "pregunta": "J3",
+   "pregunta_nombra_ucu": false,
+   "inst": {
+    "UCU": 5,
+    "Udelar": 1,
+    "UTEC": 4,
+    "ORT": 1,
+    "UM": 2,
+    "UTU": 0,
+    "UDE": 0,
+    "CLAEH": 0
+   },
+   "term": {
+    "datos_y_negocios": 0,
+    "inteligencia_artificial": 2,
+    "ciencia_de_datos": 2,
+    "analisis_de_datos": 5,
+    "business_analytics": 0,
+    "negocios_digitales": 0,
+    "semipresencial": 1
+   },
+   "orden": [
+    "UTEC",
+    "Udelar",
+    "UCU",
+    "ORT",
+    "UM"
+   ],
+   "dominios": [],
+   "errores": []
+  },
+  {
+   "ia": "Gemini",
+   "dia": "2026-10-14",
+   "pregunta": "J4",
+   "pregunta_nombra_ucu": false,
+   "inst": {
+    "UCU": 2,
+    "Udelar": 31,
+    "UTEC": 0,
+    "ORT": 1,
+    "UM": 0,
+    "UTU": 0,
+    "UDE": 0,
+    "CLAEH": 0
+   },
+   "term": {
+    "datos_y_negocios": 0,
+    "inteligencia_artificial": 0,
+    "ciencia_de_datos": 0,
+    "analisis_de_datos": 0,
+    "business_analytics": 0,
+    "negocios_digitales": 0,
+    "semipresencial": 0
+   },
+   "orden": [
+    "Udelar",
+    "UCU",
+    "ORT"
+   ],
+   "dominios": [],
+   "errores": []
+  }
+ ],
+ "colores": {
+  "instituciones": {
+   "UCU": "#4f8dff",
+   "Udelar": "#3ccf91",
+   "UTEC": "#f2b03d",
+   "ORT": "#f07f4f",
+   "UM": "#a78bfa",
+   "UTU": "#35c9d6",
+   "UDE": "#ff6fa3",
+   "CLAEH": "#c9d451"
+  }
+ },
+ "terminos_def": [
+  {
+   "id": "datos_y_negocios",
+   "nombre": "datos y negocios"
+  },
+  {
+   "id": "inteligencia_artificial",
+   "nombre": "inteligencia artificial"
+  },
+  {
+   "id": "ciencia_de_datos",
+   "nombre": "ciencia de datos"
+  },
+  {
+   "id": "analisis_de_datos",
+   "nombre": "análisis o analista de datos"
+  },
+  {
+   "id": "business_analytics",
+   "nombre": "business analytics"
+  },
+  {
+   "id": "negocios_digitales",
+   "nombre": "negocios digitales"
+  },
+  {
+   "id": "semipresencial",
+   "nombre": "semipresencial o a distancia"
+  }
  ],
  "preguntas": [
   {
