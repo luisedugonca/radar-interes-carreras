@@ -8,7 +8,7 @@ Que una persona de UCU pueda levantar, sin datos pagos, qué se busca sobre un t
 - 10 temas guardados (el primero por la Action de GitHub fue «inteligencia artificial») · `docs/data/indice.json`.
 - Repo privado creado y Action probada: corrida 43966453554, commit 2517df7.
 - Gate del 2026-11-16: 9 de 10 criterios pasaron; el fallo y las observaciones se corrigieron · `revisiones/gate-2026-11-16.md`.
-- Web: mapa agéntico (`docs/index.html`) y radar (`docs/radar.html`) con modo en vivo, términos candidatos y pedido para chat · probadas en Chrome sin errores de consola.
+- Web: mapa agéntico (`docs/mapa.html`; la portada `index.html` lleva a «En las IA») y radar (`docs/radar.html`) con modo en vivo, términos candidatos y pedido para chat · probadas en Chrome sin errores de consola.
 - Fuentes de top 10 por script: probadas y descartadas · `revisiones/REGISTRO.md`.
 - F4 hecha: repo público y web en https://luisedugonca.github.io/radar-interes-carreras/ (200; modo en vivo probado ahí).
 - Estructura para varias IA: `AGENTS.md`, `GEMINI.md`, `chat/` y `docs/data/paquete-chat.md`.

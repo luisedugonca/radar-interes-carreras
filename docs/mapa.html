@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mapa agéntico · Radar de interés</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/estilo.css?v=20261118">
+<script src="assets/tema.js?v=20261118"></script>
+</head>
+<body>
+<header class="cab">
+  <div class="cab-in">
+    <div>
+      <h1 id="sitio-titulo">Radar de interés</h1>
+      <p id="sitio-equipo"></p>
+    </div>
+    <nav class="pest" aria-label="Secciones">
+      <a href="ia.html">En las IA</a>
+      <a href="radar.html">Radar</a>
+      <a href="radar.html#glosario">Glosario</a>
+      <a id="enl-repo" href="#">Repositorio</a>
+      <a href="mapa.html" aria-current="page">Mapa agéntico</a>
+      <button type="button" id="btn-tema" aria-label="Cambiar tema">☾</button>
+    </nav>
+  </div>
+</header>
+
+<main class="agentico">
+  <div class="sec-t"><span class="n">1</span><h2>Cómo trabajamos: una persona decide, los agentes ejecutan</h2></div>
+  <section class="noche" aria-label="Mapa agéntico">
+    <div class="lienzo">
+      <p class="ayuda-mapa">Tocá un punto para ver qué pasa ahí, quién lo hace y en qué archivo queda.</p>
+      <svg id="mapa" class="mapa" aria-label="Mapa radial del método de trabajo"></svg>
+    </div>
+    <aside class="ficha" id="ficha" aria-live="polite"></aside>
+  </section>
+  <p class="fuente" id="fuente-mapa"></p>
+
+  <div class="sec-t"><span class="n">2</span><h2>El loop: en qué fase estamos</h2></div>
+  <div class="kpis" id="loop-kpis"></div>
+  <div class="fases" id="fases" style="margin-top:12px"></div>
+  <p class="fuente" id="fuente-loop"></p>
+</main>
+<footer class="pie" id="pie"></footer>
+
+<script type="module">
+import { renderMapa } from "./assets/mapa.js";
+import { leerJSON, esc, fecha } from "./assets/nucleo.js";
+
+const [mapa, loop, sitio] = await Promise.all([leerJSON("data/mapa.json"), leerJSON("data/loop.json"), leerJSON("data/sitio.json")]);
+const repo = `https://github.com/${sitio.repo}`;
+const enRepo = (ruta) => `${repo}/${ruta.endsWith("/") ? "tree" : "blob"}/${sitio.rama}/${ruta}`;
+
+document.getElementById("sitio-titulo").textContent = sitio.titulo;
+document.getElementById("sitio-equipo").textContent = sitio.equipo;
+document.getElementById("enl-repo").href = repo;
+
+const ficha = document.getElementById("ficha");
+let control;
+function mostrar(rama, nodo) {
+  const fila = (t, v) => (v ? `<dt>${t}</dt><dd>${v}</dd>` : "");
+  ficha.innerHTML = `
+    <div class="et" style="color:${rama.color}">${esc(rama.titulo)}</div>
+    <h3>${esc(nodo.icono)} ${esc(nodo.titulo)}</h3>
+    <p>${esc(nodo.que)}</p>
+    <dl>
+      ${fila("Quién", esc(nodo.quien))}
+      ${fila("Dónde queda", nodo.donde ? `<a href="${enRepo(nodo.donde)}">${esc(nodo.donde)}</a>` : "")}
+      ${fila("Aprobación", esc(nodo.nivel))}
+      ${fila("Estado", esc(nodo.estado))}
+    </dl>
+    <ul class="pasos" aria-label="Pasos de esta rama">
+      ${rama.nodos.map((x) => `<li><button type="button" data-n="${esc(x.id)}" aria-pressed="${x.id === nodo.id}" style="color:${x.id === nodo.id ? rama.color : ""}">${esc(x.icono)} ${esc(x.titulo)}</button></li>`).join("")}
+    </ul>`;
+  ficha.querySelectorAll("button").forEach((b) => b.addEventListener("click", () => control.seleccionar(rama.id, b.dataset.n, true)));
+}
+control = renderMapa(document.getElementById("mapa"), mapa, mostrar);
+control.seleccionar(mapa.ramas[0].id, mapa.ramas[0].nodos[0].id, true);
+document.getElementById("fuente-mapa").innerHTML =
+  `Fuente: <a href="${enRepo("docs/data/mapa.json")}">docs/data/mapa.json</a> · ${mapa.ramas.length} ramas, ${mapa.ramas.reduce((s, r) => s + r.nodos.length, 0)} pasos. Método: portafolio «PO agéntico».`;
+
+// Estado del loop
+const SELLO = { hecho: ["ok", "Hecha"], pendiente: ["pend", "Pendiente"], "espera-po": ["sup", "Espera OK del PO"] };
+const hechas = loop.fases.filter((f) => f.estado === "hecho").length;
+const siguiente = loop.fases.find((f) => f.estado !== "hecho");
+document.getElementById("loop-kpis").innerHTML = `
+  <div class="kpi dest"><div class="v">${hechas} de ${loop.fases.length}</div><div class="t">fases con evidencia</div><div class="d">Una fase cuenta solo si demostró su «hecho cuando».</div></div>
+  <div class="kpi"><div class="v">${esc(siguiente ? siguiente.id : "—")}</div><div class="t">próxima fase</div><div class="d">${esc(siguiente ? siguiente.nombre : "Loop terminado")}</div></div>
+  <div class="kpi"><div class="v">${esc(loop.corte_minimo.join(" · "))}</div><div class="t">corte mínimo</div><div class="d">Con estas fases ya hay valor entregado, aunque se frene.</div></div>`;
+document.getElementById("fases").innerHTML = loop.fases.map((f) => {
+  const [clase, texto] = SELLO[f.estado] ?? ["pend", f.estado];
+  return `<article class="fase">
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:8px"><span class="id">${esc(f.id)}</span><span class="sello ${clase}">${texto}</span></div>
+    <h3>${esc(f.nombre)}</h3>
+    <p><b>Hecho cuando:</b> ${esc(f.hecho_cuando)}</p>
+    ${f.evidencia ? `<p><b>Evidencia:</b> ${esc(f.evidencia)}</p>` : ""}
+    <p><b>Aprobación:</b> ${esc(f.aprobacion)}</p>
+  </article>`;
+}).join("");
+document.getElementById("fuente-loop").innerHTML =
+  `Fuente: <a href="${enRepo("docs/data/loop.json")}">docs/data/loop.json</a> · actualizado ${esc(fecha(loop.actualizado_utc))} · plan completo en <a href="${enRepo("PLAN.md")}">PLAN.md</a>.`;
+document.getElementById("pie").textContent = `Objetivo: ${loop.objetivo}`;
+</script>
+</body>
+</html>

@@ -31,7 +31,8 @@ python3 -m http.server 8000 --directory docs
 # abrir http://localhost:8000
 ```
 
-- **Mapa agéntico** (`index.html`): cómo trabajamos y en qué fase está el plan.
+- **En las IA** (`ia.html`, la página de inicio): qué contestan ChatGPT y Gemini; hoy, una foto de oct-2026.
+- **Mapa agéntico** (`mapa.html`): cómo trabajamos y en qué fase está el plan.
 - **Radar de interés** (`radar.html`): elegí una consulta guardada o escribí un tema nuevo y tocá «Explorar en vivo».
 
 **La base de datos** es un CSV: [`docs/data/base.csv`](docs/data/base.csv), una fila por frase de cada tema guardado. Se regenera sola cada vez que se guarda un tema y se abre en Excel. Desde la web, «⬇ Descargar CSV» baja el tema que estás mirando (también uno medido en vivo) y «⬆ Abrir CSV» lo vuelve a cargar.
@@ -65,7 +66,7 @@ Fuente → Extracción → Registro del crudo → Validación → Transformació
 | Base | `colector/base_csv.py` | `docs/data/base.csv`, una fila por frase de cada tema |
 | Reprocesar | `colector/reprocesar.py` | Rehace los temas desde el crudo, sin pedir nada a Google |
 | Reglas | `docs/data/reglas.json` | Semillas y patrones; las usan Python y la web |
-| Mostrar | `docs/index.html`, `docs/radar.html` | Solo leen JSON; ningún número escrito a mano |
+| Mostrar | `docs/ia.html`, `docs/radar.html`, `docs/mapa.html` | Solo leen JSON; ningún número escrito a mano |
 
 - **Idempotencia:** la misma frase encontrada por tres consultas es una sola fila con «3 apariciones» (prueba en `tests/test_colector.py`).
 - **Linaje:** cada número de la web lleva fuente, fecha y corrida, con enlace al crudo y al manifiesto.

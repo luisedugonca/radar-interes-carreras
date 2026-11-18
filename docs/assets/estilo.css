@@ -1,4 +1,4 @@
-/* Radar de interés · estilos compartidos (index.html y radar.html)
+/* Radar de interés · estilos compartidos (ia.html, radar.html y mapa.html)
    Claro por defecto; oscuro por preferencia del sistema o con el botón (data-theme). */
 :root{
   --hd-a:#0a2453; --hd-b:#1452b8; --hd-ink:#fff; --hd-muted:#b8c9e6;
