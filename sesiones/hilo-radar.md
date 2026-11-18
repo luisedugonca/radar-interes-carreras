@@ -13,7 +13,10 @@ Que una persona de UCU pueda levantar, sin datos pagos, qué se busca sobre un t
 - F4 hecha: repo público y web en https://luisedugonca.github.io/radar-interes-carreras/ (200; modo en vivo probado ahí).
 - Estructura para varias IA: `AGENTS.md`, `GEMINI.md`, `chat/` y `docs/data/paquete-chat.md`.
 
+- Medición semanal programada (lunes 8:00 UY, `run.py --todos` en GitHub Actions). Probada a mano el 18-nov-2026: 11 temas, 0 errores (corrida 44342703719). El radar muestra la evolución (semana a semana / mes a mes) y deja elegir cada medición.
+
 ## Decisiones del PO
+- 2026-11-18 · OK a la medición semanal automática de los temas guardados y a publicar el crudo comprimido.
 - 2026-11-16 · Solo consultas gratis, sin Semrush. Mapa agéntico interactivo como base y formato de tablero propio. La herramienta tiene que poder usarse desde un chat.
 
 ## Abiertos
