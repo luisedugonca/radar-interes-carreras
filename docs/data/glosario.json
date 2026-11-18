@@ -74,6 +74,14 @@
       "que_es": "Una foto es una medición de un momento: dice qué pasaba ese día. Una tendencia necesita la misma medición repetida con una frecuencia fija (por ejemplo, cada semana). Cada gráfico dice cuál de las dos es."
     },
     {
+      "termino": "Medición",
+      "que_es": "Cada vez que el radar mide un tema guardado. El selector «Medido el…» elige cuál mirar: toda la página pasa a mostrar esa medición."
+    },
+    {
+      "termino": "Semana a semana / mes a mes",
+      "que_es": "Cómo se agrupan las mediciones en el gráfico de evolución: de cada semana (desde el lunes) o de cada mes se toma la última. Hace falta más de una medición para que aparezca la línea."
+    },
+    {
       "termino": "En las IA (GEO)",
       "que_es": "Qué contestan ChatGPT y Gemini cuando se les pregunta lo que preguntaría un estudiante o una familia: qué instituciones y carreras nombran, en qué orden y qué páginas citan. Se cuenta con reglas, sin IA."
     },
@@ -117,7 +125,7 @@
         "fuente": "Autocompletar de Google y YouTube",
         "mide": "Qué frases propone el buscador",
         "hacia_atras": "Nada: es una foto del día en que se mide.",
-        "en_el_radar": "Una foto por tema, desde el 16-nov-2026. Repetirla arma la tendencia.",
+        "en_el_radar": "Una medición por tema desde el 16-nov-2026. Cada medición nueva queda guardada y suma un punto a la evolución (semana a semana o mes a mes).",
         "tipo": "foto"
       },
       {

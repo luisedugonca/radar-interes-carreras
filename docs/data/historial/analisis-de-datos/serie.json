@@ -1,0 +1,129 @@
+{
+ "tema": "analisis de datos",
+ "slug": "analisis-de-datos",
+ "mediciones": [
+  {
+   "run_id": "20261116T222501Z_analisis-de-datos",
+   "fecha_utc": "2026-11-16T22:25:01Z",
+   "consultas": 46,
+   "frases": 499,
+   "apariciones_utiles": 296,
+   "ramas": {
+    "fuera_uy": 100,
+    "emprender": 2,
+    "becas": 5,
+    "costo": 20,
+    "salida": 38,
+    "modalidad": 23,
+    "plan": 18,
+    "comparar": 11,
+    "donde": 49,
+    "formato": 23,
+    "temas": 37,
+    "aprender": 72,
+    "otros": 159
+   },
+   "top": [
+    {
+     "texto": "analisis de datos uruguay",
+     "rama": "donde",
+     "apariciones": 10,
+     "pos_promedio": 4.6
+    },
+    {
+     "texto": "analisis de datos udelar",
+     "rama": "donde",
+     "apariciones": 9,
+     "pos_promedio": 4.7
+    },
+    {
+     "texto": "analisis de datos fcea",
+     "rama": "donde",
+     "apariciones": 4,
+     "pos_promedio": 6.2
+    },
+    {
+     "texto": "analisis de datos ort",
+     "rama": "donde",
+     "apariciones": 3,
+     "pos_promedio": 3.7
+    },
+    {
+     "texto": "análisis de datos en administración",
+     "rama": "temas",
+     "apariciones": 3,
+     "pos_promedio": 4.3
+    },
+    {
+     "texto": "analisis de datos um",
+     "rama": "donde",
+     "apariciones": 3,
+     "pos_promedio": 7.0
+    },
+    {
+     "texto": "analisis de datos ucu",
+     "rama": "donde",
+     "apariciones": 3,
+     "pos_promedio": 7.3
+    },
+    {
+     "texto": "analisis de datos curso",
+     "rama": "formato",
+     "apariciones": 2,
+     "pos_promedio": 1.0
+    },
+    {
+     "texto": "donde estudiar analisis de datos",
+     "rama": "donde",
+     "apariciones": 2,
+     "pos_promedio": 1.0
+    },
+    {
+     "texto": "analisis de datos a distancia gratis",
+     "rama": "costo",
+     "apariciones": 2,
+     "pos_promedio": 2.0
+    },
+    {
+     "texto": "analisis de datos carrera",
+     "rama": "formato",
+     "apariciones": 2,
+     "pos_promedio": 2.0
+    },
+    {
+     "texto": "estudiar analisis de datos a distancia",
+     "rama": "modalidad",
+     "apariciones": 2,
+     "pos_promedio": 2.0
+    },
+    {
+     "texto": "analisis de datos futbol",
+     "rama": "temas",
+     "apariciones": 2,
+     "pos_promedio": 4.5
+    },
+    {
+     "texto": "analisis de datos trabajo",
+     "rama": "salida",
+     "apariciones": 2,
+     "pos_promedio": 4.5
+    },
+    {
+     "texto": "análisis de datos carrera a distancia",
+     "rama": "modalidad",
+     "apariciones": 2,
+     "pos_promedio": 4.5
+    }
+   ],
+   "instituciones": {
+    "Udelar": 4,
+    "ORT": 1,
+    "UCU": 1,
+    "UDE": 1,
+    "UM": 1,
+    "UTEC": 1,
+    "UTU": 1
+   }
+  }
+ ]
+}

@@ -1,0 +1,128 @@
+{
+ "tema": "analista de datos",
+ "slug": "analista-de-datos",
+ "mediciones": [
+  {
+   "run_id": "20261116T220856Z_analista-de-datos",
+   "fecha_utc": "2026-11-16T22:08:56Z",
+   "consultas": 46,
+   "frases": 453,
+   "apariciones_utiles": 273,
+   "ramas": {
+    "fuera_uy": 114,
+    "emprender": 4,
+    "becas": 0,
+    "costo": 14,
+    "salida": 95,
+    "modalidad": 18,
+    "plan": 13,
+    "comparar": 12,
+    "donde": 44,
+    "formato": 25,
+    "temas": 22,
+    "aprender": 30,
+    "otros": 137
+   },
+   "top": [
+    {
+     "texto": "analista de datos uruguay",
+     "rama": "donde",
+     "apariciones": 8,
+     "pos_promedio": 2.8
+    },
+    {
+     "texto": "analista de datos montevideo",
+     "rama": "donde",
+     "apariciones": 7,
+     "pos_promedio": 6.6
+    },
+    {
+     "texto": "analista de datos udelar",
+     "rama": "donde",
+     "apariciones": 4,
+     "pos_promedio": 3.8
+    },
+    {
+     "texto": "analista de datos en uruguay",
+     "rama": "donde",
+     "apariciones": 4,
+     "pos_promedio": 6.5
+    },
+    {
+     "texto": "analista de datos salario uruguay",
+     "rama": "salida",
+     "apariciones": 3,
+     "pos_promedio": 3.0
+    },
+    {
+     "texto": "analista de datos sueldo uruguay",
+     "rama": "salida",
+     "apariciones": 3,
+     "pos_promedio": 5.3
+    },
+    {
+     "texto": "analista de datos trabajo uruguay",
+     "rama": "salida",
+     "apariciones": 3,
+     "pos_promedio": 4.7
+    },
+    {
+     "texto": "analista de datos carrera online",
+     "rama": "modalidad",
+     "apariciones": 3,
+     "pos_promedio": 6.7
+    },
+    {
+     "texto": "analista de datos uruguay sueldo",
+     "rama": "salida",
+     "apariciones": 3,
+     "pos_promedio": 5.3
+    },
+    {
+     "texto": "analista de datos utec",
+     "rama": "donde",
+     "apariciones": 3,
+     "pos_promedio": 6.0
+    },
+    {
+     "texto": "analista de datos trabajo",
+     "rama": "salida",
+     "apariciones": 2,
+     "pos_promedio": 1.5
+    },
+    {
+     "texto": "analista de datos curso",
+     "rama": "formato",
+     "apariciones": 2,
+     "pos_promedio": 2.0
+    },
+    {
+     "texto": "estudiar analista de datos a distancia",
+     "rama": "modalidad",
+     "apariciones": 2,
+     "pos_promedio": 2.5
+    },
+    {
+     "texto": "analista de datos junior",
+     "rama": "salida",
+     "apariciones": 2,
+     "pos_promedio": 3.0
+    },
+    {
+     "texto": "analista de datos desde cero",
+     "rama": "aprender",
+     "apariciones": 2,
+     "pos_promedio": 3.5
+    }
+   ],
+   "instituciones": {
+    "ORT": 1,
+    "UCU": 1,
+    "UM": 1,
+    "UTEC": 1,
+    "UTU": 1,
+    "Udelar": 1
+   }
+  }
+ ]
+}

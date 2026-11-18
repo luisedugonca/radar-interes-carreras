@@ -146,6 +146,11 @@ main.agentico{padding:12px max(var(--gut),env(safe-area-inset-right,0px)) 40px m
 .pill{position:relative;display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);border-radius:10px;padding:7px 12px;font-size:.9rem;background:var(--panel)}
 .pill select{appearance:none;-webkit-appearance:none;border:0;background:transparent;padding-right:16px;cursor:pointer;outline:none}
 #f-duda,#f-dia{width:12.5em;text-overflow:ellipsis}
+#f-medicion{width:15em;text-overflow:ellipsis}
+#f-gran{width:10em}
+.pill select:disabled{cursor:default;opacity:1}
+.graf-evol{width:100%;height:auto;display:block}
+.graf-evol text{font-family:var(--f-body);font-size:11px;fill:var(--muted)}
 .pill:has(select)::after{content:"▾";position:absolute;right:10px;pointer-events:none;color:var(--muted)}
 .pill:focus-within{outline:2px solid var(--accent)}
 .pill.fija{color:var(--muted)}

@@ -93,6 +93,31 @@ class BaseCSV(unittest.TestCase):
         self.assertEqual((f[0]["consultas_respondidas"], f[0]["fuentes"]), (43, "google|youtube"))
 
 
+class Historial(unittest.TestCase):
+    def test_registrar_dos_veces_la_misma_corrida_no_duplica(self):
+        import gzip
+        import tempfile
+        from pathlib import Path
+        import historial
+        c = {"tema": "x y", "slug": "x-y", "run_id": "r1", "generado_utc": "2026-11-16T00:00:00Z",
+             "fuentes": [{"con_respuesta": 46}],
+             "intenciones": [{"id": "costo", "nombre": "Costo", "total": 1, "apariciones_total": 2, "sugerencias": [
+                 {"texto": "x y gratis", "apariciones": 2, "pos_promedio": 1.5, "veces_top3": 2, "instituciones": ["UCU"]}]}]}
+        with tempfile.TemporaryDirectory() as tmp:
+            antes, historial.DIR = historial.DIR, Path(tmp)
+            try:
+                self.assertEqual(historial.registrar(c), 1)
+                self.assertEqual(historial.registrar(c), 1)
+                self.assertEqual(historial.registrar({**c, "run_id": "r2", "generado_utc": "2026-11-23T00:00:00Z"}), 2)
+                serie = json.loads((Path(tmp) / "x-y" / "serie.json").read_text(encoding="utf-8"))
+                self.assertEqual([m["run_id"] for m in serie["mediciones"]], ["r1", "r2"])
+                self.assertEqual(serie["mediciones"][0]["instituciones"], {"UCU": 1})
+                vuelta = json.loads(gzip.decompress((Path(tmp) / "x-y" / "r1.json.gz").read_bytes()))
+                self.assertEqual(vuelta["run_id"], "r1")
+            finally:
+                historial.DIR = antes
+
+
 class Top10(unittest.TestCase):
     def test_rechaza_el_caso_real_de_bing_sin_relacion(self):
         caso = json.loads((RAIZ / "tests/fixtures/bing_sin_relacion_20261116.json").read_text(encoding="utf-8"))

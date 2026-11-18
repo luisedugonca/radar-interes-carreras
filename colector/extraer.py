@@ -60,7 +60,7 @@ def armar_semillas(tema: str, reglas: dict) -> list[dict]:
 
 
 def extraer_sugerencias(tema: str, reglas: dict, dir_raw: Path, pausa: float = 0.25) -> list[dict]:
-    """Pide el autocompletar de cada semilla y guarda una línea por pedido en sugerencias.jsonl."""
+    """Pide el autocompletar de cada semilla y guarda una línea por pedido en sugerencias.jsonl (run.py lo comprime al final)."""
     pais = reglas["pais"]
     registros = []
     ruta = dir_raw / "sugerencias.jsonl"

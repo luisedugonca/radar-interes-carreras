@@ -1,0 +1,124 @@
+{
+ "tema": "datos y negocios",
+ "slug": "datos-y-negocios",
+ "mediciones": [
+  {
+   "run_id": "20261116T222422Z_datos-y-negocios",
+   "fecha_utc": "2026-11-16T22:24:22Z",
+   "consultas": 46,
+   "frases": 43,
+   "apariciones_utiles": 80,
+   "ramas": {
+    "fuera_uy": 2,
+    "emprender": 0,
+    "becas": 0,
+    "costo": 0,
+    "salida": 0,
+    "modalidad": 0,
+    "plan": 1,
+    "comparar": 1,
+    "donde": 40,
+    "formato": 7,
+    "temas": 31,
+    "aprender": 0,
+    "otros": 38
+   },
+   "top": [
+    {
+     "texto": "datos y negocios ucu",
+     "rama": "donde",
+     "apariciones": 22,
+     "pos_promedio": 3.1
+    },
+    {
+     "texto": "datos empresas uruguay",
+     "rama": "donde",
+     "apariciones": 12,
+     "pos_promedio": 5.0
+    },
+    {
+     "texto": "licenciatura en datos y negocios ucu",
+     "rama": "donde",
+     "apariciones": 4,
+     "pos_promedio": 4.8
+    },
+    {
+     "texto": "datos y analitica de negocios loyola",
+     "rama": "temas",
+     "apariciones": 4,
+     "pos_promedio": 3.5
+    },
+    {
+     "texto": "datos y analitica de negocios esic",
+     "rama": "temas",
+     "apariciones": 4,
+     "pos_promedio": 4.2
+    },
+    {
+     "texto": "datos y analitica de negocios",
+     "rama": "temas",
+     "apariciones": 3,
+     "pos_promedio": 1.7
+    },
+    {
+     "texto": "licenciatura en datos y negocios",
+     "rama": "formato",
+     "apariciones": 3,
+     "pos_promedio": 2.0
+    },
+    {
+     "texto": "datos de negocios internacionales",
+     "rama": "temas",
+     "apariciones": 2,
+     "pos_promedio": 3.0
+    },
+    {
+     "texto": "análisis de datos y modelado de negocios en microsoft excel de wayne winston",
+     "rama": "temas",
+     "apariciones": 2,
+     "pos_promedio": 8.0
+    },
+    {
+     "texto": "análisis de datos y modelado de negocios en microsoft excel",
+     "rama": "temas",
+     "apariciones": 2,
+     "pos_promedio": 9.0
+    },
+    {
+     "texto": "datos celulares negocios",
+     "rama": "temas",
+     "apariciones": 1,
+     "pos_promedio": 1.0
+    },
+    {
+     "texto": "datos de las carreras americanas",
+     "rama": "formato",
+     "apariciones": 1,
+     "pos_promedio": 1.0
+    },
+    {
+     "texto": "datos para negocios",
+     "rama": "temas",
+     "apariciones": 1,
+     "pos_promedio": 1.0
+    },
+    {
+     "texto": "datos sobre negocios internacionales",
+     "rama": "temas",
+     "apariciones": 1,
+     "pos_promedio": 1.0
+    },
+    {
+     "texto": "arquitectura de 3 capas datos negocios y presentación",
+     "rama": "temas",
+     "apariciones": 1,
+     "pos_promedio": 2.0
+    }
+   ],
+   "instituciones": {
+    "UCU": 2,
+    "UM": 1
+   }
+  }
+ ]
+}

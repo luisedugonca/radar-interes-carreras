@@ -215,6 +215,13 @@
    "motivo": "se agrega el puesto de cada frase en la lista de sugerencias",
    "sugerencias_unicas_antes": 363,
    "sugerencias_unicas_despues": 363
+  },
+  {
+   "utc": "2026-11-18T15:54:58Z",
+   "reglas_version": "2026-11-16b",
+   "motivo": "se agrega el puesto de cada frase en la lista de sugerencias",
+   "sugerencias_unicas_antes": 363,
+   "sugerencias_unicas_despues": 363
   }
  ]
 }

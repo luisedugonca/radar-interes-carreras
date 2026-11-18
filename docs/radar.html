@@ -7,8 +7,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/estilo.css?v=20261118f">
-<script src="assets/tema.js?v=20261118f"></script>
+<link rel="stylesheet" href="assets/estilo.css?v=20261118g">
+<script src="assets/tema.js?v=20261118g"></script>
 </head>
 <body aria-busy="true">
 <header class="cab">
@@ -42,7 +42,9 @@
   <datalist id="lista-temas"></datalist>
   <div class="filtros">
     <span class="pill fija" title="Las consultas se hacen para Google Uruguay">Uruguay</span>
-    <span class="pill fija" id="f-fecha" style="min-width:12.5em"><span class="esq">Medido el 00 nov. 2026</span></span>
+    <label class="pill" title="Elegí una medición guardada de este tema"><select id="f-medicion" aria-label="Medición"><option>Medido el 00-nov-2026</option></select></label>
+    <label class="pill" title="Cómo agrupar las mediciones en el gráfico de evolución"><select id="f-gran" aria-label="Agrupar la evolución">
+      <option value="semana">Semana a semana</option><option value="mes">Mes a mes</option><option value="todas">Cada medición</option></select></label>
     <label class="pill"><select id="f-duda" aria-label="Tipo de duda"><option>Todos los tipos de duda</option></select></label>
     <label class="pill"><select id="f-fuente" aria-label="Fuente">
       <option value="todas">Google y YouTube</option>
@@ -71,6 +73,12 @@
       <h3>Indicadores del tema</h3>
       <div class="kp4" id="kpis"><div><span class="et esq">Cargando dato</span><b class="esq">00,0</b><small class="esq">cargando el detalle</small></div><div><span class="et esq">Cargando dato</span><b class="esq">00,0</b><small class="esq">cargando el detalle</small></div><div><span class="et esq">Cargando dato</span><b class="esq">00,0</b><small class="esq">cargando el detalle</small></div><div><span class="et esq">Cargando dato</span><b class="esq">00,0</b><small class="esq">cargando el detalle</small></div></div>
       <p class="pie-b" id="f-kpis"><span class="esq">Cargando la fecha y la fuente de la medición del tema</span></p>
+    </section>
+
+    <section class="bloque" id="b-evol">
+      <h3 id="t-evol"><span class="esq">Evolución · semana a semana</span></h3>
+      <div id="evol"><span class="esq" style="display:block;height:150px"></span></div>
+      <p class="pie-b" id="evol-nota"><span class="esq">Cargando la historia de mediciones del tema</span></p>
     </section>
 
     <section class="bloque">
@@ -142,9 +150,9 @@
 </div>
 
 <script type="module">
-import { renderMapa } from "./assets/mapa.js?v=20261118f";
-import { hallazgos, calidad } from "./assets/analisis.js?v=20261118f";
-import { leerJSON, consultaEnVivo, consultaAMapa, ordenFrase, normalizar, esc, num, fecha, consultaAFilas, filasACSV, csvAConsultas } from "./assets/nucleo.js?v=20261118f";
+import { renderMapa } from "./assets/mapa.js?v=20261118g";
+import { hallazgos, calidad } from "./assets/analisis.js?v=20261118g";
+import { leerJSON, consultaEnVivo, consultaAMapa, ordenFrase, normalizar, esc, num, fecha, consultaAFilas, filasACSV, csvAConsultas } from "./assets/nucleo.js?v=20261118g";
 
 const $ = (id) => document.getElementById(id);
 /* ---------- Carga visible ---------- */
@@ -212,7 +220,15 @@ const p1 = (v) => (v == null ? "—" : num(Math.round(v * 10) / 10));
 function pintarBuscador() {
   $("tema").value = base.tema;
   $("tema-sub").textContent = base.en_vivo ? "En vivo · sin guardar: descargalo o guardalo en la base" : base.origen ? "Abierto desde tu archivo CSV" : "Tema guardado en la base · escribí otro y Enter para medirlo en vivo";
-  $("f-fecha").textContent = base.en_vivo ? "Medido ahora" : `Medido el ${fecha(base.generado_utc).split(",")[0]}`;
+  const med = $("f-medicion");
+  if (base.en_vivo || base.origen || !serie?.mediciones.length) {
+    med.innerHTML = `<option>${base.en_vivo ? "Medido ahora" : base.origen ? "Desde tu archivo" : `Medido el ${dia(base.generado_utc)}`}</option>`; med.disabled = true;
+  } else {
+    const ult = serie.mediciones.at(-1).run_id;
+    med.innerHTML = [...serie.mediciones].reverse().map((m) => `<option value="${esc(m.run_id)}"${m.run_id === base.run_id ? " selected" : ""}>Medido el ${dia(m.fecha_utc)}${m.run_id === ult ? " (última)" : ""}</option>`).join("");
+    med.disabled = serie.mediciones.length < 2;
+    med.title = serie.mediciones.length < 2 ? "Hay una sola medición de este tema" : "Elegí una medición guardada de este tema";
+  }
   $("lista-temas").innerHTML = indice.consultas.map((c) => `<option value="${esc(c.tema)}"></option>`).join("");
   $("lista-temas").innerHTML += locales.map((c) => `<option value="${esc(c.tema)}">desde archivo</option>`).join("");
   $("comparar").innerHTML = comparados.map((c, k) => `<span class="chip-t" style="--c:${COLOR_TEMA[k + 1]}"><span class="punto"></span>${esc(c.tema)}${c.en_vivo ? ' <span class="sello sup">en vivo</span>' : c.origen ? ' <span class="sello sup">archivo</span>' : ""}<button type="button" data-q="${esc(c.slug)}" aria-label="Quitar ${esc(c.tema)}">×</button></span>`).join("")
@@ -304,6 +320,7 @@ function pintar() {
   } else { $("mapa").replaceChildren(); $("rama").innerHTML = "<p>Sin frases con este filtro.</p>"; $("lista").innerHTML = ""; }
 
   pintarAnalisis(c);
+  pintarEvolucion();
   const inst = r.instituciones, ucu = inst.find((x) => x.id === "UCU");
   $("kpis").innerHTML = `
     <div class="dest"><span class="et">Duda principal</span><b>${esc(r.duda?.nombre ?? "—")}</b><small>${r.duda ? `${num(r.duda.apariciones_total)} apariciones · ${p1(r.duda.peso)} % del tema` : ""}</small></div>
@@ -378,6 +395,45 @@ function pintarAnalisis(c) {
   </article>`).join("") || "<p>Sin hallazgos con este filtro.</p>";
 }
 
+const dia = (iso) => { const d = new Date(iso); return `${d.getUTCDate()}-${["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"][d.getUTCMonth()]}-${d.getUTCFullYear()}`; };
+function pintarEvolucion() {
+  const gran = $("f-gran").value, nombreGran = { semana: "semana a semana", mes: "mes a mes", todas: "cada medición" }[gran];
+  $("t-evol").textContent = `Evolución · ${nombreGran}`;
+  if (base.en_vivo || base.origen || !serie?.mediciones.length) {
+    $("evol").innerHTML = ""; $("evol-nota").textContent = base.en_vivo ? "Un tema medido en vivo no tiene historia: guardalo en la base para empezar a seguirlo." : "Este tema no tiene historia de mediciones.";
+    return;
+  }
+  // Agrupar: de cada semana (desde el lunes) o de cada mes, la última medición
+  const clave = (iso) => { const d = new Date(iso);
+    if (gran === "mes") return `${d.getUTCFullYear()}-${String(d.getUTCMonth() + 1).padStart(2, "0")}`;
+    if (gran === "semana") { const l = new Date(Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate() - ((d.getUTCDay() + 6) % 7))); return l.toISOString().slice(0, 10); }
+    return iso; };
+  const grupos = new Map(); serie.mediciones.forEach((m) => grupos.set(clave(m.fecha_utc), m));
+  const puntos = [...grupos.entries()].map(([k, m]) => ({ k, m }));
+  const etiqueta = (p) => gran === "mes" ? dia(p.k + "-01T12:00:00Z").replace(/^1-/, "") : gran === "semana" ? `sem. ${dia(p.k + "T12:00:00Z")}` : dia(p.m.fecha_utc);
+  const color = Object.fromEntries(reglas.intenciones.map((i) => [i.id, i.color])), nombre = Object.fromEntries(reglas.intenciones.map((i) => [i.id, i.nombre]));
+  const peso = (m, id) => (m.apariciones_utiles ? (100 * (m.ramas[id] ?? 0)) / m.apariciones_utiles : 0);
+  const ult = puntos.at(-1).m;
+  const top = Object.keys(ult.ramas).filter((id) => !APARTE.includes(id)).sort((a, b) => (ult.ramas[b] ?? 0) - (ult.ramas[a] ?? 0)).slice(0, 5);
+  if (puntos.length < 2) {
+    $("evol").innerHTML = `<div class="apilada" role="img" aria-label="Peso de cada tipo de duda en la medición del ${dia(ult.fecha_utc)}">${top.map((id) => `<i title="${esc(nombre[id])} ${p1(peso(ult, id))} %" style="width:${peso(ult, id)}%;background:${color[id]}"></i>`).join("")}</div>
+      <ul class="ley">${top.map((id) => `<li><b style="background:${color[id]}"></b>${esc(nombre[id])} ${p1(peso(ult, id))} %</li>`).join("")}</ul>`;
+    $("evol-nota").textContent = `Hay ${serie.mediciones.length === 1 ? "una sola medición" : `${serie.mediciones.length} mediciones en el mismo período`} (${dia(ult.fecha_utc)}). Cada vez que se vuelve a medir el tema se suma un punto y aparece la línea de evolución.`;
+    return;
+  }
+  const W = 640, H = 220, m = { l: 40, r: 12, t: 12, b: 34 };
+  const x = (i) => m.l + (i * (W - m.l - m.r)) / (puntos.length - 1);
+  const maxV = Math.max(10, ...puntos.flatMap((p) => top.map((id) => peso(p.m, id))));
+  const tope = Math.ceil(maxV / 10) * 10, y = (v) => H - m.b - (v * (H - m.t - m.b)) / tope;
+  let s = `<svg class="graf-evol" viewBox="0 0 ${W} ${H}" role="img" aria-label="Peso de los tipos de duda ${nombreGran}">`;
+  for (let k = 0; k <= 4; k++) { const v = (tope * k) / 4; s += `<line x1="${m.l}" x2="${W - m.r}" y1="${y(v)}" y2="${y(v)}" stroke="var(--line)"/><text x="${m.l - 6}" y="${y(v) + 4}" text-anchor="end">${v} %</text>`; }
+  puntos.forEach((p, i) => { s += `<text x="${x(i)}" y="${H - 12}" text-anchor="${i === 0 ? "start" : i === puntos.length - 1 ? "end" : "middle"}">${esc(etiqueta(p))}</text>`; if (p.m.run_id === base.run_id) s += `<line x1="${x(i)}" x2="${x(i)}" y1="${m.t}" y2="${H - m.b}" stroke="var(--muted)" stroke-dasharray="3 4"/>`; });
+  top.forEach((id) => { s += `<path fill="none" stroke="${color[id]}" stroke-width="2.4" d="${puntos.map((p, i) => `${i ? "L" : "M"}${x(i).toFixed(1)},${y(peso(p.m, id)).toFixed(1)}`).join("")}"/>`
+    + puntos.map((p, i) => `<circle cx="${x(i)}" cy="${y(peso(p.m, id))}" r="3.5" fill="${color[id]}"><title>${esc(nombre[id])} · ${esc(etiqueta(p))}: ${p1(peso(p.m, id))} %</title></circle>`).join(""); });
+  $("evol").innerHTML = s + `</svg><ul class="ley">${top.map((id) => `<li><b style="background:${color[id]}"></b>${esc(nombre[id])}</li>`).join("")}</ul>`;
+  $("evol-nota").textContent = `Peso de cada tipo de duda (% de las apariciones útiles). ${puntos.length} puntos, de ${dia(serie.mediciones[0].fecha_utc)} a ${dia(ult.fecha_utc)}${gran !== "todas" ? `: de cada ${gran === "mes" ? "mes" : "semana"}, la última medición` : ""}. La línea punteada es la medición que estás mirando.`;
+}
+
 function pintarComparar() {
   $("b-comparar").hidden = !comparados.length;
   if (!comparados.length) { pintarAnalisis(filtrar(base)); return; }
@@ -421,16 +477,36 @@ async function cargar(slug) {
   if (!cache.has(slug)) cache.set(slug, await leerJSON(`data/consultas/${slug}.json`));
   return cache.get(slug);
 }
+let serie = null;   // historial de mediciones del tema guardado que se está mirando
+async function cargarSerie(slug) {
+  try { return await leerJSON(`data/historial/${slug}/serie.json`); } catch { return null; }
+}
+async function cargarMedicion(slug, runId) {
+  const clave = `${slug}@${runId}`;
+  if (!cache.has(clave)) {
+    if (!("DecompressionStream" in window)) throw new Error("Este navegador no puede abrir mediciones viejas. Probá con Chrome, Edge, Firefox o Safari actualizados.");
+    const r = await fetch(`data/historial/${slug}/${runId}.json.gz`);
+    if (!r.ok) throw new Error(`No se encontró la medición ${runId}.`);
+    const texto = await new Response(r.body.pipeThrough(new DecompressionStream("gzip"))).text();
+    cache.set(clave, { ...JSON.parse(texto), historica: true });
+  }
+  return cache.get(clave);
+}
 function actualizarURL() {
   const p = new URLSearchParams();
   if (base && !base.en_vivo && !base.origen) p.set("tema", base.slug);
+  if (base?.historica) p.set("medicion", base.run_id);
   const enBase = comparados.filter((c) => !c.en_vivo && !c.origen);
   if (enBase.length) p.set("comparar", enBase.map((c) => c.slug).join(","));
   history.replaceState(null, "", `?${p}`);
 }
-async function abrir(slug) {
+async function abrir(slug, runId = null) {
   carga(`Abriendo «${indice.consultas.find((c) => c.slug === slug)?.tema ?? slug}»…`);
-  base = await cargar(slug); ramaSel = null; carga();
+  serie = await cargarSerie(slug);
+  const ultima = serie?.mediciones.at(-1)?.run_id;
+  try { base = runId && runId !== ultima ? await cargarMedicion(slug, runId) : await cargar(slug); }
+  catch (e) { base = await cargar(slug); $("estado").textContent = e.message; }
+  ramaSel = null; carga();
   comparados = comparados.filter((c) => c.slug !== slug);
   actualizarURL(); pintarBuscador(); pintar(); $("estado").textContent = "";
 }
@@ -441,7 +517,7 @@ async function medirEnVivo(texto) {
     carga();
     const f = c.fuentes[0];
     if (!f.con_respuesta) { $("estado").textContent = "Google no respondió desde este navegador. Las consultas guardadas siguen disponibles."; return; }
-    base = c; ramaSel = null; actualizarURL(); pintarBuscador(); pintar();
+    base = c; serie = null; ramaSel = null; actualizarURL(); pintarBuscador(); pintar();
     $("estado").textContent = `En vivo: ${f.con_respuesta} de ${f.pedidos} consultas respondidas.`;
   } catch (e) { carga(); $("estado").textContent = e.message; }
 }
@@ -490,6 +566,8 @@ $("tema").addEventListener("change", () => {
 });
 $("f-duda").addEventListener("change", (e) => { filtro.duda = e.target.value; if (filtro.duda !== "todas") ramaSel = filtro.duda; pintar(); });
 $("f-fuente").addEventListener("change", (e) => { filtro.fuente = e.target.value; pintar(); });
+$("f-medicion").addEventListener("change", (e) => { if (base && !base.en_vivo && !base.origen) abrir(base.slug, e.target.value); });
+$("f-gran").addEventListener("change", pintarEvolucion);
 $("btn-chat").addEventListener("click", async () => {
   try { await navigator.clipboard.writeText($("pedido-chat").value); $("estado-chat").textContent = "Copiado."; }
   catch { $("pedido-chat").select(); $("estado-chat").textContent = "Seleccionado: copialo con Ctrl+C o Cmd+C."; }
@@ -501,7 +579,7 @@ for (const s of (params.get("comparar") ?? "").split(",").filter(Boolean).slice(
 }
 carga();
 const inicial = indice.consultas.find((c) => c.slug === params.get("tema")) ?? indice.consultas.find((c) => c.slug === "negocios-digitales") ?? indice.consultas[0];
-if (inicial) await abrir(inicial.slug);
+if (inicial) await abrir(inicial.slug, params.get("medicion"));
 </script>
 </body>
 </html>

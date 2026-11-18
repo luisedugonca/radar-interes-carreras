@@ -13,6 +13,8 @@ import sys
 from datetime import datetime, timezone
 
 import base_csv
+import historial
+import gzip
 import transformar
 import validar
 from comun import DIR_CONSULTAS, DIR_MANIFESTS, DIR_RAW, RUTA_INDICE, cargar_reglas
@@ -21,8 +23,10 @@ from run import armar_consulta
 
 def reprocesar(entrada: dict, reglas: dict, motivo: str) -> dict:
     vieja = json.loads((DIR_CONSULTAS / f"{entrada['slug']}.json").read_text(encoding="utf-8"))
-    crudo = DIR_RAW / vieja["run_id"] / "sugerencias.jsonl"
-    registros = [json.loads(l) for l in crudo.read_text(encoding="utf-8").splitlines() if l.strip()]
+    carpeta = DIR_RAW / vieja["run_id"]
+    texto = (gzip.decompress((carpeta / "sugerencias.jsonl.gz").read_bytes()).decode("utf-8")
+             if (carpeta / "sugerencias.jsonl.gz").exists() else (carpeta / "sugerencias.jsonl").read_text(encoding="utf-8"))
+    registros = [json.loads(l) for l in texto.splitlines() if l.strip()]
     validas, rechazadas = validar.validar_sugerencias(registros, vieja["tema"], reglas)
     top10 = validar.validar_top10(vieja["top10"], vieja["tema"], reglas)
     resultado = transformar.transformar(validas, top10, vieja["tema"], reglas)
@@ -30,6 +34,7 @@ def reprocesar(entrada: dict, reglas: dict, motivo: str) -> dict:
     ahora = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     nueva["reprocesado_utc"] = ahora
     (DIR_CONSULTAS / f"{entrada['slug']}.json").write_text(json.dumps(nueva, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    historial.registrar(nueva)
 
     ruta_m = DIR_MANIFESTS / f"run_{vieja['run_id']}.json"
     manifiesto = json.loads(ruta_m.read_text(encoding="utf-8"))

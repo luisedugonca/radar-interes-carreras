@@ -1,0 +1,129 @@
+{
+ "tema": "ciencia de datos",
+ "slug": "ciencia-de-datos",
+ "mediciones": [
+  {
+   "run_id": "20261116T220819Z_ciencia-de-datos",
+   "fecha_utc": "2026-11-16T22:08:19Z",
+   "consultas": 46,
+   "frases": 506,
+   "apariciones_utiles": 338,
+   "ramas": {
+    "fuera_uy": 216,
+    "emprender": 0,
+    "becas": 8,
+    "costo": 17,
+    "salida": 43,
+    "modalidad": 25,
+    "plan": 35,
+    "comparar": 18,
+    "donde": 67,
+    "formato": 27,
+    "temas": 42,
+    "aprender": 56,
+    "otros": 28
+   },
+   "top": [
+    {
+     "texto": "ciencia de datos udelar",
+     "rama": "donde",
+     "apariciones": 12,
+     "pos_promedio": 4.9
+    },
+    {
+     "texto": "ciencia de datos uruguay",
+     "rama": "donde",
+     "apariciones": 10,
+     "pos_promedio": 6.0
+    },
+    {
+     "texto": "ciencia de datos fing",
+     "rama": "donde",
+     "apariciones": 7,
+     "pos_promedio": 7.9
+    },
+    {
+     "texto": "ciencia de datos ucu",
+     "rama": "donde",
+     "apariciones": 7,
+     "pos_promedio": 8.1
+    },
+    {
+     "texto": "ciencia de datos fcs",
+     "rama": "donde",
+     "apariciones": 5,
+     "pos_promedio": 8.6
+    },
+    {
+     "texto": "ciencia de datos ude",
+     "rama": "donde",
+     "apariciones": 4,
+     "pos_promedio": 7.2
+    },
+    {
+     "texto": "ciencia de datos fcea",
+     "rama": "donde",
+     "apariciones": 4,
+     "pos_promedio": 9.5
+    },
+    {
+     "texto": "ciencia de datos e inteligencia artificial carrera",
+     "rama": "formato",
+     "apariciones": 3,
+     "pos_promedio": 4.7
+    },
+    {
+     "texto": "ciencia de datos ort",
+     "rama": "donde",
+     "apariciones": 3,
+     "pos_promedio": 3.7
+    },
+    {
+     "texto": "ciencia de datos para negocios",
+     "rama": "temas",
+     "apariciones": 3,
+     "pos_promedio": 6.7
+    },
+    {
+     "texto": "ciencia de datos um",
+     "rama": "donde",
+     "apariciones": 2,
+     "pos_promedio": 2.0
+    },
+    {
+     "texto": "ciencia de datos curso",
+     "rama": "formato",
+     "apariciones": 2,
+     "pos_promedio": 2.5
+    },
+    {
+     "texto": "ciencia de datos e inteligencia artificial",
+     "rama": "temas",
+     "apariciones": 2,
+     "pos_promedio": 2.5
+    },
+    {
+     "texto": "ciencia de datos carrera de que trata",
+     "rama": "plan",
+     "apariciones": 2,
+     "pos_promedio": 3.0
+    },
+    {
+     "texto": "ciencia de datos a distancia gratis",
+     "rama": "costo",
+     "apariciones": 2,
+     "pos_promedio": 3.5
+    }
+   ],
+   "instituciones": {
+    "Udelar": 5,
+    "UM": 2,
+    "ORT": 1,
+    "UCU": 1,
+    "UDE": 1,
+    "UTEC": 1,
+    "UTU": 1
+   }
+  }
+ ]
+}

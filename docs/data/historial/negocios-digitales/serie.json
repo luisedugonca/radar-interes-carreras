@@ -1,0 +1,246 @@
+{
+ "tema": "negocios digitales",
+ "slug": "negocios-digitales",
+ "mediciones": [
+  {
+   "run_id": "20261116T220838Z_negocios-digitales",
+   "fecha_utc": "2026-11-16T22:08:38Z",
+   "consultas": 46,
+   "frases": 363,
+   "apariciones_utiles": 228,
+   "ramas": {
+    "fuera_uy": 136,
+    "emprender": 43,
+    "becas": 0,
+    "costo": 6,
+    "salida": 26,
+    "modalidad": 24,
+    "plan": 28,
+    "comparar": 8,
+    "donde": 75,
+    "formato": 26,
+    "temas": 20,
+    "aprender": 15,
+    "otros": 77
+   },
+   "top": [
+    {
+     "texto": "negocios digitales ort",
+     "rama": "donde",
+     "apariciones": 14,
+     "pos_promedio": 4.7
+    },
+    {
+     "texto": "negocios digitales um",
+     "rama": "donde",
+     "apariciones": 14,
+     "pos_promedio": 5.6
+    },
+    {
+     "texto": "negocios digitales uruguay",
+     "rama": "donde",
+     "apariciones": 10,
+     "pos_promedio": 4.1
+    },
+    {
+     "texto": "negocios digitales ucu",
+     "rama": "donde",
+     "apariciones": 9,
+     "pos_promedio": 5.6
+    },
+    {
+     "texto": "negocios digitales en uruguay",
+     "rama": "donde",
+     "apariciones": 7,
+     "pos_promedio": 3.9
+    },
+    {
+     "texto": "negocios digitales udelar",
+     "rama": "donde",
+     "apariciones": 7,
+     "pos_promedio": 5.1
+    },
+    {
+     "texto": "negocios digitales carrera a distancia",
+     "rama": "modalidad",
+     "apariciones": 4,
+     "pos_promedio": 4.5
+    },
+    {
+     "texto": "negocios digitales carrera",
+     "rama": "formato",
+     "apariciones": 3,
+     "pos_promedio": 2.3
+    },
+    {
+     "texto": "negocios digitales carrera online",
+     "rama": "modalidad",
+     "apariciones": 3,
+     "pos_promedio": 3.7
+    },
+    {
+     "texto": "negocios online uruguay",
+     "rama": "modalidad",
+     "apariciones": 3,
+     "pos_promedio": 7.0
+    },
+    {
+     "texto": "negocios digitales carrera cuánto gana",
+     "rama": "salida",
+     "apariciones": 2,
+     "pos_promedio": 2.5
+    },
+    {
+     "texto": "negocios digitales ejemplos",
+     "rama": "aprender",
+     "apariciones": 2,
+     "pos_promedio": 3.5
+    },
+    {
+     "texto": "negocios digitales curso",
+     "rama": "formato",
+     "apariciones": 2,
+     "pos_promedio": 4.0
+    },
+    {
+     "texto": "estudiar negocios digitales gratis",
+     "rama": "costo",
+     "apariciones": 2,
+     "pos_promedio": 6.5
+    },
+    {
+     "texto": "negocios digitales carrera de que se trata",
+     "rama": "plan",
+     "apariciones": 2,
+     "pos_promedio": 7.0
+    }
+   ],
+   "instituciones": {
+    "ORT": 6,
+    "UCU": 2,
+    "UM": 1,
+    "Udelar": 1
+   }
+  },
+  {
+   "run_id": "20261118T155641Z_negocios-digitales",
+   "fecha_utc": "2026-11-18T15:56:41Z",
+   "consultas": 46,
+   "frases": 361,
+   "apariciones_utiles": 228,
+   "ramas": {
+    "fuera_uy": 134,
+    "emprender": 43,
+    "becas": 0,
+    "costo": 6,
+    "salida": 26,
+    "modalidad": 23,
+    "plan": 29,
+    "comparar": 8,
+    "donde": 75,
+    "formato": 26,
+    "temas": 20,
+    "aprender": 15,
+    "otros": 77
+   },
+   "top": [
+    {
+     "texto": "negocios digitales ort",
+     "rama": "donde",
+     "apariciones": 14,
+     "pos_promedio": 4.7
+    },
+    {
+     "texto": "negocios digitales um",
+     "rama": "donde",
+     "apariciones": 14,
+     "pos_promedio": 5.6
+    },
+    {
+     "texto": "negocios digitales uruguay",
+     "rama": "donde",
+     "apariciones": 10,
+     "pos_promedio": 4.1
+    },
+    {
+     "texto": "negocios digitales ucu",
+     "rama": "donde",
+     "apariciones": 9,
+     "pos_promedio": 5.6
+    },
+    {
+     "texto": "negocios digitales en uruguay",
+     "rama": "donde",
+     "apariciones": 7,
+     "pos_promedio": 3.9
+    },
+    {
+     "texto": "negocios digitales udelar",
+     "rama": "donde",
+     "apariciones": 7,
+     "pos_promedio": 5.1
+    },
+    {
+     "texto": "negocios digitales carrera a distancia",
+     "rama": "modalidad",
+     "apariciones": 4,
+     "pos_promedio": 4.5
+    },
+    {
+     "texto": "negocios digitales carrera",
+     "rama": "formato",
+     "apariciones": 3,
+     "pos_promedio": 2.3
+    },
+    {
+     "texto": "negocios digitales carrera online",
+     "rama": "modalidad",
+     "apariciones": 3,
+     "pos_promedio": 3.7
+    },
+    {
+     "texto": "negocios online uruguay",
+     "rama": "modalidad",
+     "apariciones": 3,
+     "pos_promedio": 7.0
+    },
+    {
+     "texto": "negocios digitales carrera cuánto gana",
+     "rama": "salida",
+     "apariciones": 2,
+     "pos_promedio": 2.5
+    },
+    {
+     "texto": "negocios digitales ejemplos",
+     "rama": "aprender",
+     "apariciones": 2,
+     "pos_promedio": 3.5
+    },
+    {
+     "texto": "negocios digitales curso",
+     "rama": "formato",
+     "apariciones": 2,
+     "pos_promedio": 4.0
+    },
+    {
+     "texto": "negocios digitales carrera de que se trata",
+     "rama": "plan",
+     "apariciones": 2,
+     "pos_promedio": 5.5
+    },
+    {
+     "texto": "estudiar negocios digitales gratis",
+     "rama": "costo",
+     "apariciones": 2,
+     "pos_promedio": 6.5
+    }
+   ],
+   "instituciones": {
+    "ORT": 6,
+    "UCU": 2,
+    "UM": 1,
+    "Udelar": 1
+   }
+  }
+ ]
+}

@@ -42,6 +42,7 @@ python3 -m http.server 8000 --directory docs
 - En GitHub: pestaña *Actions* → *Consulta de interés* → *Run workflow* → escribir el tema.
 - O abrir un issue con el título `Consulta: <tema>`.
 - O en tu computadora: `python3 colector/run.py "gestión agropecuaria"`.
+- Sola, cada lunes a las 8:00 (hora de Uruguay): GitHub vuelve a medir todos los temas guardados y suma un punto a la evolución de cada uno. También se puede lanzar a mano: *Actions → Consulta de interés → Run workflow* con el tema vacío.
 
 **Llevarlo a un chat de IA**
 
@@ -59,7 +60,8 @@ Fuente → Extracción → Registro del crudo → Validación → Transformació
 
 | Etapa | Archivo | Qué deja |
 |---|---|---|
-| Extraer y registrar | `colector/extraer.py` | `data/raw/<corrida>/sugerencias.jsonl` (cada respuesta, tal cual llegó) |
+| Extraer y registrar | `colector/extraer.py` | `data/raw/<corrida>/sugerencias.jsonl.gz` (cada respuesta, tal cual llegó, comprimida) |
+| Historial | `colector/historial.py` | `docs/data/historial/<tema>/`: cada medición comprimida y `serie.json` para el gráfico de evolución |
 | Validar | `colector/validar.py` | Válidas y rechazadas, cada rechazo con su motivo |
 | Transformar | `colector/transformar.py` | Frases únicas, con apariciones y tipo de duda |
 | Orquestar y cargar | `colector/run.py` | `docs/data/consultas/<tema>.json`, `manifests/run_<corrida>.json` |

@@ -26,6 +26,8 @@
 
 | 2026-11-18 | QA completo de las 3 páginas tras el aviso del PO «dejó de funcionar el comparar» | — | Comparar funcionaba con Enter; fallaba sin aviso al escribir un tema nuevo y salir del campo (no había botón). Riesgo real: scripts sin versión → página nueva con script viejo de la caché deja todo sin funcionar. Corregido: botón «Comparar» con avisos, versión en todos los módulos, barras vacías deshabilitadas. 27 chequeos en Chrome OK; 17 pruebas OK (3 nuevas en tests/test_web.py) | Pendiente de que el PO lo confirme | — |
 
+| 2026-11-18 | Temporalidad editable en el radar: historial de mediciones, selector «Medido el…», agrupación semana a semana / mes a mes, gráfico de evolución | CHICO (pedido textual del PO) | Probado en Chrome con 2 mediciones reales de «negocios digitales» (16-nov: 363 frases; 18-nov: 361). 18 pruebas OK. Medición semanal programada en GitHub Actions (lunes 8:00 UY) con **OK del PO** el 2026-11-18 («programa la revisión semanal de las búsquedas que vayan quedando guardadas») | Aprobado | — |
+
 ## Fuentes probadas (2026-11-16)
 
 | Fuente | Cómo se probó | Resultado | Decisión |

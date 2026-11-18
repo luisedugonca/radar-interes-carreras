@@ -1,0 +1,126 @@
+{
+ "tema": "licenciatura en negocios digitales",
+ "slug": "licenciatura-en-negocios-digitales",
+ "mediciones": [
+  {
+   "run_id": "20261116T222324Z_licenciatura-en-negocios-digitales",
+   "fecha_utc": "2026-11-16T22:23:24Z",
+   "consultas": 46,
+   "frases": 105,
+   "apariciones_utiles": 243,
+   "ramas": {
+    "fuera_uy": 47,
+    "emprender": 2,
+    "becas": 0,
+    "costo": 5,
+    "salida": 7,
+    "modalidad": 13,
+    "plan": 16,
+    "comparar": 1,
+    "donde": 103,
+    "formato": 87,
+    "temas": 6,
+    "aprender": 5,
+    "otros": 15
+   },
+   "top": [
+    {
+     "texto": "licenciatura en negocios digitales ort",
+     "rama": "donde",
+     "apariciones": 33,
+     "pos_promedio": 3.3
+    },
+    {
+     "texto": "licenciatura en negocios internacionales e integración",
+     "rama": "formato",
+     "apariciones": 26,
+     "pos_promedio": 4.9
+    },
+    {
+     "texto": "licenciatura en negocios internacionales uruguay",
+     "rama": "donde",
+     "apariciones": 23,
+     "pos_promedio": 5.8
+    },
+    {
+     "texto": "negocios digitales udelar",
+     "rama": "donde",
+     "apariciones": 20,
+     "pos_promedio": 4.6
+    },
+    {
+     "texto": "licenciatura en marketing digital uruguay",
+     "rama": "donde",
+     "apariciones": 8,
+     "pos_promedio": 7.6
+    },
+    {
+     "texto": "licenciatura en mercadotecnia internacional y negocios digitales plan de estudios",
+     "rama": "plan",
+     "apariciones": 6,
+     "pos_promedio": 9.2
+    },
+    {
+     "texto": "licenciatura en tecnologías de la información y negocios digitales",
+     "rama": "formato",
+     "apariciones": 5,
+     "pos_promedio": 7.6
+    },
+    {
+     "texto": "licenciatura en tecnologías de la información y negocios digitales (a distancia",
+     "rama": "modalidad",
+     "apariciones": 5,
+     "pos_promedio": 6.4
+    },
+    {
+     "texto": "licenciatura en mercadotecnia internacional y negocios digitales modalidad no escolarizada",
+     "rama": "formato",
+     "apariciones": 5,
+     "pos_promedio": 10.2
+    },
+    {
+     "texto": "negocios digitales en uruguay",
+     "rama": "donde",
+     "apariciones": 4,
+     "pos_promedio": 4.8
+    },
+    {
+     "texto": "licenciatura en negocios digitales que hace",
+     "rama": "salida",
+     "apariciones": 3,
+     "pos_promedio": 1.7
+    },
+    {
+     "texto": "lic en negocios digitales",
+     "rama": "temas",
+     "apariciones": 3,
+     "pos_promedio": 2.7
+    },
+    {
+     "texto": "licenciatura en negocios digitales cuanto dura",
+     "rama": "plan",
+     "apariciones": 3,
+     "pos_promedio": 3.3
+    },
+    {
+     "texto": "licenciatura en negocios digitales y marketing",
+     "rama": "temas",
+     "apariciones": 3,
+     "pos_promedio": 4.7
+    },
+    {
+     "texto": "licenciatura en negocios digitales universidad publica",
+     "rama": "costo",
+     "apariciones": 3,
+     "pos_promedio": 5.0
+    }
+   ],
+   "instituciones": {
+    "ORT": 2,
+    "UCU": 1,
+    "UM": 1,
+    "Udelar": 1
+   }
+  }
+ ]
+}

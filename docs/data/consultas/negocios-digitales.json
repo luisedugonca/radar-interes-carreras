@@ -1,8 +1,8 @@
 {
  "tema": "negocios digitales",
  "slug": "negocios-digitales",
- "run_id": "20261116T220838Z_negocios-digitales",
- "generado_utc": "2026-11-16T22:08:38Z",
+ "run_id": "20261118T155641Z_negocios-digitales",
+ "generado_utc": "2026-11-18T15:56:41Z",
  "pais": "Uruguay",
  "reglas_version": "2026-11-16b",
  "fuentes": [
@@ -20,10 +20,10 @@
   }
  ],
  "resumen": {
-  "sugerencias_unicas": 363,
+  "sugerencias_unicas": 361,
   "intenciones_con_datos": 9,
-  "fuera_de_uruguay": 107,
-  "fuera_de_uruguay_pct": 29.5,
+  "fuera_de_uruguay": 106,
+  "fuera_de_uruguay_pct": 29.4,
   "sin_clasificar": 72,
   "instituciones_uy": [
    {
@@ -45,13 +45,13 @@
   ],
   "quien_supuesto": {
    "familia": 12,
-   "estudiante": 98,
+   "estudiante": 97,
    "ambos": 41,
-   "ninguno": 212
+   "ninguno": 211
   },
   "top10_validos": 0,
-  "top10_rechazados": 2,
-  "top10_pendientes": 0
+  "top10_rechazados": 0,
+  "top10_pendientes": 2
  },
  "intenciones": [
   {
@@ -60,10 +60,10 @@
    "color": "#8b93a7",
    "quien": "ninguno",
    "que_es": "La sugerencia nombra un país o una universidad de otro país. No es demanda local.",
-   "total": 107,
-   "pct": 29.5,
-   "apariciones_total": 136,
-   "veces_top3_total": 27,
+   "total": 106,
+   "pct": 29.4,
+   "apariciones_total": 134,
+   "veces_top3_total": 28,
    "sugerencias": [
     {
      "texto": "negocios digitales y globales kennedy",
@@ -240,28 +240,6 @@
      "intencion": "fuera_uy"
     },
     {
-     "texto": "negocios digitales en peru",
-     "semillas": [
-      "negocios digitales",
-      "negocios digitales e"
-     ],
-     "grupos": [
-      "base",
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 601,
-     "apariciones": 2,
-     "pos_promedio": 8.5,
-     "pos_mejor": 2,
-     "veces_top3": 1,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "fuera_uy"
-    },
-    {
      "texto": "negocios digitales uade",
      "semillas": [
       "negocios digitales",
@@ -364,10 +342,10 @@
      ],
      "relevancia_max": 557,
      "apariciones": 2,
-     "pos_promedio": 7.5,
+     "pos_promedio": 8.0,
      "pos_mejor": 5,
      "veces_top3": 0,
-     "veces_top10": 2,
+     "veces_top10": 1,
      "instituciones": [],
      "intencion": "fuera_uy"
     },
@@ -430,7 +408,7 @@
      ],
      "relevancia_max": 556,
      "apariciones": 2,
-     "pos_promedio": 8.5,
+     "pos_promedio": 9.0,
      "pos_mejor": 6,
      "veces_top3": 0,
      "veces_top10": 1,
@@ -478,6 +456,27 @@
      "pos_mejor": 6,
      "veces_top3": 0,
      "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "negocios digitales rentables en venezuela",
+     "semillas": [
+      "negocios digitales r",
+      "negocios digitales v"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 2,
+     "pos_promedio": 10.0,
+     "pos_mejor": 10,
+     "veces_top3": 0,
+     "veces_top10": 2,
      "instituciones": [],
      "intencion": "fuera_uy"
     },
@@ -547,27 +546,6 @@
      "intencion": "fuera_uy"
     },
     {
-     "texto": "negocios digitales rentables en venezuela",
-     "semillas": [
-      "negocios digitales r",
-      "negocios digitales v"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 554,
-     "apariciones": 2,
-     "pos_promedio": 11.0,
-     "pos_mejor": 11,
-     "veces_top3": 0,
-     "veces_top10": 0,
-     "instituciones": [],
-     "intencion": "fuera_uy"
-    },
-    {
      "texto": "negocios digitales udla",
      "semillas": [
       "negocios digitales",
@@ -590,24 +568,23 @@
      "intencion": "fuera_uy"
     },
     {
-     "texto": "negocios digitales carrera rosario",
+     "texto": "negocios digitales costa rica",
      "semillas": [
-      "negocios digitales carrera",
+      "negocios digitales c",
       "negocios digitales r"
      ],
      "grupos": [
-      "estudiante",
       "alfabeto"
      ],
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 551,
+     "relevancia_max": 556,
      "apariciones": 2,
-     "pos_promedio": 13.0,
-     "pos_mejor": 11,
+     "pos_promedio": 11.5,
+     "pos_mejor": 9,
      "veces_top3": 0,
-     "veces_top10": 0,
+     "veces_top10": 1,
      "instituciones": [],
      "intencion": "fuera_uy"
     },
@@ -646,10 +623,10 @@
       "google",
       "youtube"
      ],
-     "relevancia_max": 551,
+     "relevancia_max": 550,
      "apariciones": 2,
-     "pos_promedio": 14.5,
-     "pos_mejor": 14,
+     "pos_promedio": 15.0,
+     "pos_mejor": 15,
      "veces_top3": 0,
      "veces_top10": 0,
      "instituciones": [],
@@ -740,6 +717,26 @@
      "texto": "negocios digitales bolivia",
      "semillas": [
       "negocios digitales b"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "pos_promedio": 2.0,
+     "pos_mejor": 2,
+     "veces_top3": 1,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "negocios digitales en peru",
+     "semillas": [
+      "negocios digitales e"
      ],
      "grupos": [
       "alfabeto"
@@ -857,6 +854,26 @@
      "intencion": "fuera_uy"
     },
     {
+     "texto": "negocios digitales rentables en chile",
+     "semillas": [
+      "negocios digitales r"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 650,
+     "apariciones": 1,
+     "pos_promedio": 2.0,
+     "pos_mejor": 2,
+     "veces_top3": 1,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
      "texto": "negocios digitales universidad kennedy",
      "semillas": [
       "negocios digitales k"
@@ -957,7 +974,7 @@
      "intencion": "fuera_uy"
     },
     {
-     "texto": "negocios digitales rentables en chile",
+     "texto": "negocios digitales rosario",
      "semillas": [
       "negocios digitales r"
      ],
@@ -967,7 +984,7 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 650,
+     "relevancia_max": 601,
      "apariciones": 1,
      "pos_promedio": 3.0,
      "pos_mejor": 3,
@@ -1027,7 +1044,7 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 561,
+     "relevancia_max": 560,
      "apariciones": 1,
      "pos_promedio": 3.0,
      "pos_mejor": 3,
@@ -1117,7 +1134,7 @@
      "intencion": "fuera_uy"
     },
     {
-     "texto": "negocios digitales rosario",
+     "texto": "negocios digitales rentables en colombia",
      "semillas": [
       "negocios digitales r"
      ],
@@ -1127,7 +1144,7 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 601,
+     "relevancia_max": 600,
      "apariciones": 1,
      "pos_promedio": 4.0,
      "pos_mejor": 4,
@@ -1277,7 +1294,7 @@
      "intencion": "fuera_uy"
     },
     {
-     "texto": "negocios digitales rentables en colombia",
+     "texto": "negocios digitales rentables en peru",
      "semillas": [
       "negocios digitales r"
      ],
@@ -1287,7 +1304,7 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 600,
+     "relevancia_max": 560,
      "apariciones": 1,
      "pos_promedio": 5.0,
      "pos_mejor": 5,
@@ -1417,26 +1434,6 @@
      "intencion": "fuera_uy"
     },
     {
-     "texto": "negocios digitales rentables en peru",
-     "semillas": [
-      "negocios digitales r"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 559,
-     "apariciones": 1,
-     "pos_promedio": 6.0,
-     "pos_mejor": 6,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "fuera_uy"
-    },
-    {
      "texto": "negocios digitales salesiana",
      "semillas": [
       "negocios digitales s"
@@ -1463,6 +1460,26 @@
      ],
      "grupos": [
       "preguntas"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "pos_promedio": 7.0,
+     "pos_mejor": 7,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "master negocios digitales valencia",
+     "semillas": [
+      "negocios digitales v"
+     ],
+     "grupos": [
+      "alfabeto"
      ],
      "fuentes": [
       "google"
@@ -1557,26 +1574,6 @@
      "intencion": "fuera_uy"
     },
     {
-     "texto": "master negocios digitales valencia",
-     "semillas": [
-      "negocios digitales v"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 556,
-     "apariciones": 1,
-     "pos_promedio": 8.0,
-     "pos_mejor": 8,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "fuera_uy"
-    },
-    {
      "texto": "negocios digitales barranquilla",
      "semillas": [
       "negocios digitales b"
@@ -1660,26 +1657,6 @@
      "texto": "negocios digitales bogota",
      "semillas": [
       "negocios digitales b"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 556,
-     "apariciones": 1,
-     "pos_promedio": 9.0,
-     "pos_mejor": 9,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "fuera_uy"
-    },
-    {
-     "texto": "negocios digitales costa rica",
-     "semillas": [
-      "negocios digitales c"
      ],
      "grupos": [
       "alfabeto"
@@ -1877,9 +1854,49 @@
      "intencion": "fuera_uy"
     },
     {
+     "texto": "negocios digitales carrera rosario",
+     "semillas": [
+      "negocios digitales carrera"
+     ],
+     "grupos": [
+      "estudiante"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "pos_promedio": 11.0,
+     "pos_mejor": 11,
+     "veces_top3": 0,
+     "veces_top10": 0,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
      "texto": "negocios digitales en estados unidos",
      "semillas": [
       "negocios digitales e"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 1,
+     "pos_promedio": 11.0,
+     "pos_mejor": 11,
+     "veces_top3": 0,
+     "veces_top10": 0,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "negocios digitales rentables en argentina",
+     "semillas": [
+      "negocios digitales r"
      ],
      "grupos": [
       "alfabeto"
@@ -1917,27 +1934,7 @@
      "intencion": "fuera_uy"
     },
     {
-     "texto": "negocios digitales colombia s.a.s",
-     "semillas": [
-      "negocios digitales c"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 553,
-     "apariciones": 1,
-     "pos_promedio": 12.0,
-     "pos_mejor": 12,
-     "veces_top3": 0,
-     "veces_top10": 0,
-     "instituciones": [],
-     "intencion": "fuera_uy"
-    },
-    {
-     "texto": "negocios digitales rentables en argentina",
+     "texto": "negocios digitales rentables en ecuador",
      "semillas": [
       "negocios digitales r"
      ],
@@ -1980,6 +1977,26 @@
      "texto": "magíster en negocios digitales y tecnologías emergentes",
      "semillas": [
       "negocios digitales y"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 552,
+     "apariciones": 1,
+     "pos_promedio": 13.0,
+     "pos_mejor": 13,
+     "veces_top3": 0,
+     "veces_top10": 0,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "negocios digitales colombia s.a.s",
+     "semillas": [
+      "negocios digitales c"
      ],
      "grupos": [
       "alfabeto"
@@ -2057,7 +2074,7 @@
      "intencion": "fuera_uy"
     },
     {
-     "texto": "negocios digitales rentables en ecuador",
+     "texto": "negocios digitales rentables en estados unidos",
      "semillas": [
       "negocios digitales r"
      ],
@@ -2157,26 +2174,6 @@
      "intencion": "fuera_uy"
     },
     {
-     "texto": "negocios digitales rentables en estados unidos",
-     "semillas": [
-      "negocios digitales r"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 551,
-     "apariciones": 1,
-     "pos_promedio": 14.0,
-     "pos_mejor": 14,
-     "veces_top3": 0,
-     "veces_top10": 0,
-     "instituciones": [],
-     "intencion": "fuera_uy"
-    },
-    {
      "texto": "negocios digitales tec de monterrey",
      "semillas": [
       "negocios digitales t"
@@ -2217,26 +2214,6 @@
      "intencion": "fuera_uy"
     },
     {
-     "texto": "negocios digitales 2026 argentina",
-     "semillas": [
-      "negocios digitales"
-     ],
-     "grupos": [
-      "youtube"
-     ],
-     "fuentes": [
-      "youtube"
-     ],
-     "relevancia_max": 550,
-     "apariciones": 1,
-     "pos_promedio": 15.0,
-     "pos_mejor": 15,
-     "veces_top3": 0,
-     "veces_top10": 0,
-     "instituciones": [],
-     "intencion": "fuera_uy"
-    },
-    {
      "texto": "negocios digitales plan de estudio uade",
      "semillas": [
       "negocios digitales p"
@@ -2267,7 +2244,7 @@
    "total": 33,
    "pct": 9.1,
    "apariciones_total": 43,
-   "veces_top3_total": 12,
+   "veces_top3_total": 11,
    "sugerencias": [
     {
      "texto": "negocios digitales para adolescentes",
@@ -2286,7 +2263,7 @@
      ],
      "relevancia_max": 1000,
      "apariciones": 3,
-     "pos_promedio": 8.7,
+     "pos_promedio": 9.0,
      "pos_mejor": 4,
      "veces_top3": 0,
      "veces_top10": 2,
@@ -2315,6 +2292,29 @@
      "intencion": "emprender"
     },
     {
+     "texto": "negocios digitales sin inversion",
+     "semillas": [
+      "negocios digitales s",
+      "negocios digitales"
+     ],
+     "grupos": [
+      "alfabeto",
+      "youtube"
+     ],
+     "fuentes": [
+      "google",
+      "youtube"
+     ],
+     "relevancia_max": 751,
+     "apariciones": 2,
+     "pos_promedio": 3.5,
+     "pos_mejor": 3,
+     "veces_top3": 1,
+     "veces_top10": 2,
+     "instituciones": [],
+     "intencion": "emprender"
+    },
+    {
      "texto": "negocios digitales rentables",
      "semillas": [
       "negocios digitales",
@@ -2329,33 +2329,10 @@
       "google",
       "youtube"
      ],
-     "relevancia_max": 1251,
+     "relevancia_max": 1250,
      "apariciones": 2,
      "pos_promedio": 4.0,
      "pos_mejor": 1,
-     "veces_top3": 1,
-     "veces_top10": 2,
-     "instituciones": [],
-     "intencion": "emprender"
-    },
-    {
-     "texto": "negocios digitales como empezar",
-     "semillas": [
-      "negocios digitales c",
-      "negocios digitales"
-     ],
-     "grupos": [
-      "alfabeto",
-      "youtube"
-     ],
-     "fuentes": [
-      "google",
-      "youtube"
-     ],
-     "relevancia_max": 600,
-     "apariciones": 2,
-     "pos_promedio": 5.0,
-     "pos_mejor": 3,
      "veces_top3": 1,
      "veces_top10": 2,
      "instituciones": [],
@@ -2369,12 +2346,14 @@
      ],
      "grupos": [
       "base",
-      "alfabeto"
+      "alfabeto",
+      "youtube"
      ],
      "fuentes": [
-      "google"
+      "google",
+      "youtube"
      ],
-     "relevancia_max": 1251,
+     "relevancia_max": 1250,
      "apariciones": 2,
      "pos_promedio": 5.0,
      "pos_mejor": 1,
@@ -2399,7 +2378,7 @@
      ],
      "relevancia_max": 1200,
      "apariciones": 2,
-     "pos_promedio": 5.0,
+     "pos_promedio": 5.5,
      "pos_mejor": 3,
      "veces_top3": 1,
      "veces_top10": 2,
@@ -2407,33 +2386,30 @@
      "intencion": "emprender"
     },
     {
-     "texto": "negocios digitales rentables 2026",
+     "texto": "negocios digitales mas rentables 2026",
      "semillas": [
-      "negocios digitales",
+      "negocios digitales m",
       "negocios digitales r"
      ],
      "grupos": [
-      "base",
-      "alfabeto",
-      "youtube"
+      "alfabeto"
      ],
      "fuentes": [
-      "google",
-      "youtube"
+      "google"
      ],
      "relevancia_max": 1250,
      "apariciones": 2,
-     "pos_promedio": 6.0,
-     "pos_mejor": 2,
+     "pos_promedio": 9.0,
+     "pos_mejor": 3,
      "veces_top3": 1,
-     "veces_top10": 2,
+     "veces_top10": 1,
      "instituciones": [],
      "intencion": "emprender"
     },
     {
-     "texto": "negocios digitales sin inversion",
+     "texto": "negocios digitales como empezar",
      "semillas": [
-      "negocios digitales s",
+      "negocios digitales c",
       "negocios digitales"
      ],
      "grupos": [
@@ -2444,9 +2420,9 @@
       "google",
       "youtube"
      ],
-     "relevancia_max": 751,
+     "relevancia_max": 561,
      "apariciones": 2,
-     "pos_promedio": 4.0,
+     "pos_promedio": 5.5,
      "pos_mejor": 4,
      "veces_top3": 0,
      "veces_top10": 2,
@@ -2465,7 +2441,7 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 559,
+     "relevancia_max": 558,
      "apariciones": 2,
      "pos_promedio": 9.0,
      "pos_mejor": 5,
@@ -2566,26 +2542,6 @@
       "google"
      ],
      "relevancia_max": 562,
-     "apariciones": 1,
-     "pos_promedio": 3.0,
-     "pos_mejor": 3,
-     "veces_top3": 1,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "emprender"
-    },
-    {
-     "texto": "negocios digitales mas rentables 2026",
-     "semillas": [
-      "negocios digitales m"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 1250,
      "apariciones": 1,
      "pos_promedio": 3.0,
      "pos_mejor": 3,
@@ -2785,30 +2741,10 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 556,
+     "relevancia_max": 557,
      "apariciones": 1,
-     "pos_promedio": 9.0,
-     "pos_mejor": 9,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "emprender"
-    },
-    {
-     "texto": "negocios digitales para adolescentes 2026",
-     "semillas": [
-      "negocios digitales"
-     ],
-     "grupos": [
-      "youtube"
-     ],
-     "fuentes": [
-      "youtube"
-     ],
-     "relevancia_max": 555,
-     "apariciones": 1,
-     "pos_promedio": 10.0,
-     "pos_mejor": 10,
+     "pos_promedio": 8.0,
+     "pos_mejor": 8,
      "veces_top3": 0,
      "veces_top10": 1,
      "instituciones": [],
@@ -2826,6 +2762,28 @@
       "google"
      ],
      "relevancia_max": 555,
+     "apariciones": 1,
+     "pos_promedio": 10.0,
+     "pos_mejor": 10,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "emprender"
+    },
+    {
+     "texto": "negocios digitales rentables 2026",
+     "semillas": [
+      "negocios digitales"
+     ],
+     "grupos": [
+      "base",
+      "youtube"
+     ],
+     "fuentes": [
+      "google",
+      "youtube"
+     ],
+     "relevancia_max": 558,
      "apariciones": 1,
      "pos_promedio": 10.0,
      "pos_mejor": 10,
@@ -2895,7 +2853,7 @@
      "intencion": "emprender"
     },
     {
-     "texto": "negocios digitales que si funcionan",
+     "texto": "negocios digitales para adolescentes 2026",
      "semillas": [
       "negocios digitales"
      ],
@@ -2924,6 +2882,26 @@
      ],
      "fuentes": [
       "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "pos_promedio": 12.0,
+     "pos_mejor": 12,
+     "veces_top3": 0,
+     "veces_top10": 0,
+     "instituciones": [],
+     "intencion": "emprender"
+    },
+    {
+     "texto": "negocios digitales que si funcionan",
+     "semillas": [
+      "negocios digitales"
+     ],
+     "grupos": [
+      "youtube"
+     ],
+     "fuentes": [
+      "youtube"
      ],
      "relevancia_max": 553,
      "apariciones": 1,
@@ -3529,9 +3507,9 @@
    "color": "#4aa8ff",
    "quien": "estudiante",
    "que_es": "Cómo se cursa: a distancia, virtual, semipresencial, horarios.",
-   "total": 17,
-   "pct": 4.7,
-   "apariciones_total": 24,
+   "total": 16,
+   "pct": 4.4,
+   "apariciones_total": 23,
    "veces_top3_total": 8,
    "sugerencias": [
     {
@@ -3785,26 +3763,6 @@
      "intencion": "modalidad"
     },
     {
-     "texto": "negocios digitales carrera virtual",
-     "semillas": [
-      "negocios digitales v"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 558,
-     "apariciones": 1,
-     "pos_promedio": 6.0,
-     "pos_mejor": 6,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "modalidad"
-    },
-    {
      "texto": "finanzas y negocios digitales online",
      "semillas": [
       "negocios digitales o"
@@ -3837,8 +3795,8 @@
      ],
      "relevancia_max": 555,
      "apariciones": 1,
-     "pos_promedio": 9.0,
-     "pos_mejor": 9,
+     "pos_promedio": 8.0,
+     "pos_mejor": 8,
      "veces_top3": 0,
      "veces_top10": 1,
      "instituciones": [],
@@ -3857,8 +3815,8 @@
      ],
      "relevancia_max": 554,
      "apariciones": 1,
-     "pos_promedio": 10.0,
-     "pos_mejor": 10,
+     "pos_promedio": 9.0,
+     "pos_mejor": 9,
      "veces_top3": 0,
      "veces_top10": 1,
      "instituciones": [],
@@ -3894,7 +3852,7 @@
    "que_es": "Qué se estudia y qué se pide: materias, duración, requisitos, inscripción.",
    "total": 25,
    "pct": 6.9,
-   "apariciones_total": 28,
+   "apariciones_total": 29,
    "veces_top3_total": 9,
    "sugerencias": [
     {
@@ -3912,10 +3870,10 @@
      ],
      "relevancia_max": 601,
      "apariciones": 2,
-     "pos_promedio": 7.0,
+     "pos_promedio": 5.5,
      "pos_mejor": 1,
      "veces_top3": 1,
-     "veces_top10": 1,
+     "veces_top10": 2,
      "instituciones": [],
      "intencion": "plan"
     },
@@ -3935,6 +3893,28 @@
      "apariciones": 2,
      "pos_promedio": 8.5,
      "pos_mejor": 2,
+     "veces_top3": 1,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "plan"
+    },
+    {
+     "texto": "negocios digitales de que se trata",
+     "semillas": [
+      "negocios digitales",
+      "negocios digitales d"
+     ],
+     "grupos": [
+      "base",
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 1050,
+     "apariciones": 2,
+     "pos_promedio": 9.0,
+     "pos_mejor": 3,
      "veces_top3": 1,
      "veces_top10": 1,
      "instituciones": [],
@@ -4014,26 +3994,6 @@
       "google"
      ],
      "relevancia_max": 600,
-     "apariciones": 1,
-     "pos_promedio": 2.0,
-     "pos_mejor": 2,
-     "veces_top3": 1,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "plan"
-    },
-    {
-     "texto": "negocios digitales de que se trata",
-     "semillas": [
-      "negocios digitales d"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 1250,
      "apariciones": 1,
      "pos_promedio": 2.0,
      "pos_mejor": 2,
@@ -4492,7 +4452,7 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 560,
+     "relevancia_max": 559,
      "apariciones": 1,
      "pos_promedio": 4.0,
      "pos_mejor": 4,
@@ -4534,8 +4494,8 @@
      ],
      "relevancia_max": 557,
      "apariciones": 1,
-     "pos_promedio": 7.0,
-     "pos_mejor": 7,
+     "pos_promedio": 6.0,
+     "pos_mejor": 6,
      "veces_top3": 0,
      "veces_top10": 1,
      "instituciones": [],
@@ -4590,7 +4550,7 @@
    "quien": "ambos",
    "que_es": "Lugar o institución de Uruguay: universidades y ciudades.",
    "total": 19,
-   "pct": 5.2,
+   "pct": 5.3,
    "apariciones_total": 75,
    "veces_top3_total": 27,
    "sugerencias": [
@@ -4828,8 +4788,8 @@
      ],
      "relevancia_max": 1150,
      "apariciones": 1,
-     "pos_promedio": 3.0,
-     "pos_mejor": 3,
+     "pos_promedio": 2.0,
+     "pos_mejor": 2,
      "veces_top3": 1,
      "veces_top10": 1,
      "instituciones": [],
@@ -5070,7 +5030,7 @@
    "quien": "estudiante",
    "que_es": "Qué nivel buscan: carrera, licenciatura, curso, posgrado.",
    "total": 23,
-   "pct": 6.3,
+   "pct": 6.4,
    "apariciones_total": 26,
    "veces_top3_total": 8,
    "sugerencias": [
@@ -5551,7 +5511,7 @@
    "quien": "estudiante",
    "que_es": "Con qué otros temas se busca junto: inteligencia artificial, negocios, salud. Sirve para decidir el nombre y el foco de una carrera.",
    "total": 19,
-   "pct": 5.2,
+   "pct": 5.3,
    "apariciones_total": 20,
    "veces_top3_total": 3,
    "sugerencias": [
@@ -5737,26 +5697,6 @@
      "intencion": "temas"
     },
     {
-     "texto": "negocios digitales con ia",
-     "semillas": [
-      "negocios digitales"
-     ],
-     "grupos": [
-      "youtube"
-     ],
-     "fuentes": [
-      "youtube"
-     ],
-     "relevancia_max": 556,
-     "apariciones": 1,
-     "pos_promedio": 9.0,
-     "pos_mejor": 9,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "temas"
-    },
-    {
      "texto": "que es finanzas y negocios digitales",
      "semillas": [
       "qué es negocios digitales"
@@ -5771,6 +5711,26 @@
      "apariciones": 1,
      "pos_promedio": 9.0,
      "pos_mejor": 9,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "negocios digitales con ia",
+     "semillas": [
+      "negocios digitales"
+     ],
+     "grupos": [
+      "youtube"
+     ],
+     "fuentes": [
+      "youtube"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "pos_promedio": 10.0,
+     "pos_mejor": 10,
      "veces_top3": 0,
      "veces_top10": 1,
      "instituciones": [],
@@ -6112,6 +6072,26 @@
      "intencion": "aprender"
     },
     {
+     "texto": "negocios digitales reddit",
+     "semillas": [
+      "negocios digitales r"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 559,
+     "apariciones": 1,
+     "pos_promedio": 6.0,
+     "pos_mejor": 6,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "aprender"
+    },
+    {
      "texto": "negocios digitales en ingles",
      "semillas": [
       "negocios digitales e"
@@ -6143,26 +6123,6 @@
       "google"
      ],
      "relevancia_max": 600,
-     "apariciones": 1,
-     "pos_promedio": 7.0,
-     "pos_mejor": 7,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "aprender"
-    },
-    {
-     "texto": "negocios digitales reddit",
-     "semillas": [
-      "negocios digitales r"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 558,
      "apariciones": 1,
      "pos_promedio": 7.0,
      "pos_mejor": 7,
@@ -6240,7 +6200,7 @@
    "quien": "ninguno",
    "que_es": "No coincide con ninguna regla. Si este grupo crece, falta una regla.",
    "total": 72,
-   "pct": 19.8,
+   "pct": 19.9,
    "apariciones_total": 77,
    "veces_top3_total": 14,
    "sugerencias": [
@@ -6300,7 +6260,7 @@
      ],
      "relevancia_max": 556,
      "apariciones": 2,
-     "pos_promedio": 10.5,
+     "pos_promedio": 10.0,
      "pos_mejor": 9,
      "veces_top3": 0,
      "veces_top10": 1,
@@ -6342,8 +6302,8 @@
      ],
      "relevancia_max": 550,
      "apariciones": 2,
-     "pos_promedio": 14.5,
-     "pos_mejor": 14,
+     "pos_promedio": 14.0,
+     "pos_mejor": 13,
      "veces_top3": 0,
      "veces_top10": 0,
      "instituciones": [],
@@ -6730,6 +6690,26 @@
      "intencion": "otros"
     },
     {
+     "texto": "negocios digitales 2025",
+     "semillas": [
+      "negocios digitales"
+     ],
+     "grupos": [
+      "youtube"
+     ],
+     "fuentes": [
+      "youtube"
+     ],
+     "relevancia_max": 560,
+     "apariciones": 1,
+     "pos_promedio": 5.0,
+     "pos_mejor": 5,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
      "texto": "jbc negocios digitales ltda",
      "semillas": [
       "negocios digitales j"
@@ -6830,6 +6810,26 @@
      "intencion": "otros"
     },
     {
+     "texto": "negocios digitales referentes",
+     "semillas": [
+      "negocios digitales r"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 1,
+     "pos_promedio": 7.0,
+     "pos_mejor": 7,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
      "texto": "negocios digitales ta4",
      "semillas": [
       "negocios digitales t"
@@ -6910,26 +6910,6 @@
      "intencion": "otros"
     },
     {
-     "texto": "negocios digitales 2025",
-     "semillas": [
-      "negocios digitales"
-     ],
-     "grupos": [
-      "youtube"
-     ],
-     "fuentes": [
-      "youtube"
-     ],
-     "relevancia_max": 557,
-     "apariciones": 1,
-     "pos_promedio": 8.0,
-     "pos_mejor": 8,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "otros"
-    },
-    {
      "texto": "negocios digitales exitosos",
      "semillas": [
       "negocios digitales e"
@@ -6973,26 +6953,6 @@
      "texto": "negocios digitales pregrado",
      "semillas": [
       "negocios digitales p"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 557,
-     "apariciones": 1,
-     "pos_promedio": 8.0,
-     "pos_mejor": 8,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "otros"
-    },
-    {
-     "texto": "negocios digitales referentes",
-     "semillas": [
-      "negocios digitales r"
      ],
      "grupos": [
       "alfabeto"
@@ -7150,6 +7110,26 @@
      "intencion": "otros"
     },
     {
+     "texto": "negocios digitales reales",
+     "semillas": [
+      "negocios digitales r"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "pos_promedio": 9.0,
+     "pos_mejor": 9,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
      "texto": "negocios digitales tipos",
      "semillas": [
       "negocios digitales t"
@@ -7233,26 +7213,6 @@
      "texto": "negocios digitales legales",
      "semillas": [
       "negocios digitales l"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 555,
-     "apariciones": 1,
-     "pos_promedio": 10.0,
-     "pos_mejor": 10,
-     "veces_top3": 0,
-     "veces_top10": 1,
-     "instituciones": [],
-     "intencion": "otros"
-    },
-    {
-     "texto": "negocios digitales reales",
-     "semillas": [
-      "negocios digitales r"
      ],
      "grupos": [
       "alfabeto"
@@ -7450,6 +7410,26 @@
      "intencion": "otros"
     },
     {
+     "texto": "vender negocios digitales",
+     "semillas": [
+      "negocios digitales v"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 1,
+     "pos_promedio": 12.0,
+     "pos_mejor": 12,
+     "veces_top3": 0,
+     "veces_top10": 0,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
      "texto": "negocios digitales diplomatura",
      "semillas": [
       "negocios digitales d"
@@ -7501,26 +7481,6 @@
       "google"
      ],
      "relevancia_max": 552,
-     "apariciones": 1,
-     "pos_promedio": 13.0,
-     "pos_mejor": 13,
-     "veces_top3": 0,
-     "veces_top10": 0,
-     "instituciones": [],
-     "intencion": "otros"
-    },
-    {
-     "texto": "vender negocios digitales",
-     "semillas": [
-      "negocios digitales v"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 551,
      "apariciones": 1,
      "pos_promedio": 13.0,
      "pos_mejor": 13,
@@ -7697,15 +7657,15 @@
   {
    "buscador": "pendiente",
    "consulta": "negocios digitales",
-   "estado": "rechazado",
-   "motivo": "el buscador no devolvió resultados",
+   "estado": "pendiente",
+   "motivo": "sin fuente automática: leer la página de un buscador con un script no es confiable (probado el 2026-11-16). Falta elegir una API oficial con clave gratuita (PLAN.md, fase F5).",
    "resultados": []
   },
   {
    "buscador": "pendiente",
    "consulta": "negocios digitales carrera uruguay",
-   "estado": "rechazado",
-   "motivo": "el buscador no devolvió resultados",
+   "estado": "pendiente",
+   "motivo": "sin fuente automática: leer la página de un buscador con un script no es confiable (probado el 2026-11-16). Falta elegir una API oficial con clave gratuita (PLAN.md, fase F5).",
    "resultados": []
   }
  ],
@@ -7743,6 +7703,5 @@
   "bing": "https://www.bing.com/search?cc=UY&setlang=es&q=negocios%20digitales",
   "duckduckgo": "https://duckduckgo.com/?kl=uy-es&q=negocios%20digitales",
   "youtube": "https://www.youtube.com/results?search_query=negocios%20digitales"
- },
- "reprocesado_utc": "2026-11-18T12:41:23Z"
+ }
 }

@@ -1,0 +1,126 @@
+{
+ "tema": "business analytics",
+ "slug": "business-analytics",
+ "mediciones": [
+  {
+   "run_id": "20261116T222442Z_business-analytics",
+   "fecha_utc": "2026-11-16T22:24:42Z",
+   "consultas": 46,
+   "frases": 419,
+   "apariciones_utiles": 198,
+   "ramas": {
+    "fuera_uy": 27,
+    "emprender": 0,
+    "becas": 0,
+    "costo": 0,
+    "salida": 38,
+    "modalidad": 11,
+    "plan": 6,
+    "comparar": 18,
+    "donde": 60,
+    "formato": 24,
+    "temas": 4,
+    "aprender": 37,
+    "otros": 276
+   },
+   "top": [
+    {
+     "texto": "business analytics uruguay",
+     "rama": "donde",
+     "apariciones": 13,
+     "pos_promedio": 3.3
+    },
+    {
+     "texto": "business analytics ort",
+     "rama": "donde",
+     "apariciones": 10,
+     "pos_promedio": 4.9
+    },
+    {
+     "texto": "business analyst uruguay",
+     "rama": "donde",
+     "apariciones": 9,
+     "pos_promedio": 4.2
+    },
+    {
+     "texto": "business analytics ucu",
+     "rama": "donde",
+     "apariciones": 8,
+     "pos_promedio": 5.2
+    },
+    {
+     "texto": "business analytics um",
+     "rama": "donde",
+     "apariciones": 8,
+     "pos_promedio": 5.9
+    },
+    {
+     "texto": "business analyst salario uruguay",
+     "rama": "salida",
+     "apariciones": 5,
+     "pos_promedio": 2.6
+    },
+    {
+     "texto": "business analyst um",
+     "rama": "donde",
+     "apariciones": 4,
+     "pos_promedio": 6.2
+    },
+    {
+     "texto": "business analytics curso",
+     "rama": "formato",
+     "apariciones": 3,
+     "pos_promedio": 2.0
+    },
+    {
+     "texto": "cuanto gana un business analyst en uruguay",
+     "rama": "salida",
+     "apariciones": 3,
+     "pos_promedio": 4.0
+    },
+    {
+     "texto": "business analytics que es",
+     "rama": "aprender",
+     "apariciones": 2,
+     "pos_promedio": 1.5
+    },
+    {
+     "texto": "donde estudiar business analytics",
+     "rama": "donde",
+     "apariciones": 2,
+     "pos_promedio": 1.5
+    },
+    {
+     "texto": "business analytics carrera",
+     "rama": "formato",
+     "apariciones": 2,
+     "pos_promedio": 2.5
+    },
+    {
+     "texto": "business analytics que es y para que sirve",
+     "rama": "salida",
+     "apariciones": 2,
+     "pos_promedio": 2.5
+    },
+    {
+     "texto": "business analytics coursera",
+     "rama": "aprender",
+     "apariciones": 2,
+     "pos_promedio": 3.0
+    },
+    {
+     "texto": "business analytics carrera que es",
+     "rama": "formato",
+     "apariciones": 2,
+     "pos_promedio": 3.5
+    }
+   ],
+   "instituciones": {
+    "UM": 2,
+    "ORT": 1,
+    "UCU": 1,
+    "UTEC": 1
+   }
+  }
+ ]
+}

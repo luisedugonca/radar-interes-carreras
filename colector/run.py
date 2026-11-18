@@ -21,6 +21,7 @@ import urllib.parse
 from datetime import datetime, timezone
 
 import base_csv
+import historial
 import extraer
 import transformar
 import validar
@@ -107,6 +108,8 @@ def correr(tema_crudo: str) -> dict:
                        "sugerencias_unicas": resultado["resumen"]["sugerencias_unicas"]})
 
     log.info("Base CSV regenerada: %s filas en docs/data/base.csv", base_csv.regenerar())
+    log.info("Historial: %s mediciones de «%s»", historial.registrar(consulta), tema)
+    comprimir_crudo(dir_raw)
 
     manifiesto = {
         "run_id": run_id, "tema": tema, "inicio_utc": consulta["generado_utc"],
@@ -127,6 +130,32 @@ def correr(tema_crudo: str) -> dict:
     return consulta
 
 
+def comprimir_crudo(dir_raw) -> None:
+    """El crudo queda comprimido (unos 4 KB por corrida): el repositorio crece poco con la medición semanal."""
+    import gzip
+    plano = dir_raw / "sugerencias.jsonl"
+    if plano.exists():
+        (dir_raw / "sugerencias.jsonl.gz").write_bytes(gzip.compress(plano.read_bytes(), mtime=0))
+        plano.unlink()
+
+
+def correr_todos(pausa: float = 10.0) -> int:
+    """Vuelve a medir todos los temas del índice (medición programada). Devuelve cuántos fallaron."""
+    import time
+    temas = [c["tema"] for c in json.loads(RUTA_INDICE.read_text(encoding="utf-8"))["consultas"]]
+    fallas = 0
+    for k, tema in enumerate(temas):
+        try:
+            correr(tema)
+        except Exception as e:  # un tema que falla no frena a los demás
+            fallas += 1
+            log.error("Falló «%s»: %s", tema, e)
+        if k < len(temas) - 1:
+            time.sleep(pausa)   # pausa entre temas: no saturar al autocompletar
+    log.info("Medición de todos: %s temas, %s con error", len(temas), fallas)
+    return fallas
+
+
 def _contar(valores) -> dict:
     conteo: dict[str, int] = {}
     for v in valores:
@@ -136,6 +165,8 @@ def _contar(valores) -> dict:
 
 if __name__ == "__main__":
     configurar_log()
+    if sys.argv[1:] == ["--todos"]:
+        sys.exit(1 if correr_todos() else 0)
     tema_arg = " ".join(sys.argv[1:]).strip() or os.environ.get("TEMA", "")
     if not tema_arg:
         sys.exit('Falta el tema. Ejemplo: python colector/run.py "ciencia de datos"')

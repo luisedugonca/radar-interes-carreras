@@ -1,0 +1,127 @@
+{
+ "tema": "marketing digital",
+ "slug": "marketing-digital",
+ "mediciones": [
+  {
+   "run_id": "20261118T132531Z_marketing-digital",
+   "fecha_utc": "2026-11-18T13:25:31Z",
+   "consultas": 46,
+   "frases": 579,
+   "apariciones_utiles": 314,
+   "ramas": {
+    "fuera_uy": 139,
+    "emprender": 7,
+    "becas": 5,
+    "costo": 42,
+    "salida": 45,
+    "modalidad": 25,
+    "plan": 29,
+    "comparar": 27,
+    "donde": 34,
+    "formato": 31,
+    "temas": 19,
+    "aprender": 57,
+    "otros": 168
+   },
+   "top": [
+    {
+     "texto": "marketing digital udelar",
+     "rama": "donde",
+     "apariciones": 4,
+     "pos_promedio": 5.5
+    },
+    {
+     "texto": "marketing digital que es y como funciona",
+     "rama": "aprender",
+     "apariciones": 3,
+     "pos_promedio": 1.3
+    },
+    {
+     "texto": "marketing digital uruguay",
+     "rama": "donde",
+     "apariciones": 3,
+     "pos_promedio": 3.0
+    },
+    {
+     "texto": "marketing digital curso",
+     "rama": "formato",
+     "apariciones": 2,
+     "pos_promedio": 1.0
+    },
+    {
+     "texto": "marketing digital que es",
+     "rama": "aprender",
+     "apariciones": 2,
+     "pos_promedio": 2.0
+    },
+    {
+     "texto": "marketing digital a distancia gratis",
+     "rama": "costo",
+     "apariciones": 2,
+     "pos_promedio": 3.0
+    },
+    {
+     "texto": "marketing digital curso gratuito",
+     "rama": "costo",
+     "apariciones": 2,
+     "pos_promedio": 3.0
+    },
+    {
+     "texto": "marketing digital carrera gratis",
+     "rama": "costo",
+     "apariciones": 2,
+     "pos_promedio": 3.5
+    },
+    {
+     "texto": "marketing digital carrera",
+     "rama": "formato",
+     "apariciones": 2,
+     "pos_promedio": 4.0
+    },
+    {
+     "texto": "marketing digital utu",
+     "rama": "donde",
+     "apariciones": 2,
+     "pos_promedio": 4.0
+    },
+    {
+     "texto": "marketing digital que es y para que sirve",
+     "rama": "salida",
+     "apariciones": 2,
+     "pos_promedio": 4.5
+    },
+    {
+     "texto": "marketing digital tiene salida laboral",
+     "rama": "salida",
+     "apariciones": 2,
+     "pos_promedio": 4.5
+    },
+    {
+     "texto": "marketing digital trabajo",
+     "rama": "salida",
+     "apariciones": 2,
+     "pos_promedio": 4.5
+    },
+    {
+     "texto": "marketing digital estudiar uruguay",
+     "rama": "donde",
+     "apariciones": 2,
+     "pos_promedio": 5.0
+    },
+    {
+     "texto": "marketing digital ort",
+     "rama": "donde",
+     "apariciones": 2,
+     "pos_promedio": 5.5
+    }
+   ],
+   "instituciones": {
+    "Udelar": 2,
+    "ORT": 1,
+    "UDE": 1,
+    "UM": 1,
+    "UTU": 1
+   }
+  }
+ ]
+}

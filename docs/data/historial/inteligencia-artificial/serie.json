@@ -1,0 +1,128 @@
+{
+ "tema": "inteligencia artificial",
+ "slug": "inteligencia-artificial",
+ "mediciones": [
+  {
+   "run_id": "20261116T220915Z_inteligencia-artificial",
+   "fecha_utc": "2026-11-16T22:09:15Z",
+   "consultas": 46,
+   "frases": 584,
+   "apariciones_utiles": 263,
+   "ramas": {
+    "fuera_uy": 75,
+    "emprender": 0,
+    "becas": 6,
+    "costo": 64,
+    "salida": 21,
+    "modalidad": 19,
+    "plan": 18,
+    "comparar": 29,
+    "donde": 22,
+    "formato": 17,
+    "temas": 18,
+    "aprender": 49,
+    "otros": 275
+   },
+   "top": [
+    {
+     "texto": "inteligencia artificial udelar",
+     "rama": "donde",
+     "apariciones": 3,
+     "pos_promedio": 6.0
+    },
+    {
+     "texto": "inteligencia artificial uruguay",
+     "rama": "donde",
+     "apariciones": 3,
+     "pos_promedio": 6.3
+    },
+    {
+     "texto": "inteligencia artificial gratis",
+     "rama": "costo",
+     "apariciones": 2,
+     "pos_promedio": 1.0
+    },
+    {
+     "texto": "dónde estudiar inteligencia artificial gratis",
+     "rama": "costo",
+     "apariciones": 2,
+     "pos_promedio": 2.5
+    },
+    {
+     "texto": "estudiar inteligencia artificial uruguay",
+     "rama": "donde",
+     "apariciones": 2,
+     "pos_promedio": 2.5
+    },
+    {
+     "texto": "inteligencia artificial de google",
+     "rama": "aprender",
+     "apariciones": 2,
+     "pos_promedio": 2.5
+    },
+    {
+     "texto": "inteligencia artificial carrera a distancia",
+     "rama": "modalidad",
+     "apariciones": 2,
+     "pos_promedio": 4.0
+    },
+    {
+     "texto": "inteligencia artificial online",
+     "rama": "modalidad",
+     "apariciones": 2,
+     "pos_promedio": 4.5
+    },
+    {
+     "texto": "inteligencia artificial opiniones de expertos",
+     "rama": "comparar",
+     "apariciones": 2,
+     "pos_promedio": 4.5
+    },
+    {
+     "texto": "inteligencia artificial ucu",
+     "rama": "donde",
+     "apariciones": 2,
+     "pos_promedio": 5.0
+    },
+    {
+     "texto": "inteligencia artificial gratis en español",
+     "rama": "costo",
+     "apariciones": 2,
+     "pos_promedio": 6.0
+    },
+    {
+     "texto": "inteligencia artificial estudiar",
+     "rama": "formato",
+     "apariciones": 2,
+     "pos_promedio": 6.5
+    },
+    {
+     "texto": "inteligencia artificial que es",
+     "rama": "aprender",
+     "apariciones": 2,
+     "pos_promedio": 7.0
+    },
+    {
+     "texto": "inteligencia artificial para decorar interiores gratis",
+     "rama": "costo",
+     "apariciones": 2,
+     "pos_promedio": 7.5
+    },
+    {
+     "texto": "donde estudiar inteligencia artificial en uruguay",
+     "rama": "donde",
+     "apariciones": 2,
+     "pos_promedio": 8.5
+    }
+   ],
+   "instituciones": {
+    "ORT": 1,
+    "UCU": 1,
+    "UDE": 1,
+    "UM": 1,
+    "UTEC": 1,
+    "Udelar": 1
+   }
+  }
+ ]
+}

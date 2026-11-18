@@ -1,14 +1,17 @@
 name: Consulta de interés
 
-# Dos formas de pedir una consulta guardada:
-#   1. Actions → "Consulta de interés" → Run workflow → escribir el tema.
-#   2. Abrir un issue con el título "Consulta: <tema>" (solo dueños y colaboradores del repo).
+# Tres formas de medir:
+#   1. Sola, cada lunes: vuelve a medir todos los temas guardados (arma la evolución semana a semana).
+#   2. Actions → "Consulta de interés" → Run workflow → escribir un tema (vacío = todos).
+#   3. Abrir un issue con el título "Consulta: <tema>" (solo dueños y colaboradores del repo).
 on:
+  schedule:
+    - cron: "0 11 * * 1"   # lunes 11:00 UTC = 8:00 en Uruguay
   workflow_dispatch:
     inputs:
       tema:
-        description: "Tema o carrera (ej.: ciencia de datos)"
-        required: true
+        description: "Tema o carrera (ej.: ciencia de datos). Vacío = volver a medir todos."
+        required: false
         type: string
   issues:
     types: [opened]
@@ -24,11 +27,11 @@ concurrency:
 jobs:
   consulta:
     if: >-
-      github.event_name == 'workflow_dispatch' ||
+      github.event_name == 'workflow_dispatch' || github.event_name == 'schedule' ||
       (startsWith(github.event.issue.title, 'Consulta:') &&
        contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.issue.author_association))
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -42,7 +45,8 @@ jobs:
         # El tema lo escribe una persona: entra por variable de entorno, nunca pegado en el comando.
         env:
           TEMA: ${{ github.event.inputs.tema || github.event.issue.title }}
-        run: python colector/run.py
+        run: |
+          if [ -n "$TEMA" ]; then python colector/run.py; else python colector/run.py --todos; fi
 
       - name: Regenerar el paquete para chats
         run: python colector/paquete_chat.py
@@ -53,7 +57,8 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add docs/data data/raw manifests
           if git diff --cached --quiet; then echo "Sin cambios que guardar."; exit 0; fi
-          git commit -m "Datos: consulta nueva (corrida ${GITHUB_RUN_ID})"
+          if [ "${{ github.event_name }}" = "schedule" ]; then MSG="Datos: medición semanal"; else MSG="Datos: consulta nueva"; fi
+          git commit -m "$MSG (corrida ${GITHUB_RUN_ID})"
           git push
 
       - name: Avisar en el issue
