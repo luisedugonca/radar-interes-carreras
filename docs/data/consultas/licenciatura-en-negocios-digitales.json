@@ -50,8 +50,8 @@
    "ninguno": 39
   },
   "top10_validos": 0,
-  "top10_rechazados": 0,
-  "top10_pendientes": 2
+  "top10_rechazados": 2,
+  "top10_pendientes": 0
  },
  "intenciones": [
   {
@@ -62,6 +62,8 @@
    "que_es": "La sugerencia nombra un país o una universidad de otro país. No es demanda local.",
    "total": 27,
    "pct": 25.7,
+   "apariciones_total": 47,
+   "veces_top3_total": 23,
    "sugerencias": [
     {
      "texto": "licenciatura en negocios digitales ipn plan de estudios",
@@ -81,6 +83,10 @@
      ],
      "relevancia_max": 601,
      "apariciones": 5,
+     "pos_promedio": 4.4,
+     "pos_mejor": 1,
+     "veces_top3": 3,
+     "veces_top10": 5,
      "instituciones": [],
      "intencion": "fuera_uy"
     },
@@ -101,6 +107,10 @@
      ],
      "relevancia_max": 600,
      "apariciones": 4,
+     "pos_promedio": 6.0,
+     "pos_mejor": 2,
+     "veces_top3": 1,
+     "veces_top10": 4,
      "instituciones": [],
      "intencion": "fuera_uy"
     },
@@ -119,6 +129,31 @@
      ],
      "relevancia_max": 556,
      "apariciones": 3,
+     "pos_promedio": 9.3,
+     "pos_mejor": 6,
+     "veces_top3": 0,
+     "veces_top10": 2,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "licenciatura en negocios digitales di tella",
+     "semillas": [
+      "licenciatura en negocios digitales d",
+      "licenciatura en negocios digitales t"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 2,
+     "pos_promedio": 2.0,
+     "pos_mejor": 1,
+     "veces_top3": 2,
+     "veces_top10": 2,
      "instituciones": [],
      "intencion": "fuera_uy"
     },
@@ -137,6 +172,94 @@
      ],
      "relevancia_max": 1250,
      "apariciones": 2,
+     "pos_promedio": 2.0,
+     "pos_mejor": 1,
+     "veces_top3": 2,
+     "veces_top10": 2,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "licenciatura en negocios digitales blas pascal",
+     "semillas": [
+      "licenciatura en negocios digitales b",
+      "licenciatura en negocios digitales p"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 2,
+     "pos_promedio": 2.5,
+     "pos_mejor": 1,
+     "veces_top3": 1,
+     "veces_top10": 2,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "licenciatura en negocios digitales ipn aciertos",
+     "semillas": [
+      "licenciatura en negocios digitales a",
+      "licenciatura en negocios digitales i"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 2,
+     "pos_promedio": 3.0,
+     "pos_mejor": 2,
+     "veces_top3": 1,
+     "veces_top10": 2,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "licenciatura en negocios digitales siglo xxi",
+     "semillas": [
+      "licenciatura en negocios digitales s",
+      "licenciatura en negocios digitales x"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 2,
+     "pos_promedio": 3.0,
+     "pos_mejor": 1,
+     "veces_top3": 1,
+     "veces_top10": 2,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "licenciatura en gestion de negocios digitales rosario",
+     "semillas": [
+      "licenciatura en negocios digitales g",
+      "licenciatura en negocios digitales r"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 2,
+     "pos_promedio": 3.5,
+     "pos_mejor": 3,
+     "veces_top3": 1,
+     "veces_top10": 2,
      "instituciones": [],
      "intencion": "fuera_uy"
     },
@@ -155,6 +278,10 @@
      ],
      "relevancia_max": 1250,
      "apariciones": 2,
+     "pos_promedio": 3.5,
+     "pos_mejor": 1,
+     "veces_top3": 1,
+     "veces_top10": 2,
      "instituciones": [],
      "intencion": "fuera_uy"
     },
@@ -173,6 +300,52 @@
      ],
      "relevancia_max": 1250,
      "apariciones": 2,
+     "pos_promedio": 3.5,
+     "pos_mejor": 3,
+     "veces_top3": 1,
+     "veces_top10": 2,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "licenciatura en negocios digitales san andres",
+     "semillas": [
+      "licenciatura en negocios digitales a",
+      "licenciatura en negocios digitales s"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 2,
+     "pos_promedio": 4.5,
+     "pos_mejor": 4,
+     "veces_top3": 0,
+     "veces_top10": 2,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "licenciatura en negocios y mercados digitales iteso",
+     "semillas": [
+      "licenciatura en negocios digitales i",
+      "licenciatura en negocios digitales m"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 2,
+     "pos_promedio": 6.0,
+     "pos_mejor": 5,
+     "veces_top3": 0,
+     "veces_top10": 2,
      "instituciones": [],
      "intencion": "fuera_uy"
     },
@@ -191,157 +364,10 @@
      ],
      "relevancia_max": 1000,
      "apariciones": 2,
-     "instituciones": [],
-     "intencion": "fuera_uy"
-    },
-    {
-     "texto": "licenciatura en negocios digitales blas pascal",
-     "semillas": [
-      "licenciatura en negocios digitales b",
-      "licenciatura en negocios digitales p"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 601,
-     "apariciones": 2,
-     "instituciones": [],
-     "intencion": "fuera_uy"
-    },
-    {
-     "texto": "licenciatura en negocios digitales di tella",
-     "semillas": [
-      "licenciatura en negocios digitales d",
-      "licenciatura en negocios digitales t"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 601,
-     "apariciones": 2,
-     "instituciones": [],
-     "intencion": "fuera_uy"
-    },
-    {
-     "texto": "licenciatura en negocios digitales ipn aciertos",
-     "semillas": [
-      "licenciatura en negocios digitales a",
-      "licenciatura en negocios digitales i"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 601,
-     "apariciones": 2,
-     "instituciones": [],
-     "intencion": "fuera_uy"
-    },
-    {
-     "texto": "licenciatura en negocios digitales siglo xxi",
-     "semillas": [
-      "licenciatura en negocios digitales s",
-      "licenciatura en negocios digitales x"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 601,
-     "apariciones": 2,
-     "instituciones": [],
-     "intencion": "fuera_uy"
-    },
-    {
-     "texto": "licenciatura en negocios digitales san andres",
-     "semillas": [
-      "licenciatura en negocios digitales a",
-      "licenciatura en negocios digitales s"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 558,
-     "apariciones": 2,
-     "instituciones": [],
-     "intencion": "fuera_uy"
-    },
-    {
-     "texto": "licenciatura en negocios y mercados digitales iteso",
-     "semillas": [
-      "licenciatura en negocios digitales i",
-      "licenciatura en negocios digitales m"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 558,
-     "apariciones": 2,
-     "instituciones": [],
-     "intencion": "fuera_uy"
-    },
-    {
-     "texto": "licenciatura en gestion de negocios digitales rosario",
-     "semillas": [
-      "licenciatura en negocios digitales g",
-      "licenciatura en negocios digitales r"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 554,
-     "apariciones": 2,
-     "instituciones": [],
-     "intencion": "fuera_uy"
-    },
-    {
-     "texto": "licenciatura en negocios digitales uade",
-     "semillas": [
-      "licenciatura en negocios digitales u"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 1252,
-     "apariciones": 1,
-     "instituciones": [],
-     "intencion": "fuera_uy"
-    },
-    {
-     "texto": "licenciatura en negocios digitales argentina",
-     "semillas": [
-      "licenciatura en negocios digitales a"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 601,
-     "apariciones": 1,
+     "pos_promedio": 7.0,
+     "pos_mejor": 4,
+     "veces_top3": 0,
+     "veces_top10": 2,
      "instituciones": [],
      "intencion": "fuera_uy"
     },
@@ -358,6 +384,10 @@
      ],
      "relevancia_max": 601,
      "apariciones": 1,
+     "pos_promedio": 1.0,
+     "pos_mejor": 1,
+     "veces_top3": 1,
+     "veces_top10": 1,
      "instituciones": [],
      "intencion": "fuera_uy"
     },
@@ -374,6 +404,10 @@
      ],
      "relevancia_max": 601,
      "apariciones": 1,
+     "pos_promedio": 1.0,
+     "pos_mejor": 1,
+     "veces_top3": 1,
+     "veces_top10": 1,
      "instituciones": [],
      "intencion": "fuera_uy"
     },
@@ -390,11 +424,15 @@
      ],
      "relevancia_max": 601,
      "apariciones": 1,
+     "pos_promedio": 1.0,
+     "pos_mejor": 1,
+     "veces_top3": 1,
+     "veces_top10": 1,
      "instituciones": [],
      "intencion": "fuera_uy"
     },
     {
-     "texto": "licenciatura en negocios digitales uca",
+     "texto": "licenciatura en negocios digitales uade",
      "semillas": [
       "licenciatura en negocios digitales u"
      ],
@@ -404,13 +442,17 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 601,
+     "relevancia_max": 1252,
      "apariciones": 1,
+     "pos_promedio": 1.0,
+     "pos_mejor": 1,
+     "veces_top3": 1,
+     "veces_top10": 1,
      "instituciones": [],
      "intencion": "fuera_uy"
     },
     {
-     "texto": "licenciatura en negocios digitales austral",
+     "texto": "licenciatura en negocios digitales argentina",
      "semillas": [
       "licenciatura en negocios digitales a"
      ],
@@ -420,8 +462,12 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 600,
+     "relevancia_max": 601,
      "apariciones": 1,
+     "pos_promedio": 2.0,
+     "pos_mejor": 2,
+     "veces_top3": 1,
+     "veces_top10": 1,
      "instituciones": [],
      "intencion": "fuera_uy"
     },
@@ -438,22 +484,10 @@
      ],
      "relevancia_max": 600,
      "apariciones": 1,
-     "instituciones": [],
-     "intencion": "fuera_uy"
-    },
-    {
-     "texto": "licenciatura en negocios digitales unam",
-     "semillas": [
-      "licenciatura en negocios digitales u"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 600,
-     "apariciones": 1,
+     "pos_promedio": 2.0,
+     "pos_mejor": 2,
+     "veces_top3": 1,
+     "veces_top10": 1,
      "instituciones": [],
      "intencion": "fuera_uy"
     },
@@ -470,6 +504,30 @@
      ],
      "relevancia_max": 600,
      "apariciones": 1,
+     "pos_promedio": 2.0,
+     "pos_mejor": 2,
+     "veces_top3": 1,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "licenciatura en negocios digitales austral",
+     "semillas": [
+      "licenciatura en negocios digitales a"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "pos_promedio": 3.0,
+     "pos_mejor": 3,
+     "veces_top3": 1,
+     "veces_top10": 1,
      "instituciones": [],
      "intencion": "fuera_uy"
     },
@@ -486,6 +544,30 @@
      ],
      "relevancia_max": 560,
      "apariciones": 1,
+     "pos_promedio": 3.0,
+     "pos_mejor": 3,
+     "veces_top3": 1,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "licenciatura en negocios digitales uca",
+     "semillas": [
+      "licenciatura en negocios digitales u"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 1,
+     "pos_promedio": 6.0,
+     "pos_mejor": 6,
+     "veces_top3": 0,
+     "veces_top10": 1,
      "instituciones": [],
      "intencion": "fuera_uy"
     },
@@ -502,6 +584,30 @@
      ],
      "relevancia_max": 556,
      "apariciones": 1,
+     "pos_promedio": 7.0,
+     "pos_mejor": 7,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "fuera_uy"
+    },
+    {
+     "texto": "licenciatura en negocios digitales unam",
+     "semillas": [
+      "licenciatura en negocios digitales u"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "pos_promedio": 7.0,
+     "pos_mejor": 7,
+     "veces_top3": 0,
+     "veces_top10": 1,
      "instituciones": [],
      "intencion": "fuera_uy"
     },
@@ -518,6 +624,10 @@
      ],
      "relevancia_max": 554,
      "apariciones": 1,
+     "pos_promedio": 11.0,
+     "pos_mejor": 11,
+     "veces_top3": 0,
+     "veces_top10": 0,
      "instituciones": [],
      "intencion": "fuera_uy"
     }
@@ -531,6 +641,8 @@
    "que_es": "La frase habla de un negocio propio o de ganar dinero, no de estudiar. Si este grupo pesa mucho, el tema no se entiende como carrera.",
    "total": 1,
    "pct": 1.0,
+   "apariciones_total": 2,
+   "veces_top3_total": 0,
    "sugerencias": [
     {
      "texto": "licenciatura en negocios digitales emprendimiento e innovación",
@@ -546,6 +658,10 @@
      ],
      "relevancia_max": 561,
      "apariciones": 2,
+     "pos_promedio": 5.0,
+     "pos_mejor": 4,
+     "veces_top3": 0,
+     "veces_top10": 2,
      "instituciones": [],
      "intencion": "emprender"
     }
@@ -559,6 +675,8 @@
    "que_es": "Cómo pagarla con ayuda: becas, descuentos, financiación.",
    "total": 0,
    "pct": 0.0,
+   "apariciones_total": 0,
+   "veces_top3_total": 0,
    "sugerencias": []
   },
   {
@@ -569,6 +687,8 @@
    "que_es": "Cuánto cuesta: precio, cuota, gratis o paga.",
    "total": 2,
    "pct": 1.9,
+   "apariciones_total": 5,
+   "veces_top3_total": 3,
    "sugerencias": [
     {
      "texto": "licenciatura en negocios digitales universidad publica",
@@ -586,6 +706,10 @@
      ],
      "relevancia_max": 1251,
      "apariciones": 3,
+     "pos_promedio": 5.0,
+     "pos_mejor": 2,
+     "veces_top3": 2,
+     "veces_top10": 2,
      "instituciones": [],
      "intencion": "costo"
     },
@@ -604,6 +728,10 @@
      ],
      "relevancia_max": 1250,
      "apariciones": 2,
+     "pos_promedio": 3.0,
+     "pos_mejor": 1,
+     "veces_top3": 1,
+     "veces_top10": 2,
      "instituciones": [],
      "intencion": "costo"
     }
@@ -617,6 +745,8 @@
    "que_es": "Para qué sirve: trabajo, sueldo, demanda.",
    "total": 3,
    "pct": 2.9,
+   "apariciones_total": 7,
+   "veces_top3_total": 6,
    "sugerencias": [
     {
      "texto": "licenciatura en negocios digitales que hace",
@@ -634,6 +764,10 @@
      ],
      "relevancia_max": 601,
      "apariciones": 3,
+     "pos_promedio": 1.7,
+     "pos_mejor": 1,
+     "veces_top3": 3,
+     "veces_top10": 3,
      "instituciones": [],
      "intencion": "salida"
     },
@@ -651,6 +785,10 @@
      ],
      "relevancia_max": 601,
      "apariciones": 2,
+     "pos_promedio": 2.0,
+     "pos_mejor": 1,
+     "veces_top3": 2,
+     "veces_top10": 2,
      "instituciones": [],
      "intencion": "salida"
     },
@@ -669,6 +807,10 @@
      ],
      "relevancia_max": 601,
      "apariciones": 2,
+     "pos_promedio": 7.5,
+     "pos_mejor": 2,
+     "veces_top3": 1,
+     "veces_top10": 1,
      "instituciones": [],
      "intencion": "salida"
     }
@@ -682,6 +824,8 @@
    "que_es": "Cómo se cursa: a distancia, virtual, semipresencial, horarios.",
    "total": 5,
    "pct": 4.8,
+   "apariciones_total": 13,
+   "veces_top3_total": 5,
    "sugerencias": [
     {
      "texto": "licenciatura en tecnologías de la información y negocios digitales (a distancia",
@@ -701,6 +845,10 @@
      ],
      "relevancia_max": 601,
      "apariciones": 5,
+     "pos_promedio": 6.4,
+     "pos_mejor": 1,
+     "veces_top3": 1,
+     "veces_top10": 4,
      "instituciones": [],
      "intencion": "modalidad"
     },
@@ -720,6 +868,31 @@
      ],
      "relevancia_max": 1250,
      "apariciones": 3,
+     "pos_promedio": 4.3,
+     "pos_mejor": 1,
+     "veces_top3": 1,
+     "veces_top10": 3,
+     "instituciones": [],
+     "intencion": "modalidad"
+    },
+    {
+     "texto": "licenciatura en negocios digitales en linea",
+     "semillas": [
+      "licenciatura en negocios digitales e",
+      "licenciatura en negocios digitales l"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 2,
+     "pos_promedio": 4.0,
+     "pos_mejor": 2,
+     "veces_top3": 1,
+     "veces_top10": 2,
      "instituciones": [],
      "intencion": "modalidad"
     },
@@ -738,23 +911,10 @@
      ],
      "relevancia_max": 601,
      "apariciones": 2,
-     "instituciones": [],
-     "intencion": "modalidad"
-    },
-    {
-     "texto": "licenciatura en negocios digitales en linea",
-     "semillas": [
-      "licenciatura en negocios digitales e",
-      "licenciatura en negocios digitales l"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 600,
-     "apariciones": 2,
+     "pos_promedio": 4.5,
+     "pos_mejor": 2,
+     "veces_top3": 1,
+     "veces_top10": 2,
      "instituciones": [],
      "intencion": "modalidad"
     },
@@ -771,6 +931,10 @@
      ],
      "relevancia_max": 601,
      "apariciones": 1,
+     "pos_promedio": 1.0,
+     "pos_mejor": 1,
+     "veces_top3": 1,
+     "veces_top10": 1,
      "instituciones": [],
      "intencion": "modalidad"
     }
@@ -784,6 +948,8 @@
    "que_es": "Qué se estudia y qué se pide: materias, duración, requisitos, inscripción.",
    "total": 6,
    "pct": 5.7,
+   "apariciones_total": 16,
+   "veces_top3_total": 7,
    "sugerencias": [
     {
      "texto": "licenciatura en mercadotecnia internacional y negocios digitales plan de estudios",
@@ -804,6 +970,10 @@
      ],
      "relevancia_max": 555,
      "apariciones": 6,
+     "pos_promedio": 9.2,
+     "pos_mejor": 3,
+     "veces_top3": 1,
+     "veces_top10": 3,
      "instituciones": [],
      "intencion": "plan"
     },
@@ -823,6 +993,10 @@
      ],
      "relevancia_max": 601,
      "apariciones": 3,
+     "pos_promedio": 3.3,
+     "pos_mejor": 1,
+     "veces_top3": 2,
+     "veces_top10": 3,
      "instituciones": [],
      "intencion": "plan"
     },
@@ -841,6 +1015,10 @@
      ],
      "relevancia_max": 601,
      "apariciones": 3,
+     "pos_promedio": 3.7,
+     "pos_mejor": 1,
+     "veces_top3": 1,
+     "veces_top10": 3,
      "instituciones": [],
      "intencion": "plan"
     },
@@ -858,6 +1036,10 @@
      ],
      "relevancia_max": 600,
      "apariciones": 2,
+     "pos_promedio": 2.0,
+     "pos_mejor": 2,
+     "veces_top3": 2,
+     "veces_top10": 2,
      "instituciones": [],
      "intencion": "plan"
     },
@@ -874,6 +1056,10 @@
      ],
      "relevancia_max": 601,
      "apariciones": 1,
+     "pos_promedio": 1.0,
+     "pos_mejor": 1,
+     "veces_top3": 1,
+     "veces_top10": 1,
      "instituciones": [],
      "intencion": "plan"
     },
@@ -890,6 +1076,10 @@
      ],
      "relevancia_max": 551,
      "apariciones": 1,
+     "pos_promedio": 5.0,
+     "pos_mejor": 5,
+     "veces_top3": 0,
+     "veces_top10": 1,
      "instituciones": [
       "ORT"
      ],
@@ -905,6 +1095,8 @@
    "que_es": "Dudas antes de elegir: mejor opción, opiniones, si vale la pena.",
    "total": 1,
    "pct": 1.0,
+   "apariciones_total": 1,
+   "veces_top3_total": 1,
    "sugerencias": [
     {
      "texto": "licenciatura en negocios digitales opiniones",
@@ -919,6 +1111,10 @@
      ],
      "relevancia_max": 600,
      "apariciones": 1,
+     "pos_promedio": 3.0,
+     "pos_mejor": 3,
+     "veces_top3": 1,
+     "veces_top10": 1,
      "instituciones": [],
      "intencion": "comparar"
     }
@@ -932,6 +1128,8 @@
    "que_es": "Lugar o institución de Uruguay: universidades y ciudades.",
    "total": 13,
    "pct": 12.4,
+   "apariciones_total": 103,
+   "veces_top3_total": 42,
    "sugerencias": [
     {
      "texto": "licenciatura en negocios digitales ort",
@@ -982,6 +1180,10 @@
      ],
      "relevancia_max": 1250,
      "apariciones": 33,
+     "pos_promedio": 3.3,
+     "pos_mejor": 1,
+     "veces_top3": 22,
+     "veces_top10": 33,
      "instituciones": [
       "ORT"
      ],
@@ -1024,6 +1226,10 @@
      ],
      "relevancia_max": 600,
      "apariciones": 23,
+     "pos_promedio": 5.8,
+     "pos_mejor": 2,
+     "veces_top3": 5,
+     "veces_top10": 20,
      "instituciones": [],
      "intencion": "donde"
     },
@@ -1062,6 +1268,10 @@
      ],
      "relevancia_max": 600,
      "apariciones": 20,
+     "pos_promedio": 4.6,
+     "pos_mejor": 2,
+     "veces_top3": 9,
+     "veces_top10": 18,
      "instituciones": [
       "Udelar"
      ],
@@ -1088,6 +1298,10 @@
      ],
      "relevancia_max": 551,
      "apariciones": 8,
+     "pos_promedio": 7.6,
+     "pos_mejor": 5,
+     "veces_top3": 0,
+     "veces_top10": 7,
      "instituciones": [],
      "intencion": "donde"
     },
@@ -1109,24 +1323,10 @@
      ],
      "relevancia_max": 550,
      "apariciones": 4,
-     "instituciones": [],
-     "intencion": "donde"
-    },
-    {
-     "texto": "licenciatura en negocios digitales universidad de palermo",
-     "semillas": [
-      "licenciatura en negocios digitales d",
-      "licenciatura en negocios digitales p",
-      "licenciatura en negocios digitales u"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 559,
-     "apariciones": 3,
+     "pos_promedio": 4.8,
+     "pos_mejor": 3,
+     "veces_top3": 1,
+     "veces_top10": 4,
      "instituciones": [],
      "intencion": "donde"
     },
@@ -1145,9 +1345,35 @@
      ],
      "relevancia_max": 550,
      "apariciones": 3,
+     "pos_promedio": 5.7,
+     "pos_mejor": 4,
+     "veces_top3": 0,
+     "veces_top10": 3,
      "instituciones": [
       "UCU"
      ],
+     "intencion": "donde"
+    },
+    {
+     "texto": "licenciatura en negocios digitales universidad de palermo",
+     "semillas": [
+      "licenciatura en negocios digitales d",
+      "licenciatura en negocios digitales p",
+      "licenciatura en negocios digitales u"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 559,
+     "apariciones": 3,
+     "pos_promedio": 9.0,
+     "pos_mejor": 6,
+     "veces_top3": 0,
+     "veces_top10": 2,
+     "instituciones": [],
      "intencion": "donde"
     },
     {
@@ -1165,6 +1391,10 @@
      ],
      "relevancia_max": 601,
      "apariciones": 2,
+     "pos_promedio": 1.0,
+     "pos_mejor": 1,
+     "veces_top3": 2,
+     "veces_top10": 2,
      "instituciones": [],
      "intencion": "donde"
     },
@@ -1182,6 +1412,10 @@
      ],
      "relevancia_max": 601,
      "apariciones": 2,
+     "pos_promedio": 2.0,
+     "pos_mejor": 1,
+     "veces_top3": 2,
+     "veces_top10": 2,
      "instituciones": [],
      "intencion": "donde"
     },
@@ -1199,25 +1433,11 @@
      ],
      "relevancia_max": 556,
      "apariciones": 2,
+     "pos_promedio": 6.0,
+     "pos_mejor": 4,
+     "veces_top3": 0,
+     "veces_top10": 2,
      "instituciones": [],
-     "intencion": "donde"
-    },
-    {
-     "texto": "licenciatura en negocios digitales um",
-     "semillas": [
-      "licenciatura en negocios digitales u"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 555,
-     "apariciones": 1,
-     "instituciones": [
-      "UM"
-     ],
      "intencion": "donde"
     },
     {
@@ -1233,6 +1453,10 @@
      ],
      "relevancia_max": 553,
      "apariciones": 1,
+     "pos_promedio": 3.0,
+     "pos_mejor": 3,
+     "veces_top3": 1,
+     "veces_top10": 1,
      "instituciones": [],
      "intencion": "donde"
     },
@@ -1249,7 +1473,33 @@
      ],
      "relevancia_max": 551,
      "apariciones": 1,
+     "pos_promedio": 4.0,
+     "pos_mejor": 4,
+     "veces_top3": 0,
+     "veces_top10": 1,
      "instituciones": [],
+     "intencion": "donde"
+    },
+    {
+     "texto": "licenciatura en negocios digitales um",
+     "semillas": [
+      "licenciatura en negocios digitales u"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "pos_promedio": 10.0,
+     "pos_mejor": 10,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [
+      "UM"
+     ],
      "intencion": "donde"
     }
    ]
@@ -1262,6 +1512,8 @@
    "que_es": "Qué nivel buscan: carrera, licenciatura, curso, posgrado.",
    "total": 30,
    "pct": 28.6,
+   "apariciones_total": 87,
+   "veces_top3_total": 21,
    "sugerencias": [
     {
      "texto": "licenciatura en negocios internacionales e integración",
@@ -1303,26 +1555,10 @@
      ],
      "relevancia_max": 600,
      "apariciones": 26,
-     "instituciones": [],
-     "intencion": "formato"
-    },
-    {
-     "texto": "licenciatura en mercadotecnia internacional y negocios digitales modalidad no escolarizada",
-     "semillas": [
-      "licenciatura en negocios digitales e",
-      "licenciatura en negocios digitales i",
-      "licenciatura en negocios digitales m",
-      "licenciatura en negocios digitales n",
-      "licenciatura en negocios digitales y"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 601,
-     "apariciones": 5,
+     "pos_promedio": 4.9,
+     "pos_mejor": 2,
+     "veces_top3": 10,
+     "veces_top10": 24,
      "instituciones": [],
      "intencion": "formato"
     },
@@ -1345,6 +1581,34 @@
      ],
      "relevancia_max": 555,
      "apariciones": 5,
+     "pos_promedio": 7.6,
+     "pos_mejor": 3,
+     "veces_top3": 2,
+     "veces_top10": 3,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "licenciatura en mercadotecnia internacional y negocios digitales modalidad no escolarizada",
+     "semillas": [
+      "licenciatura en negocios digitales e",
+      "licenciatura en negocios digitales i",
+      "licenciatura en negocios digitales m",
+      "licenciatura en negocios digitales n",
+      "licenciatura en negocios digitales y"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 5,
+     "pos_promedio": 10.2,
+     "pos_mejor": 1,
+     "veces_top3": 1,
+     "veces_top10": 2,
      "instituciones": [],
      "intencion": "formato"
     },
@@ -1363,6 +1627,10 @@
      ],
      "relevancia_max": 600,
      "apariciones": 3,
+     "pos_promedio": 6.3,
+     "pos_mejor": 2,
+     "veces_top3": 1,
+     "veces_top10": 3,
      "instituciones": [],
      "intencion": "formato"
     },
@@ -1383,78 +1651,10 @@
      ],
      "relevancia_max": 600,
      "apariciones": 3,
-     "instituciones": [],
-     "intencion": "formato"
-    },
-    {
-     "texto": "licenciatura en comercio electrónico y negocios digitales",
-     "semillas": [
-      "licenciatura en negocios digitales c",
-      "licenciatura en negocios digitales e",
-      "licenciatura en negocios digitales y"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 556,
-     "apariciones": 3,
-     "instituciones": [],
-     "intencion": "formato"
-    },
-    {
-     "texto": "licenciatura en ingles con enfasis en negocios digitales",
-     "semillas": [
-      "licenciatura en negocios digitales c",
-      "licenciatura en negocios digitales e",
-      "licenciatura en negocios digitales i"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 555,
-     "apariciones": 3,
-     "instituciones": [],
-     "intencion": "formato"
-    },
-    {
-     "texto": "licenciatura en administración de empresas y negocios digitales",
-     "semillas": [
-      "licenciatura en negocios digitales a",
-      "licenciatura en negocios digitales e",
-      "licenciatura en negocios digitales y"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 554,
-     "apariciones": 3,
-     "instituciones": [],
-     "intencion": "formato"
-    },
-    {
-     "texto": "licenciatura en management con orientación en negocios digitales",
-     "semillas": [
-      "licenciatura en negocios digitales c",
-      "licenciatura en negocios digitales m",
-      "licenciatura en negocios digitales o"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 554,
-     "apariciones": 3,
+     "pos_promedio": 7.0,
+     "pos_mejor": 2,
+     "veces_top3": 1,
+     "veces_top10": 3,
      "instituciones": [],
      "intencion": "formato"
     },
@@ -1473,6 +1673,140 @@
      ],
      "relevancia_max": 550,
      "apariciones": 3,
+     "pos_promedio": 6.0,
+     "pos_mejor": 5,
+     "veces_top3": 0,
+     "veces_top10": 3,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "licenciatura en comercio electrónico y negocios digitales",
+     "semillas": [
+      "licenciatura en negocios digitales c",
+      "licenciatura en negocios digitales e",
+      "licenciatura en negocios digitales y"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 3,
+     "pos_promedio": 9.0,
+     "pos_mejor": 7,
+     "veces_top3": 0,
+     "veces_top10": 2,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "licenciatura en management con orientación en negocios digitales",
+     "semillas": [
+      "licenciatura en negocios digitales c",
+      "licenciatura en negocios digitales m",
+      "licenciatura en negocios digitales o"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 3,
+     "pos_promedio": 9.0,
+     "pos_mejor": 5,
+     "veces_top3": 0,
+     "veces_top10": 2,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "licenciatura en administración de empresas y negocios digitales",
+     "semillas": [
+      "licenciatura en negocios digitales a",
+      "licenciatura en negocios digitales e",
+      "licenciatura en negocios digitales y"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 554,
+     "apariciones": 3,
+     "pos_promedio": 10.7,
+     "pos_mejor": 9,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "licenciatura en ingles con enfasis en negocios digitales",
+     "semillas": [
+      "licenciatura en negocios digitales c",
+      "licenciatura en negocios digitales e",
+      "licenciatura en negocios digitales i"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 3,
+     "pos_promedio": 11.7,
+     "pos_mejor": 8,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "licenciatura en finanzas y negocios digitales",
+     "semillas": [
+      "licenciatura en negocios digitales f",
+      "licenciatura en negocios digitales y"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 2,
+     "pos_promedio": 2.5,
+     "pos_mejor": 2,
+     "veces_top3": 2,
+     "veces_top10": 2,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "negocios digitales carrera",
+     "semillas": [
+      "licenciatura en negocios digitales carrera",
+      "estudiar licenciatura en negocios digitales"
+     ],
+     "grupos": [
+      "youtube"
+     ],
+     "fuentes": [
+      "youtube"
+     ],
+     "relevancia_max": 551,
+     "apariciones": 2,
+     "pos_promedio": 3.0,
+     "pos_mejor": 3,
+     "veces_top3": 2,
+     "veces_top10": 2,
      "instituciones": [],
      "intencion": "formato"
     },
@@ -1491,23 +1825,10 @@
      ],
      "relevancia_max": 601,
      "apariciones": 2,
-     "instituciones": [],
-     "intencion": "formato"
-    },
-    {
-     "texto": "licenciatura en finanzas y negocios digitales",
-     "semillas": [
-      "licenciatura en negocios digitales f",
-      "licenciatura en negocios digitales y"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 601,
-     "apariciones": 2,
+     "pos_promedio": 3.0,
+     "pos_mejor": 1,
+     "veces_top3": 1,
+     "veces_top10": 2,
      "instituciones": [],
      "intencion": "formato"
     },
@@ -1525,108 +1846,10 @@
      ],
      "relevancia_max": 600,
      "apariciones": 2,
-     "instituciones": [],
-     "intencion": "formato"
-    },
-    {
-     "texto": "licenciatura en negocios y mercados digitales",
-     "semillas": [
-      "licenciatura en negocios digitales m",
-      "licenciatura en negocios digitales y"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 559,
-     "apariciones": 2,
-     "instituciones": [],
-     "intencion": "formato"
-    },
-    {
-     "texto": "licenciatura en negocios y operaciones digitales",
-     "semillas": [
-      "licenciatura en negocios digitales o",
-      "licenciatura en negocios digitales y"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 558,
-     "apariciones": 2,
-     "instituciones": [],
-     "intencion": "formato"
-    },
-    {
-     "texto": "licenciatura en administración de negocios digitales",
-     "semillas": [
-      "licenciatura en negocios digitales a",
-      "licenciatura en negocios digitales d"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 557,
-     "apariciones": 2,
-     "instituciones": [],
-     "intencion": "formato"
-    },
-    {
-     "texto": "licenciatura en inteligencia de negocios digitales",
-     "semillas": [
-      "licenciatura en negocios digitales d",
-      "licenciatura en negocios digitales i"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 557,
-     "apariciones": 2,
-     "instituciones": [],
-     "intencion": "formato"
-    },
-    {
-     "texto": "licenciatura en mercadotecnia internacional y negocios digitales uanl",
-     "semillas": [
-      "licenciatura en negocios digitales i",
-      "licenciatura en negocios digitales m"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 554,
-     "apariciones": 2,
-     "instituciones": [],
-     "intencion": "formato"
-    },
-    {
-     "texto": "negocios digitales carrera",
-     "semillas": [
-      "licenciatura en negocios digitales carrera",
-      "estudiar licenciatura en negocios digitales"
-     ],
-     "grupos": [
-      "youtube"
-     ],
-     "fuentes": [
-      "youtube"
-     ],
-     "relevancia_max": 551,
-     "apariciones": 2,
+     "pos_promedio": 7.0,
+     "pos_mejor": 3,
+     "veces_top3": 1,
+     "veces_top10": 1,
      "instituciones": [],
      "intencion": "formato"
     },
@@ -1644,12 +1867,17 @@
      ],
      "relevancia_max": 550,
      "apariciones": 2,
+     "pos_promedio": 4.5,
+     "pos_mejor": 4,
+     "veces_top3": 0,
+     "veces_top10": 2,
      "instituciones": [],
      "intencion": "formato"
     },
     {
-     "texto": "licenciatura en mercadotecnia y negocios digitales",
+     "texto": "licenciatura en negocios y operaciones digitales",
      "semillas": [
+      "licenciatura en negocios digitales o",
       "licenciatura en negocios digitales y"
      ],
      "grupos": [
@@ -1658,15 +1886,20 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 600,
-     "apariciones": 1,
+     "relevancia_max": 558,
+     "apariciones": 2,
+     "pos_promedio": 4.5,
+     "pos_mejor": 4,
+     "veces_top3": 0,
+     "veces_top10": 2,
      "instituciones": [],
      "intencion": "formato"
     },
     {
-     "texto": "licenciatura en negocios internacionales digitales",
+     "texto": "licenciatura en negocios y mercados digitales",
      "semillas": [
-      "licenciatura en negocios digitales i"
+      "licenciatura en negocios digitales m",
+      "licenciatura en negocios digitales y"
      ],
      "grupos": [
       "alfabeto"
@@ -1674,31 +1907,20 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 561,
-     "apariciones": 1,
+     "relevancia_max": 559,
+     "apariciones": 2,
+     "pos_promedio": 5.0,
+     "pos_mejor": 4,
+     "veces_top3": 0,
+     "veces_top10": 2,
      "instituciones": [],
      "intencion": "formato"
     },
     {
-     "texto": "licenciatura en negocios internacionales digitales umss",
+     "texto": "licenciatura en administración de negocios digitales",
      "semillas": [
-      "licenciatura en negocios digitales i"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 560,
-     "apariciones": 1,
-     "instituciones": [],
-     "intencion": "formato"
-    },
-    {
-     "texto": "licenciatura en management negocios digitales",
-     "semillas": [
-      "licenciatura en negocios digitales m"
+      "licenciatura en negocios digitales a",
+      "licenciatura en negocios digitales d"
      ],
      "grupos": [
       "alfabeto"
@@ -1707,14 +1929,19 @@
       "google"
      ],
      "relevancia_max": 557,
-     "apariciones": 1,
+     "apariciones": 2,
+     "pos_promedio": 9.0,
+     "pos_mejor": 6,
+     "veces_top3": 0,
+     "veces_top10": 1,
      "instituciones": [],
      "intencion": "formato"
     },
     {
-     "texto": "licenciatura en administración de negocios digitales ucasal",
+     "texto": "licenciatura en inteligencia de negocios digitales",
      "semillas": [
-      "licenciatura en negocios digitales a"
+      "licenciatura en negocios digitales d",
+      "licenciatura en negocios digitales i"
      ],
      "grupos": [
       "alfabeto"
@@ -1722,30 +1949,19 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 556,
-     "apariciones": 1,
+     "relevancia_max": 557,
+     "apariciones": 2,
+     "pos_promedio": 9.0,
+     "pos_mejor": 8,
+     "veces_top3": 0,
+     "veces_top10": 2,
      "instituciones": [],
      "intencion": "formato"
     },
     {
-     "texto": "licenciatura en inteligencia en negocios digitales",
+     "texto": "licenciatura en mercadotecnia internacional y negocios digitales uanl",
      "semillas": [
-      "licenciatura en negocios digitales e"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 556,
-     "apariciones": 1,
-     "instituciones": [],
-     "intencion": "formato"
-    },
-    {
-     "texto": "licenciatura en marketing y negocios digitales ugb",
-     "semillas": [
+      "licenciatura en negocios digitales i",
       "licenciatura en negocios digitales m"
      ],
      "grupos": [
@@ -1754,8 +1970,12 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 555,
-     "apariciones": 1,
+     "relevancia_max": 554,
+     "apariciones": 2,
+     "pos_promedio": 10.5,
+     "pos_mejor": 10,
+     "veces_top3": 0,
+     "veces_top10": 1,
      "instituciones": [],
      "intencion": "formato"
     },
@@ -1772,6 +1992,10 @@
      ],
      "relevancia_max": 552,
      "apariciones": 1,
+     "pos_promedio": 4.0,
+     "pos_mejor": 4,
+     "veces_top3": 0,
+     "veces_top10": 1,
      "instituciones": [],
      "intencion": "formato"
     },
@@ -1788,6 +2012,150 @@
      ],
      "relevancia_max": 551,
      "apariciones": 1,
+     "pos_promedio": 4.0,
+     "pos_mejor": 4,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "licenciatura en mercadotecnia y negocios digitales",
+     "semillas": [
+      "licenciatura en negocios digitales y"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 1,
+     "pos_promedio": 4.0,
+     "pos_mejor": 4,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "licenciatura en negocios internacionales digitales",
+     "semillas": [
+      "licenciatura en negocios digitales i"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 561,
+     "apariciones": 1,
+     "pos_promedio": 4.0,
+     "pos_mejor": 4,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "licenciatura en negocios internacionales digitales umss",
+     "semillas": [
+      "licenciatura en negocios digitales i"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 560,
+     "apariciones": 1,
+     "pos_promedio": 5.0,
+     "pos_mejor": 5,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "licenciatura en management negocios digitales",
+     "semillas": [
+      "licenciatura en negocios digitales m"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "pos_promedio": 6.0,
+     "pos_mejor": 6,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "licenciatura en administración de negocios digitales ucasal",
+     "semillas": [
+      "licenciatura en negocios digitales a"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "pos_promedio": 7.0,
+     "pos_mejor": 7,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "licenciatura en marketing y negocios digitales ugb",
+     "semillas": [
+      "licenciatura en negocios digitales m"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "pos_promedio": 8.0,
+     "pos_mejor": 8,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "licenciatura en inteligencia en negocios digitales",
+     "semillas": [
+      "licenciatura en negocios digitales e"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "pos_promedio": 9.0,
+     "pos_mejor": 9,
+     "veces_top3": 0,
+     "veces_top10": 1,
      "instituciones": [],
      "intencion": "formato"
     },
@@ -1804,6 +2172,10 @@
      ],
      "relevancia_max": 551,
      "apariciones": 1,
+     "pos_promedio": 14.0,
+     "pos_mejor": 14,
+     "veces_top3": 0,
+     "veces_top10": 0,
      "instituciones": [],
      "intencion": "formato"
     }
@@ -1817,7 +2189,31 @@
    "que_es": "Con qué otros temas se busca junto: inteligencia artificial, negocios, salud. Sirve para decidir el nombre y el foco de una carrera.",
    "total": 2,
    "pct": 1.9,
+   "apariciones_total": 6,
+   "veces_top3_total": 4,
    "sugerencias": [
+    {
+     "texto": "lic en negocios digitales",
+     "semillas": [
+      "licenciatura en negocios digitales",
+      "licenciatura en negocios digitales carrera",
+      "estudiar licenciatura en negocios digitales"
+     ],
+     "grupos": [
+      "youtube"
+     ],
+     "fuentes": [
+      "youtube"
+     ],
+     "relevancia_max": 600,
+     "apariciones": 3,
+     "pos_promedio": 2.7,
+     "pos_mejor": 2,
+     "veces_top3": 2,
+     "veces_top10": 3,
+     "instituciones": [],
+     "intencion": "temas"
+    },
     {
      "texto": "licenciatura en negocios digitales y marketing",
      "semillas": [
@@ -1834,24 +2230,10 @@
      ],
      "relevancia_max": 1250,
      "apariciones": 3,
-     "instituciones": [],
-     "intencion": "temas"
-    },
-    {
-     "texto": "lic en negocios digitales",
-     "semillas": [
-      "licenciatura en negocios digitales",
-      "licenciatura en negocios digitales carrera",
-      "estudiar licenciatura en negocios digitales"
-     ],
-     "grupos": [
-      "youtube"
-     ],
-     "fuentes": [
-      "youtube"
-     ],
-     "relevancia_max": 600,
-     "apariciones": 3,
+     "pos_promedio": 4.7,
+     "pos_mejor": 2,
+     "veces_top3": 2,
+     "veces_top10": 3,
      "instituciones": [],
      "intencion": "temas"
     }
@@ -1865,6 +2247,8 @@
    "que_es": "Contenido para aprender solo: qué es, libros, herramientas, videos.",
    "total": 4,
    "pct": 3.8,
+   "apariciones_total": 5,
+   "veces_top3_total": 5,
    "sugerencias": [
     {
      "texto": "licenciatura en negocios digitales que es",
@@ -1880,6 +2264,10 @@
      ],
      "relevancia_max": 1250,
      "apariciones": 2,
+     "pos_promedio": 1.5,
+     "pos_mejor": 1,
+     "veces_top3": 2,
+     "veces_top10": 2,
      "instituciones": [],
      "intencion": "aprender"
     },
@@ -1896,6 +2284,10 @@
      ],
      "relevancia_max": 601,
      "apariciones": 1,
+     "pos_promedio": 1.0,
+     "pos_mejor": 1,
+     "veces_top3": 1,
+     "veces_top10": 1,
      "instituciones": [],
      "intencion": "aprender"
     },
@@ -1912,6 +2304,10 @@
      ],
      "relevancia_max": 600,
      "apariciones": 1,
+     "pos_promedio": 2.0,
+     "pos_mejor": 2,
+     "veces_top3": 1,
+     "veces_top10": 1,
      "instituciones": [],
      "intencion": "aprender"
     },
@@ -1928,6 +2324,10 @@
      ],
      "relevancia_max": 557,
      "apariciones": 1,
+     "pos_promedio": 3.0,
+     "pos_mejor": 3,
+     "veces_top3": 1,
+     "veces_top10": 1,
      "instituciones": [],
      "intencion": "aprender"
     }
@@ -1941,6 +2341,8 @@
    "que_es": "No coincide con ninguna regla. Si este grupo crece, falta una regla.",
    "total": 11,
    "pct": 10.5,
+   "apariciones_total": 15,
+   "veces_top3_total": 5,
    "sugerencias": [
     {
      "texto": "licenciatura en negocios digitales y globales",
@@ -1960,6 +2362,10 @@
      ],
      "relevancia_max": 1251,
      "apariciones": 3,
+     "pos_promedio": 1.7,
+     "pos_mejor": 1,
+     "veces_top3": 3,
+     "veces_top10": 3,
      "instituciones": [],
      "intencion": "otros"
     },
@@ -1978,6 +2384,10 @@
      ],
      "relevancia_max": 602,
      "apariciones": 2,
+     "pos_promedio": 8.5,
+     "pos_mejor": 5,
+     "veces_top3": 0,
+     "veces_top10": 1,
      "instituciones": [],
      "intencion": "otros"
     },
@@ -1995,6 +2405,10 @@
      ],
      "relevancia_max": 557,
      "apariciones": 2,
+     "pos_promedio": 10.5,
+     "pos_mejor": 6,
+     "veces_top3": 0,
+     "veces_top10": 1,
      "instituciones": [],
      "intencion": "otros"
     },
@@ -2011,6 +2425,10 @@
      ],
      "relevancia_max": 601,
      "apariciones": 1,
+     "pos_promedio": 1.0,
+     "pos_mejor": 1,
+     "veces_top3": 1,
+     "veces_top10": 1,
      "instituciones": [],
      "intencion": "otros"
     },
@@ -2027,6 +2445,10 @@
      ],
      "relevancia_max": 601,
      "apariciones": 1,
+     "pos_promedio": 1.0,
+     "pos_mejor": 1,
+     "veces_top3": 1,
+     "veces_top10": 1,
      "instituciones": [],
      "intencion": "otros"
     },
@@ -2043,6 +2465,10 @@
      ],
      "relevancia_max": 559,
      "apariciones": 1,
+     "pos_promedio": 4.0,
+     "pos_mejor": 4,
+     "veces_top3": 0,
+     "veces_top10": 1,
      "instituciones": [],
      "intencion": "otros"
     },
@@ -2059,6 +2485,10 @@
      ],
      "relevancia_max": 557,
      "apariciones": 1,
+     "pos_promedio": 8.0,
+     "pos_mejor": 8,
+     "veces_top3": 0,
+     "veces_top10": 1,
      "instituciones": [],
      "intencion": "otros"
     },
@@ -2075,6 +2505,10 @@
      ],
      "relevancia_max": 556,
      "apariciones": 1,
+     "pos_promedio": 9.0,
+     "pos_mejor": 9,
+     "veces_top3": 0,
+     "veces_top10": 1,
      "instituciones": [],
      "intencion": "otros"
     },
@@ -2091,6 +2525,10 @@
      ],
      "relevancia_max": 553,
      "apariciones": 1,
+     "pos_promedio": 12.0,
+     "pos_mejor": 12,
+     "veces_top3": 0,
+     "veces_top10": 0,
      "instituciones": [],
      "intencion": "otros"
     },
@@ -2107,6 +2545,10 @@
      ],
      "relevancia_max": 552,
      "apariciones": 1,
+     "pos_promedio": 13.0,
+     "pos_mejor": 13,
+     "veces_top3": 0,
+     "veces_top10": 0,
      "instituciones": [],
      "intencion": "otros"
     },
@@ -2123,6 +2565,10 @@
      ],
      "relevancia_max": 551,
      "apariciones": 1,
+     "pos_promedio": 14.0,
+     "pos_mejor": 14,
+     "veces_top3": 0,
+     "veces_top10": 0,
      "instituciones": [],
      "intencion": "otros"
     }
@@ -2134,15 +2580,15 @@
   {
    "buscador": "pendiente",
    "consulta": "licenciatura en negocios digitales",
-   "estado": "pendiente",
-   "motivo": "sin fuente automática: leer la página de un buscador con un script no es confiable (probado el 2026-11-16). Falta elegir una API oficial con clave gratuita (PLAN.md, fase F5).",
+   "estado": "rechazado",
+   "motivo": "el buscador no devolvió resultados",
    "resultados": []
   },
   {
    "buscador": "pendiente",
    "consulta": "licenciatura en negocios digitales carrera uruguay",
-   "estado": "pendiente",
-   "motivo": "sin fuente automática: leer la página de un buscador con un script no es confiable (probado el 2026-11-16). Falta elegir una API oficial con clave gratuita (PLAN.md, fase F5).",
+   "estado": "rechazado",
+   "motivo": "el buscador no devolvió resultados",
    "resultados": []
   }
  ],
@@ -2157,6 +2603,8 @@
     "grupo": "preguntas",
     "fuente": "google",
     "texto": "cuanto dura la carrera de marketing digital en uruguay",
+    "pos": 2,
+    "de": 4,
     "relevancia": 600,
     "motivo": "no nombra el tema"
    }
@@ -2168,5 +2616,6 @@
   "bing": "https://www.bing.com/search?cc=UY&setlang=es&q=licenciatura%20en%20negocios%20digitales",
   "duckduckgo": "https://duckduckgo.com/?kl=uy-es&q=licenciatura%20en%20negocios%20digitales",
   "youtube": "https://www.youtube.com/results?search_query=licenciatura%20en%20negocios%20digitales"
- }
+ },
+ "reprocesado_utc": "2026-11-18T12:41:23Z"
 }

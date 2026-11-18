@@ -47,6 +47,33 @@ def actualizar_indice(entrada: dict) -> None:
     RUTA_INDICE.write_text(json.dumps(indice, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
+def armar_consulta(tema, run_id, generado_utc, reglas, registros, rechazadas, top10, resultado) -> dict:
+    """Lo que lee la web. Lo usan la corrida normal y reprocesar.py."""
+    def contar(fuente, solo_ok=False):
+        return sum(1 for r in registros if r["fuente"] == fuente and (not solo_ok or r["http"] == 200))
+
+    q = urllib.parse.quote(tema)
+    return {
+        "tema": tema, "slug": slug(tema), "run_id": run_id, "generado_utc": generado_utc,
+        "pais": reglas["pais"]["nombre"], "reglas_version": reglas["version"],
+        "fuentes": [
+            {"id": "google", "nombre": "Autocompletar de Google", "pedidos": contar("google"), "con_respuesta": contar("google", True)},
+            {"id": "youtube", "nombre": "Autocompletar de YouTube", "pedidos": contar("youtube"), "con_respuesta": contar("youtube", True)},
+        ],
+        **resultado,
+        "top10": top10,
+        "rechazadas": {"total": len(rechazadas), "por_motivo": _contar(r["motivo"] for r in rechazadas),
+                       "ejemplos": rechazadas[:25]},
+        "enlaces": {
+            "trends": f"https://trends.google.com/trends/explore?geo=UY&date=today%205-y&q={q}",
+            "google": f"https://www.google.com/search?gl=uy&hl=es&q={q}",
+            "bing": f"https://www.bing.com/search?cc=UY&setlang=es&q={q}",
+            "duckduckgo": f"https://duckduckgo.com/?kl=uy-es&q={q}",
+            "youtube": f"https://www.youtube.com/results?search_query={q}",
+        },
+    }
+
+
 def correr(tema_crudo: str) -> dict:
     tema = limpiar_tema(tema_crudo)
     reglas = cargar_reglas()
@@ -69,32 +96,8 @@ def correr(tema_crudo: str) -> dict:
 
     resultado = transformar.transformar(validas, top10, tema, reglas)
 
-    q = urllib.parse.quote(tema)
-    consulta = {
-        "tema": tema, "slug": slug(tema), "run_id": run_id,
-        "generado_utc": ahora.strftime("%Y-%m-%dT%H:%M:%SZ"),
-        "pais": reglas["pais"]["nombre"], "reglas_version": reglas["version"],
-        "fuentes": [
-            {"id": "google", "nombre": "Autocompletar de Google", "pedidos": sum(1 for r in registros if r["fuente"] == "google"),
-             "con_respuesta": sum(1 for r in registros if r["fuente"] == "google" and r["http"] == 200)},
-            {"id": "youtube", "nombre": "Autocompletar de YouTube", "pedidos": sum(1 for r in registros if r["fuente"] == "youtube"),
-             "con_respuesta": sum(1 for r in registros if r["fuente"] == "youtube" and r["http"] == 200)},
-        ],
-        **resultado,
-        "top10": top10,
-        "rechazadas": {
-            "total": len(rechazadas),
-            "por_motivo": _contar(r["motivo"] for r in rechazadas),
-            "ejemplos": rechazadas[:25],
-        },
-        "enlaces": {
-            "trends": f"https://trends.google.com/trends/explore?geo=UY&date=today%205-y&q={q}",
-            "google": f"https://www.google.com/search?gl=uy&hl=es&q={q}",
-            "bing": f"https://www.bing.com/search?cc=UY&setlang=es&q={q}",
-            "duckduckgo": f"https://duckduckgo.com/?kl=uy-es&q={q}",
-            "youtube": f"https://www.youtube.com/results?search_query={q}",
-        },
-    }
+    consulta = armar_consulta(tema, run_id, ahora.strftime("%Y-%m-%dT%H:%M:%SZ"), reglas, registros,
+                              rechazadas, top10, resultado)
     DIR_CONSULTAS.mkdir(parents=True, exist_ok=True)
     ruta = DIR_CONSULTAS / f"{consulta['slug']}.json"
     ruta.write_text(json.dumps(consulta, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")

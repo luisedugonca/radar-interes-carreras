@@ -207,5 +207,14 @@
   "top10_validas": 0
  },
  "crudo": "data/raw/20261116T222501Z_analisis-de-datos",
- "salida": "docs/data/consultas/analisis-de-datos.json"
+ "salida": "docs/data/consultas/analisis-de-datos.json",
+ "reprocesos": [
+  {
+   "utc": "2026-11-18T12:41:22Z",
+   "reglas_version": "2026-11-16b",
+   "motivo": "se agrega el puesto de cada frase en la lista de sugerencias",
+   "sugerencias_unicas_antes": 499,
+   "sugerencias_unicas_despues": 499
+  }
+ ]
 }

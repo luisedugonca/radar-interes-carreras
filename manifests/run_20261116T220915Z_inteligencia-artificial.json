@@ -207,5 +207,14 @@
   "top10_validas": 0
  },
  "crudo": "data/raw/20261116T220915Z_inteligencia-artificial",
- "salida": "docs/data/consultas/inteligencia-artificial.json"
+ "salida": "docs/data/consultas/inteligencia-artificial.json",
+ "reprocesos": [
+  {
+   "utc": "2026-11-18T12:41:23Z",
+   "reglas_version": "2026-11-16b",
+   "motivo": "se agrega el puesto de cada frase en la lista de sugerencias",
+   "sugerencias_unicas_antes": 584,
+   "sugerencias_unicas_despues": 584
+  }
+ ]
 }

@@ -54,6 +54,20 @@ class Sugerencias(unittest.TestCase):
         self.assertEqual(donde["sugerencias"][0]["apariciones"], 3)
         self.assertEqual(donde["sugerencias"][0]["instituciones"], ["UCU"])
 
+    def test_puesto_en_la_lista_de_sugerencias(self):
+        regs = [registro("ciencia de datos", ["ciencia de datos ucu", "ciencia de datos udelar"]),
+                registro("ciencia de datos u", ["ciencia de datos udelar", "x", "ciencia de datos ucu"] + [f"ciencia de datos u{i}" for i in range(9)] + ["ciencia de datos ucu"])]
+        validas, _ = validar.validar_sugerencias(regs, "ciencia de datos", REGLAS)
+        r = transformar.transformar(validas, [], "ciencia de datos", REGLAS)
+        frases = {s["texto"]: s for i in r["intenciones"] for s in i["sugerencias"]}
+        ucu, udelar = frases["ciencia de datos ucu"], frases["ciencia de datos udelar"]
+        # ucu: puesto 1 en la primera consulta y 3 en la segunda (la repetición en el puesto 13 no cuenta)
+        self.assertEqual((ucu["apariciones"], ucu["pos_promedio"], ucu["pos_mejor"], ucu["veces_top3"], ucu["veces_top10"]), (2, 2.0, 1, 2, 2))
+        self.assertEqual((udelar["pos_promedio"], udelar["veces_top3"]), (1.5, 2))
+        donde = next(i for i in r["intenciones"] if i["id"] == "donde")
+        self.assertEqual([s["texto"] for s in donde["sugerencias"][:2]], ["ciencia de datos udelar", "ciencia de datos ucu"])
+        self.assertEqual(donde["apariciones_total"], sum(s["apariciones"] for s in donde["sugerencias"]))
+
     def test_clasifica_por_lo_que_agrega_al_tema(self):
         casos = {"ciencia de datos becas": "becas", "ciencia de datos cuanto cuesta": "costo",
                  "ciencia de datos salida laboral": "salida", "ciencia de datos a distancia": "modalidad",

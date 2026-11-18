@@ -10,6 +10,8 @@
 
 | 2026-11-16 | Publicar el repo y la web (F4) + estructura para Claude, ChatGPT y Gemini | GRANDE | Sin Gate: **excepción** (pedido textual del PO; el control previo a publicar fue el criterio C8 del Gate y un `git grep` repetido antes del cambio) | Hecho con OK del PO | — |
 
+| 2026-11-18 | Panel derecho del mapa: indicadores por rama, carrusel de términos ordenados por datos, puesto en la lista de sugerencias | CHICO (pedido textual del PO; no cambia fuentes ni reglas de clasificación) | Autochequeo: 13 pruebas OK; reproceso desde el crudo deja las mismas frases en los 10 temas; probado en Chrome (guardado, en vivo y a 500 px) | Pendiente de que el PO lo mire | — |
+
 ## Fuentes probadas (2026-11-16)
 
 | Fuente | Cómo se probó | Resultado | Decisión |

@@ -42,8 +42,8 @@
    "ninguno": 11
   },
   "top10_validos": 0,
-  "top10_rechazados": 0,
-  "top10_pendientes": 2
+  "top10_rechazados": 2,
+  "top10_pendientes": 0
  },
  "intenciones": [
   {
@@ -54,6 +54,8 @@
    "que_es": "La sugerencia nombra un país o una universidad de otro país. No es demanda local.",
    "total": 2,
    "pct": 4.7,
+   "apariciones_total": 2,
+   "veces_top3_total": 0,
    "sugerencias": [
     {
      "texto": "ciencia de datos para economía y negocios unc",
@@ -68,6 +70,10 @@
      ],
      "relevancia_max": 554,
      "apariciones": 1,
+     "pos_promedio": 5.0,
+     "pos_mejor": 5,
+     "veces_top3": 0,
+     "veces_top10": 1,
      "instituciones": [],
      "intencion": "fuera_uy"
     },
@@ -84,6 +90,10 @@
      ],
      "relevancia_max": 553,
      "apariciones": 1,
+     "pos_promedio": 6.0,
+     "pos_mejor": 6,
+     "veces_top3": 0,
+     "veces_top10": 1,
      "instituciones": [],
      "intencion": "fuera_uy"
     }
@@ -97,6 +107,8 @@
    "que_es": "La frase habla de un negocio propio o de ganar dinero, no de estudiar. Si este grupo pesa mucho, el tema no se entiende como carrera.",
    "total": 0,
    "pct": 0.0,
+   "apariciones_total": 0,
+   "veces_top3_total": 0,
    "sugerencias": []
   },
   {
@@ -107,6 +119,8 @@
    "que_es": "Cómo pagarla con ayuda: becas, descuentos, financiación.",
    "total": 0,
    "pct": 0.0,
+   "apariciones_total": 0,
+   "veces_top3_total": 0,
    "sugerencias": []
   },
   {
@@ -117,6 +131,8 @@
    "que_es": "Cuánto cuesta: precio, cuota, gratis o paga.",
    "total": 0,
    "pct": 0.0,
+   "apariciones_total": 0,
+   "veces_top3_total": 0,
    "sugerencias": []
   },
   {
@@ -127,6 +143,8 @@
    "que_es": "Para qué sirve: trabajo, sueldo, demanda.",
    "total": 0,
    "pct": 0.0,
+   "apariciones_total": 0,
+   "veces_top3_total": 0,
    "sugerencias": []
   },
   {
@@ -137,6 +155,8 @@
    "que_es": "Cómo se cursa: a distancia, virtual, semipresencial, horarios.",
    "total": 0,
    "pct": 0.0,
+   "apariciones_total": 0,
+   "veces_top3_total": 0,
    "sugerencias": []
   },
   {
@@ -147,6 +167,8 @@
    "que_es": "Qué se estudia y qué se pide: materias, duración, requisitos, inscripción.",
    "total": 1,
    "pct": 2.3,
+   "apariciones_total": 1,
+   "veces_top3_total": 0,
    "sugerencias": [
     {
      "texto": "cuanto dura los datos ilimitados",
@@ -161,6 +183,10 @@
      ],
      "relevancia_max": 551,
      "apariciones": 1,
+     "pos_promedio": 4.0,
+     "pos_mejor": 4,
+     "veces_top3": 0,
+     "veces_top10": 1,
      "instituciones": [],
      "intencion": "plan"
     }
@@ -174,6 +200,8 @@
    "que_es": "Dudas antes de elegir: mejor opción, opiniones, si vale la pena.",
    "total": 1,
    "pct": 2.3,
+   "apariciones_total": 1,
+   "veces_top3_total": 1,
    "sugerencias": [
     {
      "texto": "opiniones de negocios inmobiliarios",
@@ -188,6 +216,10 @@
      ],
      "relevancia_max": 551,
      "apariciones": 1,
+     "pos_promedio": 3.0,
+     "pos_mejor": 3,
+     "veces_top3": 1,
+     "veces_top10": 1,
      "instituciones": [],
      "intencion": "comparar"
     }
@@ -201,6 +233,8 @@
    "que_es": "Lugar o institución de Uruguay: universidades y ciudades.",
    "total": 5,
    "pct": 11.6,
+   "apariciones_total": 40,
+   "veces_top3_total": 21,
    "sugerencias": [
     {
      "texto": "datos y negocios ucu",
@@ -240,6 +274,10 @@
      ],
      "relevancia_max": 1250,
      "apariciones": 22,
+     "pos_promedio": 3.1,
+     "pos_mejor": 1,
+     "veces_top3": 17,
+     "veces_top10": 22,
      "instituciones": [
       "UCU"
      ],
@@ -270,6 +308,10 @@
      ],
      "relevancia_max": 551,
      "apariciones": 12,
+     "pos_promedio": 5.0,
+     "pos_mejor": 4,
+     "veces_top3": 0,
+     "veces_top10": 12,
      "instituciones": [],
      "intencion": "donde"
     },
@@ -290,6 +332,10 @@
      ],
      "relevancia_max": 600,
      "apariciones": 4,
+     "pos_promedio": 4.8,
+     "pos_mejor": 3,
+     "veces_top3": 3,
+     "veces_top10": 4,
      "instituciones": [
       "UCU"
      ],
@@ -308,6 +354,10 @@
      ],
      "relevancia_max": 551,
      "apariciones": 1,
+     "pos_promedio": 3.0,
+     "pos_mejor": 3,
+     "veces_top3": 1,
+     "veces_top10": 1,
      "instituciones": [],
      "intencion": "donde"
     },
@@ -324,6 +374,10 @@
      ],
      "relevancia_max": 550,
      "apariciones": 1,
+     "pos_promedio": 4.0,
+     "pos_mejor": 4,
+     "veces_top3": 0,
+     "veces_top10": 1,
      "instituciones": [
       "UM"
      ],
@@ -339,6 +393,8 @@
    "que_es": "Qué nivel buscan: carrera, licenciatura, curso, posgrado.",
    "total": 5,
    "pct": 11.6,
+   "apariciones_total": 7,
+   "veces_top3_total": 5,
    "sugerencias": [
     {
      "texto": "licenciatura en datos y negocios",
@@ -356,6 +412,10 @@
      ],
      "relevancia_max": 601,
      "apariciones": 3,
+     "pos_promedio": 2.0,
+     "pos_mejor": 2,
+     "veces_top3": 3,
+     "veces_top10": 3,
      "instituciones": [],
      "intencion": "formato"
     },
@@ -372,38 +432,10 @@
      ],
      "relevancia_max": 601,
      "apariciones": 1,
-     "instituciones": [],
-     "intencion": "formato"
-    },
-    {
-     "texto": "negocios y ciencias de datos carrera",
-     "semillas": [
-      "datos y negocios c"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 556,
-     "apariciones": 1,
-     "instituciones": [],
-     "intencion": "formato"
-    },
-    {
-     "texto": "grado en análisis de datos y de negocios",
-     "semillas": [
-      "datos y negocios d"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 553,
-     "apariciones": 1,
+     "pos_promedio": 1.0,
+     "pos_mejor": 1,
+     "veces_top3": 1,
+     "veces_top10": 1,
      "instituciones": [],
      "intencion": "formato"
     },
@@ -420,6 +452,50 @@
      ],
      "relevancia_max": 551,
      "apariciones": 1,
+     "pos_promedio": 3.0,
+     "pos_mejor": 3,
+     "veces_top3": 1,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "negocios y ciencias de datos carrera",
+     "semillas": [
+      "datos y negocios c"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 556,
+     "apariciones": 1,
+     "pos_promedio": 4.0,
+     "pos_mejor": 4,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "formato"
+    },
+    {
+     "texto": "grado en análisis de datos y de negocios",
+     "semillas": [
+      "datos y negocios d"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 553,
+     "apariciones": 1,
+     "pos_promedio": 11.0,
+     "pos_mejor": 11,
+     "veces_top3": 0,
+     "veces_top10": 0,
      "instituciones": [],
      "intencion": "formato"
     }
@@ -433,27 +509,9 @@
    "que_es": "Con qué otros temas se busca junto: inteligencia artificial, negocios, salud. Sirve para decidir el nombre y el foco de una carrera.",
    "total": 20,
    "pct": 46.5,
+   "apariciones_total": 31,
+   "veces_top3_total": 14,
    "sugerencias": [
-    {
-     "texto": "datos y analitica de negocios esic",
-     "semillas": [
-      "datos y negocios",
-      "datos y negocios a",
-      "datos y negocios d",
-      "datos y negocios e"
-     ],
-     "grupos": [
-      "base",
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 601,
-     "apariciones": 4,
-     "instituciones": [],
-     "intencion": "temas"
-    },
     {
      "texto": "datos y analitica de negocios loyola",
      "semillas": [
@@ -471,6 +529,34 @@
      ],
      "relevancia_max": 601,
      "apariciones": 4,
+     "pos_promedio": 3.5,
+     "pos_mejor": 1,
+     "veces_top3": 2,
+     "veces_top10": 4,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "datos y analitica de negocios esic",
+     "semillas": [
+      "datos y negocios",
+      "datos y negocios a",
+      "datos y negocios d",
+      "datos y negocios e"
+     ],
+     "grupos": [
+      "base",
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 4,
+     "pos_promedio": 4.2,
+     "pos_mejor": 1,
+     "veces_top3": 2,
+     "veces_top10": 4,
      "instituciones": [],
      "intencion": "temas"
     },
@@ -490,6 +576,10 @@
      ],
      "relevancia_max": 601,
      "apariciones": 3,
+     "pos_promedio": 1.7,
+     "pos_mejor": 1,
+     "veces_top3": 3,
+     "veces_top10": 3,
      "instituciones": [],
      "intencion": "temas"
     },
@@ -507,6 +597,10 @@
      ],
      "relevancia_max": 601,
      "apariciones": 2,
+     "pos_promedio": 3.0,
+     "pos_mejor": 1,
+     "veces_top3": 1,
+     "veces_top10": 2,
      "instituciones": [],
      "intencion": "temas"
     },
@@ -524,6 +618,10 @@
      ],
      "relevancia_max": 555,
      "apariciones": 2,
+     "pos_promedio": 8.0,
+     "pos_mejor": 4,
+     "veces_top3": 0,
+     "veces_top10": 1,
      "instituciones": [],
      "intencion": "temas"
     },
@@ -541,6 +639,10 @@
      ],
      "relevancia_max": 554,
      "apariciones": 2,
+     "pos_promedio": 9.0,
+     "pos_mejor": 5,
+     "veces_top3": 0,
+     "veces_top10": 1,
      "instituciones": [],
      "intencion": "temas"
     },
@@ -557,6 +659,10 @@
      ],
      "relevancia_max": 601,
      "apariciones": 1,
+     "pos_promedio": 1.0,
+     "pos_mejor": 1,
+     "veces_top3": 1,
+     "veces_top10": 1,
      "instituciones": [],
      "intencion": "temas"
     },
@@ -573,6 +679,10 @@
      ],
      "relevancia_max": 601,
      "apariciones": 1,
+     "pos_promedio": 1.0,
+     "pos_mejor": 1,
+     "veces_top3": 1,
+     "veces_top10": 1,
      "instituciones": [],
      "intencion": "temas"
     },
@@ -589,6 +699,10 @@
      ],
      "relevancia_max": 601,
      "apariciones": 1,
+     "pos_promedio": 1.0,
+     "pos_mejor": 1,
+     "veces_top3": 1,
+     "veces_top10": 1,
      "instituciones": [],
      "intencion": "temas"
     },
@@ -605,6 +719,10 @@
      ],
      "relevancia_max": 600,
      "apariciones": 1,
+     "pos_promedio": 2.0,
+     "pos_mejor": 2,
+     "veces_top3": 1,
+     "veces_top10": 1,
      "instituciones": [],
      "intencion": "temas"
     },
@@ -621,54 +739,10 @@
      ],
      "relevancia_max": 600,
      "apariciones": 1,
-     "instituciones": [],
-     "intencion": "temas"
-    },
-    {
-     "texto": "datos de negocios",
-     "semillas": [
-      "datos y negocios d"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 560,
-     "apariciones": 1,
-     "instituciones": [],
-     "intencion": "temas"
-    },
-    {
-     "texto": "analisis de datos y de negocios ufv",
-     "semillas": [
-      "datos y negocios d"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 558,
-     "apariciones": 1,
-     "instituciones": [],
-     "intencion": "temas"
-    },
-    {
-     "texto": "analisis de datos y de negocios",
-     "semillas": [
-      "datos y negocios d"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 557,
-     "apariciones": 1,
+     "pos_promedio": 2.0,
+     "pos_mejor": 2,
+     "veces_top3": 1,
+     "veces_top10": 1,
      "instituciones": [],
      "intencion": "temas"
     },
@@ -685,13 +759,17 @@
      ],
      "relevancia_max": 557,
      "apariciones": 1,
+     "pos_promedio": 3.0,
+     "pos_mejor": 3,
+     "veces_top3": 1,
+     "veces_top10": 1,
      "instituciones": [],
      "intencion": "temas"
     },
     {
-     "texto": "negocios y ciencia de datos epc",
+     "texto": "datos de negocios",
      "semillas": [
-      "datos y negocios c"
+      "datos y negocios d"
      ],
      "grupos": [
       "alfabeto"
@@ -699,24 +777,12 @@
      "fuentes": [
       "google"
      ],
-     "relevancia_max": 555,
+     "relevancia_max": 560,
      "apariciones": 1,
-     "instituciones": [],
-     "intencion": "temas"
-    },
-    {
-     "texto": "negocios y datos udd",
-     "semillas": [
-      "datos y negocios u"
-     ],
-     "grupos": [
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 555,
-     "apariciones": 1,
+     "pos_promedio": 4.0,
+     "pos_mejor": 4,
+     "veces_top3": 0,
+     "veces_top10": 1,
      "instituciones": [],
      "intencion": "temas"
     },
@@ -733,6 +799,70 @@
      ],
      "relevancia_max": 554,
      "apariciones": 1,
+     "pos_promedio": 4.0,
+     "pos_mejor": 4,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "negocios y datos udd",
+     "semillas": [
+      "datos y negocios u"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "pos_promedio": 4.0,
+     "pos_mejor": 4,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "negocios y ciencia de datos epc",
+     "semillas": [
+      "datos y negocios c"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 555,
+     "apariciones": 1,
+     "pos_promedio": 5.0,
+     "pos_mejor": 5,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "analisis de datos y de negocios ufv",
+     "semillas": [
+      "datos y negocios d"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 558,
+     "apariciones": 1,
+     "pos_promedio": 6.0,
+     "pos_mejor": 6,
+     "veces_top3": 0,
+     "veces_top10": 1,
      "instituciones": [],
      "intencion": "temas"
     },
@@ -749,6 +879,30 @@
      ],
      "relevancia_max": 554,
      "apariciones": 1,
+     "pos_promedio": 6.0,
+     "pos_mejor": 6,
+     "veces_top3": 0,
+     "veces_top10": 1,
+     "instituciones": [],
+     "intencion": "temas"
+    },
+    {
+     "texto": "analisis de datos y de negocios",
+     "semillas": [
+      "datos y negocios d"
+     ],
+     "grupos": [
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 557,
+     "apariciones": 1,
+     "pos_promedio": 7.0,
+     "pos_mejor": 7,
+     "veces_top3": 0,
+     "veces_top10": 1,
      "instituciones": [],
      "intencion": "temas"
     },
@@ -765,6 +919,10 @@
      ],
      "relevancia_max": 550,
      "apariciones": 1,
+     "pos_promedio": 14.0,
+     "pos_mejor": 14,
+     "veces_top3": 0,
+     "veces_top10": 0,
      "instituciones": [],
      "intencion": "temas"
     }
@@ -778,6 +936,8 @@
    "que_es": "Contenido para aprender solo: qué es, libros, herramientas, videos.",
    "total": 0,
    "pct": 0.0,
+   "apariciones_total": 0,
+   "veces_top3_total": 0,
    "sugerencias": []
   },
   {
@@ -788,6 +948,8 @@
    "que_es": "No coincide con ninguna regla. Si este grupo crece, falta una regla.",
    "total": 9,
    "pct": 20.9,
+   "apariciones_total": 38,
+   "veces_top3_total": 14,
    "sugerencias": [
     {
      "texto": "datos en la empresa",
@@ -818,6 +980,10 @@
      ],
      "relevancia_max": 551,
      "apariciones": 16,
+     "pos_promedio": 4.8,
+     "pos_mejor": 3,
+     "veces_top3": 7,
+     "veces_top10": 16,
      "instituciones": [],
      "intencion": "otros"
     },
@@ -841,6 +1007,10 @@
      ],
      "relevancia_max": 551,
      "apariciones": 6,
+     "pos_promedio": 6.2,
+     "pos_mejor": 3,
+     "veces_top3": 2,
+     "veces_top10": 6,
      "instituciones": [],
      "intencion": "otros"
     },
@@ -860,25 +1030,10 @@
      ],
      "relevancia_max": 601,
      "apariciones": 3,
-     "instituciones": [],
-     "intencion": "otros"
-    },
-    {
-     "texto": "gerencia de datos y negocios",
-     "semillas": [
-      "datos y negocios",
-      "datos y negocios d",
-      "datos y negocios g"
-     ],
-     "grupos": [
-      "base",
-      "alfabeto"
-     ],
-     "fuentes": [
-      "google"
-     ],
-     "relevancia_max": 601,
-     "apariciones": 3,
+     "pos_promedio": 2.7,
+     "pos_mejor": 2,
+     "veces_top3": 2,
+     "veces_top10": 3,
      "instituciones": [],
      "intencion": "otros"
     },
@@ -898,6 +1053,33 @@
      ],
      "relevancia_max": 600,
      "apariciones": 3,
+     "pos_promedio": 5.3,
+     "pos_mejor": 2,
+     "veces_top3": 1,
+     "veces_top10": 3,
+     "instituciones": [],
+     "intencion": "otros"
+    },
+    {
+     "texto": "gerencia de datos y negocios",
+     "semillas": [
+      "datos y negocios",
+      "datos y negocios d",
+      "datos y negocios g"
+     ],
+     "grupos": [
+      "base",
+      "alfabeto"
+     ],
+     "fuentes": [
+      "google"
+     ],
+     "relevancia_max": 601,
+     "apariciones": 3,
+     "pos_promedio": 7.3,
+     "pos_mejor": 1,
+     "veces_top3": 1,
+     "veces_top10": 2,
      "instituciones": [],
      "intencion": "otros"
     },
@@ -917,6 +1099,10 @@
      ],
      "relevancia_max": 555,
      "apariciones": 3,
+     "pos_promedio": 8.0,
+     "pos_mejor": 6,
+     "veces_top3": 0,
+     "veces_top10": 3,
      "instituciones": [],
      "intencion": "otros"
     },
@@ -935,6 +1121,10 @@
      ],
      "relevancia_max": 557,
      "apariciones": 2,
+     "pos_promedio": 4.0,
+     "pos_mejor": 3,
+     "veces_top3": 1,
+     "veces_top10": 2,
      "instituciones": [],
      "intencion": "otros"
     },
@@ -951,6 +1141,10 @@
      ],
      "relevancia_max": 550,
      "apariciones": 1,
+     "pos_promedio": 4.0,
+     "pos_mejor": 4,
+     "veces_top3": 0,
+     "veces_top10": 1,
      "instituciones": [],
      "intencion": "otros"
     },
@@ -967,6 +1161,10 @@
      ],
      "relevancia_max": 550,
      "apariciones": 1,
+     "pos_promedio": 9.0,
+     "pos_mejor": 9,
+     "veces_top3": 0,
+     "veces_top10": 1,
      "instituciones": [],
      "intencion": "otros"
     }
@@ -978,15 +1176,15 @@
   {
    "buscador": "pendiente",
    "consulta": "datos y negocios",
-   "estado": "pendiente",
-   "motivo": "sin fuente automática: leer la página de un buscador con un script no es confiable (probado el 2026-11-16). Falta elegir una API oficial con clave gratuita (PLAN.md, fase F5).",
+   "estado": "rechazado",
+   "motivo": "el buscador no devolvió resultados",
    "resultados": []
   },
   {
    "buscador": "pendiente",
    "consulta": "datos y negocios carrera uruguay",
-   "estado": "pendiente",
-   "motivo": "sin fuente automática: leer la página de un buscador con un script no es confiable (probado el 2026-11-16). Falta elegir una API oficial con clave gratuita (PLAN.md, fase F5).",
+   "estado": "rechazado",
+   "motivo": "el buscador no devolvió resultados",
    "resultados": []
   }
  ],
@@ -1001,6 +1199,8 @@
     "grupo": "preguntas",
     "fuente": "google",
     "texto": "cuánto dura el mba",
+    "pos": 1,
+    "de": 5,
     "relevancia": 601,
     "motivo": "no nombra el tema"
    },
@@ -1009,6 +1209,8 @@
     "grupo": "preguntas",
     "fuente": "google",
     "texto": "cuánto dura un contrato de antel",
+    "pos": 2,
+    "de": 5,
     "relevancia": 600,
     "motivo": "no nombra el tema"
    },
@@ -1017,6 +1219,8 @@
     "grupo": "alfabeto",
     "fuente": "google",
     "texto": "qué es un negocio data driven",
+    "pos": 4,
+    "de": 4,
     "relevancia": 550,
     "motivo": "no nombra el tema"
    },
@@ -1025,6 +1229,8 @@
     "grupo": "youtube",
     "fuente": "youtube",
     "texto": "estudiar ventas",
+    "pos": 1,
+    "de": 4,
     "relevancia": 601,
     "motivo": "no nombra el tema"
    },
@@ -1033,6 +1239,8 @@
     "grupo": "youtube",
     "fuente": "youtube",
     "texto": "estudiar o emprender",
+    "pos": 2,
+    "de": 4,
     "relevancia": 600,
     "motivo": "no nombra el tema"
    },
@@ -1041,6 +1249,8 @@
     "grupo": "youtube",
     "fuente": "youtube",
     "texto": "estudiar estadistica",
+    "pos": 4,
+    "de": 4,
     "relevancia": 550,
     "motivo": "no nombra el tema"
    }
@@ -1052,5 +1262,6 @@
   "bing": "https://www.bing.com/search?cc=UY&setlang=es&q=datos%20y%20negocios",
   "duckduckgo": "https://duckduckgo.com/?kl=uy-es&q=datos%20y%20negocios",
   "youtube": "https://www.youtube.com/results?search_query=datos%20y%20negocios"
- }
+ },
+ "reprocesado_utc": "2026-11-18T12:41:23Z"
 }

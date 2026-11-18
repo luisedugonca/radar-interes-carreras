@@ -27,6 +27,15 @@ export function clasificar(textoNorm, reglas) {
   return "otros";
 }
 
+// Igual que resumir_puestos() y orden_frase() en colector/transformar.py
+export function resumirPuestos(p) {
+  if (!p.length) return { pos_promedio: null, pos_mejor: null, veces_top3: 0, veces_top10: 0 };
+  return { pos_promedio: Math.round((10 * p.reduce((a, b) => a + b, 0)) / p.length) / 10, pos_mejor: Math.min(...p),
+    veces_top3: p.filter((x) => x <= 3).length, veces_top10: p.filter((x) => x <= 10).length };
+}
+export const ordenFrase = (a, b) => b.apariciones - a.apariciones || (b.veces_top3 ?? 0) - (a.veces_top3 ?? 0)
+  || (a.pos_promedio ?? 99) - (b.pos_promedio ?? 99) || (a.texto < b.texto ? -1 : a.texto > b.texto ? 1 : 0);
+
 // Autocompletar de Google por JSONP (el servicio no permite fetch desde otra web).
 function jsonp(consulta, pais) {
   return new Promise((resolver) => {
@@ -64,7 +73,7 @@ export async function consultaEnVivo(temaCrudo, reglas, alAvanzar) {
       if (!valida) { rechazadas++; continue; }
       if (norm === temaNorm) continue;
       const g = grupos.get(norm) ?? { texto, semillas: [], fuentes: ["google"] };
-      if (!g.semillas.includes(semilla.consulta)) g.semillas.push(semilla.consulta);
+      if (!g.semillas.includes(semilla.consulta)) { g.semillas.push(semilla.consulta); (g._puestos ??= []).push(i + 1); }
       grupos.set(norm, g);
     }
   }
@@ -74,6 +83,8 @@ export async function consultaEnVivo(temaCrudo, reglas, alAvanzar) {
   for (const [norm, g] of grupos) {
     const resto = norm.replaceAll(temaNorm, " ");
     g.apariciones = g.semillas.length;
+    Object.assign(g, resumirPuestos(g._puestos ?? []));
+    delete g._puestos;
     g.instituciones = reglas.instituciones_uy.filter((i) => new RegExp(i.patron).test(resto)).map((i) => i.id);
     g.instituciones.forEach((id) => { inst[id] = (inst[id] ?? 0) + 1; });
     porIntencion[clasificar(resto, reglas)].push(g);
@@ -81,10 +92,12 @@ export async function consultaEnVivo(temaCrudo, reglas, alAvanzar) {
   const total = grupos.size;
   const quien = { familia: 0, estudiante: 0, ambos: 0, ninguno: 0 };
   const intenciones = reglas.intenciones.map((r) => {
-    const sugerencias = porIntencion[r.id].sort((a, b) => b.apariciones - a.apariciones || a.texto.localeCompare(b.texto));
+    const sugerencias = porIntencion[r.id].sort(ordenFrase);
     quien[r.quien] += sugerencias.length;
     return { id: r.id, nombre: r.nombre, color: r.color, quien: r.quien, que_es: r.que_es, total: sugerencias.length,
-      pct: total ? Math.round((1000 * sugerencias.length) / total) / 10 : 0, sugerencias };
+      pct: total ? Math.round((1000 * sugerencias.length) / total) / 10 : 0,
+      apariciones_total: sugerencias.reduce((t, s) => t + s.apariciones, 0),
+      veces_top3_total: sugerencias.reduce((t, s) => t + s.veces_top3, 0), sugerencias };
   });
   const de = (id) => intenciones.find((i) => i.id === id).total;
   const q = encodeURIComponent(tema);
@@ -110,17 +123,23 @@ export async function consultaEnVivo(temaCrudo, reglas, alAvanzar) {
 
 // Convierte una consulta en los datos que dibuja mapa.js.
 // La cabeza de cada rama es la intención (con su total); los hijos, sus búsquedas más repetidas.
+// Las ramas van de la que tiene más datos (apariciones sumadas) a la que tiene menos.
+// Los puntos crecen con las apariciones de la frase; las 3 frases con más datos de todo el mapa llevan un aro.
 export function consultaAMapa(consulta) {
   const temaNorm = normalizar(consulta.tema);
-  const ramas = consulta.intenciones
-    .filter((i) => i.total > 0 && !["otros", "fuera_uy", "emprender"].includes(i.id))
-    .sort((a, b) => b.total - a.total)
+  const visibles = consulta.intenciones.filter((i) => i.total > 0 && !["otros", "fuera_uy", "emprender"].includes(i.id));
+  const enMapa = visibles.flatMap((i) => i.sugerencias.slice(0, 4));
+  const maxAp = Math.max(1, ...enMapa.map((s) => s.apariciones));
+  const destacadas = new Set([...enMapa].sort(ordenFrase).slice(0, 3));
+  const ramas = visibles
+    .sort((a, b) => (b.apariciones_total ?? 0) - (a.apariciones_total ?? 0) || b.total - a.total)
     .map((i) => ({
       id: i.id, titulo: i.nombre, color: i.color, intencion: i,
       nodos: [
         { id: `${i.id}-cab`, titulo: i.nombre, icono: String(i.total) },
         ...i.sugerencias.slice(0, 4).map((s, k) => ({
           id: `${i.id}-s${k}`, sugerencia: s, icono: String(s.apariciones),
+          peso: s.apariciones / maxAp, destacado: destacadas.has(s),
           titulo: normalizar(s.texto).replaceAll(temaNorm, " ").replace(/\s+/g, " ").trim() || s.texto,
         })),
       ],

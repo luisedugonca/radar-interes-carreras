@@ -35,7 +35,7 @@ def validar_sugerencias(registros: list[dict], tema: str, reglas: dict) -> tuple
         tipos = extra.get("google:suggesttype", [])
         relevancias = extra.get("google:suggestrelevance", [])
         for i, texto in enumerate(textos):
-            item = {**base, "texto": str(texto).strip(),
+            item = {**base, "texto": str(texto).strip(), "pos": i + 1, "de": len(textos),
                     "relevancia": relevancias[i] if i < len(relevancias) else None}
             tipo = tipos[i] if i < len(tipos) else "QUERY"
             norm = normalizar(item["texto"])

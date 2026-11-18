@@ -75,9 +75,10 @@ export function renderMapa(svg, datos, alSeleccionar) {
     // Nodos
     nodos.forEach((nodo, k) => {
       const [x, y] = pos[k];
-      const r = k === 0 ? 27 : 21;
+      const r = k === 0 ? 27 : 16 + Math.round(9 * (nodo.peso ?? 0.55));
       const gn = el("g", { class: `nodo ${k === 0 ? "cabeza" : "hijo"}`, tabindex: "0", role: "button",
         "aria-label": `${rama.titulo}: ${nodo.titulo}`, transform: `translate(${f(x)},${f(y)})` }, g);
+      if (nodo.destacado) el("circle", { class: "aro", r: r + 7, stroke: rama.color }, gn);
       el("circle", { class: "disco", r, stroke: rama.color }, gn);
       el("text", { class: "ico", fill: rama.color }, gn).textContent = nodo.icono ?? "";
       if (k === 0) {
