@@ -7,8 +7,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/estilo.css?v=20261118e">
-<script src="assets/tema.js?v=20261118"></script>
+<link rel="stylesheet" href="assets/estilo.css?v=20261118f">
+<script src="assets/tema.js?v=20261118f"></script>
 </head>
 <body aria-busy="true">
 <header class="cab">
@@ -142,9 +142,9 @@
 </div>
 
 <script type="module">
-import { renderMapa } from "./assets/mapa.js";
-import { hallazgos, calidad } from "./assets/analisis.js";
-import { leerJSON, consultaEnVivo, consultaAMapa, ordenFrase, normalizar, esc, num, fecha, consultaAFilas, filasACSV, csvAConsultas } from "./assets/nucleo.js";
+import { renderMapa } from "./assets/mapa.js?v=20261118f";
+import { hallazgos, calidad } from "./assets/analisis.js?v=20261118f";
+import { leerJSON, consultaEnVivo, consultaAMapa, ordenFrase, normalizar, esc, num, fecha, consultaAFilas, filasACSV, csvAConsultas } from "./assets/nucleo.js?v=20261118f";
 
 const $ = (id) => document.getElementById(id);
 /* ---------- Carga visible ---------- */
@@ -216,13 +216,20 @@ function pintarBuscador() {
   $("lista-temas").innerHTML = indice.consultas.map((c) => `<option value="${esc(c.tema)}"></option>`).join("");
   $("lista-temas").innerHTML += locales.map((c) => `<option value="${esc(c.tema)}">desde archivo</option>`).join("");
   $("comparar").innerHTML = comparados.map((c, k) => `<span class="chip-t" style="--c:${COLOR_TEMA[k + 1]}"><span class="punto"></span>${esc(c.tema)}${c.en_vivo ? ' <span class="sello sup">en vivo</span>' : c.origen ? ' <span class="sello sup">archivo</span>' : ""}<button type="button" data-q="${esc(c.slug)}" aria-label="Quitar ${esc(c.tema)}">×</button></span>`).join("")
-    + (comparados.length < 3 ? `<input class="mas" id="in-comparar" list="lista-temas" maxlength="60" placeholder="+ Comparar: escribí un tema o elegí uno guardado" aria-label="Agregar un tema para comparar" style="flex:1;min-width:200px;border:0;background:transparent">` : "");
+    + (comparados.length < 3 ? `<input class="mas" id="in-comparar" list="lista-temas" maxlength="60" placeholder="+ Comparar: escribí un tema o elegí uno guardado" aria-label="Agregar un tema para comparar" style="flex:1;min-width:180px;border:0;background:transparent"><button type="button" class="btn sec" id="btn-comparar">Comparar</button>`
+      : '<span class="pie-b">Máximo 3 temas para comparar: quitá uno con ×.</span>');
   $("comparar").querySelectorAll("button[data-q]").forEach((b) => b.addEventListener("click", () => { comparados = comparados.filter((c) => c.slug !== b.dataset.q); actualizarURL(); pintarBuscador(); pintarComparar(); }));
   const campo = $("in-comparar");
   if (campo) {
-    const agregar = async () => { const v = campo.value.trim(); if (!v) return; campo.disabled = true; await agregarComparado(v); };
+    const agregar = async () => {
+      const v = campo.value.trim();
+      if (!v) { $("estado").textContent = "Escribí un tema para comparar o elegí uno de la lista."; campo.focus(); return; }
+      campo.disabled = true; $("btn-comparar").disabled = true;
+      await agregarComparado(v);
+    };
     campo.addEventListener("keydown", (ev) => { if (ev.key === "Enter") { ev.preventDefault(); agregar(); } });
-    campo.addEventListener("change", () => { if (buscarGuardado(campo.value)) agregar(); });
+    campo.addEventListener("change", () => { if (buscarGuardado(campo.value) || buscarLocal(campo.value)) agregar(); });
+    $("btn-comparar").addEventListener("click", agregar);
   }
   const ramas = base.intenciones.filter((i) => !APARTE.includes(i.id) && i.total > 0);
   if (!ramas.some((i) => i.id === filtro.duda)) filtro.duda = "todas";
@@ -306,8 +313,9 @@ function pintar() {
   const origen = c.fuentes.map((f) => `${f.nombre} ${f.con_respuesta}/${f.pedidos}`).join(" · ");
   $("f-kpis").textContent = `Foto del ${fecha(c.generado_utc)}${c.en_vivo ? " (en vivo)" : ""}: el autocompletar no guarda historia; repetir la medición arma la tendencia · ${origen} · Uruguay`;
 
-  const u = c.intenciones.filter((i) => !APARTE.includes(i.id)).sort((a, b) => b.apariciones_total - a.apariciones_total);
-  const ap = c.intenciones.filter((i) => APARTE.includes(i.id));
+  // Ramas sin frases van con los apartados, grises y sin clic: no hay nada que abrir
+  const u = c.intenciones.filter((i) => !APARTE.includes(i.id) && i.apariciones_total > 0).sort((a, b) => b.apariciones_total - a.apariciones_total);
+  const ap = c.intenciones.filter((i) => APARTE.includes(i.id) || i.apariciones_total === 0);
   const mx = Math.max(1, ...c.intenciones.map((i) => i.apariciones_total));
   const fila = (i, gris) => `<button type="button" class="fila-b${gris ? " gris" : ""}" data-i="${i.id}" aria-pressed="false"${gris ? " disabled" : ""}>
     <span class="nom">${esc(i.nombre)}</span><span class="riel"><i style="width:${(100 * i.apariciones_total) / mx}%;background:${gris ? "var(--line)" : i.color}"></i></span>
@@ -448,7 +456,9 @@ async function agregarComparado(v) {
     if (!c.fuentes[0].con_respuesta) { $("estado").textContent = "Google no respondió desde este navegador."; pintarBuscador(); return; }
     $("estado").textContent = `«${c.tema}» medido en vivo para comparar.`;
   }
-  if (c.slug !== base.slug && !comparados.some((x) => x.slug === c.slug)) comparados.push(c);
+  if (c.slug === base.slug) $("estado").textContent = `«${c.tema}» es el tema que ya estás mirando.`;
+  else if (comparados.some((x) => x.slug === c.slug)) $("estado").textContent = `«${c.tema}» ya está en la comparación.`;
+  else comparados.push(c);
   actualizarURL(); pintarBuscador(); pintarComparar();
 }
 function descargar() {

@@ -24,6 +24,8 @@
 
 | 2026-11-18 | Esqueletos de carga en las tres páginas para bajar el CLS | CHICO (pedido textual del PO) | Medido en Chrome, red 4G rápida, antes → después. Escritorio: En las IA 0,968 → 0,014 · Radar 0,706 → 0,012 · Mapa agéntico 0,420 → 0. Celular (400 px): 0 · 0,002 · 0. Ningún esqueleto queda en pantalla al terminar | Pendiente de que el PO lo mire | — |
 
+| 2026-11-18 | QA completo de las 3 páginas tras el aviso del PO «dejó de funcionar el comparar» | — | Comparar funcionaba con Enter; fallaba sin aviso al escribir un tema nuevo y salir del campo (no había botón). Riesgo real: scripts sin versión → página nueva con script viejo de la caché deja todo sin funcionar. Corregido: botón «Comparar» con avisos, versión en todos los módulos, barras vacías deshabilitadas. 27 chequeos en Chrome OK; 17 pruebas OK (3 nuevas en tests/test_web.py) | Pendiente de que el PO lo confirme | — |
+
 ## Fuentes probadas (2026-11-16)
 
 | Fuente | Cómo se probó | Resultado | Decisión |
