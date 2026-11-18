@@ -15,6 +15,8 @@
 | 2026-11-18 | Radar rehecho: buscador estilo Glimpse (tema, comparar, filtros), mapa fijo a la izquierda, claro/oscuro, glosario, menos texto | CHICO (pedido textual del PO; no cambia fuentes ni datos) | Autochequeo: pruebas OK; probado en Chrome en claro y oscuro, con 3 temas comparados, filtros por tipo de duda y fuente, en vivo y a 500 px; sin errores de consola | Pendiente de que el PO lo mire | — |
 | 2026-11-18 | Corrección del PO sobre los KPIs | — | — | — | «Frases distintas» y «útiles para Uruguay» no son KPIs. Se quedan: apariciones por término, posición en la lista, instituciones nombradas. Se suman, cuando haya fuente: interés (Trends), keywords, posición en Google (top 3 / 4–10 / más allá del 10), popularidad del sitio |
 
+| 2026-11-18 | Base CSV (`docs/data/base.csv`), descargar y abrir CSV en la web, comparar con un tema escrito | CHICO (pedido textual del PO) | Autochequeo: 14 pruebas OK; ida y vuelta CSV en la web = mismas 363 frases y 484 apariciones que el JSON guardado; probado en Chrome (comparar guardado, comparar en vivo, abrir CSV) | Pendiente de que el PO lo mire | — |
+
 ## Fuentes probadas (2026-11-16)
 
 | Fuente | Cómo se probó | Resultado | Decisión |

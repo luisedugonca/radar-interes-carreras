@@ -30,6 +30,8 @@ Este archivo lo leen los agentes que siguen la convención `AGENTS.md` (Codex y 
 ```bash
 python3 -m unittest discover -s tests -v      # pruebas
 python3 colector/run.py "ciencia de datos"    # medir un tema
+python3 colector/base_csv.py                  # regenerar la base CSV (run.py ya lo hace)
+python3 colector/reprocesar.py                # rehacer los temas desde el crudo
 python3 colector/paquete_chat.py              # regenerar el paquete para chats
 python3 -m http.server 8000 --directory docs  # ver la web en local
 ```

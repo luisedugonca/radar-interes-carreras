@@ -34,7 +34,9 @@ python3 -m http.server 8000 --directory docs
 - **Mapa agéntico** (`index.html`): cómo trabajamos y en qué fase está el plan.
 - **Radar de interés** (`radar.html`): elegí una consulta guardada o escribí un tema nuevo y tocá «Explorar en vivo».
 
-**Guardar un tema nuevo** (queda con su crudo, su manifiesto y aparece en la web)
+**La base de datos** es un CSV: [`docs/data/base.csv`](docs/data/base.csv), una fila por frase de cada tema guardado. Se regenera sola cada vez que se guarda un tema y se abre en Excel. Desde la web, «⬇ Descargar CSV» baja el tema que estás mirando (también uno medido en vivo) y «⬆ Abrir CSV» lo vuelve a cargar.
+
+**Guardar un tema nuevo** (queda con su crudo, su manifiesto, en la base y en la web)
 
 - En GitHub: pestaña *Actions* → *Consulta de interés* → *Run workflow* → escribir el tema.
 - O abrir un issue con el título `Consulta: <tema>`.
@@ -60,6 +62,8 @@ Fuente → Extracción → Registro del crudo → Validación → Transformació
 | Validar | `colector/validar.py` | Válidas y rechazadas, cada rechazo con su motivo |
 | Transformar | `colector/transformar.py` | Frases únicas, con apariciones y tipo de duda |
 | Orquestar y cargar | `colector/run.py` | `docs/data/consultas/<tema>.json`, `manifests/run_<corrida>.json` |
+| Base | `colector/base_csv.py` | `docs/data/base.csv`, una fila por frase de cada tema |
+| Reprocesar | `colector/reprocesar.py` | Rehace los temas desde el crudo, sin pedir nada a Google |
 | Reglas | `docs/data/reglas.json` | Semillas y patrones; las usan Python y la web |
 | Mostrar | `docs/index.html`, `docs/radar.html` | Solo leen JSON; ningún número escrito a mano |
 

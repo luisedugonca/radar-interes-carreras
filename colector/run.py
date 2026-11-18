@@ -20,6 +20,7 @@ import sys
 import urllib.parse
 from datetime import datetime, timezone
 
+import base_csv
 import extraer
 import transformar
 import validar
@@ -104,6 +105,8 @@ def correr(tema_crudo: str) -> dict:
     actualizar_indice({"tema": tema, "slug": consulta["slug"], "run_id": run_id,
                        "generado_utc": consulta["generado_utc"],
                        "sugerencias_unicas": resultado["resumen"]["sugerencias_unicas"]})
+
+    log.info("Base CSV regenerada: %s filas en docs/data/base.csv", base_csv.regenerar())
 
     manifiesto = {
         "run_id": run_id, "tema": tema, "inicio_utc": consulta["generado_utc"],

@@ -102,7 +102,7 @@ export async function consultaEnVivo(temaCrudo, reglas, alAvanzar) {
   const de = (id) => intenciones.find((i) => i.id === id).total;
   const q = encodeURIComponent(tema);
   return {
-    en_vivo: true, tema, pais: reglas.pais.nombre, reglas_version: reglas.version, generado_utc: new Date().toISOString().slice(0, 19) + "Z",
+    en_vivo: true, tema, slug: slugDe(tema), run_id: `en-vivo_${slugDe(tema)}`, pais: reglas.pais.nombre, reglas_version: reglas.version, generado_utc: new Date().toISOString().slice(0, 19) + "Z",
     fuentes: [{ id: "google", nombre: "Autocompletar de Google", pedidos: semillas.length, con_respuesta: conRespuesta }],
     resumen: {
       sugerencias_unicas: total, fuera_de_uruguay: de("fuera_uy"), fuera_de_uruguay_pct: total ? Math.round((1000 * de("fuera_uy")) / total) / 10 : 0,
@@ -152,4 +152,73 @@ export const num = (n) => Number(n).toLocaleString("es-UY");
 export function fecha(iso) {
   const d = new Date(iso);
   return isNaN(d) ? iso : d.toLocaleString("es-UY", { dateStyle: "medium", timeStyle: "short", timeZone: "America/Montevideo" });
+}
+
+export const slugDe = (t) => normalizar(t).replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
+
+// ---------- CSV: las mismas columnas que colector/base_csv.py ----------
+export const COLUMNAS_CSV = ["tema", "slug", "run_id", "medido_utc", "pais", "consultas_respondidas", "tipo_duda_id", "tipo_duda",
+  "frase", "apariciones", "pos_promedio", "pos_mejor", "veces_top3", "veces_top10", "instituciones", "fuentes"];
+
+export function consultaAFilas(c) {
+  const n = c.fuentes.reduce((t, f) => t + f.con_respuesta, 0);
+  return c.intenciones.flatMap((i) => i.sugerencias.map((s) => ({
+    tema: c.tema, slug: c.slug, run_id: c.run_id ?? "", medido_utc: c.generado_utc, pais: c.pais, consultas_respondidas: n,
+    tipo_duda_id: i.id, tipo_duda: i.nombre, frase: s.texto, apariciones: s.apariciones,
+    pos_promedio: s.pos_promedio ?? "", pos_mejor: s.pos_mejor ?? "", veces_top3: s.veces_top3 ?? 0, veces_top10: s.veces_top10 ?? 0,
+    instituciones: (s.instituciones ?? []).join("|"), fuentes: (s.fuentes ?? []).join("|"),
+  })));
+}
+
+export function filasACSV(filas) {
+  const celda = (v) => { const t = String(v ?? ""); return /[",\n\r]/.test(t) ? `"${t.replace(/"/g, '""')}"` : t; };
+  return "\ufeff" + [COLUMNAS_CSV.join(","), ...filas.map((f) => COLUMNAS_CSV.map((k) => celda(f[k])).join(","))].join("\r\n") + "\r\n";
+}
+
+function leerCSV(texto) {
+  texto = texto.replace(/^\ufeff/, "");
+  const primera = texto.split(/\r?\n/, 1)[0];
+  const sep = [",", ";", "\t"].sort((a, b) => primera.split(b).length - primera.split(a).length)[0];
+  const filas = []; let fila = [], campo = "", comillas = false;
+  for (let i = 0; i < texto.length; i++) {
+    const ch = texto[i];
+    if (comillas) {
+      if (ch === '"' && texto[i + 1] === '"') { campo += '"'; i++; }
+      else if (ch === '"') comillas = false;
+      else campo += ch;
+    } else if (ch === '"') comillas = true;
+    else if (ch === sep) { fila.push(campo); campo = ""; }
+    else if (ch === "\n" || ch === "\r") { if (ch === "\r" && texto[i + 1] === "\n") i++; fila.push(campo); filas.push(fila); fila = []; campo = ""; }
+    else campo += ch;
+  }
+  if (campo || fila.length) { fila.push(campo); filas.push(fila); }
+  const cab = filas.shift()?.map((h) => h.trim()) ?? [];
+  return filas.filter((f) => f.some((x) => x.trim())).map((f) => Object.fromEntries(cab.map((h, k) => [h, f[k] ?? ""])));
+}
+
+// Vuelve a armar las consultas desde un CSV propio (una o varias, agrupadas por slug).
+export function csvAConsultas(texto, reglas) {
+  const filas = leerCSV(texto);
+  const faltan = ["tema", "tipo_duda_id", "frase", "apariciones"].filter((c) => !(c in (filas[0] ?? {})));
+  if (!filas.length || faltan.length) throw new Error(`El archivo no tiene el formato del radar${faltan.length ? ` (faltan columnas: ${faltan.join(", ")})` : ""}.`);
+  const porTema = new Map();
+  for (const f of filas) { const k = f.slug || slugDe(f.tema); if (!porTema.has(k)) porTema.set(k, []); porTema.get(k).push(f); }
+  const n = (v) => (v === "" || v == null ? null : Number(String(v).replace(",", ".")));
+  return [...porTema.entries()].map(([slug, fs]) => {
+    const f0 = fs[0], consultas = n(f0.consultas_respondidas) ?? 0;
+    const intenciones = reglas.intenciones.map((r) => {
+      const sug = fs.filter((f) => f.tipo_duda_id === r.id).map((f) => ({
+        texto: f.frase, apariciones: n(f.apariciones) ?? 0, pos_promedio: n(f.pos_promedio), pos_mejor: n(f.pos_mejor),
+        veces_top3: n(f.veces_top3) ?? 0, veces_top10: n(f.veces_top10) ?? 0,
+        instituciones: f.instituciones ? f.instituciones.split("|") : [], fuentes: f.fuentes ? f.fuentes.split("|") : ["google"],
+      })).sort(ordenFrase);
+      return { id: r.id, nombre: r.nombre, color: r.color, quien: r.quien, que_es: r.que_es, total: sug.length, sugerencias: sug,
+        apariciones_total: sug.reduce((t, s) => t + s.apariciones, 0), veces_top3_total: sug.reduce((t, s) => t + s.veces_top3, 0) };
+    });
+    const total = intenciones.reduce((t, i) => t + i.total, 0);
+    intenciones.forEach((i) => { i.pct = total ? Math.round((1000 * i.total) / total) / 10 : 0; });
+    return { origen: "archivo", tema: f0.tema, slug: `archivo-${slug}`, run_id: f0.run_id, generado_utc: f0.medido_utc, pais: f0.pais || "Uruguay",
+      reglas_version: "del archivo", fuentes: [{ id: "archivo", nombre: "Autocompletar (desde archivo)", pedidos: consultas, con_respuesta: consultas }],
+      intenciones, top10: [], rechazadas: { total: 0, por_motivo: {} } };
+  });
 }

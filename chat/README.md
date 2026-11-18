@@ -19,6 +19,7 @@ Cuando la web está publicada, cualquier herramienta puede leer:
 - Lista de temas medidos: `https://luisedugonca.github.io/radar-interes-carreras/data/indice.json`
 - Un tema: `https://luisedugonca.github.io/radar-interes-carreras/data/consultas/<slug>.json`
 - Todo junto, en texto: `https://luisedugonca.github.io/radar-interes-carreras/data/paquete-chat.md`
+- Todo junto, en tabla (CSV): `https://luisedugonca.github.io/radar-interes-carreras/data/base.csv`
 
 ## Para medir un tema que todavía no está
 

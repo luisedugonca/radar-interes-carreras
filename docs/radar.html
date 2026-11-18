@@ -48,6 +48,8 @@
       <option value="google">Solo Google</option>
       <option value="youtube">Solo YouTube</option>
     </select></label>
+    <button type="button" class="pill" id="btn-csv" title="Descarga las frases del tema actual en CSV (se abre en Excel)">⬇ Descargar CSV</button>
+    <label class="pill" title="Abrí un CSV que descargaste antes del radar">⬆ Abrir CSV<input type="file" id="in-csv" accept=".csv,.tsv,text/csv,text/tab-separated-values" hidden></label>
     <p class="estado" id="estado" role="status"></p>
   </div>
 </form>
@@ -96,6 +98,12 @@
     </section>
 
     <section class="bloque">
+      <h3>Guardar</h3>
+      <div class="enl" id="guardar"></div>
+      <p class="pie-b" id="guardar-nota"></p>
+    </section>
+
+    <section class="bloque">
       <h3>Seguir en otras herramientas</h3>
       <div class="enl" id="enlaces"></div>
       <p class="pie-b" id="top-pend"></p>
@@ -122,7 +130,7 @@
 
 <script type="module">
 import { renderMapa } from "./assets/mapa.js";
-import { leerJSON, consultaEnVivo, consultaAMapa, ordenFrase, normalizar, esc, num, fecha } from "./assets/nucleo.js";
+import { leerJSON, consultaEnVivo, consultaAMapa, ordenFrase, normalizar, esc, num, fecha, consultaAFilas, filasACSV, csvAConsultas } from "./assets/nucleo.js";
 
 const $ = (id) => document.getElementById(id);
 const [reglas, indice, sitio, glosario] = await Promise.all(["data/reglas.json", "data/indice.json", "data/sitio.json", "data/glosario.json"].map(leerJSON));
@@ -137,6 +145,7 @@ const COLOR_TEMA = ["#4f8dff", "#f0a04a", "#3fd0bb", "#c58cf0"];
 const QUIEN = { estudiante: ["Estudiante", "#4aa8ff"], familia: ["Familia", "#f07f4f"], ambos: ["Los dos", "#3ccf91"] };
 const cache = new Map();
 let base = null, comparados = [], control = null, ramasMapa = [], ramaSel = null;
+const locales = [];   // temas abiertos desde un CSV propio (solo en este navegador)
 const filtro = { duda: "todas", fuente: "todas" };
 
 /* ---------- Datos derivados ---------- */
@@ -169,14 +178,19 @@ const p1 = (v) => (v == null ? "—" : num(Math.round(v * 10) / 10));
 /* ---------- Buscador ---------- */
 function pintarBuscador() {
   $("tema").value = base.tema;
-  $("tema-sub").textContent = base.en_vivo ? "En vivo · sin guardar · Enter para medir otro tema" : "Tema guardado · escribí otro y Enter para medirlo en vivo";
+  $("tema-sub").textContent = base.en_vivo ? "En vivo · sin guardar: descargalo o guardalo en la base" : base.origen ? "Abierto desde tu archivo CSV" : "Tema guardado en la base · escribí otro y Enter para medirlo en vivo";
   $("f-fecha").textContent = base.en_vivo ? "Medido ahora" : `Medido el ${fecha(base.generado_utc).split(",")[0]}`;
   $("lista-temas").innerHTML = indice.consultas.map((c) => `<option value="${esc(c.tema)}"></option>`).join("");
-  const libres = indice.consultas.filter((c) => c.slug !== base.slug && !comparados.some((x) => x.slug === c.slug));
-  $("comparar").innerHTML = comparados.map((c, k) => `<span class="chip-t" style="--c:${COLOR_TEMA[k + 1]}"><span class="punto"></span>${esc(c.tema)}<button type="button" data-q="${esc(c.slug)}" aria-label="Quitar ${esc(c.tema)}">×</button></span>`).join("")
-    + (comparados.length < 3 && libres.length ? `<label class="mas">+ Comparar<select id="sel-comparar" aria-label="Agregar un tema para comparar"><option value="">Elegí un tema guardado</option>${libres.map((c) => `<option value="${esc(c.slug)}">${esc(c.tema)}</option>`).join("")}</select></label>` : "");
+  $("lista-temas").innerHTML += locales.map((c) => `<option value="${esc(c.tema)}">desde archivo</option>`).join("");
+  $("comparar").innerHTML = comparados.map((c, k) => `<span class="chip-t" style="--c:${COLOR_TEMA[k + 1]}"><span class="punto"></span>${esc(c.tema)}${c.en_vivo ? ' <span class="sello sup">en vivo</span>' : c.origen ? ' <span class="sello sup">archivo</span>' : ""}<button type="button" data-q="${esc(c.slug)}" aria-label="Quitar ${esc(c.tema)}">×</button></span>`).join("")
+    + (comparados.length < 3 ? `<input class="mas" id="in-comparar" list="lista-temas" maxlength="60" placeholder="+ Comparar: escribí un tema o elegí uno guardado" aria-label="Agregar un tema para comparar" style="flex:1;min-width:200px;border:0;background:transparent">` : "");
   $("comparar").querySelectorAll("button[data-q]").forEach((b) => b.addEventListener("click", () => { comparados = comparados.filter((c) => c.slug !== b.dataset.q); actualizarURL(); pintarBuscador(); pintarComparar(); }));
-  $("sel-comparar")?.addEventListener("change", async (e) => { if (!e.target.value) return; comparados.push(await cargar(e.target.value)); actualizarURL(); pintarBuscador(); pintarComparar(); });
+  const campo = $("in-comparar");
+  if (campo) {
+    const agregar = async () => { const v = campo.value.trim(); if (!v) return; campo.disabled = true; await agregarComparado(v); };
+    campo.addEventListener("keydown", (ev) => { if (ev.key === "Enter") { ev.preventDefault(); agregar(); } });
+    campo.addEventListener("change", () => { if (buscarGuardado(campo.value)) agregar(); });
+  }
   const ramas = base.intenciones.filter((i) => !APARTE.includes(i.id) && i.total > 0);
   if (!ramas.some((i) => i.id === filtro.duda)) filtro.duda = "todas";
   $("f-duda").innerHTML = `<option value="todas">Todos los tipos de duda</option>` + ramas.map((i) => `<option value="${i.id}"${i.id === filtro.duda ? " selected" : ""}>${esc(i.nombre)}</option>`).join("");
@@ -283,13 +297,21 @@ function pintar() {
     ["Bing", `https://www.bing.com/search?cc=UY&setlang=es&q=${t}`], ["YouTube", `https://www.youtube.com/results?search_query=${t}`]]
     .map(([n, u2], k) => `<a class="btn${k ? " sec" : ""}" href="${u2}" target="_blank" rel="noopener">${n}</a>`).join("");
   $("top-pend").textContent = "Top 10 de Google: pendiente de una fuente oficial.";
+  const alta = `${repo}/issues/new?title=${encodeURIComponent("Consulta: " + c.tema)}&body=${encodeURIComponent("Pedido para guardar este tema en la base del radar. No hace falta escribir nada más.")}`;
+  $("guardar").innerHTML = `<button type="button" class="btn" id="btn-csv2">⬇ Este tema (CSV)</button>
+    <a class="btn sec" href="data/base.csv" download="radar-base.csv">⬇ Base completa (CSV)</a>
+    ${c.en_vivo || c.origen ? `<a class="btn sec" href="${alta}" target="_blank" rel="noopener">Guardar en la base del repositorio</a>` : ""}`;
+  $("btn-csv2").addEventListener("click", descargar);
+  $("guardar-nota").textContent = c.en_vivo || c.origen
+    ? "El CSV queda en tu computadora y lo podés volver a abrir acá con «Abrir CSV». «Guardar en la base» abre un pedido en GitHub: un programa lo mide de nuevo y lo suma a la base en unos minutos (hace falta ser colaborador del repositorio)."
+    : `Este tema ya está en la base (${num(indice.consultas.length)} temas). El CSV se puede abrir en Excel y volver a cargar acá.`;
   $("pedido-chat").value = pedidoChat(c, r);
 
   const rech = Object.entries(c.rechazadas?.por_motivo ?? {}).map(([m, n]) => `${num(n)} ${m}`).join("; ");
   const ruta = (p, txt) => `<a href="${repo}/${p}">${esc(txt)}</a>`;
   $("linaje").innerHTML = [["Fuentes", esc(origen)], ["Frases rechazadas", `${num(c.rechazadas?.total ?? 0)}${rech ? ` (${esc(rech)})` : ""}`],
     ["Reglas", ruta(`blob/${sitio.rama}/docs/data/reglas.json`, `reglas.json · versión ${c.reglas_version}`)],
-    ...(c.en_vivo ? [["Guardado", "No: medido en vivo"]] : [["Corrida", esc(c.run_id)], ["Crudo", ruta(`tree/${sitio.rama}/data/raw/${c.run_id}`, `data/raw/${c.run_id}/`)],
+    ...(c.en_vivo ? [["Guardado", "No: medido en vivo"]] : c.origen ? [["Origen", "Archivo CSV abierto en este navegador"]] : [["Corrida", esc(c.run_id)], ["Crudo", ruta(`tree/${sitio.rama}/data/raw/${c.run_id}`, `data/raw/${c.run_id}/`)],
       ["Manifiesto", ruta(`blob/${sitio.rama}/manifests/run_${c.run_id}.json`, `manifests/run_${c.run_id}.json`)]])]
     .map(([k, v]) => `<tr><th scope="row">${k}</th><td>${v}</td></tr>`).join("");
   pintarComparar();
@@ -335,8 +357,9 @@ async function cargar(slug) {
 }
 function actualizarURL() {
   const p = new URLSearchParams();
-  if (base && !base.en_vivo) p.set("tema", base.slug);
-  if (comparados.length) p.set("comparar", comparados.map((c) => c.slug).join(","));
+  if (base && !base.en_vivo && !base.origen) p.set("tema", base.slug);
+  const enBase = comparados.filter((c) => !c.en_vivo && !c.origen);
+  if (enBase.length) p.set("comparar", enBase.map((c) => c.slug).join(","));
   history.replaceState(null, "", `?${p}`);
 }
 async function abrir(slug) {
@@ -353,10 +376,41 @@ async function medirEnVivo(texto) {
     $("estado").textContent = `En vivo: ${f.con_respuesta} de ${f.pedidos} consultas respondidas.`;
   } catch (e) { $("estado").textContent = e.message; }
 }
+const buscarGuardado = (v) => indice.consultas.find((c) => normalizar(c.tema) === normalizar(v));
+const buscarLocal = (v) => locales.find((c) => normalizar(c.tema) === normalizar(v));
+async function agregarComparado(v) {
+  let c = buscarLocal(v) ?? (buscarGuardado(v) ? await cargar(buscarGuardado(v).slug) : null);
+  if (!c) {
+    try { c = await consultaEnVivo(v, reglas, (n, t) => { $("estado").textContent = `Midiendo «${v}» para comparar… ${n} de ${t}`; }); }
+    catch (e) { $("estado").textContent = e.message; pintarBuscador(); return; }
+    if (!c.fuentes[0].con_respuesta) { $("estado").textContent = "Google no respondió desde este navegador."; pintarBuscador(); return; }
+    $("estado").textContent = `«${c.tema}» medido en vivo para comparar.`;
+  }
+  if (c.slug !== base.slug && !comparados.some((x) => x.slug === c.slug)) comparados.push(c);
+  actualizarURL(); pintarBuscador(); pintarComparar();
+}
+function descargar() {
+  const blob = new Blob([filasACSV(consultaAFilas(base))], { type: "text/csv;charset=utf-8" });
+  const a = Object.assign(document.createElement("a"), { href: URL.createObjectURL(blob), download: `radar-${base.slug}-${(base.generado_utc || "").slice(0, 10)}.csv` });
+  document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+  $("estado").textContent = `Descargado: ${a.download}`;
+}
+$("btn-csv").addEventListener("click", descargar);
+$("in-csv").addEventListener("change", async (ev) => {
+  const archivo = ev.target.files[0]; if (!archivo) return;
+  try {
+    const nuevas = csvAConsultas(await archivo.text(), reglas);
+    nuevas.forEach((c) => { const k = locales.findIndex((x) => x.slug === c.slug); k >= 0 ? (locales[k] = c) : locales.push(c); });
+    base = nuevas[0]; ramaSel = null; comparados = comparados.filter((c) => c.slug !== base.slug);
+    actualizarURL(); pintarBuscador(); pintar();
+    $("estado").textContent = `Abierto «${archivo.name}»: ${nuevas.length} ${nuevas.length === 1 ? "tema" : "temas"}${nuevas.length > 1 ? " (los demás quedan para comparar)" : ""}.`;
+  } catch (e) { $("estado").textContent = e.message; }
+  ev.target.value = "";
+});
 $("form").addEventListener("submit", (ev) => {
   ev.preventDefault();
-  const v = $("tema").value.trim(), guardada = indice.consultas.find((c) => normalizar(c.tema) === normalizar(v));
-  guardada ? abrir(guardada.slug) : medirEnVivo(v);
+  const v = $("tema").value.trim(), guardada = buscarGuardado(v), local = buscarLocal(v);
+  if (local) { base = local; ramaSel = null; actualizarURL(); pintarBuscador(); pintar(); } else guardada ? abrir(guardada.slug) : medirEnVivo(v);
 });
 $("tema").addEventListener("change", () => {
   const guardada = indice.consultas.find((c) => normalizar(c.tema) === normalizar($("tema").value));

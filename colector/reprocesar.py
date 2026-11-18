@@ -12,6 +12,7 @@ import json
 import sys
 from datetime import datetime, timezone
 
+import base_csv
 import transformar
 import validar
 from comun import DIR_CONSULTAS, DIR_MANIFESTS, DIR_RAW, RUTA_INDICE, cargar_reglas
@@ -49,3 +50,4 @@ if __name__ == "__main__":
             continue
         n = reprocesar(e, reglas, "se agrega el puesto de cada frase en la lista de sugerencias")
         print(f"{e['slug']}: {e['sugerencias_unicas']} -> {n['resumen']['sugerencias_unicas']} frases")
+    print(f"base.csv: {base_csv.regenerar()} filas")

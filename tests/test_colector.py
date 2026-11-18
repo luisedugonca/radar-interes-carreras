@@ -78,6 +78,21 @@ class Sugerencias(unittest.TestCase):
             self.assertEqual(transformar.clasificar(resto, REGLAS), esperada, texto)
 
 
+class BaseCSV(unittest.TestCase):
+    def test_una_fila_por_frase_con_todas_las_columnas(self):
+        import base_csv
+        c = {"tema": "x y", "slug": "x-y", "run_id": "r", "generado_utc": "t", "pais": "Uruguay",
+             "fuentes": [{"con_respuesta": 40}, {"con_respuesta": 3}],
+             "intenciones": [{"id": "costo", "nombre": "Costo", "sugerencias": [
+                 {"texto": "x y gratis", "apariciones": 2, "pos_promedio": 3.5, "pos_mejor": 2, "veces_top3": 1,
+                  "veces_top10": 2, "instituciones": [], "fuentes": ["google", "youtube"]}]},
+                             {"id": "otros", "nombre": "Otros", "sugerencias": []}]}
+        f = base_csv.filas(c)
+        self.assertEqual(len(f), 1)
+        self.assertEqual(list(f[0]), base_csv.COLUMNAS)
+        self.assertEqual((f[0]["consultas_respondidas"], f[0]["fuentes"]), (43, "google|youtube"))
+
+
 class Top10(unittest.TestCase):
     def test_rechaza_el_caso_real_de_bing_sin_relacion(self):
         caso = json.loads((RAIZ / "tests/fixtures/bing_sin_relacion_20261116.json").read_text(encoding="utf-8"))
