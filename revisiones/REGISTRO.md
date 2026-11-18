@@ -28,6 +28,8 @@
 
 | 2026-11-18 | Temporalidad editable en el radar: historial de mediciones, selector «Medido el…», agrupación semana a semana / mes a mes, gráfico de evolución | CHICO (pedido textual del PO) | Probado en Chrome con 2 mediciones reales de «negocios digitales» (16-nov: 363 frases; 18-nov: 361). 18 pruebas OK. Medición semanal programada en GitHub Actions (lunes 8:00 UY) con **OK del PO** el 2026-11-18 («programa la revisión semanal de las búsquedas que vayan quedando guardadas») | Aprobado | — |
 
+| 2026-11-18 | Sellos «Foto · fecha» / «En vivo · ahora» / «Historial · N mediciones» en cada bloque del radar y de En las IA, con leyenda | CHICO (pedido textual del PO) | Probado en Chrome: tema guardado, en vivo y filtro por día en En las IA; sin errores. 18 pruebas OK | Pendiente de que el PO lo mire | — |
+
 ## Fuentes probadas (2026-11-16)
 
 | Fuente | Cómo se probó | Resultado | Decisión |

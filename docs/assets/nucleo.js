@@ -225,3 +225,16 @@ export function csvAConsultas(texto, reglas) {
       intenciones, top10: [], rechazadas: { total: 0, por_motivo: {} } };
   });
 }
+
+// Sellos «Foto» / «Historial»: cada bloque marcado con data-sello dice solo si muestra un día o el tiempo.
+export function sellar(textos) {
+  document.querySelectorAll("[data-sello]").forEach((h) => {
+    const tipo = h.dataset.sello, texto = h.dataset.selloTexto || textos[tipo];
+    if (!texto) return;
+    let s = h.querySelector(":scope > .sello-auto");
+    if (!s) { s = document.createElement("span"); h.append(" ", s); }
+    s.className = `sello sello-auto ${tipo}`;
+    s.textContent = texto;
+    s.title = tipo === "foto" ? "Muestra un solo momento: no dice si sube o baja" : "Muestra varias mediciones en el tiempo";
+  });
+}

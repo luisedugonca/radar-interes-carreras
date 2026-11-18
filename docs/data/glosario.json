@@ -70,8 +70,8 @@
       "que_es": "Pone otros temas al lado del actual, con los mismos indicadores. Puede ser un tema guardado o uno escrito: si no está en la base, se mide en vivo."
     },
     {
-      "termino": "Foto o tendencia",
-      "que_es": "Una foto es una medición de un momento: dice qué pasaba ese día. Una tendencia necesita la misma medición repetida con una frecuencia fija (por ejemplo, cada semana). Cada gráfico dice cuál de las dos es."
+      "termino": "Foto o historial",
+      "que_es": "Cada bloque tiene un sello. Foto: muestra un solo momento (un día); no dice si algo sube o baja. Historial: muestra la misma medición repetida en el tiempo. «En vivo» es una foto de ahora mismo, sin guardar."
     },
     {
       "termino": "Medición",
@@ -133,35 +133,35 @@
         "mide": "Interés relativo, de 0 a 100",
         "hacia_atras": "Desde 2004, mes a mes; semana a semana hasta 5 años.",
         "en_el_radar": "Enlace por tema. La serie en el radar está pendiente.",
-        "tipo": "tendencia"
+        "tipo": "historial"
       },
       {
         "fuente": "Respuestas con IA de Google (Semrush)",
         "mide": "Búsquedas donde Google responde con IA y a quién cita",
         "hacia_atras": "Según el plan de Semrush.",
         "en_el_radar": "24 meses, nov-2024 a oct-2026, en el tablero privado de UCU.",
-        "tipo": "tendencia"
+        "tipo": "historial"
       },
       {
         "fuente": "Búsquedas por mes (Semrush)",
         "mide": "Cantidad estimada de búsquedas",
         "hacia_atras": "Según el plan de Semrush.",
         "en_el_radar": "72 meses, oct-2020 a sep-2026, en el tablero privado de UCU.",
-        "tipo": "tendencia"
+        "tipo": "historial"
       },
       {
         "fuente": "Puesto y visitas por página (Semrush)",
         "mide": "En qué lugar aparece cada ficha y cuántas visitas recibe",
         "hacia_atras": "Según el plan de Semrush.",
         "en_el_radar": "60 meses, nov-2021 a oct-2026, en el tablero privado de UCU.",
-        "tipo": "tendencia"
+        "tipo": "historial"
       },
       {
         "fuente": "Chrome UX Report (BigQuery)",
         "mide": "Popularidad de cada sitio en Uruguay",
         "hacia_atras": "Mes a mes desde 2017 (dataset público).",
         "en_el_radar": "Ene-2021 a sep-2026, en el tablero privado de UCU.",
-        "tipo": "tendencia"
+        "tipo": "historial"
       }
     ]
   }

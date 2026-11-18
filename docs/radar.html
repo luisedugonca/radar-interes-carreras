@@ -7,8 +7,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/estilo.css?v=20261118g">
-<script src="assets/tema.js?v=20261118g"></script>
+<link rel="stylesheet" href="assets/estilo.css?v=20261118h">
+<script src="assets/tema.js?v=20261118h"></script>
 </head>
 <body aria-busy="true">
 <header class="cab">
@@ -42,6 +42,7 @@
   <datalist id="lista-temas"></datalist>
   <div class="filtros">
     <span class="pill fija" title="Las consultas se hacen para Google Uruguay">Uruguay</span>
+<span class="pill fija leyenda-sellos" title="Cada bloque lleva uno de estos dos sellos"><span class="sello foto">Foto</span>un día<span class="sello hist">Historial</span>en el tiempo</span>
     <label class="pill" title="Elegí una medición guardada de este tema"><select id="f-medicion" aria-label="Medición"><option>Medido el 00-nov-2026</option></select></label>
     <label class="pill" title="Cómo agrupar las mediciones en el gráfico de evolución"><select id="f-gran" aria-label="Agrupar la evolución">
       <option value="semana">Semana a semana</option><option value="mes">Mes a mes</option><option value="todas">Cada medición</option></select></label>
@@ -63,26 +64,26 @@
       <div class="carga-caja"><span class="giro" aria-hidden="true"></span><b id="carga-t">Cargando la base del radar…</b><small id="carga-s">Un momento</small>
         <div class="carga-barra"><i id="carga-i"></i></div></div>
     </div>
-    <h2 id="t-mapa"><span class="esq">«cargando el tema»</span></h2>
+    <h2 id="t-mapa" data-sello="foto"><span class="esq">«cargando el tema»</span></h2>
     <svg id="mapa" class="mapa" viewBox="-575 -575 1150 1150" aria-label="Mapa radial de frases por tipo de duda"></svg>
     <p class="leyenda"><span><b>Número</b> = apariciones</span><span><b>Tamaño</b> = más apariciones</span><span><b>Aro</b> = 3 términos con más datos</span><span>Ramas de mayor a menor</span></p>
   </section>
 
   <div class="columna">
     <section class="bloque">
-      <h3>Indicadores del tema</h3>
+      <h3 data-sello="foto">Indicadores del tema</h3>
       <div class="kp4" id="kpis"><div><span class="et esq">Cargando dato</span><b class="esq">00,0</b><small class="esq">cargando el detalle</small></div><div><span class="et esq">Cargando dato</span><b class="esq">00,0</b><small class="esq">cargando el detalle</small></div><div><span class="et esq">Cargando dato</span><b class="esq">00,0</b><small class="esq">cargando el detalle</small></div><div><span class="et esq">Cargando dato</span><b class="esq">00,0</b><small class="esq">cargando el detalle</small></div></div>
       <p class="pie-b" id="f-kpis"><span class="esq">Cargando la fecha y la fuente de la medición del tema</span></p>
     </section>
 
     <section class="bloque" id="b-evol">
-      <h3 id="t-evol"><span class="esq">Evolución · semana a semana</span></h3>
+      <h3 id="t-evol" data-sello="hist"><span class="esq">Evolución · semana a semana</span></h3>
       <div id="evol"><span class="esq" style="display:block;height:150px"></span></div>
       <p class="pie-b" id="evol-nota"><span class="esq">Cargando la historia de mediciones del tema</span></p>
     </section>
 
     <section class="bloque">
-      <h3>Análisis <span class="sello sup" title="Hallazgos armados por reglas fijas, sin IA, con la estructura del rol Analista de Datos Senior">por reglas · sin IA</span></h3>
+      <h3 data-sello="foto">Análisis <span class="sello sup" title="Hallazgos armados por reglas fijas, sin IA, con la estructura del rol Analista de Datos Senior">por reglas · sin IA</span></h3>
       <div class="calidad" id="calidad"><div class="apilada esq"></div><ul class="ley"><li class="esq">Útiles para el análisis 00 %</li><li class="esq">De otros países 00 %</li><li class="esq">Sin clasificar 00 %</li></ul></div>
       <div class="hallazgos" id="hallazgos"><article class="hall esq-hall"><div class="hall-cab"><span class="hall-n esq">1</span><h4 class="esq">Cargando el hallazgo del análisis</h4><div class="hall-cifra"><b class="esq">00 %</b></div></div><div class="hall-sellos"><span class="sello esq">Impacto alto</span><span class="sello esq">Esfuerzo bajo</span><span class="sello esq">Confianza alta</span></div><dl><dt class="esq">Qué encontramos</dt><dd class="esq">cargando la evidencia medida del radar</dd><dt class="esq">Qué recomendamos</dt><dd class="esq">cargando la recomendación</dd></dl></article><article class="hall esq-hall"><div class="hall-cab"><span class="hall-n esq">1</span><h4 class="esq">Cargando el hallazgo del análisis</h4><div class="hall-cifra"><b class="esq">00 %</b></div></div><div class="hall-sellos"><span class="sello esq">Impacto alto</span><span class="sello esq">Esfuerzo bajo</span><span class="sello esq">Confianza alta</span></div><dl><dt class="esq">Qué encontramos</dt><dd class="esq">cargando la evidencia medida del radar</dd><dt class="esq">Qué recomendamos</dt><dd class="esq">cargando la recomendación</dd></dl></article><article class="hall esq-hall"><div class="hall-cab"><span class="hall-n esq">1</span><h4 class="esq">Cargando el hallazgo del análisis</h4><div class="hall-cifra"><b class="esq">00 %</b></div></div><div class="hall-sellos"><span class="sello esq">Impacto alto</span><span class="sello esq">Esfuerzo bajo</span><span class="sello esq">Confianza alta</span></div><dl><dt class="esq">Qué encontramos</dt><dd class="esq">cargando la evidencia medida del radar</dd><dt class="esq">Qué recomendamos</dt><dd class="esq">cargando la recomendación</dd></dl></article></div>
     </section>
@@ -90,28 +91,28 @@
     <section class="bloque" id="rama"><div class="rama-cab"><span class="bola esq"></span><h4 class="esq">Cargando</h4></div><div class="kp4"><div><span class="et esq">Cargando dato</span><b class="esq">00,0</b><small class="esq">cargando el detalle</small></div><div><span class="et esq">Cargando dato</span><b class="esq">00,0</b><small class="esq">cargando el detalle</small></div><div><span class="et esq">Cargando dato</span><b class="esq">00,0</b><small class="esq">cargando el detalle</small></div><div><span class="et esq">Cargando dato</span><b class="esq">00,0</b><small class="esq">cargando el detalle</small></div></div><div class="carr-cab"><h4 class="esq">Cargando términos</h4></div><div class="carr"><article class="tarj esq-tarj"><div class="fila-t"><span class="rk esq">#1</span></div><h5 class="esq">cargando el término</h5><div class="big esq">00</div><div class="riel esq"></div><dl><dt class="esq">cargando</dt><dd class="esq">0</dd><dt class="esq">cargando</dt><dd class="esq">0</dd><dt class="esq">cargando</dt><dd class="esq">0</dd><dt class="esq">cargando</dt><dd class="esq">0</dd></dl></article><article class="tarj esq-tarj"><div class="fila-t"><span class="rk esq">#1</span></div><h5 class="esq">cargando el término</h5><div class="big esq">00</div><div class="riel esq"></div><dl><dt class="esq">cargando</dt><dd class="esq">0</dd><dt class="esq">cargando</dt><dd class="esq">0</dd><dt class="esq">cargando</dt><dd class="esq">0</dd><dt class="esq">cargando</dt><dd class="esq">0</dd></dl></article></div></section>
 
     <section class="bloque">
-      <h3>Apariciones por tipo de duda</h3>
+      <h3 data-sello="foto">Apariciones por tipo de duda</h3>
       <div id="barras"><div class="fila-b"><span class="nom esq">Cargando</span><span class="riel esq"></span><span class="val esq">00 · 0 %</span></div><div class="fila-b"><span class="nom esq">Cargando</span><span class="riel esq"></span><span class="val esq">00 · 0 %</span></div><div class="fila-b"><span class="nom esq">Cargando</span><span class="riel esq"></span><span class="val esq">00 · 0 %</span></div><div class="fila-b"><span class="nom esq">Cargando</span><span class="riel esq"></span><span class="val esq">00 · 0 %</span></div><div class="fila-b"><span class="nom esq">Cargando</span><span class="riel esq"></span><span class="val esq">00 · 0 %</span></div><div class="fila-b"><span class="nom esq">Cargando</span><span class="riel esq"></span><span class="val esq">00 · 0 %</span></div><div class="fila-b"><span class="nom esq">Cargando</span><span class="riel esq"></span><span class="val esq">00 · 0 %</span></div><div class="fila-b"><span class="nom esq">Cargando</span><span class="riel esq"></span><span class="val esq">00 · 0 %</span></div><div class="fila-b"><span class="nom esq">Cargando</span><span class="riel esq"></span><span class="val esq">00 · 0 %</span></div></div>
     </section>
 
     <section class="bloque" id="b-comparar" hidden>
-      <h3>Comparación</h3>
+      <h3 data-sello="foto" data-sello-texto="Foto · cada tema en su fecha">Comparación</h3>
       <div class="tabla-w"><table id="t-comparar"></table></div>
       <ul class="ley" id="ley-comparar"></ul>
     </section>
 
     <section class="bloque">
-      <h3 id="t-lista">Frases</h3>
+      <h3 id="t-lista" data-sello="foto">Frases</h3>
       <div class="tabla-w alta"><table><thead><tr><th>Frase</th><th class="n">Apariciones</th><th class="n">Posición</th><th>Ver</th></tr></thead><tbody id="lista"><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr></tbody></table></div>
     </section>
 
     <section class="bloque">
-      <h3>Instituciones nombradas</h3>
+      <h3 data-sello="foto">Instituciones nombradas</h3>
       <ul class="chips" id="inst"><li class="esq">UCU · 0</li><li class="esq">UCU · 0</li><li class="esq">UCU · 0</li><li class="esq">UCU · 0</li><li class="esq">UCU · 0</li></ul>
     </section>
 
     <section class="bloque">
-      <h3>¿Estudiante o familia? <span class="sello sup">Supuesto</span></h3>
+      <h3 data-sello="foto">¿Estudiante o familia? <span class="sello sup">Supuesto</span></h3>
       <div class="apilada esq" id="quien-barra" role="img"></div>
       <ul class="ley" id="quien-ley"><li class="esq">Estudiante 00 %</li><li class="esq">Familia 00 %</li><li class="esq">Los dos 00 %</li></ul>
     </section>
@@ -150,9 +151,9 @@
 </div>
 
 <script type="module">
-import { renderMapa } from "./assets/mapa.js?v=20261118g";
-import { hallazgos, calidad } from "./assets/analisis.js?v=20261118g";
-import { leerJSON, consultaEnVivo, consultaAMapa, ordenFrase, normalizar, esc, num, fecha, consultaAFilas, filasACSV, csvAConsultas } from "./assets/nucleo.js?v=20261118g";
+import { renderMapa } from "./assets/mapa.js?v=20261118h";
+import { hallazgos, calidad } from "./assets/analisis.js?v=20261118h";
+import { sellar, leerJSON, consultaEnVivo, consultaAMapa, ordenFrase, normalizar, esc, num, fecha, consultaAFilas, filasACSV, csvAConsultas } from "./assets/nucleo.js?v=20261118h";
 
 const $ = (id) => document.getElementById(id);
 /* ---------- Carga visible ---------- */
@@ -179,7 +180,7 @@ $("enl-repo").href = repo;
 $("glos").innerHTML = glosario.terminos.map((t) => `<dt>${esc(t.termino)}</dt><dd>${esc(t.que_es)}</dd>`).join("");
 $("t-temp").textContent = glosario.temporalidad.titulo;
 $("temp").innerHTML = `<thead><tr><th>Fuente</th><th>Qué mide</th><th>Hacia atrás</th><th>En el radar hoy</th></tr></thead><tbody>${glosario.temporalidad.fuentes.map((f) =>
-  `<tr><td><b>${esc(f.fuente)}</b> <span class="sello ${f.tipo === "foto" ? "pend" : "ok"}">${f.tipo === "foto" ? "Foto" : "Tendencia"}</span></td><td>${esc(f.mide)}</td><td>${esc(f.hacia_atras)}</td><td>${esc(f.en_el_radar)}</td></tr>`).join("")}</tbody>`;
+  `<tr><td><b>${esc(f.fuente)}</b> <span class="sello ${f.tipo === "foto" ? "foto" : "hist"}">${f.tipo === "foto" ? "Foto" : "Historial"}</span></td><td>${esc(f.mide)}</td><td>${esc(f.hacia_atras)}</td><td>${esc(f.en_el_radar)}</td></tr>`).join("")}</tbody>`;
 
 const APARTE = ["otros", "fuera_uy", "emprender"];
 const COLOR_TEMA = ["#4f8dff", "#f0a04a", "#3fd0bb", "#c58cf0"];
@@ -298,6 +299,7 @@ function pintarRama(rama, nodo) {
   } else { $("c-ant").disabled = $("c-sig").disabled = true; }
   pintarLista(i);
   document.querySelectorAll(".fila-b").forEach((b) => b.setAttribute("aria-pressed", b.dataset.i === i.id));
+  sellos();
 }
 function pintarLista(i) {
   $("t-lista").textContent = `Frases · ${i.nombre}`;
@@ -328,7 +330,7 @@ function pintar() {
     <div><span class="et">Posición en la lista</span><b>${p1(r.termino?.pos_promedio)}</b><small>${r.termino ? `de ese término · mejor: ${r.termino.pos_mejor ?? "—"}` : ""}</small></div>
     <div><span class="et">Instituciones nombradas</span><b>${num(inst.length)}</b><small>${inst.length ? `Más nombrada: ${esc(inst[0].id)} (${num(inst[0].n)}) · UCU: ${num(ucu?.n ?? 0)}` : "Ninguna"}</small></div>`;
   const origen = c.fuentes.map((f) => `${f.nombre} ${f.con_respuesta}/${f.pedidos}`).join(" · ");
-  $("f-kpis").textContent = `Foto del ${fecha(c.generado_utc)}${c.en_vivo ? " (en vivo)" : ""}: el autocompletar no guarda historia; repetir la medición arma la tendencia · ${origen} · Uruguay`;
+  $("f-kpis").textContent = `${origen} · Uruguay · ${fecha(c.generado_utc)}`;
 
   // Ramas sin frases van con los apartados, grises y sin clic: no hay nada que abrir
   const u = c.intenciones.filter((i) => !APARTE.includes(i.id) && i.apariciones_total > 0).sort((a, b) => b.apariciones_total - a.apariciones_total);
@@ -375,6 +377,7 @@ function pintar() {
       ["Manifiesto", ruta(`blob/${sitio.rama}/manifests/run_${c.run_id}.json`, `manifests/run_${c.run_id}.json`)]])]
     .map(([k, v]) => `<tr><th scope="row">${k}</th><td>${v}</td></tr>`).join("");
   pintarComparar();
+  sellos();
 }
 
 function pintarAnalisis(c) {
@@ -399,6 +402,7 @@ const dia = (iso) => { const d = new Date(iso); return `${d.getUTCDate()}-${["en
 function pintarEvolucion() {
   const gran = $("f-gran").value, nombreGran = { semana: "semana a semana", mes: "mes a mes", todas: "cada medición" }[gran];
   $("t-evol").textContent = `Evolución · ${nombreGran}`;
+  sellos();
   if (base.en_vivo || base.origen || !serie?.mediciones.length) {
     $("evol").innerHTML = ""; $("evol-nota").textContent = base.en_vivo ? "Un tema medido en vivo no tiene historia: guardalo en la base para empezar a seguirlo." : "Este tema no tiene historia de mediciones.";
     return;
@@ -432,6 +436,14 @@ function pintarEvolucion() {
     + puntos.map((p, i) => `<circle cx="${x(i)}" cy="${y(peso(p.m, id))}" r="3.5" fill="${color[id]}"><title>${esc(nombre[id])} · ${esc(etiqueta(p))}: ${p1(peso(p.m, id))} %</title></circle>`).join(""); });
   $("evol").innerHTML = s + `</svg><ul class="ley">${top.map((id) => `<li><b style="background:${color[id]}"></b>${esc(nombre[id])}</li>`).join("")}</ul>`;
   $("evol-nota").textContent = `Peso de cada tipo de duda (% de las apariciones útiles). ${puntos.length} puntos, de ${dia(serie.mediciones[0].fecha_utc)} a ${dia(ult.fecha_utc)}${gran !== "todas" ? `: de cada ${gran === "mes" ? "mes" : "semana"}, la última medición` : ""}. La línea punteada es la medición que estás mirando.`;
+}
+
+function sellos() {
+  const n = serie?.mediciones.length ?? 0;
+  sellar({
+    foto: base.en_vivo ? "En vivo · ahora" : base.origen ? "Foto · de tu archivo" : `Foto · ${dia(base.generado_utc)}`,
+    hist: base.en_vivo || base.origen ? "Historial · solo temas guardados" : n >= 2 ? `Historial · ${n} mediciones desde ${dia(serie.mediciones[0].fecha_utc)}` : "Historial · 1 medición: se suma una por semana",
+  });
 }
 
 function pintarComparar() {

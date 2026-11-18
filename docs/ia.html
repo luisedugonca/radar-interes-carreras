@@ -7,8 +7,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/estilo.css?v=20261118g">
-<script src="assets/tema.js?v=20261118g"></script>
+<link rel="stylesheet" href="assets/estilo.css?v=20261118h">
+<script src="assets/tema.js?v=20261118h"></script>
 <style>
   :root{ --s-chatgpt:#0f9b82; --s-gemini:#5b6cf0; }
   .tl{width:100%;height:auto;display:block}
@@ -57,11 +57,11 @@
       <span class="campo"><span style="font-size:1.25rem">ChatGPT y Gemini</span>
         <small id="sub-preg"><span class="esq">Cargando las preguntas medidas</span></small></span>
     </div>
-    <div class="cuando" aria-label="Cuándo se midió"><svg id="linea" class="tl" role="img" viewBox="0 0 600 58" aria-label="Cargando la línea de tiempo"><rect x="10" y="4" width="200" height="12" rx="6" fill="var(--esq)"/><rect x="390" y="4" width="200" height="12" rx="6" fill="var(--esq)"/><rect x="10" y="26" width="580" height="8" rx="4" fill="var(--esq)"/><rect x="200" y="44" width="200" height="10" rx="5" fill="var(--esq)"/></svg></div>
+    <div class="cuando" aria-label="Cuándo se midió"><p style="margin:0 0 4px" data-sello="hist">Cuándo se midió</p><svg id="linea" class="tl" role="img" viewBox="0 0 600 58" aria-label="Cargando la línea de tiempo"><rect x="10" y="4" width="200" height="12" rx="6" fill="var(--esq)"/><rect x="390" y="4" width="200" height="12" rx="6" fill="var(--esq)"/><rect x="10" y="26" width="580" height="8" rx="4" fill="var(--esq)"/><rect x="200" y="44" width="200" height="10" rx="5" fill="var(--esq)"/></svg></div>
   </div>
   <div class="filtros">
     <span class="pill fija">Uruguay</span>
-    <span class="pill fija"><span class="sello pend">Foto</span>&nbsp;no es tendencia</span>
+<span class="pill fija leyenda-sellos" title="Cada bloque lleva uno de estos dos sellos"><span class="sello foto">Foto</span>un día<span class="sello hist">Historial</span>en el tiempo</span>
     <label class="pill"><select id="f-ver" aria-label="Qué mirar">
       <option value="inst">Instituciones</option><option value="term">Términos</option></select></label>
     <label class="pill"><select id="f-ia" aria-label="Qué IA">
@@ -79,14 +79,14 @@
       <div class="carga-caja"><span class="giro" aria-hidden="true"></span><b id="carga-t">Cargando las respuestas de ChatGPT y Gemini…</b><small id="carga-s">Un momento</small>
         <div class="carga-barra"><i id="carga-i" style="width:35%"></i></div></div>
     </div>
-    <h2 id="t-mapa"><span class="esq">Instituciones en ChatGPT y Gemini</span></h2>
+    <h2 id="t-mapa" data-sello="foto"><span class="esq">Instituciones en ChatGPT y Gemini</span></h2>
     <svg id="mapa" class="mapa" viewBox="-575 -575 1150 1150" aria-label="Mapa radial: cada rama es una institución o un término; cada punto, una pregunta"></svg>
     <p class="leyenda"><span><b>Rama</b> = institución o término</span><span><b>Número</b> = respuestas que lo nombran</span><span><b>Puntos</b> = preguntas donde más aparece</span><span><b>Aro</b> = las 3 con más respuestas</span><span>De mayor a menor</span></p>
   </section>
 
   <div class="columna">
     <section class="bloque">
-      <h3>Indicadores</h3>
+      <h3 data-sello="foto">Indicadores</h3>
       <div class="kp4" id="kpis"><div><span class="et esq">Cargando dato</span><b class="esq">00,0</b><small class="esq">cargando el detalle</small></div><div><span class="et esq">Cargando dato</span><b class="esq">00,0</b><small class="esq">cargando el detalle</small></div><div><span class="et esq">Cargando dato</span><b class="esq">00,0</b><small class="esq">cargando el detalle</small></div><div><span class="et esq">Cargando dato</span><b class="esq">00,0</b><small class="esq">cargando el detalle</small></div></div>
       <p class="temporal" data-temporal></p>
     </section>
@@ -94,25 +94,25 @@
     <section class="bloque" id="rama"><div class="rama-cab"><span class="bola esq"></span><h4 class="esq">Cargando</h4></div><div class="kp4"><div><span class="et esq">Cargando dato</span><b class="esq">00,0</b><small class="esq">cargando el detalle</small></div><div><span class="et esq">Cargando dato</span><b class="esq">00,0</b><small class="esq">cargando el detalle</small></div><div><span class="et esq">Cargando dato</span><b class="esq">00,0</b><small class="esq">cargando el detalle</small></div><div><span class="et esq">Cargando dato</span><b class="esq">00,0</b><small class="esq">cargando el detalle</small></div></div><div class="carr-cab"><h4 class="esq">Cargando términos</h4></div><div class="carr"><article class="tarj esq-tarj"><div class="fila-t"><span class="rk esq">#1</span></div><h5 class="esq">cargando el término</h5><div class="big esq">00</div><div class="riel esq"></div><dl><dt class="esq">cargando</dt><dd class="esq">0</dd><dt class="esq">cargando</dt><dd class="esq">0</dd><dt class="esq">cargando</dt><dd class="esq">0</dd><dt class="esq">cargando</dt><dd class="esq">0</dd></dl></article><article class="tarj esq-tarj"><div class="fila-t"><span class="rk esq">#1</span></div><h5 class="esq">cargando el término</h5><div class="big esq">00</div><div class="riel esq"></div><dl><dt class="esq">cargando</dt><dd class="esq">0</dd><dt class="esq">cargando</dt><dd class="esq">0</dd><dt class="esq">cargando</dt><dd class="esq">0</dd><dt class="esq">cargando</dt><dd class="esq">0</dd></dl></article></div></section>
 
     <section class="bloque">
-      <h3 id="t-graf"><span class="esq">% de respuestas que nombran cada institución</span></h3>
+      <h3 id="t-graf" data-sello="foto"><span class="esq">% de respuestas que nombran cada institución</span></h3>
       <ul class="ley2"><li><b style="background:var(--s-chatgpt)"></b>ChatGPT</li><li><b style="background:var(--s-gemini)"></b>Gemini</li></ul>
       <div class="g2" id="graf"><span class="nom esq">Cargando</span><div class="barras"><div class="b"><span class="riel esq"></span><span class="esq">00 % · 0 de 00</span></div><div class="b"><span class="riel esq"></span><span class="esq">00 % · 0 de 00</span></div></div><span class="nom esq">Cargando</span><div class="barras"><div class="b"><span class="riel esq"></span><span class="esq">00 % · 0 de 00</span></div><div class="b"><span class="riel esq"></span><span class="esq">00 % · 0 de 00</span></div></div><span class="nom esq">Cargando</span><div class="barras"><div class="b"><span class="riel esq"></span><span class="esq">00 % · 0 de 00</span></div><div class="b"><span class="riel esq"></span><span class="esq">00 % · 0 de 00</span></div></div><span class="nom esq">Cargando</span><div class="barras"><div class="b"><span class="riel esq"></span><span class="esq">00 % · 0 de 00</span></div><div class="b"><span class="riel esq"></span><span class="esq">00 % · 0 de 00</span></div></div><span class="nom esq">Cargando</span><div class="barras"><div class="b"><span class="riel esq"></span><span class="esq">00 % · 0 de 00</span></div><div class="b"><span class="riel esq"></span><span class="esq">00 % · 0 de 00</span></div></div><span class="nom esq">Cargando</span><div class="barras"><div class="b"><span class="riel esq"></span><span class="esq">00 % · 0 de 00</span></div><div class="b"><span class="riel esq"></span><span class="esq">00 % · 0 de 00</span></div></div><span class="nom esq">Cargando</span><div class="barras"><div class="b"><span class="riel esq"></span><span class="esq">00 % · 0 de 00</span></div><div class="b"><span class="riel esq"></span><span class="esq">00 % · 0 de 00</span></div></div></div>
       <p class="temporal" data-temporal></p>
     </section>
 
     <section class="bloque">
-      <h3 id="t-tabla"><span class="esq">Cifras completas · instituciones</span></h3>
+      <h3 id="t-tabla" data-sello="foto"><span class="esq">Cifras completas · instituciones</span></h3>
       <div class="tabla-w"><table id="tabla"><tbody><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr></tbody></table></div>
       <p class="temporal" data-temporal></p>
     </section>
 
     <section class="bloque">
-      <h3>Puesto de UCU entre las instituciones nombradas</h3>
+      <h3 data-sello="foto">Puesto de UCU entre las instituciones nombradas</h3>
       <div class="tabla-w"><table id="t-puesto"><tbody><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr></tbody></table></div>
     </section>
 
     <section class="bloque">
-      <h3>Páginas citadas</h3>
+      <h3 data-sello="foto">Páginas citadas</h3>
       <div class="tabla-w alta"><table id="t-dom"><tbody><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr><tr><td><span class="esq">            </span></td><td><span class="esq">            </span></td><td><span class="esq">            </span></td></tr></tbody></table></div>
       <p class="pie-b" id="dom-nota"><span class="esq">Cargando la nota sobre las páginas citadas por cada IA</span></p>
     </section>
@@ -133,8 +133,8 @@
 </div>
 
 <script type="module">
-import { renderMapa } from "./assets/mapa.js?v=20261118g";
-import { leerJSON, esc, num } from "./assets/nucleo.js?v=20261118g";
+import { renderMapa } from "./assets/mapa.js?v=20261118h";
+import { sellar, leerJSON, esc, num } from "./assets/nucleo.js?v=20261118h";
 const $ = (id) => document.getElementById(id);
 const [D, glosario, sitio] = await Promise.all(["data/geo/indicadores.json", "data/glosario.json", "data/sitio.json"].map(leerJSON));
 $("sitio-titulo").textContent = sitio.titulo;
@@ -224,8 +224,9 @@ function pintarRama(rama, nodo) {
 let ramas = [];
 function pintar() {
   const R = filas(), M = medir(R).filter((x) => x.total.n > 0);
+  const diasR = [...new Set(R.map((r) => r.dia))].sort();
   const nIA = new Set(R.map((r) => r.ia)).size, dias = new Set(R.map((r) => r.dia));
-  const temporal = `<span class="sello pend">Foto</span><span><b>${[...dias].sort().map(dia).join(" y ")}</b> · ${num(R.length)} respuestas${filtro.ia === "ambas" ? ` (ChatGPT ${num(R.filter((r) => r.ia === "ChatGPT").length)}, Gemini ${num(R.filter((r) => r.ia === "Gemini").length)})` : ` de ${filtro.ia}`} · sin sesión</span><span>No muestra si sube o baja.</span>`;
+  const temporal = `<span class="sello pend">Foto</span><span><b>${[...dias].sort().map(dia).join(" y ")}</b> · ${num(R.length)} respuestas${filtro.ia === "ambas" ? ` (ChatGPT ${num(R.filter((r) => r.ia === "ChatGPT").length)}, Gemini ${num(R.filter((r) => r.ia === "Gemini").length)})` : ` de ${filtro.ia}`} · sin sesión</span>`;
   document.querySelectorAll("[data-temporal]").forEach((p) => { p.innerHTML = temporal; });
   $("t-mapa").textContent = `${filtro.ver === "inst" ? "Instituciones" : "Términos"} en ${filtro.ia === "ambas" ? "ChatGPT y Gemini" : filtro.ia}`;
 
@@ -269,6 +270,7 @@ function pintar() {
   R.forEach((z) => z.dominios.forEach((d) => { dom[d] ??= { d, ChatGPT: 0, Gemini: 0 }; dom[d][z.ia]++; }));
   $("t-dom").innerHTML = `<thead><tr><th>Sitio</th><th class="n">ChatGPT</th><th class="n">Gemini</th></tr></thead><tbody>${Object.values(dom).sort((a, b) => b.ChatGPT + b.Gemini - a.ChatGPT - a.Gemini || a.d.localeCompare(b.d)).slice(0, 15)
     .map((x) => `<tr><td>${esc(x.d)}</td><td class="n">${num(x.ChatGPT)}</td><td class="n">${num(x.Gemini)}</td></tr>`).join("") || '<tr><td colspan="3">Sin enlaces.</td></tr>'}</tbody>`;
+  sellar({ foto: `Foto · ${diasR.map(dia).join(" y ")}`, hist: `Historial · ${T.dias.length} días medidos · semanal pendiente` });
 }
 
 $("dom-nota").textContent = ["En cuántas respuestas se cita cada sitio.", ...D.dominios_nota].join(" ");
@@ -277,7 +279,7 @@ $("t-preg").innerHTML = `<thead><tr><th>Id</th><th>Pregunta</th><th>Perfil</th><
 $("glos").innerHTML = glosario.terminos.map((t) => `<dt>${esc(t.termino)}</dt><dd>${esc(t.que_es)}</dd>`).join("");
 $("t-temp").textContent = glosario.temporalidad.titulo;
 $("temp").innerHTML = `<thead><tr><th>Fuente</th><th>Qué mide</th><th>Hacia atrás</th><th>Hoy</th></tr></thead><tbody>${glosario.temporalidad.fuentes.map((f) =>
-  `<tr><td><b>${esc(f.fuente)}</b> <span class="sello ${f.tipo === "foto" ? "pend" : "ok"}">${f.tipo === "foto" ? "Foto" : "Tendencia"}</span></td><td>${esc(f.mide)}</td><td>${esc(f.hacia_atras)}</td><td>${esc(f.en_el_radar)}</td></tr>`).join("")}</tbody>`;
+  `<tr><td><b>${esc(f.fuente)}</b> <span class="sello ${f.tipo === "foto" ? "foto" : "hist"}">${f.tipo === "foto" ? "Foto" : "Historial"}</span></td><td>${esc(f.mide)}</td><td>${esc(f.hacia_atras)}</td><td>${esc(f.en_el_radar)}</td></tr>`).join("")}</tbody>`;
 $("fuente").textContent = `Fuente: ${D.fuente} ${T.condiciones.join(" ")} Reglas versión ${D.reglas_version} · colector/geo_indicadores.py.`;
 
 for (const [id, k] of [["f-ver", "ver"], ["f-ia", "ia"], ["f-dia", "dia"], ["f-preg", "preg"]]) $(id).addEventListener("change", (e) => { filtro[k] = e.target.value; if (k === "ver") ramaSel = null; pintar(); });

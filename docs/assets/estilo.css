@@ -124,6 +124,9 @@ main.agentico{padding:12px max(var(--gut),env(safe-area-inset-right,0px)) 40px m
 .sello.pend{background:var(--warn-soft);color:var(--warn)}
 .sello.sup{background:var(--accent-soft);color:var(--accent)}
 .sello.mal{background:var(--crit-soft);color:var(--down)}
+.sello.foto{background:var(--warn-soft);color:var(--warn)}
+.sello.hist{background:var(--good-soft);color:var(--up)}
+.leyenda-sellos{gap:6px;color:var(--muted)}
 
 /* ---------- Radar: buscador estilo Glimpse ---------- */
 .busc{padding:8px max(var(--gut),env(safe-area-inset-right,0px)) 0 max(var(--gut),env(safe-area-inset-left,0px));display:flex;flex-direction:column;gap:8px}
