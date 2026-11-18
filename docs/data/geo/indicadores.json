@@ -1,0 +1,578 @@
+{
+ "generado_utc": "2026-11-18T14:54:51Z",
+ "reglas_version": "2026-11-18",
+ "fuente": "Respuestas de ChatGPT y Gemini guardadas a mano (texto completo y enlaces) en el proyecto UCU Salto. Conteo por reglas, sin IA.",
+ "temporalidad": {
+  "tipo": "foto",
+  "desde": "2026-10-13",
+  "hasta": "2026-10-14",
+  "dias": [
+   {
+    "fecha": "2026-10-13",
+    "desde_uy": "12:45",
+    "hasta_uy": "16:16",
+    "respuestas": {
+     "ChatGPT": 10,
+     "Gemini": 8
+    }
+   },
+   {
+    "fecha": "2026-10-14",
+    "desde_uy": "11:01",
+    "hasta_uy": "11:14",
+    "respuestas": {
+     "ChatGPT": 8,
+     "Gemini": 8
+    }
+   }
+  ],
+  "frecuencia": "Sin frecuencia: dos días de captura. No muestra tendencia.",
+  "hacia_atras": "ChatGPT y Gemini no guardan un historial público: solo se puede medir desde el día en que se empieza.",
+  "condiciones": [
+   "Sin iniciar sesión en ninguna de las dos IA.",
+   "ChatGPT: modelo no visible.",
+   "Gemini: «Flash-Lite», el modelo que ofrece sin sesión.",
+   "Cada pregunta se hizo una vez por día."
+  ]
+ },
+ "totales": {
+  "ChatGPT": 18,
+  "Gemini": 16,
+  "total": 34
+ },
+ "instituciones": [
+  {
+   "id": "UCU",
+   "por_ia": {
+    "ChatGPT": {
+     "respuestas": 13,
+     "de": 18,
+     "pct": 72.2,
+     "veces": 114
+    },
+    "Gemini": {
+     "respuestas": 15,
+     "de": 16,
+     "pct": 93.8,
+     "veces": 108
+    },
+    "total": {
+     "respuestas": 28,
+     "de": 34,
+     "pct": 82.4,
+     "veces": 222
+    }
+   }
+  },
+  {
+   "id": "Udelar",
+   "por_ia": {
+    "ChatGPT": {
+     "respuestas": 15,
+     "de": 18,
+     "pct": 83.3,
+     "veces": 89
+    },
+    "Gemini": {
+     "respuestas": 13,
+     "de": 16,
+     "pct": 81.2,
+     "veces": 121
+    },
+    "total": {
+     "respuestas": 28,
+     "de": 34,
+     "pct": 82.4,
+     "veces": 210
+    }
+   }
+  },
+  {
+   "id": "UTEC",
+   "por_ia": {
+    "ChatGPT": {
+     "respuestas": 7,
+     "de": 18,
+     "pct": 38.9,
+     "veces": 39
+    },
+    "Gemini": {
+     "respuestas": 6,
+     "de": 16,
+     "pct": 37.5,
+     "veces": 34
+    },
+    "total": {
+     "respuestas": 13,
+     "de": 34,
+     "pct": 38.2,
+     "veces": 73
+    }
+   }
+  },
+  {
+   "id": "ORT",
+   "por_ia": {
+    "ChatGPT": {
+     "respuestas": 6,
+     "de": 18,
+     "pct": 33.3,
+     "veces": 26
+    },
+    "Gemini": {
+     "respuestas": 7,
+     "de": 16,
+     "pct": 43.8,
+     "veces": 28
+    },
+    "total": {
+     "respuestas": 13,
+     "de": 34,
+     "pct": 38.2,
+     "veces": 54
+    }
+   }
+  },
+  {
+   "id": "UTU",
+   "por_ia": {
+    "ChatGPT": {
+     "respuestas": 7,
+     "de": 18,
+     "pct": 38.9,
+     "veces": 7
+    },
+    "Gemini": {
+     "respuestas": 3,
+     "de": 16,
+     "pct": 18.8,
+     "veces": 3
+    },
+    "total": {
+     "respuestas": 10,
+     "de": 34,
+     "pct": 29.4,
+     "veces": 10
+    }
+   }
+  },
+  {
+   "id": "UM",
+   "por_ia": {
+    "ChatGPT": {
+     "respuestas": 3,
+     "de": 18,
+     "pct": 16.7,
+     "veces": 13
+    },
+    "Gemini": {
+     "respuestas": 5,
+     "de": 16,
+     "pct": 31.2,
+     "veces": 17
+    },
+    "total": {
+     "respuestas": 8,
+     "de": 34,
+     "pct": 23.5,
+     "veces": 30
+    }
+   }
+  },
+  {
+   "id": "UDE",
+   "por_ia": {
+    "ChatGPT": {
+     "respuestas": 0,
+     "de": 18,
+     "pct": 0.0,
+     "veces": 0
+    },
+    "Gemini": {
+     "respuestas": 2,
+     "de": 16,
+     "pct": 12.5,
+     "veces": 5
+    },
+    "total": {
+     "respuestas": 2,
+     "de": 34,
+     "pct": 5.9,
+     "veces": 5
+    }
+   }
+  },
+  {
+   "id": "CLAEH",
+   "por_ia": {
+    "ChatGPT": {
+     "respuestas": 0,
+     "de": 18,
+     "pct": 0.0,
+     "veces": 0
+    },
+    "Gemini": {
+     "respuestas": 0,
+     "de": 16,
+     "pct": 0.0,
+     "veces": 0
+    },
+    "total": {
+     "respuestas": 0,
+     "de": 34,
+     "pct": 0.0,
+     "veces": 0
+    }
+   }
+  }
+ ],
+ "terminos": [
+  {
+   "id": "inteligencia_artificial",
+   "por_ia": {
+    "ChatGPT": {
+     "respuestas": 18,
+     "de": 18,
+     "pct": 100.0,
+     "veces": 55
+    },
+    "Gemini": {
+     "respuestas": 3,
+     "de": 16,
+     "pct": 18.8,
+     "veces": 7
+    },
+    "total": {
+     "respuestas": 21,
+     "de": 34,
+     "pct": 61.8,
+     "veces": 62
+    }
+   },
+   "nombre": "inteligencia artificial"
+  },
+  {
+   "id": "semipresencial",
+   "por_ia": {
+    "ChatGPT": {
+     "respuestas": 9,
+     "de": 18,
+     "pct": 50.0,
+     "veces": 53
+    },
+    "Gemini": {
+     "respuestas": 8,
+     "de": 16,
+     "pct": 50.0,
+     "veces": 42
+    },
+    "total": {
+     "respuestas": 17,
+     "de": 34,
+     "pct": 50.0,
+     "veces": 95
+    }
+   },
+   "nombre": "semipresencial o a distancia"
+  },
+  {
+   "id": "ciencia_de_datos",
+   "por_ia": {
+    "ChatGPT": {
+     "respuestas": 7,
+     "de": 18,
+     "pct": 38.9,
+     "veces": 34
+    },
+    "Gemini": {
+     "respuestas": 5,
+     "de": 16,
+     "pct": 31.2,
+     "veces": 9
+    },
+    "total": {
+     "respuestas": 12,
+     "de": 34,
+     "pct": 35.3,
+     "veces": 43
+    }
+   },
+   "nombre": "ciencia de datos"
+  },
+  {
+   "id": "analisis_de_datos",
+   "por_ia": {
+    "ChatGPT": {
+     "respuestas": 8,
+     "de": 18,
+     "pct": 44.4,
+     "veces": 23
+    },
+    "Gemini": {
+     "respuestas": 3,
+     "de": 16,
+     "pct": 18.8,
+     "veces": 9
+    },
+    "total": {
+     "respuestas": 11,
+     "de": 34,
+     "pct": 32.4,
+     "veces": 32
+    }
+   },
+   "nombre": "análisis o analista de datos"
+  },
+  {
+   "id": "business_analytics",
+   "por_ia": {
+    "ChatGPT": {
+     "respuestas": 2,
+     "de": 18,
+     "pct": 11.1,
+     "veces": 2
+    },
+    "Gemini": {
+     "respuestas": 3,
+     "de": 16,
+     "pct": 18.8,
+     "veces": 13
+    },
+    "total": {
+     "respuestas": 5,
+     "de": 34,
+     "pct": 14.7,
+     "veces": 15
+    }
+   },
+   "nombre": "business analytics"
+  },
+  {
+   "id": "datos_y_negocios",
+   "por_ia": {
+    "ChatGPT": {
+     "respuestas": 2,
+     "de": 18,
+     "pct": 11.1,
+     "veces": 8
+    },
+    "Gemini": {
+     "respuestas": 1,
+     "de": 16,
+     "pct": 6.2,
+     "veces": 4
+    },
+    "total": {
+     "respuestas": 3,
+     "de": 34,
+     "pct": 8.8,
+     "veces": 12
+    }
+   },
+   "nombre": "datos y negocios"
+  },
+  {
+   "id": "negocios_digitales",
+   "por_ia": {
+    "ChatGPT": {
+     "respuestas": 2,
+     "de": 18,
+     "pct": 11.1,
+     "veces": 2
+    },
+    "Gemini": {
+     "respuestas": 1,
+     "de": 16,
+     "pct": 6.2,
+     "veces": 4
+    },
+    "total": {
+     "respuestas": 3,
+     "de": 34,
+     "pct": 8.8,
+     "veces": 6
+    }
+   },
+   "nombre": "negocios digitales"
+  }
+ ],
+ "ucu_puesto": {
+  "ChatGPT": {
+   "aparece": 13,
+   "primera": 9,
+   "promedio": 1.5
+  },
+  "Gemini": {
+   "aparece": 15,
+   "primera": 9,
+   "promedio": 1.7
+  },
+  "total": {
+   "aparece": 28,
+   "primera": 18,
+   "promedio": 1.6
+  }
+ },
+ "ucu_sin_nombrarla_en_la_pregunta": {
+  "respuestas": 22,
+  "nombran_ucu": 16
+ },
+ "errores": [
+  {
+   "id": "ultimo_inicio",
+   "nombre": "Dice «último inicio» (la carrera no abre cohortes)",
+   "ChatGPT": 1,
+   "Gemini": 0,
+   "total": 1
+  }
+ ],
+ "dominios": [
+  {
+   "dominio": "carreras.ucu.edu.uy",
+   "ChatGPT": 10,
+   "Gemini": 0,
+   "total": 10
+  },
+  {
+   "dominio": "udelar.edu.uy",
+   "ChatGPT": 10,
+   "Gemini": 0,
+   "total": 10
+  },
+  {
+   "dominio": "utec.edu.uy",
+   "ChatGPT": 7,
+   "Gemini": 0,
+   "total": 7
+  },
+  {
+   "dominio": "ucu.edu.uy",
+   "ChatGPT": 5,
+   "Gemini": 0,
+   "total": 5
+  },
+  {
+   "dominio": "facs.ort.edu.uy",
+   "ChatGPT": 4,
+   "Gemini": 0,
+   "total": 4
+  },
+  {
+   "dominio": "fcea.udelar.edu.uy",
+   "ChatGPT": 3,
+   "Gemini": 0,
+   "total": 3
+  },
+  {
+   "dominio": "fi.ort.edu.uy",
+   "ChatGPT": 3,
+   "Gemini": 0,
+   "total": 3
+  },
+  {
+   "dominio": "um.edu.uy",
+   "ChatGPT": 3,
+   "Gemini": 0,
+   "total": 3
+  },
+  {
+   "dominio": "litoralnorte.udelar.edu.uy",
+   "ChatGPT": 2,
+   "Gemini": 0,
+   "total": 2
+  },
+  {
+   "dominio": "aacsb.edu",
+   "ChatGPT": 1,
+   "Gemini": 0,
+   "total": 1
+  },
+  {
+   "dominio": "aldey.com.uy",
+   "ChatGPT": 1,
+   "Gemini": 0,
+   "total": 1
+  },
+  {
+   "dominio": "apps.mapbox.com",
+   "ChatGPT": 1,
+   "Gemini": 0,
+   "total": 1
+  }
+ ],
+ "dominios_nota": [
+  "En las respuestas guardadas de Gemini no quedó ningún enlace: no se sabe si no citó páginas o si la captura no las tomó."
+ ],
+ "preguntas": [
+  {
+   "id": "F1",
+   "texto": "Mi hijo terminó el liceo en Salto y quiere estudiar algo de datos o informática. ¿Qué universidad le conviene?",
+   "piloto": false,
+   "nombra_ucu": false,
+   "perfil": "familia"
+  },
+  {
+   "id": "F2",
+   "texto": "¿Es mejor la UCU o la Udelar para estudiar en Salto?",
+   "piloto": false,
+   "nombra_ucu": true,
+   "perfil": "familia"
+  },
+  {
+   "id": "F3",
+   "texto": "¿Qué becas hay para estudiar en la Universidad Católica en Salto?",
+   "piloto": false,
+   "nombra_ucu": true,
+   "perfil": "familia"
+  },
+  {
+   "id": "F4",
+   "texto": "¿Cuánto cuesta estudiar una licenciatura en la UCU y vale la pena frente a una carrera gratis en la Udelar o UTEC?",
+   "piloto": false,
+   "nombra_ucu": true,
+   "perfil": "familia"
+  },
+  {
+   "id": "J1",
+   "texto": "que carrera universitaria puedo estudiar en uruguay si me gustan los datos y los negocios?",
+   "piloto": false,
+   "nombra_ucu": false,
+   "perfil": "joven"
+  },
+  {
+   "id": "J2",
+   "texto": "vivo en salto y trabajo, que carreras universitarias puedo hacer online o semipresencial?",
+   "piloto": false,
+   "nombra_ucu": false,
+   "perfil": "joven"
+  },
+  {
+   "id": "J3",
+   "texto": "donde puedo estudiar analisis de datos en uruguay?",
+   "piloto": false,
+   "nombra_ucu": false,
+   "perfil": "joven"
+  },
+  {
+   "id": "J4",
+   "texto": "carreras universitarias en salto uruguay",
+   "piloto": false,
+   "nombra_ucu": false,
+   "perfil": "joven"
+  },
+  {
+   "id": "p01_joven_salto_trabajo",
+   "texto": "Vivo en Salto, Uruguay, trabajo y quiero estudiar una carrera universitaria de datos o negocios que pueda hacer sin ir todos los días a clase. ¿Qué opciones tengo?",
+   "piloto": true,
+   "nombra_ucu": false,
+   "perfil": "piloto"
+  },
+  {
+   "id": "p02_generico_datos_uruguay",
+   "texto": "¿Qué carreras de ciencia de datos o análisis de datos hay en Uruguay?",
+   "piloto": true,
+   "nombra_ucu": false,
+   "perfil": "piloto"
+  }
+ ]
+}

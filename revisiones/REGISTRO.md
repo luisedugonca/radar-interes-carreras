@@ -19,6 +19,9 @@
 
 | 2026-11-18 | Rol Analista de Datos Senior: análisis por reglas en la web (sin IA), calidad de datos, rol en el pedido para chats; carga visible; plan GEO (F9–F11) | CHICO para la web (pedido textual del PO); el plan GEO cambia alcance: queda como Propuesta hasta el OK del PO | Autochequeo: 14 pruebas OK; probado en Chrome con 3 temas comparados y una medición en vivo (carga visible con avance y tiempo restante) | Pendiente de que el PO lo mire | — |
 
+| 2026-11-18 | Página «En las IA» (GEO, foto de oct-2026) + temporalidad de cada fuente en el glosario y en cada gráfico | CHICO (pedido textual del PO) | Autochequeo: el script da las mismas cifras que la tabla corregida a mano (34 respuestas: ChatGPT 18, Gemini 16); probado en Chrome sin errores | Pendiente de que el PO lo mire | — |
+| 2026-11-18 | Corrección propia: la primera tabla de menciones leyó como vacías las 2 respuestas piloto de ChatGPT (otro formato de archivo) | — | — | Se avisó al PO y se rehízo con `colector/geo_indicadores.py` | Regla: contar siempre con el script versionado, no con conteos sueltos |
+
 ## Fuentes probadas (2026-11-16)
 
 | Fuente | Cómo se probó | Resultado | Decisión |

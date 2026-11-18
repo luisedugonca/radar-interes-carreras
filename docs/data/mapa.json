@@ -309,6 +309,15 @@
      "icono": "🎓",
      "que": "Lo que UCU puede decidir con esto: cómo nombrar una carrera, qué dudas responder en su página y con qué temas combinarla.",
      "quien": "Decanato y equipo"
+    },
+    {
+     "id": "geo",
+     "titulo": "En las IA",
+     "icono": "🤖",
+     "que": "Qué contestan ChatGPT y Gemini cuando se les pregunta por carreras: qué instituciones nombran y en qué orden. Hoy es una foto de octubre de 2026; la medición semanal está pendiente.",
+     "quien": "Web, con datos contados por reglas",
+     "donde": "docs/ia.html",
+     "estado": "Foto oct-2026 · semanal pendiente"
     }
    ]
   },

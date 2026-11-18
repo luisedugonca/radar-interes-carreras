@@ -1,0 +1,27 @@
+{
+  "version": "2026-11-18",
+  "nota": "Reglas para contar menciones en respuestas de IA. Las instituciones distinguen mayúsculas (UM, UTU, ORT son siglas); los términos no. Las mismas que registro_geo.py del proyecto UCU Salto, más los términos del tema.",
+  "instituciones": [
+    { "id": "UCU", "patron": "\\bUCU\\b|Universidad Cat[oó]lica" },
+    { "id": "Udelar", "patron": "Udelar|Universidad de la Rep[uú]blica|CENUR|FCEA|Facultad de Ingenier[ií]a" },
+    { "id": "UTEC", "patron": "\\bUTEC\\b|Universidad Tecnol[oó]gica" },
+    { "id": "ORT", "patron": "\\bORT\\b" },
+    { "id": "UM", "patron": "\\bUM\\b|Universidad de Montevideo" },
+    { "id": "UTU", "patron": "\\bUTU\\b|CETP" },
+    { "id": "UDE", "patron": "\\bUDE\\b|Universidad de la Empresa" },
+    { "id": "CLAEH", "patron": "CLAEH" }
+  ],
+  "terminos": [
+    { "id": "datos_y_negocios", "nombre": "datos y negocios", "patron": "datos y negocios" },
+    { "id": "inteligencia_artificial", "nombre": "inteligencia artificial", "patron": "inteligencia artificial|\\bIA\\b" },
+    { "id": "ciencia_de_datos", "nombre": "ciencia de datos", "patron": "ciencia de datos" },
+    { "id": "analisis_de_datos", "nombre": "análisis o analista de datos", "patron": "an[aá]lisis de datos|analista de datos" },
+    { "id": "business_analytics", "nombre": "business analytics", "patron": "business analytics" },
+    { "id": "negocios_digitales", "nombre": "negocios digitales", "patron": "negocios digitales" },
+    { "id": "semipresencial", "nombre": "semipresencial o a distancia", "patron": "semipresencial|a distancia|online|en l[ií]nea|virtual" }
+  ],
+  "errores_conocidos": [
+    { "id": "ultimo_inicio", "nombre": "Dice «último inicio» (la carrera no abre cohortes)", "patron": "[uú]ltimo inicio" }
+  ],
+  "dominios_ignorados": "openai|chatgpt|google\\.com/(search|url)|gemini|policies\\.google"
+}

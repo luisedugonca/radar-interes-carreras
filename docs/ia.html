@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>En las IA · Radar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/estilo.css">
+<script src="assets/tema.js"></script>
+<style>
+  :root{ --s-chatgpt:#0f9b82; --s-gemini:#5b6cf0; }
+  .tl{width:100%;height:auto;display:block}
+  .tl text{font-family:var(--f-body);font-size:12px;fill:var(--muted)}
+  .tl .eje{stroke:var(--line);stroke-width:2}
+  .tl .pend{stroke:var(--warn);stroke-width:2;stroke-dasharray:5 6}
+  .tl .hoy{fill:var(--ink)}
+  .tl .punto{fill:var(--accent)}
+  .tl .fuerte{fill:var(--ink);font-weight:700}
+  .temporal{display:flex;flex-wrap:wrap;gap:6px 12px;align-items:center;font-size:.8rem;color:var(--muted);margin:10px 0 0;padding-top:8px;border-top:1px dashed var(--line)}
+  .temporal b{color:var(--ink)}
+  .g2{display:grid;grid-template-columns:minmax(110px,190px) 1fr;gap:4px 12px;align-items:center}
+  .g2 .nom{font-weight:600;font-size:.88rem}
+  .g2 .barras{display:flex;flex-direction:column;gap:3px}
+  .g2 .b{display:grid;grid-template-columns:1fr 104px;gap:8px;align-items:center;font-size:.78rem;font-variant-numeric:tabular-nums}
+  .g2 .riel{height:10px;background:var(--soft);border-radius:999px;overflow:hidden;border:1px solid var(--line)}
+  .g2 .riel i{display:block;height:100%;border-radius:999px}
+  .g2 .sepg{grid-column:1/-1;border-top:1px solid var(--line);margin:4px 0}
+  .ley2{display:flex;gap:14px;font-size:.8rem;margin:0 0 10px;padding:0;list-style:none}
+  .ley2 b{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:6px;vertical-align:-2px}
+  .rejilla{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:8px}
+  @media (max-width:900px){.rejilla{grid-template-columns:minmax(0,1fr)}}
+</style>
+</head>
+<body>
+<header class="cab">
+  <div class="cab-in">
+    <div>
+      <h1 id="sitio-titulo">Radar de interés</h1>
+      <p id="sitio-equipo"></p>
+    </div>
+    <nav class="pest" aria-label="Secciones">
+      <a href="index.html">Mapa agéntico</a>
+      <a href="ia.html" aria-current="page">En las IA</a>
+      <a href="radar.html">Radar de interés</a>
+      <a href="#glosario">Glosario</a>
+      <a id="enl-repo" href="#">Repositorio</a>
+      <button type="button" id="btn-tema">☾ Oscuro</button>
+    </nav>
+  </div>
+</header>
+
+<main class="agentico">
+  <section class="bloque" aria-labelledby="t-cuando">
+    <h3 id="t-cuando">Cuándo se midió <span class="sello pend">Foto · no es tendencia</span></h3>
+    <svg id="linea" class="tl" role="img"></svg>
+    <ul class="ley" id="condiciones"></ul>
+  </section>
+
+  <div class="sec-t"><span class="n">1</span><h2>¿Nombran a UCU cuando se pregunta por carreras?</h2></div>
+  <div class="kp4" id="kpis" style="grid-template-columns:repeat(auto-fit,minmax(200px,1fr))"></div>
+
+  <div class="rejilla" style="margin-top:8px">
+    <section class="bloque">
+      <h3>Instituciones: % de respuestas que las nombran</h3>
+      <ul class="ley2"><li><b style="background:var(--s-chatgpt)"></b>ChatGPT</li><li><b style="background:var(--s-gemini)"></b>Gemini</li></ul>
+      <div class="g2" id="g-inst"></div>
+      <p class="temporal" data-temporal></p>
+    </section>
+    <section class="bloque">
+      <h3>Términos: % de respuestas que los usan</h3>
+      <ul class="ley2"><li><b style="background:var(--s-chatgpt)"></b>ChatGPT</li><li><b style="background:var(--s-gemini)"></b>Gemini</li></ul>
+      <div class="g2" id="g-term"></div>
+      <p class="temporal" data-temporal></p>
+    </section>
+  </div>
+
+  <div class="sec-t"><span class="n">2</span><h2>Las cifras completas</h2></div>
+  <section class="bloque">
+    <h3>Instituciones</h3>
+    <div class="tabla-w"><table id="t-inst"></table></div>
+    <p class="temporal" data-temporal></p>
+  </section>
+  <section class="bloque" style="margin-top:8px">
+    <h3>Términos</h3>
+    <div class="tabla-w"><table id="t-term"></table></div>
+    <p class="temporal" data-temporal></p>
+  </section>
+  <div class="rejilla" style="margin-top:8px">
+    <section class="bloque">
+      <h3>Puesto de UCU entre las instituciones nombradas</h3>
+      <div class="tabla-w"><table id="t-puesto"></table></div>
+      <p class="temporal" data-temporal></p>
+    </section>
+    <section class="bloque">
+      <h3>Páginas citadas</h3>
+      <div class="tabla-w"><table id="t-dom"></table></div>
+      <p class="pie-b" id="dom-nota"></p>
+      <p class="temporal" data-temporal></p>
+    </section>
+  </div>
+
+  <div class="sec-t"><span class="n">3</span><h2>Las preguntas</h2></div>
+  <section class="bloque">
+    <div class="tabla-w"><table id="t-preg"></table></div>
+    <div class="enl" style="margin-top:10px"><a class="btn sec" href="data/geo/respuestas.csv" download="radar-ia-respuestas.csv">⬇ Una fila por respuesta (CSV)</a></div>
+  </section>
+
+  <section class="bloque" id="glosario" style="margin-top:8px">
+    <h3>Glosario</h3>
+    <dl class="glosario" id="glos"></dl>
+    <h3 style="margin-top:16px" id="t-temp"></h3>
+    <div class="tabla-w"><table id="temp"></table></div>
+  </section>
+  <p class="fuente" id="fuente"></p>
+</main>
+
+<script type="module">
+import { leerJSON, esc, num } from "./assets/nucleo.js";
+const $ = (id) => document.getElementById(id);
+const [d, glosario, sitio] = await Promise.all(["data/geo/indicadores.json", "data/glosario.json", "data/sitio.json"].map(leerJSON));
+$("sitio-titulo").textContent = sitio.titulo;
+$("sitio-equipo").textContent = sitio.equipo;
+$("enl-repo").href = `https://github.com/${sitio.repo}`;
+
+const MES = ["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"];
+const dia = (iso) => { const [a, m, dd] = iso.split("-"); return `${+dd}-${MES[+m - 1]}-${a}`; };
+const T = d.temporalidad, tot = d.totales, p1 = (v) => num(Math.round(v * 10) / 10);
+const IAS = [["ChatGPT", "var(--s-chatgpt)"], ["Gemini", "var(--s-gemini)"]];
+
+/* Temporalidad: una línea del primer día medido hasta hoy */
+const textoTemporal = `<span class="sello pend">Foto</span><span><b>${T.dias.map((x) => dia(x.fecha)).join(" y ")}</b> · ${num(tot.total)} respuestas (ChatGPT ${num(tot.ChatGPT)}, Gemini ${num(tot.Gemini)}) · sin sesión</span><span>No muestra si sube o baja: hace falta medir cada semana.</span>`;
+document.querySelectorAll("[data-temporal]").forEach((p) => { p.innerHTML = textoTemporal; });
+(function linea() {
+  const svg = $("linea"), W = 1000, H = 80, m = { l: 14, r: 14 }, y = 38;
+  const t0 = new Date(T.desde + "T12:00:00"), ult = new Date(T.hasta + "T12:00:00"), hoy = new Date();
+  const t1 = new Date(Math.max(hoy.getTime(), ult.getTime() + 864e5));
+  const x = (t) => m.l + ((t - t0) / (t1 - t0)) * (W - m.l - m.r);
+  const medido = T.dias.map((dd) => `${dia(dd.fecha)} (${dd.respuestas.ChatGPT + dd.respuestas.Gemini} respuestas, ${dd.desde_uy} a ${dd.hasta_uy})`).join(" y ");
+  const hoyIso = `${hoy.getFullYear()}-${String(hoy.getMonth() + 1).padStart(2, "0")}-${String(hoy.getDate()).padStart(2, "0")}`;
+  svg.setAttribute("viewBox", `0 0 ${W} ${H}`);
+  svg.setAttribute("aria-label", `Medido el ${medido}. Desde el ${dia(T.hasta)} hasta hoy, sin medición.`);
+  svg.innerHTML = `<line class="eje" x1="${x(t0)}" x2="${x(ult)}" y1="${y}" y2="${y}"/>
+    <line class="pend" x1="${x(ult)}" x2="${W - m.r}" y1="${y}" y2="${y}"/>
+    ${T.dias.map((dd) => `<circle class="punto" cx="${x(new Date(dd.fecha + "T12:00:00"))}" cy="${y}" r="7"/>`).join("")}
+    <circle class="hoy" cx="${W - m.r}" cy="${y}" r="5"/>
+    <text x="${m.l}" y="16" class="fuerte">Medido: ${esc(medido)} · hora de Uruguay</text>
+    <text x="${W - m.r}" y="16" text-anchor="end" class="fuerte">Hoy · ${dia(hoyIso)}</text>
+    <text x="${(x(ult) + W - m.r) / 2}" y="${y + 26}" text-anchor="middle">Sin medición desde el ${dia(T.hasta)}: la medición semanal está pendiente</text>`;
+  $("condiciones").innerHTML = [T.frecuencia, T.hacia_atras, ...T.condiciones].map((c) => `<li>${esc(c)}</li>`).join("");
+})();
+
+/* Indicadores */
+const ucu = d.instituciones.find((i) => i.id === "UCU").por_ia, dyn = d.terminos.find((t) => t.id === "datos_y_negocios").por_ia, sinU = d.ucu_sin_nombrarla_en_la_pregunta;
+$("kpis").innerHTML = `
+  <div class="dest"><span class="et">Respuestas que nombran a UCU</span><b>${p1(ucu.total.pct)} %</b><small>ChatGPT ${p1(ucu.ChatGPT.pct)} % · Gemini ${p1(ucu.Gemini.pct)} %</small></div>
+  <div><span class="et">Si la pregunta no nombra a UCU</span><b>${num(sinU.nombran_ucu)} de ${num(sinU.respuestas)}</b><small>respuestas igual la nombran</small></div>
+  <div><span class="et">Puesto de UCU</span><b>${p1(d.ucu_puesto.total.promedio)}</b><small>primera en ${num(d.ucu_puesto.total.primera)} de ${num(d.ucu_puesto.total.aparece)} respuestas</small></div>
+  <div><span class="et">Nombran «datos y negocios»</span><b>${num(dyn.total.respuestas)} de ${num(dyn.total.de)}</b><small>la carrera casi no aparece</small></div>`;
+
+/* Gráficos agrupados ChatGPT / Gemini */
+function grupos(el, filas, nombre) {
+  el.innerHTML = filas.map((f, k) => `${k ? '<div class="sepg"></div>' : ""}<span class="nom">${esc(nombre(f))}</span><div class="barras">${IAS.map(([ia, c]) => {
+    const v = f.por_ia[ia]; return `<div class="b"><span class="riel" title="${ia}"><i style="width:${v.pct}%;background:${c}"></i></span><span>${p1(v.pct)} % · ${num(v.respuestas)} de ${num(v.de)}</span></div>`; }).join("")}</div>`).join("");
+}
+grupos($("g-inst"), d.instituciones.filter((i) => i.por_ia.total.respuestas), (f) => f.id);
+grupos($("g-term"), d.terminos, (f) => f.nombre);
+
+/* Tablas */
+const tabla = (filas, nombre) => `<thead><tr><th>${nombre}</th><th class="n">ChatGPT (de ${tot.ChatGPT})</th><th class="n">Gemini (de ${tot.Gemini})</th><th class="n">Total (de ${tot.total})</th><th class="n">Veces ChatGPT</th><th class="n">Veces Gemini</th><th class="n">Veces total</th></tr></thead><tbody>${filas.map((f) => {
+  const r = (ia) => `${num(f.por_ia[ia].respuestas)} (${p1(f.por_ia[ia].pct)} %)`;
+  return `<tr><td><b>${esc(f.nombre ?? f.id)}</b></td><td class="n">${r("ChatGPT")}</td><td class="n">${r("Gemini")}</td><td class="n"><b>${r("total")}</b></td><td class="n">${num(f.por_ia.ChatGPT.veces)}</td><td class="n">${num(f.por_ia.Gemini.veces)}</td><td class="n">${num(f.por_ia.total.veces)}</td></tr>`; }).join("")}</tbody>`;
+$("t-inst").innerHTML = tabla(d.instituciones.filter((i) => i.por_ia.total.respuestas), "Institución");
+$("t-term").innerHTML = tabla(d.terminos, "Término");
+const P = d.ucu_puesto;
+$("t-puesto").innerHTML = `<thead><tr><th></th><th class="n">ChatGPT</th><th class="n">Gemini</th><th class="n">Total</th></tr></thead><tbody>
+  <tr><td>UCU aparece primera</td>${["ChatGPT", "Gemini", "total"].map((k) => `<td class="n">${num(P[k].primera)} de ${num(P[k].aparece)}</td>`).join("")}</tr>
+  <tr><td>Puesto promedio</td>${["ChatGPT", "Gemini", "total"].map((k) => `<td class="n">${p1(P[k].promedio)}</td>`).join("")}</tr></tbody>`;
+$("t-dom").innerHTML = `<thead><tr><th>Sitio</th><th class="n">ChatGPT</th><th class="n">Gemini</th></tr></thead><tbody>${d.dominios.map((x) =>
+  `<tr><td>${esc(x.dominio)}</td><td class="n">${num(x.ChatGPT)}</td><td class="n">${num(x.Gemini)}</td></tr>`).join("")}</tbody>`;
+$("dom-nota").textContent = ["Cuenta en cuántas respuestas se cita cada sitio.", ...d.dominios_nota].join(" ");
+$("t-preg").innerHTML = `<thead><tr><th>Id</th><th>Pregunta</th><th>Perfil</th><th>¿Nombra a UCU?</th></tr></thead><tbody>${d.preguntas.map((q) =>
+  `<tr><td>${esc(q.id)}</td><td>${esc(q.texto)}</td><td>${esc(q.piloto ? "prueba piloto" : q.perfil)}</td><td>${q.nombra_ucu ? '<span class="sello pend">Sí: infla el resultado</span>' : "No"}</td></tr>`).join("")}</tbody>`;
+
+/* Glosario y temporalidad de todas las fuentes */
+$("glos").innerHTML = glosario.terminos.map((t) => `<dt>${esc(t.termino)}</dt><dd>${esc(t.que_es)}</dd>`).join("");
+$("t-temp").textContent = glosario.temporalidad.titulo;
+$("temp").innerHTML = `<thead><tr><th>Fuente</th><th>Qué mide</th><th>Hacia atrás</th><th>Hoy</th></tr></thead><tbody>${glosario.temporalidad.fuentes.map((f) =>
+  `<tr><td><b>${esc(f.fuente)}</b> <span class="sello ${f.tipo === "foto" ? "pend" : "ok"}">${f.tipo === "foto" ? "Foto" : "Tendencia"}</span></td><td>${esc(f.mide)}</td><td>${esc(f.hacia_atras)}</td><td>${esc(f.en_el_radar)}</td></tr>`).join("")}</tbody>`;
+$("fuente").textContent = `Fuente: ${d.fuente} Reglas versión ${d.reglas_version} (docs/data/geo/reglas_geo.json) · script colector/geo_indicadores.py.`;
+</script>
+</body>
+</html>
