@@ -4,7 +4,7 @@ Datos medidos del autocompletar de Google y de YouTube para Uruguay.
 **Son frases distintas que el buscador propone. El número entre paréntesis es en cuántas consultas apareció cada frase. NO es cantidad de búsquedas ni de personas.**
 «Quién» (estudiante o familia) es una lectura del equipo: tratarlo como supuesto.
 
-Actualizado: 2026-11-16T22:25:01Z · 10 temas.
+Actualizado: 2026-11-18T13:25:31Z · 11 temas.
 
 ## analisis de datos
 
@@ -133,6 +133,24 @@ Actualizado: 2026-11-16T22:25:01Z · 10 temas.
 - **Tipo de formación** — 30 frases (28.6 %): licenciatura en negocios internacionales e integración (26); licenciatura en tecnologías de la información y negocios digitales (5); licenciatura en mercadotecnia internacional y negocios digitales modalidad no escolarizada (5); licenciatura en entornos virtuales y negocios digitales (3); licenciatura en mercadotecnia internacional y negocios digitales (3); licenciatura en nnii (3); licenciatura en comercio electrónico y negocios digitales (3); licenciatura en management con orientación en negocios digitales (3); licenciatura en administración de empresas y negocios digitales (3); licenciatura en ingles con enfasis en negocios digitales (3)
 - **Temas con los que se combina** — 2 frases (1.9 %): lic en negocios digitales (3); licenciatura en negocios digitales y marketing (3)
 - **Aprender por su cuenta** — 4 frases (3.8 %): licenciatura en negocios digitales que es (2); que es licenciatura en negocios digitales (1); licenciatura en negocios digitales reddit (1); que es la licenciatura en negocios digitales (1)
+
+## marketing digital
+
+- Medido: 2026-11-18T13:25:31Z · corrida `20261118T132531Z_marketing-digital`
+- Frases distintas: 579 · de otros países: 23.5 % · sin clasificar: 160
+- Instituciones uruguayas nombradas: Udelar (2), ORT (1), UDE (1), UM (1), UTU (1)
+
+- **Emprender o ganar dinero** — 7 frases (1.2 %): marketing digital freelance (1); marketing digital hotmart (1); marketing digital trabajo desde casa (1); marketing digital ganar dinero (1); marketing digital se puede trabajar desde casa (1); marketing digital ganar dinero viendo videos (1); marketing digital para dropshipping (1)
+- **Becas y ayuda** — 5 frases (0.9 %): maestria en marketing digital becas (1); especializacion en marketing digital becas (1); master en marketing digital becas (1); becas marketing digital 2025 (1); becas marketing digital 2026 (1)
+- **Costo** — 37 frases (6.4 %): marketing digital a distancia gratis (2); marketing digital curso gratuito (2); marketing digital carrera gratis (2); dónde estudiar marketing digital gratis (2); marketing digital gratis (2); estudiar marketing digital gratis (1); marketing digital carrera costo (1); curso marketing digital costo (1); marketing digital sin costo de google (1); dónde estudiar marketing digital virtual gratis (1)
+- **Salida laboral** — 39 frases (6.7 %): marketing digital que es y para que sirve (2); marketing digital tiene salida laboral (2); marketing digital trabajo (2); marketing digital que es y como funciona cuanto gana (2); marketing digital que hace (2); marketing digital que salida laboral tiene (2); marketing digital empleo (1); marketing digital junior (1); marketing digital jobs (1); marketing digital ofertas de empleo (1)
+- **Modalidad** — 23 frases (4.0 %): marketing digital carrera online (2); estudiar marketing digital a distancia (2); marketing digital a distancia (1); marketing digital virtual (1); estudiar marketing digital online (1); marketing digital online (1); marketing digital carrera a distancia (1); marketing digital remoto (1); tecnicatura marketing digital a distancia (1); curso marketing digital a distancia (1)
+- **Plan y requisitos** — 28 frases (4.8 %): marketing digital que materias tiene (2); cuanto dura marketing digital (1); marketing digital carrera requisitos (1); marketing digital de que se trata (1); marketing digital carrera de que trata (1); marketing digital carrera plan de estudios (1); master marketing digital requisitos (1); cuanto dura estudiar marketing digital (1); curso de marketing digital requisitos (1); cuanto años dura marketing digital (1)
+- **Comparar y decidir** — 27 frases (4.7 %): estudiar marketing digital vale la pena (1); teclab marketing digital opiniones (1); coderhouse marketing digital opiniones (1); marketing digital vs marketing tradicional (1); vale la pena estudiar marketing digital en 2026 (1); ap marketing digital opiniones (1); vale la pena aprender marketing digital (1); marketing digital y community manager es lo mismo (1); marketing digital ventajas y desventajas (1); marketing digital y mercadotecnia es lo mismo (1)
+- **Dónde estudiar** — 23 frases (4.0 %): marketing digital udelar (4); marketing digital uruguay (3); marketing digital utu (2); marketing digital estudiar uruguay (2); marketing digital ort (2); marketing digital um (2); marketing digital uruguay estudiar (2); marketing digital curso uruguay (2); marketing digital donde estudiar (1); marketing digital uruguay udelar (1)
+- **Tipo de formación** — 27 frases (4.7 %): marketing digital curso (2); marketing digital carrera (2); marketing digital es buena carrera (2); marketing digital que tan buena carrera es (2); que estudiar marketing digital (1); porque es importante estudiar el entorno del marketing (1); marketing digital google curso (1); marketing digital maestria (1); marketing digital diplomado (1); marketing digital es una carrera (1)
+- **Temas con los que se combina** — 17 frases (2.9 %): marketing digital y comercio electrónico (2); marketing digital con ia (2); qué es marketing digital con ia (1); marketing digital ia (1); que es marketing digital y comercio electrónico (1); marketing digital navegando en aguas digitales (1); marketing contenidos (1); marketing digital lleva matematicas (1); marketing digital navegando en aguas digitales pdf (1); marketing digital e inteligencia artificial (1)
+- **Aprender por su cuenta** — 50 frases (8.6 %): marketing digital que es y como funciona (3); marketing digital que es (2); marketing digital desde cero (2); marketing digital para todos leo freidenberg pdf (2); marketing digital que significa (2); marketing digital coderhouse (2); marketing digital noticias (1); marketing digital wikipedia (1); marketing digital ejemplos (1); marketing digital google (1)
 
 ## negocios digitales
 
