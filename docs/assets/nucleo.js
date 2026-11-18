@@ -122,7 +122,7 @@ export async function consultaEnVivo(temaCrudo, reglas, alAvanzar) {
 }
 
 // Convierte una consulta en los datos que dibuja mapa.js.
-// La cabeza de cada rama es la intención (con su total); los hijos, sus búsquedas más repetidas.
+// La cabeza de cada rama es el tipo de duda (con sus apariciones); los hijos, sus frases con más datos.
 // Las ramas van de la que tiene más datos (apariciones sumadas) a la que tiene menos.
 // Los puntos crecen con las apariciones de la frase; las 3 frases con más datos de todo el mapa llevan un aro.
 export function consultaAMapa(consulta) {
@@ -136,7 +136,7 @@ export function consultaAMapa(consulta) {
     .map((i) => ({
       id: i.id, titulo: i.nombre, color: i.color, intencion: i,
       nodos: [
-        { id: `${i.id}-cab`, titulo: i.nombre, icono: String(i.total) },
+        { id: `${i.id}-cab`, titulo: i.nombre, icono: String(i.apariciones_total ?? i.total) },
         ...i.sugerencias.slice(0, 4).map((s, k) => ({
           id: `${i.id}-s${k}`, sugerencia: s, icono: String(s.apariciones),
           peso: s.apariciones / maxAp, destacado: destacadas.has(s),

@@ -1,0 +1,23 @@
+{
+  "nota": "Glosario del radar. Lo lee docs/radar.html. Sin cifras: las cifras salen de las consultas.",
+  "terminos": [
+    { "termino": "Tema", "que_es": "Lo que se escribe en el buscador, por ejemplo el nombre de una carrera o de un área." },
+    { "termino": "Consulta", "que_es": "Cada pedido que el radar le hace al autocompletar de Google: el tema solo, con cada letra del abecedario, como pregunta y con dudas típicas de estudiantes y familias. Un tema guardado usa más consultas que uno en vivo." },
+    { "termino": "Apariciones", "que_es": "En cuántas consultas el buscador propuso una frase. Es el dato principal del radar: cuanto más aparece, más «a mano» la tiene Google. No es cantidad de búsquedas ni de personas." },
+    { "termino": "Posición en la lista", "que_es": "Lugar de la frase en la lista que Google sugiere al escribir (1 = la primera). Se muestra el promedio y el mejor puesto. No es el puesto en los resultados de búsqueda." },
+    { "termino": "Entre las 3 / 10 primeras", "que_es": "Cuántas veces la frase quedó en esos lugares de la lista. Las 3 primeras son las que más se ven." },
+    { "termino": "Tipo de duda (rama)", "que_es": "Grupo de frases según lo que la persona quiere saber: costo, becas, salida laboral, modalidad, dónde estudiar, plan y requisitos, tipo de formación, temas con los que se combina, aprender por su cuenta, comparar. Las reglas están en reglas.json." },
+    { "termino": "Peso", "que_es": "Qué parte de las apariciones del tema corresponde a un tipo de duda." },
+    { "termino": "Duda principal", "que_es": "El tipo de duda con más apariciones." },
+    { "termino": "Término más propuesto", "que_es": "La frase con más apariciones. Si empatan, gana la que estuvo más veces entre las 3 primeras y después la de mejor posición promedio." },
+    { "termino": "Instituciones nombradas", "que_es": "Universidades e institutos de Uruguay que aparecen dentro de las frases, y en cuántas frases." },
+    { "termino": "Grupos apartados", "que_es": "Frases que no se dibujan en el mapa: las que nombran otros países, las de emprender o ganar dinero, y las que ninguna regla reconoce (sin clasificar)." },
+    { "termino": "Fuente: Google / YouTube", "que_es": "El filtro muestra solo las frases que propuso ese buscador. Las apariciones de cada frase suman las dos fuentes." },
+    { "termino": "Quién pregunta", "que_es": "Si la duda es más de estudiantes o de familias. Es una lectura del equipo, no una medición: por eso lleva la marca Supuesto." },
+    { "termino": "Supuesto", "que_es": "Algo que interpretamos nosotros. No sale de un dato medido." },
+    { "termino": "Guardado / en vivo", "que_es": "Guardado: medido con el colector, con su crudo y su manifiesto en el repositorio. En vivo: medido ahora desde tu navegador, sin guardar." },
+    { "termino": "Comparar", "que_es": "Pone otros temas guardados al lado del actual, con los mismos indicadores." },
+    { "termino": "Interés (Google Trends)", "que_es": "Índice de 0 a 100 de cuánto se busca un tema a lo largo del tiempo, en relación con su mejor mes. No es cantidad. El radar abre Trends con el tema cargado." },
+    { "termino": "Top 10 de Google", "que_es": "Quién aparece en los primeros resultados. Todavía no está: hace falta una fuente oficial (fase F5 del plan)." }
+  ]
+}

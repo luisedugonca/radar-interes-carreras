@@ -12,6 +12,9 @@
 
 | 2026-11-18 | Panel derecho del mapa: indicadores por rama, carrusel de términos ordenados por datos, puesto en la lista de sugerencias | CHICO (pedido textual del PO; no cambia fuentes ni reglas de clasificación) | Autochequeo: 13 pruebas OK; reproceso desde el crudo deja las mismas frases en los 10 temas; probado en Chrome (guardado, en vivo y a 500 px) | Pendiente de que el PO lo mire | — |
 
+| 2026-11-18 | Radar rehecho: buscador estilo Glimpse (tema, comparar, filtros), mapa fijo a la izquierda, claro/oscuro, glosario, menos texto | CHICO (pedido textual del PO; no cambia fuentes ni datos) | Autochequeo: pruebas OK; probado en Chrome en claro y oscuro, con 3 temas comparados, filtros por tipo de duda y fuente, en vivo y a 500 px; sin errores de consola | Pendiente de que el PO lo mire | — |
+| 2026-11-18 | Corrección del PO sobre los KPIs | — | — | — | «Frases distintas» y «útiles para Uruguay» no son KPIs. Se quedan: apariciones por término, posición en la lista, instituciones nombradas. Se suman, cuando haya fuente: interés (Trends), keywords, posición en Google (top 3 / 4–10 / más allá del 10), popularidad del sitio |
+
 ## Fuentes probadas (2026-11-16)
 
 | Fuente | Cómo se probó | Resultado | Decisión |

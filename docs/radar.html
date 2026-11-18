@@ -2,12 +2,13 @@
 <html lang="es">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Radar de interés</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/estilo.css">
+<script src="assets/tema.js"></script>
 </head>
 <body>
 <header class="cab">
@@ -19,332 +20,361 @@
     <nav class="pest" aria-label="Secciones">
       <a href="index.html">Mapa agéntico</a>
       <a href="radar.html" aria-current="page">Radar de interés</a>
+      <a href="#glosario">Glosario</a>
       <a id="enl-repo" href="#">Repositorio</a>
+      <button type="button" id="btn-tema">☾ Oscuro</button>
     </nav>
   </div>
 </header>
 
-<main>
-  <form class="barra" id="form">
-    <label>Consultas guardadas
-      <select id="guardadas"></select>
+<form class="busc" id="form" autocomplete="off">
+  <div class="temas-fila">
+    <label class="term" style="--c:#4f8dff">
+      <span class="punto" aria-hidden="true"></span>
+      <span class="campo">
+        <input id="tema" list="lista-temas" maxlength="60" aria-label="Tema o carrera">
+        <small id="tema-sub">Escribí un tema y Enter para medirlo en vivo</small>
+      </span>
     </label>
-    <label>O probá un tema nuevo, en vivo
-      <input id="tema" type="text" maxlength="60" placeholder="Ej.: gestión agropecuaria" autocomplete="off">
-    </label>
-    <button class="btn" id="btn-vivo" type="submit">Explorar en vivo</button>
-  </form>
-  <p class="estado" id="estado" role="status"></p>
+    <div class="comparar" id="comparar"></div>
+  </div>
+  <datalist id="lista-temas"></datalist>
+  <div class="filtros">
+    <span class="pill fija" title="Las consultas se hacen para Google Uruguay">Uruguay</span>
+    <span class="pill fija" id="f-fecha"></span>
+    <label class="pill"><select id="f-duda" aria-label="Tipo de duda"></select></label>
+    <label class="pill"><select id="f-fuente" aria-label="Fuente">
+      <option value="todas">Google y YouTube</option>
+      <option value="google">Solo Google</option>
+      <option value="youtube">Solo YouTube</option>
+    </select></label>
+    <p class="estado" id="estado" role="status"></p>
+  </div>
+</form>
 
-  <div class="sec-t"><span class="n">1</span><h2 id="t-mapa">Qué quiere saber la gente</h2></div>
-  <section class="noche" aria-label="Mapa de interés">
-    <div class="lienzo">
-      <p class="ayuda-mapa">Cada rama es un tipo de duda, numerada de la que tiene más datos a la que tiene menos. El número del primer punto es cuántas frases distintas tiene; en los demás, cuántas consultas propusieron esa frase. Los puntos con aro son las 3 frases con más datos.</p>
-      <svg id="mapa" class="mapa" aria-label="Mapa radial de búsquedas por intención"></svg>
-    </div>
-    <aside class="ficha" id="ficha" aria-live="polite"></aside>
+<div class="radar">
+  <section class="escena" aria-label="Mapa de interés">
+    <h2 id="t-mapa"></h2>
+    <svg id="mapa" class="mapa" aria-label="Mapa radial de frases por tipo de duda"></svg>
+    <p class="leyenda"><span><b>Número</b> = apariciones</span><span><b>Tamaño</b> = más apariciones</span><span><b>Aro</b> = 3 términos con más datos</span><span>Ramas de mayor a menor</span></p>
   </section>
-  <p class="fuente" id="fuente-mapa"></p>
 
-  <div class="sec-t"><span class="n">2</span><h2>Indicadores</h2></div>
-  <div class="kpis" id="kpis"></div>
-  <p class="aviso" style="margin-top:12px"><b>Cómo leer estos números.</b> Cuentan <b>frases distintas</b> que el buscador propone, no personas ni cantidad de búsquedas. Sirven para saber <b>qué se pregunta y con qué palabras</b>; no para saber cuánta gente lo pregunta.</p>
+  <div class="columna">
+    <section class="bloque">
+      <h3>Indicadores del tema</h3>
+      <div class="kp4" id="kpis"></div>
+      <p class="pie-b" id="f-kpis"></p>
+    </section>
 
-  <div class="sec-t"><span class="n">3</span><h2>Por tipo de duda</h2></div>
-  <div class="dos">
-    <div class="caja">
-      <h3>Frases distintas por tipo de duda</h3>
-      <p class="sub">Tocá una fila para ver las frases.</p>
+    <section class="bloque" id="rama"></section>
+
+    <section class="bloque">
+      <h3>Apariciones por tipo de duda</h3>
       <div id="barras"></div>
-      <p class="fuente" id="fuente-barras"></p>
-    </div>
-    <div class="caja">
+    </section>
+
+    <section class="bloque" id="b-comparar" hidden>
+      <h3>Comparación</h3>
+      <div class="tabla-w"><table id="t-comparar"></table></div>
+      <ul class="ley" id="ley-comparar"></ul>
+    </section>
+
+    <section class="bloque">
       <h3 id="t-lista">Frases</h3>
-      <p class="sub" id="sub-lista"></p>
-      <div class="tabla-w" style="max-height:470px;overflow-y:auto"><table><thead><tr><th>Frase</th><th class="n" title="En cuántas consultas distintas apareció">Apariciones</th><th class="n" title="Lugar promedio en la lista de sugerencias (1 = primera)">Puesto prom.</th><th>Ver</th></tr></thead><tbody id="lista"></tbody></table></div>
-    </div>
-  </div>
+      <div class="tabla-w alta"><table><thead><tr><th>Frase</th><th class="n">Apariciones</th><th class="n">Posición</th><th>Ver</th></tr></thead><tbody id="lista"></tbody></table></div>
+    </section>
 
-  <div class="sec-t"><span class="n">4</span><h2>Términos candidatos para nombrar y describir la carrera</h2></div>
-  <div class="dos">
-    <div class="caja">
-      <h3>Las frases que más se repiten</h3>
-      <p class="sub">Orden: en cuántas consultas distintas apareció cada frase. Quedan afuera las de otros países, las de emprender y las sin clasificar.</p>
-      <div class="tabla-w"><table><thead><tr><th class="n">#</th><th>Frase</th><th>Tipo de duda</th><th class="n">Apariciones</th><th class="n">Puesto prom.</th></tr></thead><tbody id="candidatos"></tbody></table></div>
-      <p class="fuente" id="fuente-cand"></p>
-    </div>
-    <div class="caja">
-      <h3>Llevarlo a un chat de IA</h3>
-      <p class="sub">Copia un pedido listo para pegar en Claude, ChatGPT o Gemini: incluye estos datos, su fuente y la instrucción de no inventar cantidades. La IA propone términos; la decisión es de una persona.</p>
-      <div class="enl"><button class="btn" type="button" id="btn-chat">Copiar pedido para el chat</button></div>
-      <p class="estado" id="estado-chat" role="status" style="margin-top:8px"></p>
-      <textarea id="pedido-chat" readonly aria-label="Pedido para el chat de IA" style="width:100%;min-height:210px;border:1px solid var(--line);border-radius:10px;padding:10px;font:400 .8rem/1.45 ui-monospace,Menlo,monospace;color:var(--ink);background:var(--soft);resize:vertical"></textarea>
-    </div>
-  </div>
+    <section class="bloque">
+      <h3>Instituciones nombradas</h3>
+      <ul class="chips" id="inst"></ul>
+    </section>
 
-  <div class="sec-t"><span class="n">5</span><h2>Quién pregunta e instituciones que se nombran</h2></div>
-  <div class="dos">
-    <div class="caja">
-      <h3>¿Dudas de estudiante o de familia? <span class="sello sup">Supuesto</span></h3>
-      <p class="sub">El buscador no dice quién busca. Asignamos cada tipo de duda a quien más probablemente la tiene; es una lectura nuestra, no un dato medido.</p>
+    <section class="bloque">
+      <h3>¿Estudiante o familia? <span class="sello sup">Supuesto</span></h3>
       <div class="apilada" id="quien-barra" role="img"></div>
       <ul class="ley" id="quien-ley"></ul>
-    </div>
-    <div class="caja">
-      <h3>Instituciones de Uruguay que aparecen junto al tema</h3>
-      <p class="sub">En cuántas frases distintas se nombra cada una.</p>
-      <ul class="chips" id="inst"></ul>
-    </div>
-  </div>
+    </section>
 
-  <div class="sec-t"><span class="n">6</span><h2>Top 10 de buscadores y tendencia</h2></div>
-  <div class="dos">
-    <div class="caja">
-      <h3>Top 10 de buscadores <span id="top-sello"></span></h3>
-      <div id="top"></div>
-    </div>
-    <div class="caja">
-      <h3>Verlo vos, en un clic</h3>
-      <p class="sub">Abre el buscador con el tema ya escrito, para Uruguay.</p>
+    <section class="bloque">
+      <h3>Seguir en otras herramientas</h3>
       <div class="enl" id="enlaces"></div>
-    </div>
-  </div>
+      <p class="pie-b" id="top-pend"></p>
+      <details style="margin-top:10px">
+        <summary>Pedido listo para un chat de IA</summary>
+        <div class="enl" style="margin-top:8px"><button class="btn" type="button" id="btn-chat">Copiar pedido</button><span class="pie-b" id="estado-chat" role="status"></span></div>
+        <textarea id="pedido-chat" readonly aria-label="Pedido para el chat de IA"></textarea>
+      </details>
+    </section>
 
-  <div class="sec-t"><span class="n">7</span><h2>De dónde sale cada dato</h2></div>
-  <div class="caja">
-    <div class="tabla-w"><table><tbody id="linaje"></tbody></table></div>
-    <div class="enl" id="guardar"></div>
+    <section class="bloque" id="glosario">
+      <h3>Glosario</h3>
+      <dl class="glosario" id="glos"></dl>
+    </section>
+
+    <section class="bloque">
+      <details>
+        <summary>De dónde sale cada dato</summary>
+        <div class="tabla-w" style="margin-top:8px"><table><tbody id="linaje"></tbody></table></div>
+      </details>
+    </section>
   </div>
-</main>
+</div>
 
 <script type="module">
 import { renderMapa } from "./assets/mapa.js";
-import { leerJSON, consultaEnVivo, consultaAMapa, ordenFrase, esc, num, fecha } from "./assets/nucleo.js";
+import { leerJSON, consultaEnVivo, consultaAMapa, ordenFrase, normalizar, esc, num, fecha } from "./assets/nucleo.js";
 
 const $ = (id) => document.getElementById(id);
-const [reglas, indice, sitio] = await Promise.all([leerJSON("data/reglas.json"), leerJSON("data/indice.json"), leerJSON("data/sitio.json")]);
+const [reglas, indice, sitio, glosario] = await Promise.all(["data/reglas.json", "data/indice.json", "data/sitio.json", "data/glosario.json"].map(leerJSON));
 const repo = `https://github.com/${sitio.repo}`;
 $("sitio-titulo").textContent = sitio.titulo;
 $("sitio-equipo").textContent = sitio.equipo;
 $("enl-repo").href = repo;
+$("glos").innerHTML = glosario.terminos.map((t) => `<dt>${esc(t.termino)}</dt><dd>${esc(t.que_es)}</dd>`).join("");
 
 const APARTE = ["otros", "fuera_uy", "emprender"];
-const QUIEN = { estudiante: ["Estudiante", "#4aa8ff"], familia: ["Familia", "#f07f4f"], ambos: ["Los dos", "#3ccf91"], ninguno: ["Sin asignar", "#c3ccdb"] };
-let consulta, control;
+const COLOR_TEMA = ["#4f8dff", "#f0a04a", "#3fd0bb", "#c58cf0"];
+const QUIEN = { estudiante: ["Estudiante", "#4aa8ff"], familia: ["Familia", "#f07f4f"], ambos: ["Los dos", "#3ccf91"] };
+const cache = new Map();
+let base = null, comparados = [], control = null, ramasMapa = [], ramaSel = null;
+const filtro = { duda: "todas", fuente: "todas" };
 
-function pintarLista(intencion) {
-  $("t-lista").textContent = `Frases · ${intencion.nombre}`;
-  $("sub-lista").textContent = `${intencion.que_es} ${num(intencion.total)} frases distintas (${num(intencion.pct)} % del total).`;
-  $("lista").innerHTML = intencion.sugerencias.slice(0, 40).map((s) => {
-    const q = encodeURIComponent(s.texto);
-    return `<tr><td>${esc(s.texto)}${s.fuentes?.includes("youtube") ? ' <span class="sello sup">YouTube</span>' : ""}</td><td class="n">${num(s.apariciones)}</td><td class="n">${s.pos_promedio == null ? "—" : num(s.pos_promedio)}</td>
-      <td><a href="https://www.google.com/search?gl=uy&hl=es&q=${q}" target="_blank" rel="noopener">Google</a> · <a href="https://trends.google.com/trends/explore?geo=UY&date=today%205-y&q=${q}" target="_blank" rel="noopener">Tendencia</a></td></tr>`;
-  }).join("") || '<tr><td colspan="4">Sin frases en este grupo.</td></tr>';
-  document.querySelectorAll(".fila-b").forEach((b) => b.setAttribute("aria-pressed", b.dataset.i === intencion.id));
+/* ---------- Datos derivados ---------- */
+const consultasDe = (c) => c.fuentes.reduce((t, f) => t + f.con_respuesta, 0);
+function filtrar(c) {
+  const intenciones = c.intenciones.map((i) => {
+    const sug = i.sugerencias.filter((s) => filtro.fuente === "todas" || (s.fuentes ?? ["google"]).includes(filtro.fuente));
+    return { ...i, sugerencias: sug, total: sug.length,
+      apariciones_total: sug.reduce((t, s) => t + s.apariciones, 0), veces_top3_total: sug.reduce((t, s) => t + (s.veces_top3 ?? 0), 0) };
+  });
+  const util = intenciones.filter((i) => !APARTE.includes(i.id));
+  const apTotal = util.reduce((t, i) => t + i.apariciones_total, 0);
+  intenciones.forEach((i) => { i.peso = apTotal && !APARTE.includes(i.id) ? (100 * i.apariciones_total) / apTotal : 0; });
+  return { ...c, intenciones };
+}
+const utiles = (c) => c.intenciones.filter((i) => !APARTE.includes(i.id) && i.total > 0);
+const posRama = (i) => { const ap = i.sugerencias.reduce((t, s) => t + (s.pos_promedio != null ? s.apariciones : 0), 0);
+  return ap ? i.sugerencias.reduce((t, s) => t + (s.pos_promedio ?? 0) * s.apariciones, 0) / ap : null; };
+function resumen(c) {
+  const u = utiles(c);
+  const duda = [...u].sort((a, b) => b.apariciones_total - a.apariciones_total)[0];
+  const termino = u.flatMap((i) => i.sugerencias.map((s) => ({ ...s, rama: i.nombre }))).sort(ordenFrase)[0];
+  const inst = {};
+  u.forEach((i) => i.sugerencias.forEach((s) => (s.instituciones ?? []).forEach((id) => { inst[id] = (inst[id] ?? 0) + 1; })));
+  const instituciones = Object.entries(inst).map(([id, n]) => ({ id, n })).sort((a, b) => b.n - a.n || a.id.localeCompare(b.id));
+  return { duda, termino, instituciones, consultas: consultasDe(c) };
+}
+const p1 = (v) => (v == null ? "—" : num(Math.round(v * 10) / 10));
+
+/* ---------- Buscador ---------- */
+function pintarBuscador() {
+  $("tema").value = base.tema;
+  $("tema-sub").textContent = base.en_vivo ? "En vivo · sin guardar · Enter para medir otro tema" : "Tema guardado · escribí otro y Enter para medirlo en vivo";
+  $("f-fecha").textContent = base.en_vivo ? "Medido ahora" : `Medido el ${fecha(base.generado_utc).split(",")[0]}`;
+  $("lista-temas").innerHTML = indice.consultas.map((c) => `<option value="${esc(c.tema)}"></option>`).join("");
+  const libres = indice.consultas.filter((c) => c.slug !== base.slug && !comparados.some((x) => x.slug === c.slug));
+  $("comparar").innerHTML = comparados.map((c, k) => `<span class="chip-t" style="--c:${COLOR_TEMA[k + 1]}"><span class="punto"></span>${esc(c.tema)}<button type="button" data-q="${esc(c.slug)}" aria-label="Quitar ${esc(c.tema)}">×</button></span>`).join("")
+    + (comparados.length < 3 && libres.length ? `<label class="mas">+ Comparar<select id="sel-comparar" aria-label="Agregar un tema para comparar"><option value="">Elegí un tema guardado</option>${libres.map((c) => `<option value="${esc(c.slug)}">${esc(c.tema)}</option>`).join("")}</select></label>` : "");
+  $("comparar").querySelectorAll("button[data-q]").forEach((b) => b.addEventListener("click", () => { comparados = comparados.filter((c) => c.slug !== b.dataset.q); actualizarURL(); pintarBuscador(); pintarComparar(); }));
+  $("sel-comparar")?.addEventListener("change", async (e) => { if (!e.target.value) return; comparados.push(await cargar(e.target.value)); actualizarURL(); pintarBuscador(); pintarComparar(); });
+  const ramas = base.intenciones.filter((i) => !APARTE.includes(i.id) && i.total > 0);
+  if (!ramas.some((i) => i.id === filtro.duda)) filtro.duda = "todas";
+  $("f-duda").innerHTML = `<option value="todas">Todos los tipos de duda</option>` + ramas.map((i) => `<option value="${i.id}"${i.id === filtro.duda ? " selected" : ""}>${esc(i.nombre)}</option>`).join("");
 }
 
-let ramasMapa = [];
-function pintarFicha(rama, nodo) {
-  const i = rama.intencion, s = nodo.sugerencia;
-  const consultas = consulta.fuentes.reduce((t, f) => t + f.con_respuesta, 0);
-  const top = i.sugerencias.slice(0, 6), maxAp = Math.max(1, ...top.map((x) => x.apariciones));
+/* ---------- Mapa y panel de la rama ---------- */
+function pintarRama(rama, nodo) {
+  ramaSel = rama.id;
+  const i = rama.intencion, s = nodo?.sugerencia, N = consultasDe(base);
+  const top = i.sugerencias.slice(0, 6), mx = Math.max(1, ...top.map((x) => x.apariciones));
   const elegida = s ? Math.max(0, top.findIndex((x) => x.texto === s.texto)) : 0;
-  const puesto = (v) => (v == null ? "—" : num(v));
-  $("ficha").style.setProperty("--c", rama.color);
-  $("ficha").innerHTML = `
-    <div class="et" style="color:${rama.color}">Rama ${ramasMapa.indexOf(rama) + 1} de ${ramasMapa.length} · ${esc(i.nombre)}</div>
-    <p class="lead">${esc(i.que_es)}</p>
-    <div class="fk">
-      <div><b>${num(i.total)}</b><span>frases distintas</span></div>
-      <div><b>${num(i.pct)} %</b><span>de las frases del tema</span></div>
-      <div><b>${num(i.apariciones_total ?? 0)}</b><span>veces que el buscador propuso frases de esta rama</span></div>
-      <div><b>${num(i.veces_top3_total ?? 0)}</b><span>veces entre las 3 primeras sugerencias</span></div>
+  const el = $("rama");
+  el.style.setProperty("--c", rama.color);
+  el.innerHTML = `
+    <div class="rama-cab"><span class="bola"></span><h4>${esc(i.nombre)}</h4><small>Rama ${ramasMapa.indexOf(rama) + 1} de ${ramasMapa.length}</small></div>
+    <div class="kp4">
+      <div><span class="et">Apariciones</span><b>${num(i.apariciones_total)}</b><small>${num(i.total)} frases</small></div>
+      <div><span class="et">Peso en el tema</span><b>${p1(i.peso)} %</b><small>de las apariciones</small></div>
+      <div><span class="et">Posición en la lista</span><b>${p1(posRama(i))}</b><small>promedio ponderado</small></div>
+      <div><span class="et">Entre las 3 primeras</span><b>${num(i.veces_top3_total)}</b><small>veces</small></div>
     </div>
-    <div class="carr-cab"><h4>Términos más destacados</h4>
-      <div class="carr-nav"><button type="button" id="c-ant" aria-label="Término anterior">‹</button><span id="c-pos">1 de ${top.length}</span><button type="button" id="c-sig" aria-label="Término siguiente">›</button></div></div>
+    <div class="carr-cab"><h4>Términos con más datos</h4><div class="carr-nav"><button type="button" id="c-ant" aria-label="Término anterior">‹</button><span id="c-pos"></span><button type="button" id="c-sig" aria-label="Término siguiente">›</button></div></div>
     <div class="carr" id="carr" tabindex="0" aria-label="Términos de la rama, del que tiene más datos al que tiene menos">
-      ${top.map((x, k) => {
-        const q = encodeURIComponent(x.texto);
-        return `<article class="tarj${k === elegida ? " sel" : ""}" data-k="${k}">
+      ${top.map((x, k) => { const q = encodeURIComponent(x.texto); return `<article class="tarj${k === elegida ? " sel" : ""}" data-k="${k}">
         <div class="fila-t"><span class="rk">#${k + 1}</span>${k === 0 ? '<span class="dst">Más datos</span>' : ""}</div>
         <h5>${esc(x.texto)}</h5>
-        <div class="big">${num(x.apariciones)}<small>de ${num(consultas)} consultas lo propusieron</small></div>
-        <div class="riel"><i style="width:${(100 * x.apariciones) / maxAp}%"></i></div>
-        <dl>
-          <dt>Puesto promedio en la lista</dt><dd>${puesto(x.pos_promedio)}</dd>
-          <dt>Mejor puesto</dt><dd>${puesto(x.pos_mejor)}</dd>
-          <dt>Veces entre las 10 primeras</dt><dd>${num(x.veces_top10 ?? 0)}</dd>
-          <dt>Veces entre las 3 primeras</dt><dd>${num(x.veces_top3 ?? 0)}</dd>
-          ${x.instituciones?.length ? `<dt>Nombra a</dt><dd>${esc(x.instituciones.join(", "))}</dd>` : ""}
-        </dl>
-        <div class="enl-t"><a href="https://www.google.com/search?gl=uy&hl=es&q=${q}" target="_blank" rel="noopener">Ver en Google</a><a href="https://trends.google.com/trends/explore?geo=UY&date=today%205-y&q=${q}" target="_blank" rel="noopener">Tendencia</a></div>
-      </article>`; }).join("") || "<p>Sin frases en esta rama.</p>"}
-    </div>
-    <p class="nota">Orden: más apariciones, después más veces arriba, después mejor puesto. «Puesto» es el lugar en la lista que Google sugiere al escribir (1 = la primera); no es el puesto en los resultados de búsqueda. Quién pregunta <span class="sello sup">Supuesto</span>: ${esc(QUIEN[i.quien][0])}.</p>`;
-  const carr = $("carr"), tarjetas = [...carr.querySelectorAll(".tarj")];
-  const actual = () => Math.round(carr.scrollLeft / Math.max(1, (tarjetas[1]?.offsetLeft ?? carr.clientWidth) - (tarjetas[0]?.offsetLeft ?? 0)));
-  const marcar = () => { const k = Math.min(tarjetas.length - 1, Math.max(0, actual())); $("c-pos").textContent = `${k + 1} de ${tarjetas.length}`;
-    $("c-ant").disabled = k === 0; $("c-sig").disabled = k >= tarjetas.length - 1; };
-  const ir = (k) => { const t = tarjetas[Math.min(tarjetas.length - 1, Math.max(0, k))]; if (t) carr.scrollTo({ left: t.offsetLeft - tarjetas[0].offsetLeft }); };
-  $("c-ant").addEventListener("click", () => ir(actual() - 1));
-  $("c-sig").addEventListener("click", () => ir(actual() + 1));
-  carr.addEventListener("scroll", () => requestAnimationFrame(marcar), { passive: true });
-  carr.addEventListener("keydown", (ev) => { if (ev.key === "ArrowRight") { ev.preventDefault(); ir(actual() + 1); } if (ev.key === "ArrowLeft") { ev.preventDefault(); ir(actual() - 1); } });
-  tarjetas.forEach((t) => t.addEventListener("click", (ev) => {
-    if (ev.target.closest("a")) return;
-    const k = +t.dataset.k;
-    if (k < 4) control.seleccionar(rama.id, `${i.id}-s${k}`, true);
-    else { tarjetas.forEach((x) => x.classList.toggle("sel", x === t)); ir(k); }
-  }));
-  if (elegida) carr.scrollLeft = tarjetas[elegida].offsetLeft - tarjetas[0].offsetLeft;
-  marcar();
+        <div class="big">${num(x.apariciones)}<small>de ${num(N)} consultas</small></div>
+        <div class="riel"><i style="width:${(100 * x.apariciones) / mx}%"></i></div>
+        <dl><dt>Posición promedio</dt><dd>${p1(x.pos_promedio)}</dd><dt>Mejor posición</dt><dd>${x.pos_mejor ?? "—"}</dd>
+          <dt>Entre las 10 primeras</dt><dd>${num(x.veces_top10 ?? 0)}</dd><dt>Entre las 3 primeras</dt><dd>${num(x.veces_top3 ?? 0)}</dd>
+          ${x.instituciones?.length ? `<dt>Institución</dt><dd>${esc(x.instituciones.join(", "))}</dd>` : ""}</dl>
+        <div class="enl-t"><a href="https://www.google.com/search?gl=uy&hl=es&q=${q}" target="_blank" rel="noopener">Google</a><a href="https://trends.google.com/trends/explore?geo=UY&date=today%205-y&q=${q}" target="_blank" rel="noopener">Interés en Trends</a></div>
+      </article>`; }).join("") || "<p>Sin frases con este filtro.</p>"}
+    </div>`;
+  const carr = $("carr"), tj = [...carr.querySelectorAll(".tarj")];
+  if (tj.length) {
+    const paso = () => Math.max(1, (tj[1]?.offsetLeft ?? carr.clientWidth) - tj[0].offsetLeft);
+    const actual = () => Math.round(carr.scrollLeft / paso());
+    const marcar = () => { const k = Math.min(tj.length - 1, Math.max(0, actual())); $("c-pos").textContent = `${k + 1} de ${tj.length}`; $("c-ant").disabled = k === 0; $("c-sig").disabled = k >= tj.length - 1; };
+    const ir = (k) => { const t = tj[Math.min(tj.length - 1, Math.max(0, k))]; carr.scrollTo({ left: t.offsetLeft - tj[0].offsetLeft }); };
+    $("c-ant").addEventListener("click", () => ir(actual() - 1));
+    $("c-sig").addEventListener("click", () => ir(actual() + 1));
+    carr.addEventListener("scroll", () => requestAnimationFrame(marcar), { passive: true });
+    carr.addEventListener("keydown", (ev) => { if (ev.key === "ArrowRight") { ev.preventDefault(); ir(actual() + 1); } if (ev.key === "ArrowLeft") { ev.preventDefault(); ir(actual() - 1); } });
+    tj.forEach((t) => t.addEventListener("click", (ev) => { if (ev.target.closest("a")) return; const k = +t.dataset.k;
+      if (k < 4) control.seleccionar(rama.id, `${i.id}-s${k}`, true); else { tj.forEach((x) => x.classList.toggle("sel", x === t)); ir(k); } }));
+    if (elegida) carr.scrollLeft = tj[elegida].offsetLeft - tj[0].offsetLeft;
+    marcar();
+  } else { $("c-ant").disabled = $("c-sig").disabled = true; }
   pintarLista(i);
+  document.querySelectorAll(".fila-b").forEach((b) => b.setAttribute("aria-pressed", b.dataset.i === i.id));
+}
+function pintarLista(i) {
+  $("t-lista").textContent = `Frases · ${i.nombre}`;
+  $("lista").innerHTML = i.sugerencias.slice(0, 40).map((s) => { const q = encodeURIComponent(s.texto);
+    return `<tr><td>${esc(s.texto)}${s.instituciones?.length ? ` <span class="sello sup">${esc(s.instituciones.join(", "))}</span>` : ""}</td><td class="n">${num(s.apariciones)}</td><td class="n">${p1(s.pos_promedio)}</td>
+      <td><a href="https://www.google.com/search?gl=uy&hl=es&q=${q}" target="_blank" rel="noopener">Google</a></td></tr>`; }).join("") || '<tr><td colspan="4">Sin frases.</td></tr>';
 }
 
-function pintar(c) {
-  consulta = c;
-  const r = c.resumen, vivo = !!c.en_vivo;
-  const origen = c.fuentes.map((f) => `${f.nombre} (${f.con_respuesta} de ${f.pedidos} consultas respondidas)`).join(" + ");
-  const pie = `Fuente: ${esc(origen)} · ${esc(c.pais)} · ${esc(fecha(c.generado_utc))}${vivo ? " · en vivo, sin guardar" : ` · corrida ${esc(c.run_id)}`}`;
-  $("t-mapa").textContent = `Qué quiere saber la gente sobre «${c.tema}»`;
-
-  const datosMapa = consultaAMapa(c);
+/* ---------- Bloques de la derecha ---------- */
+function pintar() {
+  const c = filtrar(base), r = resumen(c);
+  $("t-mapa").textContent = `«${c.tema}»`;
+  const enMapa = filtro.duda === "todas" ? c : { ...c, intenciones: c.intenciones.filter((i) => i.id === filtro.duda) };
+  const datosMapa = consultaAMapa(enMapa);
   ramasMapa = datosMapa.ramas;
-  if (datosMapa.ramas.length) {
-    control = renderMapa($("mapa"), datosMapa, pintarFicha);
-    control.seleccionar(datosMapa.ramas[0].id, datosMapa.ramas[0].nodos[0].id, true);
-  } else {
-    $("mapa").replaceChildren();
-    $("ficha").innerHTML = "<h3>Sin datos</h3><p>El buscador no propuso frases para este tema. Probá con otra forma de escribirlo.</p>";
-    $("lista").innerHTML = "";
-  }
-  $("fuente-mapa").innerHTML = pie;
+  if (ramasMapa.length) {
+    control = renderMapa($("mapa"), datosMapa, pintarRama);
+    const elegida = ramasMapa.find((x) => x.id === ramaSel) ?? ramasMapa[0];
+    control.seleccionar(elegida.id, elegida.nodos[0].id, true);
+  } else { $("mapa").replaceChildren(); $("rama").innerHTML = "<p>Sin frases con este filtro.</p>"; $("lista").innerHTML = ""; }
 
-  const clasificadas = c.intenciones.filter((i) => !APARTE.includes(i.id)).reduce((t, i) => t + i.total, 0);
-  const pct = (n) => (r.sugerencias_unicas ? num(Math.round((1000 * n) / r.sugerencias_unicas) / 10) : "0");
-  const top = c.top10 ?? [];
-  const topOk = top.filter((p) => p.estado === "ok").length;
+  const inst = r.instituciones, ucu = inst.find((x) => x.id === "UCU");
   $("kpis").innerHTML = `
-    <div class="kpi dest"><div class="v">${num(r.sugerencias_unicas)}</div><div class="t">frases distintas</div><div class="d">Lo que el buscador propone al escribir el tema.</div></div>
-    <div class="kpi"><div class="v">${num(clasificadas)}</div><div class="t">útiles para Uruguay (${pct(clasificadas)} %)</div><div class="d">Con un tipo de duda reconocido, en ${num(r.intenciones_con_datos)} grupos.</div></div>
-    <div class="kpi"><div class="v">${num(r.instituciones_uy.length)}</div><div class="t">instituciones uruguayas nombradas</div><div class="d">${esc(r.instituciones_uy.map((i) => i.id).join(", ") || "Ninguna")}</div></div>
-    <div class="kpi"><div class="v">${num(r.fuera_de_uruguay_pct)} %</div><div class="t">son de otros países</div><div class="d">${num(r.fuera_de_uruguay)} frases nombran otro país o una universidad extranjera. Se apartan.</div></div>
-    <div class="kpi"><div class="v">${pct(r.sin_clasificar)} %</div><div class="t">sin clasificar</div><div class="d">${num(r.sin_clasificar)} frases que ninguna regla reconoce todavía.</div></div>`;
+    <div class="dest"><span class="et">Duda principal</span><b>${esc(r.duda?.nombre ?? "—")}</b><small>${r.duda ? `${num(r.duda.apariciones_total)} apariciones · ${p1(r.duda.peso)} % del tema` : ""}</small></div>
+    <div><span class="et">Término más propuesto</span><b>${r.termino ? `${num(r.termino.apariciones)} de ${num(r.consultas)}` : "—"}</b><small>${esc(r.termino?.texto ?? "")}</small></div>
+    <div><span class="et">Posición en la lista</span><b>${p1(r.termino?.pos_promedio)}</b><small>${r.termino ? `de ese término · mejor: ${r.termino.pos_mejor ?? "—"}` : ""}</small></div>
+    <div><span class="et">Instituciones nombradas</span><b>${num(inst.length)}</b><small>${inst.length ? `Más nombrada: ${esc(inst[0].id)} (${num(inst[0].n)}) · UCU: ${num(ucu?.n ?? 0)}` : "Ninguna"}</small></div>`;
+  const origen = c.fuentes.map((f) => `${f.nombre} ${f.con_respuesta}/${f.pedidos}`).join(" · ");
+  $("f-kpis").textContent = `${origen} · Uruguay · ${fecha(c.generado_utc)}${c.en_vivo ? " · en vivo" : ""}`;
 
-  const utiles = c.intenciones.filter((i) => !APARTE.includes(i.id)).sort((a, b) => b.total - a.total);
-  const aparte = c.intenciones.filter((i) => APARTE.includes(i.id));
-  const max = Math.max(1, ...c.intenciones.map((i) => i.total));
-  const fila = (i, gris) => `<button type="button" class="fila-b${gris ? " gris" : ""}" data-i="${i.id}" aria-pressed="false">
-    <span class="nom">${esc(i.nombre)}</span><span class="riel"><i style="width:${(100 * i.total) / max}%;background:${gris ? "#c3ccdb" : i.color}"></i></span>
-    <span class="val">${num(i.total)} · ${num(i.pct)} %</span></button>`;
-  $("barras").innerHTML = utiles.map((i) => fila(i, false)).join("") + '<hr style="border:0;border-top:1px dashed var(--line);margin:8px 0">' + aparte.map((i) => fila(i, true)).join("");
-  $("barras").querySelectorAll(".fila-b").forEach((b) => b.addEventListener("click", () => {
-    const i = c.intenciones.find((x) => x.id === b.dataset.i);
-    pintarLista(i);
-    if (datosMapa.ramas.some((x) => x.id === i.id)) control.seleccionar(i.id, `${i.id}-cab`, false);
+  const u = c.intenciones.filter((i) => !APARTE.includes(i.id)).sort((a, b) => b.apariciones_total - a.apariciones_total);
+  const ap = c.intenciones.filter((i) => APARTE.includes(i.id));
+  const mx = Math.max(1, ...c.intenciones.map((i) => i.apariciones_total));
+  const fila = (i, gris) => `<button type="button" class="fila-b${gris ? " gris" : ""}" data-i="${i.id}" aria-pressed="false"${gris ? " disabled" : ""}>
+    <span class="nom">${esc(i.nombre)}</span><span class="riel"><i style="width:${(100 * i.apariciones_total) / mx}%;background:${gris ? "var(--line)" : i.color}"></i></span>
+    <span class="val">${num(i.apariciones_total)}${gris ? "" : ` · ${p1(i.peso)} %`}</span></button>`;
+  $("barras").innerHTML = u.map((i) => fila(i, false)).join("") + '<hr class="sep">' + ap.map((i) => fila(i, true)).join("");
+  $("barras").querySelectorAll(".fila-b:not(.gris)").forEach((b) => b.addEventListener("click", () => {
+    if (ramasMapa.some((x) => x.id === b.dataset.i)) control.seleccionar(b.dataset.i, `${b.dataset.i}-cab`, true);
   }));
-  $("fuente-barras").innerHTML = pie + ". % sobre el total de frases distintas.";
-  const sel = datosMapa.ramas[0]?.intencion ?? c.intenciones[0];
-  pintarLista(sel);
+  document.querySelectorAll(".fila-b").forEach((b) => b.setAttribute("aria-pressed", b.dataset.i === ramaSel));
 
-  // Términos candidatos: derivados de la consulta, con una regla simple y visible.
-  const cand = utiles.flatMap((i) => i.sugerencias.map((x) => ({ ...x, grupo: i.nombre })))
-    .sort(ordenFrase).slice(0, 15);
-  $("candidatos").innerHTML = cand.map((x, k) => `<tr><td class="n">${k + 1}</td><td>${esc(x.texto)}</td><td>${esc(x.grupo)}</td><td class="n">${num(x.apariciones)}</td><td class="n">${x.pos_promedio == null ? "—" : num(x.pos_promedio)}</td></tr>`).join("") || '<tr><td colspan="5">Sin frases.</td></tr>';
-  $("fuente-cand").innerHTML = pie + ". «Apariciones» no es cantidad de búsquedas.";
-  $("pedido-chat").value = [
-    `Sos analista de oferta académica. Ayudame a decidir cómo nombrar y describir una carrera vinculada a «${c.tema}» en ${c.pais}.`,
-    "",
+  $("inst").innerHTML = inst.map((x) => `<li>${esc(x.id)} · ${num(x.n)}</li>`).join("") || "<li>Ninguna</li>";
+  const q = { estudiante: 0, familia: 0, ambos: 0 };
+  utiles(c).forEach((i) => { if (q[i.quien] != null) q[i.quien] += i.apariciones_total; });
+  const tq = q.estudiante + q.familia + q.ambos;
+  $("quien-barra").innerHTML = Object.keys(q).map((k) => `<i style="width:${tq ? (100 * q[k]) / tq : 0}%;background:${QUIEN[k][1]}"></i>`).join("");
+  $("quien-barra").setAttribute("aria-label", Object.keys(q).map((k) => `${QUIEN[k][0]} ${q[k]}`).join(", "));
+  $("quien-ley").innerHTML = Object.keys(q).map((k) => `<li><b style="background:${QUIEN[k][1]}"></b>${QUIEN[k][0]} ${tq ? p1((100 * q[k]) / tq) : 0} %</li>`).join("");
+
+  const t = encodeURIComponent(c.tema);
+  $("enlaces").innerHTML = [["Interés en Google Trends", `https://trends.google.com/trends/explore?geo=UY&date=today%205-y&q=${t}`], ["Google", `https://www.google.com/search?gl=uy&hl=es&q=${t}`],
+    ["Bing", `https://www.bing.com/search?cc=UY&setlang=es&q=${t}`], ["YouTube", `https://www.youtube.com/results?search_query=${t}`]]
+    .map(([n, u2], k) => `<a class="btn${k ? " sec" : ""}" href="${u2}" target="_blank" rel="noopener">${n}</a>`).join("");
+  $("top-pend").textContent = "Top 10 de Google: pendiente de una fuente oficial.";
+  $("pedido-chat").value = pedidoChat(c, r);
+
+  const rech = Object.entries(c.rechazadas?.por_motivo ?? {}).map(([m, n]) => `${num(n)} ${m}`).join("; ");
+  const ruta = (p, txt) => `<a href="${repo}/${p}">${esc(txt)}</a>`;
+  $("linaje").innerHTML = [["Fuentes", esc(origen)], ["Frases rechazadas", `${num(c.rechazadas?.total ?? 0)}${rech ? ` (${esc(rech)})` : ""}`],
+    ["Reglas", ruta(`blob/${sitio.rama}/docs/data/reglas.json`, `reglas.json · versión ${c.reglas_version}`)],
+    ...(c.en_vivo ? [["Guardado", "No: medido en vivo"]] : [["Corrida", esc(c.run_id)], ["Crudo", ruta(`tree/${sitio.rama}/data/raw/${c.run_id}`, `data/raw/${c.run_id}/`)],
+      ["Manifiesto", ruta(`blob/${sitio.rama}/manifests/run_${c.run_id}.json`, `manifests/run_${c.run_id}.json`)]])]
+    .map(([k, v]) => `<tr><th scope="row">${k}</th><td>${v}</td></tr>`).join("");
+  pintarComparar();
+}
+
+function pintarComparar() {
+  $("b-comparar").hidden = !comparados.length;
+  if (!comparados.length) return;
+  const temas = [base, ...comparados].map((x) => filtrar(x));
+  const ramas = reglas.intenciones.filter((i) => !APARTE.includes(i.id));
+  $("t-comparar").innerHTML = `<thead><tr><th>Tema</th><th>Peso por tipo de duda</th><th>Duda principal</th><th>Término más propuesto</th><th class="n">Posición</th><th>Institución</th></tr></thead><tbody>${temas.map((c, k) => {
+    const r = resumen(c), u = utiles(c), tot = u.reduce((t, i) => t + i.apariciones_total, 0);
+    return `<tr><td><span class="sello" style="background:${COLOR_TEMA[k]};color:#0b1026">${esc(c.tema)}</span></td>
+      <td><div class="apilada">${ramas.map((rr) => { const i = u.find((x) => x.id === rr.id); return i && tot ? `<i title="${esc(i.nombre)} ${p1((100 * i.apariciones_total) / tot)} %" style="width:${(100 * i.apariciones_total) / tot}%;background:${i.color}"></i>` : ""; }).join("")}</div></td>
+      <td>${esc(r.duda?.nombre ?? "—")}</td><td>${r.termino ? `${esc(r.termino.texto)} · ${num(r.termino.apariciones)} de ${num(r.consultas)}` : "—"}</td>
+      <td class="n">${p1(r.termino?.pos_promedio)}</td><td>${r.instituciones[0] ? `${esc(r.instituciones[0].id)} (${num(r.instituciones[0].n)})` : "—"}</td></tr>`; }).join("")}</tbody>`;
+  $("ley-comparar").innerHTML = ramas.map((i) => `<li><b style="background:${i.color}"></b>${esc(i.nombre)}</li>`).join("");
+}
+
+function pedidoChat(c, r) {
+  const u = utiles(c).sort((a, b) => b.apariciones_total - a.apariciones_total);
+  return [
+    `Sos analista de oferta académica. Ayudame a decidir cómo nombrar y describir una carrera vinculada a «${c.tema}» en ${c.pais}.`, "",
     "DATOS MEDIDOS (no agregues otros como si fueran medidos):",
-    `- Fuente: ${origen}. Fecha: ${fecha(c.generado_utc)}. País: ${c.pais}.`,
-    `- ${r.sugerencias_unicas} frases distintas que el buscador propone al escribir el tema. Son frases, NO cantidad de búsquedas ni de personas.`,
-    `- ${r.fuera_de_uruguay} frases (${r.fuera_de_uruguay_pct} %) nombran otros países: no son demanda local.`,
-    `- Instituciones uruguayas nombradas: ${r.instituciones_uy.map((i) => `${i.id} (${i.sugerencias})`).join(", ") || "ninguna"}.`,
-    "- Frases por tipo de duda. Entre paréntesis: en cuántas consultas apareció la frase y su puesto promedio en la lista de sugerencias (1 = primera; no es el puesto en los resultados de Google):",
-    ...utiles.filter((i) => i.total).map((i) => `  · ${i.nombre} — ${i.total} frases (${i.pct} %): ${i.sugerencias.slice(0, 8).map((x) => `${x.texto} (${x.apariciones}${x.pos_promedio == null ? "" : `; puesto ${x.pos_promedio}`})`).join("; ")}`),
-    "",
-    "PEDIDO:",
-    "1. Proponé 5 nombres posibles para la carrera, usando palabras que aparecen en las frases de arriba. Para cada uno, citá las frases que lo respaldan.",
-    "2. Listá las 10 dudas que la página de la carrera tiene que responder, ordenadas por el peso de cada tipo de duda.",
-    "3. Decí con qué temas conviene combinarla y por qué, citando las frases.",
-    "4. Decí qué dato falta para decidir (por ejemplo: cantidad de búsquedas, tendencia en el tiempo, top 10 de buscadores) y cómo conseguirlo.",
-    "",
-    "REGLAS: no inventes cantidades de búsquedas, porcentajes ni posiciones. Si algo es una suposición tuya, escribí «Supuesto» delante. Si un dato no está arriba, decí «no está medido».",
+    `- Fuente: autocompletar de Google${c.fuentes.length > 1 ? " y YouTube" : ""}, ${c.pais}, ${fecha(c.generado_utc)}. Se hicieron ${r.consultas} consultas sobre el tema.`,
+    "- «Apariciones» = en cuántas consultas el buscador propuso la frase. «Posición» = lugar promedio en la lista de sugerencias (1 = primera). NO son cantidad de búsquedas ni puesto en los resultados.",
+    `- Instituciones de Uruguay nombradas: ${r.instituciones.map((i) => `${i.id} (${i.n})`).join(", ") || "ninguna"}.`,
+    "- Tipos de duda, de mayor a menor (apariciones, peso), con sus frases (apariciones; posición):",
+    ...u.map((i) => `  · ${i.nombre} — ${i.apariciones_total} apariciones, ${p1(i.peso)} %: ${i.sugerencias.slice(0, 8).map((x) => `${x.texto} (${x.apariciones}; ${x.pos_promedio ?? "—"})`).join("; ")}`),
+    "", "PEDIDO:",
+    "1. Proponé 5 nombres posibles para la carrera, con palabras de las frases de arriba, citando las frases que los respaldan.",
+    "2. Listá las 10 dudas que la página de la carrera tiene que responder, en el orden de los tipos de duda.",
+    "3. Decí con qué temas conviene combinarla y por qué.",
+    "4. Decí qué dato falta para decidir (cantidad de búsquedas, interés en el tiempo, top 10) y cómo conseguirlo.", "",
+    "REGLAS: no inventes cantidades de búsquedas, porcentajes ni posiciones en Google. Si algo es suposición tuya, escribí «Supuesto». Si un dato no está arriba, decí «no está medido».",
   ].join("\n");
-
-  const q = r.quien_supuesto, asignadas = q.estudiante + q.familia + q.ambos;
-  const orden = ["estudiante", "familia", "ambos"];
-  $("quien-barra").innerHTML = orden.map((k) => `<i style="width:${asignadas ? (100 * q[k]) / asignadas : 0}%;background:${QUIEN[k][1]}"></i>`).join("");
-  $("quien-barra").setAttribute("aria-label", orden.map((k) => `${QUIEN[k][0]}: ${q[k]}`).join(", "));
-  $("quien-ley").innerHTML = orden.map((k) => `<li><b style="background:${QUIEN[k][1]}"></b>${QUIEN[k][0]}: ${num(q[k])} frases (${asignadas ? num(Math.round((1000 * q[k]) / asignadas) / 10) : 0} %)</li>`).join("") +
-    `<li style="color:var(--muted)">Base: ${num(asignadas)} frases con tipo de duda asignado.</li>`;
-  $("inst").innerHTML = r.instituciones_uy.map((i) => `<li>${esc(i.id)} · ${num(i.sugerencias)}</li>`).join("") || "<li>Ninguna institución uruguaya aparece junto al tema.</li>";
-
-  if (topOk) {
-    $("top-sello").innerHTML = `<span class="sello ok">${topOk} con datos</span>`;
-    $("top").innerHTML = top.filter((p) => p.estado === "ok").map((p) => `<p class="sub">${esc(p.buscador)} · «${esc(p.consulta)}»</p><div class="tabla-w"><table><thead><tr><th class="n">Puesto</th><th>Sitio</th><th>Título</th></tr></thead><tbody>${p.resultados.map((x) => `<tr><td class="n">${x.pos}</td><td>${esc(x.dominio)}</td><td>${esc(x.titulo)}</td></tr>`).join("")}</tbody></table></div>`).join("");
-  } else {
-    $("top-sello").innerHTML = '<span class="sello pend">Pendiente</span>';
-    $("top").innerHTML = `<p class="aviso">${esc(top[0]?.motivo ?? "En el modo en vivo no hay top 10: el navegador no puede leer la página de un buscador. Usá los enlaces de al lado.")}</p>`;
-  }
-  const E = c.enlaces;
-  $("enlaces").innerHTML = [["Tendencia en Google Trends (5 años)", E.trends], ["Google", E.google], ["Bing", E.bing], ["DuckDuckGo", E.duckduckgo], ["YouTube", E.youtube]]
-    .filter(([, u]) => u).map(([t, u], k) => `<a class="btn${k ? " sec" : ""}" href="${esc(u)}" target="_blank" rel="noopener">${t}</a>`).join("");
-
-  const rech = Object.entries(c.rechazadas?.por_motivo ?? {}).map(([m, n]) => `${num(n)} · ${esc(m)}`).join("; ");
-  const ruta = (p, t) => `<a href="${repo}/${p}">${t}</a>`;
-  $("linaje").innerHTML = [
-    ["Tema", esc(c.tema)],
-    ["Cuándo", esc(fecha(c.generado_utc)) + (vivo ? ' <span class="sello sup">En vivo, sin guardar</span>' : "")],
-    ["Fuentes", esc(origen)],
-    ["Frases rechazadas", `${num(c.rechazadas?.total ?? 0)}${rech ? ` (${rech})` : ""}`],
-    ["Reglas de clasificación", `versión ${esc(c.reglas_version)} · ${ruta(`blob/${sitio.rama}/docs/data/reglas.json`, "docs/data/reglas.json")}`],
-    ...(vivo ? [] : [
-      ["Corrida", esc(c.run_id)],
-      ["Datos crudos", ruta(`tree/${sitio.rama}/data/raw/${c.run_id}`, `data/raw/${esc(c.run_id)}/`)],
-      ["Manifiesto", ruta(`blob/${sitio.rama}/manifests/run_${c.run_id}.json`, `manifests/run_${esc(c.run_id)}.json`)],
-    ]),
-  ].map(([k, v]) => `<tr><th scope="row" style="width:190px">${k}</th><td>${v}</td></tr>`).join("");
-  const alta = `${repo}/issues/new?title=${encodeURIComponent("Consulta: " + c.tema)}&body=${encodeURIComponent("Pedido de consulta guardada para el radar. No hace falta escribir nada más.")}`;
-  $("guardar").innerHTML = `<a class="btn sec" href="${alta}" target="_blank" rel="noopener">${vivo ? "Guardar esta consulta en el repositorio" : "Actualizar esta consulta"}</a>`;
 }
 
-async function abrirGuardada(slug) {
-  $("estado").textContent = "Leyendo la consulta guardada…";
-  pintar(await leerJSON(`data/consultas/${slug}.json`));
-  $("estado").textContent = "";
-  history.replaceState(null, "", `?tema=${slug}`);
+/* ---------- Carga y eventos ---------- */
+async function cargar(slug) {
+  if (!cache.has(slug)) cache.set(slug, await leerJSON(`data/consultas/${slug}.json`));
+  return cache.get(slug);
 }
-
-$("guardadas").innerHTML = indice.consultas.map((c) => `<option value="${esc(c.slug)}">${esc(c.tema)} · ${num(c.sugerencias_unicas)} frases · ${esc(fecha(c.generado_utc))}</option>`).join("");
-$("guardadas").addEventListener("change", (e) => abrirGuardada(e.target.value));
-$("form").addEventListener("submit", async (ev) => {
-  ev.preventDefault();
-  const boton = $("btn-vivo");
+function actualizarURL() {
+  const p = new URLSearchParams();
+  if (base && !base.en_vivo) p.set("tema", base.slug);
+  if (comparados.length) p.set("comparar", comparados.map((c) => c.slug).join(","));
+  history.replaceState(null, "", `?${p}`);
+}
+async function abrir(slug) {
+  base = await cargar(slug); ramaSel = null;
+  comparados = comparados.filter((c) => c.slug !== slug);
+  actualizarURL(); pintarBuscador(); pintar(); $("estado").textContent = "";
+}
+async function medirEnVivo(texto) {
   try {
-    boton.disabled = true;
-    const c = await consultaEnVivo($("tema").value, reglas, (n, total) => { $("estado").textContent = `Consultando el autocompletar de Google… ${n} de ${total}`; });
+    const c = await consultaEnVivo(texto, reglas, (n, t) => { $("estado").textContent = `Midiendo en vivo… ${n} de ${t}`; });
     const f = c.fuentes[0];
-    $("estado").textContent = f.con_respuesta ? `Listo: ${f.con_respuesta} de ${f.pedidos} consultas respondidas. Resultado en vivo, sin guardar.`
-      : "Google no respondió desde este navegador (puede bloquearlo una extensión o la red). Las consultas guardadas siguen disponibles.";
-    if (f.con_respuesta) pintar(c);
-  } catch (e) {
-    $("estado").textContent = e.message;
-  } finally {
-    boton.disabled = false;
-  }
+    if (!f.con_respuesta) { $("estado").textContent = "Google no respondió desde este navegador. Las consultas guardadas siguen disponibles."; return; }
+    base = c; ramaSel = null; actualizarURL(); pintarBuscador(); pintar();
+    $("estado").textContent = `En vivo: ${f.con_respuesta} de ${f.pedidos} consultas respondidas.`;
+  } catch (e) { $("estado").textContent = e.message; }
+}
+$("form").addEventListener("submit", (ev) => {
+  ev.preventDefault();
+  const v = $("tema").value.trim(), guardada = indice.consultas.find((c) => normalizar(c.tema) === normalizar(v));
+  guardada ? abrir(guardada.slug) : medirEnVivo(v);
 });
-
+$("tema").addEventListener("change", () => {
+  const guardada = indice.consultas.find((c) => normalizar(c.tema) === normalizar($("tema").value));
+  if (guardada && guardada.slug !== base?.slug) abrir(guardada.slug);
+});
+$("f-duda").addEventListener("change", (e) => { filtro.duda = e.target.value; if (filtro.duda !== "todas") ramaSel = filtro.duda; pintar(); });
+$("f-fuente").addEventListener("change", (e) => { filtro.fuente = e.target.value; pintar(); });
 $("btn-chat").addEventListener("click", async () => {
-  const caja = $("pedido-chat");
-  try { await navigator.clipboard.writeText(caja.value); $("estado-chat").textContent = "Copiado. Pegalo en tu chat de IA."; }
-  catch { caja.focus(); caja.select(); $("estado-chat").textContent = "Texto seleccionado: copialo con Ctrl+C o Cmd+C."; }
+  try { await navigator.clipboard.writeText($("pedido-chat").value); $("estado-chat").textContent = "Copiado."; }
+  catch { $("pedido-chat").select(); $("estado-chat").textContent = "Seleccionado: copialo con Ctrl+C o Cmd+C."; }
 });
 
-const pedido = new URLSearchParams(location.search).get("tema");
-const inicial = indice.consultas.find((c) => c.slug === pedido) ?? indice.consultas[0];
-if (inicial) { $("guardadas").value = inicial.slug; await abrirGuardada(inicial.slug); }
-else $("estado").textContent = "Todavía no hay consultas guardadas. Probá un tema en vivo.";
+const params = new URLSearchParams(location.search);
+for (const s of (params.get("comparar") ?? "").split(",").filter(Boolean).slice(0, 3)) {
+  if (indice.consultas.some((c) => c.slug === s)) comparados.push(await cargar(s));
+}
+const inicial = indice.consultas.find((c) => c.slug === params.get("tema")) ?? indice.consultas.find((c) => c.slug === "negocios-digitales") ?? indice.consultas[0];
+if (inicial) await abrir(inicial.slug);
 </script>
 </body>
 </html>

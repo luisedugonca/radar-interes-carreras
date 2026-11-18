@@ -68,7 +68,7 @@ export function renderMapa(svg, datos, alSeleccionar) {
       camino += tramo;
     }
     if (!quieto && pos.length > 1) {
-      const pulso = el("circle", { class: "pulso", r: 3.4, fill: "#fff", opacity: ".85" }, g);
+      const pulso = el("circle", { class: "pulso", r: 3.4, opacity: ".85" }, g);
       el("animateMotion", { dur: `${3 + pos.length * 0.5}s`, begin: `${(i * 0.45).toFixed(2)}s`, repeatCount: "indefinite", path: camino }, pulso);
     }
 
