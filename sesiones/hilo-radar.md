@@ -19,11 +19,15 @@ Que una persona de UCU pueda levantar, sin datos pagos, qué se busca sobre un t
 
 - 2026-11-19 · Ícono (SVG + PNG 32/180/192/512), tarjeta para compartir 1200×630, metadatos (descripción, canonical, Open Graph, Twitter), schema.org (WebSite, WebApplication, Dataset), manifest, robots.txt y sitemap.xml. Prueba nueva en tests/test_web.py.
 
+- 2026-11-19 · Radar: primero lo histórico y comparativo (Trends → Comparación → Evolución; en celular, antes que el mapa). Período y Desde–Hasta al inicio de los filtros. Comparación siempre visible con atajos de un clic a temas guardados.
+
 ## Decisiones del PO
 - 2026-11-18 · OK a la medición semanal automática de los temas guardados y a publicar el crudo comprimido.
 - 2026-11-16 · Solo consultas gratis, sin Semrush. Mapa agéntico interactivo como base y formato de tablero propio. La herramienta tiene que poder usarse desde un chat.
 
 - 2026-11-18 · OK del PO a usar el gráfico oficial de Google Trends dentro del radar como fuente de historia larga.
+
+- 2026-11-19 · El PO prioriza el dato histórico y comparativo sobre la foto del día para la toma de decisiones.
 
 ## Abiertos
 1. F5 · Top 10: el PO elige una API oficial con clave gratuita.

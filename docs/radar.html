@@ -30,8 +30,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/estilo.css?v=20261118j">
-<script src="assets/tema.js?v=20261118j"></script>
+<link rel="stylesheet" href="assets/estilo.css?v=20261119b">
+<script src="assets/tema.js?v=20261119b"></script>
 </head>
 <body aria-busy="true">
 <header class="cab">
@@ -64,14 +64,14 @@
   </div>
   <datalist id="lista-temas"></datalist>
   <div class="filtros">
+    <label class="pill" title="Período de los gráficos de historial (Evolución y Google Trends)"><select id="f-periodo" aria-label="Período">
+      <option value="3m">Últimos 3 meses</option><option value="12m">Último año</option><option value="5y" selected>Últimos 5 años</option><option value="todo">Desde 2004</option><option value="medida">A medida</option></select></label>
+    <span class="pill rango" title="Desde y hasta: elegí cualquier día, mes o año"><input type="date" id="f-desde" min="2004-01-01" aria-label="Desde">–<input type="date" id="f-hasta" min="2004-01-01" aria-label="Hasta"></span>
     <span class="pill fija" title="Las consultas se hacen para Google Uruguay">Uruguay</span>
 <span class="pill fija leyenda-sellos" title="Cada bloque lleva uno de estos dos sellos"><span class="sello foto">Foto</span>un día<span class="sello hist">Historial</span>en el tiempo</span>
     <label class="pill" title="Elegí una medición guardada de este tema"><select id="f-medicion" aria-label="Medición"><option>Medido el 00-nov-2026</option></select></label>
     <label class="pill" title="Cómo agrupar las mediciones en el gráfico de evolución"><select id="f-gran" aria-label="Agrupar la evolución">
       <option value="semana">Semana a semana</option><option value="mes">Mes a mes</option><option value="todas">Cada medición</option></select></label>
-    <label class="pill" title="Período de los gráficos de historial (Evolución y Google Trends)"><select id="f-periodo" aria-label="Período">
-      <option value="3m">Últimos 3 meses</option><option value="12m">Último año</option><option value="5y" selected>Últimos 5 años</option><option value="todo">Desde 2004</option><option value="medida">A medida</option></select></label>
-    <span class="pill rango" title="Desde y hasta: elegí cualquier día, mes o año"><input type="date" id="f-desde" min="2004-01-01" aria-label="Desde">–<input type="date" id="f-hasta" min="2004-01-01" aria-label="Hasta"></span>
     <label class="pill"><select id="f-duda" aria-label="Tipo de duda"><option>Todos los tipos de duda</option></select></label>
     <label class="pill"><select id="f-fuente" aria-label="Fuente">
       <option value="todas">Google y YouTube</option>
@@ -96,22 +96,29 @@
   </section>
 
   <div class="columna">
-    <section class="bloque">
-      <h3 data-sello="foto">Indicadores del tema</h3>
-      <div class="kp4" id="kpis"><div><span class="et esq">Cargando dato</span><b class="esq">00,0</b><small class="esq">cargando el detalle</small></div><div><span class="et esq">Cargando dato</span><b class="esq">00,0</b><small class="esq">cargando el detalle</small></div><div><span class="et esq">Cargando dato</span><b class="esq">00,0</b><small class="esq">cargando el detalle</small></div><div><span class="et esq">Cargando dato</span><b class="esq">00,0</b><small class="esq">cargando el detalle</small></div></div>
-      <p class="pie-b" id="f-kpis"><span class="esq">Cargando la fecha y la fuente de la medición del tema</span></p>
+    <section class="bloque prioridad" id="b-trends">
+      <h3 id="t-trends" data-sello="hist" data-sello-texto="Historial · Google Trends">Interés en Google · Uruguay</h3>
+      <div class="trends-marco"><iframe id="trends" title="Interés a lo largo del tiempo en Google Trends, Uruguay" loading="lazy"></iframe></div>
+      <p class="pie-b" id="trends-nota"></p>
     </section>
 
-    <section class="bloque" id="b-evol">
+    <section class="bloque prioridad" id="b-comparar">
+      <h3 data-sello="foto" data-sello-texto="Foto · cada tema en su fecha">Comparación</h3>
+      <p class="pie-b" id="comparar-vacio" hidden></p>
+      <div class="tabla-w"><table id="t-comparar"></table></div>
+      <ul class="ley" id="ley-comparar"></ul>
+    </section>
+
+    <section class="bloque prioridad" id="b-evol">
       <h3 id="t-evol" data-sello="hist"><span class="esq">Evolución · semana a semana</span></h3>
       <div id="evol"><span class="esq" style="display:block;height:150px"></span></div>
       <p class="pie-b" id="evol-nota"><span class="esq">Cargando la historia de mediciones del tema</span></p>
     </section>
 
-    <section class="bloque" id="b-trends">
-      <h3 id="t-trends" data-sello="hist" data-sello-texto="Historial · Google Trends">Interés en Google · Uruguay</h3>
-      <div class="trends-marco"><iframe id="trends" title="Interés a lo largo del tiempo en Google Trends, Uruguay" loading="lazy"></iframe></div>
-      <p class="pie-b" id="trends-nota"></p>
+    <section class="bloque">
+      <h3 data-sello="foto">Indicadores del tema</h3>
+      <div class="kp4" id="kpis"><div><span class="et esq">Cargando dato</span><b class="esq">00,0</b><small class="esq">cargando el detalle</small></div><div><span class="et esq">Cargando dato</span><b class="esq">00,0</b><small class="esq">cargando el detalle</small></div><div><span class="et esq">Cargando dato</span><b class="esq">00,0</b><small class="esq">cargando el detalle</small></div><div><span class="et esq">Cargando dato</span><b class="esq">00,0</b><small class="esq">cargando el detalle</small></div></div>
+      <p class="pie-b" id="f-kpis"><span class="esq">Cargando la fecha y la fuente de la medición del tema</span></p>
     </section>
 
     <section class="bloque">
@@ -125,12 +132,6 @@
     <section class="bloque">
       <h3 data-sello="foto">Apariciones por tipo de duda</h3>
       <div id="barras"><div class="fila-b"><span class="nom esq">Cargando</span><span class="riel esq"></span><span class="val esq">00 · 0 %</span></div><div class="fila-b"><span class="nom esq">Cargando</span><span class="riel esq"></span><span class="val esq">00 · 0 %</span></div><div class="fila-b"><span class="nom esq">Cargando</span><span class="riel esq"></span><span class="val esq">00 · 0 %</span></div><div class="fila-b"><span class="nom esq">Cargando</span><span class="riel esq"></span><span class="val esq">00 · 0 %</span></div><div class="fila-b"><span class="nom esq">Cargando</span><span class="riel esq"></span><span class="val esq">00 · 0 %</span></div><div class="fila-b"><span class="nom esq">Cargando</span><span class="riel esq"></span><span class="val esq">00 · 0 %</span></div><div class="fila-b"><span class="nom esq">Cargando</span><span class="riel esq"></span><span class="val esq">00 · 0 %</span></div><div class="fila-b"><span class="nom esq">Cargando</span><span class="riel esq"></span><span class="val esq">00 · 0 %</span></div><div class="fila-b"><span class="nom esq">Cargando</span><span class="riel esq"></span><span class="val esq">00 · 0 %</span></div></div>
-    </section>
-
-    <section class="bloque" id="b-comparar" hidden>
-      <h3 data-sello="foto" data-sello-texto="Foto · cada tema en su fecha">Comparación</h3>
-      <div class="tabla-w"><table id="t-comparar"></table></div>
-      <ul class="ley" id="ley-comparar"></ul>
     </section>
 
     <section class="bloque">
@@ -183,9 +184,9 @@
 </div>
 
 <script type="module">
-import { renderMapa } from "./assets/mapa.js?v=20261118j";
-import { hallazgos, calidad } from "./assets/analisis.js?v=20261118j";
-import { sellar, leerJSON, consultaEnVivo, consultaAMapa, ordenFrase, normalizar, esc, num, fecha, consultaAFilas, filasACSV, csvAConsultas } from "./assets/nucleo.js?v=20261118j";
+import { renderMapa } from "./assets/mapa.js?v=20261119b";
+import { hallazgos, calidad } from "./assets/analisis.js?v=20261119b";
+import { sellar, leerJSON, consultaEnVivo, consultaAMapa, ordenFrase, normalizar, esc, num, fecha, consultaAFilas, filasACSV, csvAConsultas } from "./assets/nucleo.js?v=20261119b";
 
 const $ = (id) => document.getElementById(id);
 /* ---------- Carga visible ---------- */
@@ -526,8 +527,15 @@ function sellos() {
 
 function pintarComparar() {
   if (base) pintarTrends();
-  $("b-comparar").hidden = !comparados.length;
-  if (!comparados.length) { pintarAnalisis(filtrar(base)); return; }
+  $("comparar-vacio").hidden = !!comparados.length;
+  $("t-comparar").hidden = $("ley-comparar").hidden = !comparados.length;
+  if (!comparados.length) {
+    const otros = indice.consultas.filter((c) => c.slug !== base?.slug).slice(0, 6);
+    $("comparar-vacio").innerHTML = `Para decidir, mirá el tema al lado de otros: sumá uno con «+ Comparar» arriba o con un clic acá.
+      <span class="atajos">${otros.map((c) => `<button type="button" class="pill" data-atajo="${esc(c.tema)}">+ ${esc(c.tema)}</button>`).join("")}</span>`;
+    $("comparar-vacio").querySelectorAll("[data-atajo]").forEach((b) => b.addEventListener("click", () => agregarComparado(b.dataset.atajo)));
+    pintarAnalisis(filtrar(base)); return;
+  }
   pintarAnalisis(filtrar(base));
   const temas = [base, ...comparados].map((x) => filtrar(x));
   const ramas = reglas.intenciones.filter((i) => !APARTE.includes(i.id));

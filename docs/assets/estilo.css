@@ -296,7 +296,15 @@ td .esq{display:block;height:1.1em}
 }
 .rango{gap:.3em}
 .rango input{border:0;background:transparent;color:inherit;font:inherit;width:8.6em}
-.trends-marco{background:#fff;border-radius:10px;overflow:hidden;height:400px}
+.trends-marco{background:#fff;border-radius:10px;overflow:hidden;height:368px}
 .trends-marco iframe{width:100%;height:100%;border:0;display:block}
 .bloque > h3{flex-wrap:wrap}
 .sello-auto{white-space:normal;max-width:100%}
+.atajos{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.atajos .pill{cursor:pointer;font-size:.82rem;padding:4px 12px}
+/* Celular: lo histórico y el comparativo van antes que el mapa (foto del día) */
+@media (max-width:960px){
+  .radar{display:flex;flex-direction:column;align-items:stretch}
+  .columna{display:contents}
+  .prioridad{order:-1}
+}
