@@ -132,7 +132,7 @@
         "fuente": "Google Trends",
         "mide": "Interés relativo, de 0 a 100",
         "hacia_atras": "Desde 2004. Por día si el rango es menor a 9 meses, por semana hasta 5 años, por mes en rangos más largos.",
-        "en_el_radar": "Gráfico oficial en el bloque «Interés en Google», con el tema y sus comparados, para el período elegido en el filtro Desde–Hasta.",
+        "en_el_radar": "Gráfico oficial en el bloque «Interés en Google», para el período Desde–Hasta. Tres vistas: Temas (el tema y sus comparados), Marcas (UCU, ORT, Udelar, UM, UTEC…) y Tema + marca (por ejemplo «ciencia de datos ort»). Hasta 5 términos.",
         "tipo": "historial"
       },
       {

@@ -1,5 +1,5 @@
 {
-  "version": "2026-11-16b",
+  "version": "2026-11-19",
   "nota": "Fuente única de reglas. La leen el colector (Python) y el modo en vivo de la web (JavaScript). Los patrones se aplican sobre texto en minúsculas y sin tildes. Gana la primera intención que coincide. La lista crece con el uso: cuando el grupo 'Otros' sube, se agrega una regla y se anota en revisiones/REGISTRO.md.",
   "pais": {
     "hl": "es",
@@ -153,35 +153,35 @@
   ],
   "instituciones_uy": [
     {
-      "id": "Udelar",
+      "id": "Udelar", "trends": "udelar",
       "patron": "\\b(udelar|universidad de la republica|fing|fcea|fcs|fic)\\b"
     },
     {
-      "id": "ORT",
+      "id": "ORT", "trends": "ort",
       "patron": "\\b(ort)\\b"
     },
     {
-      "id": "UCU",
+      "id": "UCU", "trends": "ucu",
       "patron": "\\b(ucu|catolica)\\b"
     },
     {
-      "id": "UM",
+      "id": "UM", "trends": "universidad de montevideo",
       "patron": "\\b(um|universidad de montevideo)\\b"
     },
     {
-      "id": "UTEC",
+      "id": "UTEC", "trends": "utec",
       "patron": "\\b(utec)\\b"
     },
     {
-      "id": "CLAEH",
+      "id": "CLAEH", "trends": "claeh",
       "patron": "\\b(claeh)\\b"
     },
     {
-      "id": "UDE",
+      "id": "UDE", "trends": "universidad de la empresa",
       "patron": "\\b(ude|universidad de la empresa)\\b"
     },
     {
-      "id": "UTU",
+      "id": "UTU", "trends": "utu",
       "patron": "\\b(utu)\\b"
     }
   ],

@@ -21,6 +21,8 @@ Que una persona de UCU pueda levantar, sin datos pagos, qué se busca sobre un t
 
 - 2026-11-19 · Radar: primero lo histórico y comparativo (Trends → Comparación → Evolución; en celular, antes que el mapa). Período y Desde–Hasta al inicio de los filtros. Comparación siempre visible con atajos de un clic a temas guardados.
 
+- 2026-11-19 · Trends con tres vistas (Temas · Marcas · Tema + marca); marcas desde reglas.json (instituciones_uy[].trends), máx. 5, en la URL. Botón Buscar. Filtros de Radar y En las IA en un desplegable con ícono, resumen y contador (Historial / Foto / Datos, Restablecer, Listo). QA en Chrome: 40+ casos, escritorio y celular, claro y oscuro; CLS 0,034.
+
 ## Decisiones del PO
 - 2026-11-18 · OK a la medición semanal automática de los temas guardados y a publicar el crudo comprimido.
 - 2026-11-16 · Solo consultas gratis, sin Semrush. Mapa agéntico interactivo como base y formato de tablero propio. La herramienta tiene que poder usarse desde un chat.
@@ -28,6 +30,8 @@ Que una persona de UCU pueda levantar, sin datos pagos, qué se busca sobre un t
 - 2026-11-18 · OK del PO a usar el gráfico oficial de Google Trends dentro del radar como fuente de historia larga.
 
 - 2026-11-19 · El PO prioriza el dato histórico y comparativo sobre la foto del día para la toma de decisiones.
+
+- 2026-11-19 · Los filtros no deben robar atención a las métricas: van plegados en un desplegable.
 
 ## Abiertos
 1. F5 · Top 10: el PO elige una API oficial con clave gratuita.
