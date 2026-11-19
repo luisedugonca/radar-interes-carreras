@@ -17,6 +17,8 @@ Que una persona de UCU pueda levantar, sin datos pagos, qué se busca sobre un t
 
 - 2026-11-18 · Filtro Desde–Hasta (Últimos 3 meses / año / 5 años / desde 2004 / a medida) que recorta «Evolución» y muestra el gráfico oficial de Google Trends (Uruguay, tema + comparados). Probado en Chrome, escritorio y celular.
 
+- 2026-11-19 · Ícono (SVG + PNG 32/180/192/512), tarjeta para compartir 1200×630, metadatos (descripción, canonical, Open Graph, Twitter), schema.org (WebSite, WebApplication, Dataset), manifest, robots.txt y sitemap.xml. Prueba nueva en tests/test_web.py.
+
 ## Decisiones del PO
 - 2026-11-18 · OK a la medición semanal automática de los temas guardados y a publicar el crudo comprimido.
 - 2026-11-16 · Solo consultas gratis, sin Semrush. Mapa agéntico interactivo como base y formato de tablero propio. La herramienta tiene que poder usarse desde un chat.

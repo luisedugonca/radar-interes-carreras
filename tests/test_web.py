@@ -23,6 +23,18 @@ class Web(unittest.TestCase):
                 versiones.add(ref[1])
         self.assertEqual(len(versiones), 1, f"versiones mezcladas: {versiones}")
 
+    def test_cada_pagina_tiene_icono_y_metadatos_para_buscadores(self):
+        import json
+        for pagina in [*PAGINAS, "index.html"]:
+            texto = (DOCS / pagina).read_text(encoding="utf-8")
+            for etiqueta in ('name="description"', 'rel="canonical"', 'property="og:image"', 'name="twitter:card"', 'rel="icon"', 'rel="manifest"'):
+                self.assertIn(etiqueta, texto, f"{pagina}: falta {etiqueta}")
+            for ref in re.findall(r'(?:href|content)="(?:https://luisedugonca\.github\.io/radar-interes-carreras/)?((?:assets/)[\w.-]+\.(?:svg|png|jpg)|site\.webmanifest)"', texto):
+                self.assertTrue((DOCS / ref).exists(), f"{pagina} pide {ref}, que no existe")
+            ld = re.search(r'<script type="application/ld\+json">(.*?)</script>', texto, re.S)
+            self.assertTrue(ld, f"{pagina}: sin schema.org")
+            json.loads(ld.group(1))
+
     def test_lo_que_piden_las_paginas_existe(self):
         for pagina in PAGINAS:
             texto = (DOCS / pagina).read_text(encoding="utf-8")

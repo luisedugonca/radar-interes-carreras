@@ -1,0 +1,5 @@
+# Radar de interés por carreras: todo el sitio es público
+User-agent: *
+Allow: /
+
+Sitemap: https://luisedugonca.github.io/radar-interes-carreras/sitemap.xml
