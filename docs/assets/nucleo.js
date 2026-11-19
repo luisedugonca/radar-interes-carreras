@@ -238,3 +238,49 @@ export function sellar(textos) {
     s.title = tipo === "foto" ? "Muestra un solo momento: no dice si sube o baja" : "Muestra varias mediciones en el tiempo";
   });
 }
+
+/* Lista de temas guardados bajo un campo de texto (reemplaza al <datalist> del navegador,
+   que solo muestra lo que coincide con lo ya escrito y parecía no funcionar).
+   opciones(): [{ tema, nota }] · alElegir(tema): qué hacer al elegir uno. */
+let nSug = 0;
+export function sugeridor(input, opciones, alElegir) {
+  const id = `sug-${++nSug}`, caja = input.parentElement;
+  caja.classList.add("con-sug");
+  const lista = document.createElement("ul");
+  lista.id = id; lista.className = "sug"; lista.setAttribute("role", "listbox"); lista.hidden = true;
+  const abrirBtn = document.createElement("button");
+  abrirBtn.type = "button"; abrirBtn.className = "sug-abrir"; abrirBtn.textContent = "▾";
+  abrirBtn.setAttribute("aria-label", "Ver temas guardados"); abrirBtn.title = "Ver temas guardados";
+  input.after(abrirBtn, lista);
+  Object.entries({ role: "combobox", "aria-autocomplete": "list", "aria-expanded": "false", "aria-controls": id }).forEach(([k, v]) => input.setAttribute(k, v));
+  let items = [], activo = -1;
+  const cerrar = () => { lista.hidden = true; input.setAttribute("aria-expanded", "false"); input.removeAttribute("aria-activedescendant"); activo = -1; };
+  const marcar = (k) => {
+    activo = k;
+    lista.querySelectorAll("[role=option]").forEach((li, j) => li.setAttribute("aria-selected", String(j === k)));
+    if (k >= 0) { input.setAttribute("aria-activedescendant", `${id}-${k}`); lista.querySelector(`#${id}-${k}`)?.scrollIntoView({ block: "nearest" }); }
+  };
+  const pintar = (todos) => {
+    const q = normalizar(input.value), todas = opciones();
+    const coinciden = todos || !q ? todas : todas.filter((o) => normalizar(o.tema).includes(q));
+    items = coinciden.length ? coinciden : todas;
+    lista.innerHTML = (coinciden.length ? "" : `<li class="sug-nota">Ningún tema guardado con «${esc(input.value)}»: tocá Buscar o Comparar para medirlo en vivo. Guardados:</li>`)
+      + items.map((o, k) => `<li role="option" id="${id}-${k}" aria-selected="false" data-k="${k}">${esc(o.tema)}${o.nota ? ` <small>${esc(o.nota)}</small>` : ""}</li>`).join("");
+    lista.hidden = !items.length; input.setAttribute("aria-expanded", String(!lista.hidden)); marcar(-1);
+  };
+  const elegir = (k) => { const o = items[k]; if (!o) return; input.value = o.tema; cerrar(); alElegir(o.tema); };
+  input.addEventListener("focus", () => pintar(true));
+  input.addEventListener("input", () => pintar(false));
+  input.addEventListener("blur", () => setTimeout(cerrar, 120));
+  input.addEventListener("keydown", (e) => {
+    if (e.key === "ArrowDown" || e.key === "ArrowUp") {
+      e.preventDefault(); if (lista.hidden) pintar(false);
+      const n = items.length; if (n) marcar(e.key === "ArrowDown" ? (activo + 1) % n : (activo - 1 + n) % n);
+    } else if (e.key === "Enter" && !lista.hidden && activo >= 0) { e.preventDefault(); e.stopImmediatePropagation(); elegir(activo); }
+    else if (e.key === "Escape" && !lista.hidden) { e.stopPropagation(); cerrar(); }
+  });
+  lista.addEventListener("mousedown", (e) => e.preventDefault());
+  lista.addEventListener("click", (e) => { const li = e.target.closest("[role=option]"); if (li) elegir(Number(li.dataset.k)); });
+  abrirBtn.addEventListener("mousedown", (e) => e.preventDefault());
+  abrirBtn.addEventListener("click", () => { if (lista.hidden) { input.focus(); pintar(true); } else cerrar(); });
+}

@@ -30,8 +30,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/estilo.css?v=20261119i">
-<script src="assets/tema.js?v=20261119i"></script>
+<link rel="stylesheet" href="assets/estilo.css?v=20261119k">
+<script src="assets/tema.js?v=20261119k"></script>
 </head>
 <body aria-busy="true">
 <header class="cab">
@@ -56,14 +56,13 @@
     <label class="term" style="--c:#4f8dff">
       <span class="punto" aria-hidden="true"></span>
       <span class="campo">
-        <input id="tema" list="lista-temas" maxlength="60" aria-label="Tema o carrera">
+        <span class="caja-in"><input id="tema" maxlength="60" aria-label="Tema o carrera"></span>
         <small id="tema-sub">Tema guardado en la base · escribí otro y tocá Buscar para medirlo en vivo</small>
       </span>
       <button type="submit" class="btn" id="btn-buscar">Buscar</button>
     </label>
     <div class="comparar" id="comparar"><input class="mas" maxlength="60" placeholder="+ Comparar: escribí un tema o elegí uno guardado" aria-label="Agregar un tema para comparar" style="flex:1;min-width:200px;border:0;background:transparent" disabled></div>
   </div>
-  <datalist id="lista-temas"></datalist>
   <div class="filtros" id="filtros">
     <button type="button" class="btn-filtros" id="btn-filtros" aria-expanded="false" aria-controls="panel-filtros">
       <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M3 5h18l-7 8.2V19l-4 2v-7.8L3 5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
@@ -203,9 +202,9 @@
 </div>
 
 <script type="module">
-import { renderMapa } from "./assets/mapa.js?v=20261119i";
-import { hallazgos, calidad } from "./assets/analisis.js?v=20261119i";
-import { sellar, leerJSON, consultaEnVivo, consultaAMapa, ordenFrase, normalizar, esc, num, fecha, consultaAFilas, filasACSV, csvAConsultas } from "./assets/nucleo.js?v=20261119i";
+import { renderMapa } from "./assets/mapa.js?v=20261119k";
+import { hallazgos, calidad } from "./assets/analisis.js?v=20261119k";
+import { sellar, sugeridor, leerJSON, consultaEnVivo, consultaAMapa, ordenFrase, normalizar, esc, num, fecha, consultaAFilas, filasACSV, csvAConsultas } from "./assets/nucleo.js?v=20261119k";
 
 const $ = (id) => document.getElementById(id);
 /* ---------- Carga visible ---------- */
@@ -282,10 +281,8 @@ function pintarBuscador() {
     med.disabled = serie.mediciones.length < 2;
     med.title = serie.mediciones.length < 2 ? "Hay una sola medición de este tema" : "Elegí una medición guardada de este tema";
   }
-  $("lista-temas").innerHTML = indice.consultas.map((c) => `<option value="${esc(c.tema)}"></option>`).join("");
-  $("lista-temas").innerHTML += locales.map((c) => `<option value="${esc(c.tema)}">desde archivo</option>`).join("");
   $("comparar").innerHTML = comparados.map((c, k) => `<span class="chip-t" style="--c:${COLOR_TEMA[k + 1]}"><span class="punto"></span>${esc(c.tema)}${c.en_vivo ? ' <span class="sello sup">en vivo</span>' : c.origen ? ' <span class="sello sup">archivo</span>' : ""}<button type="button" data-q="${esc(c.slug)}" aria-label="Quitar ${esc(c.tema)}">×</button></span>`).join("")
-    + (comparados.length < 3 ? `<input class="mas" id="in-comparar" list="lista-temas" maxlength="60" placeholder="+ Comparar: escribí un tema o elegí uno guardado" aria-label="Agregar un tema para comparar" style="flex:1;min-width:180px;border:0;background:transparent"><button type="button" class="btn sec" id="btn-comparar">Comparar</button>`
+    + (comparados.length < 3 ? `<span class="caja-in" style="flex:1;min-width:180px"><input class="mas" id="in-comparar" maxlength="60" placeholder="+ Comparar: escribí un tema o elegí uno guardado" aria-label="Agregar un tema para comparar" style="flex:1;min-width:0;border:0;background:transparent"></span><button type="button" class="btn sec" id="btn-comparar">Comparar</button>`
       : '<span class="pie-b">Máximo 3 temas para comparar: quitá uno con ×.</span>');
   $("comparar").querySelectorAll("button[data-q]").forEach((b) => b.addEventListener("click", () => { comparados = comparados.filter((c) => c.slug !== b.dataset.q); actualizarURL(); pintarBuscador(); pintarComparar(); }));
   const campo = $("in-comparar");
@@ -296,8 +293,8 @@ function pintarBuscador() {
       campo.disabled = true; $("btn-comparar").disabled = true;
       await agregarComparado(v);
     };
+    sugeridor(campo, () => opcionesTemas().filter((o) => o.tema !== base.tema && !comparados.some((c) => c.tema === o.tema)), () => agregar());
     campo.addEventListener("keydown", (ev) => { if (ev.key === "Enter") { ev.preventDefault(); agregar(); } });
-    campo.addEventListener("change", () => { if (buscarGuardado(campo.value) || buscarLocal(campo.value)) agregar(); });
     $("btn-comparar").addEventListener("click", agregar);
   }
   const ramas = base.intenciones.filter((i) => !APARTE.includes(i.id) && i.total > 0);
@@ -725,10 +722,10 @@ $("form").addEventListener("submit", (ev) => {
   const v = $("tema").value.trim(), guardada = buscarGuardado(v), local = buscarLocal(v);
   if (local) { base = local; ramaSel = null; actualizarURL(); pintarBuscador(); pintar(); } else guardada ? abrir(guardada.slug) : medirEnVivo(v);
 });
-$("tema").addEventListener("change", () => {
-  const guardada = indice.consultas.find((c) => normalizar(c.tema) === normalizar($("tema").value));
-  if (guardada && guardada.slug !== base?.slug) abrir(guardada.slug);
-});
+function opcionesTemas() {
+  return [...indice.consultas.map((c) => ({ tema: c.tema, nota: "guardado" })), ...locales.map((c) => ({ tema: c.tema, nota: "desde archivo" }))];
+}
+sugeridor($("tema"), opcionesTemas, () => $("form").requestSubmit());
 $("f-duda").addEventListener("change", (e) => { filtro.duda = e.target.value; if (filtro.duda !== "todas") ramaSel = filtro.duda; pintar(); });
 $("f-fuente").addEventListener("change", (e) => { filtro.fuente = e.target.value; pintar(); });
 $("f-medicion").addEventListener("change", (e) => { if (base && !base.en_vivo && !base.origen) abrir(base.slug, e.target.value); });
